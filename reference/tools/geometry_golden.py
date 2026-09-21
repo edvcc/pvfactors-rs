@@ -643,9 +643,7 @@ def no_direct_projection_result(case: dict, normalized: dict, state: str) -> tup
     for entry in raw.get("projection", []):
         projections.append({
             **copy.deepcopy(entry),
-            "reference_classification": entry["classification"],
             "classification": state,
-            "direct_projection_active": False,
         })
     topology = {
         "logical_surface_count": len(surfaces),
@@ -668,7 +666,19 @@ def no_direct_projection_result(case: dict, normalized: dict, state: str) -> tup
         "topology": topology,
         "warnings": copy.deepcopy(raw.get("warnings", [])),
     }
-    deviations = [projection_state_deviation(normalized, state)]
+    deviations = [
+        projection_state_deviation(normalized, state),
+        {
+            "dev_id": "DEV-027", "cdr_id": "CDR-003", "path": "$.result.outcome",
+            "raw_reference": raw.get("outcome"), "corrected_expectation": result["outcome"],
+            "explanation": "the no-direct Geometry policy is emitted as a structured classified state",
+        },
+        {
+            "dev_id": "DEV-027", "cdr_id": "CDR-003", "path": "$.result.state",
+            "raw_reference": None, "corrected_expectation": state,
+            "explanation": "the frozen reference has no product-level horizon/below-horizon state field",
+        },
+    ]
     for side in ("front", "back"):
         path = f"$.result.pv_rows[*].shaded_length_{side}_m"
         deviations.append({
@@ -692,6 +702,12 @@ def no_direct_projection_result(case: dict, normalized: dict, state: str) -> tup
             "raw_reference": raw.get("topology", {}),
             "corrected_expectation": topology,
             "explanation": "policy topology retains inactive direct-shadow slots and one active illuminated ground slot",
+        },
+        {
+            "dev_id": "DEV-027", "cdr_id": "CDR-003", "path": "$.result.surfaces",
+            "raw_reference": raw.get("surfaces", []),
+            "corrected_expectation": surfaces,
+            "explanation": "policy surfaces materialize the topology as inactive shadows plus illuminated finite ground",
         },
     ])
     return result, deviations
@@ -717,9 +733,7 @@ def corrected_artifact(case: dict, normalized: dict) -> dict:
         else:
             result = copy.deepcopy(normalized["result"])
             for projection in result.get("projection", []):
-                projection["reference_classification"] = projection["classification"]
                 projection["classification"] = "direct_projection"
-                projection["direct_projection_active"] = True
             deviations.append(projection_state_deviation(normalized, "direct_projection"))
             extent = decode_number(case["geometry"])["ground_extent"]
             if result.get("outcome") == "captured" and extent != REFERENCE_EXTENT:
@@ -1067,8 +1081,8 @@ def validate_invariants(output: Path, cases_path: Path = CASES) -> dict:
         if not all_finite(result):
             case_failures.append("corrected no-direct result contains a nonfinite value")
         for projection in result.get("projection", []):
-            if projection.get("classification") != expected_state or projection.get("direct_projection_active") is not False:
-                case_failures.append("projection remains active or is misclassified")
+            if projection.get("classification") != expected_state:
+                case_failures.append("projection state is misclassified")
         shadows = result.get("ground", {}).get("direct_shadow_surfaces", [])
         if not shadows or any(any(surface["active"]) or any(surface["length_m"]) for surface in shadows):
             case_failures.append("direct-shadow logical surfaces are not retained inactive")
