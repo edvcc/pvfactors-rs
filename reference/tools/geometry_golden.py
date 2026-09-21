@@ -72,7 +72,7 @@ def generator_identity() -> dict:
         digest.update(path.read_bytes())
     return {
         "version": GENERATOR_VERSION,
-        "commit": git("rev-parse", "HEAD"),
+        "commit": git("log", "-1", "--format=%H", "--", "reference/tools"),
         "sha256": digest.hexdigest(),
         "files": [p.relative_to(ROOT).as_posix() for p in files],
     }
