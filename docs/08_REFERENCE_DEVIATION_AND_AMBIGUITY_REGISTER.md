@@ -29,6 +29,7 @@
 | DEV-023 | reproducibility gap | 当前只实际跑Linux x86_64 CPython3.12.14；macOS/Windows无实测，container digest未建立 | R0是可执行锁定清单，Golden最终批准前环境复建与跨平台数值采样；不伪称跨平台完成 |
 | DEV-024 | physical invariant precondition | Perez F1无上限，可导致Liso负；输入极端而经验模型范围不明 | 不盲目clip分量；把非负检查域与warning/error政策固定进CDR-005 |
 | DEV-026 | numerical/predicate artifact | collinearity用未归一normal；同方向差的向量放大100倍，本次判定从true变false；boundary-probes记录 | scale-aware方向与offset分开；CDR-003；不能用常量1e−5当无量纲角阈值 |
+| DEV-027 | representation gap / not an upstream bug | frozen Geometry 会继续计算 horizon / below-horizon 投影，但不提供 `direct_projection`、`horizon_no_direct_projection`、`below_horizon_no_direct_projection` 产品状态；DEV-003 只覆盖 Engine skip-mask，不能表达 Geometry 分层职责 | CDR-003 corrected expectation 显式分类；horizon / below-horizon 保留 row geometry，direct-shadow logical slots inactive，finite ground 为单一 illuminated partition；raw / normalized Reference 行为不改 |
 | DEV-025 | execution artifact | multiprocessing切空chunk、callback序列化、BLAS嵌套线程、report自定义merge；整批is_empty | Rust确定索引输出；worker≤effective T且统一线程预算；分块等价验证 |
 
 ## Compatibility Decision Record 模板

@@ -61,6 +61,52 @@ def build() -> dict:
     ]
     cases = [ordered(source, case_id) for case_id in ids]
 
+    # Owner Review Revision 1: expand the proven CDR-003 representation
+    # domain without folding tilt, treating GCR as an engineering-range proxy,
+    # or asking Geometry to make the later simulation skip decision.
+    tilt_120 = ordered(source, "C03", new_id="TILT_120", domain="valid",
+                       tags=["tilt", "back_side", "owner_review_revision_1"])
+    tilt_120["description"] = "120 degree tilt with front/back identity preserved"
+    tilt_120["inputs"]["surface_tilt"] = [120.0]
+
+    tilt_180 = ordered(source, "C03", new_id="TILT_180", domain="boundary_policy",
+                       tags=["tilt_boundary", "orientation", "owner_review_revision_1"])
+    tilt_180["description"] = "180 degree tilt boundary without folding"
+    tilt_180["inputs"]["surface_tilt"] = [180.0]
+
+    gcr_gt_one = ordered(source, "C03", new_id="GCR_GT_1", domain="valid",
+                         tags=["gcr", "row_spacing", "owner_review_revision_1"])
+    gcr_gt_one["description"] = (
+        "GCR 1.25 is numerically legal and this tilted three-row instance has no row intersection"
+    )
+    gcr_gt_one["geometry"]["gcr"] = 1.25
+
+    below_horizon = ordered(
+        source, "C03", new_id="SUN_BELOW_HORIZON", domain="boundary_policy",
+        tags=["sun_boundary", "below_horizon", "owner_review_revision_1"],
+    )
+    below_horizon["description"] = "zenith 100 degree Geometry representation without direct projection"
+    below_horizon["inputs"]["solar_zenith"] = [100.0]
+
+    invalid_tilt_negative = ordered(
+        source, "C03", new_id="INVALID_TILT_NEGATIVE", domain="invalid",
+        tags=["invalid", "tilt", "owner_review_revision_1"],
+    )
+    invalid_tilt_negative["description"] = "surface tilt below the closed zero degree boundary"
+    invalid_tilt_negative["inputs"]["surface_tilt"] = [-1.0]
+
+    invalid_tilt_gt_180 = ordered(
+        source, "C03", new_id="INVALID_TILT_GT_180", domain="invalid",
+        tags=["invalid", "tilt", "owner_review_revision_1"],
+    )
+    invalid_tilt_gt_180["description"] = "surface tilt above the closed 180 degree boundary"
+    invalid_tilt_gt_180["inputs"]["surface_tilt"] = [180.0000000001]
+
+    cases += [
+        tilt_120, tilt_180, gcr_gt_one, below_horizon,
+        invalid_tilt_negative, invalid_tilt_gt_180,
+    ]
+
     # Concrete ground-extent cases. The frozen reference still computes on
     # [-100, 100]; corrected_expectation applies the proposed public extent.
     for case_id, extent, description, domain in [
