@@ -33,6 +33,20 @@ REFERENCE_SHA = "ecbfc863657e239817603a43898ae173c7ccad9c"
 REFERENCE_VERSION = "v1.6.1"
 GENERATOR_VERSION = "0.1.0"
 REFERENCE_EXTENT = [-100.0, 100.0]
+CANONICAL_RUNTIME = {
+    "implementation": "CPython",
+    "python": "3.12.14",
+    "system": "Linux",
+    "machine": "x86_64",
+    "libc": {"name": "glibc", "version": "2.39"},
+    "geos": "3.13.1",
+    "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0",
+    },
+}
 
 sys.path.insert(0, str(REFERENCE_SOURCE))
 
@@ -85,11 +99,20 @@ def runtime_identity() -> dict:
             packages[name] = md.version(name)
         except md.PackageNotFoundError:
             packages[name] = "MISSING"
+    libc_name, libc_version = platform.libc_ver()
+    try:
+        import shapely
+        geos = shapely.geos_version_string
+    except (ImportError, AttributeError):
+        geos = "MISSING"
     base = {
         "python": platform.python_version(),
         "implementation": platform.python_implementation(),
+        "system": platform.system(),
         "platform": platform.platform(),
         "machine": platform.machine(),
+        "libc": {"name": libc_name, "version": libc_version},
+        "geos": geos,
         "packages": packages,
         "thread_environment": {
             key: os.environ.get(key, "")
@@ -877,8 +900,15 @@ def environment_report() -> dict:
             requirements[name] = version
     runtime = runtime_identity()
     mismatches = []
-    if runtime["python"] != "3.12.14":
-        mismatches.append(f"Python {runtime['python']} != canonical 3.12.14")
+    for field in ("implementation", "python", "system", "machine", "libc", "geos"):
+        actual = runtime[field]
+        expected = CANONICAL_RUNTIME[field]
+        if actual != expected:
+            mismatches.append(f"{field} {actual} != canonical {expected}")
+    for name, expected in CANONICAL_RUNTIME["thread_environment"].items():
+        actual = runtime["thread_environment"][name]
+        if actual != expected:
+            mismatches.append(f"{name} {actual!r} != canonical {expected!r}")
     for name, expected in requirements.items():
         try:
             actual = md.version(name)
@@ -887,6 +917,7 @@ def environment_report() -> dict:
         if actual != expected:
             mismatches.append(f"{name} {actual} != {expected}")
     return {"canonical_environment_match": not mismatches, "runtime": runtime,
+            "canonical_runtime": CANONICAL_RUNTIME,
             "canonical_requirements": requirements, "mismatches": mismatches}
 
 
