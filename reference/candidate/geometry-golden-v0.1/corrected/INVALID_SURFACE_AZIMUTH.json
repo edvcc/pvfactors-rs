@@ -1,0 +1,110 @@
+{
+  "case_id": "INVALID_SURFACE_AZIMUTH",
+  "classification": "corrected_expectation",
+  "deviations": [],
+  "generator": {
+    "commit": "88e397dadc5d781515ae0b94fd2749e6e6286277",
+    "files": [
+      "reference/tools/build_g2_cases.py",
+      "reference/tools/geometry_golden.py"
+    ],
+    "sha256": "a743e83a7a374fe57e25afc5e8ec96c181ea98e7234c3ff5fb89744b5f11845a",
+    "version": "0.1.0"
+  },
+  "input": {
+    "domain": "invalid",
+    "geometry": {
+      "axis_azimuth": 180.0,
+      "cut": {},
+      "gcr": 0.5,
+      "ground_extent": [
+        -100.0,
+        100.0
+      ],
+      "n_pvrows": 3,
+      "pvrow_height": 1.0,
+      "pvrow_width": 1.0
+    },
+    "inputs": {
+      "DHI": [
+        100.0
+      ],
+      "DNI": [
+        600.0
+      ],
+      "albedo": [
+        0.25
+      ],
+      "solar_azimuth": [
+        270.0
+      ],
+      "solar_zenith": [
+        45.0
+      ],
+      "surface_azimuth": [
+        180.0
+      ],
+      "surface_tilt": [
+        45.0
+      ],
+      "timestamps": [
+        "2019-06-01T12:00:00+00:00"
+      ]
+    },
+    "kind": "ordered_pvarray",
+    "primitive": null
+  },
+  "nonfinite_mask": [],
+  "provenance": {
+    "case_sha256": "c2dbcfdeba5e4b699024b4004b291be23073538ddd854c04e21083186114a9b8",
+    "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+    "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+    "payload_sha256": "4672c46960a6c71a20be299ffcdf33d7f038f7f5eebcd5a29d8f82d778fce56e",
+    "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+    "transformation": "field-level corrections are listed in deviations"
+  },
+  "reference": {
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
+    "environment_id": "548e623fbc3038f5f020",
+    "name": "pvlib/solarfactors",
+    "numpy": "2.3.5",
+    "pvlib": "0.14.0",
+    "python": "3.12.12",
+    "runtime": {
+      "environment_id": "548e623fbc3038f5f020",
+      "implementation": "CPython",
+      "machine": "arm64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.12.12",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "shapely": "2.1.2",
+    "version": "v1.6.1"
+  },
+  "result": {
+    "errors": [
+      {
+        "code": "GEOMETRY_AZIMUTH_RELATION",
+        "field": "inputs.surface_azimuth[0]",
+        "message": "non-flat surface azimuth must be axis azimuth plus or minus 90 degrees"
+      }
+    ],
+    "outcome": "v1_error",
+    "panic": false
+  },
+  "schema_version": "0.1",
+  "status": "v1_rejected_input"
+}

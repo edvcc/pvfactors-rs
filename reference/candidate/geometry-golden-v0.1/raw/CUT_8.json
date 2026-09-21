@@ -1,0 +1,6996 @@
+{
+  "case_id": "CUT_8",
+  "classification": "raw_reference",
+  "deviations": [],
+  "generator": {
+    "commit": "88e397dadc5d781515ae0b94fd2749e6e6286277",
+    "files": [
+      "reference/tools/build_g2_cases.py",
+      "reference/tools/geometry_golden.py"
+    ],
+    "sha256": "a743e83a7a374fe57e25afc5e8ec96c181ea98e7234c3ff5fb89744b5f11845a",
+    "version": "0.1.0"
+  },
+  "input": {
+    "domain": "valid",
+    "geometry": {
+      "axis_azimuth": 180.0,
+      "cut": {
+        "0": {
+          "back": 8,
+          "front": 8
+        },
+        "1": {
+          "back": 8,
+          "front": 8
+        },
+        "2": {
+          "back": 8,
+          "front": 8
+        }
+      },
+      "gcr": 0.5,
+      "ground_extent": [
+        -100.0,
+        100.0
+      ],
+      "n_pvrows": 3,
+      "pvrow_height": 1.0,
+      "pvrow_width": 1.0
+    },
+    "inputs": {
+      "DHI": [
+        100.0
+      ],
+      "DNI": [
+        600.0
+      ],
+      "albedo": [
+        0.25
+      ],
+      "solar_azimuth": [
+        270.0
+      ],
+      "solar_zenith": [
+        45.0
+      ],
+      "surface_azimuth": [
+        270.0
+      ],
+      "surface_tilt": [
+        45.0
+      ],
+      "timestamps": [
+        "2019-06-01T12:00:00+00:00"
+      ]
+    },
+    "kind": "ordered_pvarray",
+    "primitive": null
+  },
+  "nonfinite_mask": [],
+  "provenance": {
+    "case_sha256": "9b2086b10c17d836e2a6016c532a035a3c5d20a67c26c7b54d9c2df3c67021ed",
+    "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+    "method": "direct frozen-reference introspection",
+    "payload_sha256": "d8ea87fa107b194e44f0c7755de202e7857a3e7846e96074199268b56c933a0f",
+    "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+    "transformation": "none"
+  },
+  "reference": {
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
+    "environment_id": "548e623fbc3038f5f020",
+    "name": "pvlib/solarfactors",
+    "numpy": "2.3.5",
+    "pvlib": "0.14.0",
+    "python": "3.12.12",
+    "runtime": {
+      "environment_id": "548e623fbc3038f5f020",
+      "implementation": "CPython",
+      "machine": "arm64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.12.12",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "shapely": "2.1.2",
+    "version": "v1.6.1"
+  },
+  "result": {
+    "ground": {
+      "clipped_shadow_elements": [
+        {
+          "coordinates_m": [
+            [
+              [
+                -1.7071067811865472,
+                0.0
+              ],
+              [
+                -0.29289321881345237,
+                0.0
+              ]
+            ]
+          ],
+          "element": 0
+        },
+        {
+          "coordinates_m": [
+            [
+              [
+                0.29289321881345276,
+                0.0
+              ],
+              [
+                1.707106781186548,
+                0.0
+              ]
+            ]
+          ],
+          "element": 1
+        },
+        {
+          "coordinates_m": [
+            [
+              [
+                2.2928932188134525,
+                0.0
+              ],
+              [
+                3.707106781186548,
+                0.0
+              ]
+            ]
+          ],
+          "element": 2
+        }
+      ],
+      "cut_points_m": [
+        [
+          [
+            1.0000000000000002,
+            0.0
+          ],
+          [
+            3.0,
+            0.0
+          ],
+          [
+            5.0,
+            0.0
+          ]
+        ]
+      ],
+      "illuminated_elements": [
+        {
+          "coordinates_m": [
+            [
+              [
+                -100.0,
+                0.0
+              ],
+              [
+                -1.7071067811865472,
+                0.0
+              ]
+            ]
+          ],
+          "element": 0
+        },
+        {
+          "coordinates_m": [
+            [
+              [
+                -0.29289321881345237,
+                0.0
+              ],
+              [
+                0.29289321881345276,
+                0.0
+              ]
+            ]
+          ],
+          "element": 1
+        },
+        {
+          "coordinates_m": [
+            [
+              [
+                1.707106781186548,
+                0.0
+              ],
+              [
+                2.2928932188134525,
+                0.0
+              ]
+            ]
+          ],
+          "element": 2
+        },
+        {
+          "coordinates_m": [
+            [
+              [
+                3.707106781186548,
+                0.0
+              ],
+              [
+                100.0,
+                0.0
+              ]
+            ]
+          ],
+          "element": 3
+        }
+      ],
+      "overlap_flags": [
+        false
+      ],
+      "raw_projected_shadows": [
+        {
+          "coordinates_m": [
+            [
+              [
+                -1.7071067811865472,
+                0.0
+              ],
+              [
+                -0.29289321881345237,
+                0.0
+              ]
+            ]
+          ],
+          "row": 0
+        },
+        {
+          "coordinates_m": [
+            [
+              [
+                0.29289321881345276,
+                0.0
+              ],
+              [
+                1.707106781186548,
+                0.0
+              ]
+            ]
+          ],
+          "row": 1
+        },
+        {
+          "coordinates_m": [
+            [
+              [
+                2.2928932188134525,
+                0.0
+              ],
+              [
+                3.707106781186548,
+                0.0
+              ]
+            ]
+          ],
+          "row": 2
+        }
+      ],
+      "reference_extent_m": [
+        -100.0,
+        100.0
+      ],
+      "requested_extent_m": [
+        -100.0,
+        100.0
+      ]
+    },
+    "outcome": "captured",
+    "projection": [
+      {
+        "alpha_rad": 0.7853981633974484,
+        "classification": "regular",
+        "rotation_deg": -45.0,
+        "solar_2d_vector": [
+          0.7071067811865475,
+          0.7071067811865476
+        ]
+      }
+    ],
+    "pv_rows": [
+      {
+        "back_normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "center_m": [
+          0.0,
+          1.0
+        ],
+        "endpoints_m": [
+          [
+            [
+              -0.35355339059327373,
+              1.3535533905932737
+            ],
+            [
+              0.3535533905932738,
+              0.6464466094067263
+            ]
+          ]
+        ],
+        "front_normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "row": 0,
+        "shaded_length_back_m": [
+          0.0
+        ],
+        "shaded_length_front_m": [
+          0.0
+        ],
+        "width_m": 1.0
+      },
+      {
+        "back_normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "center_m": [
+          2.0,
+          1.0
+        ],
+        "endpoints_m": [
+          [
+            [
+              1.6464466094067263,
+              1.3535533905932737
+            ],
+            [
+              2.353553390593274,
+              0.6464466094067263
+            ]
+          ]
+        ],
+        "front_normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "row": 1,
+        "shaded_length_back_m": [
+          0.0
+        ],
+        "shaded_length_front_m": [
+          0.0
+        ],
+        "width_m": 1.0
+      },
+      {
+        "back_normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "center_m": [
+          4.0,
+          1.0
+        ],
+        "endpoints_m": [
+          [
+            [
+              3.646446609406726,
+              1.3535533905932737
+            ],
+            [
+              4.353553390593274,
+              0.6464466094067263
+            ]
+          ]
+        ],
+        "front_normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "row": 2,
+        "shaded_length_back_m": [
+          0.0
+        ],
+        "shaded_length_front_m": [
+          0.0
+        ],
+        "width_m": 1.0
+      }
+    ],
+    "surfaces": [
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          0
+        ],
+        "coordinates_m": [
+          [
+            [
+              -1.7071067811865472,
+              0.0
+            ],
+            [
+              -0.29289321881345237,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          1.414213562373095
+        ],
+        "logical_key": {
+          "cut_interval": 0,
+          "ground_element": 0,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 0,
+        "shaded": true
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.0000000000000002,
+              0.0
+            ],
+            [
+              1.0000000000000002,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 1,
+          "ground_element": 0,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 1,
+        "shaded": true
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.0,
+              0.0
+            ],
+            [
+              3.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 2,
+          "ground_element": 0,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 2,
+        "shaded": true
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              5.0,
+              0.0
+            ],
+            [
+              5.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 3,
+          "ground_element": 0,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 3,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          1
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.29289321881345276,
+              0.0
+            ],
+            [
+              1.0000000000000002,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.7071067811865475
+        ],
+        "logical_key": {
+          "cut_interval": 0,
+          "ground_element": 1,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 4,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          2
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.0000000000000002,
+              0.0
+            ],
+            [
+              1.707106781186548,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.7071067811865477
+        ],
+        "logical_key": {
+          "cut_interval": 1,
+          "ground_element": 1,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 5,
+        "shaded": true
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.0,
+              0.0
+            ],
+            [
+              3.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 2,
+          "ground_element": 1,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 6,
+        "shaded": true
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              5.0,
+              0.0
+            ],
+            [
+              5.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 3,
+          "ground_element": 1,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 7,
+        "shaded": true
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.0000000000000002,
+              0.0
+            ],
+            [
+              1.0000000000000002,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 0,
+          "ground_element": 2,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 8,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          3
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.2928932188134525,
+              0.0
+            ],
+            [
+              3.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.7071067811865475
+        ],
+        "logical_key": {
+          "cut_interval": 1,
+          "ground_element": 2,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 9,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          4
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.0,
+              0.0
+            ],
+            [
+              3.707106781186548,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.7071067811865479
+        ],
+        "logical_key": {
+          "cut_interval": 2,
+          "ground_element": 2,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 10,
+        "shaded": true
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              5.0,
+              0.0
+            ],
+            [
+              5.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 3,
+          "ground_element": 2,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        "normal": null,
+        "reference_index": 11,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          5
+        ],
+        "coordinates_m": [
+          [
+            [
+              -100.0,
+              0.0
+            ],
+            [
+              -1.7071067811865472,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          98.29289321881345
+        ],
+        "logical_key": {
+          "cut_interval": 0,
+          "ground_element": 0,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 12,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.0000000000000002,
+              0.0
+            ],
+            [
+              1.0000000000000002,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 1,
+          "ground_element": 0,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 13,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.0,
+              0.0
+            ],
+            [
+              3.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 2,
+          "ground_element": 0,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 14,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              5.0,
+              0.0
+            ],
+            [
+              5.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 3,
+          "ground_element": 0,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 15,
+        "shaded": false
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          6
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.29289321881345237,
+              0.0
+            ],
+            [
+              0.29289321881345276,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.5857864376269051
+        ],
+        "logical_key": {
+          "cut_interval": 0,
+          "ground_element": 1,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 16,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.0000000000000002,
+              0.0
+            ],
+            [
+              1.0000000000000002,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 1,
+          "ground_element": 1,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 17,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.0,
+              0.0
+            ],
+            [
+              3.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 2,
+          "ground_element": 1,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 18,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              5.0,
+              0.0
+            ],
+            [
+              5.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 3,
+          "ground_element": 1,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 19,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.0000000000000002,
+              0.0
+            ],
+            [
+              1.0000000000000002,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 0,
+          "ground_element": 2,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 20,
+        "shaded": false
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          7
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.707106781186548,
+              0.0
+            ],
+            [
+              2.2928932188134525,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.5857864376269046
+        ],
+        "logical_key": {
+          "cut_interval": 1,
+          "ground_element": 2,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 21,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.0,
+              0.0
+            ],
+            [
+              3.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 2,
+          "ground_element": 2,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 22,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              5.0,
+              0.0
+            ],
+            [
+              5.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 3,
+          "ground_element": 2,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 23,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.0000000000000002,
+              0.0
+            ],
+            [
+              1.0000000000000002,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 0,
+          "ground_element": 3,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 24,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.0,
+              0.0
+            ],
+            [
+              3.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": 1,
+          "ground_element": 3,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 25,
+        "shaded": false
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          8
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.707106781186548,
+              0.0
+            ],
+            [
+              5.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          1.292893218813452
+        ],
+        "logical_key": {
+          "cut_interval": 2,
+          "ground_element": 3,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 26,
+        "shaded": false
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          9
+        ],
+        "coordinates_m": [
+          [
+            [
+              5.0,
+              0.0
+            ],
+            [
+              100.0,
+              0.0
+            ]
+          ]
+        ],
+        "length_m": [
+          95.0
+        ],
+        "logical_key": {
+          "cut_interval": 3,
+          "ground_element": 3,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        "normal": null,
+        "reference_index": 27,
+        "shaded": false
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          10
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.2651650429449553,
+              1.2651650429449552
+            ],
+            [
+              -0.35355339059327373,
+              1.3535533905932737
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 28,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.2651650429449553,
+              1.2651650429449552
+            ],
+            [
+              -0.2651650429449553,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 29,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          11
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.17677669529663687,
+              1.176776695296637
+            ],
+            [
+              -0.2651650429449553,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999986
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 30,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.17677669529663687,
+              1.176776695296637
+            ],
+            [
+              -0.17677669529663687,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 31,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          12
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.08838834764831843,
+              1.0883883476483185
+            ],
+            [
+              -0.17677669529663687,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 32,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.08838834764831843,
+              1.0883883476483185
+            ],
+            [
+              -0.08838834764831843,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 33,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          13
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.0,
+              1.0
+            ],
+            [
+              -0.08838834764831843,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 34,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 35,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          14
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.08838834764831843,
+              0.9116116523516815
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 36,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.08838834764831843,
+              0.9116116523516815
+            ],
+            [
+              0.08838834764831843,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 37,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          15
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.17677669529663687,
+              0.8232233047033631
+            ],
+            [
+              0.08838834764831843,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999994
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 38,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.17677669529663687,
+              0.8232233047033631
+            ],
+            [
+              0.17677669529663687,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 39,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          16
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.2651650429449553,
+              0.7348349570550446
+            ],
+            [
+              0.17677669529663687,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 40,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.2651650429449553,
+              0.7348349570550446
+            ],
+            [
+              0.2651650429449553,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 41,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          17
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.35355339059327373,
+              0.6464466094067263
+            ],
+            [
+              0.2651650429449553,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999994
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 42,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.35355339059327373,
+              0.6464466094067263
+            ],
+            [
+              0.35355339059327373,
+              0.6464466094067263
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865475
+          ]
+        ],
+        "reference_index": 43,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          18
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.2651650429449553,
+              1.2651650429449552
+            ],
+            [
+              -0.35355339059327373,
+              1.3535533905932737
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 44,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.2651650429449553,
+              1.2651650429449552
+            ],
+            [
+              -0.2651650429449553,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 45,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          19
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.17677669529663687,
+              1.176776695296637
+            ],
+            [
+              -0.2651650429449553,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999986
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 46,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.17677669529663687,
+              1.176776695296637
+            ],
+            [
+              -0.17677669529663687,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 47,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          20
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.08838834764831843,
+              1.0883883476483185
+            ],
+            [
+              -0.17677669529663687,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 48,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              -0.08838834764831843,
+              1.0883883476483185
+            ],
+            [
+              -0.08838834764831843,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 49,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          21
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.0,
+              1.0
+            ],
+            [
+              -0.08838834764831843,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 50,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 51,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          22
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.08838834764831843,
+              0.9116116523516815
+            ],
+            [
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 52,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.08838834764831843,
+              0.9116116523516815
+            ],
+            [
+              0.08838834764831843,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 53,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          23
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.17677669529663687,
+              0.8232233047033631
+            ],
+            [
+              0.08838834764831843,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999994
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 54,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.17677669529663687,
+              0.8232233047033631
+            ],
+            [
+              0.17677669529663687,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 55,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          24
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.2651650429449553,
+              0.7348349570550446
+            ],
+            [
+              0.17677669529663687,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000003
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 56,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.2651650429449553,
+              0.7348349570550446
+            ],
+            [
+              0.2651650429449553,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 57,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          25
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.35355339059327373,
+              0.6464466094067263
+            ],
+            [
+              0.2651650429449553,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999994
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 58,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              0.35355339059327373,
+              0.6464466094067263
+            ],
+            [
+              0.35355339059327373,
+              0.6464466094067263
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865475
+          ]
+        ],
+        "reference_index": 59,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          26
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.7348349570550448,
+              1.2651650429449552
+            ],
+            [
+              1.6464466094067263,
+              1.3535533905932737
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000006
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 60,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.7348349570550448,
+              1.2651650429449552
+            ],
+            [
+              1.7348349570550448,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 61,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          27
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.823223304703363,
+              1.176776695296637
+            ],
+            [
+              1.7348349570550448,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999975
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 62,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.823223304703363,
+              1.176776695296637
+            ],
+            [
+              1.823223304703363,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 63,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          28
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.9116116523516815,
+              1.0883883476483185
+            ],
+            [
+              1.823223304703363,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000006
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 64,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.9116116523516815,
+              1.0883883476483185
+            ],
+            [
+              1.9116116523516815,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 65,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          29
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.0,
+              1.0
+            ],
+            [
+              1.9116116523516815,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000006
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 66,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.0,
+              1.0
+            ],
+            [
+              2.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 67,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          30
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.0883883476483183,
+              0.9116116523516815
+            ],
+            [
+              2.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.1249999999999999
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 68,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.0883883476483183,
+              0.9116116523516815
+            ],
+            [
+              2.0883883476483183,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 69,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          31
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.176776695296637,
+              0.8232233047033631
+            ],
+            [
+              2.0883883476483183,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000014
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 70,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.176776695296637,
+              0.8232233047033631
+            ],
+            [
+              2.176776695296637,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 71,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          32
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.2651650429449552,
+              0.7348349570550446
+            ],
+            [
+              2.176776695296637,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.1249999999999999
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 72,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.2651650429449552,
+              0.7348349570550446
+            ],
+            [
+              2.2651650429449552,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 73,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          33
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.353553390593274,
+              0.6464466094067263
+            ],
+            [
+              2.2651650429449552,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000014
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 74,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.353553390593274,
+              0.6464466094067263
+            ],
+            [
+              2.353553390593274,
+              0.6464466094067263
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865477
+          ]
+        ],
+        "reference_index": 75,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          34
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.7348349570550448,
+              1.2651650429449552
+            ],
+            [
+              1.6464466094067263,
+              1.3535533905932737
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000006
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 76,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.7348349570550448,
+              1.2651650429449552
+            ],
+            [
+              1.7348349570550448,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 77,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          35
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.823223304703363,
+              1.176776695296637
+            ],
+            [
+              1.7348349570550448,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999975
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 78,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.823223304703363,
+              1.176776695296637
+            ],
+            [
+              1.823223304703363,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 79,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          36
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.9116116523516815,
+              1.0883883476483185
+            ],
+            [
+              1.823223304703363,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000006
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 80,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              1.9116116523516815,
+              1.0883883476483185
+            ],
+            [
+              1.9116116523516815,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 81,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          37
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.0,
+              1.0
+            ],
+            [
+              1.9116116523516815,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000006
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 82,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.0,
+              1.0
+            ],
+            [
+              2.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 83,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          38
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.0883883476483183,
+              0.9116116523516815
+            ],
+            [
+              2.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.1249999999999999
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 84,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.0883883476483183,
+              0.9116116523516815
+            ],
+            [
+              2.0883883476483183,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 85,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          39
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.176776695296637,
+              0.8232233047033631
+            ],
+            [
+              2.0883883476483183,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000014
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 86,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.176776695296637,
+              0.8232233047033631
+            ],
+            [
+              2.176776695296637,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 87,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          40
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.2651650429449552,
+              0.7348349570550446
+            ],
+            [
+              2.176776695296637,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.1249999999999999
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 88,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.2651650429449552,
+              0.7348349570550446
+            ],
+            [
+              2.2651650429449552,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 89,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          41
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.353553390593274,
+              0.6464466094067263
+            ],
+            [
+              2.2651650429449552,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000014
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 90,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              2.353553390593274,
+              0.6464466094067263
+            ],
+            [
+              2.353553390593274,
+              0.6464466094067263
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865477
+          ]
+        ],
+        "reference_index": 91,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          42
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.7348349570550448,
+              1.2651650429449552
+            ],
+            [
+              3.646446609406726,
+              1.3535533905932737
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000022
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 92,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.7348349570550448,
+              1.2651650429449552
+            ],
+            [
+              3.7348349570550448,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 93,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          43
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.823223304703363,
+              1.176776695296637
+            ],
+            [
+              3.7348349570550448,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999975
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 94,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.823223304703363,
+              1.176776695296637
+            ],
+            [
+              3.823223304703363,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 95,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          44
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.9116116523516817,
+              1.0883883476483185
+            ],
+            [
+              3.823223304703363,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000022
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 96,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.9116116523516817,
+              1.0883883476483185
+            ],
+            [
+              3.9116116523516817,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 97,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          45
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.0,
+              1.0
+            ],
+            [
+              3.9116116523516817,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.1249999999999999
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 98,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.0,
+              1.0
+            ],
+            [
+              4.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 99,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          46
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.088388347648318,
+              0.9116116523516815
+            ],
+            [
+              4.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.1249999999999999
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 100,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.088388347648318,
+              0.9116116523516815
+            ],
+            [
+              4.088388347648318,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 101,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          47
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.1767766952966365,
+              0.8232233047033631
+            ],
+            [
+              4.088388347648318,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999983
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 102,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.1767766952966365,
+              0.8232233047033631
+            ],
+            [
+              4.1767766952966365,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 103,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          48
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.265165042944956,
+              0.7348349570550446
+            ],
+            [
+              4.1767766952966365,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000053
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 104,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.265165042944956,
+              0.7348349570550446
+            ],
+            [
+              4.265165042944956,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 105,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          49
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.353553390593274,
+              0.6464466094067263
+            ],
+            [
+              4.265165042944956,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999983
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 106,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.353553390593274,
+              0.6464466094067263
+            ],
+            [
+              4.353553390593274,
+              0.6464466094067263
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            0.7071067811865475,
+            0.7071067811865479
+          ]
+        ],
+        "reference_index": 107,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          50
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.7348349570550448,
+              1.2651650429449552
+            ],
+            [
+              3.646446609406726,
+              1.3535533905932737
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000022
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 108,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.7348349570550448,
+              1.2651650429449552
+            ],
+            [
+              3.7348349570550448,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 109,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          51
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.823223304703363,
+              1.176776695296637
+            ],
+            [
+              3.7348349570550448,
+              1.2651650429449552
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999975
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 110,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.823223304703363,
+              1.176776695296637
+            ],
+            [
+              3.823223304703363,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 111,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          52
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.9116116523516817,
+              1.0883883476483185
+            ],
+            [
+              3.823223304703363,
+              1.176776695296637
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000022
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 112,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              3.9116116523516817,
+              1.0883883476483185
+            ],
+            [
+              3.9116116523516817,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 113,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          53
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.0,
+              1.0
+            ],
+            [
+              3.9116116523516817,
+              1.0883883476483185
+            ]
+          ]
+        ],
+        "length_m": [
+          0.1249999999999999
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 114,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.0,
+              1.0
+            ],
+            [
+              4.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 115,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          54
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.088388347648318,
+              0.9116116523516815
+            ],
+            [
+              4.0,
+              1.0
+            ]
+          ]
+        ],
+        "length_m": [
+          0.1249999999999999
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 116,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.088388347648318,
+              0.9116116523516815
+            ],
+            [
+              4.088388347648318,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 117,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          55
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.1767766952966365,
+              0.8232233047033631
+            ],
+            [
+              4.088388347648318,
+              0.9116116523516815
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999983
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 118,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.1767766952966365,
+              0.8232233047033631
+            ],
+            [
+              4.1767766952966365,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 119,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          56
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.265165042944956,
+              0.7348349570550446
+            ],
+            [
+              4.1767766952966365,
+              0.8232233047033631
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12500000000000053
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 120,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.265165042944956,
+              0.7348349570550446
+            ],
+            [
+              4.265165042944956,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 121,
+        "shaded": true
+      },
+      {
+        "active": [
+          true
+        ],
+        "active_index": [
+          57
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.353553390593274,
+              0.6464466094067263
+            ],
+            [
+              4.265165042944956,
+              0.7348349570550446
+            ]
+          ]
+        ],
+        "length_m": [
+          0.12499999999999983
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 122,
+        "shaded": false
+      },
+      {
+        "active": [
+          false
+        ],
+        "active_index": [
+          null
+        ],
+        "coordinates_m": [
+          [
+            [
+              4.353553390593274,
+              0.6464466094067263
+            ],
+            [
+              4.353553390593274,
+              0.6464466094067263
+            ]
+          ]
+        ],
+        "length_m": [
+          0.0
+        ],
+        "logical_key": {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        "normal": [
+          [
+            -0.7071067811865475,
+            -0.7071067811865479
+          ]
+        ],
+        "reference_index": 123,
+        "shaded": true
+      }
+    ],
+    "topology": {
+      "active_surface_count": [
+        58
+      ],
+      "logical_surface_count": 124,
+      "reference_order": [
+        {
+          "cut_interval": 0,
+          "ground_element": 0,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 1,
+          "ground_element": 0,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 2,
+          "ground_element": 0,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 3,
+          "ground_element": 0,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 0,
+          "ground_element": 1,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 1,
+          "ground_element": 1,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 2,
+          "ground_element": 1,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 3,
+          "ground_element": 1,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 0,
+          "ground_element": 2,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 1,
+          "ground_element": 2,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 2,
+          "ground_element": 2,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 3,
+          "ground_element": 2,
+          "illumination": "shaded",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "shadow"
+        },
+        {
+          "cut_interval": 0,
+          "ground_element": 0,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 1,
+          "ground_element": 0,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 2,
+          "ground_element": 0,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 3,
+          "ground_element": 0,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 0,
+          "ground_element": 1,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 1,
+          "ground_element": 1,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 2,
+          "ground_element": 1,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 3,
+          "ground_element": 1,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 0,
+          "ground_element": 2,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 1,
+          "ground_element": 2,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 2,
+          "ground_element": 2,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 3,
+          "ground_element": 2,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 0,
+          "ground_element": 3,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 1,
+          "ground_element": 3,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 2,
+          "ground_element": 3,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": 3,
+          "ground_element": 3,
+          "illumination": "illuminated",
+          "kind": "ground",
+          "row": null,
+          "segment": null,
+          "side": null,
+          "source": "illumination"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 0,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 1,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 0,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 1,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 2,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 3,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 4,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 5,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 6,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 7,
+          "side": "front",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 0,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 1,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 2,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 3,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 4,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 5,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 6,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "illuminated",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        },
+        {
+          "cut_interval": null,
+          "ground_element": null,
+          "illumination": "shaded",
+          "kind": "pvrow",
+          "row": 2,
+          "segment": 7,
+          "side": "back",
+          "source": "pvrow"
+        }
+      ],
+      "reference_to_active": [
+        [
+          0
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          null
+        ],
+        [
+          5
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          6
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          7
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          null
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          null
+        ],
+        [
+          11
+        ],
+        [
+          null
+        ],
+        [
+          12
+        ],
+        [
+          null
+        ],
+        [
+          13
+        ],
+        [
+          null
+        ],
+        [
+          14
+        ],
+        [
+          null
+        ],
+        [
+          15
+        ],
+        [
+          null
+        ],
+        [
+          16
+        ],
+        [
+          null
+        ],
+        [
+          17
+        ],
+        [
+          null
+        ],
+        [
+          18
+        ],
+        [
+          null
+        ],
+        [
+          19
+        ],
+        [
+          null
+        ],
+        [
+          20
+        ],
+        [
+          null
+        ],
+        [
+          21
+        ],
+        [
+          null
+        ],
+        [
+          22
+        ],
+        [
+          null
+        ],
+        [
+          23
+        ],
+        [
+          null
+        ],
+        [
+          24
+        ],
+        [
+          null
+        ],
+        [
+          25
+        ],
+        [
+          null
+        ],
+        [
+          26
+        ],
+        [
+          null
+        ],
+        [
+          27
+        ],
+        [
+          null
+        ],
+        [
+          28
+        ],
+        [
+          null
+        ],
+        [
+          29
+        ],
+        [
+          null
+        ],
+        [
+          30
+        ],
+        [
+          null
+        ],
+        [
+          31
+        ],
+        [
+          null
+        ],
+        [
+          32
+        ],
+        [
+          null
+        ],
+        [
+          33
+        ],
+        [
+          null
+        ],
+        [
+          34
+        ],
+        [
+          null
+        ],
+        [
+          35
+        ],
+        [
+          null
+        ],
+        [
+          36
+        ],
+        [
+          null
+        ],
+        [
+          37
+        ],
+        [
+          null
+        ],
+        [
+          38
+        ],
+        [
+          null
+        ],
+        [
+          39
+        ],
+        [
+          null
+        ],
+        [
+          40
+        ],
+        [
+          null
+        ],
+        [
+          41
+        ],
+        [
+          null
+        ],
+        [
+          42
+        ],
+        [
+          null
+        ],
+        [
+          43
+        ],
+        [
+          null
+        ],
+        [
+          44
+        ],
+        [
+          null
+        ],
+        [
+          45
+        ],
+        [
+          null
+        ],
+        [
+          46
+        ],
+        [
+          null
+        ],
+        [
+          47
+        ],
+        [
+          null
+        ],
+        [
+          48
+        ],
+        [
+          null
+        ],
+        [
+          49
+        ],
+        [
+          null
+        ],
+        [
+          50
+        ],
+        [
+          null
+        ],
+        [
+          51
+        ],
+        [
+          null
+        ],
+        [
+          52
+        ],
+        [
+          null
+        ],
+        [
+          53
+        ],
+        [
+          null
+        ],
+        [
+          54
+        ],
+        [
+          null
+        ],
+        [
+          55
+        ],
+        [
+          null
+        ],
+        [
+          56
+        ],
+        [
+          null
+        ],
+        [
+          57
+        ],
+        [
+          null
+        ]
+      ]
+    },
+    "warnings": []
+  },
+  "schema_version": "0.1",
+  "status": "candidate"
+}

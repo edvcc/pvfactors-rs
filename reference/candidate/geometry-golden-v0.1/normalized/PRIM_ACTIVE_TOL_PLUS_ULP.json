@@ -1,0 +1,84 @@
+{
+  "case_id": "PRIM_ACTIVE_TOL_PLUS_ULP",
+  "classification": "normalized_reference",
+  "deviations": [],
+  "generator": {
+    "commit": "88e397dadc5d781515ae0b94fd2749e6e6286277",
+    "files": [
+      "reference/tools/build_g2_cases.py",
+      "reference/tools/geometry_golden.py"
+    ],
+    "sha256": "a743e83a7a374fe57e25afc5e8ec96c181ea98e7234c3ff5fb89744b5f11845a",
+    "version": "0.1.0"
+  },
+  "input": {
+    "domain": "boundary_policy",
+    "geometry": null,
+    "inputs": null,
+    "kind": "primitive",
+    "primitive": {
+      "arguments": {
+        "segment": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0000000000000002e-08,
+            0.0
+          ]
+        ]
+      },
+      "operation": "classify_segment"
+    }
+  },
+  "nonfinite_mask": [],
+  "provenance": {
+    "case_sha256": "b2c730edf357e9dfd3c46da7e9bd786d91c602ea1b80db63ea6bf8ec4d5932d5",
+    "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+    "method": "direct frozen primitive invocation",
+    "payload_sha256": "96ab8d689f09514ed14cb09a7eb06a3b1bc773e57c2d31a54f81e715b4c55b44",
+    "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+    "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+  },
+  "reference": {
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
+    "environment_id": "548e623fbc3038f5f020",
+    "name": "pvlib/solarfactors",
+    "numpy": "2.3.5",
+    "pvlib": "0.14.0",
+    "python": "3.12.12",
+    "runtime": {
+      "environment_id": "548e623fbc3038f5f020",
+      "implementation": "CPython",
+      "machine": "arm64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.12.12",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "shapely": "2.1.2",
+    "version": "v1.6.1"
+  },
+  "result": {
+    "active": true,
+    "length_m": 1.0000000000000002e-08,
+    "logical_slot_retained": true,
+    "operation": "classify_segment",
+    "outcome": "captured"
+  },
+  "schema_version": "0.1",
+  "status": "candidate"
+}

@@ -1,0 +1,25 @@
+{
+  "environment_id": "548e623fbc3038f5f020",
+  "canonical_environment_match": false,
+  "python": "3.12.12",
+  "claimed_canonical_python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "pvlib": "0.14.0",
+    "shapely": "2.1.2",
+    "jsonschema": "4.25.1"
+  },
+  "canonical_package_result": "PASS_29_OF_29",
+  "runtime_result": "CONDITION",
+  "mismatch": "CPython 3.12.14 was not available for macOS arm64 in the execution environment; capture used installed CPython 3.12.12."
+}

@@ -1,0 +1,92 @@
+{
+  "case_id": "PRIM_POINT_TOUCH",
+  "classification": "corrected_expectation",
+  "deviations": [],
+  "generator": {
+    "commit": "88e397dadc5d781515ae0b94fd2749e6e6286277",
+    "files": [
+      "reference/tools/build_g2_cases.py",
+      "reference/tools/geometry_golden.py"
+    ],
+    "sha256": "a743e83a7a374fe57e25afc5e8ec96c181ea98e7234c3ff5fb89744b5f11845a",
+    "version": "0.1.0"
+  },
+  "input": {
+    "domain": "boundary_policy",
+    "geometry": null,
+    "inputs": null,
+    "kind": "primitive",
+    "primitive": {
+      "arguments": {
+        "u": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            2.0,
+            0.0
+          ]
+        ],
+        "v": [
+          [
+            1.0,
+            -1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      },
+      "operation": "classify_intersection"
+    }
+  },
+  "nonfinite_mask": [],
+  "provenance": {
+    "case_sha256": "bbaf55f5c75100e9ef1017a93a2ab26700d127fcb619586cddb841a3f4ed2479",
+    "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+    "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+    "payload_sha256": "c2e663caf3f457f64ab1895f61cf2bc22f2eea32aa3829edce1aafc205361e6c",
+    "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+    "transformation": "field-level corrections are listed in deviations"
+  },
+  "reference": {
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
+    "environment_id": "548e623fbc3038f5f020",
+    "name": "pvlib/solarfactors",
+    "numpy": "2.3.5",
+    "pvlib": "0.14.0",
+    "python": "3.12.12",
+    "runtime": {
+      "environment_id": "548e623fbc3038f5f020",
+      "implementation": "CPython",
+      "machine": "arm64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "python": "3.12.12",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "shapely": "2.1.2",
+    "version": "v1.6.1"
+  },
+  "result": {
+    "classification": "point_touch",
+    "outcome": "corrected_expectation",
+    "positive_length_overlap": false
+  },
+  "schema_version": "0.1",
+  "status": "candidate"
+}

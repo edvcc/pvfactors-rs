@@ -1,0 +1,35 @@
+........................................................................ [ 70%]
+..............................                                           [100%]
+=============================== warnings summary ===============================
+pvfactors/tests/test_engine.py::test_check_tilt_zero_discontinuity
+pvfactors/tests/test_engine.py::test_check_tilt_zero_discontinuity
+pvfactors/tests/test_engine.py::test_check_tilt_zero_discontinuity
+pvfactors/tests/test_engine.py::test_check_tilt_zero_discontinuity
+pvfactors/tests/test_irradiance/test_models.py::test_hybridperez_horizon_shading_ts
+pvfactors/tests/test_viewfactors/test_calculator.py::test_ts_view_factors
+  /Users/chenchen/GitRepo/github.com/edvcc/pvfactors-rs/upstream/solarfactors/pvfactors/geometry/pvground.py:121: RuntimeWarning: divide by zero encountered in divide
+    dx = (y1s_pvrow - y_ground) / np.tan(rotation_vec)
+
+pvfactors/tests/test_geometry/test_pvarray.py::test_plot_ordered_pvarray
+  /Users/chenchen/GitRepo/github.com/edvcc/pvfactors-rs/upstream/solarfactors/pvfactors/tests/test_geometry/test_pvarray.py:70: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+    plt.show()
+
+pvfactors/tests/test_geometry/test_pvarray.py::test_plot_ordered_pvarray
+  /Users/chenchen/GitRepo/github.com/edvcc/pvfactors-rs/upstream/solarfactors/pvfactors/tests/test_geometry/test_pvarray.py:78: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+    plt.show()
+
+pvfactors/tests/test_geometry/test_timeseries.py::test_plot_ts_pvrow
+  /Users/chenchen/GitRepo/github.com/edvcc/pvfactors-rs/upstream/solarfactors/pvfactors/tests/test_geometry/test_timeseries.py:74: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+    plt.show()
+
+pvfactors/tests/test_geometry/test_timeseries.py::test_plot_ts_pvrow
+  /Users/chenchen/GitRepo/github.com/edvcc/pvfactors-rs/upstream/solarfactors/pvfactors/tests/test_geometry/test_timeseries.py:79: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+    plt.show()
+
+pvfactors/tests/test_geometry/test_timeseries.py::test_plot_ts_pvrow
+  /Users/chenchen/GitRepo/github.com/edvcc/pvfactors-rs/upstream/solarfactors/pvfactors/tests/test_geometry/test_timeseries.py:84: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+    plt.show()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/chenchen/GitRepo/github.com/edvcc/pvfactors-rs/evidence/g2/upstream-pytest.xml -
+102 passed, 11 warnings in 30.03s

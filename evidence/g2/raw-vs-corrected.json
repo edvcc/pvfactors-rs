@@ -1,0 +1,46 @@
+{
+  "schema_version": "0.1",
+  "pass": true,
+  "differences": [
+    {
+      "case_id": "GROUND_NORMAL_EXTENT",
+      "field": "ground.extent",
+      "raw_reference": [-100.0, 100.0],
+      "corrected_expectation": [-10.0, 10.0],
+      "dev_id": "DEV-004",
+      "cdr_id": "CDR-003"
+    },
+    {
+      "case_id": "GROUND_BOUNDARY_ENDPOINT",
+      "field": "ground.extent",
+      "raw_reference": [-100.0, 100.0],
+      "corrected_expectation": [-0.5, 0.5],
+      "dev_id": "DEV-004",
+      "cdr_id": "CDR-003"
+    },
+    {
+      "case_id": "GROUND_NEAR_BOUNDARY",
+      "field": "ground.extent",
+      "raw_reference": [-100.0, 100.0],
+      "corrected_expectation": [-0.500000000001, 0.500000000001],
+      "dev_id": "DEV-004",
+      "cdr_id": "CDR-003"
+    },
+    {
+      "case_id": "INVALID_EXTENT_REVERSED",
+      "field": "ground.extent",
+      "raw_reference": [-100.0, 100.0],
+      "corrected_expectation": [1.0, -1.0],
+      "dev_id": "DEV-004",
+      "cdr_id": "CDR-003"
+    },
+    {
+      "case_id": "PRIM_COMPLETE_COVER_DIFFERENCE",
+      "field": "result.length_m",
+      "raw_reference": 1.0,
+      "corrected_expectation": 0.0,
+      "dev_id": "DEV-016",
+      "cdr_id": "CDR-006"
+    }
+  ]
+}
