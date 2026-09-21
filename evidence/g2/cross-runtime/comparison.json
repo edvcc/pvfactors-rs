@@ -6,9 +6,9 @@
     "pass": true
   },
   "inventory": {
-    "left_artifacts": 117,
+    "left_artifacts": 135,
     "pass": true,
-    "right_artifacts": 117
+    "right_artifacts": 135
   },
   "left": {
     "environment": {
@@ -44,12 +44,37 @@
         "tzdata": "2026.3",
         "urllib3": "2.8.0"
       },
+      "canonical_runtime": {
+        "geos": "3.13.1",
+        "implementation": "CPython",
+        "libc": {
+          "name": "glibc",
+          "version": "2.39"
+        },
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "system": "Linux",
+        "thread_environment": {
+          "MKL_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "PYTHONHASHSEED": "0"
+        }
+      },
       "mismatches": [
-        "Python 3.12.12 != canonical 3.12.14"
+        "python 3.12.12 != canonical 3.12.14",
+        "system Darwin != canonical Linux",
+        "machine arm64 != canonical x86_64",
+        "libc {'name': '', 'version': ''} != canonical {'name': 'glibc', 'version': '2.39'}"
       ],
       "runtime": {
-        "environment_id": "548e623fbc3038f5f020",
+        "environment_id": "7a7f276c3fd0900371ed",
+        "geos": "3.13.1",
         "implementation": "CPython",
+        "libc": {
+          "name": "",
+          "version": ""
+        },
         "machine": "arm64",
         "packages": {
           "jsonschema": "4.25.1",
@@ -61,6 +86,7 @@
         },
         "platform": "macOS-26.6.2-arm64-arm-64bit",
         "python": "3.12.12",
+        "system": "Darwin",
         "thread_environment": {
           "MKL_NUM_THREADS": "1",
           "OMP_NUM_THREADS": "1",
@@ -69,8 +95,8 @@
         }
       }
     },
-    "manifest_sha256": "b51e626e19734fce0d27e7c7a85c929f16a082e34e56343617b0dc6b83e76920",
-    "path": "reference/candidate/geometry-golden-v0.1"
+    "manifest_sha256": "9e6d23ab458dc0a7d28e325ddf01d109439881f5f06837238427547558a20c21",
+    "path": "macos-arm64-cpython-3.12.12-owner-revision-1-candidate"
   },
   "metadata": {
     "compared_as_payload": false,
@@ -83,39 +109,39 @@
   },
   "numerical": {
     "counts": {
-      "angle": 150,
-      "length": 4270,
-      "orientation": 3426,
-      "position": 19721
+      "angle": 182,
+      "length": 5126,
+      "orientation": 4058,
+      "position": 23695
     },
     "differences": [],
     "limits": {
       "angle": {
-        "absolute": 5e-11,
-        "relative": 5e-13,
+        "absolute": 5E-11,
+        "relative": 5E-13,
         "unit": "degree"
       },
       "length": {
-        "absolute": 5e-12,
-        "relative": 5e-13,
+        "absolute": 5E-12,
+        "relative": 5E-13,
         "unit": "m"
       },
       "orientation": {
-        "absolute": 5e-12,
-        "relative": 5e-13,
+        "absolute": 5E-12,
+        "relative": 5E-13,
         "unit": "dimensionless"
       },
       "position": {
-        "absolute": 5e-12,
-        "relative": 5e-13,
+        "absolute": 5E-12,
+        "relative": 5E-13,
         "unit": "m"
       }
     },
     "max_absolute_difference": {
       "angle": 0.0,
-      "length": 1.1102230246251565e-16,
-      "orientation": 5.551115123125783e-17,
-      "position": 5.551115123125783e-17
+      "length": 5.551115123125783E-16,
+      "orientation": 5.551115123125783E-17,
+      "position": 4.996003610813204E-16
     },
     "pass": true
   },
@@ -201,8 +227,8 @@
         }
       }
     },
-    "manifest_sha256": "5afcc7e2cbc761ef883a422dd596e972cda603313a27f8425278dd067be57e3f",
-    "path": "/tmp/pvfactors-g2-r0.AqPIlT/geometry-golden-v0.1"
+    "manifest_sha256": "d805262560199583dad12853b422c2976bd40866cf4ff1c50133206c79b71417",
+    "path": "reference/candidate/geometry-golden-v0.1"
   },
   "schema_version": "0.1",
   "tolerance_profile": {
@@ -210,7 +236,7 @@
     "sha256": "09f56ae5adf222340b883a3e6a0818ddfecccf788dcb558191a16e3a4b9334ab"
   },
   "topology": {
-    "checks": 19511,
+    "checks": 23528,
     "differences": [],
     "exact_match": true,
     "pass": true

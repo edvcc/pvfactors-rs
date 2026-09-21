@@ -1,20 +1,27 @@
 # G2 Cross-Runtime Evidence
 
-The left-hand candidate was generated on macOS arm64 / CPython 3.12.12 and is
-preserved here before replacement. Its complete artifact corpus remains
-retrievable from Git commit `182dbb54d351db733ff40ba40dd4f119767b1ee4`; its
-manifest SHA-256 is
-`b51e626e19734fce0d27e7c7a85c929f16a082e34e56343617b0dc6b83e76920`.
+Owner Review Revision 1 was generated independently on macOS arm64 / CPython
+3.12.12 and Canonical Reference Runtime R0. Both used generator commit
+`75b31ff01e6ff438d0f24c8ea7d6e6f92ab6c553`, the same 45-case catalog, and the
+unchanged `geometry-tolerance-v0.1`.
 
-The right-hand candidate was generated in Canonical Reference Runtime R0 from
-generator commit `50500914c227aaeaf738b785eea3a20d96e8ee28`. Its manifest
-SHA-256 is
-`5afcc7e2cbc761ef883a422dd596e972cda603313a27f8425278dd067be57e3f`.
+- macOS manifest: `9e6d23ab458dc0a7d28e325ddf01d109439881f5f06837238427547558a20c21`
+- R0 manifest: `d805262560199583dad12853b422c2976bd40866cf4ff1c50133206c79b71417`
+- Exact topology/key/side/source/reference/active/order/classification checks:
+  23,528, all matched.
+- Numerical violations: 0.
+- Maximum absolute differences: angle 0, length
+  `5.551115123125783e-16 m`, orientation `5.551115123125783e-17`, position
+  `4.996003610813204e-16 m`.
 
-`comparison.json` separates algorithm/Geometry payload from the expected
-provenance and environment metadata differences. It records exact topology,
-key, side, index, active-state, input, classification, and nonfinite checks,
-plus numerical comparisons under the unchanged `geometry-tolerance-v0.1`.
+`comparison.json` excludes only provenance/environment metadata from the
+Geometry payload comparison. The environment IDs differ as expected; R0 alone
+has `canonical_environment_match=true`.
 
-Both candidates remain unapproved. Replacement of the candidate directory is
-not an approval or a promotion into `reference/approved`.
+Historical evidence is not overwritten: the superseded 39-case R0 manifest
+`5afcc7e2...57e3f` and validation summary are under `evidence/g2/history/`.
+The pre-Revision-1 macOS corpus remains retrievable from Git commit
+`182dbb54d351db733ff40ba40dd4f119767b1ee4`.
+
+All candidates remain unapproved. Candidate replacement is not promotion into
+`reference/approved`.

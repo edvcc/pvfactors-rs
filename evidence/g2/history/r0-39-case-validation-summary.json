@@ -1,0 +1,385 @@
+{
+  "artifact_count": 117,
+  "environment": {
+    "canonical_environment_match": true,
+    "canonical_requirements": {
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.4.4",
+      "contourpy": "1.3.3",
+      "cycler": "0.12.1",
+      "fonttools": "4.61.1",
+      "h5py": "3.16.0",
+      "idna": "3.19",
+      "iniconfig": "2.3.0",
+      "kiwisolver": "1.4.9",
+      "matplotlib": "3.10.8",
+      "mock": "5.2.0",
+      "numpy": "2.3.5",
+      "packaging": "26.3",
+      "pandas": "2.2.3",
+      "pillow": "12.3.0",
+      "pluggy": "1.6.0",
+      "pvlib": "0.14.0",
+      "pygments": "2.21.0",
+      "pyparsing": "3.3.2",
+      "pytest": "8.4.2",
+      "pytest-mock": "3.15.1",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2026.3.post1",
+      "requests": "2.34.2",
+      "scipy": "1.17.0",
+      "shapely": "2.1.2",
+      "six": "1.17.0",
+      "tzdata": "2026.3",
+      "urllib3": "2.8.0"
+    },
+    "canonical_runtime": {
+      "geos": "3.13.1",
+      "implementation": "CPython",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
+      "python": "3.12.14",
+      "system": "Linux",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "mismatches": [],
+    "runtime": {
+      "environment_id": "031158a1d1be8cdb9093",
+      "geos": "3.13.1",
+      "implementation": "CPython",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "system": "Linux",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    }
+  },
+  "invariants": {
+    "case_reports": [
+      {
+        "case_id": "C01",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "C02",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "C03",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "C04",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "CUT_2",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "CUT_8",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "CUT_ASYMMETRIC",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_BOUNDARY_ENDPOINT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_NEAR_BOUNDARY",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_NORMAL_EXTENT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "MIRROR_BASE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "MIRROR_IMAGE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SHADING_HIGH_CANDIDATE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SHADING_NONE_CANDIDATE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SHADING_PARTIAL_CANDIDATE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SUN_90.0",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SUN_ALONG_AXIS",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_1e-10",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_90.0",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_FLAT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_LEFT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_NEAR_LEFT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_NORMAL_EXTENT_CORRECTED",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_BOUNDARY_ENDPOINT_CORRECTED",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_NEAR_BOUNDARY_CORRECTED",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "UNDERGROUND_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "CUT_ZERO_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_AXIS_AZIMUTH_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_SURFACE_AZIMUTH_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_NAN_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_INF_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_EXTENT_REVERSED_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_COMPLETE_COVER_DIFFERENCE_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ENDPOINT_TOUCH_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_POINT_TOUCH_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_POSITIVE_OVERLAP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ZERO_LENGTH_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_PARALLEL_PROJECTION_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_COINCIDENT_PROJECTION_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ACTIVE_TOL_MINUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ACTIVE_TOL_EXACT_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ACTIVE_TOL_PLUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "MIRROR_PAIR",
+        "failures": [],
+        "pass": true
+      }
+    ],
+    "failures": [],
+    "pass": true
+  },
+  "manifest_sha256": "5afcc7e2cbc761ef883a422dd596e972cda603313a27f8425278dd067be57e3f",
+  "pass": true,
+  "raw_vs_corrected": {
+    "differences": [
+      {
+        "case_id": "GROUND_BOUNDARY_ENDPOINT",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          -0.5,
+          0.5
+        ],
+        "dev_id": "DEV-004",
+        "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+        "field": "ground.extent",
+        "raw_reference": [
+          -100.0,
+          100.0
+        ]
+      },
+      {
+        "case_id": "GROUND_NEAR_BOUNDARY",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          -0.500000000001,
+          0.500000000001
+        ],
+        "dev_id": "DEV-004",
+        "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+        "field": "ground.extent",
+        "raw_reference": [
+          -100.0,
+          100.0
+        ]
+      },
+      {
+        "case_id": "GROUND_NORMAL_EXTENT",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          -10.0,
+          10.0
+        ],
+        "dev_id": "DEV-004",
+        "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+        "field": "ground.extent",
+        "raw_reference": [
+          -100.0,
+          100.0
+        ]
+      },
+      {
+        "case_id": "INVALID_EXTENT_REVERSED",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          1.0,
+          -1.0
+        ],
+        "dev_id": "DEV-004",
+        "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+        "field": "ground.extent",
+        "raw_reference": [
+          -100.0,
+          100.0
+        ]
+      },
+      {
+        "case_id": "PRIM_COMPLETE_COVER_DIFFERENCE",
+        "cdr_id": "CDR-006",
+        "corrected_expectation": 0.0,
+        "dev_id": "DEV-016",
+        "explanation": "the minuend is completely covered and the mathematical difference is empty",
+        "field": "result.length_m",
+        "raw_reference": 1.0
+      }
+    ],
+    "pass": true,
+    "schema_version": "0.1"
+  },
+  "schema_validation": {
+    "errors": [],
+    "pass": true
+  },
+  "schema_version": "0.1"
+}

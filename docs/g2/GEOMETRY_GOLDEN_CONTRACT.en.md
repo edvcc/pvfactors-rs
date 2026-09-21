@@ -23,7 +23,8 @@ Owner approves the named set.
    nonfinite mask, logical key, `ReferenceIndex`, and per-frame active map. It
    does not correct behavior.
 3. `corrected_expectation` applies only named CDR/DEV decisions. Every changed
-   field records the raw value, corrected value, DEV ID, CDR ID, and explanation.
+   field records its field-level path, raw value, corrected value, DEV ID, CDR
+   ID, and explanation.
 
 No generator may rewrite raw evidence to make comparison pass. A corrected
 field without decision provenance invalidates the candidate.
@@ -47,6 +48,13 @@ contain structured V1 errors and `panic=false`.
 `{kind, source, row, side, segment, illumination, ground_element, cut_interval}`.
 It survives zero length. The exact reference and reconstruction order is fixed
 by CDR-006; vector position is not an identity.
+
+The corrected Geometry representation classifies solar zenith as
+`direct_projection`, `horizon_no_direct_projection`, or
+`below_horizon_no_direct_projection`. A no-direct artifact retains finite row
+geometry and stable inactive ground-shadow logical slots, plus one active
+illuminated surface spanning the configured finite extent. It contains no huge
+or nonfinite direct shadow and does not decide the later simulation skip policy.
 
 ## Manifest and provenance
 
@@ -76,4 +84,3 @@ Tools write only to `reference/candidate`. `reference/approved` remains
 `NOT APPROVED`. Approval must name the candidate manifest hash and approve
 CDR-003, CDR-006, and the candidate. Until then G2 is
 `CONDITIONALLY PASS`, Awaiting Repository Owner Approval.
-

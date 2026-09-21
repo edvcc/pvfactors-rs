@@ -1,7 +1,7 @@
 {
   "pass": true,
-  "candidate": "reference/candidate/geometry-golden-v0.1",
-  "fresh_generation": "/tmp/pvfactors-g2-official-compare",
+  "candidate": "macos-arm64-cpython-3.12.12-owner-revision-1-candidate",
+  "fresh_generation": "independent macOS arm64 / CPython 3.12.12 generation",
   "comparison": "byte-for-byte canonical JSON",
   "differences": []
 }

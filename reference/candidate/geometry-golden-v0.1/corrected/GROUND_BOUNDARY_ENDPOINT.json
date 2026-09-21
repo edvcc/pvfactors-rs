@@ -10,21 +10,33 @@
       ],
       "dev_id": "DEV-004",
       "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
-      "field": "ground.extent",
+      "path": "$.result.ground.corrected_extent_m",
       "raw_reference": [
         -100.0,
         100.0
       ]
+    },
+    {
+      "cdr_id": "CDR-003",
+      "corrected_expectation": [
+        "direct_projection"
+      ],
+      "dev_id": "DEV-027",
+      "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+      "path": "$.result.projection[*].classification",
+      "raw_reference": [
+        "regular"
+      ]
     }
   ],
   "generator": {
-    "commit": "50500914c227aaeaf738b785eea3a20d96e8ee28",
+    "commit": "75b31ff01e6ff438d0f24c8ea7d6e6f92ab6c553",
     "files": [
       "reference/tools/build_g2_cases.py",
       "reference/tools/geometry_golden.py"
     ],
-    "sha256": "32b3c882980a2ea24479efcd155fdaf5e56ed3a042f370939a22b8f9122c8e40",
-    "version": "0.1.0"
+    "sha256": "fbc6e32468370e2eb3994721031ba3378d4ea96c1e2d315a920f3ff43b35b200",
+    "version": "0.2.0"
   },
   "input": {
     "domain": "boundary_policy",
@@ -74,7 +86,7 @@
     "case_sha256": "4ba9a27914c79b0988382aac4318a0e11f8fe024547b5199b92f27869de83513",
     "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
     "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
-    "payload_sha256": "a0bcfd1d93e16d78dff9f83fe6ba8eca2f91f2a0002a4d3c07542b6a967b02fa",
+    "payload_sha256": "50cc2da4640b66b721dbe2063a76e68380bb02ab5c02637c1faf8fca9af074d4",
     "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
     "transformation": "field-level corrections are listed in deviations"
   },
@@ -213,7 +225,7 @@
     "projection": [
       {
         "alpha_rad": 0.7853981633974484,
-        "classification": "regular",
+        "classification": "direct_projection",
         "rotation_deg": -0.0,
         "solar_2d_vector": [
           0.7071067811865475,

@@ -10,7 +10,7 @@
       ],
       "dev_id": "DEV-004",
       "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
-      "field": "ground.extent",
+      "path": "$.result.ground.corrected_extent_m",
       "raw_reference": [
         -100.0,
         100.0
@@ -18,13 +18,13 @@
     }
   ],
   "generator": {
-    "commit": "50500914c227aaeaf738b785eea3a20d96e8ee28",
+    "commit": "75b31ff01e6ff438d0f24c8ea7d6e6f92ab6c553",
     "files": [
       "reference/tools/build_g2_cases.py",
       "reference/tools/geometry_golden.py"
     ],
-    "sha256": "32b3c882980a2ea24479efcd155fdaf5e56ed3a042f370939a22b8f9122c8e40",
-    "version": "0.1.0"
+    "sha256": "fbc6e32468370e2eb3994721031ba3378d4ea96c1e2d315a920f3ff43b35b200",
+    "version": "0.2.0"
   },
   "input": {
     "domain": "invalid",

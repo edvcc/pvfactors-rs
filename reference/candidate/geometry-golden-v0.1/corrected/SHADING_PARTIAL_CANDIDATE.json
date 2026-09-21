@@ -1,15 +1,28 @@
 {
   "case_id": "SHADING_PARTIAL_CANDIDATE",
   "classification": "corrected_expectation",
-  "deviations": [],
+  "deviations": [
+    {
+      "cdr_id": "CDR-003",
+      "corrected_expectation": [
+        "direct_projection"
+      ],
+      "dev_id": "DEV-027",
+      "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+      "path": "$.result.projection[*].classification",
+      "raw_reference": [
+        "regular"
+      ]
+    }
+  ],
   "generator": {
-    "commit": "50500914c227aaeaf738b785eea3a20d96e8ee28",
+    "commit": "75b31ff01e6ff438d0f24c8ea7d6e6f92ab6c553",
     "files": [
       "reference/tools/build_g2_cases.py",
       "reference/tools/geometry_golden.py"
     ],
-    "sha256": "32b3c882980a2ea24479efcd155fdaf5e56ed3a042f370939a22b8f9122c8e40",
-    "version": "0.1.0"
+    "sha256": "fbc6e32468370e2eb3994721031ba3378d4ea96c1e2d315a920f3ff43b35b200",
+    "version": "0.2.0"
   },
   "input": {
     "domain": "valid",
@@ -59,7 +72,7 @@
     "case_sha256": "1f567e8c65063ada950af42c77c47c567c20cc6e5e4844c36538f277602f949a",
     "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
     "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
-    "payload_sha256": "6e5b2f7f4fbed3ed88aa21f92201b8d2c97135d2c9f263f0877ac4372b6afee1",
+    "payload_sha256": "12e02a47017f79701a5cc7ac67dc56aeb889e07e3de562594105934f2a4257a0",
     "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
     "transformation": "field-level corrections are listed in deviations"
   },
@@ -290,7 +303,7 @@
     "projection": [
       {
         "alpha_rad": 0.17453292519943303,
-        "classification": "regular",
+        "classification": "direct_projection",
         "rotation_deg": -35.0,
         "solar_2d_vector": [
           0.984807753012208,
