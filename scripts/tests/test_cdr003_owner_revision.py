@@ -16,7 +16,7 @@ class Cdr003OwnerRevisionTests(unittest.TestCase):
         cls.cases = {case["id"]: case for case in build()["cases"]}
 
     def test_concrete_owner_review_cases_are_present(self):
-        self.assertEqual(len(self.cases), 45)
+        self.assertEqual(len(self.cases), 55)
         for case_id in (
             "TILT_120", "TILT_180", "GCR_GT_1", "SUN_BELOW_HORIZON",
             "INVALID_TILT_NEGATIVE", "INVALID_TILT_GT_180",

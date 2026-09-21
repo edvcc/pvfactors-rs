@@ -31,7 +31,7 @@ SCHEMAS = ROOT / "reference/schemas"
 DEFAULT_CANDIDATE = ROOT / "reference/candidate/geometry-golden-v0.1"
 REFERENCE_SHA = "ecbfc863657e239817603a43898ae173c7ccad9c"
 REFERENCE_VERSION = "v1.6.1"
-GENERATOR_VERSION = "0.2.0"
+GENERATOR_VERSION = "0.3.0"
 REFERENCE_EXTENT = [-100.0, 100.0]
 CANONICAL_RUNTIME = {
     "implementation": "CPython",
@@ -332,6 +332,26 @@ def ordered_surface_records(pvarray: Any) -> list[dict]:
     return records
 
 
+def static_surface_snapshot(surface: Any) -> dict:
+    """Serialize one static surface without losing its frozen matrix index."""
+    return {
+        "reference_index": int(surface.index),
+        "shaded": bool(surface.shaded),
+        "coordinates_m": [[float(x), float(y)] for x, y in surface.coords],
+        "length_m": float(surface.length),
+    }
+
+
+def requested_ground_surfaces_at(ground: Any, idx: int) -> list[dict]:
+    """Evaluate each ground element at the requested frame, preserving adapter order."""
+    surfaces = []
+    for element in ground.illum_elements:
+        surfaces.extend(element.non_point_surfaces_at(idx))
+    for element in ground.shadow_elements:
+        surfaces.extend(element.non_point_surfaces_at(idx))
+    return [static_surface_snapshot(surface) for surface in surfaces]
+
+
 def capture_ordered(case: dict) -> tuple[str, dict, list[dict]]:
     import numpy as np
     from pvfactors.geometry import OrderedPVArray
@@ -426,6 +446,36 @@ def capture_ordered(case: dict) -> tuple[str, dict, list[dict]]:
         "warnings": caught,
     }
     deviations = []
+    if case["id"] == "MULTI_TIMESTEP_NONZERO_INDEX":
+        requested_index = 1
+        frozen_selection = [
+            static_surface_snapshot(surface)
+            for surface in ground.non_point_surfaces_at(requested_index)
+        ]
+        requested_selection = requested_ground_surfaces_at(ground, requested_index)
+        raw_lookup = {
+            "requested_index": requested_index,
+            "selection": frozen_selection,
+            "selection_count": len(frozen_selection),
+            "evaluation_policy": "frozen_adapter_forces_index_zero",
+        }
+        corrected_lookup = {
+            "requested_index": requested_index,
+            "selection": requested_selection,
+            "selection_count": len(requested_selection),
+            "evaluation_policy": "evaluate_requested_frame",
+        }
+        result["nonzero_index_ground_lookup"] = raw_lookup
+        deviations.append({
+            "dev_id": "DEV-013", "cdr_id": "CDR-006",
+            "path": "$.result.nonzero_index_ground_lookup",
+            "raw_reference": raw_lookup,
+            "corrected_expectation": corrected_lookup,
+            "explanation": (
+                "the frozen TsGround adapter ignores idx and evaluates frame zero; "
+                "V1 evaluates the requested nonzero frame"
+            ),
+        })
     if geometry["ground_extent"] != REFERENCE_EXTENT:
         deviations.append({
             "dev_id": "DEV-004", "cdr_id": "CDR-003", "path": "$.result.ground.corrected_extent_m",
@@ -484,6 +534,28 @@ def primitive_reference(case: dict) -> tuple[str, dict, list[dict]]:
         return "candidate", {"outcome": "captured", "operation": operation,
                              "length_m": length, "active": length > 1e-8,
                              "logical_slot_retained": True}, deviations
+    if operation == "classify_endpoint_snap":
+        endpoint, candidate = args["endpoint"], args["candidate"]
+        distance = math.hypot(candidate[0] - endpoint[0], candidate[1] - endpoint[1])
+        return "candidate", {"outcome": "captured", "operation": operation,
+                             "distance_m": distance, "snapped": distance < 1e-8}, deviations
+    if operation == "classify_orientation":
+        u, v = args["u"], args["v"]
+        cross = abs(u[0] * v[1] - u[1] * v[0])
+        normalized = cross / (math.hypot(*u) * math.hypot(*v))
+        threshold = max(1e-12, 64.0 * sys.float_info.epsilon)
+        return "candidate", {"outcome": "captured", "operation": operation,
+                             "normalized_abs_cross": normalized,
+                             "parallel": normalized <= threshold,
+                             "threshold": threshold}, deviations
+    if operation == "classify_line_offset":
+        line, point = args["line"], args["point"]
+        offset = float(LineString(line).distance(Point(point)))
+        scale = float(args["coordinate_scale_m"])
+        threshold = max(1e-10, 64.0 * sys.float_info.epsilon * max(1.0, scale))
+        return "candidate", {"outcome": "captured", "operation": operation,
+                             "offset_m": offset, "within": offset <= threshold,
+                             "threshold_m": threshold}, deviations
     raise ValueError(f"unknown primitive operation: {operation}")
 
 
@@ -498,6 +570,14 @@ def artifact(case: dict, classification: str, status: str, result: dict,
     encoded_result = encode_nonfinite(result, "$.result", mask)
     case_hash = sha256_bytes(canonical_bytes(case))
     payload_hash = sha256_bytes(canonical_bytes(encoded_result))
+    if case["kind"] == "ordered_pvarray":
+        method = "direct frozen-reference introspection"
+    elif case["primitive"]["operation"] in {
+        "classify_endpoint_snap", "classify_orientation", "classify_line_offset",
+    }:
+        method = "deterministic CDR-006 predicate probe"
+    else:
+        method = "direct frozen primitive invocation"
     return {
         "schema_version": "0.1",
         "case_id": case["id"],
@@ -509,7 +589,7 @@ def artifact(case: dict, classification: str, status: str, result: dict,
         "result": encoded_result,
         "provenance": {
             "source": f"pvlib/solarfactors@{REFERENCE_SHA}",
-            "method": "direct frozen-reference introspection" if case["kind"] == "ordered_pvarray" else "direct frozen primitive invocation",
+            "method": method,
             "transformation": "none" if classification == "raw_reference" else classification,
             "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
             "case_sha256": case_hash,
@@ -738,6 +818,12 @@ def corrected_artifact(case: dict, normalized: dict) -> dict:
             extent = decode_number(case["geometry"])["ground_extent"]
             if result.get("outcome") == "captured" and extent != REFERENCE_EXTENT:
                 result = clip_ground(result, extent)
+            if case["id"] == "MULTI_TIMESTEP_NONZERO_INDEX":
+                correction = next(
+                    deviation["corrected_expectation"] for deviation in deviations
+                    if deviation["dev_id"] == "DEV-013"
+                )
+                result["nonzero_index_ground_lookup"] = copy.deepcopy(correction)
         status = "candidate"
     value = artifact(case, "corrected_expectation", status, result, deviations)
     value["provenance"]["method"] = "CDR-003/CDR-006 candidate policy applied to normalized reference"
@@ -1101,6 +1187,40 @@ def validate_invariants(output: Path, cases_path: Path = CASES) -> dict:
         reports.append({"case_id": f"{case_id}_OWNER_REVIEW", "pass": not case_failures,
                         "failures": case_failures})
         failures.extend(f"{case_id}: {failure}" for failure in case_failures)
+
+    # Owner Review Revision 2: DEV-013 must be observable and corrected at a
+    # genuinely nonzero frame, without changing logical/reference identity.
+    case_id = "MULTI_TIMESTEP_NONZERO_INDEX"
+    raw_item = read_json(output / "raw" / f"{case_id}.json")
+    corrected_item = read_json(output / "corrected" / f"{case_id}.json")
+    raw_lookup = raw_item["result"].get("nonzero_index_ground_lookup", {})
+    corrected_lookup = corrected_item["result"].get("nonzero_index_ground_lookup", {})
+    index_failures = []
+    if raw_lookup.get("requested_index") != 1 or corrected_lookup.get("requested_index") != 1:
+        index_failures.append("probe did not request nonzero frame index one")
+    if raw_lookup.get("selection") == corrected_lookup.get("selection"):
+        index_failures.append("case does not expose the frozen idx-to-zero adapter defect")
+    if corrected_lookup.get("evaluation_policy") != "evaluate_requested_frame":
+        index_failures.append("corrected lookup does not evaluate the requested frame")
+    frame_one_ground = {
+        surface["reference_index"] for surface in corrected_item["result"].get("surfaces", [])
+        if surface["logical_key"]["kind"] == "ground" and surface["active"][1]
+    }
+    selected_ground = {
+        surface["reference_index"] for surface in corrected_lookup.get("selection", [])
+    }
+    if selected_ground != frame_one_ground:
+        index_failures.append("corrected selection does not match frame-one active ground topology")
+    if not any(
+        deviation.get("dev_id") == "DEV-013"
+        and deviation.get("cdr_id") == "CDR-006"
+        and deviation.get("path") == "$.result.nonzero_index_ground_lookup"
+        for deviation in corrected_item.get("deviations", [])
+    ):
+        index_failures.append("DEV-013 field-level deviation is missing")
+    reports.append({"case_id": f"{case_id}_OWNER_REVIEW", "pass": not index_failures,
+                    "failures": index_failures})
+    failures.extend(f"{case_id}: {failure}" for failure in index_failures)
     return {"pass": not failures, "case_reports": reports, "failures": failures}
 
 

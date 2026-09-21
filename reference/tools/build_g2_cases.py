@@ -107,6 +107,23 @@ def build() -> dict:
         invalid_tilt_negative, invalid_tilt_gt_180,
     ]
 
+    multi_timestep = ordered(
+        source, "C03", new_id="MULTI_TIMESTEP_NONZERO_INDEX", domain="reference_deviation",
+        tags=["multi_timestep", "nonzero_index", "DEV-013", "owner_review_revision_2"],
+    )
+    multi_timestep["description"] = (
+        "two-frame ground lookup proving that requested index one is not silently evaluated at index zero"
+    )
+    multi_timestep["inputs"].update({
+        "solar_zenith": [45.0, 70.0],
+        "solar_azimuth": [270.0, 270.0],
+        "surface_tilt": [0.0, 45.0],
+        "surface_azimuth": [270.0, 270.0],
+    })
+    multi_timestep["expected"]["requested_frame_index"] = 1
+    multi_timestep["expected"]["v1_nonzero_index_policy"] = "evaluate_requested_frame"
+    cases.append(multi_timestep)
+
     # Concrete ground-extent cases. The frozen reference still computes on
     # [-100, 100]; corrected_expectation applies the proposed public extent.
     for case_id, extent, description, domain in [
@@ -157,7 +174,10 @@ def build() -> dict:
     invalid_extent["description"] = "ground extent lower bound is not less than upper bound"
     cases += [invalid_axis, invalid_surface, invalid_nan, invalid_inf, invalid_extent]
 
-    tol = 1e-8
+    active_tol = 1e-8
+    endpoint_snap_tol = 1e-8
+    orientation_tol = 1e-12
+    line_offset_tol = 1e-10
     cases += [
         primitive(
             "PRIM_COMPLETE_COVER_DIFFERENCE", "difference",
@@ -204,16 +224,63 @@ def build() -> dict:
         ),
     ]
     for label, value in [
-        ("MINUS_ULP", math.nextafter(tol, 0.0)),
-        ("EXACT", tol),
-        ("PLUS_ULP", math.nextafter(tol, math.inf)),
+        ("MINUS_ULP", math.nextafter(active_tol, 0.0)),
+        ("EXACT", active_tol),
+        ("PLUS_ULP", math.nextafter(active_tol, math.inf)),
     ]:
         cases.append(primitive(
             f"PRIM_ACTIVE_TOL_{label}", "classify_segment",
             {"segment": [[0.0, 0.0], [value, 0.0]]},
             tags=["tolerance", "ulp", "active_length"],
             description=f"active-length threshold {label.lower().replace('_', ' ')}",
-            expected={"active": value > tol, "logical_slot_retained": True, "length_m": value},
+            expected={"active": value > active_tol, "logical_slot_retained": True, "length_m": value},
+        ))
+
+    for label, value in [
+        ("MINUS_ULP", math.nextafter(endpoint_snap_tol, 0.0)),
+        ("EXACT", endpoint_snap_tol),
+        ("PLUS_ULP", math.nextafter(endpoint_snap_tol, math.inf)),
+    ]:
+        cases.append(primitive(
+            f"PRIM_ENDPOINT_SNAP_{label}", "classify_endpoint_snap",
+            {"endpoint": [0.0, 0.0], "candidate": [value, 0.0]},
+            tags=["tolerance", "ulp", "endpoint_snap", "owner_review_revision_2"],
+            description=f"endpoint-snap threshold {label.lower().replace('_', ' ')}",
+            expected={"distance_m": value, "snapped": value < endpoint_snap_tol},
+        ))
+
+    for label, value in [
+        ("MINUS_ULP", math.nextafter(orientation_tol, 0.0)),
+        ("EXACT", orientation_tol),
+        ("PLUS_ULP", math.nextafter(orientation_tol, math.inf)),
+    ]:
+        cases.append(primitive(
+            f"PRIM_ORIENTATION_{label}", "classify_orientation",
+            {"u": [1.0, 0.0], "v": [1.0, value], "coordinate_scale_m": 1.0},
+            tags=["tolerance", "ulp", "orientation", "owner_review_revision_2"],
+            description=f"normalized-orientation threshold {label.lower().replace('_', ' ')}",
+            expected={
+                "normalized_abs_cross": value,
+                "parallel": value <= orientation_tol,
+                "threshold": orientation_tol,
+            },
+        ))
+
+    for label, value in [
+        ("MINUS_ULP", math.nextafter(line_offset_tol, 0.0)),
+        ("EXACT", line_offset_tol),
+        ("PLUS_ULP", math.nextafter(line_offset_tol, math.inf)),
+    ]:
+        cases.append(primitive(
+            f"PRIM_LINE_OFFSET_{label}", "classify_line_offset",
+            {"line": [[0.0, 0.0], [1.0, 0.0]], "point": [0.5, value], "coordinate_scale_m": 1.0},
+            tags=["tolerance", "ulp", "line_offset", "owner_review_revision_2"],
+            description=f"scale-aware line-offset threshold {label.lower().replace('_', ' ')}",
+            expected={
+                "offset_m": value,
+                "within": value <= line_offset_tol,
+                "threshold_m": line_offset_tol,
+            },
         ))
 
     return {
