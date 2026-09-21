@@ -3,12 +3,12 @@
   "classification": "raw_reference",
   "deviations": [],
   "generator": {
-    "commit": "0376dafc0019be3d4045c124f1f83c9a9f94bead",
+    "commit": "50500914c227aaeaf738b785eea3a20d96e8ee28",
     "files": [
       "reference/tools/build_g2_cases.py",
       "reference/tools/geometry_golden.py"
     ],
-    "sha256": "14cd40d1b36ffcad2b7441f2d226c4fe6e7f879ded55135117945c92291fb5e2",
+    "sha256": "32b3c882980a2ea24479efcd155fdaf5e56ed3a042f370939a22b8f9122c8e40",
     "version": "0.1.0"
   },
   "input": {
@@ -43,15 +43,20 @@
   },
   "reference": {
     "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
-    "environment_id": "548e623fbc3038f5f020",
+    "environment_id": "031158a1d1be8cdb9093",
     "name": "pvlib/solarfactors",
     "numpy": "2.3.5",
     "pvlib": "0.14.0",
-    "python": "3.12.12",
+    "python": "3.12.14",
     "runtime": {
-      "environment_id": "548e623fbc3038f5f020",
+      "environment_id": "031158a1d1be8cdb9093",
+      "geos": "3.13.1",
       "implementation": "CPython",
-      "machine": "arm64",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
       "packages": {
         "jsonschema": "4.25.1",
         "numpy": "2.3.5",
@@ -60,8 +65,9 @@
         "scipy": "1.17.0",
         "shapely": "2.1.2"
       },
-      "platform": "macOS-26.6.2-arm64-arm-64bit",
-      "python": "3.12.12",
+      "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "system": "Linux",
       "thread_environment": {
         "MKL_NUM_THREADS": "1",
         "OMP_NUM_THREADS": "1",

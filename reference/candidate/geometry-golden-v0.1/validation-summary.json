@@ -1,7 +1,7 @@
 {
   "artifact_count": 117,
   "environment": {
-    "canonical_environment_match": false,
+    "canonical_environment_match": true,
     "canonical_requirements": {
       "certifi": "2026.7.22",
       "charset-normalizer": "3.4.4",
@@ -33,13 +33,33 @@
       "tzdata": "2026.3",
       "urllib3": "2.8.0"
     },
-    "mismatches": [
-      "Python 3.12.12 != canonical 3.12.14"
-    ],
-    "runtime": {
-      "environment_id": "548e623fbc3038f5f020",
+    "canonical_runtime": {
+      "geos": "3.13.1",
       "implementation": "CPython",
-      "machine": "arm64",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
+      "python": "3.12.14",
+      "system": "Linux",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "mismatches": [],
+    "runtime": {
+      "environment_id": "031158a1d1be8cdb9093",
+      "geos": "3.13.1",
+      "implementation": "CPython",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
       "packages": {
         "jsonschema": "4.25.1",
         "numpy": "2.3.5",
@@ -48,8 +68,9 @@
         "scipy": "1.17.0",
         "shapely": "2.1.2"
       },
-      "platform": "macOS-26.6.2-arm64-arm-64bit",
-      "python": "3.12.12",
+      "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "system": "Linux",
       "thread_environment": {
         "MKL_NUM_THREADS": "1",
         "OMP_NUM_THREADS": "1",
@@ -279,7 +300,7 @@
     "failures": [],
     "pass": true
   },
-  "manifest_sha256": "b51e626e19734fce0d27e7c7a85c929f16a082e34e56343617b0dc6b83e76920",
+  "manifest_sha256": "5afcc7e2cbc761ef883a422dd596e972cda603313a27f8425278dd067be57e3f",
   "pass": true,
   "raw_vs_corrected": {
     "differences": [

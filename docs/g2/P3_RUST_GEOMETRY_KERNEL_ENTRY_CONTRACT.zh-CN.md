@@ -63,5 +63,6 @@ Python、pvlib、Shapely 或 GEOS。
 
 ## 进入前提
 
-Owner 批准 CDR-003、CDR-006、准确 Golden manifest 与 tolerance；解决/接受 Python runtime
-差异；指定 `develop` integration baseline；仅在这些记录存在后创建 P3 task。本合同本身不授权实现。
+Owner 批准 CDR-003、CDR-006、准确 Golden manifest 与 tolerance；指定 `develop` integration
+baseline；仅在这些记录存在后创建 P3 task。Canonical Runtime 差异已通过 R0 生成与
+cross-runtime comparison 解决。本合同本身不授权实现。

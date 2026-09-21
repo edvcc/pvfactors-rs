@@ -1,10 +1,18 @@
 {
-  "environment_id": "548e623fbc3038f5f020",
-  "canonical_environment_match": false,
-  "python": "3.12.12",
-  "claimed_canonical_python": "3.12.14",
-  "platform": "macOS-26.6.2-arm64-arm-64bit",
-  "machine": "arm64",
+  "environment_id": "031158a1d1be8cdb9093",
+  "canonical_environment_match": true,
+  "implementation": "CPython",
+  "python": "3.12.14",
+  "python_full": "3.12.14 (main, Sep 21 2026, 14:24:37) [GCC 13.3.0]",
+  "python_compiler": "GCC 13.3.0",
+  "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+  "system": "Linux",
+  "machine": "x86_64",
+  "libc": {
+    "name": "glibc",
+    "version": "2.39"
+  },
+  "geos": "3.13.1",
   "thread_environment": {
     "OPENBLAS_NUM_THREADS": "1",
     "OMP_NUM_THREADS": "1",
@@ -20,6 +28,8 @@
     "jsonschema": "4.25.1"
   },
   "canonical_package_result": "PASS_29_OF_29",
-  "runtime_result": "CONDITION",
-  "mismatch": "CPython 3.12.14 was not available for macOS arm64 in the execution environment; capture used installed CPython 3.12.12."
+  "runtime_result": "PASS",
+  "container_image_id": "sha256:677db45cfde1dad92994bf1b5283b9b63297722b18ed76eb8c5b00761045ada3",
+  "base_image_digest": "sha256:f4da486bc9b357039b00eb68d03fdbda5570525a5c14f56907d75fd5aa204f8f",
+  "python_source_sha256": "5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a"
 }

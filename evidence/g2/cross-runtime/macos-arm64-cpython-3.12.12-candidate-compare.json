@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "candidate": "reference/candidate/geometry-golden-v0.1",
+  "fresh_generation": "/tmp/pvfactors-g2-official-compare",
+  "comparison": "byte-for-byte canonical JSON",
+  "differences": []
+}
