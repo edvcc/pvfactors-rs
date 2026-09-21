@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-21",
+  "mandatory_documents": 14,
+  "total_documents": 15,
+  "source_files_verified": 78,
+  "algorithm_items": 60,
+  "source_symbols": 356,
+  "canonical_cases": 67,
+  "derived_families": 6,
+  "case_schema_valid": true,
+  "trace_schema_valid": true,
+  "inventory_source_and_test_links_valid": true,
+  "probe_json_replay_equal": true,
+  "nominal_npz_array_replay_equal": true,
+  "canonical_env_verify_only_passed": true,
+  "upstream_tests_original": "102 passed, 6 warnings",
+  "upstream_tests_clean_venv": "102 passed, 6 warnings",
+  "core_rust_files_created": 0,
+  "approved_golden_corpus": false,
+  "cross_platform_runtime_tested": false,
+  "errors": []
+}

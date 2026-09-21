@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Solarfactors canonical case catalog v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "reference_sha",
+    "status",
+    "cases",
+    "derived_families"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "reference_sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "status": {
+      "const": "design_not_approved"
+    },
+    "derived_families": {
+      "type": "array"
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "description",
+          "geometry",
+          "inputs",
+          "irradiance_model",
+          "model_options",
+          "mode",
+          "target",
+          "domain",
+          "tags",
+          "expected_observation",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "geometry": {
+            "type": "object",
+            "required": [
+              "n_pvrows",
+              "pvrow_width",
+              "pvrow_height",
+              "gcr",
+              "axis_azimuth",
+              "ground_extent",
+              "cut"
+            ]
+          },
+          "inputs": {
+            "type": "object",
+            "required": [
+              "timestamps",
+              "DNI",
+              "DHI",
+              "solar_zenith",
+              "solar_azimuth",
+              "surface_tilt",
+              "surface_azimuth",
+              "albedo"
+            ],
+            "additionalProperties": {
+              "type": "array"
+            }
+          },
+          "irradiance_model": {
+            "enum": [
+              "HybridPerezOrdered",
+              "IsotropicOrdered"
+            ]
+          },
+          "mode": {
+            "enum": [
+              "Full",
+              "Fast"
+            ]
+          },
+          "model_options": {
+            "type": "object"
+          },
+          "target": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "domain": {
+            "enum": [
+              "valid",
+              "invalid",
+              "boundary_policy",
+              "reference_deviation",
+              "unsupported_candidate"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "expected_observation": {
+            "type": "string"
+          },
+          "status": {
+            "const": "specified_not_approved_golden"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

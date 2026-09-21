@@ -1,0 +1,4 @@
+# Reference-only G2 tooling dependency. Not a production Rust dependency.
+-r requirements-canonical.txt
+jsonschema==4.25.1
+

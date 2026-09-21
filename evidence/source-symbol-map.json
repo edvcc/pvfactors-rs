@@ -1,0 +1,4763 @@
+[
+  {
+    "file": "pvfactors/__init__.py",
+    "symbol": "PVFactorsError",
+    "line": 18,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": []
+  },
+  {
+    "file": "pvfactors/engine.py",
+    "symbol": "PVEngine",
+    "line": 10,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-01",
+      "ENG-03",
+      "ENG-04",
+      "ENG-05",
+      "ENG-06",
+      "ENG-08"
+    ]
+  },
+  {
+    "file": "pvfactors/engine.py",
+    "symbol": "PVEngine.__init__",
+    "line": 15,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-01",
+      "ENG-03",
+      "ENG-04",
+      "ENG-05",
+      "ENG-06",
+      "ENG-08"
+    ]
+  },
+  {
+    "file": "pvfactors/engine.py",
+    "symbol": "PVEngine.with_rho_initialization",
+    "line": 55,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-01",
+      "ENG-03",
+      "ENG-04",
+      "ENG-05",
+      "ENG-06",
+      "ENG-08"
+    ]
+  },
+  {
+    "file": "pvfactors/engine.py",
+    "symbol": "PVEngine.fit",
+    "line": 109,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-01",
+      "ENG-03",
+      "ENG-04",
+      "ENG-05",
+      "ENG-06",
+      "ENG-08"
+    ]
+  },
+  {
+    "file": "pvfactors/engine.py",
+    "symbol": "PVEngine.run_full_mode",
+    "line": 177,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-01",
+      "ENG-03",
+      "ENG-04",
+      "ENG-05",
+      "ENG-06",
+      "ENG-08"
+    ]
+  },
+  {
+    "file": "pvfactors/engine.py",
+    "symbol": "PVEngine.run_fast_mode",
+    "line": 267,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-01",
+      "ENG-03",
+      "ENG-04",
+      "ENG-05",
+      "ENG-06",
+      "ENG-08"
+    ]
+  },
+  {
+    "file": "pvfactors/engine.py",
+    "symbol": "PVEngine._calculate_back_ts_segment_qinc",
+    "line": 321,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-01",
+      "ENG-03",
+      "ENG-04",
+      "ENG-05",
+      "ENG-06",
+      "ENG-08"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "_check_uniform_shading",
+    "line": 16,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "_coords_from_center_tilt_length",
+    "line": 40,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "_get_rotation_from_tilt_azimuth",
+    "line": 97,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "_get_solar_2d_vectors",
+    "line": 128,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface",
+    "line": 161,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.__init__",
+    "line": 167,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.is_empty",
+    "line": 204,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.length",
+    "line": 209,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.boundary",
+    "line": 214,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.coords",
+    "line": 219,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.centroid",
+    "line": 223,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.interpolate",
+    "line": 226,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.distance",
+    "line": 230,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.dwithin",
+    "line": 234,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.buffer",
+    "line": 238,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface._calculate_n_vector",
+    "line": 242,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.plot",
+    "line": 252,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.difference",
+    "line": 282,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.get_param",
+    "line": 298,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSurface.update_params",
+    "line": 317,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSurface",
+    "line": 328,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSurface.__init__",
+    "line": 334,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection",
+    "line": 361,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.__init__",
+    "line": 366,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.geometry",
+    "line": 393,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.is_empty",
+    "line": 401,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.length",
+    "line": 406,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.distance",
+    "line": 410,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.dwithin",
+    "line": 414,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection._get_shading",
+    "line": 418,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.plot",
+    "line": 436,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.add_linestring",
+    "line": 451,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.add_pvsurface",
+    "line": 469,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.remove_linestring",
+    "line": 481,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.merge_surfaces",
+    "line": 514,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.cut_at_point",
+    "line": 528,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.get_param_weighted",
+    "line": 562,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.get_param_ww",
+    "line": 579,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.update_params",
+    "line": 603,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.n_vector",
+    "line": 615,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.n_surfaces",
+    "line": 626,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.surface_indices",
+    "line": 631,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "ShadeCollection.from_linestring_coords",
+    "line": 636,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment",
+    "line": 657,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.__init__",
+    "line": 662,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.geometry",
+    "line": 689,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.is_empty",
+    "line": 697,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.length",
+    "line": 701,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.distance",
+    "line": 704,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.dwithin",
+    "line": 707,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment._check_collinear",
+    "line": 710,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.plot",
+    "line": 737,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.cast_shadow",
+    "line": 759,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.cut_at_point",
+    "line": 781,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.get_param_weighted",
+    "line": 797,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.get_param_ww",
+    "line": 814,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.update_params",
+    "line": 838,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.n_vector",
+    "line": 850,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.n_surfaces",
+    "line": 862,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.surface_indices",
+    "line": 869,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.from_linestring_coords",
+    "line": 877,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.shaded_collection",
+    "line": 911,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.shaded_collection",
+    "line": 916,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.shaded_collection",
+    "line": 929,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.illum_collection",
+    "line": 936,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.illum_collection",
+    "line": 941,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.illum_collection",
+    "line": 954,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.shaded_length",
+    "line": 961,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "PVSegment.all_surfaces",
+    "line": 972,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide",
+    "line": 984,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.__init__",
+    "line": 988,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.geometry",
+    "line": 1002,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.is_empty",
+    "line": 1006,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.length",
+    "line": 1010,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.distance",
+    "line": 1013,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.dwithin",
+    "line": 1016,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.intersects",
+    "line": 1019,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.from_linestring_coords",
+    "line": 1023,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.n_vector",
+    "line": 1066,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.shaded_length",
+    "line": 1074,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.n_surfaces",
+    "line": 1082,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.all_surfaces",
+    "line": 1090,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.surface_indices",
+    "line": 1099,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.plot",
+    "line": 1106,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.cast_shadow",
+    "line": 1127,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.merge_shaded_areas",
+    "line": 1140,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.cut_at_point",
+    "line": 1145,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.get_param_weighted",
+    "line": 1160,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.get_param_ww",
+    "line": 1177,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BaseSide.update_params",
+    "line": 1201,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BasePVArray",
+    "line": 1213,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BasePVArray.__init__",
+    "line": 1220,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BasePVArray.n_ts_surfaces",
+    "line": 1236,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BasePVArray.all_ts_surfaces",
+    "line": 1245,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BasePVArray.ts_surface_indices",
+    "line": 1254,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BasePVArray.plot_at_idx",
+    "line": 1258,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BasePVArray.fit",
+    "line": 1308,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BasePVArray.update_params",
+    "line": 1312,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "symbol": "BasePVArray._index_all_ts_surfaces",
+    "line": 1323,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "MATH-01",
+      "MATH-02",
+      "MATH-03",
+      "GEO-02",
+      "GEO-03",
+      "GEO-04",
+      "GEO-08",
+      "GEO-19"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/plot.py",
+    "symbol": "plot_coords",
+    "line": 4,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": []
+  },
+  {
+    "file": "pvfactors/geometry/plot.py",
+    "symbol": "plot_bounds",
+    "line": 24,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": []
+  },
+  {
+    "file": "pvfactors/geometry/plot.py",
+    "symbol": "plot_line",
+    "line": 43,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": []
+  },
+  {
+    "file": "pvfactors/geometry/pvarray.py",
+    "symbol": "OrderedPVArray",
+    "line": 12,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-06",
+      "GEO-09",
+      "GEO-10"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvarray.py",
+    "symbol": "OrderedPVArray.__init__",
+    "line": 21,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-06",
+      "GEO-09",
+      "GEO-10"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvarray.py",
+    "symbol": "OrderedPVArray.init_from_dict",
+    "line": 75,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-06",
+      "GEO-09",
+      "GEO-10"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvarray.py",
+    "symbol": "OrderedPVArray.fit_from_dict_of_scalars",
+    "line": 99,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-06",
+      "GEO-09",
+      "GEO-10"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvarray.py",
+    "symbol": "OrderedPVArray.fit",
+    "line": 130,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-06",
+      "GEO-09",
+      "GEO-10"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvarray.py",
+    "symbol": "OrderedPVArray._calculate_pvrow_elements_coords",
+    "line": 180,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-06",
+      "GEO-09",
+      "GEO-10"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvarray.py",
+    "symbol": "OrderedPVArray._calculate_interrow_shading",
+    "line": 228,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-06",
+      "GEO-09",
+      "GEO-10"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround",
+    "line": 15,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.__init__",
+    "line": 24,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.from_ts_pvrows_and_angles",
+    "line": 73,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.from_ordered_shadows_coords",
+    "line": 132,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.at",
+    "line": 178,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.plot_at_idx",
+    "line": 272,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.update_params",
+    "line": 308,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.update_illum_params",
+    "line": 321,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.update_shaded_params",
+    "line": 337,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.get_param_weighted",
+    "line": 353,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.get_param_ww",
+    "line": 369,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.shadow_coords_left_of_cut_point",
+    "line": 395,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.shadow_coords_right_of_cut_point",
+    "line": 416,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.ts_surfaces_side_of_cut_point",
+    "line": 437,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.n_ts_surfaces",
+    "line": 462,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.n_ts_shaded_surfaces",
+    "line": 467,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.n_ts_illum_surfaces",
+    "line": 475,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.all_ts_surfaces",
+    "line": 483,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.length",
+    "line": 493,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.shaded_length",
+    "line": 503,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.non_point_shaded_surfaces_at",
+    "line": 510,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.non_point_illum_surfaces_at",
+    "line": 528,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.non_point_surfaces_at",
+    "line": 546,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround.n_non_point_surfaces_at",
+    "line": 562,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround._shadow_elements_from_coords_and_cut_pts",
+    "line": 578,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround._illum_elements_from_coords_and_cut_pts",
+    "line": 622,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGround._merge_shadow_surfaces",
+    "line": 679,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement",
+    "line": 763,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.__init__",
+    "line": 770,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.b1",
+    "line": 801,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.b2",
+    "line": 806,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.centroid",
+    "line": 811,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.length",
+    "line": 816,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.all_ts_surfaces",
+    "line": 821,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.surfaces_at",
+    "line": 825,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.non_point_surfaces_at",
+    "line": 841,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.get_param_weighted",
+    "line": 858,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement.get_param_ww",
+    "line": 874,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement._create_all_ts_surfaces",
+    "line": 898,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement._coords_right_of_cut_point",
+    "line": 937,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "TsGroundElement._coords_left_of_cut_point",
+    "line": 963,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "PVGround",
+    "line": 989,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "PVGround.__init__",
+    "line": 992,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "PVGround.as_flat",
+    "line": 1008,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "PVGround.from_lists_surfaces",
+    "line": 1043,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvground.py",
+    "symbol": "PVGround.boundary",
+    "line": 1093,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-11",
+      "GEO-12",
+      "GEO-13",
+      "GEO-14",
+      "GEO-20"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow",
+    "line": 14,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.__init__",
+    "line": 19,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.from_raw_inputs",
+    "line": 45,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow._calculate_full_coords",
+    "line": 98,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.surfaces_at_idx",
+    "line": 125,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.plot_at_idx",
+    "line": 142,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.at",
+    "line": 166,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.update_params",
+    "line": 186,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.n_ts_surfaces",
+    "line": 198,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.all_ts_surfaces",
+    "line": 203,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.centroid",
+    "line": 208,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.length",
+    "line": 215,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsPVRow.highest_point",
+    "line": 220,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide",
+    "line": 227,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.__init__",
+    "line": 232,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.from_raw_inputs",
+    "line": 246,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.surfaces_at_idx",
+    "line": 347,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.at",
+    "line": 364,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.plot_at_idx",
+    "line": 382,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.shaded_length",
+    "line": 404,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.length",
+    "line": 412,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.get_param_weighted",
+    "line": 419,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.get_param_ww",
+    "line": 435,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.update_params",
+    "line": 459,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.n_ts_surfaces",
+    "line": 471,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSide.all_ts_surfaces",
+    "line": 479,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment",
+    "line": 487,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.__init__",
+    "line": 491,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.surfaces_at_idx",
+    "line": 517,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.plot_at_idx",
+    "line": 534,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.at",
+    "line": 555,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.length",
+    "line": 578,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.shaded_length",
+    "line": 583,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.centroid",
+    "line": 588,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.get_param_weighted",
+    "line": 592,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.get_param_ww",
+    "line": 608,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.update_params",
+    "line": 624,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.highest_point",
+    "line": 636,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.lowest_point",
+    "line": 641,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.all_ts_surfaces",
+    "line": 646,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "TsSegment.n_ts_surfaces",
+    "line": 651,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRowSide",
+    "line": 656,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRowSide.__init__",
+    "line": 664,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow",
+    "line": 676,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.__init__",
+    "line": 679,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.length",
+    "line": 708,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.intersects",
+    "line": 712,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.from_linestring_coords",
+    "line": 728,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.from_center_tilt_width",
+    "line": 772,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.plot",
+    "line": 816,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.boundary",
+    "line": 840,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.highest_point",
+    "line": 845,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.lowest_point",
+    "line": 852,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.all_surfaces",
+    "line": 859,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.surface_indices",
+    "line": 864,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "symbol": "PVRow.update_params",
+    "line": 871,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-05",
+      "GEO-09",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsShadeCollection",
+    "line": 10,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsShadeCollection.__init__",
+    "line": 15,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsShadeCollection.list_ts_surfaces",
+    "line": 31,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsShadeCollection.length",
+    "line": 36,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsShadeCollection.n_ts_surfaces",
+    "line": 44,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsShadeCollection.get_param_weighted",
+    "line": 48,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsShadeCollection.get_param_ww",
+    "line": 64,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsShadeCollection.update_params",
+    "line": 84,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsShadeCollection.at",
+    "line": 95,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface",
+    "line": 112,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.__init__",
+    "line": 116,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.at",
+    "line": 143,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.plot_at_idx",
+    "line": 174,
+    "category": "plotting_out_of_scope",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.b1",
+    "line": 191,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.b2",
+    "line": 196,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.centroid",
+    "line": 201,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.get_param",
+    "line": 205,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.update_params",
+    "line": 220,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.length",
+    "line": 231,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.highest_point",
+    "line": 236,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.lowest_point",
+    "line": 241,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.u_vector",
+    "line": 246,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsSurface.is_empty",
+    "line": 253,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords",
+    "line": 259,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords.__init__",
+    "line": 263,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords.at",
+    "line": 279,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords.from_array",
+    "line": 290,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords.length",
+    "line": 303,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords.as_array",
+    "line": 309,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords.centroid",
+    "line": 314,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords.highest_point",
+    "line": 321,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords.lowest_point",
+    "line": 330,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsLineCoords.__repr__",
+    "line": 338,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsPointCoords",
+    "line": 343,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsPointCoords.__init__",
+    "line": 347,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsPointCoords.at",
+    "line": 360,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsPointCoords.as_array",
+    "line": 371,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsPointCoords.from_array",
+    "line": 376,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "TsPointCoords.__repr__",
+    "line": 386,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/timeseries.py",
+    "symbol": "_get_params_at_idx",
+    "line": 391,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-01",
+      "GEO-07",
+      "ENG-07"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/utils.py",
+    "symbol": "difference",
+    "line": 10,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-15",
+      "GEO-16",
+      "GEO-17",
+      "GEO-18"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/utils.py",
+    "symbol": "contains",
+    "line": 74,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-15",
+      "GEO-16",
+      "GEO-17",
+      "GEO-18"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/utils.py",
+    "symbol": "is_collinear",
+    "line": 79,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-15",
+      "GEO-16",
+      "GEO-17",
+      "GEO-18"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/utils.py",
+    "symbol": "check_collinear",
+    "line": 100,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-15",
+      "GEO-16",
+      "GEO-17",
+      "GEO-18"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/utils.py",
+    "symbol": "are_2d_vecs_collinear",
+    "line": 110,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-15",
+      "GEO-16",
+      "GEO-17",
+      "GEO-18"
+    ]
+  },
+  {
+    "file": "pvfactors/geometry/utils.py",
+    "symbol": "projection",
+    "line": 117,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "GEO-15",
+      "GEO-16",
+      "GEO-17",
+      "GEO-18"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel",
+    "line": 5,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.fit",
+    "line": 12,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.transform",
+    "line": 16,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.get_full_modeling_vectors",
+    "line": 20,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.gnd_shaded",
+    "line": 25,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.gnd_illum",
+    "line": 30,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.pvrow_shaded",
+    "line": 35,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.pvrow_illum",
+    "line": 40,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.sky_luminance",
+    "line": 45,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.get_ts_modeling_vectors",
+    "line": 49,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.get_summed_components",
+    "line": 94,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.update_ts_surface_sky_term",
+    "line": 123,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/base.py",
+    "symbol": "BaseModel.initialize_rho",
+    "line": 139,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-02",
+      "IRR-09",
+      "IRR-12"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered",
+    "line": 16,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.__init__",
+    "line": 28,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.fit",
+    "line": 84,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.transform",
+    "line": 187,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.get_full_modeling_vectors",
+    "line": 254,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.get_full_ts_modeling_vectors",
+    "line": 291,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.gnd_shaded",
+    "line": 328,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.gnd_illum",
+    "line": 333,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.pvrow_shaded",
+    "line": 338,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.pvrow_illum",
+    "line": 344,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered.sky_luminance",
+    "line": 350,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "IsotropicOrdered._calculate_faoi_modifiers",
+    "line": 354,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered",
+    "line": 391,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.__init__",
+    "line": 407,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.fit",
+    "line": 480,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.transform",
+    "line": 626,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.get_full_modeling_vectors",
+    "line": 748,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.get_full_ts_modeling_vectors",
+    "line": 785,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.gnd_shaded",
+    "line": 822,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.gnd_illum",
+    "line": 827,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.pvrow_shaded",
+    "line": 832,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.pvrow_illum",
+    "line": 838,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered.sky_luminance",
+    "line": 844,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered._calculate_horizon_shading_pct_ts",
+    "line": 848,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered._calculate_circumsolar_shading_pct",
+    "line": 905,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered._calculate_luminance_poa_components",
+    "line": 950,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "symbol": "HybridPerezOrdered._calculate_faoi_modifiers",
+    "line": 1021,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-04",
+      "IRR-07",
+      "IRR-08",
+      "IRR-09",
+      "IRR-10",
+      "IRR-11",
+      "IRR-12",
+      "ENG-01",
+      "ENG-02"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "symbol": "perez_diffuse_luminance",
+    "line": 15,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-02",
+      "IRR-03",
+      "IRR-05",
+      "IRR-06",
+      "IRR-11"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "symbol": "breakup_df_inputs",
+    "line": 145,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-02",
+      "IRR-03",
+      "IRR-05",
+      "IRR-06",
+      "IRR-11"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "symbol": "calculate_circumsolar_shading",
+    "line": 176,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-02",
+      "IRR-03",
+      "IRR-05",
+      "IRR-06",
+      "IRR-11"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "symbol": "integral_default_gaussian",
+    "line": 212,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-02",
+      "IRR-03",
+      "IRR-05",
+      "IRR-06",
+      "IRR-11"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "symbol": "gaussian_shading",
+    "line": 231,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-02",
+      "IRR-03",
+      "IRR-05",
+      "IRR-06",
+      "IRR-11"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "symbol": "gaussian",
+    "line": 264,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-02",
+      "IRR-03",
+      "IRR-05",
+      "IRR-06",
+      "IRR-11"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "symbol": "uniform_circumsolar_disk_shading",
+    "line": 286,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-02",
+      "IRR-03",
+      "IRR-05",
+      "IRR-06",
+      "IRR-11"
+    ]
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "symbol": "calculate_horizon_band_shading",
+    "line": 347,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "IRR-02",
+      "IRR-03",
+      "IRR-05",
+      "IRR-06",
+      "IRR-11"
+    ]
+  },
+  {
+    "file": "pvfactors/report.py",
+    "symbol": "example_fn_build_report",
+    "line": 4,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-07",
+      "EXEC-03"
+    ]
+  },
+  {
+    "file": "pvfactors/report.py",
+    "symbol": "ExampleReportBuilder",
+    "line": 29,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-07",
+      "EXEC-03"
+    ]
+  },
+  {
+    "file": "pvfactors/report.py",
+    "symbol": "ExampleReportBuilder.build",
+    "line": 34,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-07",
+      "EXEC-03"
+    ]
+  },
+  {
+    "file": "pvfactors/report.py",
+    "symbol": "ExampleReportBuilder.merge",
+    "line": 51,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "ENG-07",
+      "EXEC-03"
+    ]
+  },
+  {
+    "file": "pvfactors/run.py",
+    "symbol": "run_timeseries_engine",
+    "line": 19,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "EXEC-01",
+      "EXEC-02",
+      "EXEC-03"
+    ]
+  },
+  {
+    "file": "pvfactors/run.py",
+    "symbol": "run_parallel_engine",
+    "line": 117,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "EXEC-01",
+      "EXEC-02",
+      "EXEC-03"
+    ]
+  },
+  {
+    "file": "pvfactors/run.py",
+    "symbol": "_run_serially",
+    "line": 261,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "EXEC-01",
+      "EXEC-02",
+      "EXEC-03"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods",
+    "line": 12,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods.__init__",
+    "line": 16,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods.fit",
+    "line": 52,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods.vf_aoi_pvrow_to_sky",
+    "line": 84,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods.vf_aoi_pvrow_to_pvrow",
+    "line": 151,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods.vf_aoi_pvrow_to_gnd",
+    "line": 205,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods._vf_aoi_surface_to_surface",
+    "line": 278,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods._vf_aoi_pvrow_surf_to_gnd_surf_obstruction",
+    "line": 330,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods._calculate_aoi_angles_w_obstruction",
+    "line": 420,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods._calculate_vf_aoi_wedge_level",
+    "line": 468,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods._calculate_vfaoi_integrand",
+    "line": 502,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods._calculate_aoi_angles",
+    "line": 543,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods._vf",
+    "line": 575,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods._angle_with_x_axis",
+    "line": 597,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "AOIMethods.rho_from_faoi_fn",
+    "line": 614,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "faoi_fn_from_pvlib_sandia",
+    "line": 647,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "symbol": "faoi_fn_from_pvlib_sandia.fn",
+    "line": 666,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-07",
+      "VF-08",
+      "VF-09",
+      "VF-11",
+      "IRR-13"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/calculator.py",
+    "symbol": "VFCalculator",
+    "line": 9,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-06",
+      "VF-10",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/calculator.py",
+    "symbol": "VFCalculator.__init__",
+    "line": 15,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-06",
+      "VF-10",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/calculator.py",
+    "symbol": "VFCalculator.fit",
+    "line": 58,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-06",
+      "VF-10",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/calculator.py",
+    "symbol": "VFCalculator.build_ts_vf_matrix",
+    "line": 69,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-06",
+      "VF-10",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/calculator.py",
+    "symbol": "VFCalculator.build_ts_vf_aoi_matrix",
+    "line": 116,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-06",
+      "VF-10",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/calculator.py",
+    "symbol": "VFCalculator.get_vf_ts_pvrow_element",
+    "line": 183,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-06",
+      "VF-10",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods",
+    "line": 9,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods.vf_pvrow_gnd_surf",
+    "line": 14,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods.vf_pvrow_surf_to_gnd_surf_obstruction_hottel",
+    "line": 105,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods.vf_pvrow_to_pvrow",
+    "line": 185,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods.calculate_vf_to_pvrow",
+    "line": 249,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods.calculate_vf_to_gnd",
+    "line": 328,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods.calculate_vf_to_shadow_obstruction_hottel",
+    "line": 401,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods._vf_hottel_gnd_surf",
+    "line": 475,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods._hottel_string_length",
+    "line": 540,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods._vf_surface_to_surface",
+    "line": 585,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods._distance",
+    "line": 618,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods._angle_with_x_axis",
+    "line": 636,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "symbol": "VFTsMethods._create_shaded_side_coords",
+    "line": 654,
+    "category": "container_adapter_or_algorithm",
+    "algorithm_group": [
+      "VF-01",
+      "VF-02",
+      "VF-03",
+      "VF-04",
+      "VF-05",
+      "VF-12"
+    ]
+  }
+]

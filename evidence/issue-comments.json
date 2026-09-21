@@ -1,0 +1,57 @@
+{
+  "6": [],
+  "9": [],
+  "10": [],
+  "12": [],
+  "13": [],
+  "14": [
+    {
+      "url": "https://api.github.com/repos/pvlib/solarfactors/issues/comments/5572997623",
+      "html_url": "https://github.com/pvlib/solarfactors/issues/14#issuecomment-5572997623",
+      "issue_url": "https://api.github.com/repos/pvlib/solarfactors/issues/14",
+      "id": 5572997623,
+      "node_id": "IC_kwDOJCMFRs8AAAABTC0x9w",
+      "user": {
+        "login": "JonasBechler",
+        "id": 62531933,
+        "node_id": "MDQ6VXNlcjYyNTMxOTMz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/62531933?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JonasBechler",
+        "html_url": "https://github.com/JonasBechler",
+        "followers_url": "https://api.github.com/users/JonasBechler/followers",
+        "following_url": "https://api.github.com/users/JonasBechler/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JonasBechler/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JonasBechler/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JonasBechler/subscriptions",
+        "organizations_url": "https://api.github.com/users/JonasBechler/orgs",
+        "repos_url": "https://api.github.com/users/JonasBechler/repos",
+        "events_url": "https://api.github.com/users/JonasBechler/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JonasBechler/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "created_at": "2026-09-07T15:46:38Z",
+      "updated_at": "2026-09-07T15:46:38Z",
+      "body": "I can confirm this, and the cause is in `HybridPerezOrdered.transform`:\n\n- The **back** loop calls `_calculate_horizon_shading_pct_ts(..., is_back_side=True)` and scales `horizon` by `(1 - pct / 100)`.\n- The **front** loop assigns `self.horizon['front_pvrow']` unchanged, so the front never sees any horizon band obstruction.\n\nThe helper already supports `is_back_side=False`, it is just never called for the front. The fix is to make the front loop mirror the back loop.\n\n**Your script, before and after that change** (interior row, 45° tilt):\n\n```\n                     v1.6.1                        with fix\nband_angle = 5   --> front 737.12  back 43.08      front 719.83  back 43.06\nband_angle = 15  --> front 737.15  back 50.39      front 723.18  back 50.37\n```\n\n- Before, the front is the same for both band angles: it always receives the full band.\n- After, the front responds to `horizon_band_angle` like the back does. From the front centroid, the neighboring row's top is at 12.1° elevation, so the 5° band is fully blocked (-17.3 W/m²) and the 15° band is 81 % blocked (-14.0 W/m²).\n- The front and back do not move by the same amount because the back centroid sees its neighbor's top at 8.6°, so the 15° band is only 57 % blocked there.\n- The back changes in the second decimal only, through the 1 % reflection of the neighboring front, which now carries less horizon irradiance.\n\n**Where it matters most: vertical rows.** Same array with `surface_tilt=90` and the default 6.5° band, interior row:\n\n```\n                     v1.6.1          with fix\nfront horizon        24.70 W/m2      0.00 W/m2\nfront qabs           548.44 W/m2     523.98 W/m2   (-4.5 %)\n```\n\nFrom the center of a vertical interior row, the neighbor's top is at 14° elevation, above the whole 6.5° band, so the front should receive no horizon band irradiance at all. Currently it receives all of it.\n\nI will open a PR that applies the same single-neighbor obstruction to the front surfaces, adds `horizon_unshaded` / `horizon_shd_pct` to the front surface params, adds a front-side test with hand-derived expected values, and updates the pinned values in the engine and run tests.",
+      "author_association": "NONE",
+      "pin": null,
+      "reactions": {
+        "url": "https://api.github.com/repos/pvlib/solarfactors/issues/comments/5572997623/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      },
+      "performed_via_github_app": null,
+      "minimized": null
+    }
+  ],
+  "37": []
+}

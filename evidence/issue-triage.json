@@ -1,0 +1,330 @@
+[
+  {
+    "number": 41,
+    "type": "PR",
+    "state": "open",
+    "title": "Apply horizon band shading to the front surfaces of PV rows",
+    "url": "https://github.com/pvlib/solarfactors/pull/41",
+    "disposition": "DEV-005"
+  },
+  {
+    "number": 40,
+    "type": "PR",
+    "state": "closed",
+    "title": "Finalize v1.6.1 release",
+    "url": "https://github.com/pvlib/solarfactors/pull/40",
+    "disposition": "release history checked against tags/notes; closed does not alone prove merge"
+  },
+  {
+    "number": 39,
+    "type": "PR",
+    "state": "closed",
+    "title": "Adapt to changed keys from pvlib perez function",
+    "url": "https://github.com/pvlib/solarfactors/pull/39",
+    "disposition": "DEV-021"
+  },
+  {
+    "number": 38,
+    "type": "Issue",
+    "state": "open",
+    "title": "conda-forge package created",
+    "url": "https://github.com/pvlib/solarfactors/issues/38",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 37,
+    "type": "Issue",
+    "state": "open",
+    "title": "Computation should return 0 when both DNI & DHI are 0, instead of NaN",
+    "url": "https://github.com/pvlib/solarfactors/issues/37",
+    "disposition": "DEV-007"
+  },
+  {
+    "number": 36,
+    "type": "PR",
+    "state": "closed",
+    "title": "Update PULL_REQUEST_TEMPLATE.md",
+    "url": "https://github.com/pvlib/solarfactors/pull/36",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 35,
+    "type": "PR",
+    "state": "closed",
+    "title": "Add support for python 3.14",
+    "url": "https://github.com/pvlib/solarfactors/pull/35",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 34,
+    "type": "PR",
+    "state": "closed",
+    "title": "Switch to PyPI's Trusted Publishing",
+    "url": "https://github.com/pvlib/solarfactors/pull/34",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 33,
+    "type": "PR",
+    "state": "closed",
+    "title": "Drop python 3.9",
+    "url": "https://github.com/pvlib/solarfactors/pull/33",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 32,
+    "type": "PR",
+    "state": "open",
+    "title": "make matplotlib an optional dependency",
+    "url": "https://github.com/pvlib/solarfactors/pull/32",
+    "disposition": "DEV-020"
+  },
+  {
+    "number": 31,
+    "type": "Issue",
+    "state": "open",
+    "title": "Make Matplotlib an optional dependency",
+    "url": "https://github.com/pvlib/solarfactors/issues/31",
+    "disposition": "DEV-020"
+  },
+  {
+    "number": 30,
+    "type": "PR",
+    "state": "closed",
+    "title": "CI updates: drop python 3.8, update PyPI upload action",
+    "url": "https://github.com/pvlib/solarfactors/pull/30",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 29,
+    "type": "PR",
+    "state": "closed",
+    "title": "Update README.rst",
+    "url": "https://github.com/pvlib/solarfactors/pull/29",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 28,
+    "type": "Issue",
+    "state": "closed",
+    "title": "Typo in readme",
+    "url": "https://github.com/pvlib/solarfactors/issues/28",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 27,
+    "type": "Issue",
+    "state": "closed",
+    "title": "Warnings in PyPI upload job",
+    "url": "https://github.com/pvlib/solarfactors/issues/27",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 26,
+    "type": "PR",
+    "state": "closed",
+    "title": "Finalize v1.6.0 release",
+    "url": "https://github.com/pvlib/solarfactors/pull/26",
+    "disposition": "release history checked against tags/notes; closed does not alone prove merge"
+  },
+  {
+    "number": 25,
+    "type": "PR",
+    "state": "closed",
+    "title": "Miscellanous maintenance tasks",
+    "url": "https://github.com/pvlib/solarfactors/pull/25",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 24,
+    "type": "PR",
+    "state": "closed",
+    "title": "Fix lint issues from #22",
+    "url": "https://github.com/pvlib/solarfactors/pull/24",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 23,
+    "type": "PR",
+    "state": "closed",
+    "title": "(maint) clean up",
+    "url": "https://github.com/pvlib/solarfactors/pull/23",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 22,
+    "type": "PR",
+    "state": "closed",
+    "title": "Migrate to Shapely 2.0+",
+    "url": "https://github.com/pvlib/solarfactors/pull/22",
+    "disposition": "DEV-021 / Shapely2 baseline"
+  },
+  {
+    "number": 21,
+    "type": "PR",
+    "state": "closed",
+    "title": "Drop Python 3.7 support",
+    "url": "https://github.com/pvlib/solarfactors/pull/21",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 20,
+    "type": "Issue",
+    "state": "closed",
+    "title": "Drop Python 3.7 support",
+    "url": "https://github.com/pvlib/solarfactors/issues/20",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 19,
+    "type": "Issue",
+    "state": "closed",
+    "title": "Add pyproject.toml file",
+    "url": "https://github.com/pvlib/solarfactors/issues/19",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 18,
+    "type": "PR",
+    "state": "closed",
+    "title": "(maint) switch to pyproject.toml",
+    "url": "https://github.com/pvlib/solarfactors/pull/18",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 17,
+    "type": "PR",
+    "state": "closed",
+    "title": "Add 3.12 and 3.13 to test matrix",
+    "url": "https://github.com/pvlib/solarfactors/pull/17",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 16,
+    "type": "Issue",
+    "state": "closed",
+    "title": "Error installing solarfactors on Py3.12 due to Shapely pinned versions",
+    "url": "https://github.com/pvlib/solarfactors/issues/16",
+    "disposition": "historical Python/Shapely installation resolved by baseline"
+  },
+  {
+    "number": 15,
+    "type": "PR",
+    "state": "closed",
+    "title": "Update readthedocs config",
+    "url": "https://github.com/pvlib/solarfactors/pull/15",
+    "disposition": "docs/plotting; not core numerical behavior; retain packaging/docs context"
+  },
+  {
+    "number": 14,
+    "type": "Issue",
+    "state": "open",
+    "title": "Front-side irradiance is not affected by horizon_band_angle ",
+    "url": "https://github.com/pvlib/solarfactors/issues/14",
+    "disposition": "DEV-005"
+  },
+  {
+    "number": 13,
+    "type": "Issue",
+    "state": "open",
+    "title": "Runtime scales poorly with n_pvrows ",
+    "url": "https://github.com/pvlib/solarfactors/issues/13",
+    "disposition": "DEV-006"
+  },
+  {
+    "number": 12,
+    "type": "Issue",
+    "state": "open",
+    "title": "Default MAX_X_GROUND is too small for simulations with many rows ",
+    "url": "https://github.com/pvlib/solarfactors/issues/12",
+    "disposition": "DEV-004"
+  },
+  {
+    "number": 11,
+    "type": "Issue",
+    "state": "open",
+    "title": " Docs have two sets of equivalent notebooks ",
+    "url": "https://github.com/pvlib/solarfactors/issues/11",
+    "disposition": "docs/plotting; not core numerical behavior; retain packaging/docs context"
+  },
+  {
+    "number": 10,
+    "type": "Issue",
+    "state": "open",
+    "title": "PVEngine.skip_step is not used ",
+    "url": "https://github.com/pvlib/solarfactors/issues/10",
+    "disposition": "DEV-003"
+  },
+  {
+    "number": 9,
+    "type": "Issue",
+    "state": "open",
+    "title": "Negative irradiance values when PV modules go underground",
+    "url": "https://github.com/pvlib/solarfactors/issues/9",
+    "disposition": "DEV-002"
+  },
+  {
+    "number": 8,
+    "type": "Issue",
+    "state": "open",
+    "title": "`ax` parameter of BasePVArray.plot_at_idx should be optional",
+    "url": "https://github.com/pvlib/solarfactors/issues/8",
+    "disposition": "docs/plotting; not core numerical behavior; retain packaging/docs context"
+  },
+  {
+    "number": 7,
+    "type": "Issue",
+    "state": "open",
+    "title": "Opportunities to improve the online documentation ",
+    "url": "https://github.com/pvlib/solarfactors/issues/7",
+    "disposition": "docs/plotting; not core numerical behavior; retain packaging/docs context"
+  },
+  {
+    "number": 6,
+    "type": "Issue",
+    "state": "open",
+    "title": "maximum recursion depth with perez_diffuse_luminance ",
+    "url": "https://github.com/pvlib/solarfactors/issues/6",
+    "disposition": "DEV-001"
+  },
+  {
+    "number": 5,
+    "type": "PR",
+    "state": "closed",
+    "title": "Set up for initial release",
+    "url": "https://github.com/pvlib/solarfactors/pull/5",
+    "disposition": "release history checked against tags/notes; closed does not alone prove merge"
+  },
+  {
+    "number": 4,
+    "type": "PR",
+    "state": "open",
+    "title": "Remove shapely dependency",
+    "url": "https://github.com/pvlib/solarfactors/pull/4",
+    "disposition": "DEV-020"
+  },
+  {
+    "number": 3,
+    "type": "PR",
+    "state": "closed",
+    "title": "Satisfy linter",
+    "url": "https://github.com/pvlib/solarfactors/pull/3",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  },
+  {
+    "number": 2,
+    "type": "PR",
+    "state": "closed",
+    "title": "Enable ReadTheDocs",
+    "url": "https://github.com/pvlib/solarfactors/pull/2",
+    "disposition": "docs/plotting; not core numerical behavior; retain packaging/docs context"
+  },
+  {
+    "number": 1,
+    "type": "PR",
+    "state": "closed",
+    "title": "Migrate from circleci to github actions",
+    "url": "https://github.com/pvlib/solarfactors/pull/1",
+    "disposition": "CI/packaging/maintenance; baseline or future distribution requirement, no added physical primitive"
+  }
+]

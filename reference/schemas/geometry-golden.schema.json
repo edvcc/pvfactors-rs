@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://edvcc.github.io/pvfactors-rs/schemas/geometry-golden-v0.1.json",
+  "title": "pvfactors-rs Geometry Golden artifact",
+  "type": "object",
+  "required": [
+    "schema_version", "case_id", "classification", "status", "reference",
+    "generator", "input", "result", "provenance", "nonfinite_mask"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "case_id": {"type": "string"},
+    "classification": {"enum": ["raw_reference", "normalized_reference", "corrected_expectation"]},
+    "status": {"enum": ["candidate", "expected_reference_failure", "v1_rejected_input"]},
+    "reference": {
+      "type": "object",
+      "required": ["name", "version", "commit", "python", "numpy", "shapely", "pvlib", "environment_id"],
+      "additionalProperties": true
+    },
+    "generator": {
+      "type": "object",
+      "required": ["version", "commit", "sha256"],
+      "additionalProperties": true
+    },
+    "input": {"type": "object"},
+    "result": {"type": "object"},
+    "provenance": {
+      "type": "object",
+      "required": ["source", "method", "transformation", "license_relevance", "case_sha256", "payload_sha256"],
+      "additionalProperties": true
+    },
+    "nonfinite_mask": {"type": "array", "items": {"type": "string"}},
+    "deviations": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": false
+}
+

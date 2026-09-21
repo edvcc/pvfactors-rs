@@ -1,0 +1,3543 @@
+{
+  "probes": [
+    {
+      "name": "nominal",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.405581054713858
+            ],
+            "qinc": [
+              740.5581054713858
+            ],
+            "qabs": [
+              733.152524416672
+            ],
+            "isotropic": [
+              29.93436735337982
+            ],
+            "reflection": [
+              7.207539040107783
+            ]
+          },
+          "back": {
+            "q0": [
+              2.462597373928305
+            ],
+            "qinc": [
+              82.0865791309435
+            ],
+            "qabs": [
+              79.62398175701517
+            ],
+            "isotropic": [
+              5.883334163990233
+            ],
+            "reflection": [
+              58.74048863274397
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.445662805376136
+            ],
+            "qinc": [
+              744.5662805376136
+            ],
+            "qabs": [
+              737.1206177322375
+            ],
+            "isotropic": [
+              29.934402574768896
+            ],
+            "reflection": [
+              11.215678884946456
+            ]
+          },
+          "back": {
+            "q0": [
+              1.332435832209459
+            ],
+            "qinc": [
+              44.4145277403153
+            ],
+            "qabs": [
+              43.08209190810583
+            ],
+            "isotropic": [
+              3.963514104127485
+            ],
+            "reflection": [
+              40.45101363618782
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.5574951099803345
+            ],
+            "qinc": [
+              755.7495109980334
+            ],
+            "qabs": [
+              748.1920158880532
+            ],
+            "isotropic": [
+              33.621441816047394
+            ],
+            "reflection": [
+              18.711870104087808
+            ]
+          },
+          "back": {
+            "q0": [
+              1.5880722085777286
+            ],
+            "qinc": [
+              52.93574028592429
+            ],
+            "qabs": [
+              51.34766807734657
+            ],
+            "isotropic": [
+              3.9634835230187986
+            ],
+            "reflection": [
+              48.97225676290549
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.7053025658242404e-13,
+      "incident_form_residual": 1.1368683772161603e-13,
+      "incident_form_row1_back": 44.41452774031529,
+      "warnings": []
+    },
+    {
+      "name": "isotropic",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "isotropic",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              6.838464183952175
+            ],
+            "qinc": [
+              683.8464183952175
+            ],
+            "qabs": [
+              677.0079542112654
+            ],
+            "isotropic": [
+              76.32085944079539
+            ],
+            "reflection": [
+              7.525558954422095
+            ]
+          },
+          "back": {
+            "q0": [
+              2.3034932204502994
+            ],
+            "qinc": [
+              76.78310734834332
+            ],
+            "qabs": [
+              74.479614127893
+            ],
+            "isotropic": [
+              15.000187392382959
+            ],
+            "reflection": [
+              61.78291995596037
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              6.875964544694205
+            ],
+            "qinc": [
+              687.5964544694205
+            ],
+            "qabs": [
+              680.7204899247264
+            ],
+            "isotropic": [
+              76.32094924148011
+            ],
+            "reflection": [
+              11.275505227940343
+            ]
+          },
+          "back": {
+            "q0": [
+              1.600665451821213
+            ],
+            "qinc": [
+              53.3555150607071
+            ],
+            "qabs": [
+              51.75484960888588
+            ],
+            "isotropic": [
+              10.105401569429507
+            ],
+            "reflection": [
+              43.25011349127759
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.04428564437361
+            ],
+            "qinc": [
+              704.428564437361
+            ],
+            "qabs": [
+              697.3842787929874
+            ],
+            "isotropic": [
+              85.72144868629437
+            ],
+            "reflection": [
+              18.70711575106668
+            ]
+          },
+          "back": {
+            "q0": [
+              1.8469488479566027
+            ],
+            "qinc": [
+              61.56496159855343
+            ],
+            "qabs": [
+              59.71801275059682
+            ],
+            "isotropic": [
+              10.105323599634119
+            ],
+            "reflection": [
+              51.45963799891931
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.1368683772161603e-13,
+      "incident_form_residual": 1.1368683772161603e-13,
+      "incident_form_row1_back": 53.35551506070709,
+      "warnings": []
+    },
+    {
+      "name": "zero_light_hybrid",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          0.0
+        ],
+        "DHI": [
+          0.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        true
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              "NaN"
+            ],
+            "qinc": [
+              "NaN"
+            ],
+            "qabs": [
+              "NaN"
+            ],
+            "isotropic": [
+              "NaN"
+            ],
+            "reflection": [
+              "NaN"
+            ]
+          },
+          "back": {
+            "q0": [
+              "NaN"
+            ],
+            "qinc": [
+              "NaN"
+            ],
+            "qabs": [
+              "NaN"
+            ],
+            "isotropic": [
+              "NaN"
+            ],
+            "reflection": [
+              "NaN"
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              "NaN"
+            ],
+            "qinc": [
+              "NaN"
+            ],
+            "qabs": [
+              "NaN"
+            ],
+            "isotropic": [
+              "NaN"
+            ],
+            "reflection": [
+              "NaN"
+            ]
+          },
+          "back": {
+            "q0": [
+              "NaN"
+            ],
+            "qinc": [
+              "NaN"
+            ],
+            "qabs": [
+              "NaN"
+            ],
+            "isotropic": [
+              "NaN"
+            ],
+            "reflection": [
+              "NaN"
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              "NaN"
+            ],
+            "qinc": [
+              "NaN"
+            ],
+            "qabs": [
+              "NaN"
+            ],
+            "isotropic": [
+              "NaN"
+            ],
+            "reflection": [
+              "NaN"
+            ]
+          },
+          "back": {
+            "q0": [
+              "NaN"
+            ],
+            "qinc": [
+              "NaN"
+            ],
+            "qabs": [
+              "NaN"
+            ],
+            "isotropic": [
+              "NaN"
+            ],
+            "reflection": [
+              "NaN"
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": "NaN",
+      "incident_form_residual": "NaN",
+      "incident_form_row1_back": "NaN",
+      "warnings": []
+    },
+    {
+      "name": "zero_light_iso",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          0.0
+        ],
+        "DHI": [
+          0.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "isotropic",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        true
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              0.0
+            ],
+            "qinc": [
+              0.0
+            ],
+            "qabs": [
+              0.0
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              0.0
+            ]
+          },
+          "back": {
+            "q0": [
+              0.0
+            ],
+            "qinc": [
+              0.0
+            ],
+            "qabs": [
+              0.0
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              0.0
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              0.0
+            ],
+            "qinc": [
+              0.0
+            ],
+            "qabs": [
+              0.0
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              0.0
+            ]
+          },
+          "back": {
+            "q0": [
+              0.0
+            ],
+            "qinc": [
+              0.0
+            ],
+            "qabs": [
+              0.0
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              0.0
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              0.0
+            ],
+            "qinc": [
+              0.0
+            ],
+            "qabs": [
+              0.0
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              0.0
+            ]
+          },
+          "back": {
+            "q0": [
+              0.0
+            ],
+            "qinc": [
+              0.0
+            ],
+            "qabs": [
+              0.0
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              0.0
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 0.0,
+      "incident_form_residual": 0.0,
+      "incident_form_row1_back": 0.0,
+      "warnings": []
+    },
+    {
+      "name": "zero_dhi",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          0.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              6.056663298686598
+            ],
+            "qinc": [
+              605.6663298686598
+            ],
+            "qabs": [
+              599.6096665699732
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              5.666329868659773
+            ]
+          },
+          "back": {
+            "q0": [
+              1.3775614809779935
+            ],
+            "qinc": [
+              45.91871603259978
+            ],
+            "qabs": [
+              44.54115455162179
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              45.91871603259978
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              6.090448354303913
+            ],
+            "qinc": [
+              609.0448354303912
+            ],
+            "qabs": [
+              602.9543870760875
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              9.044835430391231
+            ]
+          },
+          "back": {
+            "q0": [
+              0.9369823592547167
+            ],
+            "qinc": [
+              31.23274530849056
+            ],
+            "qabs": [
+              30.29576294923584
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              31.23274530849056
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              6.151451660534638
+            ],
+            "qinc": [
+              615.1451660534639
+            ],
+            "qabs": [
+              608.9937143929292
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              15.145166053463868
+            ]
+          },
+          "back": {
+            "q0": [
+              1.1489331775124605
+            ],
+            "qinc": [
+              38.29777258374869
+            ],
+            "qabs": [
+              37.14883940623622
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              38.29777258374869
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 2.2737367544323206e-13,
+      "incident_form_residual": 2.2737367544323206e-13,
+      "incident_form_row1_back": 31.232745308490557,
+      "warnings": []
+    },
+    {
+      "name": "zero_dni",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          0.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              0.8348226244365905
+            ],
+            "qinc": [
+              83.48226244365905
+            ],
+            "qabs": [
+              82.64743981922247
+            ],
+            "isotropic": [
+              75.87242425028467
+            ],
+            "reflection": [
+              1.8562235305341943
+            ]
+          },
+          "back": {
+            "q0": [
+              1.070260499652412
+            ],
+            "qinc": [
+              35.67534998841374
+            ],
+            "qabs": [
+              34.60508948876132
+            ],
+            "isotropic": [
+              14.912051436626093
+            ],
+            "reflection": [
+              15.840627267877288
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              0.8385627717564066
+            ],
+            "qinc": [
+              83.85627717564066
+            ],
+            "qabs": [
+              83.01771440388423
+            ],
+            "isotropic": [
+              75.87251352333136
+            ],
+            "reflection": [
+              2.2301489894691002
+            ]
+          },
+          "back": {
+            "q0": [
+              0.6613397420750747
+            ],
+            "qinc": [
+              22.04465806916916
+            ],
+            "qabs": [
+              21.38331832709408
+            ],
+            "isotropic": [
+              10.046025696160026
+            ],
+            "reflection": [
+              11.998632373009134
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              0.9453339286700287
+            ],
+            "qinc": [
+              94.53339286700287
+            ],
+            "qabs": [
+              93.58805893833282
+            ],
+            "isotropic": [
+              85.21777885796502
+            ],
+            "reflection": [
+              3.5619993461976662
+            ]
+          },
+          "back": {
+            "q0": [
+              0.6957236884918009
+            ],
+            "qinc": [
+              23.190789616393364
+            ],
+            "qabs": [
+              22.495065927901564
+            ],
+            "isotropic": [
+              10.045948184488411
+            ],
+            "reflection": [
+              13.144841431904952
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.4210854715202004e-14,
+      "incident_form_residual": 1.7298423349224232e-14,
+      "incident_form_row1_back": 22.044658069169156,
+      "warnings": []
+    },
+    {
+      "name": "zero_albedo",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.0
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.333707674405052
+            ],
+            "qinc": [
+              733.3707674405052
+            ],
+            "qabs": [
+              726.0370597661001
+            ],
+            "isotropic": [
+              29.93436735337982
+            ],
+            "reflection": [
+              0.020201009227186262
+            ]
+          },
+          "back": {
+            "q0": [
+              0.7003827149459861
+            ],
+            "qinc": [
+              23.34609049819954
+            ],
+            "qabs": [
+              22.645707783253552
+            ],
+            "isotropic": [
+              5.883334163990233
+            ],
+            "reflection": [
+              1.7763568394002505e-15
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.3337080253752
+            ],
+            "qinc": [
+              733.37080253752
+            ],
+            "qabs": [
+              726.0370945121448
+            ],
+            "isotropic": [
+              29.934402574768896
+            ],
+            "reflection": [
+              0.020200884852911827
+            ]
+          },
+          "back": {
+            "q0": [
+              0.14877837307118746
+            ],
+            "qinc": [
+              4.959279102372916
+            ],
+            "qabs": [
+              4.810500729301728
+            ],
+            "isotropic": [
+              3.963514104127485
+            ],
+            "reflection": [
+              0.9957649982454311
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.370376408939457
+            ],
+            "qinc": [
+              737.0376408939456
+            ],
+            "qabs": [
+              729.6672644850062
+            ],
+            "isotropic": [
+              33.621441816047394
+            ],
+            "reflection": [
+              2.842170943040401e-14
+            ]
+          },
+          "back": {
+            "q0": [
+              0.1487774570675602
+            ],
+            "qinc": [
+              4.959248568918674
+            ],
+            "qabs": [
+              4.810471111851113
+            ],
+            "isotropic": [
+              3.9634835230187986
+            ],
+            "reflection": [
+              0.995765045899875
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": "NaN",
+      "incident_form_residual": 5.684341886080802e-14,
+      "incident_form_row1_back": 4.959279102372915,
+      "warnings": [
+        "divide by zero encountered in divide"
+      ]
+    },
+    {
+      "name": "low_sun_back",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          89.9
+        ],
+        "solar_azimuth": [
+          90.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 12,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              1.5189974769791246
+            ],
+            "qinc": [
+              151.89974769791246
+            ],
+            "qabs": [
+              150.38075022093335
+            ],
+            "isotropic": [
+              76.32085944079537
+            ],
+            "reflection": [
+              1.9279968202484383
+            ]
+          },
+          "back": {
+            "q0": [
+              16.002975968883895
+            ],
+            "qinc": [
+              533.4325322961299
+            ],
+            "qabs": [
+              517.4295563272458
+            ],
+            "isotropic": [
+              15.000187392382703
+            ],
+            "reflection": [
+              21.25851105966991
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              1.5224330156543153
+            ],
+            "qinc": [
+              152.24330156543152
+            ],
+            "qabs": [
+              150.72086854977726
+            ],
+            "isotropic": [
+              76.32094924148005
+            ],
+            "reflection": [
+              2.2714608870828243
+            ]
+          },
+          "back": {
+            "q0": [
+              0.8153721247909869
+            ],
+            "qinc": [
+              27.179070826366228
+            ],
+            "qabs": [
+              26.36369870157525
+            ],
+            "isotropic": [
+              10.105401569429597
+            ],
+            "reflection": [
+              14.617862963062114
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              1.6297172810793306
+            ],
+            "qinc": [
+              162.97172810793305
+            ],
+            "qabs": [
+              161.34201082685377
+            ],
+            "isotropic": [
+              85.72144868629437
+            ],
+            "reflection": [
+              3.5993879847700327
+            ]
+          },
+          "back": {
+            "q0": [
+              0.7888335095529483
+            ],
+            "qinc": [
+              26.29445031843161
+            ],
+            "qabs": [
+              25.50561680887866
+            ],
+            "isotropic": [
+              10.105323599633975
+            ],
+            "reflection": [
+              13.733320424923123
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.1368683772161603e-13,
+      "incident_form_residual": 1.1368683772161603e-13,
+      "incident_form_row1_back": 27.179070826366235,
+      "warnings": []
+    },
+    {
+      "name": "flat",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          0.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 13,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              5.242640687119286
+            ],
+            "qinc": [
+              524.2640687119285
+            ],
+            "qabs": [
+              519.0214280248092
+            ],
+            "isotropic": [
+              39.22173776960792
+            ],
+            "reflection": [
+              -2.1316282072803006e-14
+            ]
+          },
+          "back": {
+            "q0": [
+              2.2853331417131213
+            ],
+            "qinc": [
+              76.17777139043739
+            ],
+            "qabs": [
+              73.89243824872426
+            ],
+            "isotropic": [
+              0.001960988834994186
+            ],
+            "reflection": [
+              76.17581040160239
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              5.242640687119286
+            ],
+            "qinc": [
+              524.2640687119285
+            ],
+            "qabs": [
+              519.0214280248092
+            ],
+            "isotropic": [
+              39.22173776960792
+            ],
+            "reflection": [
+              -2.1316282072803006e-14
+            ]
+          },
+          "back": {
+            "q0": [
+              2.2706899526493496
+            ],
+            "qinc": [
+              75.68966508831166
+            ],
+            "qabs": [
+              73.41897513566231
+            ],
+            "isotropic": [
+              0.0019633433164861465
+            ],
+            "reflection": [
+              75.68770174499517
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              5.242640687119286
+            ],
+            "qinc": [
+              524.2640687119285
+            ],
+            "qabs": [
+              519.0214280248092
+            ],
+            "isotropic": [
+              39.22173776960792
+            ],
+            "reflection": [
+              -2.1316282072803006e-14
+            ]
+          },
+          "back": {
+            "q0": [
+              3.0770410775194175
+            ],
+            "qinc": [
+              102.56803591731392
+            ],
+            "qabs": [
+              99.49099483979448
+            ],
+            "isotropic": [
+              0.001970425633237407
+            ],
+            "reflection": [
+              102.56606549168069
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 1.0,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.1368683772161603e-13,
+      "incident_form_residual": 1.1368683772161603e-13,
+      "incident_form_row1_back": 75.68966508831166,
+      "warnings": [
+        "divide by zero encountered in divide"
+      ]
+    },
+    {
+      "name": "underground",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 3,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          80.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              5.731795311598884
+            ],
+            "qinc": [
+              573.1795311598883
+            ],
+            "qabs": [
+              567.4477358482893
+            ],
+            "isotropic": [
+              96.44551509261856
+            ],
+            "reflection": [
+              -109.48702694042544
+            ]
+          },
+          "back": {
+            "q0": [
+              2.096911950318211
+            ],
+            "qinc": [
+              69.89706501060705
+            ],
+            "qabs": [
+              67.80015306028882
+            ],
+            "isotropic": [
+              22.73438889449439
+            ],
+            "reflection": [
+              22.841798018982132
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              5.744414588896362
+            ],
+            "qinc": [
+              574.4414588896361
+            ],
+            "qabs": [
+              568.6970443007399
+            ],
+            "isotropic": [
+              96.45769986312101
+            ],
+            "reflection": [
+              -108.23728398118001
+            ]
+          },
+          "back": {
+            "q0": [
+              0.9449274605807644
+            ],
+            "qinc": [
+              31.497582019358816
+            ],
+            "qabs": [
+              30.55265455877805
+            ],
+            "isotropic": [
+              30.1755946862708
+            ],
+            "reflection": [
+              1.3219873330880176
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              6.473283939632292
+            ],
+            "qinc": [
+              647.3283939632292
+            ],
+            "qabs": [
+              640.855110023597
+            ],
+            "isotropic": [
+              29.570253400070584
+            ],
+            "reflection": [
+              31.537097555463532
+            ]
+          },
+          "back": {
+            "q0": [
+              0.9450147762846544
+            ],
+            "qinc": [
+              31.500492542821814
+            ],
+            "qabs": [
+              30.555477766537155
+            ],
+            "isotropic": [
+              30.175594686270838
+            ],
+            "reflection": [
+              1.324897856550976
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": -0.477211629518312,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 2.2737367544323206e-13,
+      "incident_form_residual": 2.2737367544323206e-13,
+      "incident_form_row1_back": 31.497582019358816,
+      "warnings": []
+    },
+    {
+      "name": "horizon5",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.405581054713858
+            ],
+            "qinc": [
+              740.5581054713858
+            ],
+            "qabs": [
+              733.152524416672
+            ],
+            "isotropic": [
+              29.93436735337982
+            ],
+            "reflection": [
+              7.207539040107783
+            ]
+          },
+          "back": {
+            "q0": [
+              2.462597373928305
+            ],
+            "qinc": [
+              82.0865791309435
+            ],
+            "qabs": [
+              79.62398175701517
+            ],
+            "isotropic": [
+              5.883334163990233
+            ],
+            "reflection": [
+              58.74048863274397
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.445662805376136
+            ],
+            "qinc": [
+              744.5662805376136
+            ],
+            "qabs": [
+              737.1206177322375
+            ],
+            "isotropic": [
+              29.934402574768896
+            ],
+            "reflection": [
+              11.215678884946456
+            ]
+          },
+          "back": {
+            "q0": [
+              1.332435832209459
+            ],
+            "qinc": [
+              44.4145277403153
+            ],
+            "qabs": [
+              43.08209190810583
+            ],
+            "isotropic": [
+              3.963514104127485
+            ],
+            "reflection": [
+              40.45101363618782
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.5574951099803345
+            ],
+            "qinc": [
+              755.7495109980334
+            ],
+            "qabs": [
+              748.1920158880532
+            ],
+            "isotropic": [
+              33.621441816047394
+            ],
+            "reflection": [
+              18.711870104087808
+            ]
+          },
+          "back": {
+            "q0": [
+              1.5880722085777286
+            ],
+            "qinc": [
+              52.93574028592429
+            ],
+            "qabs": [
+              51.34766807734657
+            ],
+            "isotropic": [
+              3.9634835230187986
+            ],
+            "reflection": [
+              48.97225676290549
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.7053025658242404e-13,
+      "incident_form_residual": 1.1368683772161603e-13,
+      "incident_form_row1_back": 44.41452774031529,
+      "warnings": []
+    },
+    {
+      "name": "horizon15",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.405903390612743
+            ],
+            "qinc": [
+              740.5903390612743
+            ],
+            "qabs": [
+              733.1844356706616
+            ],
+            "isotropic": [
+              29.93436735337982
+            ],
+            "reflection": [
+              7.239772629996288
+            ]
+          },
+          "back": {
+            "q0": [
+              2.4626888389173507
+            ],
+            "qinc": [
+              82.0896279639117
+            ],
+            "qabs": [
+              79.62693912499432
+            ],
+            "isotropic": [
+              5.883334163990233
+            ],
+            "reflection": [
+              58.74353746571216
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.4459769993086935
+            ],
+            "qinc": [
+              744.5976999308693
+            ],
+            "qabs": [
+              737.1517229315606
+            ],
+            "isotropic": [
+              29.934402574768896
+            ],
+            "reflection": [
+              11.247098278202216
+            ]
+          },
+          "back": {
+            "q0": [
+              1.5583314477095265
+            ],
+            "qinc": [
+              51.944381590317555
+            ],
+            "qabs": [
+              50.386050142608006
+            ],
+            "isotropic": [
+              3.963514104127485
+            ],
+            "reflection": [
+              40.46391320917349
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.55749511005592
+            ],
+            "qinc": [
+              755.749511005592
+            ],
+            "qabs": [
+              748.1920158955361
+            ],
+            "isotropic": [
+              33.621441816047394
+            ],
+            "reflection": [
+              18.71187011164639
+            ]
+          },
+          "back": {
+            "q0": [
+              1.8139361965935024
+            ],
+            "qinc": [
+              60.46453988645008
+            ],
+            "qabs": [
+              58.65060368985658
+            ],
+            "isotropic": [
+              3.9634835230187986
+            ],
+            "reflection": [
+              48.9841020864147
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 2.2737367544323206e-13,
+      "incident_form_residual": 2.2737367544323206e-13,
+      "incident_form_row1_back": 51.94438159031754,
+      "warnings": []
+    },
+    {
+      "name": "circumsolar5",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.405581054713858
+            ],
+            "qinc": [
+              740.5581054713858
+            ],
+            "qabs": [
+              733.152524416672
+            ],
+            "isotropic": [
+              29.93436735337982
+            ],
+            "reflection": [
+              7.207539040107783
+            ]
+          },
+          "back": {
+            "q0": [
+              2.462597373928305
+            ],
+            "qinc": [
+              82.0865791309435
+            ],
+            "qabs": [
+              79.62398175701517
+            ],
+            "isotropic": [
+              5.883334163990233
+            ],
+            "reflection": [
+              58.74048863274397
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.445662805376136
+            ],
+            "qinc": [
+              744.5662805376136
+            ],
+            "qabs": [
+              737.1206177322375
+            ],
+            "isotropic": [
+              29.934402574768896
+            ],
+            "reflection": [
+              11.215678884946456
+            ]
+          },
+          "back": {
+            "q0": [
+              1.332435832209459
+            ],
+            "qinc": [
+              44.4145277403153
+            ],
+            "qabs": [
+              43.08209190810583
+            ],
+            "isotropic": [
+              3.963514104127485
+            ],
+            "reflection": [
+              40.45101363618782
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.5574951099803345
+            ],
+            "qinc": [
+              755.7495109980334
+            ],
+            "qabs": [
+              748.1920158880532
+            ],
+            "isotropic": [
+              33.621441816047394
+            ],
+            "reflection": [
+              18.711870104087808
+            ]
+          },
+          "back": {
+            "q0": [
+              1.5880722085777286
+            ],
+            "qinc": [
+              52.93574028592429
+            ],
+            "qabs": [
+              51.34766807734657
+            ],
+            "isotropic": [
+              3.9634835230187986
+            ],
+            "reflection": [
+              48.97225676290549
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.7053025658242404e-13,
+      "incident_form_residual": 1.1368683772161603e-13,
+      "incident_form_row1_back": 44.41452774031529,
+      "warnings": []
+    },
+    {
+      "name": "circumsolar60",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.405581054713858
+            ],
+            "qinc": [
+              740.5581054713858
+            ],
+            "qabs": [
+              733.152524416672
+            ],
+            "isotropic": [
+              29.93436735337982
+            ],
+            "reflection": [
+              7.207539040107783
+            ]
+          },
+          "back": {
+            "q0": [
+              2.462597373928305
+            ],
+            "qinc": [
+              82.0865791309435
+            ],
+            "qabs": [
+              79.62398175701517
+            ],
+            "isotropic": [
+              5.883334163990233
+            ],
+            "reflection": [
+              58.74048863274397
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.445662805376136
+            ],
+            "qinc": [
+              744.5662805376136
+            ],
+            "qabs": [
+              737.1206177322375
+            ],
+            "isotropic": [
+              29.934402574768896
+            ],
+            "reflection": [
+              11.215678884946456
+            ]
+          },
+          "back": {
+            "q0": [
+              1.332435832209459
+            ],
+            "qinc": [
+              44.4145277403153
+            ],
+            "qabs": [
+              43.08209190810583
+            ],
+            "isotropic": [
+              3.963514104127485
+            ],
+            "reflection": [
+              40.45101363618782
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.5574951099803345
+            ],
+            "qinc": [
+              755.7495109980334
+            ],
+            "qabs": [
+              748.1920158880532
+            ],
+            "isotropic": [
+              33.621441816047394
+            ],
+            "reflection": [
+              18.711870104087808
+            ]
+          },
+          "back": {
+            "q0": [
+              1.5880722085777286
+            ],
+            "qinc": [
+              52.93574028592429
+            ],
+            "qabs": [
+              51.34766807734657
+            ],
+            "isotropic": [
+              3.9634835230187986
+            ],
+            "reflection": [
+              48.97225676290549
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.7053025658242404e-13,
+      "incident_form_residual": 1.1368683772161603e-13,
+      "incident_form_row1_back": 44.41452774031529,
+      "warnings": []
+    },
+    {
+      "name": "aoi_constant",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": true,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.405581054713858
+            ],
+            "qinc": [
+              740.5581054713858
+            ],
+            "qabs": [
+              593.2063716245831
+            ],
+            "isotropic": [
+              29.93436735337982
+            ],
+            "reflection": [
+              7.207539040107783
+            ]
+          },
+          "back": {
+            "q0": [
+              2.462597373928305
+            ],
+            "qinc": [
+              82.0865791309435
+            ],
+            "qabs": [
+              65.89804735858418
+            ],
+            "isotropic": [
+              5.883334163990233
+            ],
+            "reflection": [
+              58.74048863274397
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.445662805376136
+            ],
+            "qinc": [
+              744.5662805376136
+            ],
+            "qabs": [
+              596.091981992696
+            ],
+            "isotropic": [
+              29.934402574768896
+            ],
+            "reflection": [
+              11.215678884946456
+            ]
+          },
+          "back": {
+            "q0": [
+              1.332435832209459
+            ],
+            "qinc": [
+              44.4145277403153
+            ],
+            "qabs": [
+              36.145066936599456
+            ],
+            "isotropic": [
+              3.963514104127485
+            ],
+            "reflection": [
+              40.45101363618782
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.5574951099803345
+            ],
+            "qinc": [
+              755.7495109980334
+            ],
+            "qabs": [
+              604.9841203043105
+            ],
+            "isotropic": [
+              33.621441816047394
+            ],
+            "reflection": [
+              18.711870104087808
+            ]
+          },
+          "back": {
+            "q0": [
+              1.5880722085777286
+            ],
+            "qinc": [
+              52.93574028592429
+            ],
+            "qabs": [
+              41.83118177561834
+            ],
+            "isotropic": [
+              3.9634835230187986
+            ],
+            "reflection": [
+              48.97225676290549
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.17142541500982644,
+      "incident_form_difference_max": 1.7053025658242404e-13,
+      "incident_form_residual": 1.1368683772161603e-13,
+      "incident_form_row1_back": 44.41452774031529,
+      "warnings": []
+    },
+    {
+      "name": "fast_hybrid",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "fast",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "back": {
+            "qinc": [
+              47.06551173276074
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": null,
+      "warnings": []
+    },
+    {
+      "name": "fast_iso",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "isotropic",
+      "mode": "fast",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "back": {
+            "qinc": [
+              60.45903729814367
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": null,
+      "warnings": []
+    },
+    {
+      "name": "one_row",
+      "geometry": {
+        "n_pvrows": 1,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 10,
+      "active_surfaces": 6,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.557637086280723
+            ],
+            "qinc": [
+              755.7637086280723
+            ],
+            "qabs": [
+              748.2060715417914
+            ],
+            "isotropic": [
+              33.61573103984295
+            ],
+            "reflection": [
+              18.731778510331146
+            ]
+          },
+          "back": {
+            "q0": [
+              2.755038623646487
+            ],
+            "qinc": [
+              91.83462078821624
+            ],
+            "qabs": [
+              89.07958216456976
+            ],
+            "isotropic": [
+              5.8833341639902414
+            ],
+            "reflection": [
+              68.4885302900167
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.1368683772161603e-13,
+      "incident_form_residual": 1.1368683772161603e-13,
+      "incident_form_row1_back": 91.83462078821623,
+      "warnings": []
+    },
+    {
+      "name": "eleven_rows",
+      "geometry": {
+        "n_pvrows": 11,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 320,
+      "active_surfaces": 56,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.380359411358635
+            ],
+            "qinc": [
+              738.0359411358635
+            ],
+            "qabs": [
+              730.6555817245046
+            ],
+            "isotropic": [
+              29.93436735337968
+            ],
+            "reflection": [
+              4.685374704585573
+            ]
+          },
+          "back": {
+            "q0": [
+              2.461780480675196
+            ],
+            "qinc": [
+              82.05934935583988
+            ],
+            "qabs": [
+              79.59756887516474
+            ],
+            "isotropic": [
+              5.883334163990237
+            ],
+            "reflection": [
+              58.71325885764035
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.380366649077403
+            ],
+            "qinc": [
+              738.0366649077403
+            ],
+            "qabs": [
+              730.656298258663
+            ],
+            "isotropic": [
+              29.93440257476901
+            ],
+            "reflection": [
+              4.686063255073023
+            ]
+          },
+          "back": {
+            "q0": [
+              1.3293822611655486
+            ],
+            "qinc": [
+              44.312742038851624
+            ],
+            "qabs": [
+              42.98335977768608
+            ],
+            "isotropic": [
+              3.963514104127485
+            ],
+            "reflection": [
+              40.34922793472414
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.380523972347582
+            ],
+            "qinc": [
+              738.0523972347582
+            ],
+            "qabs": [
+              730.6718732624106
+            ],
+            "isotropic": [
+              29.934440052715352
+            ],
+            "reflection": [
+              4.701758104144666
+            ]
+          },
+          "back": {
+            "q0": [
+              1.2932186312043967
+            ],
+            "qinc": [
+              43.107287706813224
+            ],
+            "qabs": [
+              41.81406907560883
+            ],
+            "isotropic": [
+              3.9634835230187946
+            ],
+            "reflection": [
+              39.14380418379443
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.380809433739531
+            ],
+            "qinc": [
+              738.0809433739531
+            ],
+            "qabs": [
+              730.7001339402138
+            ],
+            "isotropic": [
+              29.934479984187277
+            ],
+            "reflection": [
+              4.730264311867614
+            ]
+          },
+          "back": {
+            "q0": [
+              1.2821215978197227
+            ],
+            "qinc": [
+              42.737386593990756
+            ],
+            "qabs": [
+              41.45526499617103
+            ],
+            "isotropic": [
+              3.9634546670959225
+            ],
+            "reflection": [
+              38.77393192689483
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.38128890958186
+            ],
+            "qinc": [
+              738.128890958186
+            ],
+            "qabs": [
+              730.7476020486043
+            ],
+            "isotropic": [
+              29.934522588121016
+            ],
+            "reflection": [
+              4.778169292166805
+            ]
+          },
+          "back": {
+            "q0": [
+              1.2775505195296408
+            ],
+            "qinc": [
+              42.585017317654696
+            ],
+            "qabs": [
+              41.307466798125034
+            ],
+            "isotropic": [
+              3.9634274089908064
+            ],
+            "reflection": [
+              38.62158990866389
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.382149843938133
+            ],
+            "qinc": [
+              738.2149843938133
+            ],
+            "qabs": [
+              730.832834549875
+            ],
+            "isotropic": [
+              29.934568108432654
+            ],
+            "reflection": [
+              4.864217207482444
+            ]
+          },
+          "back": {
+            "q0": [
+              1.2752920724983747
+            ],
+            "qinc": [
+              42.509735749945825
+            ],
+            "qabs": [
+              41.234443677447445
+            ],
+            "isotropic": [
+              3.963401632875221
+            ],
+            "reflection": [
+              38.54633411707061
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.383913523174768
+            ],
+            "qinc": [
+              738.3913523174768
+            ],
+            "qabs": [
+              731.0074387943022
+            ],
+            "isotropic": [
+              29.934616817514648
+            ],
+            "reflection": [
+              5.040536422063969
+            ]
+          },
+          "back": {
+            "q0": [
+              1.2740619038228354
+            ],
+            "qinc": [
+              42.46873012742785
+            ],
+            "qabs": [
+              41.19466822360502
+            ],
+            "isotropic": [
+              3.9633772332306774
+            ],
+            "reflection": [
+              38.505352894197166
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.388451855357252
+            ],
+            "qinc": [
+              738.8451855357251
+            ],
+            "qabs": [
+              731.456733680368
+            ],
+            "isotropic": [
+              29.934669020321103
+            ],
+            "reflection": [
+              5.494317437505806
+            ]
+          },
+          "back": {
+            "q0": [
+              1.2734251324590675
+            ],
+            "qinc": [
+              42.447504415302255
+            ],
+            "qabs": [
+              41.17407928284318
+            ],
+            "isotropic": [
+              3.963354113766107
+            ],
+            "reflection": [
+              38.48415030153615
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.4053718494868646
+            ],
+            "qinc": [
+              740.5371849486864
+            ],
+            "qabs": [
+              733.1318130991992
+            ],
+            "isotropic": [
+              29.934725059153187
+            ],
+            "reflection": [
+              7.18626081163503
+            ]
+          },
+          "back": {
+            "q0": [
+              1.273370346151998
+            ],
+            "qinc": [
+              42.445678205066606
+            ],
+            "qabs": [
+              41.17230785891459
+            ],
+            "isotropic": [
+              3.963332186464213
+            ],
+            "reflection": [
+              38.48234601860239
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.445588060627902
+            ],
+            "qinc": [
+              744.5588060627902
+            ],
+            "qabs": [
+              737.113218002162
+            ],
+            "isotropic": [
+              29.934785319286718
+            ],
+            "reflection": [
+              11.20782166560521
+            ]
+          },
+          "back": {
+            "q0": [
+              1.2751258931783673
+            ],
+            "qinc": [
+              42.504196439278914
+            ],
+            "qabs": [
+              41.22907054610054
+            ],
+            "isotropic": [
+              3.9633113707454015
+            ],
+            "reflection": [
+              38.54088506853351
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.556820275146102
+            ],
+            "qinc": [
+              755.6820275146102
+            ],
+            "qabs": [
+              748.1252072394641
+            ],
+            "isotropic": [
+              33.64995406212534
+            ],
+            "reflection": [
+              18.615874374586674
+            ]
+          },
+          "back": {
+            "q0": [
+              1.5666926848352651
+            ],
+            "qinc": [
+              52.22308949450884
+            ],
+            "qabs": [
+              50.65639680967361
+            ],
+            "isotropic": [
+              3.963291592724298
+            ],
+            "reflection": [
+              48.259797901784545
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 4.547473508864641e-13,
+      "incident_form_residual": 4.547473508864641e-13,
+      "incident_form_row1_back": 44.312742038851624,
+      "warnings": []
+    },
+    {
+      "name": "cuts",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5,
+        "cut": {
+          "1": {
+            "front": 3,
+            "back": 5
+          }
+        }
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        false
+      ],
+      "n_surfaces": 52,
+      "active_surfaces": 22,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              7.4056656593694745
+            ],
+            "qinc": [
+              740.5665659369474
+            ],
+            "qabs": [
+              733.1609002775782
+            ],
+            "isotropic": [
+              29.93436735337982
+            ],
+            "reflection": [
+              7.21599950566938
+            ]
+          },
+          "back": {
+            "q0": [
+              2.4626170934421205
+            ],
+            "qinc": [
+              82.08723644807068
+            ],
+            "qabs": [
+              79.62461935462858
+            ],
+            "isotropic": [
+              5.883334163990233
+            ],
+            "reflection": [
+              58.74114594987115
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.445662866544292
+            ],
+            "qinc": [
+              744.5662866544292
+            ],
+            "qabs": [
+              737.1206237878848
+            ],
+            "isotropic": [
+              29.934402574768868
+            ],
+            "reflection": [
+              11.215685001761969
+            ]
+          },
+          "back": {
+            "q0": [
+              1.4223001295888271
+            ],
+            "qinc": [
+              47.410004319627575
+            ],
+            "qabs": [
+              45.98770419003875
+            ],
+            "isotropic": [
+              3.963514104127359
+            ],
+            "reflection": [
+              40.45546798739427
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              7.557495109949757
+            ],
+            "qinc": [
+              755.7495109949757
+            ],
+            "qabs": [
+              748.1920158850259
+            ],
+            "isotropic": [
+              33.621441816047394
+            ],
+            "reflection": [
+              18.711870101030087
+            ]
+          },
+          "back": {
+            "q0": [
+              1.5881163931231541
+            ],
+            "qinc": [
+              52.93721310410514
+            ],
+            "qabs": [
+              51.34909671098198
+            ],
+            "isotropic": [
+              3.9634835230187986
+            ],
+            "reflection": [
+              48.97372958108634
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 4.547473508864641e-13,
+      "incident_form_residual": 2.2737367544323206e-13,
+      "incident_form_row1_back": 47.410004319627575,
+      "warnings": []
+    },
+    {
+      "name": "night",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          100.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        true
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              3.421272667882768
+            ],
+            "qinc": [
+              342.12726678827676
+            ],
+            "qabs": [
+              338.70599412039405
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              -2.018595022350894
+            ]
+          },
+          "back": {
+            "q0": [
+              -0.6642492482223018
+            ],
+            "qinc": [
+              -22.14164160741006
+            ],
+            "qabs": [
+              -21.477392359187757
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              -22.14164160741006
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              3.4328244628049043
+            ],
+            "qinc": [
+              343.28244628049043
+            ],
+            "qabs": [
+              339.84962181768555
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              -0.8634155301372175
+            ]
+          },
+          "back": {
+            "q0": [
+              -0.5828267328891281
+            ],
+            "qinc": [
+              -19.427557762970938
+            ],
+            "qabs": [
+              -18.844731030081807
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              -19.427557762970938
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              3.430914460318167
+            ],
+            "qinc": [
+              343.0914460318167
+            ],
+            "qabs": [
+              339.6605315714986
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              -1.0544157788109487
+            ]
+          },
+          "back": {
+            "q0": [
+              -0.45608357153494405
+            ],
+            "qinc": [
+              -15.202785717831468
+            ],
+            "qabs": [
+              -14.74670214629652
+            ],
+            "isotropic": [
+              0.0
+            ],
+            "reflection": [
+              -15.202785717831468
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 5.684341886080802e-14,
+      "incident_form_residual": 5.684341886080802e-14,
+      "incident_form_row1_back": -19.42755776297094,
+      "warnings": []
+    },
+    {
+      "name": "negative_dni",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0,
+        "axis_azimuth": 180.0,
+        "gcr": 0.5
+      },
+      "inputs": {
+        "DNI": [
+          -1.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "model": "hybrid",
+      "mode": "full",
+      "aoi": false,
+      "skip_step": [
+        true
+      ],
+      "n_surfaces": 40,
+      "active_surfaces": 16,
+      "row_results": [
+        {
+          "front": {
+            "q0": [
+              0.8247281856054463
+            ],
+            "qinc": [
+              82.47281856054462
+            ],
+            "qabs": [
+              81.64809037493919
+            ],
+            "isotropic": [
+              75.87242425028467
+            ],
+            "reflection": [
+              1.8467796474197655
+            ]
+          },
+          "back": {
+            "q0": [
+              1.0679645638507822
+            ],
+            "qinc": [
+              35.59881879502608
+            ],
+            "qabs": [
+              34.53085423117528
+            ],
+            "isotropic": [
+              14.912051436626093
+            ],
+            "reflection": [
+              15.764096074489622
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              0.8284120244992333
+            ],
+            "qinc": [
+              82.84120244992333
+            ],
+            "qabs": [
+              82.01279042542409
+            ],
+            "isotropic": [
+              75.87251352333136
+            ],
+            "reflection": [
+              2.2150742637517737
+            ]
+          },
+          "back": {
+            "q0": [
+              0.6597781048096502
+            ],
+            "qinc": [
+              21.992603493655007
+            ],
+            "qabs": [
+              21.332825388845354
+            ],
+            "isotropic": [
+              10.046025696160026
+            ],
+            "reflection": [
+              11.946577797494982
+            ]
+          }
+        },
+        {
+          "front": {
+            "q0": [
+              0.9350815092358044
+            ],
+            "qinc": [
+              93.50815092358043
+            ],
+            "qabs": [
+              92.57306941434462
+            ],
+            "isotropic": [
+              85.21777885796502
+            ],
+            "reflection": [
+              3.5367574027752227
+            ]
+          },
+          "back": {
+            "q0": [
+              0.6938087998626136
+            ],
+            "qinc": [
+              23.126959995420453
+            ],
+            "qabs": [
+              22.433151195557837
+            ],
+            "isotropic": [
+              10.045948184488411
+            ],
+            "reflection": [
+              13.081011810932042
+            ]
+          }
+        }
+      ],
+      "ground_length": [
+        200.0
+      ],
+      "minimum_y": 0.6464466094067263,
+      "F_mutated_by_AOI": 0.0,
+      "incident_form_difference_max": 1.4210854715202004e-14,
+      "incident_form_residual": 1.5716624079538463e-14,
+      "incident_form_row1_back": 21.992603493655004,
+      "warnings": []
+    }
+  ],
+  "issue6": "RecursionError"
+}

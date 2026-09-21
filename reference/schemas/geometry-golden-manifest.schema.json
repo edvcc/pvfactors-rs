@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://edvcc.github.io/pvfactors-rs/schemas/geometry-golden-manifest-v0.1.json",
+  "title": "pvfactors-rs Geometry Golden candidate manifest",
+  "type": "object",
+  "required": [
+    "schema_version", "golden_version", "status", "generated_at_utc",
+    "reference", "generator", "case_catalog_sha256", "tolerance_profile",
+    "artifacts", "coverage", "known_deviations"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "golden_version": {"const": "geometry-golden-v0.1-candidate"},
+    "status": {"const": "candidate_recommended_for_approval"},
+    "generated_at_utc": {"type": "string"},
+    "reference": {"type": "object"},
+    "generator": {"type": "object"},
+    "case_catalog_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "tolerance_profile": {"type": "object"},
+    "artifacts": {"type": "array", "items": {"type": "object"}, "minItems": 1},
+    "coverage": {"type": "object"},
+    "known_deviations": {"type": "array"}
+  },
+  "additionalProperties": false
+}
