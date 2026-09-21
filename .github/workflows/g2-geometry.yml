@@ -17,9 +17,8 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
-          # Phase 0-1 claims 3.12.14, which was not available at G2 execution.
-          # Keep CI runnable on the latest available 3.12 patch and preserve the
-          # mismatch as an explicit approval blocker in environment evidence.
+          # Ordinary PR verification is intentionally separate from the pinned
+          # Canonical Reference Runtime R0 image under reference/runtime/r0.
           python-version: '3.12.13'
           cache: pip
       - run: python -m pip install -r reference/requirements-g2.txt
