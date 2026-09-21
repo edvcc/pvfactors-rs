@@ -13,7 +13,7 @@
       "field_name": "geometry",
       "file": "raw/C01.json",
       "nonfinite_mask": [],
-      "payload_sha256": "1cf69ad237524560b0e19b290be6c8d93db0907cfa89731b5d23a1a078a72106",
+      "payload_sha256": "b070aba2eaba426938bcb4d26e45f0725389884347a5793a27d95eb4974e17b7",
       "provenance": {
         "case_sha256": "b3b1f7409f2a3dd06d18318747029718636bf3a9eaf36bfea63675db7e3a262a",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -49,7 +49,7 @@
       "field_name": "geometry",
       "file": "raw/C02.json",
       "nonfinite_mask": [],
-      "payload_sha256": "b9ec24506a73a0f1a674d6d88dedd8bb6e85f2ab1654ba3ed528fcf5cbcf36c2",
+      "payload_sha256": "044504d058005492ff0e36991ddd34235ea78debb0464f63e0113129ccc397d5",
       "provenance": {
         "case_sha256": "113509eab0ca7048159e4f5fab39864c9419e27a4d5ebe6002a12ec4e7a46fbd",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -85,7 +85,7 @@
       "field_name": "geometry",
       "file": "raw/C03.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c24c0cca86305c6a76c71bc2c5ea0f4f8e06900b0e800632317dd1169e0b9605",
+      "payload_sha256": "1dd8c35c24742d021bb1e092c919ed5e58aba456359b6604175a33f31828e7d1",
       "provenance": {
         "case_sha256": "392f20a9610c273beabfcf90d9333ae079229462303df9e82c712c2944092fe7",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -121,7 +121,7 @@
       "field_name": "geometry",
       "file": "raw/C04.json",
       "nonfinite_mask": [],
-      "payload_sha256": "ed16796bb97621377e7616137ac71cd643d4154cc00a193f180827eb4a0b633b",
+      "payload_sha256": "a8b2fd289626cd61ea98f45b54bd9f57eb7381e719853e25c0dc16fa6353e0ee",
       "provenance": {
         "case_sha256": "4b260cb9155d27e06e5670ec3998b8e28abfd13cc80816f751d52f867fcb0d71",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -157,7 +157,7 @@
       "field_name": "geometry",
       "file": "raw/TILT_LEFT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "8e7aac33dab0788a798b8f54ae8e0897a2687e232618313b42205538fe2b67b9",
+      "payload_sha256": "1330b7f53c1c988e08451ee8813f48f58a389065d01d481a9e66da3f3f6e743f",
       "provenance": {
         "case_sha256": "3b6f3f70e30f88b0c9913d16dfb64072675ee8dc6c7b72fabc32063c4a986ac8",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -197,7 +197,7 @@
         "$.result.ground.cut_points_m[0][1][0]",
         "$.result.ground.cut_points_m[0][2][0]"
       ],
-      "payload_sha256": "579fd01eaaa1909c3c7a044d6bb2b68f844f06ab11258ae9c96e178a97d3774a",
+      "payload_sha256": "a0b2ef61c5c8bea2e9c4e9a4cdebdb35651771538dca9eccd5bbd7c268731f03",
       "provenance": {
         "case_sha256": "5256476b8e6f0e2468caccde940bda19485043f35a12020345924f9e2ebde8df",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -233,7 +233,7 @@
       "field_name": "geometry",
       "file": "raw/TILT_1e-10.json",
       "nonfinite_mask": [],
-      "payload_sha256": "41aac901f64842a94d0d646a50e447a2e8505edfec392b868a7f4156a762552b",
+      "payload_sha256": "5f42b1d06fe7cb12dabf5169e62f632d3ff33412d7909a74c1290fda59fdadf2",
       "provenance": {
         "case_sha256": "1ae41c73c3e85e3c6b1e0c7992e3f707e2ad45d439fb7dffd52fe17cd012925e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -269,7 +269,7 @@
       "field_name": "geometry",
       "file": "raw/TILT_NEAR_LEFT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c7c4642aa66d9f8b7249c8c65ff74bcd71f29eeb45c7f717c30b1ca290bd2e4c",
+      "payload_sha256": "26dec575e7a217a99ca026202b82d09cc5497a9105d7ba54254f134dd88ab1bc",
       "provenance": {
         "case_sha256": "cbd08c9b845d75334f39566a4a1afabc16e694dd7fbc75d3dd52c33f552aaa34",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -305,7 +305,7 @@
       "field_name": "geometry",
       "file": "raw/TILT_90.0.json",
       "nonfinite_mask": [],
-      "payload_sha256": "693fe2908bd79601c3525d034afb8eb02219d4fcaf9e7729def0b8c140675cb6",
+      "payload_sha256": "1c9e5799074cbe89819aa0c29535c3468ddc09e6f65029aaefdf05fd8986301e",
       "provenance": {
         "case_sha256": "7b2b847266bbf43e1bc453f1db4599a8338c830e9852ee52ea758a70a2488c91",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -341,7 +341,7 @@
       "field_name": "geometry",
       "file": "raw/SHADING_NONE_CANDIDATE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "80e57f7c17c9aab99908e37a463968925995a88ebb622793ea50aca27f33bb2e",
+      "payload_sha256": "968f1cfb712fae8e4c2745ec0c11ae534f8c05c2cbe6713546b24107e99e9ba1",
       "provenance": {
         "case_sha256": "27d976cba12ddfbfe3b340693077716a5ee91363b7f75fdd446b8bbc70278b46",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -377,7 +377,7 @@
       "field_name": "geometry",
       "file": "raw/SHADING_PARTIAL_CANDIDATE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "ec5d5d2fdedc43be24fd095ed3d0312c0b356bace020dc7a679633ad3497be54",
+      "payload_sha256": "f9b7cb8fa21cfaf8d2c2a98b3c52aece8b92025e1f4132b4a3162d6fe184a3b5",
       "provenance": {
         "case_sha256": "1f567e8c65063ada950af42c77c47c567c20cc6e5e4844c36538f277602f949a",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -413,7 +413,7 @@
       "field_name": "geometry",
       "file": "raw/SHADING_HIGH_CANDIDATE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "ea8500e75df9887d2d822c2a56d5b1020a4cd5933563d333067a9f8b60edcc6c",
+      "payload_sha256": "8c4819b075e2d76360f1aad0018cb578c70cf3fabedb79e3ba500b2c96d1c17d",
       "provenance": {
         "case_sha256": "c68d1eb0bcf0f49effd769c73c4cfb23d891a68015b440badfce68c0169aad86",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -449,7 +449,7 @@
       "field_name": "geometry",
       "file": "raw/SUN_90.0.json",
       "nonfinite_mask": [],
-      "payload_sha256": "9cd854f5e890ce820859663c9cf015e76f335f566d47a13f784500e457e9bdb8",
+      "payload_sha256": "4571eb3607e51f0c29d367cc3ee22908eb78e36c5403afcb72c416cd2ee5a086",
       "provenance": {
         "case_sha256": "ffdd4d8a01b5884f2bd26a03d451a0a69487468152c612c6452ac3270ad81ed7",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -485,7 +485,7 @@
       "field_name": "geometry",
       "file": "raw/SUN_ALONG_AXIS.json",
       "nonfinite_mask": [],
-      "payload_sha256": "b4e588874eca8c6b25c86b59f385a8e2352a4ad4d38a42c07de81a76ba3efd4b",
+      "payload_sha256": "2fdd2de3499ac5a0221b49d9b0c4409061148569e952cda6745abb5015d7ad2c",
       "provenance": {
         "case_sha256": "e30d06af5bd4b4a5539b1adb0c2636a03f5e8c22cdde83aa492cd403774b7788",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -521,7 +521,7 @@
       "field_name": "geometry",
       "file": "raw/CUT_2.json",
       "nonfinite_mask": [],
-      "payload_sha256": "eba682090e5b59c1648db1277429de2c492cc7fca90ea0d40ad902c79c367976",
+      "payload_sha256": "c5be91812a9034871d47cddeebd2692701ae80a9da528182e2c23af62c5d1543",
       "provenance": {
         "case_sha256": "222360d1ab135e69425f77175f2d0a1efd231aafb8c2d7019950ed90e2d735ee",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -557,7 +557,7 @@
       "field_name": "geometry",
       "file": "raw/CUT_8.json",
       "nonfinite_mask": [],
-      "payload_sha256": "3957a4ffc82495e01d54c196399580e6288fc7d310fa8b0fa28a7151b5af37bb",
+      "payload_sha256": "57eda6dbfcde9ad5d18271bbffee9d2f2f8aa036277dfe0840c132f38eeadbb1",
       "provenance": {
         "case_sha256": "9b2086b10c17d836e2a6016c532a035a3c5d20a67c26c7b54d9c2df3c67021ed",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -593,7 +593,7 @@
       "field_name": "geometry",
       "file": "raw/CUT_ASYMMETRIC.json",
       "nonfinite_mask": [],
-      "payload_sha256": "89c12ce29582c4ba31bf3da58315a0ce1f8b4897fbc81733aed952a9d6210c99",
+      "payload_sha256": "2a2c79b888682e41e9abb03798b22b710d68f65322538b6a13b137b500daf48c",
       "provenance": {
         "case_sha256": "9015e081ba14001a88e8294da883c5e4e071543edaa5bfca40c677e79dd6d73e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -629,7 +629,7 @@
       "field_name": "geometry",
       "file": "raw/UNDERGROUND.json",
       "nonfinite_mask": [],
-      "payload_sha256": "8243d6b667db12568ec972c739877c38f95513f4eb22d79dd05617f35e24d967",
+      "payload_sha256": "93b69b1c1366b60723af75d552f9c8fc52f11cc07e138875d9b64aa788ec2048",
       "provenance": {
         "case_sha256": "5da6b0d55d207cd99a0b25b3fe1f99c0581b4f51150cbe6b91d016c8dd284496",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -665,7 +665,7 @@
       "field_name": "geometry",
       "file": "raw/CUT_ZERO.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c01d0529175202a9e485098465f4e84faf7e83fd25d40dc16af4304fe9c600b2",
+      "payload_sha256": "03d45c3d7ccfe85f76546a3ddf36615405d709b1fabfa5e252a59c9806d44cd5",
       "provenance": {
         "case_sha256": "26baa271a4b4fe6e2dec35bb4d68dd070b9fb79351582d5c9e941a322fe4f871",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -696,7 +696,7 @@
       "field_name": "geometry",
       "file": "raw/TILT_120.json",
       "nonfinite_mask": [],
-      "payload_sha256": "a1b3b6a2bdef6aadc4ff63d9f2b6de5dc308a9ea54c48990cae38a6e27dcc233",
+      "payload_sha256": "c739080ea6f2426c2851b9726330fe89de48f1b7d3034c70bcc30197b8ffd65d",
       "provenance": {
         "case_sha256": "4b36edd17fe1eea07fa8d279ae9021022bba9583fe20a99718fb5c409d413330",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -732,7 +732,7 @@
       "field_name": "geometry",
       "file": "raw/TILT_180.json",
       "nonfinite_mask": [],
-      "payload_sha256": "1ec9e844d5c71dd7dbb82f5b05e06903a21bc9d57f92906bd969af1f4c86e637",
+      "payload_sha256": "a776dce82ac97502a1cf5aab87cfa452239c93728189ab7e8ca43d154f4fe416",
       "provenance": {
         "case_sha256": "50ae7b13c57982a8ebaf106fd19ab6c44304439274dbbe5e6b094af4305ac26b",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -768,7 +768,7 @@
       "field_name": "geometry",
       "file": "raw/GCR_GT_1.json",
       "nonfinite_mask": [],
-      "payload_sha256": "3883d7741fdf30f068595986bcc4f91d920c3cf9a694d7482adf2887da1c5ba5",
+      "payload_sha256": "53814e0029b61f963f8a013b28fdc5ebb5683a7856a3c96cad7f90fc4a3d6398",
       "provenance": {
         "case_sha256": "b5085e0b7f8c87d7e89fb0925173d35115c2c56e36cce7e9f1724472c9db108e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -804,7 +804,7 @@
       "field_name": "geometry",
       "file": "raw/SUN_BELOW_HORIZON.json",
       "nonfinite_mask": [],
-      "payload_sha256": "757a2d4e74322328a0658239776dd847ed62f695995c2231c9bef1b726423dad",
+      "payload_sha256": "a0d3922c080202d49d217c6396e3e0b98b8b0b440607be8908df7c7c667c2b1c",
       "provenance": {
         "case_sha256": "a38619843bb5d26f32a3ea0d5f75d77e15f8724c3ab88c2d97e99dce01e73f10",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -840,7 +840,7 @@
       "field_name": "geometry",
       "file": "raw/INVALID_TILT_NEGATIVE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "38e401db5cd25a48cd79fbcf194dd062bd26c9633936ecc3d2578badad941446",
+      "payload_sha256": "f8569d42902737a2cec81e26acc4a761df6396b497695f242c394593fefd48e0",
       "provenance": {
         "case_sha256": "e6299eaf236612202078f728020ec183f3d091d96629adc47082b235b32cb201",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -876,7 +876,7 @@
       "field_name": "geometry",
       "file": "raw/INVALID_TILT_GT_180.json",
       "nonfinite_mask": [],
-      "payload_sha256": "bf0f69b8b43ff8b40065dd4804a98dcb581cbd6d6352cb21e7a7ff5a6e1ba631",
+      "payload_sha256": "4343ad25d99c3c0ae474f4ce8e109b2ed0372b36151334eb2a7ca742fed3eacb",
       "provenance": {
         "case_sha256": "51a6943c6261e05dc90675e6a9c331bc544f6df138d3636a897dae1c69a6f7fa",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -906,13 +906,53 @@
         "endpoint",
         "xy"
       ],
+      "case_id": "MULTI_TIMESTEP_NONZERO_INDEX",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/MULTI_TIMESTEP_NONZERO_INDEX.json",
+      "nonfinite_mask": [
+        "$.result.ground.cut_points_m[0][0][0]",
+        "$.result.ground.cut_points_m[0][1][0]",
+        "$.result.ground.cut_points_m[0][2][0]"
+      ],
+      "payload_sha256": "8dc3e55120b34b66c63a0a15e537fd322a3a9e78ec154b0198f891b520a24fea",
+      "provenance": {
+        "case_sha256": "567bf3c3d3d06b77c6cb8289f2ee9091bb0c22b101cbd20ac2d43e5651cf4894",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "1914376f420568833c90e3e29b263a6938d8c61645d87515e7f49cc36f91f981",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        2,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
       "case_id": "GROUND_NORMAL_EXTENT",
       "classification": "raw_reference",
       "dtype": "canonical-json/f64",
       "field_name": "geometry",
       "file": "raw/GROUND_NORMAL_EXTENT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "2acff93000419c20ac950832ca9c897de9d979a80094e2b61a15cf7a6ec5a983",
+      "payload_sha256": "7e728abfe5eb7624bc845e6b106f1e03ebd6a4c95bdfa68c41dbca5685377255",
       "provenance": {
         "case_sha256": "67f1d0a788b56ba912de4041a125b54fca27413d8088922a0399bf571fbd4306",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -950,7 +990,7 @@
       "nonfinite_mask": [
         "$.result.ground.cut_points_m[0][0][0]"
       ],
-      "payload_sha256": "2b9ba5c94551123d7114e980b67de53c22a013f82cbbd240deb88a9fc4677abb",
+      "payload_sha256": "12e43a138bafad17f71d9d9f8f0dd668e054a6904628639be44eecb890686b64",
       "provenance": {
         "case_sha256": "4ba9a27914c79b0988382aac4318a0e11f8fe024547b5199b92f27869de83513",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -988,7 +1028,7 @@
       "nonfinite_mask": [
         "$.result.ground.cut_points_m[0][0][0]"
       ],
-      "payload_sha256": "770626e5dd3b78e253be0ebdb7ce390ff6566711cf018de4fb5ecc76917a5269",
+      "payload_sha256": "e4811779c284ecceae13c2d1e21797cf679ef724ed921c22feb367ddf6c3e0d7",
       "provenance": {
         "case_sha256": "19bab21fdd7b8b7e30ccd738c6a08592ff3559885030d8bb2973dcbd022c5d72",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1024,7 +1064,7 @@
       "field_name": "geometry",
       "file": "raw/MIRROR_BASE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "e66453c1f00585981dbe194cc922475dedac5954ac87c0c0b7db2da717a26468",
+      "payload_sha256": "caa1171ade604a3371fc97959cd052b981e6ade09d9c72fe86dd97a7f0a55749",
       "provenance": {
         "case_sha256": "e211f42ca168a3124492a15accf5f7c76e13e8ed36ce5ebc697ec8ac1dbc195e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1060,7 +1100,7 @@
       "field_name": "geometry",
       "file": "raw/MIRROR_IMAGE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "8994e3afe5535bce0a29403b91d6c72888c3ccb4f86cd7e90c01c8584f380497",
+      "payload_sha256": "5193f5b358e0fa4d5b366877c8322bafd4b77e9a53e42e13c90a233bb0186fd0",
       "provenance": {
         "case_sha256": "1d1fa3709f3c8fab8139c99ff455abcc84f1c234cea0ce3a8f15758ac1291152",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1193,7 +1233,7 @@
         "$.result.surfaces[9].coordinates_m[0][1][0]",
         "$.result.surfaces[9].length_m[0]"
       ],
-      "payload_sha256": "5aa4f9576645034d31aa111dacb3caec777898a5f02a83a7ee8d6298c275d4d8",
+      "payload_sha256": "017e7b712a9f9a8cdc1399f171d041cb8451cda79fc01a2d95468b5c07bc82c9",
       "provenance": {
         "case_sha256": "4bec45fa278b2cedf9098f721f950dc8561bafcec0c84f4149cb81fa398caad6",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1229,7 +1269,7 @@
       "field_name": "geometry",
       "file": "raw/INVALID_SURFACE_AZIMUTH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c88d9556efc6112dfd52a8fef74290d740227c24dd9c1a208baa74a22c790e9a",
+      "payload_sha256": "58298aa2b5a9eaaec0b3f20d49015f2eb7847468858c31bb882ffe1f27fcba3a",
       "provenance": {
         "case_sha256": "c2dbcfdeba5e4b699024b4004b291be23073538ddd854c04e21083186114a9b8",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1363,7 +1403,7 @@
         "$.result.surfaces[9].coordinates_m[0][1][0]",
         "$.result.surfaces[9].length_m[0]"
       ],
-      "payload_sha256": "8fa6d52773d7f87ecf6f4eb5e841b069d001a77652db0a81b4b75fac3cb5e7f3",
+      "payload_sha256": "9172f7b4364baf2f245a0ef91dd788b5748c636ce72dfda2e54fc55a8f67abf3",
       "provenance": {
         "case_sha256": "b0dff2e2d17a7224c11baf6cc24bd66c3d21bddc3fda4af161d8e972377b4096",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1620,7 +1660,7 @@
         "$.result.surfaces[9].coordinates_m[0][1][0]",
         "$.result.surfaces[9].length_m[0]"
       ],
-      "payload_sha256": "c9a6c9301c092cbae629b7bad592bf884281a800f0f3b4a7c11d941bc87a4ecd",
+      "payload_sha256": "4d3158a40c3aeb9009e2603615072c71a0a215733ed954c2922c110647207ba1",
       "provenance": {
         "case_sha256": "92729ab96453152038bd5de0521d5db5e604cf9dd8c1ed73da56a4ad439f6c75",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1656,7 +1696,7 @@
       "field_name": "geometry",
       "file": "raw/INVALID_EXTENT_REVERSED.json",
       "nonfinite_mask": [],
-      "payload_sha256": "4bc9447881b9b31f43dadd898d950dac5de95c3ead4e9b003e60cae90176830b",
+      "payload_sha256": "dbe8e511a364287ca7ac94cac37543281d8e621838969f24a97afc995ddf3a6b",
       "provenance": {
         "case_sha256": "c10420c2714657413e654e433d463862bbdd5f844c517f4452b4468db401c759",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1692,7 +1732,7 @@
       "field_name": "geometry",
       "file": "raw/PRIM_COMPLETE_COVER_DIFFERENCE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "a5f0ea9e8112fbcf150334cd54bfa8453365f052edb42740e0bcf791545c06ef",
+      "payload_sha256": "75aa455bba7c35e3eb2d3cfd5a1523725b8f3a5b016d436d486782447de12d44",
       "provenance": {
         "case_sha256": "cbc1dbf892a86f19f3d4f9e1943e270931f1d736dad2159472638765cf1de5d0",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1723,7 +1763,7 @@
       "field_name": "geometry",
       "file": "raw/PRIM_ENDPOINT_TOUCH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "2cf4c473c5e651becffed52a7f92ae2fa97cd2e787cfc2b75f03c6d134664d8d",
+      "payload_sha256": "1f5c736cad24b7a2594eb31c66d2c122d37ca6930399bc11673d4e0ef91c6475",
       "provenance": {
         "case_sha256": "06f8af8b6caf5251ed8bd9ce7a7f734dd04ce2360128223dce2bb0f2cb9d0e14",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1754,7 +1794,7 @@
       "field_name": "geometry",
       "file": "raw/PRIM_POINT_TOUCH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "75373975bd043ab079876ac0719a91250b630bd93b0d71b31a3a23231854c585",
+      "payload_sha256": "d75242e1461b0176b15b13e6eab66401c3c77a00d17ef8839e12c0b5461f2132",
       "provenance": {
         "case_sha256": "bbaf55f5c75100e9ef1017a93a2ab26700d127fcb619586cddb841a3f4ed2479",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1785,7 +1825,7 @@
       "field_name": "geometry",
       "file": "raw/PRIM_POSITIVE_OVERLAP.json",
       "nonfinite_mask": [],
-      "payload_sha256": "0961942134f36ade23db67357c03e4a4a86f6e532429ae20920e848349fec1ad",
+      "payload_sha256": "59352f9ac5ea090d56c405d769e4ccac181190dd0d193093590bcd0600290948",
       "provenance": {
         "case_sha256": "e8f1365b448d44347d3e5b60e3b79b4bd13bda55cae530eefc43ec9d13de2cab",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1816,7 +1856,7 @@
       "field_name": "geometry",
       "file": "raw/PRIM_ZERO_LENGTH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "b4f460210a96bee77c5f79e9b92c1b3953bcf3ddf5ab88c189112990556e2a43",
+      "payload_sha256": "7d3f55ee5bff957493e792563bab9545c32d888a66aaa8208633c04035f5e7de",
       "provenance": {
         "case_sha256": "0ffad6659182f629ec570eddb49d702a591b30141a0d46f9997116f4887406f7",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1847,7 +1887,7 @@
       "field_name": "geometry",
       "file": "raw/PRIM_PARALLEL_PROJECTION.json",
       "nonfinite_mask": [],
-      "payload_sha256": "8e431435b19b24e7fa85882947a87726d2bde1fd6570624a48fc66919dad9d2e",
+      "payload_sha256": "8dac30bc9c3ed85376f20cb2d8eb183f19bf7e3a70e4aa5fbcfb68926ddc5eaa",
       "provenance": {
         "case_sha256": "8070ab0f4abf6ad061cb2faad8fc2cd1a037e2041502043f85adbec43e679b85",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1878,7 +1918,7 @@
       "field_name": "geometry",
       "file": "raw/PRIM_COINCIDENT_PROJECTION.json",
       "nonfinite_mask": [],
-      "payload_sha256": "18fff81f8b001ef888711ca9261f113f47f8a8a9ca97fcbfa1cf4e6a2dec8f8f",
+      "payload_sha256": "3acdf12dab17e6e0c7d7895e4ec5d6b5149260a7a090c670dcccabdcc75d58a5",
       "provenance": {
         "case_sha256": "05f2088e388d87986d57ef8548e672c2a97d6fd80cb2aae2985992dc9988344b",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1909,7 +1949,7 @@
       "field_name": "geometry",
       "file": "raw/PRIM_ACTIVE_TOL_MINUS_ULP.json",
       "nonfinite_mask": [],
-      "payload_sha256": "20fb85b86c1e6781b97c589c052de4f802d1ce83b307573f520f689452857b7d",
+      "payload_sha256": "2cf52c06f16460bdc22f144094adf7f406c396cf371d74f5d58a2815d7468499",
       "provenance": {
         "case_sha256": "d290bc26f4dd5dc6c8d83342d451994d8dae9358a88a45e073485eb4e77a78bb",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1940,7 +1980,7 @@
       "field_name": "geometry",
       "file": "raw/PRIM_ACTIVE_TOL_EXACT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "a18fee770e5d972971bd33fe12664cb5cedf9260ea8e4dc85241797fb85f3b48",
+      "payload_sha256": "280c2d1b4c33aa3757da548dca015ffb96a8aafc5c57a52840d79d6f7f907ad9",
       "provenance": {
         "case_sha256": "2646ea3b4c8c01e58326655e0447348369bca6e88fa02707ade30b4bea23409d",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -1971,12 +2011,291 @@
       "field_name": "geometry",
       "file": "raw/PRIM_ACTIVE_TOL_PLUS_ULP.json",
       "nonfinite_mask": [],
-      "payload_sha256": "03e802f5aca4db680edb212e392fa0c101c6c7e890ec9d1cd1667cfd3dbe622b",
+      "payload_sha256": "191b0635a2982b46c44e25d9e2347c117453691878b7de05b7c31017e85c624b",
       "provenance": {
         "case_sha256": "b2c730edf357e9dfd3c46da7e9bd786d91c602ea1b80db63ea6bf8ec4d5932d5",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
         "method": "direct frozen primitive invocation",
         "payload_sha256": "96ab8d689f09514ed14cb09a7eb06a3b1bc773e57c2d31a54f81e715b4c55b44",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_SNAP_MINUS_ULP",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ENDPOINT_SNAP_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "aae32df67a0345f9b84ad56bf31f931839a0ce7a77d1c261eb4a04f2a744be80",
+      "provenance": {
+        "case_sha256": "c86291759ab0e57c9b2701fcb07651b77f4a60fbf35da1cfdad108a3af411243",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "5542723b135636ce5db9a0c944cdfe4073b555936acecf47c0174e890616b408",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_SNAP_EXACT",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ENDPOINT_SNAP_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "0fd6a4c3e71abf0f821522d0624bd6479d3eeec7dea5fa879854cbb8d04df332",
+      "provenance": {
+        "case_sha256": "547638b2f781051e8f856841a4850359e8496750677b3dcf26e82f82736bb959",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "b562058468fd02bbb315bdc52f25db9f6c4b6fa6f7d0e617d21cd70f37ef15eb",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_SNAP_PLUS_ULP",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ENDPOINT_SNAP_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "d7c8a30fd6e0ed317d33fbebc54e1602316b56373b5841b55fc35dbca9aeebb7",
+      "provenance": {
+        "case_sha256": "f84929b73304e61b207d1dbf55813aaaf3e2f23edd0987d604fbfc6453204ec2",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "c2c33194cec89f80b0d0b7040bdfcbfac9640ceecc22b425cb1ca1ca8e57b83a",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ORIENTATION_MINUS_ULP",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ORIENTATION_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "95028ad9169956f886f424abf71a5daf4bffe1922743cbbb20b47726ed051ae3",
+      "provenance": {
+        "case_sha256": "5fd855ed5bd881434e22400fbe1c92146d984ae018c0f503b67151aceba5e56e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "bc110ae9fcddd05639c92a6007fd65de98ba44c8d8f3a3291b66354b26afb2ec",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ORIENTATION_EXACT",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ORIENTATION_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "5d371629ec11fa09fca58b9fa89410ea0a7b22fef688ef506c3f9df6e887092c",
+      "provenance": {
+        "case_sha256": "deddc2f1e033613f0b27bc81bfcb8e65a54fcfcc12a54e2de24b39f319740d3e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "cbb3af7eb04cf340abf7859ff2c633464a4528beb18919e7c9b27e57a2433c38",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ORIENTATION_PLUS_ULP",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ORIENTATION_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "bfff78511725f6a5c33a2ba3fd47ad3d4872146cbf4df9a063f75ebad018aea5",
+      "provenance": {
+        "case_sha256": "df3a85245e41fa856b0fcbc94453e324872a92e07cff135533310efff1cd5d5e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "485f62aaf9eaa74f52631b13c8c6ce4a10ca76e1fdc526ff672645eaf8f513a7",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_LINE_OFFSET_MINUS_ULP",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_LINE_OFFSET_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "fca0c7d2d5a678203a487f4c83ecb094357369482b8e9aa73473a273f6041080",
+      "provenance": {
+        "case_sha256": "ff8a4d349678b831dfd0eb804bfa49120194418a7d54ddfb9c4d0d04c90f041a",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "c1023d292470853919ad501fd95c6f3748314e911d347e2aa74599538b1cdb31",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_LINE_OFFSET_EXACT",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_LINE_OFFSET_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "a8c9e218b01067485a13b3202907ea59e715f545843b51559338e5ff78fd7762",
+      "provenance": {
+        "case_sha256": "4b2df509c207284656d8727ab34ee8edd62d3cd3d4bb0bb42ab84251d576fe5b",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "baf5fd95ec8ae09678363e60b6c04d7f96ad02d3f7264bf7c787a87ed76b08b8",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_LINE_OFFSET_PLUS_ULP",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_LINE_OFFSET_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "3f1e05858c113c051a9804a36934a20d7d1780ab8394ef32d1e8798ecf788b6c",
+      "provenance": {
+        "case_sha256": "bbfc221e47efaa3c90e1e0566e7fcfb6f239913f2918755c12ee2bc3565c8549",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "4a81cdc946ec96a5f62164aa1883547288da36c73477ee06ed35ce37939c1eef",
         "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
         "transformation": "none"
       },
@@ -2002,7 +2321,7 @@
       "field_name": "geometry",
       "file": "normalized/C01.json",
       "nonfinite_mask": [],
-      "payload_sha256": "5b929896e63a3f1302bd06828606f06563ed43b7025bfe33382314ff9811535e",
+      "payload_sha256": "5181a90d78f0c9108b8d53bfa26bca969202181a650ce22e5e328b5b57faf4b4",
       "provenance": {
         "case_sha256": "b3b1f7409f2a3dd06d18318747029718636bf3a9eaf36bfea63675db7e3a262a",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2038,7 +2357,7 @@
       "field_name": "geometry",
       "file": "normalized/C02.json",
       "nonfinite_mask": [],
-      "payload_sha256": "29db1a1d4cfb0abbc04b9c8d60c00c802b5987a95ef1e5beef6386e9140482a0",
+      "payload_sha256": "8a0153ae9e28cf24d9af30e0e93a40283df0fb100f65834263fc6a37ec31f49d",
       "provenance": {
         "case_sha256": "113509eab0ca7048159e4f5fab39864c9419e27a4d5ebe6002a12ec4e7a46fbd",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2074,7 +2393,7 @@
       "field_name": "geometry",
       "file": "normalized/C03.json",
       "nonfinite_mask": [],
-      "payload_sha256": "dc543b8c3d4113bf4f94269bd9ee8fbdac3f27430adcd33b88edc3cecfd28600",
+      "payload_sha256": "72edb592685f5248f635601acbc34702937c384aedc662b8149c98f9d82e870f",
       "provenance": {
         "case_sha256": "392f20a9610c273beabfcf90d9333ae079229462303df9e82c712c2944092fe7",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2110,7 +2429,7 @@
       "field_name": "geometry",
       "file": "normalized/C04.json",
       "nonfinite_mask": [],
-      "payload_sha256": "1385bc0a1efbed5cf88a779b39f7d3f64c33466f60875f59876f0ce72c540f5c",
+      "payload_sha256": "e618b9427ff532612f824c829453a489671929f0c24148483d3dbefee164c356",
       "provenance": {
         "case_sha256": "4b260cb9155d27e06e5670ec3998b8e28abfd13cc80816f751d52f867fcb0d71",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2146,7 +2465,7 @@
       "field_name": "geometry",
       "file": "normalized/TILT_LEFT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "7c267d616025880ca07bf3d54a582eb3d84bcb255a4aec6e3212deacdba665d0",
+      "payload_sha256": "3e2142f86effdbf4f3a7b4c3f116da4ae8d1d8c61ae5e48494bac3051563c5c8",
       "provenance": {
         "case_sha256": "3b6f3f70e30f88b0c9913d16dfb64072675ee8dc6c7b72fabc32063c4a986ac8",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2186,7 +2505,7 @@
         "$.result.ground.cut_points_m[0][1][0]",
         "$.result.ground.cut_points_m[0][2][0]"
       ],
-      "payload_sha256": "3ce918c8da59f584cea0d02982d78a1aa100c9a604cefb01f4bde236f1661ace",
+      "payload_sha256": "70ad1fc159d2e21f25cf371540d6fbf1ecd8ff68ba7e8bcbcb79fce2c381ceb4",
       "provenance": {
         "case_sha256": "5256476b8e6f0e2468caccde940bda19485043f35a12020345924f9e2ebde8df",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2222,7 +2541,7 @@
       "field_name": "geometry",
       "file": "normalized/TILT_1e-10.json",
       "nonfinite_mask": [],
-      "payload_sha256": "30e50dc4ebafc642a5f158bd6df7028d987f2cf2936e1c6b0bd83714c056223b",
+      "payload_sha256": "8376ef331a0d55ab63f2f7535ddf1dab6b98ad264132fb8b6f4b907a266d3c81",
       "provenance": {
         "case_sha256": "1ae41c73c3e85e3c6b1e0c7992e3f707e2ad45d439fb7dffd52fe17cd012925e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2258,7 +2577,7 @@
       "field_name": "geometry",
       "file": "normalized/TILT_NEAR_LEFT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "d0268709c70b23312a29aa2e5527efb8f9efb5e71df7c4df3f5903ce76777436",
+      "payload_sha256": "cad789dde8cf30ec350c3c76c694bf276446c0e854b4ce3191fe5b132ce0022e",
       "provenance": {
         "case_sha256": "cbd08c9b845d75334f39566a4a1afabc16e694dd7fbc75d3dd52c33f552aaa34",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2294,7 +2613,7 @@
       "field_name": "geometry",
       "file": "normalized/TILT_90.0.json",
       "nonfinite_mask": [],
-      "payload_sha256": "7bdb1ab9ea6332ed113da029ebea14ae94238cbcd96da893d3666b5a84a431aa",
+      "payload_sha256": "acb08b798332b75bb785ddbafaf0848f85f1c20403498a8416200fe9364165a1",
       "provenance": {
         "case_sha256": "7b2b847266bbf43e1bc453f1db4599a8338c830e9852ee52ea758a70a2488c91",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2330,7 +2649,7 @@
       "field_name": "geometry",
       "file": "normalized/SHADING_NONE_CANDIDATE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c3b3422550f9b47c66a979f7383197340771e3c224d4f6b928a4d7587871b002",
+      "payload_sha256": "6d7fe11b9626314dbc3ac87e0513562bf72e178b903f921767cf683a40ca9959",
       "provenance": {
         "case_sha256": "27d976cba12ddfbfe3b340693077716a5ee91363b7f75fdd446b8bbc70278b46",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2366,7 +2685,7 @@
       "field_name": "geometry",
       "file": "normalized/SHADING_PARTIAL_CANDIDATE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "d5a931d89ea0089ed5e5a1c205be6e47019467696e9513d97998d3b6d07dc68d",
+      "payload_sha256": "73758243792fd2a301e38163579e4e2caa441b1307ea76c1b14d8c9aff7dbddc",
       "provenance": {
         "case_sha256": "1f567e8c65063ada950af42c77c47c567c20cc6e5e4844c36538f277602f949a",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2402,7 +2721,7 @@
       "field_name": "geometry",
       "file": "normalized/SHADING_HIGH_CANDIDATE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c56410c8986b072b7f0037767cc6adcad784029f512cf8f6da4c1dd3e85f7639",
+      "payload_sha256": "c507e4bfba87df6fe174947df6fc48ad83e234da1bd7f71798bfa531c64fb123",
       "provenance": {
         "case_sha256": "c68d1eb0bcf0f49effd769c73c4cfb23d891a68015b440badfce68c0169aad86",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2438,7 +2757,7 @@
       "field_name": "geometry",
       "file": "normalized/SUN_90.0.json",
       "nonfinite_mask": [],
-      "payload_sha256": "2259d2cc4d19cbe43632ca33dd2e9e95c9d5df89acb445ca3d805585c862b033",
+      "payload_sha256": "94153a27625a9994c91127576bd45ee17f3540785eac96e417405f8a400bcd8e",
       "provenance": {
         "case_sha256": "ffdd4d8a01b5884f2bd26a03d451a0a69487468152c612c6452ac3270ad81ed7",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2474,7 +2793,7 @@
       "field_name": "geometry",
       "file": "normalized/SUN_ALONG_AXIS.json",
       "nonfinite_mask": [],
-      "payload_sha256": "6304f1ce31415423e5e4525162a677b70803209d4a4da1bc2e08804e755bed02",
+      "payload_sha256": "690a23e5eed9b67ddcff33356a95c00465802b973682a54c89bbb246939dd948",
       "provenance": {
         "case_sha256": "e30d06af5bd4b4a5539b1adb0c2636a03f5e8c22cdde83aa492cd403774b7788",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2510,7 +2829,7 @@
       "field_name": "geometry",
       "file": "normalized/CUT_2.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c895fd6f98f17c99fa0ec20809c5762fd55c3280c588068cfcbad217a63f2a37",
+      "payload_sha256": "068fe0367abdda275812ac8f635bc360861002d265c84d7d569272e3572b7605",
       "provenance": {
         "case_sha256": "222360d1ab135e69425f77175f2d0a1efd231aafb8c2d7019950ed90e2d735ee",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2546,7 +2865,7 @@
       "field_name": "geometry",
       "file": "normalized/CUT_8.json",
       "nonfinite_mask": [],
-      "payload_sha256": "2db089fd6041fa3b39c70eff19dbd20d6ed3498ccc93aeb52deeb84a37f7c0a6",
+      "payload_sha256": "0d3ac091faf207195c31226ff110f35ae16c462ca0e2c9b269f2a675dd0d2ed5",
       "provenance": {
         "case_sha256": "9b2086b10c17d836e2a6016c532a035a3c5d20a67c26c7b54d9c2df3c67021ed",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2582,7 +2901,7 @@
       "field_name": "geometry",
       "file": "normalized/CUT_ASYMMETRIC.json",
       "nonfinite_mask": [],
-      "payload_sha256": "dd9c11536b051e9f571c45f1ed9bb189fd79b803c0d2d3a489967e374a879947",
+      "payload_sha256": "0a4484a4959facf6c71157d365b87f43ec3f07276393a44b423f26f96c1af09b",
       "provenance": {
         "case_sha256": "9015e081ba14001a88e8294da883c5e4e071543edaa5bfca40c677e79dd6d73e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2618,7 +2937,7 @@
       "field_name": "geometry",
       "file": "normalized/UNDERGROUND.json",
       "nonfinite_mask": [],
-      "payload_sha256": "3e8c51b94e8384fb6cc8b06341e110564243ca7c00dd46e015d54d3a3af4ce2a",
+      "payload_sha256": "f929320f29980fc53f1ff288ebf5cea0931348941c06967deef3d17e0fd51cb1",
       "provenance": {
         "case_sha256": "5da6b0d55d207cd99a0b25b3fe1f99c0581b4f51150cbe6b91d016c8dd284496",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2654,7 +2973,7 @@
       "field_name": "geometry",
       "file": "normalized/CUT_ZERO.json",
       "nonfinite_mask": [],
-      "payload_sha256": "00ac5fab58be6a64d7502e8c3b7d40be6575e15351fb082b4c8e3a60b8d68d48",
+      "payload_sha256": "d8a734d1f33da4fe9a7daea8e698d10f2d7478248df184237a6cc313ef8d0654",
       "provenance": {
         "case_sha256": "26baa271a4b4fe6e2dec35bb4d68dd070b9fb79351582d5c9e941a322fe4f871",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2685,7 +3004,7 @@
       "field_name": "geometry",
       "file": "normalized/TILT_120.json",
       "nonfinite_mask": [],
-      "payload_sha256": "58206368eee1e655ad65cc2ff104edc3cd57a800193f36b2b4484f3d1ae5e98f",
+      "payload_sha256": "01808c85dd3a9cfbfa1ddd814f2307306363a9712aa190786112b54493d98dc8",
       "provenance": {
         "case_sha256": "4b36edd17fe1eea07fa8d279ae9021022bba9583fe20a99718fb5c409d413330",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2721,7 +3040,7 @@
       "field_name": "geometry",
       "file": "normalized/TILT_180.json",
       "nonfinite_mask": [],
-      "payload_sha256": "b3afbba34f44dd8e25b218ca7f90018fbf1a7f2ba4a7be1e645f3be6adce8946",
+      "payload_sha256": "316526b03ad04bd332a92304582801f03bf92aa7da0d5468ea3992f669dadbdb",
       "provenance": {
         "case_sha256": "50ae7b13c57982a8ebaf106fd19ab6c44304439274dbbe5e6b094af4305ac26b",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2757,7 +3076,7 @@
       "field_name": "geometry",
       "file": "normalized/GCR_GT_1.json",
       "nonfinite_mask": [],
-      "payload_sha256": "d60b779d1fe884dde977bf7e12d00028976ad5124aa4d826e8f5820c51975775",
+      "payload_sha256": "57c1a32eb631a2963c3dc354d7a116a62a5c59a16a3efaf0664811dd9deee5eb",
       "provenance": {
         "case_sha256": "b5085e0b7f8c87d7e89fb0925173d35115c2c56e36cce7e9f1724472c9db108e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2793,7 +3112,7 @@
       "field_name": "geometry",
       "file": "normalized/SUN_BELOW_HORIZON.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c0ceff2dad2ef0f94fb90f495d131cd73896b645e75e395e8aeb3821b4593789",
+      "payload_sha256": "17ae5277cab59bcab18ab44bfbb81c402a010bfb1629c0d13b48f7e5519ef1e5",
       "provenance": {
         "case_sha256": "a38619843bb5d26f32a3ea0d5f75d77e15f8724c3ab88c2d97e99dce01e73f10",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2829,7 +3148,7 @@
       "field_name": "geometry",
       "file": "normalized/INVALID_TILT_NEGATIVE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "a72d14fbee1ace2d500a5a9cd10feaa139dcb72be93e8f56014e16db62d61921",
+      "payload_sha256": "a18d6b8c011ee98bd9edf2247f8c1bb5a6968fb47a8d201de631554778529f62",
       "provenance": {
         "case_sha256": "e6299eaf236612202078f728020ec183f3d091d96629adc47082b235b32cb201",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2865,7 +3184,7 @@
       "field_name": "geometry",
       "file": "normalized/INVALID_TILT_GT_180.json",
       "nonfinite_mask": [],
-      "payload_sha256": "73ab2561d442441d6bcf0e21919ce007495f863c7d0c0838956bb97dea437482",
+      "payload_sha256": "db5771f8cd51b4b725136edc1116af0e09897a3c200c7612b7ecac7fe2d398af",
       "provenance": {
         "case_sha256": "51a6943c6261e05dc90675e6a9c331bc544f6df138d3636a897dae1c69a6f7fa",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2895,13 +3214,53 @@
         "endpoint",
         "xy"
       ],
+      "case_id": "MULTI_TIMESTEP_NONZERO_INDEX",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/MULTI_TIMESTEP_NONZERO_INDEX.json",
+      "nonfinite_mask": [
+        "$.result.ground.cut_points_m[0][0][0]",
+        "$.result.ground.cut_points_m[0][1][0]",
+        "$.result.ground.cut_points_m[0][2][0]"
+      ],
+      "payload_sha256": "897d385cdafc862731e6c5cdceb511e199b0e31b4f416024e33036abb87cb58e",
+      "provenance": {
+        "case_sha256": "567bf3c3d3d06b77c6cb8289f2ee9091bb0c22b101cbd20ac2d43e5651cf4894",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "1914376f420568833c90e3e29b263a6938d8c61645d87515e7f49cc36f91f981",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        2,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
       "case_id": "GROUND_NORMAL_EXTENT",
       "classification": "normalized_reference",
       "dtype": "canonical-json/f64",
       "field_name": "geometry",
       "file": "normalized/GROUND_NORMAL_EXTENT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "34c16b50861c36365ef7677820ed7dec5a55cac7c07c609d5bf1b271efe48448",
+      "payload_sha256": "b06a5355b54504adf27a79668e664dfec292ac2df902a4c680ed0c633ca6dc8d",
       "provenance": {
         "case_sha256": "67f1d0a788b56ba912de4041a125b54fca27413d8088922a0399bf571fbd4306",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2939,7 +3298,7 @@
       "nonfinite_mask": [
         "$.result.ground.cut_points_m[0][0][0]"
       ],
-      "payload_sha256": "0eace77f2436cdadcb18505209b15b04fa4f692d7e5aaab44fb558c3d54eb226",
+      "payload_sha256": "d68257f3d8723920271af117f877a1371c2903248c6e95d44d3019f42a4e0416",
       "provenance": {
         "case_sha256": "4ba9a27914c79b0988382aac4318a0e11f8fe024547b5199b92f27869de83513",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -2977,7 +3336,7 @@
       "nonfinite_mask": [
         "$.result.ground.cut_points_m[0][0][0]"
       ],
-      "payload_sha256": "d63fe9f13f80e1809f71226f95acc9b863d1964853e72ea9312485c2e5b0d6f3",
+      "payload_sha256": "0a86363df8fd6ce4aec61e15a5f9f0fa9f98c701a46cc4859d69ec8d21d05837",
       "provenance": {
         "case_sha256": "19bab21fdd7b8b7e30ccd738c6a08592ff3559885030d8bb2973dcbd022c5d72",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3013,7 +3372,7 @@
       "field_name": "geometry",
       "file": "normalized/MIRROR_BASE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "21633479a91fddd3a184d8a664eb7228e47bf34397b7d2e996dcb77cd3d08946",
+      "payload_sha256": "788948dd3b4f7e0521e6fa060f375e9d54677315cb878879f9f8d0ad56ea25fd",
       "provenance": {
         "case_sha256": "e211f42ca168a3124492a15accf5f7c76e13e8ed36ce5ebc697ec8ac1dbc195e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3049,7 +3408,7 @@
       "field_name": "geometry",
       "file": "normalized/MIRROR_IMAGE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "d78cac93ac8a19448895d19f28572118d4be6760cb170a573def4375f35ce19a",
+      "payload_sha256": "15da3d356a7693f57ab63a617ff63c598c8f966a0a7e517684e654429a661910",
       "provenance": {
         "case_sha256": "1d1fa3709f3c8fab8139c99ff455abcc84f1c234cea0ce3a8f15758ac1291152",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3182,7 +3541,7 @@
         "$.result.surfaces[9].coordinates_m[0][1][0]",
         "$.result.surfaces[9].length_m[0]"
       ],
-      "payload_sha256": "e8130695c720e934c3261d2ea3f08161bf0c922660827025811c34694172276a",
+      "payload_sha256": "7b725038ef549e3d9ab22429f17d118d52aa4c414e8a0daef9dbabf639141d94",
       "provenance": {
         "case_sha256": "4bec45fa278b2cedf9098f721f950dc8561bafcec0c84f4149cb81fa398caad6",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3218,7 +3577,7 @@
       "field_name": "geometry",
       "file": "normalized/INVALID_SURFACE_AZIMUTH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "ee2b202127976eb2f90f493ff90bf131b278b90fcfdcf18cf6c74d5daafc6f36",
+      "payload_sha256": "f0382fdc22702916a93d0b81ea52346b3c056587dfab572616dcfab325d1bbe1",
       "provenance": {
         "case_sha256": "c2dbcfdeba5e4b699024b4004b291be23073538ddd854c04e21083186114a9b8",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3352,7 +3711,7 @@
         "$.result.surfaces[9].coordinates_m[0][1][0]",
         "$.result.surfaces[9].length_m[0]"
       ],
-      "payload_sha256": "ae7123361f985c5bc6e6aa4261fa42ae20ff4843f9ae0cf013973af63b9be363",
+      "payload_sha256": "eb3b8f828c7ef6f5d0a057921a1981bd7f72f1d2024b3baefabb92dc7568a5fe",
       "provenance": {
         "case_sha256": "b0dff2e2d17a7224c11baf6cc24bd66c3d21bddc3fda4af161d8e972377b4096",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3609,7 +3968,7 @@
         "$.result.surfaces[9].coordinates_m[0][1][0]",
         "$.result.surfaces[9].length_m[0]"
       ],
-      "payload_sha256": "2b0c5a97e9d6cde20a01877f6efb1679d19317f338ff46c80108e068d6512d28",
+      "payload_sha256": "a117df0ef0750bd55de1f84ad51176f8e20cb7e31046fdfb91a408ec7b466e67",
       "provenance": {
         "case_sha256": "92729ab96453152038bd5de0521d5db5e604cf9dd8c1ed73da56a4ad439f6c75",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3645,7 +4004,7 @@
       "field_name": "geometry",
       "file": "normalized/INVALID_EXTENT_REVERSED.json",
       "nonfinite_mask": [],
-      "payload_sha256": "2e948bbb9bc303d09ced757745b8355cee66015cc342058e10a2a2d001d25417",
+      "payload_sha256": "db0a43ad3d9582afa68a7c950e31e8de2e5360806db95fbc37197287af86cb0f",
       "provenance": {
         "case_sha256": "c10420c2714657413e654e433d463862bbdd5f844c517f4452b4468db401c759",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3681,7 +4040,7 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_COMPLETE_COVER_DIFFERENCE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "2f7799acfa94b09b0e251cfb86d0d7b0cae4dd72a774f8e9c6939b1ceb4da8db",
+      "payload_sha256": "72a67048c437e3635b06cebf0a734d68de6b67a06a30e19c15589e125c9b514a",
       "provenance": {
         "case_sha256": "cbc1dbf892a86f19f3d4f9e1943e270931f1d736dad2159472638765cf1de5d0",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3712,7 +4071,7 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_ENDPOINT_TOUCH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "87be5f79c707f27de019d3c7f690bf22ad045296acef38446b7233e394c7cc78",
+      "payload_sha256": "8f040a83f85f839a1351268739fd95a1efed49ba3d1722c7db5c3b83f2f36554",
       "provenance": {
         "case_sha256": "06f8af8b6caf5251ed8bd9ce7a7f734dd04ce2360128223dce2bb0f2cb9d0e14",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3743,7 +4102,7 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_POINT_TOUCH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "752d9f0a96c645efb014a6ffec4d4dd29abde0be53a1b252946df525db8ec096",
+      "payload_sha256": "25f3ef6c7276702414116e55d496e20043c265c0e6fbc210b6abb51c6ee6ca5b",
       "provenance": {
         "case_sha256": "bbaf55f5c75100e9ef1017a93a2ab26700d127fcb619586cddb841a3f4ed2479",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3774,7 +4133,7 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_POSITIVE_OVERLAP.json",
       "nonfinite_mask": [],
-      "payload_sha256": "42a032bb1b52239e45836c0bcee9a3fef43bb5a4bb333d16d6f067ec92093a45",
+      "payload_sha256": "5e50e98069d843f65d274a9f060babc047aac534ed62ec4b614aea8d94147d2a",
       "provenance": {
         "case_sha256": "e8f1365b448d44347d3e5b60e3b79b4bd13bda55cae530eefc43ec9d13de2cab",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3805,7 +4164,7 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_ZERO_LENGTH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "f0d9069245aa4e926d3127804935c41477fe9272196316eda351385bdc4846f8",
+      "payload_sha256": "3f141c63602083cd6111ff7ec97b7da5d10b1cd37efd155bf653257d332b7d95",
       "provenance": {
         "case_sha256": "0ffad6659182f629ec570eddb49d702a591b30141a0d46f9997116f4887406f7",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3836,7 +4195,7 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_PARALLEL_PROJECTION.json",
       "nonfinite_mask": [],
-      "payload_sha256": "0ab1f8154bf2b6e600b8d9011750c5e8c80c40c4b335cdf389999037b364171e",
+      "payload_sha256": "73c2d4f0c1b69df94a55a29ecdd07ec6f95e4454b081953afe9ebfe79d7c4ace",
       "provenance": {
         "case_sha256": "8070ab0f4abf6ad061cb2faad8fc2cd1a037e2041502043f85adbec43e679b85",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3867,7 +4226,7 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_COINCIDENT_PROJECTION.json",
       "nonfinite_mask": [],
-      "payload_sha256": "939977193a6f238c0c888873fa0cc979cb4bfb103919ed238664aa2b73311c3b",
+      "payload_sha256": "1a4bb1ecab808950b0e6fe886fe4b385ea1b5eae7a11b39da53f588a4f4049d5",
       "provenance": {
         "case_sha256": "05f2088e388d87986d57ef8548e672c2a97d6fd80cb2aae2985992dc9988344b",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3898,7 +4257,7 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_ACTIVE_TOL_MINUS_ULP.json",
       "nonfinite_mask": [],
-      "payload_sha256": "d2361249bb2846fdf1c19a1354a0536855f15cb2815f9b6f2d0120275d1823a5",
+      "payload_sha256": "d6b8e4671f8de0a22acaf8906973f2a88182b9f01e87263d16ea6d86de863732",
       "provenance": {
         "case_sha256": "d290bc26f4dd5dc6c8d83342d451994d8dae9358a88a45e073485eb4e77a78bb",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3929,7 +4288,7 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_ACTIVE_TOL_EXACT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "2904afeaa5103d29b0b8b9ab031b4815833f0ebcfd9834fd365ac39b7c3f3491",
+      "payload_sha256": "4a8fbd74d682ae7e21f2657330c52fe73dc373c2dc85409f8b1dda87f8885081",
       "provenance": {
         "case_sha256": "2646ea3b4c8c01e58326655e0447348369bca6e88fa02707ade30b4bea23409d",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -3960,12 +4319,291 @@
       "field_name": "geometry",
       "file": "normalized/PRIM_ACTIVE_TOL_PLUS_ULP.json",
       "nonfinite_mask": [],
-      "payload_sha256": "a0c74cf4ed39ff75041ff476660927f5b50c2a5b36d55bfee11b803add070eaf",
+      "payload_sha256": "228616968063762388542950ba0f2c43020f4520df649cd62e752ddb086f7295",
       "provenance": {
         "case_sha256": "b2c730edf357e9dfd3c46da7e9bd786d91c602ea1b80db63ea6bf8ec4d5932d5",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
         "method": "direct frozen primitive invocation",
         "payload_sha256": "96ab8d689f09514ed14cb09a7eb06a3b1bc773e57c2d31a54f81e715b4c55b44",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_SNAP_MINUS_ULP",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ENDPOINT_SNAP_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "8b925054f9f890e851f9704057d25b723ff109ef7543a19abf405330a1a4862c",
+      "provenance": {
+        "case_sha256": "c86291759ab0e57c9b2701fcb07651b77f4a60fbf35da1cfdad108a3af411243",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "5542723b135636ce5db9a0c944cdfe4073b555936acecf47c0174e890616b408",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_SNAP_EXACT",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ENDPOINT_SNAP_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "7921214d78d3a2144e6b462bb20995afd757549d3318782ff8cc9f1613f298bf",
+      "provenance": {
+        "case_sha256": "547638b2f781051e8f856841a4850359e8496750677b3dcf26e82f82736bb959",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "b562058468fd02bbb315bdc52f25db9f6c4b6fa6f7d0e617d21cd70f37ef15eb",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_SNAP_PLUS_ULP",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ENDPOINT_SNAP_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "a7e2b4205ab2f890d66c6d89304084ec7f9de65534cb4c6a815a94e14228c385",
+      "provenance": {
+        "case_sha256": "f84929b73304e61b207d1dbf55813aaaf3e2f23edd0987d604fbfc6453204ec2",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "c2c33194cec89f80b0d0b7040bdfcbfac9640ceecc22b425cb1ca1ca8e57b83a",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ORIENTATION_MINUS_ULP",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ORIENTATION_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "750213d295619dc5b0e898a35d790cec458dc75b36b9c2552b53bf34a48f8dba",
+      "provenance": {
+        "case_sha256": "5fd855ed5bd881434e22400fbe1c92146d984ae018c0f503b67151aceba5e56e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "bc110ae9fcddd05639c92a6007fd65de98ba44c8d8f3a3291b66354b26afb2ec",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ORIENTATION_EXACT",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ORIENTATION_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "fa00f53a46323da642ffa31da736cce2ddaf00b970710e233e60f7f9f621fd11",
+      "provenance": {
+        "case_sha256": "deddc2f1e033613f0b27bc81bfcb8e65a54fcfcc12a54e2de24b39f319740d3e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "cbb3af7eb04cf340abf7859ff2c633464a4528beb18919e7c9b27e57a2433c38",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ORIENTATION_PLUS_ULP",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ORIENTATION_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "c5ee76b592fbd01022f0b7af3c2c3acceb9414f4429419a8dc7e4fa6c7c43f08",
+      "provenance": {
+        "case_sha256": "df3a85245e41fa856b0fcbc94453e324872a92e07cff135533310efff1cd5d5e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "485f62aaf9eaa74f52631b13c8c6ce4a10ca76e1fdc526ff672645eaf8f513a7",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_LINE_OFFSET_MINUS_ULP",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_LINE_OFFSET_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "c173cb5e2680defcf36db705c9998a4f1edbf49cf24b102e746e5fc396c45ad9",
+      "provenance": {
+        "case_sha256": "ff8a4d349678b831dfd0eb804bfa49120194418a7d54ddfb9c4d0d04c90f041a",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "c1023d292470853919ad501fd95c6f3748314e911d347e2aa74599538b1cdb31",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_LINE_OFFSET_EXACT",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_LINE_OFFSET_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "6910bc6b13cea078f33c710e9e5e1085ab9efa5a5278cd4a0f5d0bb51164c571",
+      "provenance": {
+        "case_sha256": "4b2df509c207284656d8727ab34ee8edd62d3cd3d4bb0bb42ab84251d576fe5b",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "baf5fd95ec8ae09678363e60b6c04d7f96ad02d3f7264bf7c787a87ed76b08b8",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_LINE_OFFSET_PLUS_ULP",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_LINE_OFFSET_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "38e755374173c9c6d141de0d4fd3b9ddb32c3b5fbb2aef7e47f6d9ae9ef62580",
+      "provenance": {
+        "case_sha256": "bbfc221e47efaa3c90e1e0566e7fcfb6f239913f2918755c12ee2bc3565c8549",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "deterministic CDR-006 predicate probe",
+        "payload_sha256": "4a81cdc946ec96a5f62164aa1883547288da36c73477ee06ed35ce37939c1eef",
         "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
         "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
       },
@@ -3991,7 +4629,7 @@
       "field_name": "geometry",
       "file": "corrected/C01.json",
       "nonfinite_mask": [],
-      "payload_sha256": "399e029de9fa40eb680937d333271454ff3c8a3ed56783e302a05392d283b709",
+      "payload_sha256": "12d6e7b039c309536562544a017b01f64ae85f0c63c6df87e47b5b664513654d",
       "provenance": {
         "case_sha256": "b3b1f7409f2a3dd06d18318747029718636bf3a9eaf36bfea63675db7e3a262a",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4027,7 +4665,7 @@
       "field_name": "geometry",
       "file": "corrected/C02.json",
       "nonfinite_mask": [],
-      "payload_sha256": "9c15b3a66250dbd71d28ea8cfdf31099ef434007e742cd0f2fc17283effbc166",
+      "payload_sha256": "50dd706e463b2e3ad1185eb43acc20fe8482828d5dc4bd2250aa3e897163d09c",
       "provenance": {
         "case_sha256": "113509eab0ca7048159e4f5fab39864c9419e27a4d5ebe6002a12ec4e7a46fbd",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4063,7 +4701,7 @@
       "field_name": "geometry",
       "file": "corrected/C03.json",
       "nonfinite_mask": [],
-      "payload_sha256": "f3307746e6830fc24237dd56670c9ee1875558556b6b9f0ab261e529948ba144",
+      "payload_sha256": "485064560f06a1aef6e41896e176e373e8f748a38899ecf27e70fe68540a6f87",
       "provenance": {
         "case_sha256": "392f20a9610c273beabfcf90d9333ae079229462303df9e82c712c2944092fe7",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4099,7 +4737,7 @@
       "field_name": "geometry",
       "file": "corrected/C04.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c4a21590696966bf95f0fa059fff39cd96f6b767bb14f0b2114a10b913fda710",
+      "payload_sha256": "bd8e40c4727a2f3b1f891ece4b281e38f95f0fe6383ac64b523cdcf32b30a683",
       "provenance": {
         "case_sha256": "4b260cb9155d27e06e5670ec3998b8e28abfd13cc80816f751d52f867fcb0d71",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4135,7 +4773,7 @@
       "field_name": "geometry",
       "file": "corrected/TILT_LEFT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "19805408f20fcda33ab9b64b8ebe5e588e2ddebc3d23ef703590b31b1ca40660",
+      "payload_sha256": "6aefeb8394c424a1b055d30ef7caf2a73255b40108dd508cdad8fd1c02092159",
       "provenance": {
         "case_sha256": "3b6f3f70e30f88b0c9913d16dfb64072675ee8dc6c7b72fabc32063c4a986ac8",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4171,7 +4809,7 @@
       "field_name": "geometry",
       "file": "corrected/TILT_FLAT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "a0912354bf5534d56f85a6f98bb011d441c52498c20fc6d59ec998de329dae96",
+      "payload_sha256": "7fe339b4047a59765466664fbc02a7fa762d27d78073e26279b9d767e934e4c2",
       "provenance": {
         "case_sha256": "5256476b8e6f0e2468caccde940bda19485043f35a12020345924f9e2ebde8df",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4207,7 +4845,7 @@
       "field_name": "geometry",
       "file": "corrected/TILT_1e-10.json",
       "nonfinite_mask": [],
-      "payload_sha256": "c35de8475ac6a747cf2f187b1dd309b0fa09701a5dcc0d58c73fd1e37918c505",
+      "payload_sha256": "da5667b64c11d7061794e56d5174408e5ee73f95bd02a8e6b07ae01cfb7e9382",
       "provenance": {
         "case_sha256": "1ae41c73c3e85e3c6b1e0c7992e3f707e2ad45d439fb7dffd52fe17cd012925e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4243,7 +4881,7 @@
       "field_name": "geometry",
       "file": "corrected/TILT_NEAR_LEFT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "05b90c1f4c2f1d1e9c13d555c9feb916930961738619266c21d622805d565bae",
+      "payload_sha256": "ba2832eb39c9301bb3055153b54125e99190b15007424d6e9e96f3a67773fc38",
       "provenance": {
         "case_sha256": "cbd08c9b845d75334f39566a4a1afabc16e694dd7fbc75d3dd52c33f552aaa34",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4279,7 +4917,7 @@
       "field_name": "geometry",
       "file": "corrected/TILT_90.0.json",
       "nonfinite_mask": [],
-      "payload_sha256": "11bffe746d793ee546322fae86c89f20434769ce017ec223db1c026f10eabaf8",
+      "payload_sha256": "09f65afe6f2061f96bde0602e1c02b2d17fcae204c5bff8d3db85a37aacc4cbe",
       "provenance": {
         "case_sha256": "7b2b847266bbf43e1bc453f1db4599a8338c830e9852ee52ea758a70a2488c91",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4315,7 +4953,7 @@
       "field_name": "geometry",
       "file": "corrected/SHADING_NONE_CANDIDATE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "445088c61ea6f1a912170bc41f229c1f0665779568e5af3bd0c103d5ad987818",
+      "payload_sha256": "c3f4d3f35451fc67b6281f522226e3a3c8862fe73ff5f1762ef7233c64ee51f7",
       "provenance": {
         "case_sha256": "27d976cba12ddfbfe3b340693077716a5ee91363b7f75fdd446b8bbc70278b46",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4351,7 +4989,7 @@
       "field_name": "geometry",
       "file": "corrected/SHADING_PARTIAL_CANDIDATE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "9bd91e0c07ed50e5af51b0008b348479400e9058125b2bf1dccf47ab5fb5e44e",
+      "payload_sha256": "64c90ceb2f33f0c8a63f8ef76583d325493c05443b94cc7e39bad7d75fd89bf6",
       "provenance": {
         "case_sha256": "1f567e8c65063ada950af42c77c47c567c20cc6e5e4844c36538f277602f949a",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4387,7 +5025,7 @@
       "field_name": "geometry",
       "file": "corrected/SHADING_HIGH_CANDIDATE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "66a1b2402ff8c43bf5785861c3b1bca9893b65b11b2ab707eada3af16301c615",
+      "payload_sha256": "b79f84ea82074a57c1015aecff345b872cca03d1d609297a6132693655540ca8",
       "provenance": {
         "case_sha256": "c68d1eb0bcf0f49effd769c73c4cfb23d891a68015b440badfce68c0169aad86",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4423,7 +5061,7 @@
       "field_name": "geometry",
       "file": "corrected/SUN_90.0.json",
       "nonfinite_mask": [],
-      "payload_sha256": "3be5debdf8887c29bf6082e761dc6b6e240efe815ba873728a0e7a8e5707d841",
+      "payload_sha256": "32d347bc58c95e1a3ced383c1776482ab1ee86c8fa296a4b16e6570c7510be89",
       "provenance": {
         "case_sha256": "ffdd4d8a01b5884f2bd26a03d451a0a69487468152c612c6452ac3270ad81ed7",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4459,7 +5097,7 @@
       "field_name": "geometry",
       "file": "corrected/SUN_ALONG_AXIS.json",
       "nonfinite_mask": [],
-      "payload_sha256": "25552b3529c185b738eab1becbc5bb6b669b9c0871af7a5d0bf019172d6a0424",
+      "payload_sha256": "0eaaf2bb8d5c5bbd4453908e199622be03665f8589495431e292de2d1a15e3b0",
       "provenance": {
         "case_sha256": "e30d06af5bd4b4a5539b1adb0c2636a03f5e8c22cdde83aa492cd403774b7788",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4495,7 +5133,7 @@
       "field_name": "geometry",
       "file": "corrected/CUT_2.json",
       "nonfinite_mask": [],
-      "payload_sha256": "5372cf77f7ed969619310e7a771163614178582be1586d3752ca7577f3dd0b10",
+      "payload_sha256": "36b18352be7d2442a544b2318be30b8e198c30f45dc8af5c1432af2b1331fd1c",
       "provenance": {
         "case_sha256": "222360d1ab135e69425f77175f2d0a1efd231aafb8c2d7019950ed90e2d735ee",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4531,7 +5169,7 @@
       "field_name": "geometry",
       "file": "corrected/CUT_8.json",
       "nonfinite_mask": [],
-      "payload_sha256": "fa955aa9911af09c9d77ada7086f282889fedbef8edd1e554374cc6e14fba4ad",
+      "payload_sha256": "0ad9f371680a11749e78c5f7f08841b97620c2a92fdb9a34ae2f72a4f1a0e050",
       "provenance": {
         "case_sha256": "9b2086b10c17d836e2a6016c532a035a3c5d20a67c26c7b54d9c2df3c67021ed",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4567,7 +5205,7 @@
       "field_name": "geometry",
       "file": "corrected/CUT_ASYMMETRIC.json",
       "nonfinite_mask": [],
-      "payload_sha256": "3cba6c3511ead799ac86c209ae291300717da5373b7611f316b405e76953d55f",
+      "payload_sha256": "bc2a07f36e39ac8045fc94b92fd0d63e1007a1c9fbe3b60fcbdf2847b3e7b0ec",
       "provenance": {
         "case_sha256": "9015e081ba14001a88e8294da883c5e4e071543edaa5bfca40c677e79dd6d73e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4603,7 +5241,7 @@
       "field_name": "geometry",
       "file": "corrected/UNDERGROUND.json",
       "nonfinite_mask": [],
-      "payload_sha256": "24cac2a0663293995ab19f3ae87a5e36589b0054f9c3aa05fcddfd0ab17b5467",
+      "payload_sha256": "ba79514e5cf3bc9392a0e96291548c984e5c7773ce210f94fd4429f48be03c4d",
       "provenance": {
         "case_sha256": "5da6b0d55d207cd99a0b25b3fe1f99c0581b4f51150cbe6b91d016c8dd284496",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4634,7 +5272,7 @@
       "field_name": "geometry",
       "file": "corrected/CUT_ZERO.json",
       "nonfinite_mask": [],
-      "payload_sha256": "e84f7fa5060fe1e67156e96feec777807770a3569a8517f5e27cb563e14afd74",
+      "payload_sha256": "6c41672b77c6ac6120b7e0d3fad91ed2529e599d84cf8a2a3edddfd37e7d34d4",
       "provenance": {
         "case_sha256": "26baa271a4b4fe6e2dec35bb4d68dd070b9fb79351582d5c9e941a322fe4f871",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4665,7 +5303,7 @@
       "field_name": "geometry",
       "file": "corrected/TILT_120.json",
       "nonfinite_mask": [],
-      "payload_sha256": "f709405502ca96d44e0d68cdc299ccedd1e1f9ccfdb675a778056fc11394b707",
+      "payload_sha256": "f6595c3d2c3f4d8481a559b863f2b576d22739ae7d0c269294c02428e721bbfd",
       "provenance": {
         "case_sha256": "4b36edd17fe1eea07fa8d279ae9021022bba9583fe20a99718fb5c409d413330",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4701,7 +5339,7 @@
       "field_name": "geometry",
       "file": "corrected/TILT_180.json",
       "nonfinite_mask": [],
-      "payload_sha256": "eb203d76611c0c9112197d67e7c0bc46a4388720a6d194db2903a1e5721c0e20",
+      "payload_sha256": "986617edcdf7b24e115c9012bde4dbf52d9460d34d6c1fa5ea934e5fa6667abe",
       "provenance": {
         "case_sha256": "50ae7b13c57982a8ebaf106fd19ab6c44304439274dbbe5e6b094af4305ac26b",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4737,7 +5375,7 @@
       "field_name": "geometry",
       "file": "corrected/GCR_GT_1.json",
       "nonfinite_mask": [],
-      "payload_sha256": "8e10003bbef5b2760650ccaa0a6de311a2e39a6b70e464f147f7ad924b93c670",
+      "payload_sha256": "24292ca537c88d78808376bc332dfaae815b686d18db2631ffcdd6a37866fe71",
       "provenance": {
         "case_sha256": "b5085e0b7f8c87d7e89fb0925173d35115c2c56e36cce7e9f1724472c9db108e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4773,7 +5411,7 @@
       "field_name": "geometry",
       "file": "corrected/SUN_BELOW_HORIZON.json",
       "nonfinite_mask": [],
-      "payload_sha256": "90b87d0c91d0de3a5bd9b5c4241924e3fedd9cd2d7f89f895d7a9d33e452829d",
+      "payload_sha256": "cea1f787b7b97ed451e765d8d80b4d0369c2ece7e9206b124192f8c517e8805a",
       "provenance": {
         "case_sha256": "a38619843bb5d26f32a3ea0d5f75d77e15f8724c3ab88c2d97e99dce01e73f10",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4809,7 +5447,7 @@
       "field_name": "geometry",
       "file": "corrected/INVALID_TILT_NEGATIVE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "83d4d6d94472de80859df6ff6ac2c1a70c66912004b75b7add275fd61e175107",
+      "payload_sha256": "0c2e332f213c78cbd54dcd28bba1048ae9c4063496474ca3def19bcc5e97aa53",
       "provenance": {
         "case_sha256": "e6299eaf236612202078f728020ec183f3d091d96629adc47082b235b32cb201",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4840,7 +5478,7 @@
       "field_name": "geometry",
       "file": "corrected/INVALID_TILT_GT_180.json",
       "nonfinite_mask": [],
-      "payload_sha256": "b21a7d11e317cde326a793591c1093a22c80b5efdeb7eaf82733bd2725955dca",
+      "payload_sha256": "186a1a580259df750fa326bb540f718c5aab5fbd640d3e6e6c735e122f4d197c",
       "provenance": {
         "case_sha256": "51a6943c6261e05dc90675e6a9c331bc544f6df138d3636a897dae1c69a6f7fa",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4865,13 +5503,49 @@
         "endpoint",
         "xy"
       ],
+      "case_id": "MULTI_TIMESTEP_NONZERO_INDEX",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/MULTI_TIMESTEP_NONZERO_INDEX.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "4feb5e7afbc80ff2fc2f9c7429cca4a83e1a1c6edba9b1ffc619421ef52bda6a",
+      "provenance": {
+        "case_sha256": "567bf3c3d3d06b77c6cb8289f2ee9091bb0c22b101cbd20ac2d43e5651cf4894",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "5e63a04e0aa9ec6e1cf99d37a6aa619b0f81f4ef33ba74c38de10673a4f61a2e",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        2,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
       "case_id": "GROUND_NORMAL_EXTENT",
       "classification": "corrected_expectation",
       "dtype": "canonical-json/f64",
       "field_name": "geometry",
       "file": "corrected/GROUND_NORMAL_EXTENT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "6e562a35286bd5dc5780c3f19cb9772c81f35d4d0174917f9b182c3a3d15fe45",
+      "payload_sha256": "4da620ed54ad75e687e61ba6f9e513e6f471d242580c77952754b1a32abfdc7c",
       "provenance": {
         "case_sha256": "67f1d0a788b56ba912de4041a125b54fca27413d8088922a0399bf571fbd4306",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4907,7 +5581,7 @@
       "field_name": "geometry",
       "file": "corrected/GROUND_BOUNDARY_ENDPOINT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "4ec2744df92b47ffd5d408cd49929ecb33ee0f3e46fa0eb69a7f485ac23ee71e",
+      "payload_sha256": "45790365a24014c68972a3ee1aae100bc3ced1ce16ba82aad7ecfe22f8664a23",
       "provenance": {
         "case_sha256": "4ba9a27914c79b0988382aac4318a0e11f8fe024547b5199b92f27869de83513",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4943,7 +5617,7 @@
       "field_name": "geometry",
       "file": "corrected/GROUND_NEAR_BOUNDARY.json",
       "nonfinite_mask": [],
-      "payload_sha256": "18b63388f87f0810af6fa8a2fff61604231c2ed0f9b135056dbb6f6f35d3a27c",
+      "payload_sha256": "694dc2b9cacc326d82821cda2a1af0943a6e32092f8f9d9c9b0c3c3447c99772",
       "provenance": {
         "case_sha256": "19bab21fdd7b8b7e30ccd738c6a08592ff3559885030d8bb2973dcbd022c5d72",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -4979,7 +5653,7 @@
       "field_name": "geometry",
       "file": "corrected/MIRROR_BASE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "e513fb9538f1ebb14f25f57fbed8e757f26cbfa1d1f5118594d4f96e3dd2cb6c",
+      "payload_sha256": "5f0a16ed534a5a3a89a712dbd248f7388f3ed0896c45d6e48bda3175c3217258",
       "provenance": {
         "case_sha256": "e211f42ca168a3124492a15accf5f7c76e13e8ed36ce5ebc697ec8ac1dbc195e",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5015,7 +5689,7 @@
       "field_name": "geometry",
       "file": "corrected/MIRROR_IMAGE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "0f3845d93bef72577940ee92ce71a088392171e970f93fa0925f6d9cfb383f49",
+      "payload_sha256": "62b9423f6eb545bff15dfdfce37ad04ad3d962f513d91016144081ef53542515",
       "provenance": {
         "case_sha256": "1d1fa3709f3c8fab8139c99ff455abcc84f1c234cea0ce3a8f15758ac1291152",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5051,7 +5725,7 @@
       "field_name": "geometry",
       "file": "corrected/INVALID_AXIS_AZIMUTH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "4b1b391eec3966d7aaeca816a2e2c59924a22c0507dfb6430d577780321bcb9b",
+      "payload_sha256": "fad9e6d2fdc098e6f333aad47488a2d2a1639396185ed1bf04827bc1dd148d47",
       "provenance": {
         "case_sha256": "4bec45fa278b2cedf9098f721f950dc8561bafcec0c84f4149cb81fa398caad6",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5082,7 +5756,7 @@
       "field_name": "geometry",
       "file": "corrected/INVALID_SURFACE_AZIMUTH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "f185747a3147a33b17aec3bf7017c9a161070c9adfc0025f5a1b2f5d7b6fd53b",
+      "payload_sha256": "bb001ffcb767af83633d780a642ddc9992f7f640df2a838b07907e0627377a2e",
       "provenance": {
         "case_sha256": "c2dbcfdeba5e4b699024b4004b291be23073538ddd854c04e21083186114a9b8",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5113,7 +5787,7 @@
       "field_name": "geometry",
       "file": "corrected/INVALID_NAN.json",
       "nonfinite_mask": [],
-      "payload_sha256": "b39f7c1f9424c817ab5ecc8fb8af09f162d80f1b39b86f83307af5bb5ba272a9",
+      "payload_sha256": "b5acffa6866e6fc84b85886e25f337aa957bec590cb185f9a34cf2a956a6791d",
       "provenance": {
         "case_sha256": "b0dff2e2d17a7224c11baf6cc24bd66c3d21bddc3fda4af161d8e972377b4096",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5144,7 +5818,7 @@
       "field_name": "geometry",
       "file": "corrected/INVALID_INF.json",
       "nonfinite_mask": [],
-      "payload_sha256": "5126c992eaf8ebbed396612763b403bd3f28fcf841006a9392a28c554ec8f8fe",
+      "payload_sha256": "3051b26d1a4c9a467bd629ea924059e146f55f80f65df131f554fda71bc8b53b",
       "provenance": {
         "case_sha256": "92729ab96453152038bd5de0521d5db5e604cf9dd8c1ed73da56a4ad439f6c75",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5175,7 +5849,7 @@
       "field_name": "geometry",
       "file": "corrected/INVALID_EXTENT_REVERSED.json",
       "nonfinite_mask": [],
-      "payload_sha256": "8b015ef407c9256305f06f60218f3dcb5e6cc2274a777caf65d921f44e297668",
+      "payload_sha256": "006ebb8371bfeee41ccfa507682d7d02150bb8e97f7f5194423fbf68241cc589",
       "provenance": {
         "case_sha256": "c10420c2714657413e654e433d463862bbdd5f844c517f4452b4468db401c759",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5206,7 +5880,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_COMPLETE_COVER_DIFFERENCE.json",
       "nonfinite_mask": [],
-      "payload_sha256": "4a23e6d709202e424508310466b6c74e80acdfe2f5ecd7ec427283c0b132b1e2",
+      "payload_sha256": "0121d5b93995bea0f3baade36fa0427dd2d5685542ad265ec5e710fdbca011ac",
       "provenance": {
         "case_sha256": "cbc1dbf892a86f19f3d4f9e1943e270931f1d736dad2159472638765cf1de5d0",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5237,7 +5911,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_ENDPOINT_TOUCH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "1e6881f8c1250afcaa182790d53e0ff6928daf83c08de368979e5862a4993586",
+      "payload_sha256": "3eeca3f2785f7e3e280206fa27e6b56f54e02d8c0ac95fbd17a11807211177e5",
       "provenance": {
         "case_sha256": "06f8af8b6caf5251ed8bd9ce7a7f734dd04ce2360128223dce2bb0f2cb9d0e14",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5268,7 +5942,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_POINT_TOUCH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "6c6a09ff0bd41bff6e4b219ad8e8bbe07d5163da0c232c4b324a74971441f528",
+      "payload_sha256": "5896f92c716226f170f659f38a36c2aeb2dc5aa6abd5973e01673cb3eb86f19a",
       "provenance": {
         "case_sha256": "bbaf55f5c75100e9ef1017a93a2ab26700d127fcb619586cddb841a3f4ed2479",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5299,7 +5973,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_POSITIVE_OVERLAP.json",
       "nonfinite_mask": [],
-      "payload_sha256": "8a97b1b3ead21c24083ff0a742e349305c14827a9e99f4dab1b18de71ca31cf1",
+      "payload_sha256": "8e4a2fd8fc6ed0f9e5a5d5dd4157ee10a801cc10857d35dc298d4d3056f73a8d",
       "provenance": {
         "case_sha256": "e8f1365b448d44347d3e5b60e3b79b4bd13bda55cae530eefc43ec9d13de2cab",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5330,7 +6004,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_ZERO_LENGTH.json",
       "nonfinite_mask": [],
-      "payload_sha256": "9571f7d245f8fbb3cb10f496f21021d998d4de44608cb0741c3d38eb2ef84234",
+      "payload_sha256": "d116c2a9074c71c585b94be90cfe252ddc3f64816b314862070755c3b82189a7",
       "provenance": {
         "case_sha256": "0ffad6659182f629ec570eddb49d702a591b30141a0d46f9997116f4887406f7",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5361,7 +6035,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_PARALLEL_PROJECTION.json",
       "nonfinite_mask": [],
-      "payload_sha256": "204053135f6a667c25fc2587ac5827841a7d7b2e935350e02179669528a76ad4",
+      "payload_sha256": "ef3562d06fd952c0ca25041086784773595a7bf758d6e0061fd1c6797f891ec4",
       "provenance": {
         "case_sha256": "8070ab0f4abf6ad061cb2faad8fc2cd1a037e2041502043f85adbec43e679b85",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5392,7 +6066,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_COINCIDENT_PROJECTION.json",
       "nonfinite_mask": [],
-      "payload_sha256": "b40213f04cc3c19d71d62e8a780e0aaa61ad9f07cbb5d81d98c447423f1a950f",
+      "payload_sha256": "d2f1f504f67962bc48c90448f1656defd2efdae7a832fa0f3941b3f9829fb0ff",
       "provenance": {
         "case_sha256": "05f2088e388d87986d57ef8548e672c2a97d6fd80cb2aae2985992dc9988344b",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5423,7 +6097,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_ACTIVE_TOL_MINUS_ULP.json",
       "nonfinite_mask": [],
-      "payload_sha256": "61694f249c7ac949632d78cda1aebad749df2cb52819bfbb68b7b5933db08404",
+      "payload_sha256": "5ba57392aeac938c58c57f443757de208870c50f3c78dea4afb13f7f3e03de29",
       "provenance": {
         "case_sha256": "d290bc26f4dd5dc6c8d83342d451994d8dae9358a88a45e073485eb4e77a78bb",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5454,7 +6128,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_ACTIVE_TOL_EXACT.json",
       "nonfinite_mask": [],
-      "payload_sha256": "95cd131759138d2f0e91b897c965ed9cda76e301e69f08f20755c96a8a39252c",
+      "payload_sha256": "816ffe4a1ea4cd228d43c780a6dbd159f4d4b1f53a1caaba7a2634feceb4172b",
       "provenance": {
         "case_sha256": "2646ea3b4c8c01e58326655e0447348369bca6e88fa02707ade30b4bea23409d",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5485,7 +6159,7 @@
       "field_name": "geometry",
       "file": "corrected/PRIM_ACTIVE_TOL_PLUS_ULP.json",
       "nonfinite_mask": [],
-      "payload_sha256": "431cf03f851b9f6615c4b8c4c057d84376fccaabbffb108802ee303beb6242af",
+      "payload_sha256": "aa7778e208791c90d6453bad915e07e4255c117bb46e1f9327a78d744eda317e",
       "provenance": {
         "case_sha256": "b2c730edf357e9dfd3c46da7e9bd786d91c602ea1b80db63ea6bf8ec4d5932d5",
         "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
@@ -5502,13 +6176,293 @@
         "orientation": "dimensionless",
         "position": "m"
       }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_SNAP_MINUS_ULP",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ENDPOINT_SNAP_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "cf4ef182f758d9bdaecb65eff344b1b8502990340b1c014eb6f016642f92dc49",
+      "provenance": {
+        "case_sha256": "c86291759ab0e57c9b2701fcb07651b77f4a60fbf35da1cfdad108a3af411243",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "d205a6cad3eb198a5f82086135cf5d7d839fcc1735afb7e8268529008161901a",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_SNAP_EXACT",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ENDPOINT_SNAP_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "af0ce781c223ac7757e0088c8fbab9914d9a759eb6759676cc18fe922556cab4",
+      "provenance": {
+        "case_sha256": "547638b2f781051e8f856841a4850359e8496750677b3dcf26e82f82736bb959",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "7050d13089a1f986caf11894efa7e1d1aa26acb243f6aaf5d0c499d638bd9e76",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_SNAP_PLUS_ULP",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ENDPOINT_SNAP_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "1b8e790369e082e95d787cf260cd8ac25b57869d7a766a564de76d5b5d499f08",
+      "provenance": {
+        "case_sha256": "f84929b73304e61b207d1dbf55813aaaf3e2f23edd0987d604fbfc6453204ec2",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "1203d0d59c95f668efcc3a1b82ed132d47fdad0df0e63dc8d5f14b0a36fe41e7",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ORIENTATION_MINUS_ULP",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ORIENTATION_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "3df368874f3a9159103c0caba60b908341fb04d81ce8a40d78db0559cef8d02c",
+      "provenance": {
+        "case_sha256": "5fd855ed5bd881434e22400fbe1c92146d984ae018c0f503b67151aceba5e56e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "2cc1086e83e38ea5f8b098f68a6489b31a377bd9b83e93200674e4fc13f24f3f",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ORIENTATION_EXACT",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ORIENTATION_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "eca0613545f4e52e3981cf3b13da6b13b016aa0448b2b3e1c421b400a5180d47",
+      "provenance": {
+        "case_sha256": "deddc2f1e033613f0b27bc81bfcb8e65a54fcfcc12a54e2de24b39f319740d3e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "089db8cc90d9a8996cc06091bbb80cd6e598b12e439a3c81a1bd0ada40ef3196",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ORIENTATION_PLUS_ULP",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ORIENTATION_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "58b25e4eebe0e6fbb00448a1da6a03dab233eaa8a1d0ee227e41b7e244640f41",
+      "provenance": {
+        "case_sha256": "df3a85245e41fa856b0fcbc94453e324872a92e07cff135533310efff1cd5d5e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "178848c8512922b18c31c9d6226187ec4b0835b7715560a9af40f1a0e385a8c2",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_LINE_OFFSET_MINUS_ULP",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_LINE_OFFSET_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "4299eeb27e0c07bad42854dc6fed4e7cf5ec51064ed7f8e23b03d9c752f245fe",
+      "provenance": {
+        "case_sha256": "ff8a4d349678b831dfd0eb804bfa49120194418a7d54ddfb9c4d0d04c90f041a",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "a7c36384accf0f403e32fed1f78a6f6415a71145f66610c82d0c5fa97e739044",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_LINE_OFFSET_EXACT",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_LINE_OFFSET_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "200cc233f03e9710a982dd6ed1bb855d163a03702954fc373e3d3a312cfc22bc",
+      "provenance": {
+        "case_sha256": "4b2df509c207284656d8727ab34ee8edd62d3cd3d4bb0bb42ab84251d576fe5b",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "4681a9e967bd8a435a20de8a3da1d02889403c51c6d4a6b6695dd92163e962da",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_LINE_OFFSET_PLUS_ULP",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_LINE_OFFSET_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "486de88d350bc3a0f2d1726ebcff6c3002d7e0510b0e266fe62f1a9c6b56cd6f",
+      "provenance": {
+        "case_sha256": "bbfc221e47efaa3c90e1e0566e7fcfb6f239913f2918755c12ee2bc3565c8549",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "9dc671c5675b0f2abafdab75820333bb4eb42a9bd099894a0e181686676e15db",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
     }
   ],
-  "case_catalog_sha256": "da62487fed24dea949e4ddc7b212e9041b0175ce1f15e534cc35ad623b9dc5b7",
+  "case_catalog_sha256": "427a292e7611e08516467bdd537dd6fc97d727b6238001af77c8a4c72d72cfc5",
   "coverage": {
-    "artifact_count": 135,
-    "case_count": 45,
+    "artifact_count": 165,
+    "case_count": 55,
     "tags": [
+      "DEV-013",
       "DEV-016",
       "active_length",
       "axis",
@@ -5522,6 +6476,7 @@
       "derived_concrete",
       "difference",
       "endpoint",
+      "endpoint_snap",
       "flat",
       "gcr",
       "geometry",
@@ -5529,12 +6484,16 @@
       "input",
       "invalid",
       "left",
+      "line_offset",
       "mirror",
+      "multi_timestep",
       "near_flat",
       "nonfinite",
+      "nonzero_index",
       "orientation",
       "overlap",
       "owner_review_revision_1",
+      "owner_review_revision_2",
       "parallel",
       "point",
       "projection",
@@ -5552,15 +6511,15 @@
       "zero_length"
     ]
   },
-  "generated_at_utc": "2026-09-22T03:27:02+08:00",
+  "generated_at_utc": "2026-09-22T03:54:29+08:00",
   "generator": {
-    "commit": "75b31ff01e6ff438d0f24c8ea7d6e6f92ab6c553",
+    "commit": "01549e07c16bfe10a82d2889b1b62c58ef6861e7",
     "files": [
       "reference/tools/build_g2_cases.py",
       "reference/tools/geometry_golden.py"
     ],
-    "sha256": "fbc6e32468370e2eb3994721031ba3378d4ea96c1e2d315a920f3ff43b35b200",
-    "version": "0.2.0"
+    "sha256": "0e15dd7c850411c90f00f68bb2599dd85afeba9541daaddc01cad01fcffd91db",
+    "version": "0.3.0"
   },
   "golden_version": "geometry-golden-v0.1-candidate",
   "known_deviations": [
@@ -11041,6 +12000,267 @@
           "reference_index": 39,
           "shaded": true
         }
+      ]
+    },
+    {
+      "case_id": "MULTI_TIMESTEP_NONZERO_INDEX",
+      "cdr_id": "CDR-006",
+      "corrected_expectation": {
+        "evaluation_policy": "evaluate_requested_frame",
+        "requested_index": 1,
+        "selection": [
+          {
+            "coordinates_m": [
+              [
+                -100.0,
+                0.0
+              ],
+              [
+                -4.072410767274535,
+                0.0
+              ]
+            ],
+            "length_m": 95.92758923272547,
+            "reference_index": 12,
+            "shaded": false
+          },
+          {
+            "coordinates_m": [
+              [
+                2.577455928365292,
+                0.0
+              ],
+              [
+                3.0,
+                0.0
+              ]
+            ],
+            "length_m": 0.4225440716347082,
+            "reference_index": 25,
+            "shaded": false
+          },
+          {
+            "coordinates_m": [
+              [
+                3.0,
+                0.0
+              ],
+              [
+                5.0,
+                0.0
+              ]
+            ],
+            "length_m": 2.0,
+            "reference_index": 26,
+            "shaded": false
+          },
+          {
+            "coordinates_m": [
+              [
+                5.0,
+                0.0
+              ],
+              [
+                100.0,
+                0.0
+              ]
+            ],
+            "length_m": 95.0,
+            "reference_index": 27,
+            "shaded": false
+          },
+          {
+            "coordinates_m": [
+              [
+                -4.072410767274535,
+                0.0
+              ],
+              [
+                -2.072410767274535,
+                0.0
+              ]
+            ],
+            "length_m": 2.0,
+            "reference_index": 0,
+            "shaded": true
+          },
+          {
+            "coordinates_m": [
+              [
+                -2.072410767274535,
+                0.0
+              ],
+              [
+                -0.0724107672745351,
+                0.0
+              ]
+            ],
+            "length_m": 2.0,
+            "reference_index": 4,
+            "shaded": true
+          },
+          {
+            "coordinates_m": [
+              [
+                -0.0724107672745351,
+                0.0
+              ],
+              [
+                1.0000000000000002,
+                0.0
+              ]
+            ],
+            "length_m": 1.0724107672745353,
+            "reference_index": 8,
+            "shaded": true
+          },
+          {
+            "coordinates_m": [
+              [
+                1.0000000000000002,
+                0.0
+              ],
+              [
+                2.577455928365292,
+                0.0
+              ]
+            ],
+            "length_m": 1.5774559283652916,
+            "reference_index": 9,
+            "shaded": true
+          }
+        ],
+        "selection_count": 8
+      },
+      "dev_id": "DEV-013",
+      "explanation": "the frozen TsGround adapter ignores idx and evaluates frame zero; V1 evaluates the requested nonzero frame",
+      "path": "$.result.nonzero_index_ground_lookup",
+      "raw_reference": {
+        "evaluation_policy": "frozen_adapter_forces_index_zero",
+        "requested_index": 1,
+        "selection": [
+          {
+            "coordinates_m": [
+              [
+                -100.0,
+                0.0
+              ],
+              [
+                -1.4999999999999998,
+                0.0
+              ]
+            ],
+            "length_m": 98.5,
+            "reference_index": 12,
+            "shaded": false
+          },
+          {
+            "coordinates_m": [
+              [
+                -0.4999999999999998,
+                0.0
+              ],
+              [
+                0.5000000000000002,
+                0.0
+              ]
+            ],
+            "length_m": 1.0,
+            "reference_index": 16,
+            "shaded": false
+          },
+          {
+            "coordinates_m": [
+              [
+                1.5000000000000002,
+                0.0
+              ],
+              [
+                2.5,
+                0.0
+              ]
+            ],
+            "length_m": 0.9999999999999998,
+            "reference_index": 20,
+            "shaded": false
+          },
+          {
+            "coordinates_m": [
+              [
+                3.5,
+                0.0
+              ],
+              [
+                100.0,
+                0.0
+              ]
+            ],
+            "length_m": 96.5,
+            "reference_index": 24,
+            "shaded": false
+          },
+          {
+            "coordinates_m": [
+              [
+                -1.4999999999999998,
+                0.0
+              ],
+              [
+                -0.4999999999999998,
+                0.0
+              ]
+            ],
+            "length_m": 1.0,
+            "reference_index": 0,
+            "shaded": true
+          },
+          {
+            "coordinates_m": [
+              [
+                0.5000000000000002,
+                0.0
+              ],
+              [
+                1.5000000000000002,
+                0.0
+              ]
+            ],
+            "length_m": 1.0,
+            "reference_index": 4,
+            "shaded": true
+          },
+          {
+            "coordinates_m": [
+              [
+                2.5,
+                0.0
+              ],
+              [
+                3.5,
+                0.0
+              ]
+            ],
+            "length_m": 1.0,
+            "reference_index": 8,
+            "shaded": true
+          }
+        ],
+        "selection_count": 7
+      }
+    },
+    {
+      "case_id": "MULTI_TIMESTEP_NONZERO_INDEX",
+      "cdr_id": "CDR-003",
+      "corrected_expectation": [
+        "direct_projection",
+        "direct_projection"
+      ],
+      "dev_id": "DEV-027",
+      "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+      "path": "$.result.projection[*].classification",
+      "raw_reference": [
+        "regular",
+        "regular"
       ]
     },
     {

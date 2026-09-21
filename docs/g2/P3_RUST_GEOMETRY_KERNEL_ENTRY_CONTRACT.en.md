@@ -3,7 +3,7 @@
 - Status: **Recommended for Approval — NOT ACTIVE**
 - Gate: `CONDITIONALLY PASS`, Awaiting Repository Owner Approval
 - Candidate Golden: `geometry-golden-v0.1-candidate`
-- Candidate manifest: `d805262560199583dad12853b422c2976bd40866cf4ff1c50133206c79b71417`
+- Candidate manifest: `efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
 - Candidate tolerance: `geometry-tolerance-v0.1`
 
 ## Activation fields
@@ -31,16 +31,20 @@ projection; structured non-panic errors; interval-correct
 subtraction; strict active and snap thresholds; scale-aware orientation and
 offset predicates; stable `SurfaceKey`, separate `ReferenceIndex` and
 per-frame `ActiveIndex`; exact reconstruction order with inactive slots.
+Every frame-selecting lookup evaluates its requested index; the frozen
+Reference's DEV-013 `idx -> 0` ground-adapter defect is not reproduced.
 
 ## Candidate case IDs
 
-The activation decision may approve all 45 IDs listed in the Geometry Golden
+The activation decision may approve all 55 IDs listed in the Geometry Golden
 Approval Record or an explicit subset. It must not refer only to a family name.
 The minimum activated set must continue to cover row counts 1/2/3/11; left,
 right, flat, positive/negative near-zero, 90°, 120°, and 180°; GCR above one;
 direct, horizon, and below-horizon solar states; no/partial/high shade; cut
 1/2/8 and 3/5; finite/boundary ground extent; invalid inputs; complete cover;
 touch/overlap; tolerance ±ULP; parallel/coincident; and full mirror.
+The minimum set must also cover endpoint snap, normalized orientation, and
+line-offset ±ULP boundaries plus a multi-timestep nonzero-index lookup.
 
 ## Required invariants
 
@@ -55,6 +59,7 @@ extent, row order and side interpretation together.
 
 Only deviations named by the activated approval are permitted. The current
 candidate proposes DEV-004/CDR-003 for finite configurable extent,
+DEV-013/CDR-006 for requested-frame ground lookup,
 DEV-016/CDR-006 for complete-cover difference, and DEV-027/CDR-003 for explicit
 projection state and no-direct policy topology. Raw reference artifacts remain
 immutable. No other output may differ under a generic "robustness" waiver.

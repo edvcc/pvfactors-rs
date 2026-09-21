@@ -4,13 +4,14 @@
 - Verdict: **CONDITIONALLY PASS**
 - Gate statement: **Technical package complete with recorded baseline conditions; Awaiting Repository Owner Approval.**
 - Candidate: `geometry-golden-v0.1-candidate`
-- Manifest SHA-256: `d805262560199583dad12853b422c2976bd40866cf4ff1c50133206c79b71417`
+- Manifest SHA-256: `efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
 - Tolerance: `geometry-tolerance-v0.1`
 
 ## Decision
 
-CDR-003 Owner Review Revision 1 is incorporated and CDR-006 semantics are
-unchanged; both remain approval candidates. The candidate pipeline
+CDR-003 Owner Review Revision 1 and the explicit CDR-006 DEV-013 decision are
+incorporated; predicate values and tolerance are unchanged. Both CDRs remain
+approval candidates. The candidate pipeline
 captures row geometry, projection, raw/clipped shadow, PV/ground partitions,
 stable logical keys, `ReferenceIndex`, and active maps; separates raw,
 normalized, and corrected artifacts; and passes schema, invariant, deviation,
@@ -28,25 +29,27 @@ against the independently regenerated 3.12.12 run.
 - Input ZIP SHA-256 and 121 internal hashes: PASS.
 - Frozen upstream source 78 Git-blob hashes: PASS.
 - Upstream reference suite: 102 passed / 11 warnings / 0 failed.
-- Concrete G2 catalog: 45 cases; derived families are expanded into inputs,
+- Concrete G2 catalog: 55 cases; derived families are expanded into inputs,
   including `TILT_120`, `TILT_180`, `GCR_GT_1`, `SUN_BELOW_HORIZON`, and two
-  closed-domain invalid-tilt probes.
-- Generated corpus: 135 artifacts plus manifest and validation summary.
+  closed-domain invalid-tilt probes, nine new predicate ±ULP probes, and one
+  two-frame nonzero-index DEV-013 probe.
+- Generated corpus: 165 artifacts plus manifest and validation summary.
 - Canonical Runtime R0: Linux x86_64 / glibc 2.39 / CPython 3.12.14; all 29
   pinned packages, GEOS 3.13.1, and determinism variables matched: PASS.
 - Case and artifact JSON Schema: PASS.
-- Independent invariants: 54 reports covering row-side conservation, shade bounds, ground complete
+- Independent invariants: 65 reports covering row-side conservation, shade bounds, ground complete
   coverage without positive overlap or gaps, finite active endpoints, active
   threshold, exact identity/order/map, corrected finite extent, structured
   invalid errors, primitive expectations, and full mirror: PASS.
 - Two independent complete generations: byte-identical, PASS.
 - Cross-runtime payload comparison against macOS arm64 / CPython 3.12.12:
-  PASS; all 23,528 topology/key/side/index/active-state checks were exact, with
+  PASS; all 24,391 topology/key/side/index/active-state checks were exact, with
   zero exact-payload or out-of-tolerance numerical differences. Maximum absolute
   differences: angle 0, length `5.551115123125783e-16 m`, orientation
-  `5.551115123125783e-17`, position `4.996003610813204e-16 m`.
-- Raw versus corrected provenance: PASS; all 45 records have complete field-level
-  provenance for named DEV-004/CDR-003, DEV-016/CDR-006, or DEV-027/CDR-003.
+  `5.551115123125783e-17`, position `8.881784197001252e-16 m`.
+- Raw versus corrected provenance: PASS; all 47 deviation records have complete
+  field-level provenance for named DEV-004/CDR-003, DEV-013/CDR-006,
+  DEV-016/CDR-006, or DEV-027/CDR-003.
 - Branch safety: work occurred on `research/g2-owner-review-closure`, created
   from `origin/develop` `ddee1f43...`; authoritative `origin/master` remains
   `bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba`.

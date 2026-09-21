@@ -30,13 +30,13 @@
     }
   ],
   "generator": {
-    "commit": "75b31ff01e6ff438d0f24c8ea7d6e6f92ab6c553",
+    "commit": "01549e07c16bfe10a82d2889b1b62c58ef6861e7",
     "files": [
       "reference/tools/build_g2_cases.py",
       "reference/tools/geometry_golden.py"
     ],
-    "sha256": "fbc6e32468370e2eb3994721031ba3378d4ea96c1e2d315a920f3ff43b35b200",
-    "version": "0.2.0"
+    "sha256": "0e15dd7c850411c90f00f68bb2599dd85afeba9541daaddc01cad01fcffd91db",
+    "version": "0.3.0"
   },
   "input": {
     "domain": "valid",

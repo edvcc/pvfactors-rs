@@ -1,6 +1,6 @@
 {
-  "pass": true,
-  "runs": 2,
   "comparison": "byte-for-byte canonical JSON, including topology, keys, ReferenceIndex, active map and nonfinite mask",
-  "differences": []
+  "differences": [],
+  "pass": true,
+  "runs": 2
 }

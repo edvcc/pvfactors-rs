@@ -4,12 +4,13 @@
 - 结论：**CONDITIONALLY PASS**
 - Gate 声明：**Technical package complete with recorded baseline conditions; Awaiting Repository Owner Approval.**
 - Candidate：`geometry-golden-v0.1-candidate`
-- Manifest SHA-256：`d805262560199583dad12853b422c2976bd40866cf4ff1c50133206c79b71417`
+- Manifest SHA-256：`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
 - Tolerance：`geometry-tolerance-v0.1`
 
 ## 结论
 
-CDR-003 已纳入 Owner Review Revision 1，CDR-006 语义未改；二者仍是 approval candidate。
+CDR-003 已纳入 Owner Review Revision 1，CDR-006 已纳入 DEV-013 明确决策；predicate 数值与
+tolerance 未改，二者仍是 approval candidate。
 Candidate pipeline 已采集 row geometry、
 projection、raw/clipped shadow、PV/ground partition、稳定 logical key、`ReferenceIndex` 与
 active map；raw、normalized、corrected artifact 已分离；schema、不变量、差异追溯、compare
@@ -25,22 +26,23 @@ Canonical Runtime blocker 已关闭：当前 candidate 在 R0 下生成，并通
 - 输入 ZIP SHA-256 与内部 121 项 hash：PASS；
 - 冻结 upstream source 78 个 Git blob hash：PASS；
 - Upstream Reference suite：102 passed / 11 warnings / 0 failed；
-- G2 concrete catalog：45 cases，所需 derived family 已展开为具体输入，包括 `TILT_120`、
-  `TILT_180`、`GCR_GT_1`、`SUN_BELOW_HORIZON` 与两个闭区间外 invalid-tilt probe；
-- Generated corpus：135 artifacts，加 manifest 与 validation summary；
+- G2 concrete catalog：55 cases，所需 derived family 已展开为具体输入，包括 `TILT_120`、
+  `TILT_180`、`GCR_GT_1`、`SUN_BELOW_HORIZON`、两个闭区间外 invalid-tilt probe、9 个
+  predicate ±ULP probe 与 1 个双时刻 nonzero-index DEV-013 probe；
+- Generated corpus：165 artifacts，加 manifest 与 validation summary；
 - Canonical Runtime R0：Linux x86_64 / glibc 2.39 / CPython 3.12.14；29 个固定
   package、GEOS 3.13.1 与确定性环境变量全部匹配，PASS；
 - Case 与 artifact JSON Schema：PASS；
-- 独立不变量：54 个 report，覆盖 row-side conservation、shade bounds、ground 无正长度 overlap/无 gap 的完整覆盖、
+- 独立不变量：65 个 report，覆盖 row-side conservation、shade bounds、ground 无正长度 overlap/无 gap 的完整覆盖、
   active endpoint finite、active threshold、identity/order/map 精确、corrected finite extent、
   structured invalid error、primitive expectation 与 full mirror：PASS；
 - 两次独立完整生成：字节级一致，PASS；
 - 与 macOS arm64 / CPython 3.12.12 的 cross-runtime payload comparison：PASS；
-  23,528 个 topology/key/side/index/active-state 检查精确一致，无 exact-payload 或超 tolerance
+  24,391 个 topology/key/side/index/active-state 检查精确一致，无 exact-payload 或超 tolerance
   差异；最大绝对差：angle 0、length `5.551115123125783e-16 m`、orientation
-  `5.551115123125783e-17`、position `4.996003610813204e-16 m`；
-- Raw/corrected provenance：PASS；45 条记录均具有完整 field-level provenance，分别归属
-  DEV-004/CDR-003、DEV-016/CDR-006 或 DEV-027/CDR-003；
+  `5.551115123125783e-17`、position `8.881784197001252e-16 m`；
+- Raw/corrected provenance：PASS；47 条 deviation record 均具有完整 field-level provenance，
+  分别归属 DEV-004/CDR-003、DEV-013/CDR-006、DEV-016/CDR-006 或 DEV-027/CDR-003；
 - Branch safety：工作位于从 `origin/develop` `ddee1f43...` 创建的
   `research/g2-owner-review-closure`；authoritative `origin/master` 保持
   `bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba`；

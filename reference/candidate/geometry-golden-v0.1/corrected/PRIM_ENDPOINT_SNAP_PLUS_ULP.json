@@ -1,0 +1,86 @@
+{
+  "case_id": "PRIM_ENDPOINT_SNAP_PLUS_ULP",
+  "classification": "corrected_expectation",
+  "deviations": [],
+  "generator": {
+    "commit": "01549e07c16bfe10a82d2889b1b62c58ef6861e7",
+    "files": [
+      "reference/tools/build_g2_cases.py",
+      "reference/tools/geometry_golden.py"
+    ],
+    "sha256": "0e15dd7c850411c90f00f68bb2599dd85afeba9541daaddc01cad01fcffd91db",
+    "version": "0.3.0"
+  },
+  "input": {
+    "domain": "boundary_policy",
+    "geometry": null,
+    "inputs": null,
+    "kind": "primitive",
+    "primitive": {
+      "arguments": {
+        "candidate": [
+          1.0000000000000002e-08,
+          0.0
+        ],
+        "endpoint": [
+          0.0,
+          0.0
+        ]
+      },
+      "operation": "classify_endpoint_snap"
+    }
+  },
+  "nonfinite_mask": [],
+  "provenance": {
+    "case_sha256": "f84929b73304e61b207d1dbf55813aaaf3e2f23edd0987d604fbfc6453204ec2",
+    "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+    "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+    "payload_sha256": "1203d0d59c95f668efcc3a1b82ed132d47fdad0df0e63dc8d5f14b0a36fe41e7",
+    "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+    "transformation": "field-level corrections are listed in deviations"
+  },
+  "reference": {
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
+    "environment_id": "031158a1d1be8cdb9093",
+    "name": "pvlib/solarfactors",
+    "numpy": "2.3.5",
+    "pvlib": "0.14.0",
+    "python": "3.12.14",
+    "runtime": {
+      "environment_id": "031158a1d1be8cdb9093",
+      "geos": "3.13.1",
+      "implementation": "CPython",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "system": "Linux",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "shapely": "2.1.2",
+    "version": "v1.6.1"
+  },
+  "result": {
+    "distance_m": 1.0000000000000002e-08,
+    "outcome": "corrected_expectation",
+    "snapped": false
+  },
+  "schema_version": "0.1",
+  "status": "candidate"
+}

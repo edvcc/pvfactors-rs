@@ -3,7 +3,7 @@
 - 状态：**Recommended for Approval — NOT ACTIVE**
 - Gate：`CONDITIONALLY PASS`，Awaiting Repository Owner Approval
 - Candidate Golden：`geometry-golden-v0.1-candidate`
-- Candidate manifest：`d805262560199583dad12853b422c2976bd40866cf4ff1c50133206c79b71417`
+- Candidate manifest：`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
 - Candidate tolerance：`geometry-tolerance-v0.1`
 
 ## 激活字段
@@ -27,14 +27,18 @@ exact-flat 区分；solar zenith 表示域 `[0°,180°]`，具名 `direct_projec
 projection；结构化 non-panic error；正确 interval subtraction；
 严格 active/snap threshold；scale-aware orientation/offset predicate；稳定 `SurfaceKey`；
 单独的 `ReferenceIndex` 与每帧 `ActiveIndex`；包含 inactive slot 的精确 reconstruction order。
+所有按帧选择的 lookup 必须使用请求的 index，不得复刻冻结 Reference 的 DEV-013 `idx -> 0`
+ground-adapter 缺陷。
 
 ## Candidate case IDs
 
-激活决定可批准 Geometry Golden Approval Record 中列出的全部 45 个 ID，或明确子集；不得只引用
+激活决定可批准 Geometry Golden Approval Record 中列出的全部 55 个 ID，或明确子集；不得只引用
 family name。最低激活集合仍须覆盖 row count 1/2/3/11；left、right、flat、正负 near-zero、
 90°、120°、180°；GCR 大于 1；direct、horizon、below-horizon solar state；
 no/partial/high shade；cut 1/2/8 与 3/5；finite/boundary ground extent；invalid input；
 complete cover；touch/overlap；tolerance ±ULP；parallel/coincident；full mirror。
+最低集合还必须覆盖 endpoint snap、normalized orientation、line-offset 的 ±ULP 边界，以及
+multi-timestep nonzero-index lookup。
 
 ## 必须保持的不变量
 
@@ -46,6 +50,7 @@ row geometry、sun vector、normal、extent、row order 与 side interpretation�
 ## 允许的 Reference 偏差
 
 只允许激活批准中明确命名的偏差。当前 candidate 建议 DEV-004/CDR-003（有限可配置 extent）、
+DEV-013/CDR-006（按请求 frame 执行 ground lookup）、
 DEV-016/CDR-006（complete-cover difference）与 DEV-027/CDR-003（显式 projection state 及
 no-direct policy topology）。raw reference artifact 保持不可变；不得用泛化的“更稳健”waiver
 接受其他差异。

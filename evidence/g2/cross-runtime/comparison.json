@@ -6,9 +6,9 @@
     "pass": true
   },
   "inventory": {
-    "left_artifacts": 135,
+    "left_artifacts": 165,
     "pass": true,
-    "right_artifacts": 135
+    "right_artifacts": 165
   },
   "left": {
     "environment": {
@@ -95,8 +95,8 @@
         }
       }
     },
-    "manifest_sha256": "9e6d23ab458dc0a7d28e325ddf01d109439881f5f06837238427547558a20c21",
-    "path": "macos-arm64-cpython-3.12.12-owner-revision-1-candidate"
+    "manifest_sha256": "adc63fa3594665a1a919f28fe99b0ff895642e091d9ec60e56e35b6a32c9c8cd",
+    "path": "/private/tmp/pvfactors-g2-mac-a.k7rsEa/candidate"
   },
   "metadata": {
     "compared_as_payload": false,
@@ -109,39 +109,39 @@
   },
   "numerical": {
     "counts": {
-      "angle": 182,
-      "length": 5126,
-      "orientation": 4058,
-      "position": 23695
+      "angle": 194,
+      "length": 5478,
+      "orientation": 4286,
+      "position": 25337
     },
     "differences": [],
     "limits": {
       "angle": {
-        "absolute": 5E-11,
-        "relative": 5E-13,
+        "absolute": 5e-11,
+        "relative": 5e-13,
         "unit": "degree"
       },
       "length": {
-        "absolute": 5E-12,
-        "relative": 5E-13,
+        "absolute": 5e-12,
+        "relative": 5e-13,
         "unit": "m"
       },
       "orientation": {
-        "absolute": 5E-12,
-        "relative": 5E-13,
+        "absolute": 5e-12,
+        "relative": 5e-13,
         "unit": "dimensionless"
       },
       "position": {
-        "absolute": 5E-12,
-        "relative": 5E-13,
+        "absolute": 5e-12,
+        "relative": 5e-13,
         "unit": "m"
       }
     },
     "max_absolute_difference": {
       "angle": 0.0,
-      "length": 5.551115123125783E-16,
-      "orientation": 5.551115123125783E-17,
-      "position": 4.996003610813204E-16
+      "length": 5.551115123125783e-16,
+      "orientation": 5.551115123125783e-17,
+      "position": 8.881784197001252e-16
     },
     "pass": true
   },
@@ -227,8 +227,8 @@
         }
       }
     },
-    "manifest_sha256": "d805262560199583dad12853b422c2976bd40866cf4ff1c50133206c79b71417",
-    "path": "reference/candidate/geometry-golden-v0.1"
+    "manifest_sha256": "efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b",
+    "path": "/private/tmp/pvfactors-g2-r0-a.MZTcP4/candidate"
   },
   "schema_version": "0.1",
   "tolerance_profile": {
@@ -236,7 +236,7 @@
     "sha256": "09f56ae5adf222340b883a3e6a0818ddfecccf788dcb558191a16e3a4b9334ab"
   },
   "topology": {
-    "checks": 23528,
+    "checks": 24391,
     "differences": [],
     "exact_match": true,
     "pass": true

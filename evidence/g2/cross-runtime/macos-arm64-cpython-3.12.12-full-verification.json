@@ -11,14 +11,14 @@
     "base_branch": null,
     "branch": "research/g2-owner-review-closure",
     "failures": [],
-    "head": "75b31ff01e6ff438d0f24c8ea7d6e6f92ab6c553",
+    "head": "01549e07c16bfe10a82d2889b1b62c58ef6861e7",
     "logical_branch": "research/g2-owner-review-closure",
     "mode": "local",
     "origin_master": "bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba",
     "pass": true
   },
   "case_rebuild": {
-    "case_count": 45,
+    "case_count": 55,
     "failures": [],
     "pass": true
   },
@@ -175,6 +175,11 @@
       },
       {
         "case_id": "MIRROR_IMAGE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "MULTI_TIMESTEP_NONZERO_INDEX",
         "failures": [],
         "pass": true
       },
@@ -354,6 +359,51 @@
         "pass": true
       },
       {
+        "case_id": "PRIM_ENDPOINT_SNAP_MINUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ENDPOINT_SNAP_EXACT_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ENDPOINT_SNAP_PLUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ORIENTATION_MINUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ORIENTATION_EXACT_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ORIENTATION_PLUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_LINE_OFFSET_MINUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_LINE_OFFSET_EXACT_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_LINE_OFFSET_PLUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
         "case_id": "MIRROR_PAIR",
         "failures": [],
         "pass": true
@@ -380,6 +430,11 @@
       },
       {
         "case_id": "SUN_BELOW_HORIZON_OWNER_REVIEW",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "MULTI_TIMESTEP_NONZERO_INDEX_OWNER_REVIEW",
         "failures": [],
         "pass": true
       }
@@ -616,6 +671,267 @@
         "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
         "path": "$.result.projection[*].classification",
         "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "MULTI_TIMESTEP_NONZERO_INDEX",
+        "cdr_id": "CDR-006",
+        "corrected_expectation": {
+          "evaluation_policy": "evaluate_requested_frame",
+          "requested_index": 1,
+          "selection": [
+            {
+              "coordinates_m": [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -4.072410767274535,
+                  0.0
+                ]
+              ],
+              "length_m": 95.92758923272547,
+              "reference_index": 12,
+              "shaded": false
+            },
+            {
+              "coordinates_m": [
+                [
+                  2.577455928365292,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ],
+              "length_m": 0.4225440716347082,
+              "reference_index": 25,
+              "shaded": false
+            },
+            {
+              "coordinates_m": [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ],
+              "length_m": 2.0,
+              "reference_index": 26,
+              "shaded": false
+            },
+            {
+              "coordinates_m": [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  100.0,
+                  0.0
+                ]
+              ],
+              "length_m": 95.0,
+              "reference_index": 27,
+              "shaded": false
+            },
+            {
+              "coordinates_m": [
+                [
+                  -4.072410767274535,
+                  0.0
+                ],
+                [
+                  -2.072410767274535,
+                  0.0
+                ]
+              ],
+              "length_m": 2.0,
+              "reference_index": 0,
+              "shaded": true
+            },
+            {
+              "coordinates_m": [
+                [
+                  -2.072410767274535,
+                  0.0
+                ],
+                [
+                  -0.0724107672745351,
+                  0.0
+                ]
+              ],
+              "length_m": 2.0,
+              "reference_index": 4,
+              "shaded": true
+            },
+            {
+              "coordinates_m": [
+                [
+                  -0.0724107672745351,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ],
+              "length_m": 1.0724107672745353,
+              "reference_index": 8,
+              "shaded": true
+            },
+            {
+              "coordinates_m": [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  2.577455928365292,
+                  0.0
+                ]
+              ],
+              "length_m": 1.5774559283652916,
+              "reference_index": 9,
+              "shaded": true
+            }
+          ],
+          "selection_count": 8
+        },
+        "dev_id": "DEV-013",
+        "explanation": "the frozen TsGround adapter ignores idx and evaluates frame zero; V1 evaluates the requested nonzero frame",
+        "path": "$.result.nonzero_index_ground_lookup",
+        "raw_reference": {
+          "evaluation_policy": "frozen_adapter_forces_index_zero",
+          "requested_index": 1,
+          "selection": [
+            {
+              "coordinates_m": [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -1.4999999999999998,
+                  0.0
+                ]
+              ],
+              "length_m": 98.5,
+              "reference_index": 12,
+              "shaded": false
+            },
+            {
+              "coordinates_m": [
+                [
+                  -0.4999999999999998,
+                  0.0
+                ],
+                [
+                  0.5000000000000002,
+                  0.0
+                ]
+              ],
+              "length_m": 1.0,
+              "reference_index": 16,
+              "shaded": false
+            },
+            {
+              "coordinates_m": [
+                [
+                  1.5000000000000002,
+                  0.0
+                ],
+                [
+                  2.5,
+                  0.0
+                ]
+              ],
+              "length_m": 0.9999999999999998,
+              "reference_index": 20,
+              "shaded": false
+            },
+            {
+              "coordinates_m": [
+                [
+                  3.5,
+                  0.0
+                ],
+                [
+                  100.0,
+                  0.0
+                ]
+              ],
+              "length_m": 96.5,
+              "reference_index": 24,
+              "shaded": false
+            },
+            {
+              "coordinates_m": [
+                [
+                  -1.4999999999999998,
+                  0.0
+                ],
+                [
+                  -0.4999999999999998,
+                  0.0
+                ]
+              ],
+              "length_m": 1.0,
+              "reference_index": 0,
+              "shaded": true
+            },
+            {
+              "coordinates_m": [
+                [
+                  0.5000000000000002,
+                  0.0
+                ],
+                [
+                  1.5000000000000002,
+                  0.0
+                ]
+              ],
+              "length_m": 1.0,
+              "reference_index": 4,
+              "shaded": true
+            },
+            {
+              "coordinates_m": [
+                [
+                  2.5,
+                  0.0
+                ],
+                [
+                  3.5,
+                  0.0
+                ]
+              ],
+              "length_m": 1.0,
+              "reference_index": 8,
+              "shaded": true
+            }
+          ],
+          "selection_count": 7
+        }
+      },
+      {
+        "case_id": "MULTI_TIMESTEP_NONZERO_INDEX",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection",
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular",
           "regular"
         ]
       },

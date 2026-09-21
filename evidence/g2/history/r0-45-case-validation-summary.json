@@ -1,0 +1,5993 @@
+{
+  "artifact_count": 135,
+  "environment": {
+    "canonical_environment_match": true,
+    "canonical_requirements": {
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.4.4",
+      "contourpy": "1.3.3",
+      "cycler": "0.12.1",
+      "fonttools": "4.61.1",
+      "h5py": "3.16.0",
+      "idna": "3.19",
+      "iniconfig": "2.3.0",
+      "kiwisolver": "1.4.9",
+      "matplotlib": "3.10.8",
+      "mock": "5.2.0",
+      "numpy": "2.3.5",
+      "packaging": "26.3",
+      "pandas": "2.2.3",
+      "pillow": "12.3.0",
+      "pluggy": "1.6.0",
+      "pvlib": "0.14.0",
+      "pygments": "2.21.0",
+      "pyparsing": "3.3.2",
+      "pytest": "8.4.2",
+      "pytest-mock": "3.15.1",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2026.3.post1",
+      "requests": "2.34.2",
+      "scipy": "1.17.0",
+      "shapely": "2.1.2",
+      "six": "1.17.0",
+      "tzdata": "2026.3",
+      "urllib3": "2.8.0"
+    },
+    "canonical_runtime": {
+      "geos": "3.13.1",
+      "implementation": "CPython",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
+      "python": "3.12.14",
+      "system": "Linux",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "mismatches": [],
+    "runtime": {
+      "environment_id": "031158a1d1be8cdb9093",
+      "geos": "3.13.1",
+      "implementation": "CPython",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "system": "Linux",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    }
+  },
+  "invariants": {
+    "case_reports": [
+      {
+        "case_id": "C01",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "C02",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "C03",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "C04",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "CUT_2",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "CUT_8",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "CUT_ASYMMETRIC",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GCR_GT_1",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_BOUNDARY_ENDPOINT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_NEAR_BOUNDARY",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_NORMAL_EXTENT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "MIRROR_BASE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "MIRROR_IMAGE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SHADING_HIGH_CANDIDATE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SHADING_NONE_CANDIDATE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SHADING_PARTIAL_CANDIDATE",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SUN_90.0",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SUN_ALONG_AXIS",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_120",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_180",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_1e-10",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_90.0",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_FLAT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_LEFT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_NEAR_LEFT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_NORMAL_EXTENT_CORRECTED",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_BOUNDARY_ENDPOINT_CORRECTED",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GROUND_NEAR_BOUNDARY_CORRECTED",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "UNDERGROUND_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "CUT_ZERO_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_TILT_NEGATIVE_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_TILT_GT_180_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_AXIS_AZIMUTH_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_SURFACE_AZIMUTH_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_NAN_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_INF_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "INVALID_EXTENT_REVERSED_ERROR_CONTRACT",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_COMPLETE_COVER_DIFFERENCE_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ENDPOINT_TOUCH_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_POINT_TOUCH_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_POSITIVE_OVERLAP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ZERO_LENGTH_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_PARALLEL_PROJECTION_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_COINCIDENT_PROJECTION_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ACTIVE_TOL_MINUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ACTIVE_TOL_EXACT_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "PRIM_ACTIVE_TOL_PLUS_ULP_EXPECTATION",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "MIRROR_PAIR",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_120_OWNER_REVIEW",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "TILT_180_OWNER_REVIEW",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "GCR_GT_1_OWNER_REVIEW",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SUN_90.0_OWNER_REVIEW",
+        "failures": [],
+        "pass": true
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON_OWNER_REVIEW",
+        "failures": [],
+        "pass": true
+      }
+    ],
+    "failures": [],
+    "pass": true
+  },
+  "manifest_sha256": "d805262560199583dad12853b422c2976bd40866cf4ff1c50133206c79b71417",
+  "pass": true,
+  "raw_vs_corrected": {
+    "differences": [
+      {
+        "case_id": "C01",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "C02",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "C03",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "C04",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "CUT_2",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "CUT_8",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "CUT_ASYMMETRIC",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "GCR_GT_1",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "GROUND_BOUNDARY_ENDPOINT",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          -0.5,
+          0.5
+        ],
+        "dev_id": "DEV-004",
+        "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+        "path": "$.result.ground.corrected_extent_m",
+        "raw_reference": [
+          -100.0,
+          100.0
+        ]
+      },
+      {
+        "case_id": "GROUND_BOUNDARY_ENDPOINT",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "GROUND_NEAR_BOUNDARY",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          -0.500000000001,
+          0.500000000001
+        ],
+        "dev_id": "DEV-004",
+        "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+        "path": "$.result.ground.corrected_extent_m",
+        "raw_reference": [
+          -100.0,
+          100.0
+        ]
+      },
+      {
+        "case_id": "GROUND_NEAR_BOUNDARY",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "GROUND_NORMAL_EXTENT",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          -10.0,
+          10.0
+        ],
+        "dev_id": "DEV-004",
+        "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+        "path": "$.result.ground.corrected_extent_m",
+        "raw_reference": [
+          -100.0,
+          100.0
+        ]
+      },
+      {
+        "case_id": "GROUND_NORMAL_EXTENT",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "INVALID_EXTENT_REVERSED",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          1.0,
+          -1.0
+        ],
+        "dev_id": "DEV-004",
+        "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+        "path": "$.result.ground.corrected_extent_m",
+        "raw_reference": [
+          -100.0,
+          100.0
+        ]
+      },
+      {
+        "case_id": "MIRROR_BASE",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "MIRROR_IMAGE",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "PRIM_COMPLETE_COVER_DIFFERENCE",
+        "cdr_id": "CDR-006",
+        "corrected_expectation": 0.0,
+        "dev_id": "DEV-016",
+        "explanation": "the minuend is completely covered and the mathematical difference is empty",
+        "path": "$.result.length_m",
+        "raw_reference": 1.0
+      },
+      {
+        "case_id": "SHADING_HIGH_CANDIDATE",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "SHADING_NONE_CANDIDATE",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "SHADING_PARTIAL_CANDIDATE",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "SUN_90.0",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "horizon_no_direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "parallel_ground"
+        ]
+      },
+      {
+        "case_id": "SUN_90.0",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": "classified_state",
+        "dev_id": "DEV-027",
+        "explanation": "the no-direct Geometry policy is emitted as a structured classified state",
+        "path": "$.result.outcome",
+        "raw_reference": "captured"
+      },
+      {
+        "case_id": "SUN_90.0",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": "horizon_no_direct_projection",
+        "dev_id": "DEV-027",
+        "explanation": "the frozen reference has no product-level horizon/below-horizon state field",
+        "path": "$.result.state",
+        "raw_reference": null
+      },
+      {
+        "case_id": "SUN_90.0",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          [
+            0.0
+          ],
+          [
+            0.0
+          ],
+          [
+            0.0
+          ]
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "horizon_no_direct_projection has no direct front-side row shadow in the Geometry policy layer",
+        "path": "$.result.pv_rows[*].shaded_length_front_m",
+        "raw_reference": [
+          [
+            0.9999999999999999
+          ],
+          [
+            1.0
+          ],
+          [
+            0.0
+          ]
+        ]
+      },
+      {
+        "case_id": "SUN_90.0",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          [
+            0.0
+          ],
+          [
+            0.0
+          ],
+          [
+            0.0
+          ]
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "horizon_no_direct_projection has no direct back-side row shadow in the Geometry policy layer",
+        "path": "$.result.pv_rows[*].shaded_length_back_m",
+        "raw_reference": [
+          [
+            0.0
+          ],
+          [
+            1.0
+          ],
+          [
+            1.0000000000000002
+          ]
+        ]
+      },
+      {
+        "case_id": "SUN_90.0",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": {
+          "direct_projection_state": "horizon_no_direct_projection",
+          "direct_shadow_surfaces": [
+            {
+              "active": [
+                false
+              ],
+              "active_index": [
+                null
+              ],
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "length_m": [
+                0.0
+              ],
+              "logical_key": {
+                "cut_interval": 0,
+                "ground_element": 0,
+                "illumination": "shaded",
+                "kind": "ground",
+                "row": null,
+                "segment": null,
+                "side": null,
+                "source": "shadow"
+              },
+              "normal": null,
+              "reference_index": 0,
+              "shaded": true
+            },
+            {
+              "active": [
+                false
+              ],
+              "active_index": [
+                null
+              ],
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "length_m": [
+                0.0
+              ],
+              "logical_key": {
+                "cut_interval": 0,
+                "ground_element": 1,
+                "illumination": "shaded",
+                "kind": "ground",
+                "row": null,
+                "segment": null,
+                "side": null,
+                "source": "shadow"
+              },
+              "normal": null,
+              "reference_index": 1,
+              "shaded": true
+            },
+            {
+              "active": [
+                false
+              ],
+              "active_index": [
+                null
+              ],
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "length_m": [
+                0.0
+              ],
+              "logical_key": {
+                "cut_interval": 0,
+                "ground_element": 2,
+                "illumination": "shaded",
+                "kind": "ground",
+                "row": null,
+                "segment": null,
+                "side": null,
+                "source": "shadow"
+              },
+              "normal": null,
+              "reference_index": 2,
+              "shaded": true
+            }
+          ],
+          "illuminated_surfaces": [
+            {
+              "active": [
+                true
+              ],
+              "active_index": [
+                0
+              ],
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "length_m": [
+                200.0
+              ],
+              "logical_key": {
+                "cut_interval": 0,
+                "ground_element": 0,
+                "illumination": "illuminated",
+                "kind": "ground",
+                "row": null,
+                "segment": null,
+                "side": null,
+                "source": "illumination"
+              },
+              "normal": null,
+              "reference_index": 3,
+              "shaded": false
+            }
+          ],
+          "requested_extent_m": [
+            -100.0,
+            100.0
+          ]
+        },
+        "dev_id": "DEV-027",
+        "explanation": "horizon_no_direct_projection retains finite ground but has no active direct-shadow partition",
+        "path": "$.result.ground",
+        "raw_reference": {
+          "clipped_shadow_elements": [
+            {
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 0
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 1
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 2
+            }
+          ],
+          "illuminated_elements": [
+            {
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 0
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 1
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 2
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 3
+            }
+          ]
+        }
+      },
+      {
+        "case_id": "SUN_90.0",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": {
+          "active_surface_count": [
+            1
+          ],
+          "logical_surface_count": 4,
+          "reference_order": [
+            {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            }
+          ],
+          "reference_to_active": [
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              0
+            ]
+          ]
+        },
+        "dev_id": "DEV-027",
+        "explanation": "policy topology retains inactive direct-shadow slots and one active illuminated ground slot",
+        "path": "$.result.topology",
+        "raw_reference": {
+          "active_surface_count": [
+            10
+          ],
+          "logical_surface_count": 40,
+          "reference_order": [
+            {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            }
+          ],
+          "reference_to_active": [
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              null
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              6
+            ],
+            [
+              null
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              9
+            ]
+          ]
+        }
+      },
+      {
+        "case_id": "SUN_90.0",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 0,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 1,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 2,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              0
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              200.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 3,
+            "shaded": false
+          }
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "policy surfaces materialize the topology as inactive shadows plus illuminated finite ground",
+        "path": "$.result.surfaces",
+        "raw_reference": [
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 0,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 1,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 2,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 3,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 4,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 5,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 6,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 7,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 8,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 9,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 10,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 11,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 12,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 13,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 14,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 15,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 16,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 17,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 18,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 19,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 20,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 21,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 22,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 23,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              0
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              101.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 24,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              1
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              1.9999999999999998
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 25,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              2
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              2.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 26,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              3
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              95.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 27,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -0.3535533905932738,
+                  1.3535533905932737
+                ],
+                [
+                  -0.35355339059327373,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              5.551115123125783e-17
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865475
+              ]
+            ],
+            "reference_index": 28,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              4
+            ],
+            "coordinates_m": [
+              [
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ],
+                [
+                  -0.3535533905932738,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              0.9999999999999999
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865475
+              ]
+            ],
+            "reference_index": 29,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              5
+            ],
+            "coordinates_m": [
+              [
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ],
+                [
+                  -0.35355339059327373,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              0.9999999999999999
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865475
+              ]
+            ],
+            "reference_index": 30,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ],
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865475
+              ]
+            ],
+            "reference_index": 31,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.6464466094067263,
+                  1.3535533905932737
+                ],
+                [
+                  1.6464466094067263,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865477
+              ]
+            ],
+            "reference_index": 32,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              6
+            ],
+            "coordinates_m": [
+              [
+                [
+                  2.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  1.6464466094067263,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              1.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865477
+              ]
+            ],
+            "reference_index": 33,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.6464466094067263,
+                  1.3535533905932737
+                ],
+                [
+                  1.6464466094067263,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865477
+              ]
+            ],
+            "reference_index": 34,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              7
+            ],
+            "coordinates_m": [
+              [
+                [
+                  2.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  1.6464466094067263,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              1.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865477
+              ]
+            ],
+            "reference_index": 35,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              8
+            ],
+            "coordinates_m": [
+              [
+                [
+                  4.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  3.646446609406726,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              1.0000000000000002
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865479
+              ]
+            ],
+            "reference_index": 36,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  4.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  4.353553390593274,
+                  0.6464466094067263
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865479
+              ]
+            ],
+            "reference_index": 37,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.646446609406726,
+                  1.3535533905932737
+                ],
+                [
+                  3.646446609406726,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865479
+              ]
+            ],
+            "reference_index": 38,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              9
+            ],
+            "coordinates_m": [
+              [
+                [
+                  4.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  3.646446609406726,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              1.0000000000000002
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865479
+              ]
+            ],
+            "reference_index": 39,
+            "shaded": true
+          }
+        ]
+      },
+      {
+        "case_id": "SUN_ALONG_AXIS",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "below_horizon_no_direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": "classified_state",
+        "dev_id": "DEV-027",
+        "explanation": "the no-direct Geometry policy is emitted as a structured classified state",
+        "path": "$.result.outcome",
+        "raw_reference": "captured"
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": "below_horizon_no_direct_projection",
+        "dev_id": "DEV-027",
+        "explanation": "the frozen reference has no product-level horizon/below-horizon state field",
+        "path": "$.result.state",
+        "raw_reference": null
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          [
+            0.0
+          ],
+          [
+            0.0
+          ],
+          [
+            0.0
+          ]
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "below_horizon_no_direct_projection has no direct front-side row shadow in the Geometry policy layer",
+        "path": "$.result.pv_rows[*].shaded_length_front_m",
+        "raw_reference": [
+          [
+            0.0
+          ],
+          [
+            0.0
+          ],
+          [
+            0.0
+          ]
+        ]
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          [
+            0.0
+          ],
+          [
+            0.0
+          ],
+          [
+            0.0
+          ]
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "below_horizon_no_direct_projection has no direct back-side row shadow in the Geometry policy layer",
+        "path": "$.result.pv_rows[*].shaded_length_back_m",
+        "raw_reference": [
+          [
+            0.0
+          ],
+          [
+            0.39450728216229514
+          ],
+          [
+            0.39450728216229486
+          ]
+        ]
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": {
+          "direct_projection_state": "below_horizon_no_direct_projection",
+          "direct_shadow_surfaces": [
+            {
+              "active": [
+                false
+              ],
+              "active_index": [
+                null
+              ],
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "length_m": [
+                0.0
+              ],
+              "logical_key": {
+                "cut_interval": 0,
+                "ground_element": 0,
+                "illumination": "shaded",
+                "kind": "ground",
+                "row": null,
+                "segment": null,
+                "side": null,
+                "source": "shadow"
+              },
+              "normal": null,
+              "reference_index": 0,
+              "shaded": true
+            },
+            {
+              "active": [
+                false
+              ],
+              "active_index": [
+                null
+              ],
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "length_m": [
+                0.0
+              ],
+              "logical_key": {
+                "cut_interval": 0,
+                "ground_element": 1,
+                "illumination": "shaded",
+                "kind": "ground",
+                "row": null,
+                "segment": null,
+                "side": null,
+                "source": "shadow"
+              },
+              "normal": null,
+              "reference_index": 1,
+              "shaded": true
+            },
+            {
+              "active": [
+                false
+              ],
+              "active_index": [
+                null
+              ],
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "length_m": [
+                0.0
+              ],
+              "logical_key": {
+                "cut_interval": 0,
+                "ground_element": 2,
+                "illumination": "shaded",
+                "kind": "ground",
+                "row": null,
+                "segment": null,
+                "side": null,
+                "source": "shadow"
+              },
+              "normal": null,
+              "reference_index": 2,
+              "shaded": true
+            }
+          ],
+          "illuminated_surfaces": [
+            {
+              "active": [
+                true
+              ],
+              "active_index": [
+                0
+              ],
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "length_m": [
+                200.0
+              ],
+              "logical_key": {
+                "cut_interval": 0,
+                "ground_element": 0,
+                "illumination": "illuminated",
+                "kind": "ground",
+                "row": null,
+                "segment": null,
+                "side": null,
+                "source": "illumination"
+              },
+              "normal": null,
+              "reference_index": 3,
+              "shaded": false
+            }
+          ],
+          "requested_extent_m": [
+            -100.0,
+            100.0
+          ]
+        },
+        "dev_id": "DEV-027",
+        "explanation": "below_horizon_no_direct_projection retains finite ground but has no active direct-shadow partition",
+        "path": "$.result.ground",
+        "raw_reference": {
+          "clipped_shadow_elements": [
+            {
+              "coordinates_m": [
+                [
+                  [
+                    4.0197342938751515,
+                    0.0
+                  ],
+                  [
+                    6.0197342938751515,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 0
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    6.0197342938751515,
+                    0.0
+                  ],
+                  [
+                    8.019734293875151,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 1
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    8.019734293875151,
+                    0.0
+                  ],
+                  [
+                    11.322829345360269,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 2
+            }
+          ],
+          "illuminated_elements": [
+            {
+              "coordinates_m": [
+                [
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    4.0197342938751515,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 0
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    6.0197342938751515,
+                    0.0
+                  ],
+                  [
+                    6.0197342938751515,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 1
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    8.019734293875151,
+                    0.0
+                  ],
+                  [
+                    8.019734293875151,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 2
+            },
+            {
+              "coordinates_m": [
+                [
+                  [
+                    11.322829345360269,
+                    0.0
+                  ],
+                  [
+                    100.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "element": 3
+            }
+          ]
+        }
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": {
+          "active_surface_count": [
+            1
+          ],
+          "logical_surface_count": 4,
+          "reference_order": [
+            {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            }
+          ],
+          "reference_to_active": [
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              0
+            ]
+          ]
+        },
+        "dev_id": "DEV-027",
+        "explanation": "policy topology retains inactive direct-shadow slots and one active illuminated ground slot",
+        "path": "$.result.topology",
+        "raw_reference": {
+          "active_surface_count": [
+            16
+          ],
+          "logical_surface_count": 40,
+          "reference_order": [
+            {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 0,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 1,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 2,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": 3,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            }
+          ],
+          "reference_to_active": [
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              2
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              null
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              null
+            ],
+            [
+              9
+            ],
+            [
+              null
+            ],
+            [
+              10
+            ],
+            [
+              null
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              null
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ]
+          ]
+        }
+      },
+      {
+        "case_id": "SUN_BELOW_HORIZON",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 0,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 1,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  -100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 2,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              0
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              200.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 3,
+            "shaded": false
+          }
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "policy surfaces materialize the topology as inactive shadows plus illuminated finite ground",
+        "path": "$.result.surfaces",
+        "raw_reference": [
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 0,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 1,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              0
+            ],
+            "coordinates_m": [
+              [
+                [
+                  4.0197342938751515,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.9802657061248485
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 2,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              1
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  6.0197342938751515,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              1.0197342938751515
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 0,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 3,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 4,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 5,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 6,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              2
+            ],
+            "coordinates_m": [
+              [
+                [
+                  6.0197342938751515,
+                  0.0
+                ],
+                [
+                  8.019734293875151,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              2.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 1,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 7,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 8,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 9,
+            "shaded": true
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 10,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              3
+            ],
+            "coordinates_m": [
+              [
+                [
+                  8.019734293875151,
+                  0.0
+                ],
+                [
+                  11.322829345360269,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              3.3030950514851174
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 2,
+              "illumination": "shaded",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "shadow"
+            },
+            "normal": null,
+            "reference_index": 11,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              4
+            ],
+            "coordinates_m": [
+              [
+                [
+                  -100.0,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              101.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 12,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              5
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              1.9999999999999998
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 13,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              6
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  4.0197342938751515,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              1.0197342938751515
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 14,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 0,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 15,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 16,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 17,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 18,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  6.0197342938751515,
+                  0.0
+                ],
+                [
+                  6.0197342938751515,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 1,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 19,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 20,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 21,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 22,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  8.019734293875151,
+                  0.0
+                ],
+                [
+                  8.019734293875151,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 2,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 23,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  1.0000000000000002,
+                  0.0
+                ],
+                [
+                  1.0000000000000002,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 0,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 24,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  3.0,
+                  0.0
+                ],
+                [
+                  3.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 1,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 25,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  5.0,
+                  0.0
+                ],
+                [
+                  5.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": 2,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 26,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              7
+            ],
+            "coordinates_m": [
+              [
+                [
+                  11.322829345360269,
+                  0.0
+                ],
+                [
+                  100.0,
+                  0.0
+                ]
+              ]
+            ],
+            "length_m": [
+              88.67717065463972
+            ],
+            "logical_key": {
+              "cut_interval": 3,
+              "ground_element": 3,
+              "illumination": "illuminated",
+              "kind": "ground",
+              "row": null,
+              "segment": null,
+              "side": null,
+              "source": "illumination"
+            },
+            "normal": null,
+            "reference_index": 27,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              8
+            ],
+            "coordinates_m": [
+              [
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ],
+                [
+                  -0.35355339059327373,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              0.9999999999999999
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865475
+              ]
+            ],
+            "reference_index": 28,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ],
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865475
+              ]
+            ],
+            "reference_index": 29,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              9
+            ],
+            "coordinates_m": [
+              [
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ],
+                [
+                  -0.35355339059327373,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              0.9999999999999999
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865475
+              ]
+            ],
+            "reference_index": 30,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ],
+                [
+                  0.35355339059327373,
+                  0.6464466094067263
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 0,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865475
+              ]
+            ],
+            "reference_index": 31,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              10
+            ],
+            "coordinates_m": [
+              [
+                [
+                  2.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  1.6464466094067263,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              1.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865477
+              ]
+            ],
+            "reference_index": 32,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  2.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  2.353553390593274,
+                  0.6464466094067263
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865477
+              ]
+            ],
+            "reference_index": 33,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              11
+            ],
+            "coordinates_m": [
+              [
+                [
+                  2.07459461614884,
+                  0.9254053838511598
+                ],
+                [
+                  1.6464466094067263,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              0.6054927178377049
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865477
+              ]
+            ],
+            "reference_index": 34,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              12
+            ],
+            "coordinates_m": [
+              [
+                [
+                  2.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  2.07459461614884,
+                  0.9254053838511598
+                ]
+              ]
+            ],
+            "length_m": [
+              0.39450728216229514
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 1,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865477
+              ]
+            ],
+            "reference_index": 35,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              13
+            ],
+            "coordinates_m": [
+              [
+                [
+                  4.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  3.646446609406726,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              1.0000000000000002
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865479
+              ]
+            ],
+            "reference_index": 36,
+            "shaded": false
+          },
+          {
+            "active": [
+              false
+            ],
+            "active_index": [
+              null
+            ],
+            "coordinates_m": [
+              [
+                [
+                  4.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  4.353553390593274,
+                  0.6464466094067263
+                ]
+              ]
+            ],
+            "length_m": [
+              0.0
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "front",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                0.7071067811865475,
+                0.7071067811865479
+              ]
+            ],
+            "reference_index": 37,
+            "shaded": true
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              14
+            ],
+            "coordinates_m": [
+              [
+                [
+                  4.074594616148841,
+                  0.9254053838511598
+                ],
+                [
+                  3.646446609406726,
+                  1.3535533905932737
+                ]
+              ]
+            ],
+            "length_m": [
+              0.6054927178377054
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "illuminated",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865479
+              ]
+            ],
+            "reference_index": 38,
+            "shaded": false
+          },
+          {
+            "active": [
+              true
+            ],
+            "active_index": [
+              15
+            ],
+            "coordinates_m": [
+              [
+                [
+                  4.353553390593274,
+                  0.6464466094067263
+                ],
+                [
+                  4.074594616148841,
+                  0.9254053838511598
+                ]
+              ]
+            ],
+            "length_m": [
+              0.39450728216229486
+            ],
+            "logical_key": {
+              "cut_interval": null,
+              "ground_element": null,
+              "illumination": "shaded",
+              "kind": "pvrow",
+              "row": 2,
+              "segment": 0,
+              "side": "back",
+              "source": "pvrow"
+            },
+            "normal": [
+              [
+                -0.7071067811865475,
+                -0.7071067811865479
+              ]
+            ],
+            "reference_index": 39,
+            "shaded": true
+          }
+        ]
+      },
+      {
+        "case_id": "TILT_120",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "TILT_180",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "TILT_1e-10",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "TILT_90.0",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "TILT_FLAT",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "TILT_LEFT",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      },
+      {
+        "case_id": "TILT_NEAR_LEFT",
+        "cdr_id": "CDR-003",
+        "corrected_expectation": [
+          "direct_projection"
+        ],
+        "dev_id": "DEV-027",
+        "explanation": "the frozen Geometry reference exposes projected coordinates but no product-level direct/horizon/below-horizon state; CDR-003 supplies that explicit representation",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": [
+          "regular"
+        ]
+      }
+    ],
+    "incomplete": [],
+    "pass": true,
+    "required_fields": [
+      "dev_id",
+      "cdr_id",
+      "path",
+      "raw_reference",
+      "corrected_expectation",
+      "explanation"
+    ],
+    "schema_version": "0.1"
+  },
+  "schema_validation": {
+    "errors": [],
+    "pass": true
+  },
+  "schema_version": "0.1"
+}
