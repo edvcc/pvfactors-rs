@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -55,15 +56,57 @@ def case_rebuild() -> dict:
 
 def branch_safety() -> dict:
     branch = git("branch", "--show-current")
-    master = git("rev-parse", "master")
-    origin_master = git("rev-parse", "origin/master")
+    head = git("rev-parse", "HEAD")
     failures = []
-    if branch == "master":
+
+    try:
+        origin_master = git(
+            "rev-parse", "--verify", "refs/remotes/origin/master"
+        )
+    except subprocess.CalledProcessError:
+        origin_master = None
+        failures.append("authoritative ref refs/remotes/origin/master is missing")
+
+    github_actions = os.environ.get("GITHUB_ACTIONS", "").lower() == "true"
+    event_name = os.environ.get("GITHUB_EVENT_NAME", "")
+    base_branch = None
+
+    if github_actions and event_name == "pull_request":
+        mode = "github_pull_request"
+        logical_branch = os.environ.get("GITHUB_HEAD_REF", "")
+        base_branch = os.environ.get("GITHUB_BASE_REF", "")
+        if not logical_branch:
+            failures.append("GITHUB_HEAD_REF is missing for pull_request")
+    elif github_actions and event_name == "push":
+        mode = "github_push"
+        logical_branch = os.environ.get("GITHUB_REF_NAME", "") or branch
+        ref_type = os.environ.get("GITHUB_REF_TYPE", "")
+        if ref_type and ref_type != "branch":
+            failures.append(f"push ref is not a branch: {ref_type}")
+        if not logical_branch:
+            failures.append("push branch cannot be determined")
+    else:
+        mode = "local"
+        logical_branch = branch
+        if not branch:
+            failures.append(
+                "detached HEAD is only supported for GitHub pull_request"
+            )
+
+    if logical_branch == "master":
         failures.append("verification is running on master")
-    if master != origin_master:
-        failures.append("local master differs from origin/master")
-    return {"pass": not failures, "branch": branch, "master": master,
-            "origin_master": origin_master, "failures": failures}
+
+    return {
+        "pass": not failures,
+        "mode": mode,
+        "branch": branch,
+        "logical_branch": logical_branch,
+        "base_branch": base_branch,
+        "head": head,
+        "authoritative_ref": "refs/remotes/origin/master",
+        "origin_master": origin_master,
+        "failures": failures,
+    }
 
 
 def approved_safety() -> dict:
@@ -104,4 +147,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
