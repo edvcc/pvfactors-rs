@@ -3,8 +3,8 @@
 - Record status: **Recommended for Approval**
 - Golden status: **CANDIDATE — NOT APPROVED**
 - Candidate: `geometry-golden-v0.1-candidate`
-- Manifest SHA-256: `7136955917cc1c418b6f103800c74019bca63567b034eb42d2a4c023411ccfbf`
-- Generator commit: `88e397dadc5d781515ae0b94fd2749e6e6286277`
+- Manifest SHA-256: `bcbe113c5c6ce189ba0d5c2ec4f3750e58e2b7652403282eed0691bbbf717799`
+- Generator commit: `5e864bf2d466191155dfe930b1c8e5de88cfccb1`
 - Reference: `pvlib/solarfactors` v1.6.1, `ecbfc863657e239817603a43898ae173c7ccad9c`
 - Tolerance: `geometry-tolerance-v0.1`
 
