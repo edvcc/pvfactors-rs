@@ -3,8 +3,8 @@
 - Record status: **Recommended for Approval**
 - Golden status: **CANDIDATE — NOT APPROVED**
 - Candidate: `geometry-golden-v0.1-candidate`
-- Manifest SHA-256: `b51e626e19734fce0d27e7c7a85c929f16a082e34e56343617b0dc6b83e76920`
-- Generator commit: `0376dafc0019be3d4045c124f1f83c9a9f94bead`
+- Manifest SHA-256: `5afcc7e2cbc761ef883a422dd596e972cda603313a27f8425278dd067be57e3f`
+- Generator commit: `50500914c227aaeaf738b785eea3a20d96e8ee28`
 - Reference: `pvlib/solarfactors` v1.6.1, `ecbfc863657e239817603a43898ae173c7ccad9c`
 - Tolerance: `geometry-tolerance-v0.1`
 
@@ -31,6 +31,9 @@ The set has 39 concrete cases and 117 artifacts: one `raw_reference`, one
 - Input ZIP SHA-256: `2aca31b43080431a026f421e7d28ae86a814430fe27d60c0cf6e1aef2f4f5729`;
   all 121 internal manifest entries passed.
 - Frozen source snapshot: all 78 Git-blob hashes passed.
+- Canonical Reference Runtime R0: PASS on Linux x86_64 / glibc 2.39 /
+  CPython 3.12.14 with all 29 pinned package versions, GEOS 3.13.1, and all
+  four determinism environment variables matched.
 - Upstream suite: 102 passed, 11 warnings on this macOS capture. Six warnings
   are divide-by-zero reference behavior already seen in the baseline; five are
   non-interactive plotting warnings. No test failed.
@@ -38,18 +41,24 @@ The set has 39 concrete cases and 117 artifacts: one `raw_reference`, one
 - Independent invariants: PASS, 43 reports including structured invalid-input,
   primitive-expectation, corrected-extent, and mirror checks.
 - Reproducibility: PASS; two independent full generations were byte-identical.
-- Candidate compare against a further fresh generation: PASS, no differences.
+- Cross-runtime comparison against the preserved macOS arm64 / CPython 3.12.12
+  candidate: PASS. All 19,511 topology/key/side/index/active-state checks were
+  exact. Numerical maximum absolute differences were 0 degrees for angles,
+  `1.1102230246251565e-16 m` for lengths, `5.551115123125783e-17` for
+  orientation, and `5.551115123125783e-17 m` for positions, all within the
+  unchanged `geometry-tolerance-v0.1`.
 - Raw/corrected audit: PASS; DEV-004 affects four extent cases and DEV-016
   affects the complete-cover difference case. No unproven correction is hidden.
 - Approved directory safety: PASS; it contains only its `NOT APPROVED` README.
 
 ## Recorded conditions
 
-The 29 pinned package versions match. Capture ran on CPython 3.12.12 macOS
-arm64, while the Phase 0–1 package claims CPython 3.12.14. That claimed patch
-version was not available in this execution environment. The owner must either
-correct/replace the canonical runtime declaration and regenerate, or explicitly
-accept a new canonical runtime before approval.
+The Canonical Runtime condition is closed. The current candidate was generated
+in R0, has `canonical_environment_match=true`, and passed the cross-runtime
+payload comparison. The prior CPython 3.12.12 macOS arm64 manifest, validation
+summary, verification, reproducibility, and comparison records remain under
+`evidence/g2/cross-runtime/`; its complete corpus remains retrievable from Git
+commit `182dbb54d351db733ff40ba40dd4f119767b1ee4`.
 
 No remote `develop` branch existed after fetch; only `origin/master` was
 available. The work branch was therefore created from the unchanged
@@ -59,9 +68,10 @@ governance action.
 
 ## Recommendation and owner decision
 
-The content is **Recommended for Approval after the two recorded baseline
-conditions are resolved or explicitly accepted**. Approval must identify this
-manifest hash and separately approve CDR-003 and CDR-006.
+The content is **Recommended for Approval**. Approval must identify this
+manifest hash and separately approve CDR-003 and CDR-006. The remaining
+`develop` designation is an integration-governance condition, not an unresolved
+Canonical Runtime condition.
 
 - CDR-003 owner decision: Pending
 - CDR-006 owner decision: Pending

@@ -74,6 +74,7 @@ for parallel execution; no unregistered reference deviation.
 ## Entry preconditions
 
 Owner approval of CDR-003, CDR-006, exact Golden manifest and tolerance;
-resolution/acceptance of the Python runtime discrepancy; designation of the
-`develop` integration baseline; and a P3 task created only after those records
-exist. This contract does not itself authorize implementation.
+designation of the `develop` integration baseline; and a P3 task created only
+after those records exist. The Canonical Runtime discrepancy has been resolved
+by the R0 generation and cross-runtime comparison. This contract does not
+itself authorize implementation.

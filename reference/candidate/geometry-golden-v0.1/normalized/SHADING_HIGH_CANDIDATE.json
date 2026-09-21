@@ -3,12 +3,12 @@
   "classification": "normalized_reference",
   "deviations": [],
   "generator": {
-    "commit": "0376dafc0019be3d4045c124f1f83c9a9f94bead",
+    "commit": "50500914c227aaeaf738b785eea3a20d96e8ee28",
     "files": [
       "reference/tools/build_g2_cases.py",
       "reference/tools/geometry_golden.py"
     ],
-    "sha256": "14cd40d1b36ffcad2b7441f2d226c4fe6e7f879ded55135117945c92291fb5e2",
+    "sha256": "32b3c882980a2ea24479efcd155fdaf5e56ed3a042f370939a22b8f9122c8e40",
     "version": "0.1.0"
   },
   "input": {
@@ -59,21 +59,26 @@
     "case_sha256": "c68d1eb0bcf0f49effd769c73c4cfb23d891a68015b440badfce68c0169aad86",
     "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
     "method": "direct frozen-reference introspection",
-    "payload_sha256": "af73d7f7f2cce90428b729f187a075732c6fd1c61cb67c183bdd5440c761e09e",
+    "payload_sha256": "0568c1f340165676077cd4fdc318f7cf6e02c83d09ef7206ea82a4a9453c71a2",
     "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
     "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
   },
   "reference": {
     "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
-    "environment_id": "548e623fbc3038f5f020",
+    "environment_id": "031158a1d1be8cdb9093",
     "name": "pvlib/solarfactors",
     "numpy": "2.3.5",
     "pvlib": "0.14.0",
-    "python": "3.12.12",
+    "python": "3.12.14",
     "runtime": {
-      "environment_id": "548e623fbc3038f5f020",
+      "environment_id": "031158a1d1be8cdb9093",
+      "geos": "3.13.1",
       "implementation": "CPython",
-      "machine": "arm64",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
       "packages": {
         "jsonschema": "4.25.1",
         "numpy": "2.3.5",
@@ -82,8 +87,9 @@
         "scipy": "1.17.0",
         "shapely": "2.1.2"
       },
-      "platform": "macOS-26.6.2-arm64-arm-64bit",
-      "python": "3.12.12",
+      "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "system": "Linux",
       "thread_environment": {
         "MKL_NUM_THREADS": "1",
         "OMP_NUM_THREADS": "1",
@@ -297,7 +303,7 @@
         "back_normal": [
           [
             -0.8660254037844387,
-            -0.5
+            -0.49999999999999994
           ]
         ],
         "center_m": [
@@ -307,7 +313,7 @@
         "endpoints_m": [
           [
             [
-              -0.24999999999999992,
+              -0.2499999999999999,
               1.4330127018922194
             ],
             [
@@ -319,12 +325,12 @@
         "front_normal": [
           [
             0.8660254037844387,
-            0.5
+            0.49999999999999994
           ]
         ],
         "row": 0,
         "shaded_length_back_m": [
-          1.7772239894833365e-16
+          2.0014830212433605e-16
         ],
         "shaded_length_front_m": [
           0.9778285778952818
@@ -1431,13 +1437,13 @@
               1.4138116871115054
             ],
             [
-              -0.24999999999999992,
+              -0.2499999999999999,
               1.4330127018922194
             ]
           ]
         ],
         "length_m": [
-          0.022171422104718314
+          0.0221714221047183
         ],
         "logical_key": {
           "cut_interval": null,
@@ -1452,7 +1458,7 @@
         "normal": [
           [
             0.8660254037844387,
-            0.5
+            0.49999999999999994
           ]
         ],
         "reference_index": 28,
@@ -1468,7 +1474,7 @@
         "coordinates_m": [
           [
             [
-              0.24999999999999992,
+              0.2499999999999999,
               0.5669872981077806
             ],
             [
@@ -1493,7 +1499,7 @@
         "normal": [
           [
             0.8660254037844387,
-            0.5
+            0.49999999999999994
           ]
         ],
         "reference_index": 29,
@@ -1513,7 +1519,7 @@
               0.5669872981077807
             ],
             [
-              -0.24999999999999992,
+              -0.2499999999999999,
               1.4330127018922194
             ]
           ]
@@ -1534,7 +1540,7 @@
         "normal": [
           [
             -0.8660254037844387,
-            -0.5
+            -0.49999999999999994
           ]
         ],
         "reference_index": 30,
@@ -1550,7 +1556,7 @@
         "coordinates_m": [
           [
             [
-              0.24999999999999992,
+              0.2499999999999999,
               0.5669872981077806
             ],
             [
@@ -1560,7 +1566,7 @@
           ]
         ],
         "length_m": [
-          1.7772239894833365e-16
+          2.0014830212433605e-16
         ],
         "logical_key": {
           "cut_interval": null,
@@ -1575,7 +1581,7 @@
         "normal": [
           [
             -0.8660254037844387,
-            -0.5
+            -0.49999999999999994
           ]
         ],
         "reference_index": 31,
