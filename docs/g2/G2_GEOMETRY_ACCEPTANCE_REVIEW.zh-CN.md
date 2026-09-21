@@ -4,7 +4,7 @@
 - 结论：**CONDITIONALLY PASS**
 - Gate 声明：**Technical package complete with recorded baseline conditions; Awaiting Repository Owner Approval.**
 - Candidate：`geometry-golden-v0.1-candidate`
-- Manifest SHA-256：`bcbe113c5c6ce189ba0d5c2ec4f3750e58e2b7652403282eed0691bbbf717799`
+- Manifest SHA-256：`b51e626e19734fce0d27e7c7a85c929f16a082e34e56343617b0dc6b83e76920`
 - Tolerance：`geometry-tolerance-v0.1`
 
 ## 结论

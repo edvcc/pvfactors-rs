@@ -3,12 +3,12 @@
   "classification": "raw_reference",
   "deviations": [],
   "generator": {
-    "commit": "5e864bf2d466191155dfe930b1c8e5de88cfccb1",
+    "commit": "0376dafc0019be3d4045c124f1f83c9a9f94bead",
     "files": [
       "reference/tools/build_g2_cases.py",
       "reference/tools/geometry_golden.py"
     ],
-    "sha256": "3f45224e1823bdeaf081efb33592deb34a99018a692c5407c1daf79135c15d83",
+    "sha256": "14cd40d1b36ffcad2b7441f2d226c4fe6e7f879ded55135117945c92291fb5e2",
     "version": "0.1.0"
   },
   "input": {
