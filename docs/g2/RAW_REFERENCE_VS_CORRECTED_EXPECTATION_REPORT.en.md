@@ -1,6 +1,6 @@
 # Raw Reference vs Corrected Expectation Report
 
-- Status: **Recommended for Approval**
+- Status: **APPROVED G2 EVIDENCE**
 - Candidate: `geometry-golden-v0.1-candidate`
 - Machine-readable evidence: `evidence/g2/raw-vs-corrected.json`
 
@@ -11,6 +11,7 @@ raw or normalized artifact was modified to obtain a corrected result.
 | Records | Path / scope | Raw reference | Corrected expectation | Provenance |
 |---:|---|---|---|---|
 | 4 | `$.result.ground.corrected_extent_m` | hard-coded `[-100,100]` | requested finite extent | DEV-004 / CDR-003 |
+| 1 | `$.result.nonzero_index_ground_lookup` | `idx=1` adapter evaluates frame 0 | evaluate requested frame 1 | DEV-013 / CDR-006 |
 | 1 | `$.result.length_m` | complete-cover difference length `1.0` | empty / `0.0` | DEV-016 / CDR-006 |
 | 26 | `$.result.projection[*].classification` | Reference-derived `regular` or `parallel_ground` | explicit direct/horizon/below-horizon state | DEV-027 / CDR-003 |
 | 4 | front/back shaded-length paths | Reference horizon/below-horizon direct shading | zero direct shaded length | DEV-027 / CDR-003 |
@@ -26,4 +27,6 @@ layer's projection state, retained row geometry, inactive direct-shadow slots,
 or finite ground partition. Invalid inputs continue to use the structured
 non-panic error contract and are not concealed as numeric waivers.
 
-This report remains a candidate decision input. `CONDITIONALLY PASS`, Awaiting Repository Owner Approval.
+The Repository Owner accepted this raw/corrected evidence on 2026-09-22 as
+part of the exact approved Geometry Golden. G2 is `PASS`; raw Reference evidence
+remains unchanged.

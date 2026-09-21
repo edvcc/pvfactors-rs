@@ -1,6 +1,6 @@
 # CDR-003 — Geometry 输入与定义域边界策略
 
-- 状态：**Recommended for Approval**
+- 状态：**APPROVED**
 - 修订：**Owner Review Revision 1 incorporated**
 - 日期：2026-09-22
 - 范围：仅 P2 / G2 Geometry
@@ -56,5 +56,5 @@ DEV 和 explanation 追溯差异，不重写 raw oracle。
 
 ## 批准效果
 
-Owner 批准后，本策略才成为 P3 冻结输入。此前它仍是推荐，G2 保持
-`CONDITIONALLY PASS`，Awaiting Repository Owner Approval。
+Repository Owner 已于 2026-09-22 批准本策略。本策略现为 ACTIVE P3 Entry Contract 的
+冻结输入；决策正文、DEV-004/DEV-027 追溯及 raw/corrected 区分保持不变。

@@ -1,6 +1,6 @@
 # Geometry Tolerance Profile v0.1
 
-- Status: **Recommended for Approval**
+- Status: **APPROVED**
 - Machine-readable source: `reference/tolerance/geometry-tolerance-v0.1.json`
 - Scope: Geometry Gate only
 
@@ -23,7 +23,7 @@ Topology, side, illumination class, logical key, source, case ID,
 exact. Comparison tolerance cannot replace an algorithm predicate. This profile
 does not freeze View Factor, Perez, Radiosity, or aggregate-irradiance tolerance.
 
-The values are an initial review candidate derived from f64 operation scale,
-the frozen reference branches, and same-environment capture. Cross-platform
-calibration is not claimed. G2 remains `CONDITIONALLY PASS`, Awaiting Repository Owner Approval.
-
+The Repository Owner approved these exact values on 2026-09-22. The scope
+remains Geometry Gate only. Comparator tolerance does not replace an algorithm
+predicate, and this profile does not apply to View Factor, Perez, Radiosity, or
+aggregate irradiance.

@@ -1,0 +1,90 @@
+{
+  "case_id": "PRIM_ACTIVE_TOL_MINUS_ULP",
+  "classification": "raw_reference",
+  "deviations": [],
+  "generator": {
+    "commit": "01549e07c16bfe10a82d2889b1b62c58ef6861e7",
+    "files": [
+      "reference/tools/build_g2_cases.py",
+      "reference/tools/geometry_golden.py"
+    ],
+    "sha256": "0e15dd7c850411c90f00f68bb2599dd85afeba9541daaddc01cad01fcffd91db",
+    "version": "0.3.0"
+  },
+  "input": {
+    "domain": "boundary_policy",
+    "geometry": null,
+    "inputs": null,
+    "kind": "primitive",
+    "primitive": {
+      "arguments": {
+        "segment": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            9.999999999999999e-09,
+            0.0
+          ]
+        ]
+      },
+      "operation": "classify_segment"
+    }
+  },
+  "nonfinite_mask": [],
+  "provenance": {
+    "case_sha256": "d290bc26f4dd5dc6c8d83342d451994d8dae9358a88a45e073485eb4e77a78bb",
+    "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+    "method": "direct frozen primitive invocation",
+    "payload_sha256": "4132b90b00374ade9974d4c470ec7d432e5880927246a08a0d58274869b34f45",
+    "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+    "transformation": "none"
+  },
+  "reference": {
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
+    "environment_id": "031158a1d1be8cdb9093",
+    "name": "pvlib/solarfactors",
+    "numpy": "2.3.5",
+    "pvlib": "0.14.0",
+    "python": "3.12.14",
+    "runtime": {
+      "environment_id": "031158a1d1be8cdb9093",
+      "geos": "3.13.1",
+      "implementation": "CPython",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "system": "Linux",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "shapely": "2.1.2",
+    "version": "v1.6.1"
+  },
+  "result": {
+    "active": false,
+    "length_m": 9.999999999999999e-09,
+    "logical_slot_retained": true,
+    "operation": "classify_segment",
+    "outcome": "captured"
+  },
+  "schema_version": "0.1",
+  "status": "candidate"
+}

@@ -1,6 +1,6 @@
 # CDR-006 — Geometry Numerical Predicate and Stable Topology Policy
 
-- Status: **Recommended for Approval**
+- Status: **APPROVED**
 - Date: 2026-09-22
 - Reference: `pvlib/solarfactors` v1.6.1, `ecbfc863657e239817603a43898ae173c7ccad9c`
 - Related deviations: DEV-013, DEV-016, DEV-026
@@ -85,5 +85,7 @@ boundary operators.
 
 ## Approval effect
 
-Owner approval would freeze these predicates and topology semantics for P3.
-Until then G2 remains `CONDITIONALLY PASS`, Awaiting Repository Owner Approval.
+The Repository Owner approved these predicates and topology semantics on
+2026-09-22. They are frozen input to the active P3 Entry Contract. Predicate
+values, boundary operators, DEV-013/DEV-016 traceability, and the
+raw/corrected distinction remain unchanged.

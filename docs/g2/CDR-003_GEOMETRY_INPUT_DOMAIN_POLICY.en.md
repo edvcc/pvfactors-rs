@@ -1,6 +1,6 @@
 # CDR-003 — Geometry Input and Domain Boundary Policy
 
-- Status: **Recommended for Approval**
+- Status: **APPROVED**
 - Revision: **Owner Review Revision 1 incorporated**
 - Date: 2026-09-22
 - Scope: P2 / G2 Geometry only
@@ -73,5 +73,6 @@ value, CDR, DEV, and explanation instead of rewriting the raw oracle.
 
 ## Approval effect
 
-Owner approval would freeze this policy for P3. Until then it remains a
-recommendation and G2 remains `CONDITIONALLY PASS`, Awaiting Repository Owner Approval.
+The Repository Owner approved this policy on 2026-09-22. It is frozen input to
+the active P3 Entry Contract; the decision text, DEV-004/DEV-027 traceability,
+and raw/corrected distinction remain unchanged.

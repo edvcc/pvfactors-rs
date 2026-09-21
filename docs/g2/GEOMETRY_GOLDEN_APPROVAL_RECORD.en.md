@@ -1,14 +1,17 @@
 # Geometry Golden Approval Record
 
-- Record status: **Recommended for Approval**
-- Golden status: **CANDIDATE — NOT APPROVED**
-- Candidate: `geometry-golden-v0.1-candidate`
-- Manifest SHA-256: `efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
+- Record status: **APPROVED**
+- Golden status: **APPROVED**
+- Approved version: `geometry-golden-v0.1`
+- Source candidate: `geometry-golden-v0.1-candidate`
+- Approved manifest SHA-256: `efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
+- Approved corpus: `reference/approved/geometry-golden-v0.1`
+- Approval date: 2026-09-22
 - Generator commit: `01549e07c16bfe10a82d2889b1b62c58ef6861e7`
 - Reference: `pvlib/solarfactors` v1.6.1, `ecbfc863657e239817603a43898ae173c7ccad9c`
 - Tolerance: `geometry-tolerance-v0.1`
 
-## Candidate set
+## Approved set
 
 The set has 55 concrete cases and 165 artifacts: one `raw_reference`, one
 `normalized_reference`, and one `corrected_expectation` per case.
@@ -55,7 +58,9 @@ The set has 55 concrete cases and 165 artifacts: one `raw_reference`, one
   four extent records, DEV-013 one nonzero-index record, DEV-016 one
   complete-cover record, and DEV-027 41 explicit projection state/no-direct
   records. No unproven correction is hidden.
-- Approved directory safety: PASS; it contains only its `NOT APPROVED` README.
+- Approved corpus safety: PASS; its manifest and all 165 payload artifacts are
+  byte-identical to the named source candidate. Approval metadata is separate
+  and future candidate generation cannot overwrite the approved directory.
 
 ## Recorded conditions
 
@@ -73,14 +78,17 @@ The three unintegrated canonical-runtime commits after `182dbb54...` were
 cherry-picked in topological order. This task did not modify `master` or
 `develop` and did not merge a pull request.
 
-## Recommendation and owner decision
+## Owner approval
 
-The content is **Recommended for Approval**. Approval must identify this
-manifest hash and separately approve CDR-003 and CDR-006.
+The Repository Owner issued the `G2 Approval Closure Task v1.0` decision dated
+2026-09-22 and approved the exact governed objects below:
 
-- CDR-003 owner decision: Pending
-- CDR-006 owner decision: Pending
-- Geometry Golden owner decision: Pending
-- Reviewer identity/evidence: Pending
+- CDR-003 owner decision: **APPROVED**
+- CDR-006 owner decision: **APPROVED**
+- `geometry-tolerance-v0.1`: **APPROVED**
+- Geometry Golden `geometry-golden-v0.1`: **APPROVED**
+- Reviewer / Owner approval evidence: **PRESENT**
 
-Until those decisions exist: `CONDITIONALLY PASS`, Awaiting Repository Owner Approval.
+Canonical Runtime R0 is verified, candidate-to-approved identity is exact, G2
+is `PASS`, and the P3 Entry Contract is `ACTIVE`. P3 implementation was not
+started by this closure task.

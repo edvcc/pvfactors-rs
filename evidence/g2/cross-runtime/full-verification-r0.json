@@ -1,17 +1,28 @@
 {
   "approved_safety": {
+    "approved_manifest_sha256": "efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b",
+    "approved_schema_validation": {
+      "errors": [],
+      "pass": true
+    },
+    "approved_version": "geometry-golden-v0.1",
+    "artifact_count": 165,
+    "candidate_approved_byte_identity": true,
+    "case_count": 55,
     "failures": [],
-    "files": [
-      "reference/approved/README.md"
-    ],
-    "pass": true
+    "manifest_hashes": {
+      "approved": "efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b",
+      "candidate": "efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b"
+    },
+    "pass": true,
+    "source_file_count": 167
   },
   "branch_safety": {
     "authoritative_ref": "refs/remotes/origin/master",
     "base_branch": null,
     "branch": "research/g2-owner-review-closure",
     "failures": [],
-    "head": "01549e07c16bfe10a82d2889b1b62c58ef6861e7",
+    "head": "9cd9d3ce2d0e9cd3a2b3739c5b091af5af4dc474",
     "logical_branch": "research/g2-owner-review-closure",
     "mode": "local",
     "origin_master": "bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba",
@@ -434,6 +445,11 @@
         "pass": true
       }
     ],
+    "failures": [],
+    "pass": true
+  },
+  "p3_entry_contract": {
+    "approved_case_count": 55,
     "failures": [],
     "pass": true
   },

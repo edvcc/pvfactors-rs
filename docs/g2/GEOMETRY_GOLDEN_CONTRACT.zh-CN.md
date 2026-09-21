@@ -1,6 +1,6 @@
 # Geometry Golden Contract
 
-- 状态：**Recommended for Approval**
+- 状态：**APPROVED**
 - Candidate 版本：`geometry-golden-v0.1-candidate`
 - Tolerance：`geometry-tolerance-v0.1`
 - Reference：`pvlib/solarfactors` v1.6.1，`ecbfc863657e239817603a43898ae173c7ccad9c`
@@ -68,6 +68,8 @@ ground-coverage、finite-endpoint、active-threshold、identity 与完整 mirror
 
 ## 治理
 
-工具只写入 `reference/candidate`；`reference/approved` 保持 `NOT APPROVED`。批准必须指明
-candidate manifest hash，并同时批准 CDR-003、CDR-006 与 candidate。在此之前 G2 为
-`CONDITIONALLY PASS`，Awaiting Repository Owner Approval。
+生成工具只写入 `reference/candidate`，不得覆盖 `reference/approved`。Repository Owner 已于
+2026-09-22 批准 CDR-003、CDR-006、`geometry-tolerance-v0.1` 及 source candidate manifest
+`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`。字节级一致的 approved
+corpus 位于 `reference/approved/geometry-golden-v0.1`，并作为 immutable baseline；任何
+manifest 变化都是新的 approval object，必须获得新的明确 Owner 决策。G2 为 `PASS`。

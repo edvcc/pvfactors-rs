@@ -1,25 +1,26 @@
 # G2 Geometry Acceptance Review
 
 - 评审日期：2026-09-22
-- 结论：**CONDITIONALLY PASS**
-- Gate 声明：**Technical package complete with recorded baseline conditions; Awaiting Repository Owner Approval.**
-- Candidate：`geometry-golden-v0.1-candidate`
-- Manifest SHA-256：`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
+- 结论：**PASS**
+- Gate 声明：**Technical Gate PASS；Owner Approval PASS；Canonical Runtime R0 PASS；Golden Approval PASS。**
+- Approved Golden：`geometry-golden-v0.1`
+- Source candidate：`geometry-golden-v0.1-candidate`
+- Approved manifest SHA-256：`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
 - Tolerance：`geometry-tolerance-v0.1`
 
 ## 结论
 
 CDR-003 已纳入 Owner Review Revision 1，CDR-006 已纳入 DEV-013 明确决策；predicate 数值与
-tolerance 未改，二者仍是 approval candidate。
+tolerance 未改。Repository Owner 已于 2026-09-22 批准 CDR-003、CDR-006、
+`geometry-tolerance-v0.1` 与准确 Geometry Golden manifest。
 Candidate pipeline 已采集 row geometry、
 projection、raw/clipped shadow、PV/ground partition、稳定 logical key、`ReferenceIndex` 与
 active map；raw、normalized、corrected artifact 已分离；schema、不变量、差异追溯、compare
 和同环境 reproducibility 均通过。在已测试范围内未发现未知 Geometry semantic blocker。
 
-G2 不能标为 `PASS`：Repository Owner 尚未批准 CDR-003、CDR-006 与 Golden candidate。
-`develop` 是本次 closure 工作的 integration baseline，但本任务不直接修改或 merge 该分支。
-Canonical Runtime blocker 已关闭：当前 candidate 在 R0 下生成，并通过与独立再生成的 3.12.12
-运行结果的对照。
+G2 为 `PASS`：technical verification、Owner approval、Canonical Runtime R0、CDR、tolerance
+与 Golden approval 条件均已关闭。approved corpus 是具名 candidate 的字节级一致 promotion。
+`develop` 仍是 integration baseline；本任务不直接修改或 merge 该分支。
 
 ## Verified
 
@@ -48,33 +49,30 @@ Canonical Runtime blocker 已关闭：当前 candidate 在 R0 下生成，并通
   `bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba`；
 - Rust Geometry Core、solver、Python binding、execution planner、SIMD、GPU 均未实现，符合禁区。
 
-## Recommended
+## Approved
 
-- CDR-003：**Recommended for Approval**；
-- CDR-006：**Recommended for Approval**；
-- `geometry-tolerance-v0.1`：仅对 Geometry **Recommended for Approval**；
-- `geometry-golden-v0.1-candidate`：**Recommended for Approval**；仍是 candidate，
-  未自动批准。
+- CDR-003：**APPROVED**；
+- CDR-006：**APPROVED**；
+- `geometry-tolerance-v0.1`：仅对 Geometry **APPROVED**；
+- `geometry-golden-v0.1`：按上述准确 manifest hash **APPROVED**；
+- P3 Entry Contract：**ACTIVE**。
 
-## Awaiting Owner Approval
+## 治理边界
 
-1. 批准或拒绝 CDR-003；
-2. 批准或拒绝 CDR-006；
-3. 批准或拒绝准确的 R0 生成 candidate manifest hash；
-4. 审查新建的 `develop` PR；三个治理决定明确前不得 merge。
-
-`reference/approved` 保持 `NOT APPROVED`。没有 promote candidate，也没有 merge。
+`reference/approved/geometry-golden-v0.1` 是 immutable approved baseline。后续 candidate
+不得覆盖；manifest 变化必须获得新的明确 Owner approval。PR #2 仍按正常流程 review，本任务
+未 merge。P3 implementation 未开始。
 
 ## Not verified
 
 - Windows 与 R0 以外的 Linux kernel/libc 变体：未执行；
-- Rust native differential：P3 被阻止，属于范围外；
+- Rust native differential：P3 implementation 尚未开始，属于范围外；
 - Browser、IDE、packaging、Python binding、View Factor、Perez、Radiosity、aggregate
   irradiance、parallelism、performance：范围外；
-- Owner 身份/签字及批准证据：不存在。
+- P3 implementation 结果：不存在；本 closure 只激活 Entry Contract。
 
 ## Gate 转换
 
-Phase 0–1 输入证据以记录条件方式接受。P2 / G2 技术工作已形成完整审查包，Runtime blocker
-已关闭，但 P3 仍被阻止。只有 Owner 批准三个治理对象后，G2
-才可升级为 `PASS`。现有 `develop` 是 integration baseline；本任务不 merge。
+Phase 0–1 输入证据已接受。P2 / G2 技术工作、Runtime verification 与治理批准均已完成。
+G2 为 `PASS`；P3 Entry Contract 为 `ACTIVE`，P3 implementation 仍为 `NOT STARTED`。现有
+`develop` 是 integration baseline；本任务不 merge。

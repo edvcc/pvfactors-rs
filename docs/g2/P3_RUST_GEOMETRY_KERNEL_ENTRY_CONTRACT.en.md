@@ -1,21 +1,25 @@
 # P3 Rust Geometry Kernel Entry Contract
 
-- Status: **Recommended for Approval — NOT ACTIVE**
-- Gate: `CONDITIONALLY PASS`, Awaiting Repository Owner Approval
-- Candidate Golden: `geometry-golden-v0.1-candidate`
-- Candidate manifest: `efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
-- Candidate tolerance: `geometry-tolerance-v0.1`
+- Status: **ACTIVE**
+- Gate: **G2 PASS**
+- P3 Implementation: **NOT STARTED**
+- Approved Golden: `geometry-golden-v0.1`
+- Source candidate: `geometry-golden-v0.1-candidate`
+- Approved manifest: `efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
+- Approved tolerance: `geometry-tolerance-v0.1`
+- Approval date: 2026-09-22
 
 ## Activation fields
 
-- `approved_case_ids = []`
-- `approved_golden_version = null`
-- `approved_manifest_sha256 = null`
-- `approved_cdrs = []`
+- `approved_case_ids =` all 55 IDs in the Approved case IDs section
+- `approved_golden_version = geometry-golden-v0.1`
+- `approved_manifest_sha256 = efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
+- `approved_cdrs = [CDR-003, CDR-006]`
+- `approved_tolerance = geometry-tolerance-v0.1`
 
-These fields are intentionally empty. They may be populated only by a
-Repository Owner decision that names CDR-003, CDR-006, and the candidate
-manifest. Until then no P3 implementation may begin.
+The Repository Owner populated these fields through `G2 Approval Closure Task
+v1.0` dated 2026-09-22. This activates the entry contract but does not itself
+start or implement P3.
 
 ## Semantics to freeze on activation
 
@@ -34,11 +38,31 @@ per-frame `ActiveIndex`; exact reconstruction order with inactive slots.
 Every frame-selecting lookup evaluates its requested index; the frozen
 Reference's DEV-013 `idx -> 0` ground-adapter defect is not reproduced.
 
-## Candidate case IDs
+## Approved case IDs
 
-The activation decision may approve all 55 IDs listed in the Geometry Golden
-Approval Record or an explicit subset. It must not refer only to a family name.
-The minimum activated set must continue to cover row counts 1/2/3/11; left,
+The activation decision approves all 55 IDs below:
+
+`C01`, `C02`, `C03`, `C04`, `TILT_LEFT`, `TILT_FLAT`, `TILT_1e-10`,
+`TILT_NEAR_LEFT`, `TILT_90.0`, `SHADING_NONE_CANDIDATE`,
+`SHADING_PARTIAL_CANDIDATE`, `SHADING_HIGH_CANDIDATE`, `SUN_90.0`,
+`SUN_ALONG_AXIS`, `CUT_2`, `CUT_8`, `CUT_ASYMMETRIC`, `UNDERGROUND`,
+`CUT_ZERO`, `TILT_120`, `TILT_180`, `GCR_GT_1`, `SUN_BELOW_HORIZON`,
+`INVALID_TILT_NEGATIVE`, `INVALID_TILT_GT_180`,
+`MULTI_TIMESTEP_NONZERO_INDEX`, `GROUND_NORMAL_EXTENT`,
+`GROUND_BOUNDARY_ENDPOINT`, `GROUND_NEAR_BOUNDARY`, `MIRROR_BASE`,
+`MIRROR_IMAGE`, `INVALID_AXIS_AZIMUTH`, `INVALID_SURFACE_AZIMUTH`,
+`INVALID_NAN`, `INVALID_INF`, `INVALID_EXTENT_REVERSED`,
+`PRIM_COMPLETE_COVER_DIFFERENCE`, `PRIM_ENDPOINT_TOUCH`, `PRIM_POINT_TOUCH`,
+`PRIM_POSITIVE_OVERLAP`, `PRIM_ZERO_LENGTH`, `PRIM_PARALLEL_PROJECTION`,
+`PRIM_COINCIDENT_PROJECTION`, `PRIM_ACTIVE_TOL_MINUS_ULP`,
+`PRIM_ACTIVE_TOL_EXACT`, `PRIM_ACTIVE_TOL_PLUS_ULP`,
+`PRIM_ENDPOINT_SNAP_MINUS_ULP`, `PRIM_ENDPOINT_SNAP_EXACT`,
+`PRIM_ENDPOINT_SNAP_PLUS_ULP`, `PRIM_ORIENTATION_MINUS_ULP`,
+`PRIM_ORIENTATION_EXACT`, `PRIM_ORIENTATION_PLUS_ULP`,
+`PRIM_LINE_OFFSET_MINUS_ULP`, `PRIM_LINE_OFFSET_EXACT`,
+`PRIM_LINE_OFFSET_PLUS_ULP`.
+
+The approved set covers row counts 1/2/3/11; left,
 right, flat, positive/negative near-zero, 90°, 120°, and 180°; GCR above one;
 direct, horizon, and below-horizon solar states; no/partial/high shade; cut
 1/2/8 and 3/5; finite/boundary ground extent; invalid inputs; complete cover;
@@ -67,13 +91,14 @@ immutable. No other output may differ under a generic "robustness" waiver.
 ## Exact P3 implementation scope
 
 P3 may implement Rust value types (`Point2`, vectors, segments, intervals),
-input validation and structured errors, rotation and row construction, solar
-2D projection classification, shadow projection/clipping, PV side partition,
-ground partition, stable topology keys/order/maps, and Geometry-only tests and
-comparators. It may add only dependencies justified by real consumers.
+geometry input validation and structured errors, rotation and row construction,
+solar 2D projection classification, shadow projection/clipping, PV side
+partition, ground partition, stable `SurfaceKey` / `ReferenceIndex` /
+`ActiveIndex`, and Geometry-only tests and differential comparison. It may add
+only dependencies justified by real consumers.
 
 P3 must not implement View Factor, Perez, Radiosity, irradiance aggregation,
-solver selection, Python binding, serial/parallel planner, adaptive execution,
+solver selection, Python binding, serial/parallel planner, Adaptive Planner,
 SIMD, or GPU. It must not depend on Python, pvlib, Shapely, or GEOS at runtime.
 
 ## Forbidden behavior changes
@@ -85,8 +110,9 @@ for parallel execution; no unregistered reference deviation.
 
 ## Entry preconditions
 
-Owner approval of CDR-003, CDR-006, exact Golden manifest and tolerance, and a
-P3 task created only after those records exist. `develop` is the integration
-baseline, but the current pull request is not an approval or merge authority.
-The Canonical Runtime discrepancy has been resolved by the R0 generation and
-cross-runtime comparison. This contract does not itself authorize implementation.
+All entry preconditions are satisfied: CDR-003, CDR-006, the exact Golden
+manifest, and the Geometry-only tolerance are approved; Canonical Runtime R0
+and cross-runtime comparison pass. This contract is `ACTIVE` and may be used by
+a separately authorized P3 implementation task. `develop` is the integration
+baseline, but the current pull request is not merge authority. This G2 closure
+did not start P3 implementation.

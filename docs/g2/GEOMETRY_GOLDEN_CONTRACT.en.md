@@ -1,6 +1,6 @@
 # Geometry Golden Contract
 
-- Status: **Recommended for Approval**
+- Status: **APPROVED**
 - Candidate version: `geometry-golden-v0.1-candidate`
 - Tolerance: `geometry-tolerance-v0.1`
 - Reference: `pvlib/solarfactors` v1.6.1, `ecbfc863657e239817603a43898ae173c7ccad9c`
@@ -80,7 +80,10 @@ generation nondeterminism or topology differences.
 
 ## Governance
 
-Tools write only to `reference/candidate`. `reference/approved` remains
-`NOT APPROVED`. Approval must name the candidate manifest hash and approve
-CDR-003, CDR-006, and the candidate. Until then G2 is
-`CONDITIONALLY PASS`, Awaiting Repository Owner Approval.
+Generation tools write only to `reference/candidate`; they never overwrite
+`reference/approved`. The Repository Owner approved CDR-003, CDR-006,
+`geometry-tolerance-v0.1`, and source candidate manifest
+`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b` on
+2026-09-22. The byte-identical approved corpus is immutable at
+`reference/approved/geometry-golden-v0.1`. Any manifest change is a new
+approval object requiring a new explicit Owner decision. G2 is `PASS`.

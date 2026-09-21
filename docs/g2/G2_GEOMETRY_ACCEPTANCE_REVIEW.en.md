@@ -1,28 +1,29 @@
 # G2 Geometry Acceptance Review
 
 - Review date: 2026-09-22
-- Verdict: **CONDITIONALLY PASS**
-- Gate statement: **Technical package complete with recorded baseline conditions; Awaiting Repository Owner Approval.**
-- Candidate: `geometry-golden-v0.1-candidate`
-- Manifest SHA-256: `efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
+- Verdict: **PASS**
+- Gate statement: **Technical Gate PASS; Owner Approval PASS; Canonical Runtime R0 PASS; Golden Approval PASS.**
+- Approved Golden: `geometry-golden-v0.1`
+- Source candidate: `geometry-golden-v0.1-candidate`
+- Approved manifest SHA-256: `efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
 - Tolerance: `geometry-tolerance-v0.1`
 
 ## Decision
 
 CDR-003 Owner Review Revision 1 and the explicit CDR-006 DEV-013 decision are
-incorporated; predicate values and tolerance are unchanged. Both CDRs remain
-approval candidates. The candidate pipeline
+incorporated; predicate values and tolerance are unchanged. The Repository
+Owner approved CDR-003, CDR-006, `geometry-tolerance-v0.1`, and the exact
+Geometry Golden manifest on 2026-09-22. The candidate pipeline
 captures row geometry, projection, raw/clipped shadow, PV/ground partitions,
 stable logical keys, `ReferenceIndex`, and active maps; separates raw,
 normalized, and corrected artifacts; and passes schema, invariant, deviation,
 comparison, and same-environment reproducibility checks. No unknown Geometry
 semantic blocker was found inside the tested scope.
 
-G2 cannot be `PASS`: the Repository Owner has not approved CDR-003, CDR-006,
-or the Golden candidate. `develop` is the integration baseline for this closure
-work, but this task does not modify or merge it. The Canonical Runtime blocker
-is closed: the current candidate was generated under R0 and passed comparison
-against the independently regenerated 3.12.12 run.
+G2 is `PASS`: technical verification, Owner approval, Canonical Runtime R0,
+CDR, tolerance, and Golden approval conditions are all closed. The approved
+corpus is a byte-identical promotion of the named candidate. `develop` remains
+the integration baseline; this task does not directly modify or merge it.
 
 ## Verified
 
@@ -56,37 +57,35 @@ against the independently regenerated 3.12.12 run.
 - Rust Geometry Core, solver, Python binding, execution planner, SIMD, and GPU:
   not implemented, as required.
 
-## Recommended
+## Approved
 
-- CDR-003: **Recommended for Approval**.
-- CDR-006: **Recommended for Approval**.
-- `geometry-tolerance-v0.1`: **Recommended for Approval** for Geometry only.
-- `geometry-golden-v0.1-candidate`: **Recommended for Approval**. It remains a
-  candidate and was not automatically approved.
+- CDR-003: **APPROVED**.
+- CDR-006: **APPROVED**.
+- `geometry-tolerance-v0.1`: **APPROVED** for Geometry only.
+- `geometry-golden-v0.1`: **APPROVED** at the exact manifest hash above.
+- P3 Entry Contract: **ACTIVE**.
 
-## Awaiting Owner Approval
+## Governance boundary
 
-1. Approve or reject CDR-003.
-2. Approve or reject CDR-006.
-3. Approve or reject the exact R0-generated candidate manifest hash.
-4. Review the new pull request to `develop`; do not merge until all governed
-   decisions are explicit.
-
-`reference/approved` remains `NOT APPROVED`. No candidate was promoted and no
-merge was performed.
+`reference/approved/geometry-golden-v0.1` is the immutable approved baseline.
+Future candidates cannot overwrite it; a changed manifest requires a new
+explicit Owner approval. PR #2 remains subject to normal review and was not
+merged by this task. P3 implementation was not started.
 
 ## Not verified
 
 - Windows and Linux kernels/libc variants other than R0: not executed.
-- Native Rust differential results: out of scope because P3 is blocked.
+- Native Rust differential results: out of scope because P3 implementation has
+  not started.
 - Browser, IDE, packaging, Python binding, View Factor, Perez, Radiosity,
   aggregate irradiance, parallelism, and performance: out of scope.
-- Owner identity/signature and approval evidence: not present.
+- P3 implementation results: not present; this closure activates only the
+  entry contract.
 
 ## Gate transition
 
 Phase 0–1 input evidence is accepted with recorded conditions. P2 / G2
-technical work is complete as a review package, and the Runtime blocker is
-closed, but P3 remains blocked. G2 may be upgraded to `PASS` only after owner
-approval of all three governed objects. The existing `develop` branch is the
-integration baseline; this task does not merge into it.
+technical work, Runtime verification, and governance approval are complete.
+G2 is `PASS`; the P3 Entry Contract is `ACTIVE`, while P3 implementation remains
+`NOT STARTED`. The existing `develop` branch is the integration baseline; this
+task does not merge into it.

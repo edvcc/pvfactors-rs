@@ -23,5 +23,9 @@ manifests and validation summaries are under `evidence/g2/history/`.
 The pre-Revision-1 macOS corpus remains retrievable from Git commit
 `182dbb54d351db733ff40ba40dd4f119767b1ee4`.
 
-All candidates remain unapproved. Candidate replacement is not promotion into
-`reference/approved`.
+On 2026-09-22, the Repository Owner approved the exact R0 candidate manifest
+`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`.
+That payload is preserved byte-for-byte at
+`reference/approved/geometry-golden-v0.1`; approval metadata is recorded
+separately so the generation manifest and historical cross-runtime evidence
+remain unchanged.

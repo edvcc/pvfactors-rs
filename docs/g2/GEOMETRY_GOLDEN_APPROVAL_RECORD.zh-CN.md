@@ -1,14 +1,17 @@
 # Geometry Golden Approval Record
 
-- 记录状态：**Recommended for Approval**
-- Golden 状态：**CANDIDATE — NOT APPROVED**
-- Candidate：`geometry-golden-v0.1-candidate`
-- Manifest SHA-256：`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
+- 记录状态：**APPROVED**
+- Golden 状态：**APPROVED**
+- Approved version：`geometry-golden-v0.1`
+- Source candidate：`geometry-golden-v0.1-candidate`
+- Approved manifest SHA-256：`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`
+- Approved corpus：`reference/approved/geometry-golden-v0.1`
+- 批准日期：2026-09-22
 - Generator commit：`01549e07c16bfe10a82d2889b1b62c58ef6861e7`
 - Reference：`pvlib/solarfactors` v1.6.1，`ecbfc863657e239817603a43898ae173c7ccad9c`
 - Tolerance：`geometry-tolerance-v0.1`
 
-## Candidate 集合
+## Approved 集合
 
 集合包含 55 个具体案例与 165 个 artifact：每个案例各有一个 `raw_reference`、
 `normalized_reference` 和 `corrected_expectation`。
@@ -51,7 +54,9 @@
   raw value、corrected value 与 explanation。DEV-004 为 4 条 extent 记录，DEV-013 为 1 条
   nonzero-index 记录，DEV-016 为 1 条 complete-cover 记录，DEV-027 为 41 条显式
   projection state/no-direct 记录；没有隐藏的无依据修正；
-- Approved 目录安全：PASS；仅含 `NOT APPROVED` README。
+- Approved corpus 安全：PASS；manifest 与全部 165 个 payload artifact 均与具名 source
+  candidate 字节级一致。Approval metadata 独立记录，后续 candidate generation 不得覆盖
+  approved 目录。
 
 ## 已记录条件
 
@@ -67,14 +72,16 @@ approval hash。closure 分支
 canonical-runtime commit 按拓扑顺序 cherry-pick。本任务未修改 `master` 或 `develop`，
 也未 merge PR。
 
-## 推荐与 Owner 决策
+## Owner 批准
 
-本 candidate **Recommended for Approval**。批准必须指明本 manifest hash，并分别批准
-CDR-003 与 CDR-006。
+Repository Owner 已通过日期为 2026-09-22 的 `G2 Approval Closure Task v1.0` 对以下准确
+治理对象作出批准：
 
-- CDR-003 Owner 决策：Pending
-- CDR-006 Owner 决策：Pending
-- Geometry Golden Owner 决策：Pending
-- Reviewer 身份/证据：Pending
+- CDR-003 Owner 决策：**APPROVED**
+- CDR-006 Owner 决策：**APPROVED**
+- `geometry-tolerance-v0.1`：**APPROVED**
+- Geometry Golden `geometry-golden-v0.1`：**APPROVED**
+- Reviewer / Owner approval evidence：**PRESENT**
 
-在这些决策形成前：`CONDITIONALLY PASS`，Awaiting Repository Owner Approval。
+Canonical Runtime R0 已验证，candidate-to-approved identity 精确一致，G2 为 `PASS`，P3 Entry
+Contract 为 `ACTIVE`。本 closure task 未开始 P3 implementation。

@@ -1,6 +1,6 @@
 # CDR-006 — Geometry 数值 Predicate 与稳定 Topology 策略
 
-- 状态：**Recommended for Approval**
+- 状态：**APPROVED**
 - 日期：2026-09-22
 - Reference：`pvlib/solarfactors` v1.6.1，`ecbfc863657e239817603a43898ae173c7ccad9c`
 - 相关偏差：DEV-013、DEV-016、DEV-026
@@ -69,5 +69,6 @@ expectation。该修正不改变任何 predicate 数值或 boundary operator。
 
 ## 批准效果
 
-Owner 批准后，本 predicate 与 topology 语义才对 P3 冻结。此前 G2 保持
-`CONDITIONALLY PASS`，Awaiting Repository Owner Approval。
+Repository Owner 已于 2026-09-22 批准本 predicate 与 topology 语义；它们现为 ACTIVE
+P3 Entry Contract 的冻结输入。predicate 数值、boundary operator、DEV-013/DEV-016 追溯及
+raw/corrected 区分保持不变。

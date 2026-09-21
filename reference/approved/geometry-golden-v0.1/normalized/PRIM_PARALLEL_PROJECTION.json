@@ -1,0 +1,97 @@
+{
+  "case_id": "PRIM_PARALLEL_PROJECTION",
+  "classification": "normalized_reference",
+  "deviations": [],
+  "generator": {
+    "commit": "01549e07c16bfe10a82d2889b1b62c58ef6861e7",
+    "files": [
+      "reference/tools/build_g2_cases.py",
+      "reference/tools/geometry_golden.py"
+    ],
+    "sha256": "0e15dd7c850411c90f00f68bb2599dd85afeba9541daaddc01cad01fcffd91db",
+    "version": "0.3.0"
+  },
+  "input": {
+    "domain": "boundary_policy",
+    "geometry": null,
+    "inputs": null,
+    "kind": "primitive",
+    "primitive": {
+      "arguments": {
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "origin": [
+          0.0,
+          0.0
+        ],
+        "segment": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      },
+      "operation": "projection"
+    }
+  },
+  "nonfinite_mask": [],
+  "provenance": {
+    "case_sha256": "8070ab0f4abf6ad061cb2faad8fc2cd1a037e2041502043f85adbec43e679b85",
+    "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+    "method": "direct frozen primitive invocation",
+    "payload_sha256": "1fe69c1ad0537510b27e95126e8d4c1b1a08be45b662cbaae4ff2ccfadccbe6b",
+    "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+    "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+  },
+  "reference": {
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
+    "environment_id": "031158a1d1be8cdb9093",
+    "name": "pvlib/solarfactors",
+    "numpy": "2.3.5",
+    "pvlib": "0.14.0",
+    "python": "3.12.14",
+    "runtime": {
+      "environment_id": "031158a1d1be8cdb9093",
+      "geos": "3.13.1",
+      "implementation": "CPython",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "system": "Linux",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "shapely": "2.1.2",
+    "version": "v1.6.1"
+  },
+  "result": {
+    "operation": "projection",
+    "outcome": "captured",
+    "reference_empty": true,
+    "reference_geometry_type": "GeometryCollection"
+  },
+  "schema_version": "0.1",
+  "status": "candidate"
+}
