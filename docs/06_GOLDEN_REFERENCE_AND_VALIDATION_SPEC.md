@@ -43,8 +43,8 @@ Rust测试读取开放NPY数组或生成器导出的二进制f64；不在Core中
 | 家族 | 覆盖与构造 | 必须检查 |
 |---|---|---|
 | C01–C04 | N=1,2,3,11 | 边排、内排、Slogical与active、mirror映射 |
-| GCR | .15,.5,.85,1.0；另gcr≤0/大于声明域 | directshade、距离/交叠、错误合同 |
-| orientation | 左/右、flat、±近零、tilt90、azimuth0/360等价 | signed zero、halfspace、法向一致 |
+| GCR | .15,.5,.85,1.0、>1 合法实例；另 gcr≤0 | direct shade、距离、真实相交与数值域分离、错误合同 |
+| orientation | 左/右、flat、±近零、tilt90、tilt120、tilt180、azimuth0/360等价 | signed zero、halfspace、front/back 与法向一致 |
 | sun | z5/45/85/89.9/90/100；az对正/背/沿轴 | horizon、grazing、night政策、递归case |
 | shading | no/partial/high-shade；N≥3低太阳高度＋独立unit full-shadow端点 | golden记录实得遮长分类，不能凭配置名字断言fully shaded |
 | irradiance | DNI0、DHI0、二者0、DHI高/ε bin边界 | NaN、F1/F2、零source与sky、bin归属 |

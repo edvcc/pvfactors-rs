@@ -1025,6 +1025,391 @@
       ]
     },
     {
+      "description": "120 degree tilt with front/back identity preserved",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "TILT_120",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          120.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "tilt",
+        "back_side",
+        "owner_review_revision_1"
+      ]
+    },
+    {
+      "description": "180 degree tilt boundary without folding",
+      "domain": "boundary_policy",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "TILT_180",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          180.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "tilt_boundary",
+        "orientation",
+        "owner_review_revision_1"
+      ]
+    },
+    {
+      "description": "GCR 1.25 is numerically legal and this tilted three-row instance has no row intersection",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 1.25,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "GCR_GT_1",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "gcr",
+        "row_spacing",
+        "owner_review_revision_1"
+      ]
+    },
+    {
+      "description": "zenith 100 degree Geometry representation without direct projection",
+      "domain": "boundary_policy",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "SUN_BELOW_HORIZON",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          100.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "sun_boundary",
+        "below_horizon",
+        "owner_review_revision_1"
+      ]
+    },
+    {
+      "description": "surface tilt below the closed zero degree boundary",
+      "domain": "invalid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "INVALID_TILT_NEGATIVE",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          -1.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "invalid",
+        "tilt",
+        "owner_review_revision_1"
+      ]
+    },
+    {
+      "description": "surface tilt above the closed 180 degree boundary",
+      "domain": "invalid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "INVALID_TILT_GT_180",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          180.0000000001
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "invalid",
+        "tilt",
+        "owner_review_revision_1"
+      ]
+    },
+    {
+      "description": "two-frame ground lookup proving that requested index one is not silently evaluated at index zero",
+      "domain": "reference_deviation",
+      "expected": {
+        "reference": "capture",
+        "requested_frame_index": 1,
+        "v1": "normalize_and_validate",
+        "v1_nonzero_index_policy": "evaluate_requested_frame"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "MULTI_TIMESTEP_NONZERO_INDEX",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0,
+          270.0
+        ],
+        "solar_zenith": [
+          45.0,
+          70.0
+        ],
+        "surface_azimuth": [
+          270.0,
+          270.0
+        ],
+        "surface_tilt": [
+          0.0,
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "multi_timestep",
+        "nonzero_index",
+        "DEV-013",
+        "owner_review_revision_2"
+      ]
+    },
+    {
       "description": "finite configurable ground extent",
       "domain": "valid",
       "expected": {
@@ -1916,6 +2301,297 @@
         "tolerance",
         "ulp",
         "active_length"
+      ]
+    },
+    {
+      "description": "endpoint-snap threshold minus ulp",
+      "domain": "boundary_policy",
+      "expected": {
+        "distance_m": 9.999999999999999e-09,
+        "snapped": true
+      },
+      "id": "PRIM_ENDPOINT_SNAP_MINUS_ULP",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "candidate": [
+            9.999999999999999e-09,
+            0.0
+          ],
+          "endpoint": [
+            0.0,
+            0.0
+          ]
+        },
+        "operation": "classify_endpoint_snap"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "endpoint_snap",
+        "owner_review_revision_2"
+      ]
+    },
+    {
+      "description": "endpoint-snap threshold exact",
+      "domain": "boundary_policy",
+      "expected": {
+        "distance_m": 1e-08,
+        "snapped": false
+      },
+      "id": "PRIM_ENDPOINT_SNAP_EXACT",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "candidate": [
+            1e-08,
+            0.0
+          ],
+          "endpoint": [
+            0.0,
+            0.0
+          ]
+        },
+        "operation": "classify_endpoint_snap"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "endpoint_snap",
+        "owner_review_revision_2"
+      ]
+    },
+    {
+      "description": "endpoint-snap threshold plus ulp",
+      "domain": "boundary_policy",
+      "expected": {
+        "distance_m": 1.0000000000000002e-08,
+        "snapped": false
+      },
+      "id": "PRIM_ENDPOINT_SNAP_PLUS_ULP",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "candidate": [
+            1.0000000000000002e-08,
+            0.0
+          ],
+          "endpoint": [
+            0.0,
+            0.0
+          ]
+        },
+        "operation": "classify_endpoint_snap"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "endpoint_snap",
+        "owner_review_revision_2"
+      ]
+    },
+    {
+      "description": "normalized-orientation threshold minus ulp",
+      "domain": "boundary_policy",
+      "expected": {
+        "normalized_abs_cross": 9.999999999999998e-13,
+        "parallel": true,
+        "threshold": 1e-12
+      },
+      "id": "PRIM_ORIENTATION_MINUS_ULP",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "coordinate_scale_m": 1.0,
+          "u": [
+            1.0,
+            0.0
+          ],
+          "v": [
+            1.0,
+            9.999999999999998e-13
+          ]
+        },
+        "operation": "classify_orientation"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "orientation",
+        "owner_review_revision_2"
+      ]
+    },
+    {
+      "description": "normalized-orientation threshold exact",
+      "domain": "boundary_policy",
+      "expected": {
+        "normalized_abs_cross": 1e-12,
+        "parallel": true,
+        "threshold": 1e-12
+      },
+      "id": "PRIM_ORIENTATION_EXACT",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "coordinate_scale_m": 1.0,
+          "u": [
+            1.0,
+            0.0
+          ],
+          "v": [
+            1.0,
+            1e-12
+          ]
+        },
+        "operation": "classify_orientation"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "orientation",
+        "owner_review_revision_2"
+      ]
+    },
+    {
+      "description": "normalized-orientation threshold plus ulp",
+      "domain": "boundary_policy",
+      "expected": {
+        "normalized_abs_cross": 1.0000000000000002e-12,
+        "parallel": false,
+        "threshold": 1e-12
+      },
+      "id": "PRIM_ORIENTATION_PLUS_ULP",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "coordinate_scale_m": 1.0,
+          "u": [
+            1.0,
+            0.0
+          ],
+          "v": [
+            1.0,
+            1.0000000000000002e-12
+          ]
+        },
+        "operation": "classify_orientation"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "orientation",
+        "owner_review_revision_2"
+      ]
+    },
+    {
+      "description": "scale-aware line-offset threshold minus ulp",
+      "domain": "boundary_policy",
+      "expected": {
+        "offset_m": 9.999999999999999e-11,
+        "threshold_m": 1e-10,
+        "within": true
+      },
+      "id": "PRIM_LINE_OFFSET_MINUS_ULP",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "coordinate_scale_m": 1.0,
+          "line": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0
+            ]
+          ],
+          "point": [
+            0.5,
+            9.999999999999999e-11
+          ]
+        },
+        "operation": "classify_line_offset"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "line_offset",
+        "owner_review_revision_2"
+      ]
+    },
+    {
+      "description": "scale-aware line-offset threshold exact",
+      "domain": "boundary_policy",
+      "expected": {
+        "offset_m": 1e-10,
+        "threshold_m": 1e-10,
+        "within": true
+      },
+      "id": "PRIM_LINE_OFFSET_EXACT",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "coordinate_scale_m": 1.0,
+          "line": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0
+            ]
+          ],
+          "point": [
+            0.5,
+            1e-10
+          ]
+        },
+        "operation": "classify_line_offset"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "line_offset",
+        "owner_review_revision_2"
+      ]
+    },
+    {
+      "description": "scale-aware line-offset threshold plus ulp",
+      "domain": "boundary_policy",
+      "expected": {
+        "offset_m": 1.0000000000000002e-10,
+        "threshold_m": 1e-10,
+        "within": false
+      },
+      "id": "PRIM_LINE_OFFSET_PLUS_ULP",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "coordinate_scale_m": 1.0,
+          "line": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0
+            ]
+          ],
+          "point": [
+            0.5,
+            1.0000000000000002e-10
+          ]
+        },
+        "operation": "classify_line_offset"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "line_offset",
+        "owner_review_revision_2"
       ]
     }
   ],

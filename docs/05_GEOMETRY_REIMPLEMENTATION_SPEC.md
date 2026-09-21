@@ -4,7 +4,7 @@
 
 V1 为无限轴向的二维截面：水平 ground y=0，共用 row width w、中心高度 h、pitch p=w/gcr、axis azimuth；每个时刻全阵列共用 tilt/azimuth。`Point2{x,y}`、`Vec2{x,y}`、`Segment2{a,b}`、`Interval{lo,hi}`、`SegmentSet` 足够。单位 m、degree（内部弧度仅局部）；点/方向/角不能用同一个无语义元组混传。
 
-Rust 输入验证：N≥1；w>0；gcr>0，V1默认 gcr≤1；cut 正整数且预算内；所有有效时刻 h-w|sin(rotation)|/2>length_guard；端点处于配置 ground 范围。为保持共轴向几何与三维 AOI 一致，非零 tilt 的 surface azimuth 应是 axis±90°（mod360）；其他方向即使 Python 可运行，也不是本 V1 共轴模型已验证输入。倾角0…180°的倒置法向可表述，但 >90°需单列验证组，不借助常见0…90°测试宣称完整覆盖。
+Rust 输入验证：N≥1；w>0；gcr finite 且 >0，不以 gcr≤1 作为代理定义域；cut 正整数且预算内；所有有效时刻 h-w|sin(rotation)|/2>length_guard；端点处于配置 ground 范围。GCR 组合若造成真实 row 相交或其他 invariant 失败，按具体几何冲突处理。为保持共轴向几何与三维 AOI 一致，非零 tilt 的 surface azimuth 应是 axis±90°（mod360）；其他方向即使 Python 可运行，也不是本 V1 共轴模型已验证输入。倾角 `[0°,180°]` 可表述且不折叠，`120°` 与 `180°` 已列入独立验证组。
 
 地面碰撞/几何重叠必须报参数错误。地平线太阳方向为投影奇异，先由状态策略处理；不会用巨大但有限的假阴影替代。
 

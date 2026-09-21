@@ -1,6 +1,6 @@
 # Geometry Golden Contract
 
-- 状态：**Recommended for Approval**
+- 状态：**APPROVED**
 - Candidate 版本：`geometry-golden-v0.1-candidate`
 - Tolerance：`geometry-tolerance-v0.1`
 - Reference：`pvlib/solarfactors` v1.6.1，`ecbfc863657e239817603a43898ae173c7ccad9c`
@@ -18,8 +18,8 @@ approved 状态。
 2. `normalized_reference`：将观察转换为确定性、语言无关的 canonical JSON，定义 ordering、
    unit、numeric type、nonfinite mask、logical key、`ReferenceIndex` 与每帧 active map，
    但不修正行为；
-3. `corrected_expectation`：只应用已命名的 CDR/DEV 决策。每个变化字段记录 raw value、
-   corrected value、DEV ID、CDR ID 与 explanation。
+3. `corrected_expectation`：只应用已命名的 CDR/DEV 决策。每个变化字段记录 field-level
+   path、raw value、corrected value、DEV ID、CDR ID 与 explanation。
 
 生成器不得为使比较通过而重写 raw evidence。缺少决策 provenance 的 corrected field 会使
 candidate 无效。
@@ -42,6 +42,12 @@ shade class、`SurfaceKey`、`ReferenceIndex`、active state 与 `ActiveIndex`�
 即使长度为零也保留。Reference 与 reconstruction 精确顺序由 CDR-006 定义；vector position
 不是身份。
 
+corrected Geometry representation 将 solar zenith 分类为 `direct_projection`、
+`horizon_no_direct_projection` 或 `below_horizon_no_direct_projection`。no-direct artifact
+保留有限 row geometry、稳定且 inactive 的 ground-shadow logical slot，以及一个覆盖配置
+finite extent 的 active illuminated surface；不包含伪巨大或 nonfinite direct shadow，也不
+决定后续 Simulation skip policy。
+
 ## Manifest 与 provenance
 
 Manifest 记录 Reference version/commit、Python/NumPy/Shapely/pvlib 版本、environment
@@ -62,7 +68,8 @@ ground-coverage、finite-endpoint、active-threshold、identity 与完整 mirror
 
 ## 治理
 
-工具只写入 `reference/candidate`；`reference/approved` 保持 `NOT APPROVED`。批准必须指明
-candidate manifest hash，并同时批准 CDR-003、CDR-006 与 candidate。在此之前 G2 为
-`CONDITIONALLY PASS`，Awaiting Repository Owner Approval。
-
+生成工具只写入 `reference/candidate`，不得覆盖 `reference/approved`。Repository Owner 已于
+2026-09-22 批准 CDR-003、CDR-006、`geometry-tolerance-v0.1` 及 source candidate manifest
+`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b`。字节级一致的 approved
+corpus 位于 `reference/approved/geometry-golden-v0.1`，并作为 immutable baseline；任何
+manifest 变化都是新的 approval object，必须获得新的明确 Owner 决策。G2 为 `PASS`。

@@ -1,0 +1,5032 @@
+{
+  "artifacts": [
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C01",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/C01.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "f525905b77b0aff0d58414bfc557c38e75b3a6167741d1012d559cd3ab3346c6",
+      "provenance": {
+        "case_sha256": "b3b1f7409f2a3dd06d18318747029718636bf3a9eaf36bfea63675db7e3a262a",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "0c0245b05b220b00469162d55074a769948225ac12b9c1909ded5d02c6922a38",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C02",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/C02.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "f818882c5145f3db4e7435bb260544e102a54b2ed367b1b61fe7f6967f174be5",
+      "provenance": {
+        "case_sha256": "113509eab0ca7048159e4f5fab39864c9419e27a4d5ebe6002a12ec4e7a46fbd",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "8e3368f6c87c928da4d5c4befa54cedfd91f38280c22ca614546c6cceaed9123",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        23,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C03",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/C03.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "f23468b1208591834c6c178c2262ffca5df36dc9b0ec824510109e1993cfa5e4",
+      "provenance": {
+        "case_sha256": "392f20a9610c273beabfcf90d9333ae079229462303df9e82c712c2944092fe7",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "5482bf0a1c5eae21afc7ee21d89eed3bc335d1c0a4e0d10f7ba51e3ac283e975",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C04",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/C04.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "5adec628f05778d11d87bf7afd7f38ea5ee131e4b488bc1446cd2ad24175ae99",
+      "provenance": {
+        "case_sha256": "4b260cb9155d27e06e5670ec3998b8e28abfd13cc80816f751d52f867fcb0d71",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "f39c00f171847527cf95567f76af305b5341d855b563cc2647060681b0aa6631",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        320,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_LEFT",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/TILT_LEFT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "a0f59c0a1a43305c37904a56939a474a7520ae9f9c7d628604d1cf59f1ad2079",
+      "provenance": {
+        "case_sha256": "3b6f3f70e30f88b0c9913d16dfb64072675ee8dc6c7b72fabc32063c4a986ac8",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "e58b3dfbdf9e3346a7c20ddd8dae985e319f7da1f148fe7e5e4b3d7a3b9c184a",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_FLAT",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/TILT_FLAT.json",
+      "nonfinite_mask": [
+        "$.result.ground.cut_points_m[0][0][0]",
+        "$.result.ground.cut_points_m[0][1][0]",
+        "$.result.ground.cut_points_m[0][2][0]"
+      ],
+      "payload_sha256": "ee8ae546c3d3e7edd79b6f53564508b326875b5486f25fe8e426c58222e41677",
+      "provenance": {
+        "case_sha256": "5256476b8e6f0e2468caccde940bda19485043f35a12020345924f9e2ebde8df",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "65cc0d8a3da0a73cd9051573853a519f7d65247bc35e0e11432d12a805474bab",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_1e-10",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/TILT_1e-10.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "54551d3adade1f245633db7e373f5d3d8bd7b6b035f8dff2389433f941d4645d",
+      "provenance": {
+        "case_sha256": "1ae41c73c3e85e3c6b1e0c7992e3f707e2ad45d439fb7dffd52fe17cd012925e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "1be52a11b0f03d7a23eab5c8f62a5a4c8f73d0e4d2258595c96046e3cdef9ad4",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_NEAR_LEFT",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/TILT_NEAR_LEFT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "8cd8fa5ddb3492b428868a9c0f6a11ffb2fa3175c0aa201ebf0e3d07458c14e8",
+      "provenance": {
+        "case_sha256": "cbd08c9b845d75334f39566a4a1afabc16e694dd7fbc75d3dd52c33f552aaa34",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "ebf59560689cc295da6163bad79df1a9060637d180d3571b051e5692324e1b85",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_90.0",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/TILT_90.0.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "d108ee2774ee021c4db05524ecc59af2f5050bd339b7ef4e878ac8136b10df0e",
+      "provenance": {
+        "case_sha256": "7b2b847266bbf43e1bc453f1db4599a8338c830e9852ee52ea758a70a2488c91",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "2b59367fd73bced675c96bcb3648a96c91907629aee3e31b52de15f6fdc74dab",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SHADING_NONE_CANDIDATE",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/SHADING_NONE_CANDIDATE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "c247ffb5dd2572138509e962c9e99ffecc96916260c7b3e853f3583b9c5be18d",
+      "provenance": {
+        "case_sha256": "27d976cba12ddfbfe3b340693077716a5ee91363b7f75fdd446b8bbc70278b46",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "02c9cc4cc9007dbf1c48a3a2a0bfa21e8cd02c6b983ad6c149d62bc8635970db",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SHADING_PARTIAL_CANDIDATE",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/SHADING_PARTIAL_CANDIDATE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "eae00c79cc040467c006c7315ea6d68a3b82ff2bc9ad01bb290be7d14a5e4b9a",
+      "provenance": {
+        "case_sha256": "1f567e8c65063ada950af42c77c47c567c20cc6e5e4844c36538f277602f949a",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "6e5b2f7f4fbed3ed88aa21f92201b8d2c97135d2c9f263f0877ac4372b6afee1",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SHADING_HIGH_CANDIDATE",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/SHADING_HIGH_CANDIDATE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "b37e7f1294e5df9a9778bce223e4739c9b74c772c440f93b3857d77caacc747b",
+      "provenance": {
+        "case_sha256": "c68d1eb0bcf0f49effd769c73c4cfb23d891a68015b440badfce68c0169aad86",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "0568c1f340165676077cd4fdc318f7cf6e02c83d09ef7206ea82a4a9453c71a2",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SUN_90.0",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/SUN_90.0.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "b4419a4daa946933657864be876559b54a75886dac2b24809c2f15131abf28e6",
+      "provenance": {
+        "case_sha256": "ffdd4d8a01b5884f2bd26a03d451a0a69487468152c612c6452ac3270ad81ed7",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "58416b9dc8c81d699cb8380cde9786f0e843a46b041c71f19e168d1c16518d95",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SUN_ALONG_AXIS",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/SUN_ALONG_AXIS.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "57608acc0755f5ddd500cd66e0b33f9084738a4a6480bf3ed904503c609f4227",
+      "provenance": {
+        "case_sha256": "e30d06af5bd4b4a5539b1adb0c2636a03f5e8c22cdde83aa492cd403774b7788",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "8d565216c972e7c2219c1e2d0ab5708d6721e5a4748381751639fcb32740de83",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_2",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/CUT_2.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "693d022e4a58603b30e4182dbcfb96d66f883d014ea273c66efb7d26055a6a7e",
+      "provenance": {
+        "case_sha256": "222360d1ab135e69425f77175f2d0a1efd231aafb8c2d7019950ed90e2d735ee",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "7db8e30f1e0265583d754bd97eb065e5ee32d16ee938ebb33b4f853eccf24998",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        52,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_8",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/CUT_8.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "5fd28c87cbd2adad9dac5cc5bd21206d7a5e2a19bed6b143abf23b3aa1e27692",
+      "provenance": {
+        "case_sha256": "9b2086b10c17d836e2a6016c532a035a3c5d20a67c26c7b54d9c2df3c67021ed",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "d8ea87fa107b194e44f0c7755de202e7857a3e7846e96074199268b56c933a0f",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        124,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_ASYMMETRIC",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/CUT_ASYMMETRIC.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "e98959d0219690f95f7083696cf68d603d532f151c7329c8b03f8282360be98e",
+      "provenance": {
+        "case_sha256": "9015e081ba14001a88e8294da883c5e4e071543edaa5bfca40c677e79dd6d73e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "87612579c5a7eeed7a1d3d0d3823f1b4c5c8ec6195574e683e7ee51e6dae4670",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        52,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "UNDERGROUND",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/UNDERGROUND.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "1b08feee5f54b5b25c952f55866cba9a33e4c22dd3e892d01edef1aeaca5a083",
+      "provenance": {
+        "case_sha256": "5da6b0d55d207cd99a0b25b3fe1f99c0581b4f51150cbe6b91d016c8dd284496",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "b4142bd409c720d6816958280d0dab054c8aff26c78e803fd758a0168f41db57",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_ZERO",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/CUT_ZERO.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "081c8567371af80f0095cc3eff558a96ae3eacd73b916313274dcad1e5bff523",
+      "provenance": {
+        "case_sha256": "26baa271a4b4fe6e2dec35bb4d68dd070b9fb79351582d5c9e941a322fe4f871",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "88c3a973b17cfb0efd4455d7f854ac3831a80bb9d57974d2fe13e53564cc0039",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "expected_reference_failure",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "GROUND_NORMAL_EXTENT",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/GROUND_NORMAL_EXTENT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "aaffc84e5786d779e8ec1ed7b068af2e7f20ad2d618f5789ca653836a67c85c9",
+      "provenance": {
+        "case_sha256": "67f1d0a788b56ba912de4041a125b54fca27413d8088922a0399bf571fbd4306",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "9642742bf5c3117744fe1480806234010a119e4ca0b7b89d0f71bc9b36517588",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "GROUND_BOUNDARY_ENDPOINT",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/GROUND_BOUNDARY_ENDPOINT.json",
+      "nonfinite_mask": [
+        "$.result.ground.cut_points_m[0][0][0]"
+      ],
+      "payload_sha256": "a5b3fdb4b3da2fcb7d4fe3329e0e9f7de1cec08c0c44770eb699e90cab3273ee",
+      "provenance": {
+        "case_sha256": "4ba9a27914c79b0988382aac4318a0e11f8fe024547b5199b92f27869de83513",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "5a3853c3384d75c237afb2ad3e678cb171dd26a565ab41ad357a5aa3898ed364",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "GROUND_NEAR_BOUNDARY",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/GROUND_NEAR_BOUNDARY.json",
+      "nonfinite_mask": [
+        "$.result.ground.cut_points_m[0][0][0]"
+      ],
+      "payload_sha256": "08d06074d911bf9fee61e87d2a393da4641dcb1fd2aaa43d9f707806780495a6",
+      "provenance": {
+        "case_sha256": "19bab21fdd7b8b7e30ccd738c6a08592ff3559885030d8bb2973dcbd022c5d72",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "25363a6a25636b6ef64380783c7e7e94bd08e2ed0b11aea6f05e599b3bcfb4f6",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "MIRROR_BASE",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/MIRROR_BASE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "5ce2afae1bed69a63966e512d37a35d9d215b9f7775dff5e92b8d6ff685f3ca3",
+      "provenance": {
+        "case_sha256": "e211f42ca168a3124492a15accf5f7c76e13e8ed36ce5ebc697ec8ac1dbc195e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "5482bf0a1c5eae21afc7ee21d89eed3bc335d1c0a4e0d10f7ba51e3ac283e975",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "MIRROR_IMAGE",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/MIRROR_IMAGE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "5dfcd9f567fb2ab6a5522b9766471f1e1c5313868c1b56b92eed3bf457c3baeb",
+      "provenance": {
+        "case_sha256": "1d1fa3709f3c8fab8139c99ff455abcc84f1c234cea0ce3a8f15758ac1291152",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "d0b43dbc9e2869f2dd2ca3f0bee66860616a6c5a7f190ac02b7d8ac76e34ae59",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_AXIS_AZIMUTH",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/INVALID_AXIS_AZIMUTH.json",
+      "nonfinite_mask": [
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[3].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][1][0]",
+        "$.result.projection[0].alpha_rad",
+        "$.result.projection[0].solar_2d_vector[0]",
+        "$.result.surfaces[0].coordinates_m[0][0][0]",
+        "$.result.surfaces[0].coordinates_m[0][1][0]",
+        "$.result.surfaces[0].length_m[0]",
+        "$.result.surfaces[10].coordinates_m[0][0][0]",
+        "$.result.surfaces[10].coordinates_m[0][1][0]",
+        "$.result.surfaces[10].length_m[0]",
+        "$.result.surfaces[11].coordinates_m[0][0][0]",
+        "$.result.surfaces[11].coordinates_m[0][1][0]",
+        "$.result.surfaces[11].length_m[0]",
+        "$.result.surfaces[12].coordinates_m[0][1][0]",
+        "$.result.surfaces[12].length_m[0]",
+        "$.result.surfaces[13].coordinates_m[0][1][0]",
+        "$.result.surfaces[13].length_m[0]",
+        "$.result.surfaces[14].coordinates_m[0][1][0]",
+        "$.result.surfaces[14].length_m[0]",
+        "$.result.surfaces[15].coordinates_m[0][1][0]",
+        "$.result.surfaces[15].length_m[0]",
+        "$.result.surfaces[16].coordinates_m[0][0][0]",
+        "$.result.surfaces[16].coordinates_m[0][1][0]",
+        "$.result.surfaces[16].length_m[0]",
+        "$.result.surfaces[17].coordinates_m[0][0][0]",
+        "$.result.surfaces[17].coordinates_m[0][1][0]",
+        "$.result.surfaces[17].length_m[0]",
+        "$.result.surfaces[18].coordinates_m[0][0][0]",
+        "$.result.surfaces[18].coordinates_m[0][1][0]",
+        "$.result.surfaces[18].length_m[0]",
+        "$.result.surfaces[19].coordinates_m[0][0][0]",
+        "$.result.surfaces[19].coordinates_m[0][1][0]",
+        "$.result.surfaces[19].length_m[0]",
+        "$.result.surfaces[1].coordinates_m[0][0][0]",
+        "$.result.surfaces[1].coordinates_m[0][1][0]",
+        "$.result.surfaces[1].length_m[0]",
+        "$.result.surfaces[20].coordinates_m[0][0][0]",
+        "$.result.surfaces[20].coordinates_m[0][1][0]",
+        "$.result.surfaces[20].length_m[0]",
+        "$.result.surfaces[21].coordinates_m[0][0][0]",
+        "$.result.surfaces[21].coordinates_m[0][1][0]",
+        "$.result.surfaces[21].length_m[0]",
+        "$.result.surfaces[22].coordinates_m[0][0][0]",
+        "$.result.surfaces[22].coordinates_m[0][1][0]",
+        "$.result.surfaces[22].length_m[0]",
+        "$.result.surfaces[23].coordinates_m[0][0][0]",
+        "$.result.surfaces[23].coordinates_m[0][1][0]",
+        "$.result.surfaces[23].length_m[0]",
+        "$.result.surfaces[24].coordinates_m[0][0][0]",
+        "$.result.surfaces[24].length_m[0]",
+        "$.result.surfaces[25].coordinates_m[0][0][0]",
+        "$.result.surfaces[25].length_m[0]",
+        "$.result.surfaces[26].coordinates_m[0][0][0]",
+        "$.result.surfaces[26].length_m[0]",
+        "$.result.surfaces[27].coordinates_m[0][0][0]",
+        "$.result.surfaces[27].length_m[0]",
+        "$.result.surfaces[2].coordinates_m[0][0][0]",
+        "$.result.surfaces[2].coordinates_m[0][1][0]",
+        "$.result.surfaces[2].length_m[0]",
+        "$.result.surfaces[3].coordinates_m[0][0][0]",
+        "$.result.surfaces[3].coordinates_m[0][1][0]",
+        "$.result.surfaces[3].length_m[0]",
+        "$.result.surfaces[4].coordinates_m[0][0][0]",
+        "$.result.surfaces[4].coordinates_m[0][1][0]",
+        "$.result.surfaces[4].length_m[0]",
+        "$.result.surfaces[5].coordinates_m[0][0][0]",
+        "$.result.surfaces[5].coordinates_m[0][1][0]",
+        "$.result.surfaces[5].length_m[0]",
+        "$.result.surfaces[6].coordinates_m[0][0][0]",
+        "$.result.surfaces[6].coordinates_m[0][1][0]",
+        "$.result.surfaces[6].length_m[0]",
+        "$.result.surfaces[7].coordinates_m[0][0][0]",
+        "$.result.surfaces[7].coordinates_m[0][1][0]",
+        "$.result.surfaces[7].length_m[0]",
+        "$.result.surfaces[8].coordinates_m[0][0][0]",
+        "$.result.surfaces[8].coordinates_m[0][1][0]",
+        "$.result.surfaces[8].length_m[0]",
+        "$.result.surfaces[9].coordinates_m[0][0][0]",
+        "$.result.surfaces[9].coordinates_m[0][1][0]",
+        "$.result.surfaces[9].length_m[0]"
+      ],
+      "payload_sha256": "7cf1fedddda35680f7a2dfaf131e35aa12b3f028216d426ed19c6e6a5377d794",
+      "provenance": {
+        "case_sha256": "4bec45fa278b2cedf9098f721f950dc8561bafcec0c84f4149cb81fa398caad6",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "275fc5c442781fdfb37fa45a17bc1df6b6c19788a533c1a47719d1bb5751557a",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_SURFACE_AZIMUTH",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/INVALID_SURFACE_AZIMUTH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "1f278cb2b31cf1c9f12f194c2b1b67e920d54da9aebc26af582253a1fee56506",
+      "provenance": {
+        "case_sha256": "c2dbcfdeba5e4b699024b4004b291be23073538ddd854c04e21083186114a9b8",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "5482bf0a1c5eae21afc7ee21d89eed3bc335d1c0a4e0d10f7ba51e3ac283e975",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_NAN",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/INVALID_NAN.json",
+      "nonfinite_mask": [
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[3].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][1][0]",
+        "$.result.projection[0].alpha_rad",
+        "$.result.projection[0].solar_2d_vector[0]",
+        "$.result.projection[0].solar_2d_vector[1]",
+        "$.result.surfaces[0].coordinates_m[0][0][0]",
+        "$.result.surfaces[0].coordinates_m[0][1][0]",
+        "$.result.surfaces[0].length_m[0]",
+        "$.result.surfaces[10].coordinates_m[0][0][0]",
+        "$.result.surfaces[10].coordinates_m[0][1][0]",
+        "$.result.surfaces[10].length_m[0]",
+        "$.result.surfaces[11].coordinates_m[0][0][0]",
+        "$.result.surfaces[11].coordinates_m[0][1][0]",
+        "$.result.surfaces[11].length_m[0]",
+        "$.result.surfaces[12].coordinates_m[0][1][0]",
+        "$.result.surfaces[12].length_m[0]",
+        "$.result.surfaces[13].coordinates_m[0][1][0]",
+        "$.result.surfaces[13].length_m[0]",
+        "$.result.surfaces[14].coordinates_m[0][1][0]",
+        "$.result.surfaces[14].length_m[0]",
+        "$.result.surfaces[15].coordinates_m[0][1][0]",
+        "$.result.surfaces[15].length_m[0]",
+        "$.result.surfaces[16].coordinates_m[0][0][0]",
+        "$.result.surfaces[16].coordinates_m[0][1][0]",
+        "$.result.surfaces[16].length_m[0]",
+        "$.result.surfaces[17].coordinates_m[0][0][0]",
+        "$.result.surfaces[17].coordinates_m[0][1][0]",
+        "$.result.surfaces[17].length_m[0]",
+        "$.result.surfaces[18].coordinates_m[0][0][0]",
+        "$.result.surfaces[18].coordinates_m[0][1][0]",
+        "$.result.surfaces[18].length_m[0]",
+        "$.result.surfaces[19].coordinates_m[0][0][0]",
+        "$.result.surfaces[19].coordinates_m[0][1][0]",
+        "$.result.surfaces[19].length_m[0]",
+        "$.result.surfaces[1].coordinates_m[0][0][0]",
+        "$.result.surfaces[1].coordinates_m[0][1][0]",
+        "$.result.surfaces[1].length_m[0]",
+        "$.result.surfaces[20].coordinates_m[0][0][0]",
+        "$.result.surfaces[20].coordinates_m[0][1][0]",
+        "$.result.surfaces[20].length_m[0]",
+        "$.result.surfaces[21].coordinates_m[0][0][0]",
+        "$.result.surfaces[21].coordinates_m[0][1][0]",
+        "$.result.surfaces[21].length_m[0]",
+        "$.result.surfaces[22].coordinates_m[0][0][0]",
+        "$.result.surfaces[22].coordinates_m[0][1][0]",
+        "$.result.surfaces[22].length_m[0]",
+        "$.result.surfaces[23].coordinates_m[0][0][0]",
+        "$.result.surfaces[23].coordinates_m[0][1][0]",
+        "$.result.surfaces[23].length_m[0]",
+        "$.result.surfaces[24].coordinates_m[0][0][0]",
+        "$.result.surfaces[24].length_m[0]",
+        "$.result.surfaces[25].coordinates_m[0][0][0]",
+        "$.result.surfaces[25].length_m[0]",
+        "$.result.surfaces[26].coordinates_m[0][0][0]",
+        "$.result.surfaces[26].length_m[0]",
+        "$.result.surfaces[27].coordinates_m[0][0][0]",
+        "$.result.surfaces[27].length_m[0]",
+        "$.result.surfaces[2].coordinates_m[0][0][0]",
+        "$.result.surfaces[2].coordinates_m[0][1][0]",
+        "$.result.surfaces[2].length_m[0]",
+        "$.result.surfaces[3].coordinates_m[0][0][0]",
+        "$.result.surfaces[3].coordinates_m[0][1][0]",
+        "$.result.surfaces[3].length_m[0]",
+        "$.result.surfaces[4].coordinates_m[0][0][0]",
+        "$.result.surfaces[4].coordinates_m[0][1][0]",
+        "$.result.surfaces[4].length_m[0]",
+        "$.result.surfaces[5].coordinates_m[0][0][0]",
+        "$.result.surfaces[5].coordinates_m[0][1][0]",
+        "$.result.surfaces[5].length_m[0]",
+        "$.result.surfaces[6].coordinates_m[0][0][0]",
+        "$.result.surfaces[6].coordinates_m[0][1][0]",
+        "$.result.surfaces[6].length_m[0]",
+        "$.result.surfaces[7].coordinates_m[0][0][0]",
+        "$.result.surfaces[7].coordinates_m[0][1][0]",
+        "$.result.surfaces[7].length_m[0]",
+        "$.result.surfaces[8].coordinates_m[0][0][0]",
+        "$.result.surfaces[8].coordinates_m[0][1][0]",
+        "$.result.surfaces[8].length_m[0]",
+        "$.result.surfaces[9].coordinates_m[0][0][0]",
+        "$.result.surfaces[9].coordinates_m[0][1][0]",
+        "$.result.surfaces[9].length_m[0]"
+      ],
+      "payload_sha256": "76dd6ef460198b45412b27211f112dabce98e29cc605c4ed6de78724450c3c98",
+      "provenance": {
+        "case_sha256": "b0dff2e2d17a7224c11baf6cc24bd66c3d21bddc3fda4af161d8e972377b4096",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "4d41e6ffe5dfe4c07d2c09f780c2ace4c3dfa4ce521155c21fac6842785853a4",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_INF",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/INVALID_INF.json",
+      "nonfinite_mask": [
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.cut_points_m[0][0][0]",
+        "$.result.ground.cut_points_m[0][1][0]",
+        "$.result.ground.cut_points_m[0][2][0]",
+        "$.result.ground.illuminated_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[3].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][1][0]",
+        "$.result.projection[0].rotation_deg",
+        "$.result.pv_rows[0].back_normal[0][0]",
+        "$.result.pv_rows[0].back_normal[0][1]",
+        "$.result.pv_rows[0].endpoints_m[0][0][0]",
+        "$.result.pv_rows[0].endpoints_m[0][0][1]",
+        "$.result.pv_rows[0].endpoints_m[0][1][0]",
+        "$.result.pv_rows[0].endpoints_m[0][1][1]",
+        "$.result.pv_rows[0].front_normal[0][0]",
+        "$.result.pv_rows[0].front_normal[0][1]",
+        "$.result.pv_rows[0].shaded_length_back_m[0]",
+        "$.result.pv_rows[0].shaded_length_front_m[0]",
+        "$.result.pv_rows[1].back_normal[0][0]",
+        "$.result.pv_rows[1].back_normal[0][1]",
+        "$.result.pv_rows[1].endpoints_m[0][0][0]",
+        "$.result.pv_rows[1].endpoints_m[0][0][1]",
+        "$.result.pv_rows[1].endpoints_m[0][1][0]",
+        "$.result.pv_rows[1].endpoints_m[0][1][1]",
+        "$.result.pv_rows[1].front_normal[0][0]",
+        "$.result.pv_rows[1].front_normal[0][1]",
+        "$.result.pv_rows[1].shaded_length_back_m[0]",
+        "$.result.pv_rows[1].shaded_length_front_m[0]",
+        "$.result.pv_rows[2].back_normal[0][0]",
+        "$.result.pv_rows[2].back_normal[0][1]",
+        "$.result.pv_rows[2].endpoints_m[0][0][0]",
+        "$.result.pv_rows[2].endpoints_m[0][0][1]",
+        "$.result.pv_rows[2].endpoints_m[0][1][0]",
+        "$.result.pv_rows[2].endpoints_m[0][1][1]",
+        "$.result.pv_rows[2].front_normal[0][0]",
+        "$.result.pv_rows[2].front_normal[0][1]",
+        "$.result.pv_rows[2].shaded_length_back_m[0]",
+        "$.result.pv_rows[2].shaded_length_front_m[0]",
+        "$.result.surfaces[0].coordinates_m[0][0][0]",
+        "$.result.surfaces[0].coordinates_m[0][1][0]",
+        "$.result.surfaces[0].length_m[0]",
+        "$.result.surfaces[10].coordinates_m[0][0][0]",
+        "$.result.surfaces[10].coordinates_m[0][1][0]",
+        "$.result.surfaces[10].length_m[0]",
+        "$.result.surfaces[11].coordinates_m[0][0][0]",
+        "$.result.surfaces[11].coordinates_m[0][1][0]",
+        "$.result.surfaces[11].length_m[0]",
+        "$.result.surfaces[12].coordinates_m[0][0][0]",
+        "$.result.surfaces[12].coordinates_m[0][1][0]",
+        "$.result.surfaces[12].length_m[0]",
+        "$.result.surfaces[13].coordinates_m[0][0][0]",
+        "$.result.surfaces[13].coordinates_m[0][1][0]",
+        "$.result.surfaces[13].length_m[0]",
+        "$.result.surfaces[14].coordinates_m[0][0][0]",
+        "$.result.surfaces[14].coordinates_m[0][1][0]",
+        "$.result.surfaces[14].length_m[0]",
+        "$.result.surfaces[15].coordinates_m[0][0][0]",
+        "$.result.surfaces[15].coordinates_m[0][1][0]",
+        "$.result.surfaces[15].length_m[0]",
+        "$.result.surfaces[16].coordinates_m[0][0][0]",
+        "$.result.surfaces[16].coordinates_m[0][1][0]",
+        "$.result.surfaces[16].length_m[0]",
+        "$.result.surfaces[17].coordinates_m[0][0][0]",
+        "$.result.surfaces[17].coordinates_m[0][1][0]",
+        "$.result.surfaces[17].length_m[0]",
+        "$.result.surfaces[18].coordinates_m[0][0][0]",
+        "$.result.surfaces[18].coordinates_m[0][1][0]",
+        "$.result.surfaces[18].length_m[0]",
+        "$.result.surfaces[19].coordinates_m[0][0][0]",
+        "$.result.surfaces[19].coordinates_m[0][1][0]",
+        "$.result.surfaces[19].length_m[0]",
+        "$.result.surfaces[1].coordinates_m[0][0][0]",
+        "$.result.surfaces[1].coordinates_m[0][1][0]",
+        "$.result.surfaces[1].length_m[0]",
+        "$.result.surfaces[20].coordinates_m[0][0][0]",
+        "$.result.surfaces[20].coordinates_m[0][1][0]",
+        "$.result.surfaces[20].length_m[0]",
+        "$.result.surfaces[21].coordinates_m[0][0][0]",
+        "$.result.surfaces[21].coordinates_m[0][1][0]",
+        "$.result.surfaces[21].length_m[0]",
+        "$.result.surfaces[22].coordinates_m[0][0][0]",
+        "$.result.surfaces[22].coordinates_m[0][1][0]",
+        "$.result.surfaces[22].length_m[0]",
+        "$.result.surfaces[23].coordinates_m[0][0][0]",
+        "$.result.surfaces[23].coordinates_m[0][1][0]",
+        "$.result.surfaces[23].length_m[0]",
+        "$.result.surfaces[24].coordinates_m[0][0][0]",
+        "$.result.surfaces[24].coordinates_m[0][1][0]",
+        "$.result.surfaces[24].length_m[0]",
+        "$.result.surfaces[25].coordinates_m[0][0][0]",
+        "$.result.surfaces[25].coordinates_m[0][1][0]",
+        "$.result.surfaces[25].length_m[0]",
+        "$.result.surfaces[26].coordinates_m[0][0][0]",
+        "$.result.surfaces[26].coordinates_m[0][1][0]",
+        "$.result.surfaces[26].length_m[0]",
+        "$.result.surfaces[27].coordinates_m[0][0][0]",
+        "$.result.surfaces[27].coordinates_m[0][1][0]",
+        "$.result.surfaces[27].length_m[0]",
+        "$.result.surfaces[28].coordinates_m[0][0][0]",
+        "$.result.surfaces[28].coordinates_m[0][0][1]",
+        "$.result.surfaces[28].coordinates_m[0][1][0]",
+        "$.result.surfaces[28].coordinates_m[0][1][1]",
+        "$.result.surfaces[28].length_m[0]",
+        "$.result.surfaces[28].normal[0][0]",
+        "$.result.surfaces[28].normal[0][1]",
+        "$.result.surfaces[29].coordinates_m[0][0][0]",
+        "$.result.surfaces[29].coordinates_m[0][0][1]",
+        "$.result.surfaces[29].coordinates_m[0][1][0]",
+        "$.result.surfaces[29].coordinates_m[0][1][1]",
+        "$.result.surfaces[29].length_m[0]",
+        "$.result.surfaces[29].normal[0][0]",
+        "$.result.surfaces[29].normal[0][1]",
+        "$.result.surfaces[2].coordinates_m[0][0][0]",
+        "$.result.surfaces[2].coordinates_m[0][1][0]",
+        "$.result.surfaces[2].length_m[0]",
+        "$.result.surfaces[30].coordinates_m[0][0][0]",
+        "$.result.surfaces[30].coordinates_m[0][0][1]",
+        "$.result.surfaces[30].coordinates_m[0][1][0]",
+        "$.result.surfaces[30].coordinates_m[0][1][1]",
+        "$.result.surfaces[30].length_m[0]",
+        "$.result.surfaces[30].normal[0][0]",
+        "$.result.surfaces[30].normal[0][1]",
+        "$.result.surfaces[31].coordinates_m[0][0][0]",
+        "$.result.surfaces[31].coordinates_m[0][0][1]",
+        "$.result.surfaces[31].coordinates_m[0][1][0]",
+        "$.result.surfaces[31].coordinates_m[0][1][1]",
+        "$.result.surfaces[31].length_m[0]",
+        "$.result.surfaces[31].normal[0][0]",
+        "$.result.surfaces[31].normal[0][1]",
+        "$.result.surfaces[32].coordinates_m[0][0][0]",
+        "$.result.surfaces[32].coordinates_m[0][0][1]",
+        "$.result.surfaces[32].coordinates_m[0][1][0]",
+        "$.result.surfaces[32].coordinates_m[0][1][1]",
+        "$.result.surfaces[32].length_m[0]",
+        "$.result.surfaces[32].normal[0][0]",
+        "$.result.surfaces[32].normal[0][1]",
+        "$.result.surfaces[33].coordinates_m[0][0][0]",
+        "$.result.surfaces[33].coordinates_m[0][0][1]",
+        "$.result.surfaces[33].coordinates_m[0][1][0]",
+        "$.result.surfaces[33].coordinates_m[0][1][1]",
+        "$.result.surfaces[33].length_m[0]",
+        "$.result.surfaces[33].normal[0][0]",
+        "$.result.surfaces[33].normal[0][1]",
+        "$.result.surfaces[34].coordinates_m[0][0][0]",
+        "$.result.surfaces[34].coordinates_m[0][0][1]",
+        "$.result.surfaces[34].coordinates_m[0][1][0]",
+        "$.result.surfaces[34].coordinates_m[0][1][1]",
+        "$.result.surfaces[34].length_m[0]",
+        "$.result.surfaces[34].normal[0][0]",
+        "$.result.surfaces[34].normal[0][1]",
+        "$.result.surfaces[35].coordinates_m[0][0][0]",
+        "$.result.surfaces[35].coordinates_m[0][0][1]",
+        "$.result.surfaces[35].coordinates_m[0][1][0]",
+        "$.result.surfaces[35].coordinates_m[0][1][1]",
+        "$.result.surfaces[35].length_m[0]",
+        "$.result.surfaces[35].normal[0][0]",
+        "$.result.surfaces[35].normal[0][1]",
+        "$.result.surfaces[36].coordinates_m[0][0][0]",
+        "$.result.surfaces[36].coordinates_m[0][0][1]",
+        "$.result.surfaces[36].coordinates_m[0][1][0]",
+        "$.result.surfaces[36].coordinates_m[0][1][1]",
+        "$.result.surfaces[36].length_m[0]",
+        "$.result.surfaces[36].normal[0][0]",
+        "$.result.surfaces[36].normal[0][1]",
+        "$.result.surfaces[37].coordinates_m[0][0][0]",
+        "$.result.surfaces[37].coordinates_m[0][0][1]",
+        "$.result.surfaces[37].coordinates_m[0][1][0]",
+        "$.result.surfaces[37].coordinates_m[0][1][1]",
+        "$.result.surfaces[37].length_m[0]",
+        "$.result.surfaces[37].normal[0][0]",
+        "$.result.surfaces[37].normal[0][1]",
+        "$.result.surfaces[38].coordinates_m[0][0][0]",
+        "$.result.surfaces[38].coordinates_m[0][0][1]",
+        "$.result.surfaces[38].coordinates_m[0][1][0]",
+        "$.result.surfaces[38].coordinates_m[0][1][1]",
+        "$.result.surfaces[38].length_m[0]",
+        "$.result.surfaces[38].normal[0][0]",
+        "$.result.surfaces[38].normal[0][1]",
+        "$.result.surfaces[39].coordinates_m[0][0][0]",
+        "$.result.surfaces[39].coordinates_m[0][0][1]",
+        "$.result.surfaces[39].coordinates_m[0][1][0]",
+        "$.result.surfaces[39].coordinates_m[0][1][1]",
+        "$.result.surfaces[39].length_m[0]",
+        "$.result.surfaces[39].normal[0][0]",
+        "$.result.surfaces[39].normal[0][1]",
+        "$.result.surfaces[3].coordinates_m[0][0][0]",
+        "$.result.surfaces[3].coordinates_m[0][1][0]",
+        "$.result.surfaces[3].length_m[0]",
+        "$.result.surfaces[4].coordinates_m[0][0][0]",
+        "$.result.surfaces[4].coordinates_m[0][1][0]",
+        "$.result.surfaces[4].length_m[0]",
+        "$.result.surfaces[5].coordinates_m[0][0][0]",
+        "$.result.surfaces[5].coordinates_m[0][1][0]",
+        "$.result.surfaces[5].length_m[0]",
+        "$.result.surfaces[6].coordinates_m[0][0][0]",
+        "$.result.surfaces[6].coordinates_m[0][1][0]",
+        "$.result.surfaces[6].length_m[0]",
+        "$.result.surfaces[7].coordinates_m[0][0][0]",
+        "$.result.surfaces[7].coordinates_m[0][1][0]",
+        "$.result.surfaces[7].length_m[0]",
+        "$.result.surfaces[8].coordinates_m[0][0][0]",
+        "$.result.surfaces[8].coordinates_m[0][1][0]",
+        "$.result.surfaces[8].length_m[0]",
+        "$.result.surfaces[9].coordinates_m[0][0][0]",
+        "$.result.surfaces[9].coordinates_m[0][1][0]",
+        "$.result.surfaces[9].length_m[0]"
+      ],
+      "payload_sha256": "16b094957dd79ac2cfc92e3fe5e5425578f2c7b08c57b8d7178a368bd7e59c12",
+      "provenance": {
+        "case_sha256": "92729ab96453152038bd5de0521d5db5e604cf9dd8c1ed73da56a4ad439f6c75",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "6f1001f002674007cd4805afb0bb4a634e7336df734795125ebc9245643ae207",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_EXTENT_REVERSED",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/INVALID_EXTENT_REVERSED.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "bcb9dd1618b54e1a699b4c411e0995e38528112583a5bff282c24276b1947d77",
+      "provenance": {
+        "case_sha256": "c10420c2714657413e654e433d463862bbdd5f844c517f4452b4468db401c759",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "07f99183927d6a4873d063d99d39a5d0efd5a292e5cc89374951558b790ecb93",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_COMPLETE_COVER_DIFFERENCE",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_COMPLETE_COVER_DIFFERENCE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "8bc7feb1ab847ffb082eac05bd87d1cf74b85936cc93fa2c831fd8a60b3e5987",
+      "provenance": {
+        "case_sha256": "cbc1dbf892a86f19f3d4f9e1943e270931f1d736dad2159472638765cf1de5d0",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "d034138301974bd8a2dbdbc63f28aa12c2437834959ea315c7657ab7ac9e8b58",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_TOUCH",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ENDPOINT_TOUCH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "0ba5c0f535f9fdc847f1505d5b154dd038f90d8e4809c6d85d8e1e0fc92302aa",
+      "provenance": {
+        "case_sha256": "06f8af8b6caf5251ed8bd9ce7a7f734dd04ce2360128223dce2bb0f2cb9d0e14",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "14548bdffb8a5f2f7f875e107f3f705b5d9940ca6d5a63ef44c59189f099c483",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_POINT_TOUCH",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_POINT_TOUCH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "de990adb16fb71521a5e582ff1a4b97b34c55b8c6b5179d085fb1dc98cba144a",
+      "provenance": {
+        "case_sha256": "bbaf55f5c75100e9ef1017a93a2ab26700d127fcb619586cddb841a3f4ed2479",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "a80c72269bcbb6d3387a3d765e503f0809ae6697fcd51c20bec60efbe3afa164",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_POSITIVE_OVERLAP",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_POSITIVE_OVERLAP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "be29a3bcd491ea6d9f4c127b7c8e079277f3fb30caca20013bf4f847fb30c26b",
+      "provenance": {
+        "case_sha256": "e8f1365b448d44347d3e5b60e3b79b4bd13bda55cae530eefc43ec9d13de2cab",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "fbb59c7f1fd38111ccca5da9e6fafc5fda20100bc63ec9607227b0ab77f5863b",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ZERO_LENGTH",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ZERO_LENGTH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "190db3ef9a81eb16fcd96a5f98dc58979a5974892674dd60b5ef7d2ece2995f7",
+      "provenance": {
+        "case_sha256": "0ffad6659182f629ec570eddb49d702a591b30141a0d46f9997116f4887406f7",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "6ea66c0d00380d90150518420265cae7e27da0450aeda6752caa54edc4ea9b82",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_PARALLEL_PROJECTION",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_PARALLEL_PROJECTION.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "78dad43e237e7b4fb6972ab60b4d3937ba530950a0aafde38a77b172fd00b7e8",
+      "provenance": {
+        "case_sha256": "8070ab0f4abf6ad061cb2faad8fc2cd1a037e2041502043f85adbec43e679b85",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "1fe69c1ad0537510b27e95126e8d4c1b1a08be45b662cbaae4ff2ccfadccbe6b",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_COINCIDENT_PROJECTION",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_COINCIDENT_PROJECTION.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "a86de75554be4791e2f833bb2d2f6077ac52932a28bf37beb16296668ef71928",
+      "provenance": {
+        "case_sha256": "05f2088e388d87986d57ef8548e672c2a97d6fd80cb2aae2985992dc9988344b",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "1fe69c1ad0537510b27e95126e8d4c1b1a08be45b662cbaae4ff2ccfadccbe6b",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ACTIVE_TOL_MINUS_ULP",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ACTIVE_TOL_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "4048d3bc51b15bffd44e1fcb502e0968a59464c5dca763dc0bb9c4715887c8a4",
+      "provenance": {
+        "case_sha256": "d290bc26f4dd5dc6c8d83342d451994d8dae9358a88a45e073485eb4e77a78bb",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "4132b90b00374ade9974d4c470ec7d432e5880927246a08a0d58274869b34f45",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ACTIVE_TOL_EXACT",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ACTIVE_TOL_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "aac9c74a9f0cfcf7c6e26e77ab3d64f3aa8b07a234d1cca826bbb14a2300b4e4",
+      "provenance": {
+        "case_sha256": "2646ea3b4c8c01e58326655e0447348369bca6e88fa02707ade30b4bea23409d",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "19763aefedc80c0310587904ec6a49cc7e43bf3da0ae18c2714087ad818d84b4",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ACTIVE_TOL_PLUS_ULP",
+      "classification": "raw_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "raw/PRIM_ACTIVE_TOL_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "9b4b3af207ceee4834c40de212816016003eff06a3c0e367b21c0a89b4a7c8fc",
+      "provenance": {
+        "case_sha256": "b2c730edf357e9dfd3c46da7e9bd786d91c602ea1b80db63ea6bf8ec4d5932d5",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "96ab8d689f09514ed14cb09a7eb06a3b1bc773e57c2d31a54f81e715b4c55b44",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "none"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C01",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/C01.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "7177f20568405142878867067da97a22e5fda70a4951d3aa747e1c26c4f71621",
+      "provenance": {
+        "case_sha256": "b3b1f7409f2a3dd06d18318747029718636bf3a9eaf36bfea63675db7e3a262a",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "0c0245b05b220b00469162d55074a769948225ac12b9c1909ded5d02c6922a38",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C02",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/C02.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "4fad4b15706f2a69348832a06a258d1fb72c0dc812c1dac664b1f40f77049a71",
+      "provenance": {
+        "case_sha256": "113509eab0ca7048159e4f5fab39864c9419e27a4d5ebe6002a12ec4e7a46fbd",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "8e3368f6c87c928da4d5c4befa54cedfd91f38280c22ca614546c6cceaed9123",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        23,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C03",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/C03.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "6850665b55f1968cafc8bb69ae506e3aec47ed8e020bc332714595680f762334",
+      "provenance": {
+        "case_sha256": "392f20a9610c273beabfcf90d9333ae079229462303df9e82c712c2944092fe7",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "5482bf0a1c5eae21afc7ee21d89eed3bc335d1c0a4e0d10f7ba51e3ac283e975",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C04",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/C04.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "33d6c694ac9396334b8855e43e3037490e552f6bec4b337ac5d4874df7afef12",
+      "provenance": {
+        "case_sha256": "4b260cb9155d27e06e5670ec3998b8e28abfd13cc80816f751d52f867fcb0d71",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "f39c00f171847527cf95567f76af305b5341d855b563cc2647060681b0aa6631",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        320,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_LEFT",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/TILT_LEFT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "54089800ef6d2851bcd776bdc36a56c9fe699ea25d7e0a25d9113e7403edbe42",
+      "provenance": {
+        "case_sha256": "3b6f3f70e30f88b0c9913d16dfb64072675ee8dc6c7b72fabc32063c4a986ac8",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "e58b3dfbdf9e3346a7c20ddd8dae985e319f7da1f148fe7e5e4b3d7a3b9c184a",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_FLAT",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/TILT_FLAT.json",
+      "nonfinite_mask": [
+        "$.result.ground.cut_points_m[0][0][0]",
+        "$.result.ground.cut_points_m[0][1][0]",
+        "$.result.ground.cut_points_m[0][2][0]"
+      ],
+      "payload_sha256": "a3bbdbfb70cb4aee65183f79ea658df769902b65600537c16426f5866ca0bee6",
+      "provenance": {
+        "case_sha256": "5256476b8e6f0e2468caccde940bda19485043f35a12020345924f9e2ebde8df",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "65cc0d8a3da0a73cd9051573853a519f7d65247bc35e0e11432d12a805474bab",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_1e-10",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/TILT_1e-10.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "31c804ffc77e5e89d09ab045af206e9393ef3306da34966d2ce0e5e824848ad7",
+      "provenance": {
+        "case_sha256": "1ae41c73c3e85e3c6b1e0c7992e3f707e2ad45d439fb7dffd52fe17cd012925e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "1be52a11b0f03d7a23eab5c8f62a5a4c8f73d0e4d2258595c96046e3cdef9ad4",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_NEAR_LEFT",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/TILT_NEAR_LEFT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "894f25f74797372d71506dce9b109dd9f28d1ec365bb41887bdc7efea3d39a4e",
+      "provenance": {
+        "case_sha256": "cbd08c9b845d75334f39566a4a1afabc16e694dd7fbc75d3dd52c33f552aaa34",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "ebf59560689cc295da6163bad79df1a9060637d180d3571b051e5692324e1b85",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_90.0",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/TILT_90.0.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "58872521bf0aab8d66e84ab5f88541cfbaba835abfe28f9fc89bfba92ae8e40d",
+      "provenance": {
+        "case_sha256": "7b2b847266bbf43e1bc453f1db4599a8338c830e9852ee52ea758a70a2488c91",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "2b59367fd73bced675c96bcb3648a96c91907629aee3e31b52de15f6fdc74dab",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SHADING_NONE_CANDIDATE",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/SHADING_NONE_CANDIDATE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "36866f723d6d3411d966ff095e7de830e11861cd91981e8bf942853d24831f74",
+      "provenance": {
+        "case_sha256": "27d976cba12ddfbfe3b340693077716a5ee91363b7f75fdd446b8bbc70278b46",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "02c9cc4cc9007dbf1c48a3a2a0bfa21e8cd02c6b983ad6c149d62bc8635970db",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SHADING_PARTIAL_CANDIDATE",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/SHADING_PARTIAL_CANDIDATE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "b3996c00f816b8805f5b09912b2e137ec5f1c8a3493f8262be824a22205274dc",
+      "provenance": {
+        "case_sha256": "1f567e8c65063ada950af42c77c47c567c20cc6e5e4844c36538f277602f949a",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "6e5b2f7f4fbed3ed88aa21f92201b8d2c97135d2c9f263f0877ac4372b6afee1",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SHADING_HIGH_CANDIDATE",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/SHADING_HIGH_CANDIDATE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "e09614045592680fca62a9592ba5279fcbb4818c8a5122471b01abe97b9d219a",
+      "provenance": {
+        "case_sha256": "c68d1eb0bcf0f49effd769c73c4cfb23d891a68015b440badfce68c0169aad86",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "0568c1f340165676077cd4fdc318f7cf6e02c83d09ef7206ea82a4a9453c71a2",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SUN_90.0",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/SUN_90.0.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "74093e80eec9141c1fb717a5e9d04a7b926ee14fa86d02a21cbec5faa90e547f",
+      "provenance": {
+        "case_sha256": "ffdd4d8a01b5884f2bd26a03d451a0a69487468152c612c6452ac3270ad81ed7",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "58416b9dc8c81d699cb8380cde9786f0e843a46b041c71f19e168d1c16518d95",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SUN_ALONG_AXIS",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/SUN_ALONG_AXIS.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "eaec581f0c22996759bebbb60d72355048cbfa63b287fe667ca531cad801c4d2",
+      "provenance": {
+        "case_sha256": "e30d06af5bd4b4a5539b1adb0c2636a03f5e8c22cdde83aa492cd403774b7788",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "8d565216c972e7c2219c1e2d0ab5708d6721e5a4748381751639fcb32740de83",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_2",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/CUT_2.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "63c2ec90374157c232eb08c01689b17e0ec7590b493cdf8990794a63b0999068",
+      "provenance": {
+        "case_sha256": "222360d1ab135e69425f77175f2d0a1efd231aafb8c2d7019950ed90e2d735ee",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "7db8e30f1e0265583d754bd97eb065e5ee32d16ee938ebb33b4f853eccf24998",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        52,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_8",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/CUT_8.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "193f5a61119c6df1e3495d637303db8a819f1621bb6c1024b168b9771aa45b1c",
+      "provenance": {
+        "case_sha256": "9b2086b10c17d836e2a6016c532a035a3c5d20a67c26c7b54d9c2df3c67021ed",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "d8ea87fa107b194e44f0c7755de202e7857a3e7846e96074199268b56c933a0f",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        124,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_ASYMMETRIC",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/CUT_ASYMMETRIC.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "c012982d8e0f5260b4213fde8fc53eb96164463b72ebd4e032eaed1a62ce9988",
+      "provenance": {
+        "case_sha256": "9015e081ba14001a88e8294da883c5e4e071543edaa5bfca40c677e79dd6d73e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "87612579c5a7eeed7a1d3d0d3823f1b4c5c8ec6195574e683e7ee51e6dae4670",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        52,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "UNDERGROUND",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/UNDERGROUND.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "8a4c3ce9eab2714f11074fe38ab538f5eed81ce15398a348e3126de446f563eb",
+      "provenance": {
+        "case_sha256": "5da6b0d55d207cd99a0b25b3fe1f99c0581b4f51150cbe6b91d016c8dd284496",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "b4142bd409c720d6816958280d0dab054c8aff26c78e803fd758a0168f41db57",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_ZERO",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/CUT_ZERO.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "4bef31b3cfa32d660f892e4023e48143083af2605e31798bb61e22812f1fb035",
+      "provenance": {
+        "case_sha256": "26baa271a4b4fe6e2dec35bb4d68dd070b9fb79351582d5c9e941a322fe4f871",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "88c3a973b17cfb0efd4455d7f854ac3831a80bb9d57974d2fe13e53564cc0039",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "expected_reference_failure",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "GROUND_NORMAL_EXTENT",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/GROUND_NORMAL_EXTENT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "3eb3b6029756a9f8a07a4edfcf1e7980d6eb4c6e27ef0dade85448f67e02537c",
+      "provenance": {
+        "case_sha256": "67f1d0a788b56ba912de4041a125b54fca27413d8088922a0399bf571fbd4306",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "9642742bf5c3117744fe1480806234010a119e4ca0b7b89d0f71bc9b36517588",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "GROUND_BOUNDARY_ENDPOINT",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/GROUND_BOUNDARY_ENDPOINT.json",
+      "nonfinite_mask": [
+        "$.result.ground.cut_points_m[0][0][0]"
+      ],
+      "payload_sha256": "6efa4184257b49e9cf5f450fe41fea7ac17a7adb3acfc18b8918f4d0b989ae90",
+      "provenance": {
+        "case_sha256": "4ba9a27914c79b0988382aac4318a0e11f8fe024547b5199b92f27869de83513",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "5a3853c3384d75c237afb2ad3e678cb171dd26a565ab41ad357a5aa3898ed364",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "GROUND_NEAR_BOUNDARY",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/GROUND_NEAR_BOUNDARY.json",
+      "nonfinite_mask": [
+        "$.result.ground.cut_points_m[0][0][0]"
+      ],
+      "payload_sha256": "db9e41e90bec9e705c014803cfe6c39047c535e03030554a45afaa73d374ba0f",
+      "provenance": {
+        "case_sha256": "19bab21fdd7b8b7e30ccd738c6a08592ff3559885030d8bb2973dcbd022c5d72",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "25363a6a25636b6ef64380783c7e7e94bd08e2ed0b11aea6f05e599b3bcfb4f6",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "MIRROR_BASE",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/MIRROR_BASE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "74a568a69de4ea7938a8a1f0968c0bb488f6acf04d2dc54f3bd467016b814dc9",
+      "provenance": {
+        "case_sha256": "e211f42ca168a3124492a15accf5f7c76e13e8ed36ce5ebc697ec8ac1dbc195e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "5482bf0a1c5eae21afc7ee21d89eed3bc335d1c0a4e0d10f7ba51e3ac283e975",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "MIRROR_IMAGE",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/MIRROR_IMAGE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "1f57d602bc0c5b3fa348d415c5c08fd0186f5c2a75e4b2e407663d1ea681995e",
+      "provenance": {
+        "case_sha256": "1d1fa3709f3c8fab8139c99ff455abcc84f1c234cea0ce3a8f15758ac1291152",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "d0b43dbc9e2869f2dd2ca3f0bee66860616a6c5a7f190ac02b7d8ac76e34ae59",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_AXIS_AZIMUTH",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/INVALID_AXIS_AZIMUTH.json",
+      "nonfinite_mask": [
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[3].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][1][0]",
+        "$.result.projection[0].alpha_rad",
+        "$.result.projection[0].solar_2d_vector[0]",
+        "$.result.surfaces[0].coordinates_m[0][0][0]",
+        "$.result.surfaces[0].coordinates_m[0][1][0]",
+        "$.result.surfaces[0].length_m[0]",
+        "$.result.surfaces[10].coordinates_m[0][0][0]",
+        "$.result.surfaces[10].coordinates_m[0][1][0]",
+        "$.result.surfaces[10].length_m[0]",
+        "$.result.surfaces[11].coordinates_m[0][0][0]",
+        "$.result.surfaces[11].coordinates_m[0][1][0]",
+        "$.result.surfaces[11].length_m[0]",
+        "$.result.surfaces[12].coordinates_m[0][1][0]",
+        "$.result.surfaces[12].length_m[0]",
+        "$.result.surfaces[13].coordinates_m[0][1][0]",
+        "$.result.surfaces[13].length_m[0]",
+        "$.result.surfaces[14].coordinates_m[0][1][0]",
+        "$.result.surfaces[14].length_m[0]",
+        "$.result.surfaces[15].coordinates_m[0][1][0]",
+        "$.result.surfaces[15].length_m[0]",
+        "$.result.surfaces[16].coordinates_m[0][0][0]",
+        "$.result.surfaces[16].coordinates_m[0][1][0]",
+        "$.result.surfaces[16].length_m[0]",
+        "$.result.surfaces[17].coordinates_m[0][0][0]",
+        "$.result.surfaces[17].coordinates_m[0][1][0]",
+        "$.result.surfaces[17].length_m[0]",
+        "$.result.surfaces[18].coordinates_m[0][0][0]",
+        "$.result.surfaces[18].coordinates_m[0][1][0]",
+        "$.result.surfaces[18].length_m[0]",
+        "$.result.surfaces[19].coordinates_m[0][0][0]",
+        "$.result.surfaces[19].coordinates_m[0][1][0]",
+        "$.result.surfaces[19].length_m[0]",
+        "$.result.surfaces[1].coordinates_m[0][0][0]",
+        "$.result.surfaces[1].coordinates_m[0][1][0]",
+        "$.result.surfaces[1].length_m[0]",
+        "$.result.surfaces[20].coordinates_m[0][0][0]",
+        "$.result.surfaces[20].coordinates_m[0][1][0]",
+        "$.result.surfaces[20].length_m[0]",
+        "$.result.surfaces[21].coordinates_m[0][0][0]",
+        "$.result.surfaces[21].coordinates_m[0][1][0]",
+        "$.result.surfaces[21].length_m[0]",
+        "$.result.surfaces[22].coordinates_m[0][0][0]",
+        "$.result.surfaces[22].coordinates_m[0][1][0]",
+        "$.result.surfaces[22].length_m[0]",
+        "$.result.surfaces[23].coordinates_m[0][0][0]",
+        "$.result.surfaces[23].coordinates_m[0][1][0]",
+        "$.result.surfaces[23].length_m[0]",
+        "$.result.surfaces[24].coordinates_m[0][0][0]",
+        "$.result.surfaces[24].length_m[0]",
+        "$.result.surfaces[25].coordinates_m[0][0][0]",
+        "$.result.surfaces[25].length_m[0]",
+        "$.result.surfaces[26].coordinates_m[0][0][0]",
+        "$.result.surfaces[26].length_m[0]",
+        "$.result.surfaces[27].coordinates_m[0][0][0]",
+        "$.result.surfaces[27].length_m[0]",
+        "$.result.surfaces[2].coordinates_m[0][0][0]",
+        "$.result.surfaces[2].coordinates_m[0][1][0]",
+        "$.result.surfaces[2].length_m[0]",
+        "$.result.surfaces[3].coordinates_m[0][0][0]",
+        "$.result.surfaces[3].coordinates_m[0][1][0]",
+        "$.result.surfaces[3].length_m[0]",
+        "$.result.surfaces[4].coordinates_m[0][0][0]",
+        "$.result.surfaces[4].coordinates_m[0][1][0]",
+        "$.result.surfaces[4].length_m[0]",
+        "$.result.surfaces[5].coordinates_m[0][0][0]",
+        "$.result.surfaces[5].coordinates_m[0][1][0]",
+        "$.result.surfaces[5].length_m[0]",
+        "$.result.surfaces[6].coordinates_m[0][0][0]",
+        "$.result.surfaces[6].coordinates_m[0][1][0]",
+        "$.result.surfaces[6].length_m[0]",
+        "$.result.surfaces[7].coordinates_m[0][0][0]",
+        "$.result.surfaces[7].coordinates_m[0][1][0]",
+        "$.result.surfaces[7].length_m[0]",
+        "$.result.surfaces[8].coordinates_m[0][0][0]",
+        "$.result.surfaces[8].coordinates_m[0][1][0]",
+        "$.result.surfaces[8].length_m[0]",
+        "$.result.surfaces[9].coordinates_m[0][0][0]",
+        "$.result.surfaces[9].coordinates_m[0][1][0]",
+        "$.result.surfaces[9].length_m[0]"
+      ],
+      "payload_sha256": "e0c0f973e4497f33b83d24247936b7c570a6842dadb3780f3e499d070f0782ea",
+      "provenance": {
+        "case_sha256": "4bec45fa278b2cedf9098f721f950dc8561bafcec0c84f4149cb81fa398caad6",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "275fc5c442781fdfb37fa45a17bc1df6b6c19788a533c1a47719d1bb5751557a",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_SURFACE_AZIMUTH",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/INVALID_SURFACE_AZIMUTH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "af02b8f8d5e2f05ff49af4066ec0d99a07613e1ebae06394d37c6bbdadc712f5",
+      "provenance": {
+        "case_sha256": "c2dbcfdeba5e4b699024b4004b291be23073538ddd854c04e21083186114a9b8",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "5482bf0a1c5eae21afc7ee21d89eed3bc335d1c0a4e0d10f7ba51e3ac283e975",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_NAN",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/INVALID_NAN.json",
+      "nonfinite_mask": [
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[3].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][1][0]",
+        "$.result.projection[0].alpha_rad",
+        "$.result.projection[0].solar_2d_vector[0]",
+        "$.result.projection[0].solar_2d_vector[1]",
+        "$.result.surfaces[0].coordinates_m[0][0][0]",
+        "$.result.surfaces[0].coordinates_m[0][1][0]",
+        "$.result.surfaces[0].length_m[0]",
+        "$.result.surfaces[10].coordinates_m[0][0][0]",
+        "$.result.surfaces[10].coordinates_m[0][1][0]",
+        "$.result.surfaces[10].length_m[0]",
+        "$.result.surfaces[11].coordinates_m[0][0][0]",
+        "$.result.surfaces[11].coordinates_m[0][1][0]",
+        "$.result.surfaces[11].length_m[0]",
+        "$.result.surfaces[12].coordinates_m[0][1][0]",
+        "$.result.surfaces[12].length_m[0]",
+        "$.result.surfaces[13].coordinates_m[0][1][0]",
+        "$.result.surfaces[13].length_m[0]",
+        "$.result.surfaces[14].coordinates_m[0][1][0]",
+        "$.result.surfaces[14].length_m[0]",
+        "$.result.surfaces[15].coordinates_m[0][1][0]",
+        "$.result.surfaces[15].length_m[0]",
+        "$.result.surfaces[16].coordinates_m[0][0][0]",
+        "$.result.surfaces[16].coordinates_m[0][1][0]",
+        "$.result.surfaces[16].length_m[0]",
+        "$.result.surfaces[17].coordinates_m[0][0][0]",
+        "$.result.surfaces[17].coordinates_m[0][1][0]",
+        "$.result.surfaces[17].length_m[0]",
+        "$.result.surfaces[18].coordinates_m[0][0][0]",
+        "$.result.surfaces[18].coordinates_m[0][1][0]",
+        "$.result.surfaces[18].length_m[0]",
+        "$.result.surfaces[19].coordinates_m[0][0][0]",
+        "$.result.surfaces[19].coordinates_m[0][1][0]",
+        "$.result.surfaces[19].length_m[0]",
+        "$.result.surfaces[1].coordinates_m[0][0][0]",
+        "$.result.surfaces[1].coordinates_m[0][1][0]",
+        "$.result.surfaces[1].length_m[0]",
+        "$.result.surfaces[20].coordinates_m[0][0][0]",
+        "$.result.surfaces[20].coordinates_m[0][1][0]",
+        "$.result.surfaces[20].length_m[0]",
+        "$.result.surfaces[21].coordinates_m[0][0][0]",
+        "$.result.surfaces[21].coordinates_m[0][1][0]",
+        "$.result.surfaces[21].length_m[0]",
+        "$.result.surfaces[22].coordinates_m[0][0][0]",
+        "$.result.surfaces[22].coordinates_m[0][1][0]",
+        "$.result.surfaces[22].length_m[0]",
+        "$.result.surfaces[23].coordinates_m[0][0][0]",
+        "$.result.surfaces[23].coordinates_m[0][1][0]",
+        "$.result.surfaces[23].length_m[0]",
+        "$.result.surfaces[24].coordinates_m[0][0][0]",
+        "$.result.surfaces[24].length_m[0]",
+        "$.result.surfaces[25].coordinates_m[0][0][0]",
+        "$.result.surfaces[25].length_m[0]",
+        "$.result.surfaces[26].coordinates_m[0][0][0]",
+        "$.result.surfaces[26].length_m[0]",
+        "$.result.surfaces[27].coordinates_m[0][0][0]",
+        "$.result.surfaces[27].length_m[0]",
+        "$.result.surfaces[2].coordinates_m[0][0][0]",
+        "$.result.surfaces[2].coordinates_m[0][1][0]",
+        "$.result.surfaces[2].length_m[0]",
+        "$.result.surfaces[3].coordinates_m[0][0][0]",
+        "$.result.surfaces[3].coordinates_m[0][1][0]",
+        "$.result.surfaces[3].length_m[0]",
+        "$.result.surfaces[4].coordinates_m[0][0][0]",
+        "$.result.surfaces[4].coordinates_m[0][1][0]",
+        "$.result.surfaces[4].length_m[0]",
+        "$.result.surfaces[5].coordinates_m[0][0][0]",
+        "$.result.surfaces[5].coordinates_m[0][1][0]",
+        "$.result.surfaces[5].length_m[0]",
+        "$.result.surfaces[6].coordinates_m[0][0][0]",
+        "$.result.surfaces[6].coordinates_m[0][1][0]",
+        "$.result.surfaces[6].length_m[0]",
+        "$.result.surfaces[7].coordinates_m[0][0][0]",
+        "$.result.surfaces[7].coordinates_m[0][1][0]",
+        "$.result.surfaces[7].length_m[0]",
+        "$.result.surfaces[8].coordinates_m[0][0][0]",
+        "$.result.surfaces[8].coordinates_m[0][1][0]",
+        "$.result.surfaces[8].length_m[0]",
+        "$.result.surfaces[9].coordinates_m[0][0][0]",
+        "$.result.surfaces[9].coordinates_m[0][1][0]",
+        "$.result.surfaces[9].length_m[0]"
+      ],
+      "payload_sha256": "a3bdc690908becf97515fcb6e95c065a6e62cbcc742582473530cc2f643722d4",
+      "provenance": {
+        "case_sha256": "b0dff2e2d17a7224c11baf6cc24bd66c3d21bddc3fda4af161d8e972377b4096",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "4d41e6ffe5dfe4c07d2c09f780c2ace4c3dfa4ce521155c21fac6842785853a4",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_INF",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/INVALID_INF.json",
+      "nonfinite_mask": [
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.clipped_shadow_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.cut_points_m[0][0][0]",
+        "$.result.ground.cut_points_m[0][1][0]",
+        "$.result.ground.cut_points_m[0][2][0]",
+        "$.result.ground.illuminated_elements[0].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[1].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][0][0]",
+        "$.result.ground.illuminated_elements[2].coordinates_m[0][1][0]",
+        "$.result.ground.illuminated_elements[3].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[0].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[1].coordinates_m[0][1][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][0][0]",
+        "$.result.ground.raw_projected_shadows[2].coordinates_m[0][1][0]",
+        "$.result.projection[0].rotation_deg",
+        "$.result.pv_rows[0].back_normal[0][0]",
+        "$.result.pv_rows[0].back_normal[0][1]",
+        "$.result.pv_rows[0].endpoints_m[0][0][0]",
+        "$.result.pv_rows[0].endpoints_m[0][0][1]",
+        "$.result.pv_rows[0].endpoints_m[0][1][0]",
+        "$.result.pv_rows[0].endpoints_m[0][1][1]",
+        "$.result.pv_rows[0].front_normal[0][0]",
+        "$.result.pv_rows[0].front_normal[0][1]",
+        "$.result.pv_rows[0].shaded_length_back_m[0]",
+        "$.result.pv_rows[0].shaded_length_front_m[0]",
+        "$.result.pv_rows[1].back_normal[0][0]",
+        "$.result.pv_rows[1].back_normal[0][1]",
+        "$.result.pv_rows[1].endpoints_m[0][0][0]",
+        "$.result.pv_rows[1].endpoints_m[0][0][1]",
+        "$.result.pv_rows[1].endpoints_m[0][1][0]",
+        "$.result.pv_rows[1].endpoints_m[0][1][1]",
+        "$.result.pv_rows[1].front_normal[0][0]",
+        "$.result.pv_rows[1].front_normal[0][1]",
+        "$.result.pv_rows[1].shaded_length_back_m[0]",
+        "$.result.pv_rows[1].shaded_length_front_m[0]",
+        "$.result.pv_rows[2].back_normal[0][0]",
+        "$.result.pv_rows[2].back_normal[0][1]",
+        "$.result.pv_rows[2].endpoints_m[0][0][0]",
+        "$.result.pv_rows[2].endpoints_m[0][0][1]",
+        "$.result.pv_rows[2].endpoints_m[0][1][0]",
+        "$.result.pv_rows[2].endpoints_m[0][1][1]",
+        "$.result.pv_rows[2].front_normal[0][0]",
+        "$.result.pv_rows[2].front_normal[0][1]",
+        "$.result.pv_rows[2].shaded_length_back_m[0]",
+        "$.result.pv_rows[2].shaded_length_front_m[0]",
+        "$.result.surfaces[0].coordinates_m[0][0][0]",
+        "$.result.surfaces[0].coordinates_m[0][1][0]",
+        "$.result.surfaces[0].length_m[0]",
+        "$.result.surfaces[10].coordinates_m[0][0][0]",
+        "$.result.surfaces[10].coordinates_m[0][1][0]",
+        "$.result.surfaces[10].length_m[0]",
+        "$.result.surfaces[11].coordinates_m[0][0][0]",
+        "$.result.surfaces[11].coordinates_m[0][1][0]",
+        "$.result.surfaces[11].length_m[0]",
+        "$.result.surfaces[12].coordinates_m[0][0][0]",
+        "$.result.surfaces[12].coordinates_m[0][1][0]",
+        "$.result.surfaces[12].length_m[0]",
+        "$.result.surfaces[13].coordinates_m[0][0][0]",
+        "$.result.surfaces[13].coordinates_m[0][1][0]",
+        "$.result.surfaces[13].length_m[0]",
+        "$.result.surfaces[14].coordinates_m[0][0][0]",
+        "$.result.surfaces[14].coordinates_m[0][1][0]",
+        "$.result.surfaces[14].length_m[0]",
+        "$.result.surfaces[15].coordinates_m[0][0][0]",
+        "$.result.surfaces[15].coordinates_m[0][1][0]",
+        "$.result.surfaces[15].length_m[0]",
+        "$.result.surfaces[16].coordinates_m[0][0][0]",
+        "$.result.surfaces[16].coordinates_m[0][1][0]",
+        "$.result.surfaces[16].length_m[0]",
+        "$.result.surfaces[17].coordinates_m[0][0][0]",
+        "$.result.surfaces[17].coordinates_m[0][1][0]",
+        "$.result.surfaces[17].length_m[0]",
+        "$.result.surfaces[18].coordinates_m[0][0][0]",
+        "$.result.surfaces[18].coordinates_m[0][1][0]",
+        "$.result.surfaces[18].length_m[0]",
+        "$.result.surfaces[19].coordinates_m[0][0][0]",
+        "$.result.surfaces[19].coordinates_m[0][1][0]",
+        "$.result.surfaces[19].length_m[0]",
+        "$.result.surfaces[1].coordinates_m[0][0][0]",
+        "$.result.surfaces[1].coordinates_m[0][1][0]",
+        "$.result.surfaces[1].length_m[0]",
+        "$.result.surfaces[20].coordinates_m[0][0][0]",
+        "$.result.surfaces[20].coordinates_m[0][1][0]",
+        "$.result.surfaces[20].length_m[0]",
+        "$.result.surfaces[21].coordinates_m[0][0][0]",
+        "$.result.surfaces[21].coordinates_m[0][1][0]",
+        "$.result.surfaces[21].length_m[0]",
+        "$.result.surfaces[22].coordinates_m[0][0][0]",
+        "$.result.surfaces[22].coordinates_m[0][1][0]",
+        "$.result.surfaces[22].length_m[0]",
+        "$.result.surfaces[23].coordinates_m[0][0][0]",
+        "$.result.surfaces[23].coordinates_m[0][1][0]",
+        "$.result.surfaces[23].length_m[0]",
+        "$.result.surfaces[24].coordinates_m[0][0][0]",
+        "$.result.surfaces[24].coordinates_m[0][1][0]",
+        "$.result.surfaces[24].length_m[0]",
+        "$.result.surfaces[25].coordinates_m[0][0][0]",
+        "$.result.surfaces[25].coordinates_m[0][1][0]",
+        "$.result.surfaces[25].length_m[0]",
+        "$.result.surfaces[26].coordinates_m[0][0][0]",
+        "$.result.surfaces[26].coordinates_m[0][1][0]",
+        "$.result.surfaces[26].length_m[0]",
+        "$.result.surfaces[27].coordinates_m[0][0][0]",
+        "$.result.surfaces[27].coordinates_m[0][1][0]",
+        "$.result.surfaces[27].length_m[0]",
+        "$.result.surfaces[28].coordinates_m[0][0][0]",
+        "$.result.surfaces[28].coordinates_m[0][0][1]",
+        "$.result.surfaces[28].coordinates_m[0][1][0]",
+        "$.result.surfaces[28].coordinates_m[0][1][1]",
+        "$.result.surfaces[28].length_m[0]",
+        "$.result.surfaces[28].normal[0][0]",
+        "$.result.surfaces[28].normal[0][1]",
+        "$.result.surfaces[29].coordinates_m[0][0][0]",
+        "$.result.surfaces[29].coordinates_m[0][0][1]",
+        "$.result.surfaces[29].coordinates_m[0][1][0]",
+        "$.result.surfaces[29].coordinates_m[0][1][1]",
+        "$.result.surfaces[29].length_m[0]",
+        "$.result.surfaces[29].normal[0][0]",
+        "$.result.surfaces[29].normal[0][1]",
+        "$.result.surfaces[2].coordinates_m[0][0][0]",
+        "$.result.surfaces[2].coordinates_m[0][1][0]",
+        "$.result.surfaces[2].length_m[0]",
+        "$.result.surfaces[30].coordinates_m[0][0][0]",
+        "$.result.surfaces[30].coordinates_m[0][0][1]",
+        "$.result.surfaces[30].coordinates_m[0][1][0]",
+        "$.result.surfaces[30].coordinates_m[0][1][1]",
+        "$.result.surfaces[30].length_m[0]",
+        "$.result.surfaces[30].normal[0][0]",
+        "$.result.surfaces[30].normal[0][1]",
+        "$.result.surfaces[31].coordinates_m[0][0][0]",
+        "$.result.surfaces[31].coordinates_m[0][0][1]",
+        "$.result.surfaces[31].coordinates_m[0][1][0]",
+        "$.result.surfaces[31].coordinates_m[0][1][1]",
+        "$.result.surfaces[31].length_m[0]",
+        "$.result.surfaces[31].normal[0][0]",
+        "$.result.surfaces[31].normal[0][1]",
+        "$.result.surfaces[32].coordinates_m[0][0][0]",
+        "$.result.surfaces[32].coordinates_m[0][0][1]",
+        "$.result.surfaces[32].coordinates_m[0][1][0]",
+        "$.result.surfaces[32].coordinates_m[0][1][1]",
+        "$.result.surfaces[32].length_m[0]",
+        "$.result.surfaces[32].normal[0][0]",
+        "$.result.surfaces[32].normal[0][1]",
+        "$.result.surfaces[33].coordinates_m[0][0][0]",
+        "$.result.surfaces[33].coordinates_m[0][0][1]",
+        "$.result.surfaces[33].coordinates_m[0][1][0]",
+        "$.result.surfaces[33].coordinates_m[0][1][1]",
+        "$.result.surfaces[33].length_m[0]",
+        "$.result.surfaces[33].normal[0][0]",
+        "$.result.surfaces[33].normal[0][1]",
+        "$.result.surfaces[34].coordinates_m[0][0][0]",
+        "$.result.surfaces[34].coordinates_m[0][0][1]",
+        "$.result.surfaces[34].coordinates_m[0][1][0]",
+        "$.result.surfaces[34].coordinates_m[0][1][1]",
+        "$.result.surfaces[34].length_m[0]",
+        "$.result.surfaces[34].normal[0][0]",
+        "$.result.surfaces[34].normal[0][1]",
+        "$.result.surfaces[35].coordinates_m[0][0][0]",
+        "$.result.surfaces[35].coordinates_m[0][0][1]",
+        "$.result.surfaces[35].coordinates_m[0][1][0]",
+        "$.result.surfaces[35].coordinates_m[0][1][1]",
+        "$.result.surfaces[35].length_m[0]",
+        "$.result.surfaces[35].normal[0][0]",
+        "$.result.surfaces[35].normal[0][1]",
+        "$.result.surfaces[36].coordinates_m[0][0][0]",
+        "$.result.surfaces[36].coordinates_m[0][0][1]",
+        "$.result.surfaces[36].coordinates_m[0][1][0]",
+        "$.result.surfaces[36].coordinates_m[0][1][1]",
+        "$.result.surfaces[36].length_m[0]",
+        "$.result.surfaces[36].normal[0][0]",
+        "$.result.surfaces[36].normal[0][1]",
+        "$.result.surfaces[37].coordinates_m[0][0][0]",
+        "$.result.surfaces[37].coordinates_m[0][0][1]",
+        "$.result.surfaces[37].coordinates_m[0][1][0]",
+        "$.result.surfaces[37].coordinates_m[0][1][1]",
+        "$.result.surfaces[37].length_m[0]",
+        "$.result.surfaces[37].normal[0][0]",
+        "$.result.surfaces[37].normal[0][1]",
+        "$.result.surfaces[38].coordinates_m[0][0][0]",
+        "$.result.surfaces[38].coordinates_m[0][0][1]",
+        "$.result.surfaces[38].coordinates_m[0][1][0]",
+        "$.result.surfaces[38].coordinates_m[0][1][1]",
+        "$.result.surfaces[38].length_m[0]",
+        "$.result.surfaces[38].normal[0][0]",
+        "$.result.surfaces[38].normal[0][1]",
+        "$.result.surfaces[39].coordinates_m[0][0][0]",
+        "$.result.surfaces[39].coordinates_m[0][0][1]",
+        "$.result.surfaces[39].coordinates_m[0][1][0]",
+        "$.result.surfaces[39].coordinates_m[0][1][1]",
+        "$.result.surfaces[39].length_m[0]",
+        "$.result.surfaces[39].normal[0][0]",
+        "$.result.surfaces[39].normal[0][1]",
+        "$.result.surfaces[3].coordinates_m[0][0][0]",
+        "$.result.surfaces[3].coordinates_m[0][1][0]",
+        "$.result.surfaces[3].length_m[0]",
+        "$.result.surfaces[4].coordinates_m[0][0][0]",
+        "$.result.surfaces[4].coordinates_m[0][1][0]",
+        "$.result.surfaces[4].length_m[0]",
+        "$.result.surfaces[5].coordinates_m[0][0][0]",
+        "$.result.surfaces[5].coordinates_m[0][1][0]",
+        "$.result.surfaces[5].length_m[0]",
+        "$.result.surfaces[6].coordinates_m[0][0][0]",
+        "$.result.surfaces[6].coordinates_m[0][1][0]",
+        "$.result.surfaces[6].length_m[0]",
+        "$.result.surfaces[7].coordinates_m[0][0][0]",
+        "$.result.surfaces[7].coordinates_m[0][1][0]",
+        "$.result.surfaces[7].length_m[0]",
+        "$.result.surfaces[8].coordinates_m[0][0][0]",
+        "$.result.surfaces[8].coordinates_m[0][1][0]",
+        "$.result.surfaces[8].length_m[0]",
+        "$.result.surfaces[9].coordinates_m[0][0][0]",
+        "$.result.surfaces[9].coordinates_m[0][1][0]",
+        "$.result.surfaces[9].length_m[0]"
+      ],
+      "payload_sha256": "3d1c78431c6d147da1218f44a46b84e14b6e2bcc874ec8f8c2f64ecdaed89188",
+      "provenance": {
+        "case_sha256": "92729ab96453152038bd5de0521d5db5e604cf9dd8c1ed73da56a4ad439f6c75",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "6f1001f002674007cd4805afb0bb4a634e7336df734795125ebc9245643ae207",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_EXTENT_REVERSED",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/INVALID_EXTENT_REVERSED.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "123b64f7163e6275548ffa775d99e9744d6fb4165d1eb33528975be70d8cdfaf",
+      "provenance": {
+        "case_sha256": "c10420c2714657413e654e433d463862bbdd5f844c517f4452b4468db401c759",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen-reference introspection",
+        "payload_sha256": "07f99183927d6a4873d063d99d39a5d0efd5a292e5cc89374951558b790ecb93",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_COMPLETE_COVER_DIFFERENCE",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_COMPLETE_COVER_DIFFERENCE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "1e61379e3d38f49e10c5de533f3451e127b9da5aa61b46e6ce1ca6aa72f98992",
+      "provenance": {
+        "case_sha256": "cbc1dbf892a86f19f3d4f9e1943e270931f1d736dad2159472638765cf1de5d0",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "d034138301974bd8a2dbdbc63f28aa12c2437834959ea315c7657ab7ac9e8b58",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_TOUCH",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ENDPOINT_TOUCH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "ef643d779a2bb3b164cf0c05ce423fcdb877d9af26cb4f542fd048cb8f39006c",
+      "provenance": {
+        "case_sha256": "06f8af8b6caf5251ed8bd9ce7a7f734dd04ce2360128223dce2bb0f2cb9d0e14",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "14548bdffb8a5f2f7f875e107f3f705b5d9940ca6d5a63ef44c59189f099c483",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_POINT_TOUCH",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_POINT_TOUCH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "ee00be3b103cd56286601985bc941db37b7a538d58cdaf0dd334800b2e937ede",
+      "provenance": {
+        "case_sha256": "bbaf55f5c75100e9ef1017a93a2ab26700d127fcb619586cddb841a3f4ed2479",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "a80c72269bcbb6d3387a3d765e503f0809ae6697fcd51c20bec60efbe3afa164",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_POSITIVE_OVERLAP",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_POSITIVE_OVERLAP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "a4683524f98f8abb22a186fa3de20daaf1b6041076501b6fab8c94ce48a25e87",
+      "provenance": {
+        "case_sha256": "e8f1365b448d44347d3e5b60e3b79b4bd13bda55cae530eefc43ec9d13de2cab",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "fbb59c7f1fd38111ccca5da9e6fafc5fda20100bc63ec9607227b0ab77f5863b",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ZERO_LENGTH",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ZERO_LENGTH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "6628975837dc99a162aaf0db25a805d77076669fd562b2c449b58afee325595d",
+      "provenance": {
+        "case_sha256": "0ffad6659182f629ec570eddb49d702a591b30141a0d46f9997116f4887406f7",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "6ea66c0d00380d90150518420265cae7e27da0450aeda6752caa54edc4ea9b82",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_PARALLEL_PROJECTION",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_PARALLEL_PROJECTION.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "833c442f84bb5f4747d9654fe3df4f5d3d1787f7a41acf9d2f7c2876df194348",
+      "provenance": {
+        "case_sha256": "8070ab0f4abf6ad061cb2faad8fc2cd1a037e2041502043f85adbec43e679b85",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "1fe69c1ad0537510b27e95126e8d4c1b1a08be45b662cbaae4ff2ccfadccbe6b",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_COINCIDENT_PROJECTION",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_COINCIDENT_PROJECTION.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "f5e040854575ee26755d43cf255a718adcf873798f08d12234161942e5218749",
+      "provenance": {
+        "case_sha256": "05f2088e388d87986d57ef8548e672c2a97d6fd80cb2aae2985992dc9988344b",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "1fe69c1ad0537510b27e95126e8d4c1b1a08be45b662cbaae4ff2ccfadccbe6b",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ACTIVE_TOL_MINUS_ULP",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ACTIVE_TOL_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "29f69bb369411b8e7116edc2eb7f6da79fa1671d812cda104191887b2c14a48a",
+      "provenance": {
+        "case_sha256": "d290bc26f4dd5dc6c8d83342d451994d8dae9358a88a45e073485eb4e77a78bb",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "4132b90b00374ade9974d4c470ec7d432e5880927246a08a0d58274869b34f45",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ACTIVE_TOL_EXACT",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ACTIVE_TOL_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "e2b000b0f22721b9b2b8e9183a2895658a0a45252825fb15dd8aacfce7f117af",
+      "provenance": {
+        "case_sha256": "2646ea3b4c8c01e58326655e0447348369bca6e88fa02707ade30b4bea23409d",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "19763aefedc80c0310587904ec6a49cc7e43bf3da0ae18c2714087ad818d84b4",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ACTIVE_TOL_PLUS_ULP",
+      "classification": "normalized_reference",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "normalized/PRIM_ACTIVE_TOL_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "352d7c43f6078b1203252a9ad704e36dc84318f7ff01e21ffdd3ed7bd0cdf910",
+      "provenance": {
+        "case_sha256": "b2c730edf357e9dfd3c46da7e9bd786d91c602ea1b80db63ea6bf8ec4d5932d5",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "direct frozen primitive invocation",
+        "payload_sha256": "96ab8d689f09514ed14cb09a7eb06a3b1bc773e57c2d31a54f81e715b4c55b44",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "canonical JSON; explicit nonfinite mask; stable logical ordering"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C01",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/C01.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "8cc12bf774c7ee85b887510a769e6f401467fbc543fde77512689de507369b77",
+      "provenance": {
+        "case_sha256": "b3b1f7409f2a3dd06d18318747029718636bf3a9eaf36bfea63675db7e3a262a",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "0c0245b05b220b00469162d55074a769948225ac12b9c1909ded5d02c6922a38",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C02",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/C02.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "eaf51cda415a7932934d6ea29519a685e4d1afe2daa0ef503a1a688266fdf68e",
+      "provenance": {
+        "case_sha256": "113509eab0ca7048159e4f5fab39864c9419e27a4d5ebe6002a12ec4e7a46fbd",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "8e3368f6c87c928da4d5c4befa54cedfd91f38280c22ca614546c6cceaed9123",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        23,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C03",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/C03.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "466af9b9bd9253e349a2183246b85d69130573e4cca92c74558fec1f3d427940",
+      "provenance": {
+        "case_sha256": "392f20a9610c273beabfcf90d9333ae079229462303df9e82c712c2944092fe7",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "5482bf0a1c5eae21afc7ee21d89eed3bc335d1c0a4e0d10f7ba51e3ac283e975",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "C04",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/C04.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "7cedb2bbaf587c22724ee865d8add1f08a414dbfdfa1dee93573301d228a6d14",
+      "provenance": {
+        "case_sha256": "4b260cb9155d27e06e5670ec3998b8e28abfd13cc80816f751d52f867fcb0d71",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "f39c00f171847527cf95567f76af305b5341d855b563cc2647060681b0aa6631",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        320,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_LEFT",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/TILT_LEFT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "c366a54f336fb5b5482856f20f88df09f14b979cca6e4111a90f67f71851c84a",
+      "provenance": {
+        "case_sha256": "3b6f3f70e30f88b0c9913d16dfb64072675ee8dc6c7b72fabc32063c4a986ac8",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "e58b3dfbdf9e3346a7c20ddd8dae985e319f7da1f148fe7e5e4b3d7a3b9c184a",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_FLAT",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/TILT_FLAT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "548e4ff11b7e27f48f912a7c172899255d45c68fa7a3ff1c3f39690f1ec3249b",
+      "provenance": {
+        "case_sha256": "5256476b8e6f0e2468caccde940bda19485043f35a12020345924f9e2ebde8df",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "65cc0d8a3da0a73cd9051573853a519f7d65247bc35e0e11432d12a805474bab",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_1e-10",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/TILT_1e-10.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "6cfdc63990fc3a5ab284c4143ef2db8c0d89411508b0f8fa98b2e479a1a1217a",
+      "provenance": {
+        "case_sha256": "1ae41c73c3e85e3c6b1e0c7992e3f707e2ad45d439fb7dffd52fe17cd012925e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "1be52a11b0f03d7a23eab5c8f62a5a4c8f73d0e4d2258595c96046e3cdef9ad4",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_NEAR_LEFT",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/TILT_NEAR_LEFT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "16329679c46c1947d92e394cd3f70ea7a25a98f8631fe874c512430a6f59baed",
+      "provenance": {
+        "case_sha256": "cbd08c9b845d75334f39566a4a1afabc16e694dd7fbc75d3dd52c33f552aaa34",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "ebf59560689cc295da6163bad79df1a9060637d180d3571b051e5692324e1b85",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "TILT_90.0",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/TILT_90.0.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "3ed6ee9df4d6a65f85391cb3e78697959a16f722197b1e820a923cb539c158e9",
+      "provenance": {
+        "case_sha256": "7b2b847266bbf43e1bc453f1db4599a8338c830e9852ee52ea758a70a2488c91",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "2b59367fd73bced675c96bcb3648a96c91907629aee3e31b52de15f6fdc74dab",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SHADING_NONE_CANDIDATE",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/SHADING_NONE_CANDIDATE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "c5874f2c2e6144e467daf45a7d0bc3312c5051958cdad1f020588912b6e21ff1",
+      "provenance": {
+        "case_sha256": "27d976cba12ddfbfe3b340693077716a5ee91363b7f75fdd446b8bbc70278b46",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "02c9cc4cc9007dbf1c48a3a2a0bfa21e8cd02c6b983ad6c149d62bc8635970db",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SHADING_PARTIAL_CANDIDATE",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/SHADING_PARTIAL_CANDIDATE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "3384cb303fac81f7e0bee711e5f0685e0aacfb6cfbcb09b6552e7c81561cc2c0",
+      "provenance": {
+        "case_sha256": "1f567e8c65063ada950af42c77c47c567c20cc6e5e4844c36538f277602f949a",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "6e5b2f7f4fbed3ed88aa21f92201b8d2c97135d2c9f263f0877ac4372b6afee1",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SHADING_HIGH_CANDIDATE",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/SHADING_HIGH_CANDIDATE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "f568c80a6c8e2d86deb20378a12f4b484141641834f1f2c6b7da710a918a8e44",
+      "provenance": {
+        "case_sha256": "c68d1eb0bcf0f49effd769c73c4cfb23d891a68015b440badfce68c0169aad86",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "0568c1f340165676077cd4fdc318f7cf6e02c83d09ef7206ea82a4a9453c71a2",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SUN_90.0",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/SUN_90.0.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "76454d732013e4b6444e94a1eb08c11ae33a6099c1fa9c5638e42b276254a66c",
+      "provenance": {
+        "case_sha256": "ffdd4d8a01b5884f2bd26a03d451a0a69487468152c612c6452ac3270ad81ed7",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "22f1c25cc5266fa700ffba18ed10d30a7bf1bcee91b1c485bc975e12c7129250",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "SUN_ALONG_AXIS",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/SUN_ALONG_AXIS.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "ed6fba93912e5f30bbeb98f14891549476bc8480ae5bc6d615ea8e3aac381979",
+      "provenance": {
+        "case_sha256": "e30d06af5bd4b4a5539b1adb0c2636a03f5e8c22cdde83aa492cd403774b7788",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "8d565216c972e7c2219c1e2d0ab5708d6721e5a4748381751639fcb32740de83",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_2",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/CUT_2.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "5e9672060591613a8eaf992aa462143f825362d7d9bb51b7e0cf3db89bc9104d",
+      "provenance": {
+        "case_sha256": "222360d1ab135e69425f77175f2d0a1efd231aafb8c2d7019950ed90e2d735ee",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "7db8e30f1e0265583d754bd97eb065e5ee32d16ee938ebb33b4f853eccf24998",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        52,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_8",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/CUT_8.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "93617d8228dc6c9af4a5decb03b37bfcd92896a1d429fc110e22c354b9ecc3fb",
+      "provenance": {
+        "case_sha256": "9b2086b10c17d836e2a6016c532a035a3c5d20a67c26c7b54d9c2df3c67021ed",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "d8ea87fa107b194e44f0c7755de202e7857a3e7846e96074199268b56c933a0f",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        124,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_ASYMMETRIC",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/CUT_ASYMMETRIC.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "a2879b49f3d0bac68deb4c6b27b06d8651433e3448ae55ecf4b64504986b6b59",
+      "provenance": {
+        "case_sha256": "9015e081ba14001a88e8294da883c5e4e071543edaa5bfca40c677e79dd6d73e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "87612579c5a7eeed7a1d3d0d3823f1b4c5c8ec6195574e683e7ee51e6dae4670",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        52,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "UNDERGROUND",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/UNDERGROUND.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "a50d4f2945f9bda824b7aa61f9c803d59b90e82ef9fd5312b1b5b658a23ff611",
+      "provenance": {
+        "case_sha256": "5da6b0d55d207cd99a0b25b3fe1f99c0581b4f51150cbe6b91d016c8dd284496",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "bda9847964d5023ae0d37e89b7390255a9beb753e30b7c292f2661cb7a6661b7",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "v1_rejected_input",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "CUT_ZERO",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/CUT_ZERO.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "703dd8c4f49d6fa075eda5531a02d39ebb8d1c91a3576c441d449ff9739f38d2",
+      "provenance": {
+        "case_sha256": "26baa271a4b4fe6e2dec35bb4d68dd070b9fb79351582d5c9e941a322fe4f871",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "afb62e24fe471fd94cdfbce496ac47e06f4e8de4ae5a11f62ffbade789706bb5",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "v1_rejected_input",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "GROUND_NORMAL_EXTENT",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/GROUND_NORMAL_EXTENT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "0264e35404d02325358ff32265a32893c3e1d943ea39cb03f47c9a3ecc763396",
+      "provenance": {
+        "case_sha256": "67f1d0a788b56ba912de4041a125b54fca27413d8088922a0399bf571fbd4306",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "358299ae99b0893c74338044367d2ad16cb3a6f6b8ce93fe9f95e7bb3f787320",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "GROUND_BOUNDARY_ENDPOINT",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/GROUND_BOUNDARY_ENDPOINT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "daaeef19c4ecd69d6a30c50fb23d62f4dc36ebfe7ffc4181b8624dff38bdd613",
+      "provenance": {
+        "case_sha256": "4ba9a27914c79b0988382aac4318a0e11f8fe024547b5199b92f27869de83513",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "a0bcfd1d93e16d78dff9f83fe6ba8eca2f91f2a0002a4d3c07542b6a967b02fa",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "GROUND_NEAR_BOUNDARY",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/GROUND_NEAR_BOUNDARY.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "367f88ad488c9b1975f8380c4834f5c4926a21ebbd2caf498d5d51cd41b71498",
+      "provenance": {
+        "case_sha256": "19bab21fdd7b8b7e30ccd738c6a08592ff3559885030d8bb2973dcbd022c5d72",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "a9c1092396e1c23acc727f21842f857c1cc150bc500882cde1241602f2b980c5",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "MIRROR_BASE",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/MIRROR_BASE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "e2f418af24b94256c106c931abf58f222b917eb37a61a0f66e8807467fad8937",
+      "provenance": {
+        "case_sha256": "e211f42ca168a3124492a15accf5f7c76e13e8ed36ce5ebc697ec8ac1dbc195e",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "5482bf0a1c5eae21afc7ee21d89eed3bc335d1c0a4e0d10f7ba51e3ac283e975",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "MIRROR_IMAGE",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/MIRROR_IMAGE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "946da3221c97160d0dca5613f3146d5febe83cfef9149d24a715e1f66fe2edec",
+      "provenance": {
+        "case_sha256": "1d1fa3709f3c8fab8139c99ff455abcc84f1c234cea0ce3a8f15758ac1291152",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "d0b43dbc9e2869f2dd2ca3f0bee66860616a6c5a7f190ac02b7d8ac76e34ae59",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [
+        40,
+        1,
+        2,
+        2
+      ],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_AXIS_AZIMUTH",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/INVALID_AXIS_AZIMUTH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "f1328b55acf54d034c772a68ccb99c72f9b5571c1348f3bc2aa3f67cb1c79b28",
+      "provenance": {
+        "case_sha256": "4bec45fa278b2cedf9098f721f950dc8561bafcec0c84f4149cb81fa398caad6",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "c7e37838587cf4492d6cdc98e78e57949fc07afbb4422e72de42cae4796522d6",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "v1_rejected_input",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_SURFACE_AZIMUTH",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/INVALID_SURFACE_AZIMUTH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "30529619257928184325ec7959054ff0ba64c351eb11cf0a343ea33b7a44f837",
+      "provenance": {
+        "case_sha256": "c2dbcfdeba5e4b699024b4004b291be23073538ddd854c04e21083186114a9b8",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "4672c46960a6c71a20be299ffcdf33d7f038f7f5eebcd5a29d8f82d778fce56e",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "v1_rejected_input",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_NAN",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/INVALID_NAN.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "50ed7a74224dd038e14a18057b3568ddf21503bc1489ad292fdbe42de285a3bd",
+      "provenance": {
+        "case_sha256": "b0dff2e2d17a7224c11baf6cc24bd66c3d21bddc3fda4af161d8e972377b4096",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "ffbc7585f06d4cb4d23e1c21f9cb5f0f3cccf600bf43f1a3ada05e8fc8c3b168",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "v1_rejected_input",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_INF",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/INVALID_INF.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "83904aab51a628dcb447d53b4cda726d583bdb93c95cbc9328a47c4dbc3491cf",
+      "provenance": {
+        "case_sha256": "92729ab96453152038bd5de0521d5db5e604cf9dd8c1ed73da56a4ad439f6c75",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "41fc09e801c6423426f201ead81769c3fc226aa4b56b2db707762007d1aa20d8",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "v1_rejected_input",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "INVALID_EXTENT_REVERSED",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/INVALID_EXTENT_REVERSED.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "0779c7292af2dc46906429f67d190c5ec8bd9695cecf5cf19c15de76173ded84",
+      "provenance": {
+        "case_sha256": "c10420c2714657413e654e433d463862bbdd5f844c517f4452b4468db401c759",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "b6741aec1e3e7f68a970cf53191c3ba7d12341bd5f0b2b183947ef19b38094f7",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "v1_rejected_input",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_COMPLETE_COVER_DIFFERENCE",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_COMPLETE_COVER_DIFFERENCE.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "f55c514d6e30c243dbfdfe4f46205d803b098e5504c49433e0a0e706686875ef",
+      "provenance": {
+        "case_sha256": "cbc1dbf892a86f19f3d4f9e1943e270931f1d736dad2159472638765cf1de5d0",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "6df656bd4951b848f7edb598d31cadf5cfcb3756b0e0d592a89f0afd7692da3b",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ENDPOINT_TOUCH",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ENDPOINT_TOUCH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "c16200ea47228993efb7fc0c08717c3173822505dfb74c39dd2c4edc1e0872a7",
+      "provenance": {
+        "case_sha256": "06f8af8b6caf5251ed8bd9ce7a7f734dd04ce2360128223dce2bb0f2cb9d0e14",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "3c67166c49945c5bbec2cfbd15852776dbc4667b4e7413df174e3fa27a32c5ae",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_POINT_TOUCH",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_POINT_TOUCH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "f674d5a3d6c5338fa211a317e9688ed1766ae7246cb869b34ef8ee49e04f885d",
+      "provenance": {
+        "case_sha256": "bbaf55f5c75100e9ef1017a93a2ab26700d127fcb619586cddb841a3f4ed2479",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "c2e663caf3f457f64ab1895f61cf2bc22f2eea32aa3829edce1aafc205361e6c",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_POSITIVE_OVERLAP",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_POSITIVE_OVERLAP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "54c8f5ecf34ce12c54151f6e2ca94834b2735b2446b5ca882db22d914a734149",
+      "provenance": {
+        "case_sha256": "e8f1365b448d44347d3e5b60e3b79b4bd13bda55cae530eefc43ec9d13de2cab",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "8f93c81213b6d3b380590e87e6661d891531f2505a335b750d74362d5dc6e214",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ZERO_LENGTH",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ZERO_LENGTH.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "37492e48419023688866d755a66c6a410d1e84587161375745f87328bb7b7ea7",
+      "provenance": {
+        "case_sha256": "0ffad6659182f629ec570eddb49d702a591b30141a0d46f9997116f4887406f7",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "f3cf01f37da1c9af4770069686f47e4e90667fbc915bae06c5a1ba65f7904902",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_PARALLEL_PROJECTION",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_PARALLEL_PROJECTION.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "b697b45c3663ef7a8a4219954813de5673107ce1e9c0a308575cccf81548a7ff",
+      "provenance": {
+        "case_sha256": "8070ab0f4abf6ad061cb2faad8fc2cd1a037e2041502043f85adbec43e679b85",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "a5b921f3c4ff236a18ea1f7e86a23d53a69ac59be7bf58c59db211b026c8ea95",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_COINCIDENT_PROJECTION",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_COINCIDENT_PROJECTION.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "e6e3dc2cea5b99e9a19e69e8a4ae1c6ac85c37c44f0117b0dde1c6ada1b9ed61",
+      "provenance": {
+        "case_sha256": "05f2088e388d87986d57ef8548e672c2a97d6fd80cb2aae2985992dc9988344b",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "22ae0ee4c559a4742501d38fb36bc897dcdd3a23736a3c64855e0c08a15f2d7f",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ACTIVE_TOL_MINUS_ULP",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ACTIVE_TOL_MINUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "2bca768eb3be704f8e62212d78884ff7e1b4cd7cec8e52e2176e0a004e38aa69",
+      "provenance": {
+        "case_sha256": "d290bc26f4dd5dc6c8d83342d451994d8dae9358a88a45e073485eb4e77a78bb",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "e192a287114fa986bd35fecbf47a018deaaf8d5bee8c77e99fdbcd43475b10de",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ACTIVE_TOL_EXACT",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ACTIVE_TOL_EXACT.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "eb8814fa579fd817a9705a0acca0264fb6236e7d920ed957e36f388e457b1804",
+      "provenance": {
+        "case_sha256": "2646ea3b4c8c01e58326655e0447348369bca6e88fa02707ade30b4bea23409d",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "5cf2cb2d9b2c81e2cda1a046d30a9ea47ca39f998e57a1c8870b7a6ac14b7ed0",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    },
+    {
+      "axes": [
+        "logical_surface",
+        "time",
+        "endpoint",
+        "xy"
+      ],
+      "case_id": "PRIM_ACTIVE_TOL_PLUS_ULP",
+      "classification": "corrected_expectation",
+      "dtype": "canonical-json/f64",
+      "field_name": "geometry",
+      "file": "corrected/PRIM_ACTIVE_TOL_PLUS_ULP.json",
+      "nonfinite_mask": [],
+      "payload_sha256": "852b5d6cc2098e27b0ffe8a87701852996d7f34aa9cca79e38b5b979d1704cd8",
+      "provenance": {
+        "case_sha256": "b2c730edf357e9dfd3c46da7e9bd786d91c602ea1b80db63ea6bf8ec4d5932d5",
+        "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
+        "method": "CDR-003/CDR-006 candidate policy applied to normalized reference",
+        "payload_sha256": "7f554a1e6908459bdadccc826a24af4b4c3e9eb7228431e99263ae3f533fe356",
+        "source": "pvlib/solarfactors@ecbfc863657e239817603a43898ae173c7ccad9c",
+        "transformation": "field-level corrections are listed in deviations"
+      },
+      "shape": [],
+      "status": "candidate",
+      "units": {
+        "angle": "degree",
+        "length": "m",
+        "orientation": "dimensionless",
+        "position": "m"
+      }
+    }
+  ],
+  "case_catalog_sha256": "1810c6403c0295fd70f8d4bd6192bc19a2fd5fda27a54f5c6b3b8f333e56135c",
+  "coverage": {
+    "artifact_count": 117,
+    "case_count": 39,
+    "tags": [
+      "DEV-016",
+      "active_length",
+      "axis",
+      "axis_azimuth",
+      "backlit",
+      "coincident",
+      "complete_cover",
+      "cut",
+      "derived_concrete",
+      "difference",
+      "endpoint",
+      "flat",
+      "geometry",
+      "ground_extent",
+      "input",
+      "invalid",
+      "left",
+      "mirror",
+      "near_flat",
+      "nonfinite",
+      "overlap",
+      "parallel",
+      "point",
+      "projection",
+      "row_count",
+      "shade_regime",
+      "sun_boundary",
+      "surface_azimuth",
+      "tilt_boundary",
+      "tolerance",
+      "topology",
+      "touch",
+      "ulp",
+      "zero_length"
+    ]
+  },
+  "generated_at_utc": "2026-09-21T22:31:14+08:00",
+  "generator": {
+    "commit": "50500914c227aaeaf738b785eea3a20d96e8ee28",
+    "files": [
+      "reference/tools/build_g2_cases.py",
+      "reference/tools/geometry_golden.py"
+    ],
+    "sha256": "32b3c882980a2ea24479efcd155fdaf5e56ed3a042f370939a22b8f9122c8e40",
+    "version": "0.1.0"
+  },
+  "golden_version": "geometry-golden-v0.1-candidate",
+  "known_deviations": [
+    {
+      "case_id": "GROUND_NORMAL_EXTENT",
+      "cdr_id": "CDR-003",
+      "corrected_expectation": [
+        -10.0,
+        10.0
+      ],
+      "dev_id": "DEV-004",
+      "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+      "field": "ground.extent",
+      "raw_reference": [
+        -100.0,
+        100.0
+      ]
+    },
+    {
+      "case_id": "GROUND_BOUNDARY_ENDPOINT",
+      "cdr_id": "CDR-003",
+      "corrected_expectation": [
+        -0.5,
+        0.5
+      ],
+      "dev_id": "DEV-004",
+      "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+      "field": "ground.extent",
+      "raw_reference": [
+        -100.0,
+        100.0
+      ]
+    },
+    {
+      "case_id": "GROUND_NEAR_BOUNDARY",
+      "cdr_id": "CDR-003",
+      "corrected_expectation": [
+        -0.500000000001,
+        0.500000000001
+      ],
+      "dev_id": "DEV-004",
+      "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+      "field": "ground.extent",
+      "raw_reference": [
+        -100.0,
+        100.0
+      ]
+    },
+    {
+      "case_id": "INVALID_EXTENT_REVERSED",
+      "cdr_id": "CDR-003",
+      "corrected_expectation": [
+        1.0,
+        -1.0
+      ],
+      "dev_id": "DEV-004",
+      "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
+      "field": "ground.extent",
+      "raw_reference": [
+        -100.0,
+        100.0
+      ]
+    },
+    {
+      "case_id": "PRIM_COMPLETE_COVER_DIFFERENCE",
+      "cdr_id": "CDR-006",
+      "corrected_expectation": 0.0,
+      "dev_id": "DEV-016",
+      "explanation": "the minuend is completely covered and the mathematical difference is empty",
+      "field": "result.length_m",
+      "raw_reference": 1.0
+    }
+  ],
+  "reference": {
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
+    "environment_id": "031158a1d1be8cdb9093",
+    "name": "pvlib/solarfactors",
+    "numpy": "2.3.5",
+    "pvlib": "0.14.0",
+    "python": "3.12.14",
+    "runtime": {
+      "environment_id": "031158a1d1be8cdb9093",
+      "geos": "3.13.1",
+      "implementation": "CPython",
+      "libc": {
+        "name": "glibc",
+        "version": "2.39"
+      },
+      "machine": "x86_64",
+      "packages": {
+        "jsonschema": "4.25.1",
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "pvlib": "0.14.0",
+        "scipy": "1.17.0",
+        "shapely": "2.1.2"
+      },
+      "platform": "Linux-6.12.76-linuxkit-x86_64-with-glibc2.39",
+      "python": "3.12.14",
+      "system": "Linux",
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0"
+      }
+    },
+    "shapely": "2.1.2",
+    "version": "v1.6.1"
+  },
+  "schema_version": "0.1",
+  "status": "candidate_recommended_for_approval",
+  "tolerance_profile": {
+    "file": "reference/tolerance/geometry-tolerance-v0.1.json",
+    "id": "geometry-tolerance-v0.1",
+    "sha256": "09f56ae5adf222340b883a3e6a0818ddfecccf788dcb558191a16e3a4b9334ab",
+    "status": "recommended_for_approval"
+  }
+}

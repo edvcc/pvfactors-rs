@@ -1,7 +1,7 @@
 # CDR-006 — Geometry 数值 Predicate 与稳定 Topology 策略
 
-- 状态：**Recommended for Approval**
-- 日期：2026-09-21
+- 状态：**APPROVED**
+- 日期：2026-09-22
 - Reference：`pvlib/solarfactors` v1.6.1，`ecbfc863657e239817603a43898ae173c7ccad9c`
 - 相关偏差：DEV-013、DEV-016、DEV-026
 
@@ -55,8 +55,20 @@ Coincident 与 parallel projection 保持为不同类型。
 后 shaded。inactive slot 保留在 logical order。过滤或合并只可生成 active view，且必须保留
 完整 key-to-active map；不同 source、side、normal、material 或 visibility 的正长度区域不得合并。
 
+## DEV-013 明确决策：以请求的 frame index 为准
+
+冻结 Reference 的 `TsGround.non_point_shaded_surfaces_at(idx)` 与
+`non_point_illum_surfaces_at(idx)` adapter 虽接收 `idx`，但调用各 ground element 时固定传入
+`0`。这是需要保留的 raw 行为证据，不是 V1 语义。
+
+V1 **不得复刻该缺陷**。所有按帧选择的 lookup 都必须使用请求的 frame index，包括非零
+index。`SurfaceKey` 与 `ReferenceIndex` 跨帧保持稳定；activity 与 `ActiveIndex` 必须根据请求帧
+上的数值 surface 派生。`MULTI_TIMESTEP_NONZERO_INDEX` 案例把冻结 Reference 的
+`idx=1 -> 0` 结果保留为 raw evidence，并把真实 frame 1 selection 作为 DEV-013 corrected
+expectation。该修正不改变任何 predicate 数值或 boundary operator。
+
 ## 批准效果
 
-Owner 批准后，本 predicate 与 topology 语义才对 P3 冻结。此前 G2 保持
-`CONDITIONALLY PASS`，Awaiting Repository Owner Approval。
-
+Repository Owner 已于 2026-09-22 批准本 predicate 与 topology 语义；它们现为 ACTIVE
+P3 Entry Contract 的冻结输入。predicate 数值、boundary operator、DEV-013/DEV-016 追溯及
+raw/corrected 区分保持不变。

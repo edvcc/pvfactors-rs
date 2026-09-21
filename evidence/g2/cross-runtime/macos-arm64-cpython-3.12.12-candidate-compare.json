@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "candidate": "macos-arm64-cpython-3.12.12-owner-revision-1-candidate",
+  "fresh_generation": "independent macOS arm64 / CPython 3.12.12 generation",
+  "comparison": "byte-for-byte canonical JSON",
+  "differences": []
+}

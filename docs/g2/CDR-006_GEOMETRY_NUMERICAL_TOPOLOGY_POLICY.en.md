@@ -1,7 +1,7 @@
 # CDR-006 — Geometry Numerical Predicate and Stable Topology Policy
 
-- Status: **Recommended for Approval**
-- Date: 2026-09-21
+- Status: **APPROVED**
+- Date: 2026-09-22
 - Reference: `pvlib/solarfactors` v1.6.1, `ecbfc863657e239817603a43898ae173c7ccad9c`
 - Related deviations: DEV-013, DEV-016, DEV-026
 
@@ -68,8 +68,24 @@ produce an active view only if the complete key-to-active map remains available
 and positive-length regions with different source, side, normal, material, or
 visibility are not merged.
 
+## Explicit DEV-013 decision: requested frame index is authoritative
+
+The frozen Reference `TsGround.non_point_shaded_surfaces_at(idx)` and
+`non_point_illum_surfaces_at(idx)` adapters accept `idx` but call each ground
+element with index `0`. This is recorded raw behavior, not V1 semantics.
+
+V1 **must not reproduce that defect**. Every frame-selecting lookup evaluates
+the requested frame index, including nonzero indices. `SurfaceKey` and
+`ReferenceIndex` remain stable across frames; activity and `ActiveIndex` are
+derived from the numerical surface at the requested frame. The
+`MULTI_TIMESTEP_NONZERO_INDEX` case records the frozen `idx=1 -> 0` result as
+raw evidence and the true frame-1 selection as the DEV-013 corrected
+expectation. This correction changes neither the predicate values nor their
+boundary operators.
+
 ## Approval effect
 
-Owner approval would freeze these predicates and topology semantics for P3.
-Until then G2 remains `CONDITIONALLY PASS`, Awaiting Repository Owner Approval.
-
+The Repository Owner approved these predicates and topology semantics on
+2026-09-22. They are frozen input to the active P3 Entry Contract. Predicate
+values, boundary operators, DEV-013/DEV-016 traceability, and the
+raw/corrected distinction remain unchanged.

@@ -31,8 +31,22 @@ SCHEMAS = ROOT / "reference/schemas"
 DEFAULT_CANDIDATE = ROOT / "reference/candidate/geometry-golden-v0.1"
 REFERENCE_SHA = "ecbfc863657e239817603a43898ae173c7ccad9c"
 REFERENCE_VERSION = "v1.6.1"
-GENERATOR_VERSION = "0.1.0"
+GENERATOR_VERSION = "0.3.0"
 REFERENCE_EXTENT = [-100.0, 100.0]
+CANONICAL_RUNTIME = {
+    "implementation": "CPython",
+    "python": "3.12.14",
+    "system": "Linux",
+    "machine": "x86_64",
+    "libc": {"name": "glibc", "version": "2.39"},
+    "geos": "3.13.1",
+    "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "PYTHONHASHSEED": "0",
+    },
+}
 
 sys.path.insert(0, str(REFERENCE_SOURCE))
 
@@ -85,11 +99,20 @@ def runtime_identity() -> dict:
             packages[name] = md.version(name)
         except md.PackageNotFoundError:
             packages[name] = "MISSING"
+    libc_name, libc_version = platform.libc_ver()
+    try:
+        import shapely
+        geos = shapely.geos_version_string
+    except (ImportError, AttributeError):
+        geos = "MISSING"
     base = {
         "python": platform.python_version(),
         "implementation": platform.python_implementation(),
+        "system": platform.system(),
         "platform": platform.platform(),
         "machine": platform.machine(),
+        "libc": {"name": libc_name, "version": libc_version},
+        "geos": geos,
         "packages": packages,
         "thread_environment": {
             key: os.environ.get(key, "")
@@ -182,8 +205,8 @@ def validate_v1(case: dict) -> list[dict]:
         error("GEOMETRY_WIDTH", "geometry.pvrow_width", "row width must be finite and > 0")
     if not finite_number(height):
         error("GEOMETRY_HEIGHT", "geometry.pvrow_height", "row height must be finite")
-    if not finite_number(gcr) or not (0 < gcr <= 1):
-        error("GEOMETRY_GCR", "geometry.gcr", "V1 gcr must be in (0, 1]")
+    if not finite_number(gcr) or gcr <= 0:
+        error("GEOMETRY_GCR", "geometry.gcr", "V1 gcr must be finite and > 0")
     extent = geometry.get("ground_extent")
     if not (isinstance(extent, list) and len(extent) == 2 and all(finite_number(v) for v in extent)):
         error("GEOMETRY_EXTENT", "geometry.ground_extent", "ground extent must contain two finite bounds")
@@ -217,10 +240,10 @@ def validate_v1(case: dict) -> list[dict]:
     assert finite_number(axis) and finite_number(width) and finite_number(height) and finite_number(gcr)
     for index, (zenith, tilt, surface_azimuth) in enumerate(zip(
             inputs["solar_zenith"], inputs["surface_tilt"], inputs["surface_azimuth"], strict=True)):
-        if not 0.0 <= zenith <= 90.0:
-            error("GEOMETRY_SOLAR_DOMAIN", f"inputs.solar_zenith[{index}]", "V1 geometry supports zenith in [0, 90]")
-        if not 0.0 <= tilt <= 90.0:
-            error("GEOMETRY_TILT_UNSUPPORTED", f"inputs.surface_tilt[{index}]", "V1 supports tilt in [0, 90]")
+        if not 0.0 <= zenith <= 180.0:
+            error("GEOMETRY_SOLAR_DOMAIN", f"inputs.solar_zenith[{index}]", "V1 geometry represents zenith in [0, 180]")
+        if not 0.0 <= tilt <= 180.0:
+            error("GEOMETRY_TILT_UNSUPPORTED", f"inputs.surface_tilt[{index}]", "V1 supports tilt in [0, 180]")
         if tilt > 0.0:
             relationship = circular_distance(normalize_angle(surface_azimuth - axis), 90.0)
             relationship = min(relationship, circular_distance(normalize_angle(surface_azimuth - axis), 270.0))
@@ -307,6 +330,26 @@ def ordered_surface_records(pvarray: Any) -> list[dict]:
                 record["active_index"][frame] = active_index
                 active_index += 1
     return records
+
+
+def static_surface_snapshot(surface: Any) -> dict:
+    """Serialize one static surface without losing its frozen matrix index."""
+    return {
+        "reference_index": int(surface.index),
+        "shaded": bool(surface.shaded),
+        "coordinates_m": [[float(x), float(y)] for x, y in surface.coords],
+        "length_m": float(surface.length),
+    }
+
+
+def requested_ground_surfaces_at(ground: Any, idx: int) -> list[dict]:
+    """Evaluate each ground element at the requested frame, preserving adapter order."""
+    surfaces = []
+    for element in ground.illum_elements:
+        surfaces.extend(element.non_point_surfaces_at(idx))
+    for element in ground.shadow_elements:
+        surfaces.extend(element.non_point_surfaces_at(idx))
+    return [static_surface_snapshot(surface) for surface in surfaces]
 
 
 def capture_ordered(case: dict) -> tuple[str, dict, list[dict]]:
@@ -403,9 +446,39 @@ def capture_ordered(case: dict) -> tuple[str, dict, list[dict]]:
         "warnings": caught,
     }
     deviations = []
+    if case["id"] == "MULTI_TIMESTEP_NONZERO_INDEX":
+        requested_index = 1
+        frozen_selection = [
+            static_surface_snapshot(surface)
+            for surface in ground.non_point_surfaces_at(requested_index)
+        ]
+        requested_selection = requested_ground_surfaces_at(ground, requested_index)
+        raw_lookup = {
+            "requested_index": requested_index,
+            "selection": frozen_selection,
+            "selection_count": len(frozen_selection),
+            "evaluation_policy": "frozen_adapter_forces_index_zero",
+        }
+        corrected_lookup = {
+            "requested_index": requested_index,
+            "selection": requested_selection,
+            "selection_count": len(requested_selection),
+            "evaluation_policy": "evaluate_requested_frame",
+        }
+        result["nonzero_index_ground_lookup"] = raw_lookup
+        deviations.append({
+            "dev_id": "DEV-013", "cdr_id": "CDR-006",
+            "path": "$.result.nonzero_index_ground_lookup",
+            "raw_reference": raw_lookup,
+            "corrected_expectation": corrected_lookup,
+            "explanation": (
+                "the frozen TsGround adapter ignores idx and evaluates frame zero; "
+                "V1 evaluates the requested nonzero frame"
+            ),
+        })
     if geometry["ground_extent"] != REFERENCE_EXTENT:
         deviations.append({
-            "dev_id": "DEV-004", "cdr_id": "CDR-003", "field": "ground.extent",
+            "dev_id": "DEV-004", "cdr_id": "CDR-003", "path": "$.result.ground.corrected_extent_m",
             "raw_reference": REFERENCE_EXTENT, "corrected_expectation": geometry["ground_extent"],
             "explanation": "frozen reference hard-codes a numerical extent; V1 exposes a finite public extent",
         })
@@ -429,7 +502,7 @@ def primitive_reference(case: dict) -> tuple[str, dict, list[dict]]:
                   "geometry_type": geometry.geom_type, "coordinates": coords, "length_m": float(geometry.length)}
         if case["id"] == "PRIM_COMPLETE_COVER_DIFFERENCE":
             deviations.append({
-                "dev_id": "DEV-016", "cdr_id": "CDR-006", "field": "result.length_m",
+                "dev_id": "DEV-016", "cdr_id": "CDR-006", "path": "$.result.length_m",
                 "raw_reference": float(geometry.length), "corrected_expectation": 0.0,
                 "explanation": "the minuend is completely covered and the mathematical difference is empty",
             })
@@ -461,6 +534,28 @@ def primitive_reference(case: dict) -> tuple[str, dict, list[dict]]:
         return "candidate", {"outcome": "captured", "operation": operation,
                              "length_m": length, "active": length > 1e-8,
                              "logical_slot_retained": True}, deviations
+    if operation == "classify_endpoint_snap":
+        endpoint, candidate = args["endpoint"], args["candidate"]
+        distance = math.hypot(candidate[0] - endpoint[0], candidate[1] - endpoint[1])
+        return "candidate", {"outcome": "captured", "operation": operation,
+                             "distance_m": distance, "snapped": distance < 1e-8}, deviations
+    if operation == "classify_orientation":
+        u, v = args["u"], args["v"]
+        cross = abs(u[0] * v[1] - u[1] * v[0])
+        normalized = cross / (math.hypot(*u) * math.hypot(*v))
+        threshold = max(1e-12, 64.0 * sys.float_info.epsilon)
+        return "candidate", {"outcome": "captured", "operation": operation,
+                             "normalized_abs_cross": normalized,
+                             "parallel": normalized <= threshold,
+                             "threshold": threshold}, deviations
+    if operation == "classify_line_offset":
+        line, point = args["line"], args["point"]
+        offset = float(LineString(line).distance(Point(point)))
+        scale = float(args["coordinate_scale_m"])
+        threshold = max(1e-10, 64.0 * sys.float_info.epsilon * max(1.0, scale))
+        return "candidate", {"outcome": "captured", "operation": operation,
+                             "offset_m": offset, "within": offset <= threshold,
+                             "threshold_m": threshold}, deviations
     raise ValueError(f"unknown primitive operation: {operation}")
 
 
@@ -475,6 +570,14 @@ def artifact(case: dict, classification: str, status: str, result: dict,
     encoded_result = encode_nonfinite(result, "$.result", mask)
     case_hash = sha256_bytes(canonical_bytes(case))
     payload_hash = sha256_bytes(canonical_bytes(encoded_result))
+    if case["kind"] == "ordered_pvarray":
+        method = "direct frozen-reference introspection"
+    elif case["primitive"]["operation"] in {
+        "classify_endpoint_snap", "classify_orientation", "classify_line_offset",
+    }:
+        method = "deterministic CDR-006 predicate probe"
+    else:
+        method = "direct frozen primitive invocation"
     return {
         "schema_version": "0.1",
         "case_id": case["id"],
@@ -486,7 +589,7 @@ def artifact(case: dict, classification: str, status: str, result: dict,
         "result": encoded_result,
         "provenance": {
             "source": f"pvlib/solarfactors@{REFERENCE_SHA}",
-            "method": "direct frozen-reference introspection" if case["kind"] == "ordered_pvarray" else "direct frozen primitive invocation",
+            "method": method,
             "transformation": "none" if classification == "raw_reference" else classification,
             "license_relevance": "derived fixture; upstream BSD-3-Clause notice retained in reference/PVLIB_LICENSE.txt",
             "case_sha256": case_hash,
@@ -549,6 +652,147 @@ def clip_ground(result: dict, extent: list[float]) -> dict:
     return value
 
 
+def projection_policy_state(zenith: float) -> str:
+    if zenith < 90.0:
+        return "direct_projection"
+    if zenith == 90.0:
+        return "horizon_no_direct_projection"
+    return "below_horizon_no_direct_projection"
+
+
+def projection_state_deviation(normalized: dict, state: str) -> dict:
+    raw = [entry["classification"] for entry in normalized["result"].get("projection", [])]
+    return {
+        "dev_id": "DEV-027",
+        "cdr_id": "CDR-003",
+        "path": "$.result.projection[*].classification",
+        "raw_reference": raw,
+        "corrected_expectation": [state] * len(raw),
+        "explanation": (
+            "the frozen Geometry reference exposes projected coordinates but no product-level "
+            "direct/horizon/below-horizon state; CDR-003 supplies that explicit representation"
+        ),
+    }
+
+
+def no_direct_projection_result(case: dict, normalized: dict, state: str) -> tuple[dict, list[dict]]:
+    """Build the CDR-003 policy layer without rewriting frozen raw evidence."""
+    raw = normalized["result"]
+    geometry = decode_number(case["geometry"])
+    inputs = decode_number(case["inputs"])
+    extent = geometry["ground_extent"]
+    n_states = len(inputs["solar_zenith"])
+    rows = copy.deepcopy(raw.get("pv_rows", []))
+    for row in rows:
+        row["shaded_length_front_m"] = [0.0] * n_states
+        row["shaded_length_back_m"] = [0.0] * n_states
+
+    surfaces = []
+    for row_index in range(geometry["n_pvrows"]):
+        key = {
+            "kind": "ground", "source": "shadow", "ground_element": row_index,
+            "cut_interval": 0, "row": None, "side": None, "segment": None,
+            "illumination": "shaded",
+        }
+        surfaces.append({
+            "logical_key": key,
+            "reference_index": row_index,
+            "active": [False] * n_states,
+            "active_index": [None] * n_states,
+            "shaded": True,
+            "coordinates_m": [[[extent[0], 0.0], [extent[0], 0.0]] for _ in range(n_states)],
+            "length_m": [0.0] * n_states,
+            "normal": None,
+        })
+    illuminated_key = {
+        "kind": "ground", "source": "illumination", "ground_element": 0,
+        "cut_interval": 0, "row": None, "side": None, "segment": None,
+        "illumination": "illuminated",
+    }
+    surfaces.append({
+        "logical_key": illuminated_key,
+        "reference_index": len(surfaces),
+        "active": [True] * n_states,
+        "active_index": [0] * n_states,
+        "shaded": False,
+        "coordinates_m": [[[extent[0], 0.0], [extent[1], 0.0]] for _ in range(n_states)],
+        "length_m": [extent[1] - extent[0]] * n_states,
+        "normal": None,
+    })
+    projections = []
+    for entry in raw.get("projection", []):
+        projections.append({
+            **copy.deepcopy(entry),
+            "classification": state,
+        })
+    topology = {
+        "logical_surface_count": len(surfaces),
+        "active_surface_count": [1] * n_states,
+        "reference_order": [surface["logical_key"] for surface in surfaces],
+        "reference_to_active": [surface["active_index"] for surface in surfaces],
+    }
+    result = {
+        "outcome": "classified_state",
+        "state": state,
+        "projection": projections,
+        "pv_rows": rows,
+        "ground": {
+            "requested_extent_m": extent,
+            "direct_projection_state": state,
+            "direct_shadow_surfaces": surfaces[:-1],
+            "illuminated_surfaces": surfaces[-1:],
+        },
+        "surfaces": surfaces,
+        "topology": topology,
+        "warnings": copy.deepcopy(raw.get("warnings", [])),
+    }
+    deviations = [
+        projection_state_deviation(normalized, state),
+        {
+            "dev_id": "DEV-027", "cdr_id": "CDR-003", "path": "$.result.outcome",
+            "raw_reference": raw.get("outcome"), "corrected_expectation": result["outcome"],
+            "explanation": "the no-direct Geometry policy is emitted as a structured classified state",
+        },
+        {
+            "dev_id": "DEV-027", "cdr_id": "CDR-003", "path": "$.result.state",
+            "raw_reference": None, "corrected_expectation": state,
+            "explanation": "the frozen reference has no product-level horizon/below-horizon state field",
+        },
+    ]
+    for side in ("front", "back"):
+        path = f"$.result.pv_rows[*].shaded_length_{side}_m"
+        deviations.append({
+            "dev_id": "DEV-027", "cdr_id": "CDR-003", "path": path,
+            "raw_reference": [row[f"shaded_length_{side}_m"] for row in raw.get("pv_rows", [])],
+            "corrected_expectation": [row[f"shaded_length_{side}_m"] for row in rows],
+            "explanation": f"{state} has no direct {side}-side row shadow in the Geometry policy layer",
+        })
+    deviations.extend([
+        {
+            "dev_id": "DEV-027", "cdr_id": "CDR-003", "path": "$.result.ground",
+            "raw_reference": {
+                "clipped_shadow_elements": raw.get("ground", {}).get("clipped_shadow_elements", []),
+                "illuminated_elements": raw.get("ground", {}).get("illuminated_elements", []),
+            },
+            "corrected_expectation": result["ground"],
+            "explanation": f"{state} retains finite ground but has no active direct-shadow partition",
+        },
+        {
+            "dev_id": "DEV-027", "cdr_id": "CDR-003", "path": "$.result.topology",
+            "raw_reference": raw.get("topology", {}),
+            "corrected_expectation": topology,
+            "explanation": "policy topology retains inactive direct-shadow slots and one active illuminated ground slot",
+        },
+        {
+            "dev_id": "DEV-027", "cdr_id": "CDR-003", "path": "$.result.surfaces",
+            "raw_reference": raw.get("surfaces", []),
+            "corrected_expectation": surfaces,
+            "explanation": "policy surfaces materialize the topology as inactive shadows plus illuminated finite ground",
+        },
+    ])
+    return result, deviations
+
+
 def corrected_artifact(case: dict, normalized: dict) -> dict:
     errors = validate_v1(case)
     deviations = copy.deepcopy(normalized["deviations"])
@@ -560,19 +804,26 @@ def corrected_artifact(case: dict, normalized: dict) -> dict:
         status = "candidate"
     else:
         inputs = decode_number(case["inputs"])
-        if any(abs(value - 90.0) <= 5e-11 for value in inputs["solar_zenith"]):
-            result = {
-                "outcome": "classified_state",
-                "state": "horizon_no_direct_projection",
-                "pv_rows": copy.deepcopy(normalized["result"].get("pv_rows", [])),
-                "ground_policy": "all finite extent illuminated; direct shadow surfaces inactive",
-                "projection": copy.deepcopy(normalized["result"].get("projection", [])),
-            }
+        states = [projection_policy_state(value) for value in inputs["solar_zenith"]]
+        if any(state != "direct_projection" for state in states):
+            if len(set(states)) != 1:
+                raise ValueError("mixed direct and no-direct states require a separately versioned batch policy")
+            result, state_deviations = no_direct_projection_result(case, normalized, states[0])
+            deviations.extend(state_deviations)
         else:
             result = copy.deepcopy(normalized["result"])
+            for projection in result.get("projection", []):
+                projection["classification"] = "direct_projection"
+            deviations.append(projection_state_deviation(normalized, "direct_projection"))
             extent = decode_number(case["geometry"])["ground_extent"]
             if result.get("outcome") == "captured" and extent != REFERENCE_EXTENT:
                 result = clip_ground(result, extent)
+            if case["id"] == "MULTI_TIMESTEP_NONZERO_INDEX":
+                correction = next(
+                    deviation["corrected_expectation"] for deviation in deviations
+                    if deviation["dev_id"] == "DEV-013"
+                )
+                result["nonzero_index_ground_lookup"] = copy.deepcopy(correction)
         status = "candidate"
     value = artifact(case, "corrected_expectation", status, result, deviations)
     value["provenance"]["method"] = "CDR-003/CDR-006 candidate policy applied to normalized reference"
@@ -698,6 +949,36 @@ def compare_directories(left: Path, right: Path) -> list[str]:
 
 def numeric_close(a: float, b: float, absolute: float, relative: float) -> bool:
     return abs(a - b) <= absolute + relative * max(abs(a), abs(b))
+
+
+def segment_intersection(a: list[float], b: list[float], c: list[float], d: list[float]) -> bool:
+    """Exact-shape row conflict probe; touching or overlap is an intersection."""
+    rx, ry = b[0] - a[0], b[1] - a[1]
+    sx, sy = d[0] - c[0], d[1] - c[1]
+    denominator = rx * sy - ry * sx
+    qpx, qpy = c[0] - a[0], c[1] - a[1]
+    scale = max(1.0, abs(rx), abs(ry), abs(sx), abs(sy), abs(qpx), abs(qpy))
+    epsilon = 64.0 * sys.float_info.epsilon * scale * scale
+    if abs(denominator) > epsilon:
+        t = (qpx * sy - qpy * sx) / denominator
+        u = (qpx * ry - qpy * rx) / denominator
+        return 0.0 <= t <= 1.0 and 0.0 <= u <= 1.0
+    if abs(qpx * ry - qpy * rx) > epsilon:
+        return False
+    axis = 0 if abs(rx) >= abs(ry) else 1
+    left = sorted((a[axis], b[axis]))
+    right = sorted((c[axis], d[axis]))
+    return max(left[0], right[0]) <= min(left[1], right[1])
+
+
+def all_finite(value: Any) -> bool:
+    if isinstance(value, float):
+        return math.isfinite(value)
+    if isinstance(value, dict):
+        return all(all_finite(item) for item in value.values())
+    if isinstance(value, list):
+        return all(all_finite(item) for item in value)
+    return True
 
 
 def validate_invariants(output: Path, cases_path: Path = CASES) -> dict:
@@ -829,6 +1110,117 @@ def validate_invariants(output: Path, cases_path: Path = CASES) -> dict:
             mirror_failures.append(f"row {row_index} normal")
     reports.append({"case_id": "MIRROR_PAIR", "pass": not mirror_failures, "failures": mirror_failures})
     failures.extend(f"MIRROR_PAIR: {failure}" for failure in mirror_failures)
+
+    # Owner Review Revision 1 targeted acceptance checks.
+    for case_id, expected_rotation in (("TILT_120", -120.0), ("TILT_180", -180.0)):
+        item = read_json(output / "corrected" / f"{case_id}.json")
+        result = item["result"]
+        case_failures = []
+        projection = result.get("projection", [])
+        if item["status"] != "candidate" or result.get("outcome") != "captured":
+            case_failures.append("legal tilt was rejected or not captured")
+        if not projection or not numeric_close(
+                projection[0]["rotation_deg"], expected_rotation,
+                tolerance["comparison"]["angle"]["absolute"],
+                tolerance["comparison"]["angle"]["relative"]):
+            case_failures.append(f"rotation is not {expected_rotation} degrees")
+        if projection and projection[0].get("classification") != "direct_projection":
+            case_failures.append("direct projection classification missing")
+        for row in result.get("pv_rows", []):
+            front = row["front_normal"][0]
+            back = row["back_normal"][0]
+            if not all(numeric_close(front[i], -back[i], 5e-12, 5e-13) for i in (0, 1)):
+                case_failures.append(f"row {row['row']} front/back normals are not opposite")
+        sides = {
+            surface["logical_key"]["side"] for surface in result.get("surfaces", [])
+            if surface["logical_key"]["kind"] == "pvrow"
+        }
+        if sides != {"front", "back"}:
+            case_failures.append("front/back logical sides were folded or lost")
+        reports.append({"case_id": f"{case_id}_OWNER_REVIEW", "pass": not case_failures,
+                        "failures": case_failures})
+        failures.extend(f"{case_id}: {failure}" for failure in case_failures)
+
+    gcr_item = read_json(output / "corrected/GCR_GT_1.json")
+    gcr_result = gcr_item["result"]
+    gcr_failures = []
+    if gcr_item["status"] != "candidate" or gcr_result.get("outcome") != "captured":
+        gcr_failures.append("gcr > 1 was rejected as a numeric proxy")
+    row_segments = [row["endpoints_m"][0] for row in gcr_result.get("pv_rows", [])]
+    for left_index, left in enumerate(row_segments):
+        for right_index, right in enumerate(row_segments[left_index + 1:], left_index + 1):
+            if segment_intersection(left[0], left[1], right[0], right[1]):
+                gcr_failures.append(f"actual row intersection {left_index}/{right_index}")
+    reports.append({"case_id": "GCR_GT_1_OWNER_REVIEW", "pass": not gcr_failures,
+                    "failures": gcr_failures})
+    failures.extend(f"GCR_GT_1: {failure}" for failure in gcr_failures)
+
+    for case_id, expected_state in (
+        ("SUN_90.0", "horizon_no_direct_projection"),
+        ("SUN_BELOW_HORIZON", "below_horizon_no_direct_projection"),
+    ):
+        item = read_json(output / "corrected" / f"{case_id}.json")
+        result = item["result"]
+        case_failures = []
+        if result.get("outcome") != "classified_state" or result.get("state") != expected_state:
+            case_failures.append("structured no-direct state mismatch")
+        if not all_finite(result):
+            case_failures.append("corrected no-direct result contains a nonfinite value")
+        for projection in result.get("projection", []):
+            if projection.get("classification") != expected_state:
+                case_failures.append("projection state is misclassified")
+        shadows = result.get("ground", {}).get("direct_shadow_surfaces", [])
+        if not shadows or any(any(surface["active"]) or any(surface["length_m"]) for surface in shadows):
+            case_failures.append("direct-shadow logical surfaces are not retained inactive")
+        illuminated = result.get("ground", {}).get("illuminated_surfaces", [])
+        extent = decode_number(case_map[case_id]["geometry"])["ground_extent"]
+        if (len(illuminated) != 1
+                or illuminated[0]["coordinates_m"][0] != [[extent[0], 0.0], [extent[1], 0.0]]
+                or illuminated[0]["active"] != [True]):
+            case_failures.append("finite ground is not one complete illuminated partition")
+        topology = result.get("topology", {})
+        surfaces = result.get("surfaces", [])
+        if (topology.get("logical_surface_count") != len(surfaces)
+                or topology.get("active_surface_count") != [1]
+                or [surface["reference_index"] for surface in surfaces] != list(range(len(surfaces)))):
+            case_failures.append("no-direct topology/index contract mismatch")
+        reports.append({"case_id": f"{case_id}_OWNER_REVIEW", "pass": not case_failures,
+                        "failures": case_failures})
+        failures.extend(f"{case_id}: {failure}" for failure in case_failures)
+
+    # Owner Review Revision 2: DEV-013 must be observable and corrected at a
+    # genuinely nonzero frame, without changing logical/reference identity.
+    case_id = "MULTI_TIMESTEP_NONZERO_INDEX"
+    raw_item = read_json(output / "raw" / f"{case_id}.json")
+    corrected_item = read_json(output / "corrected" / f"{case_id}.json")
+    raw_lookup = raw_item["result"].get("nonzero_index_ground_lookup", {})
+    corrected_lookup = corrected_item["result"].get("nonzero_index_ground_lookup", {})
+    index_failures = []
+    if raw_lookup.get("requested_index") != 1 or corrected_lookup.get("requested_index") != 1:
+        index_failures.append("probe did not request nonzero frame index one")
+    if raw_lookup.get("selection") == corrected_lookup.get("selection"):
+        index_failures.append("case does not expose the frozen idx-to-zero adapter defect")
+    if corrected_lookup.get("evaluation_policy") != "evaluate_requested_frame":
+        index_failures.append("corrected lookup does not evaluate the requested frame")
+    frame_one_ground = {
+        surface["reference_index"] for surface in corrected_item["result"].get("surfaces", [])
+        if surface["logical_key"]["kind"] == "ground" and surface["active"][1]
+    }
+    selected_ground = {
+        surface["reference_index"] for surface in corrected_lookup.get("selection", [])
+    }
+    if selected_ground != frame_one_ground:
+        index_failures.append("corrected selection does not match frame-one active ground topology")
+    if not any(
+        deviation.get("dev_id") == "DEV-013"
+        and deviation.get("cdr_id") == "CDR-006"
+        and deviation.get("path") == "$.result.nonzero_index_ground_lookup"
+        for deviation in corrected_item.get("deviations", [])
+    ):
+        index_failures.append("DEV-013 field-level deviation is missing")
+    reports.append({"case_id": f"{case_id}_OWNER_REVIEW", "pass": not index_failures,
+                    "failures": index_failures})
+    failures.extend(f"{case_id}: {failure}" for failure in index_failures)
     return {"pass": not failures, "case_reports": reports, "failures": failures}
 
 
@@ -837,8 +1229,13 @@ def deviation_report(output: Path) -> dict:
     for path in sorted((output / "corrected").glob("*.json")):
         item = read_json(path)
         rows.extend({"case_id": item["case_id"], **entry} for entry in item["deviations"])
-    return {"schema_version": "0.1", "pass": all(row.get("dev_id") and row.get("cdr_id") for row in rows),
-            "differences": rows}
+    required = ("dev_id", "cdr_id", "path", "raw_reference", "corrected_expectation", "explanation")
+    incomplete = [
+        {"case_id": row.get("case_id"), "missing": [key for key in required if key not in row]}
+        for row in rows if any(key not in row for key in required)
+    ]
+    return {"schema_version": "0.1", "pass": not incomplete,
+            "required_fields": list(required), "incomplete": incomplete, "differences": rows}
 
 
 def validate_docs() -> dict:
@@ -877,8 +1274,15 @@ def environment_report() -> dict:
             requirements[name] = version
     runtime = runtime_identity()
     mismatches = []
-    if runtime["python"] != "3.12.14":
-        mismatches.append(f"Python {runtime['python']} != canonical 3.12.14")
+    for field in ("implementation", "python", "system", "machine", "libc", "geos"):
+        actual = runtime[field]
+        expected = CANONICAL_RUNTIME[field]
+        if actual != expected:
+            mismatches.append(f"{field} {actual} != canonical {expected}")
+    for name, expected in CANONICAL_RUNTIME["thread_environment"].items():
+        actual = runtime["thread_environment"][name]
+        if actual != expected:
+            mismatches.append(f"{name} {actual!r} != canonical {expected!r}")
     for name, expected in requirements.items():
         try:
             actual = md.version(name)
@@ -887,6 +1291,7 @@ def environment_report() -> dict:
         if actual != expected:
             mismatches.append(f"{name} {actual} != {expected}")
     return {"canonical_environment_match": not mismatches, "runtime": runtime,
+            "canonical_runtime": CANONICAL_RUNTIME,
             "canonical_requirements": requirements, "mismatches": mismatches}
 
 

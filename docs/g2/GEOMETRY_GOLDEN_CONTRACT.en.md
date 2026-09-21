@@ -1,6 +1,6 @@
 # Geometry Golden Contract
 
-- Status: **Recommended for Approval**
+- Status: **APPROVED**
 - Candidate version: `geometry-golden-v0.1-candidate`
 - Tolerance: `geometry-tolerance-v0.1`
 - Reference: `pvlib/solarfactors` v1.6.1, `ecbfc863657e239817603a43898ae173c7ccad9c`
@@ -23,7 +23,8 @@ Owner approves the named set.
    nonfinite mask, logical key, `ReferenceIndex`, and per-frame active map. It
    does not correct behavior.
 3. `corrected_expectation` applies only named CDR/DEV decisions. Every changed
-   field records the raw value, corrected value, DEV ID, CDR ID, and explanation.
+   field records its field-level path, raw value, corrected value, DEV ID, CDR
+   ID, and explanation.
 
 No generator may rewrite raw evidence to make comparison pass. A corrected
 field without decision provenance invalidates the candidate.
@@ -47,6 +48,13 @@ contain structured V1 errors and `panic=false`.
 `{kind, source, row, side, segment, illumination, ground_element, cut_interval}`.
 It survives zero length. The exact reference and reconstruction order is fixed
 by CDR-006; vector position is not an identity.
+
+The corrected Geometry representation classifies solar zenith as
+`direct_projection`, `horizon_no_direct_projection`, or
+`below_horizon_no_direct_projection`. A no-direct artifact retains finite row
+geometry and stable inactive ground-shadow logical slots, plus one active
+illuminated surface spanning the configured finite extent. It contains no huge
+or nonfinite direct shadow and does not decide the later simulation skip policy.
 
 ## Manifest and provenance
 
@@ -72,8 +80,10 @@ generation nondeterminism or topology differences.
 
 ## Governance
 
-Tools write only to `reference/candidate`. `reference/approved` remains
-`NOT APPROVED`. Approval must name the candidate manifest hash and approve
-CDR-003, CDR-006, and the candidate. Until then G2 is
-`CONDITIONALLY PASS`, Awaiting Repository Owner Approval.
-
+Generation tools write only to `reference/candidate`; they never overwrite
+`reference/approved`. The Repository Owner approved CDR-003, CDR-006,
+`geometry-tolerance-v0.1`, and source candidate manifest
+`efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b` on
+2026-09-22. The byte-identical approved corpus is immutable at
+`reference/approved/geometry-golden-v0.1`. Any manifest change is a new
+approval object requiring a new explicit Owner decision. G2 is `PASS`.

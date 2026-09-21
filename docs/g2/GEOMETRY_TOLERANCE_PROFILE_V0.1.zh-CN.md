@@ -1,6 +1,6 @@
 # Geometry Tolerance Profile v0.1
 
-- 状态：**Recommended for Approval**
+- 状态：**APPROVED**
 - 机器可读源：`reference/tolerance/geometry-tolerance-v0.1.json`
 - 范围：仅 Geometry Gate
 
@@ -23,6 +23,6 @@ Topology、side、illumination class、logical key、source、case ID、`Referen
 不能替代 algorithm predicate。本 profile 不冻结 View Factor、Perez、Radiosity 或 aggregate
 irradiance tolerance。
 
-这些数值是依据 f64 运算尺度、冻结 Reference 分支与同环境采集形成的初始审查候选；
-不宣称已完成跨平台标定。G2 保持 `CONDITIONALLY PASS`，Awaiting Repository Owner Approval。
-
+Repository Owner 已于 2026-09-22 批准这些准确数值；适用范围仍仅为 Geometry Gate。
+Comparator tolerance 不替代 algorithm predicate，且本 profile 不适用于 View Factor、Perez、
+Radiosity 或 aggregate irradiance。
