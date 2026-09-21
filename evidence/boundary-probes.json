@@ -1,0 +1,59 @@
+{
+  "difference_full_cover": {
+    "u": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "v": [
+      [
+        -1.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ]
+    ],
+    "returned_wkt": "LINESTRING (0 0, 1 0)",
+    "returned_length": 1.0,
+    "expected_length": 0.0
+  },
+  "collinearity_is_not_normalized": {
+    "unscaled": true,
+    "scaled100": false
+  },
+  "custom_aoi_ground": {
+    "active_ground_indices": [
+      0,
+      4,
+      5,
+      9,
+      10,
+      12,
+      16,
+      21,
+      26,
+      27
+    ],
+    "max_G_minus_F": 0.0,
+    "qabs_minus_075qinc": [
+      7.122559553355956,
+      6.9462496005393675,
+      6.1111847700928905,
+      6.96942179569481,
+      6.52686964003189,
+      9.781081147796044,
+      5.550056400110748,
+      5.324006226457243,
+      7.440557665555161,
+      9.788216914891791
+    ],
+    "maximum_absorption_excess": 9.788216914891791
+  }
+}

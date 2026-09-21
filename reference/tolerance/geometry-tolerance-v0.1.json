@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "profile_id": "geometry-tolerance-v0.1",
+  "status": "recommended_for_approval",
+  "scope": "geometry_gate_only",
+  "algorithm_predicates": {
+    "active_length_m": 1e-8,
+    "endpoint_snap_m": 1e-8,
+    "orientation_normalized_cross_abs": 1e-12,
+    "position_offset_abs_m": 1e-10,
+    "scale_roundoff_factor": 64.0,
+    "scale_formula": "max(abs_floor, scale_roundoff_factor * f64_epsilon * max(1, coordinate_scale_m))",
+    "boundary_operators": {
+      "active": "length > active_length_m",
+      "endpoint_snap": "distance < endpoint_snap_m",
+      "orientation": "normalized_abs_cross <= max(orientation_normalized_cross_abs, scale_roundoff_factor*f64_epsilon)",
+      "position_offset": "distance <= scale_aware_position_offset"
+    }
+  },
+  "comparison": {
+    "orientation": {"absolute": 5e-12, "relative": 5e-13, "unit": "dimensionless"},
+    "position": {"absolute": 5e-12, "relative": 5e-13, "unit": "m"},
+    "length": {"absolute": 5e-12, "relative": 5e-13, "unit": "m"},
+    "angle": {"absolute": 5e-11, "relative": 5e-13, "unit": "degree"}
+  },
+  "exact_fields": [
+    "case_id",
+    "classification",
+    "topology",
+    "logical_key",
+    "reference_index",
+    "active_index",
+    "active",
+    "kind",
+    "side",
+    "shaded",
+    "illumination",
+    "ordering",
+    "source",
+    "nonfinite_mask"
+  ],
+  "excluded_scopes": ["view_factor", "perez", "radiosity", "aggregate_irradiance"]
+}

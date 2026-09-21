@@ -1,0 +1,28 @@
+.. _whatsnew_153:
+
+v1.5.3 (June 30, 2023)
+======================
+
+This is the first release of the ``solarfactors`` fork.
+
+Installation
+------------
+* The ``docs`` and ``testing`` extras in ``setup.py`` are now called ``doc`` and ``test`` (:pull:`1`)
+
+
+Requirements
+------------
+* Removed the upper version limit on ``pvlib`` (:pull:`5`)
+
+
+Testing
+-------
+* Migrated CI infrastructure to GitHub Actions (:pull:`1`)
+* Add python3.10 to test configuration (:ghpull:`129`)
+* Add python3.11 to test configuration (:pull:`1`)
+
+
+
+Contributors
+------------
+* Kevin Anderson (:ghuser:`kandersolar`)

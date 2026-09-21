@@ -1,0 +1,252 @@
+[
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "line": 662,
+    "function": "pvlib.pvsystem.retrieve_sam"
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "line": 684,
+    "function": "pvlib.iam.sapm"
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "line": 594,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/viewfactors/aoimethods.py",
+    "line": 594,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "line": 690,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "line": 691,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "line": 694,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/viewfactors/vfmethods.py",
+    "line": 695,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "line": 63,
+    "function": "pvlib.irradiance.get_extra_radiation"
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "line": 64,
+    "function": "pvlib.atmosphere.get_relative_airmass"
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "line": 67,
+    "function": "pvlib.irradiance.aoi_projection"
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "line": 88,
+    "function": "pvlib.irradiance.perez"
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "line": 104,
+    "function": "pvlib.irradiance.aoi_projection"
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "line": 109,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "line": 110,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "line": 113,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/irradiance/utils.py",
+    "line": 115,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 132,
+    "function": "pvlib.irradiance.get_total_irradiance"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 150,
+    "function": "pvlib.irradiance.aoi"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 540,
+    "function": "pvlib.irradiance.get_total_irradiance"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 1004,
+    "function": "pvlib.irradiance.aoi"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 141,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 550,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 1010,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 1010,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 162,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 171,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 570,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 579,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 128,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/irradiance/models.py",
+    "line": 536,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 118,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 119,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 120,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 121,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 287,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 288,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 291,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 292,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 300,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 301,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 302,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/pvrow.py",
+    "line": 303,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "line": 89,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "line": 90,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "line": 91,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "line": 92,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "line": 156,
+    "function": "pvlib.tools.cosd"
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "line": 155,
+    "function": "pvlib.tools.sind"
+  },
+  {
+    "file": "pvfactors/geometry/base.py",
+    "line": 155,
+    "function": "pvlib.tools.cosd"
+  }
+]

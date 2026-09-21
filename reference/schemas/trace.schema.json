@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Solarfactors trace manifest v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "case_id",
+    "reference",
+    "generator",
+    "model_revision",
+    "case_sha256",
+    "status",
+    "layers",
+    "surface_keys",
+    "exceptions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "object",
+      "required": [
+        "source_sha",
+        "runtime_id",
+        "dependency_lock_sha256"
+      ],
+      "properties": {
+        "source_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "runtime_id": {
+          "type": "string"
+        },
+        "dependency_lock_sha256": {
+          "$ref": "#/$defs/sha"
+        }
+      }
+    },
+    "generator": {
+      "type": "object",
+      "required": [
+        "sha256",
+        "version"
+      ]
+    },
+    "model_revision": {
+      "type": "string"
+    },
+    "case_sha256": {
+      "$ref": "#/$defs/sha"
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "approved_raw",
+        "approved_corrected",
+        "expected_reference_failure"
+      ]
+    },
+    "surface_keys": {
+      "type": "array"
+    },
+    "exceptions": {
+      "type": "array"
+    },
+    "cdr_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "layers": {
+      "type": "object",
+      "required": [
+        "input",
+        "geometry",
+        "irradiance",
+        "viewfactor",
+        "linear_system",
+        "solution",
+        "aggregate"
+      ],
+      "additionalProperties": {
+        "$ref": "#/$defs/layer"
+      }
+    }
+  },
+  "$defs": {
+    "sha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "layer": {
+      "type": "object",
+      "required": [
+        "availability",
+        "arrays"
+      ],
+      "properties": {
+        "availability": {
+          "enum": [
+            "available",
+            "not_computed_by_mode",
+            "failed",
+            "not_reached"
+          ]
+        },
+        "arrays": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/array"
+          }
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    },
+    "array": {
+      "type": "object",
+      "required": [
+        "file",
+        "key",
+        "dtype",
+        "shape",
+        "axes",
+        "unit",
+        "payload_sha256",
+        "nonfinite_counts"
+      ],
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "dtype": {
+          "enum": [
+            "<f8",
+            "<i8",
+            "|b1"
+          ]
+        },
+        "shape": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "axes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "payload_sha256": {
+          "$ref": "#/$defs/sha"
+        },
+        "nonfinite_counts": {
+          "type": "object",
+          "required": [
+            "nan",
+            "posinf",
+            "neginf"
+          ],
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

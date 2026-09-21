@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://edvcc.github.io/pvfactors-rs/schemas/g2-geometry-case-v0.1.json",
+  "title": "pvfactors-rs G2 concrete geometry cases",
+  "type": "object",
+  "required": ["schema_version", "status", "reference", "cases"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "status": {"const": "candidate_recommended_for_approval"},
+    "reference": {
+      "type": "object",
+      "required": ["name", "version", "commit"],
+      "properties": {
+        "name": {"const": "pvlib/solarfactors"},
+        "version": {"const": "v1.6.1"},
+        "commit": {"const": "ecbfc863657e239817603a43898ae173c7ccad9c"}
+      },
+      "additionalProperties": false
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/case"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "case": {
+      "type": "object",
+      "required": ["id", "kind", "domain", "description", "tags", "expected"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Za-z0-9_.+-]+$"},
+        "kind": {"enum": ["ordered_pvarray", "primitive"]},
+        "domain": {"enum": ["valid", "boundary_policy", "invalid", "reference_deviation"]},
+        "description": {"type": "string", "minLength": 1},
+        "tags": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "source_case_id": {"type": "string"},
+        "geometry": {"type": "object"},
+        "inputs": {"type": "object"},
+        "primitive": {"type": "object"},
+        "expected": {"type": "object"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"kind": {"const": "ordered_pvarray"}}},
+          "then": {"required": ["geometry", "inputs"]}
+        },
+        {
+          "if": {"properties": {"kind": {"const": "primitive"}}},
+          "then": {"required": ["primitive"]}
+        }
+      ],
+      "additionalProperties": false
+    }
+  }
+}

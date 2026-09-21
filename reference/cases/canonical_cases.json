@@ -1,0 +1,3703 @@
+{
+  "schema_version": "1.0",
+  "reference_sha": "ecbfc863657e239817603a43898ae173c7ccad9c",
+  "status": "design_not_approved",
+  "cases": [
+    {
+      "id": "C01",
+      "description": "1 rows",
+      "geometry": {
+        "n_pvrows": 1,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "row_count"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "C02",
+      "description": "2 rows",
+      "geometry": {
+        "n_pvrows": 2,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "row_count"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "C03",
+      "description": "3 rows",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "row_count"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "C04",
+      "description": "11 rows",
+      "geometry": {
+        "n_pvrows": 11,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "row_count"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "GCR_0.15",
+      "description": "gcr=0.15",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.15,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "gcr"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "GCR_0.85",
+      "description": "gcr=0.85",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.85,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "gcr"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "GCR_1.0",
+      "description": "gcr=1.0",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 1.0,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "gcr"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "TILT_LEFT",
+      "description": "positive rotation",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          90.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "left",
+        "backlit"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "TILT_FLAT",
+      "description": "flat",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          0.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "flat"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "TILT_1e-10",
+      "description": "tilt boundary",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          1e-10
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "tilt_boundary"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "TILT_90.0",
+      "description": "tilt boundary",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          90.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "tilt_boundary"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "TILT_110.0",
+      "description": "tilt boundary",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          110.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "unsupported_candidate",
+      "tags": [
+        "tilt_boundary"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "TILT_NEAR_LEFT",
+      "description": "near-flat other sign",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          1e-10
+        ],
+        "surface_azimuth": [
+          90.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "near_flat"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SUN_5.0",
+      "description": "zenith=5.0",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          5.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "sun_boundary"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SUN_85.0",
+      "description": "zenith=85.0",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          85.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "sun_boundary"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SUN_89.9",
+      "description": "zenith=89.9",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          89.9
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "sun_boundary"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SUN_90.0",
+      "description": "zenith=90.0",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          90.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "boundary_policy",
+      "tags": [
+        "sun_boundary"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SUN_100.0",
+      "description": "zenith=100.0",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          100.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "boundary_policy",
+      "tags": [
+        "sun_boundary"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "BACK_SUN",
+      "description": "back illumination",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          90.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "backlit"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "LOW_BACK",
+      "description": "back near horizon denominator",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          89.9
+        ],
+        "solar_azimuth": [
+          90.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "backlit",
+        "low_sun"
+      ],
+      "expected_observation": "检查背面circ分母cosz与pvlibfloor差异",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SUN_ALONG_AXIS",
+      "description": "sun azimuth along axis",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          180.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "axis"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SHADING_NONE_CANDIDATE",
+      "description": "high sun no direct shade candidate",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          5.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          10.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "shade_regime"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SHADING_PARTIAL_CANDIDATE",
+      "description": "dense low sun partial/high shade candidate",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.85,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          80.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          35.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "shade_regime"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SHADING_HIGH_CANDIDATE",
+      "description": "very low sun, no presupposed full-shade assertion",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.9,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          89.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          60.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "shade_regime"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "DNI_ZERO",
+      "description": "diffuse only",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          0.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "zero_DNI"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "DHI_ZERO",
+      "description": "beam only",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          0.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "zero_DHI"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "ZERO_HybridPerezOrdered",
+      "description": "zero input",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          0.0
+        ],
+        "DHI": [
+          0.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "reference_deviation",
+      "tags": [
+        "zero_light"
+      ],
+      "expected_observation": "Hybrid原始NaN记录；corrected expectation=0须CDR-001",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "ZERO_IsotropicOrdered",
+      "description": "zero input",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          0.0
+        ],
+        "DHI": [
+          0.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "IsotropicOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "reference_deviation",
+      "tags": [
+        "zero_light"
+      ],
+      "expected_observation": "Hybrid原始NaN记录；corrected expectation=0须CDR-001",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "HIGH_DHI",
+      "description": "high brightness",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          50.0
+        ],
+        "DHI": [
+          700.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "perez_brightness"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "ALBEDO_0.0",
+      "description": "albedo=0.0",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.0
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "reference_deviation",
+      "tags": [
+        "optics"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "ALBEDO_0.02",
+      "description": "albedo=0.02",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.02
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "optics"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "ALBEDO_0.9",
+      "description": "albedo=0.9",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.9
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "optics"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "ALBEDO_1.0",
+      "description": "albedo=1.0",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          1.0
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "optics"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "RHO_0.0",
+      "description": "both PV reflectivities",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "rho_front": 0.0,
+        "rho_back": 0.0
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "reference_deviation",
+      "tags": [
+        "optics"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "RHO_0.95",
+      "description": "both PV reflectivities",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "rho_front": 0.95,
+        "rho_back": 0.95
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "optics"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "TAU_35",
+      "description": "transmission limit",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "module_spacing_ratio": 0.15,
+        "module_transparency": 0.2
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "transmission"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "TAU_36",
+      "description": "transmission limit",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "module_spacing_ratio": 1.0
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "transmission"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "CUT_2",
+      "description": "all sides uniform cut",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {
+          "0": {
+            "front": 2,
+            "back": 2
+          },
+          "1": {
+            "front": 2,
+            "back": 2
+          },
+          "2": {
+            "front": 2,
+            "back": 2
+          }
+        }
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "cut"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "CUT_8",
+      "description": "all sides uniform cut",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {
+          "0": {
+            "front": 8,
+            "back": 8
+          },
+          "1": {
+            "front": 8,
+            "back": 8
+          },
+          "2": {
+            "front": 8,
+            "back": 8
+          }
+        }
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "cut"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "CUT_ASYMMETRIC",
+      "description": "row1 front3/back5",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {
+          "1": {
+            "front": 3,
+            "back": 5
+          }
+        }
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "cut"
+      ],
+      "expected_observation": "不同离散解不要求等于cut1；实测seed见evidence",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "ISOTROPIC_FULL",
+      "description": "isotropic full",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "IsotropicOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "models"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "FAST_HybridPerezOrdered_0",
+      "description": "fast target row",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Fast",
+      "target": {
+        "row": 0,
+        "segment": null
+      },
+      "domain": "valid",
+      "tags": [
+        "fast",
+        "selection"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "FAST_HybridPerezOrdered_1",
+      "description": "fast target row",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Fast",
+      "target": {
+        "row": 1,
+        "segment": null
+      },
+      "domain": "valid",
+      "tags": [
+        "fast",
+        "selection"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "FAST_HybridPerezOrdered_2",
+      "description": "fast target row",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Fast",
+      "target": {
+        "row": 2,
+        "segment": null
+      },
+      "domain": "valid",
+      "tags": [
+        "fast",
+        "selection"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "FAST_IsotropicOrdered_0",
+      "description": "fast target row",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "IsotropicOrdered",
+      "model_options": {},
+      "mode": "Fast",
+      "target": {
+        "row": 0,
+        "segment": null
+      },
+      "domain": "valid",
+      "tags": [
+        "fast",
+        "selection"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "FAST_IsotropicOrdered_1",
+      "description": "fast target row",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "IsotropicOrdered",
+      "model_options": {},
+      "mode": "Fast",
+      "target": {
+        "row": 1,
+        "segment": null
+      },
+      "domain": "valid",
+      "tags": [
+        "fast",
+        "selection"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "FAST_IsotropicOrdered_2",
+      "description": "fast target row",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "IsotropicOrdered",
+      "model_options": {},
+      "mode": "Fast",
+      "target": {
+        "row": 2,
+        "segment": null
+      },
+      "domain": "valid",
+      "tags": [
+        "fast",
+        "selection"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "FAST_SEGMENT",
+      "description": "fast target segment",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {
+          "1": {
+            "back": 4
+          }
+        }
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Fast",
+      "target": {
+        "row": 1,
+        "segment": 3
+      },
+      "domain": "valid",
+      "tags": [
+        "fast",
+        "cut"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "FAST_ISO_TAU",
+      "description": "fast isotropic transmitted shade",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.85,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          80.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "IsotropicOrdered",
+      "model_options": {
+        "module_transparency": 0.2
+      },
+      "mode": "Fast",
+      "target": {
+        "row": 1,
+        "segment": null
+      },
+      "domain": "reference_deviation",
+      "tags": [
+        "fast",
+        "transmission"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "AOI_CONST_0.0",
+      "description": "constant absorption curve",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "aoi_front": {
+          "kind": "constant",
+          "value": 0.0
+        },
+        "aoi_back": {
+          "kind": "constant",
+          "value": 0.0
+        },
+        "aoi_sections": 300
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "reference_deviation",
+      "tags": [
+        "aoi"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "AOI_CONST_0.8",
+      "description": "constant absorption curve",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "aoi_front": {
+          "kind": "constant",
+          "value": 0.8
+        },
+        "aoi_back": {
+          "kind": "constant",
+          "value": 0.8
+        },
+        "aoi_sections": 300
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "reference_deviation",
+      "tags": [
+        "aoi"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "AOI_CONST_1.0",
+      "description": "constant absorption curve",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "aoi_front": {
+          "kind": "constant",
+          "value": 1.0
+        },
+        "aoi_back": {
+          "kind": "constant",
+          "value": 1.0
+        },
+        "aoi_sections": 300
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "reference_deviation",
+      "tags": [
+        "aoi"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "AOI_J_150",
+      "description": "AOI quadrature resolution",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "aoi_front": {
+          "kind": "constant",
+          "value": 0.8
+        },
+        "aoi_back": {
+          "kind": "constant",
+          "value": 0.8
+        },
+        "aoi_sections": 150
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "aoi",
+        "quadrature"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "AOI_J_600",
+      "description": "AOI quadrature resolution",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "aoi_front": {
+          "kind": "constant",
+          "value": 0.8
+        },
+        "aoi_back": {
+          "kind": "constant",
+          "value": 0.8
+        },
+        "aoi_sections": 600
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "aoi",
+        "quadrature"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "HORIZON_15",
+      "description": "horizon band sensitivity",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "horizon_band_angle": 15.0
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "horizon"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "CIRC_5",
+      "description": "dormant circumsolar parameter",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "circumsolar_angle": 5.0
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "dormant"
+      ],
+      "expected_observation": "主链与同配置circ60相等；helper另测",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "CIRC_60",
+      "description": "dormant circumsolar parameter",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {
+        "circumsolar_angle": 60.0
+      },
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "dormant"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "ISSUE6",
+      "description": "reported recursion reproducer",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2020-01-02T15:00:00+00:00"
+        ],
+        "DNI": [
+          100.0
+        ],
+        "DHI": [
+          50.0
+        ],
+        "solar_zenith": [
+          78.53023197697105
+        ],
+        "solar_azimuth": [
+          221.9758276910072
+        ],
+        "surface_tilt": [
+          86.43564127244697
+        ],
+        "surface_azimuth": [
+          312.7
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "reference_deviation",
+      "tags": [
+        "primitive_only",
+        "recursion"
+      ],
+      "expected_observation": "仅调用perez_diffuse_luminance；full几何非共轴，不能混为合法Ordered case",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "UNDERGROUND",
+      "description": "invalid clearance",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 3.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          80.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "invalid",
+      "tags": [
+        "geometry"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "NEGATIVE_DNI",
+      "description": "invalid irradiance",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          -1.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "invalid",
+      "tags": [
+        "input"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SHAPE_MISMATCH",
+      "description": "unequal array shapes",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0,
+          500.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "invalid",
+      "tags": [
+        "input"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "CUT_ZERO",
+      "description": "invalid cut",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {
+          "1": {
+            "back": 0
+          }
+        }
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "invalid",
+      "tags": [
+        "input"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "SELECTION_INVALID",
+      "description": "row out of range",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Fast",
+      "target": {
+        "row": 3,
+        "segment": null
+      },
+      "domain": "invalid",
+      "tags": [
+        "selection"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "ZERO_WITH_GHI",
+      "description": "inconsistent zero shortcut",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          0.0
+        ],
+        "DHI": [
+          0.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "GHI": [
+          50.0
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "boundary_policy",
+      "tags": [
+        "input",
+        "ghi"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "BATCH_TRANSITIONS",
+      "description": "3 frames across flat/sign",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00",
+          "2019-06-01T12:10:00+00:00",
+          "2019-06-01T12:20:00+00:00"
+        ],
+        "DNI": [
+          600.0,
+          0.0,
+          500.0
+        ],
+        "DHI": [
+          100.0,
+          0.0,
+          80.0
+        ],
+        "solar_zenith": [
+          45.0,
+          45.0,
+          80.0
+        ],
+        "solar_azimuth": [
+          270.0,
+          270.0,
+          90.0
+        ],
+        "surface_tilt": [
+          45.0,
+          0.0,
+          35.0
+        ],
+        "surface_azimuth": [
+          270.0,
+          270.0,
+          90.0
+        ],
+        "albedo": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "reference_deviation",
+      "tags": [
+        "batch",
+        "chunk",
+        "active"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "LEAP_LOCAL_DATE",
+      "description": "local dayofyear including leap day",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2020-02-29T23:30:00-08:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Full",
+      "target": null,
+      "domain": "valid",
+      "tags": [
+        "calendar"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    },
+    {
+      "id": "GHI_OVERRIDE",
+      "description": "explicit GHI changes Fast environment",
+      "geometry": {
+        "n_pvrows": 3,
+        "pvrow_width": 1.0,
+        "pvrow_height": 1.0,
+        "gcr": 0.5,
+        "axis_azimuth": 180.0,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "cut": {}
+      },
+      "inputs": {
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ],
+        "DNI": [
+          600.0
+        ],
+        "DHI": [
+          100.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "GHI": [
+          600.0
+        ]
+      },
+      "irradiance_model": "HybridPerezOrdered",
+      "model_options": {},
+      "mode": "Fast",
+      "target": {
+        "row": 1,
+        "segment": null
+      },
+      "domain": "valid",
+      "tags": [
+        "ghi"
+      ],
+      "expected_observation": "待分层采集，不预断言遮挡分类或终值",
+      "status": "specified_not_approved_golden"
+    }
+  ],
+  "derived_families": [
+    {
+      "id": "PEREZ_BIN_EDGES",
+      "recipe": "在固定z,dhi求DNI=dhi*(epsilon*(1+1.041*zrad^3)-1-1.041*zrad^3)，threshold±ULP；保存resolved DNI与实算epsilon/bin",
+      "thresholds": [
+        1.065,
+        1.23,
+        1.5,
+        1.95,
+        2.8,
+        4.5,
+        6.2
+      ]
+    },
+    {
+      "id": "GEOMETRY_PRIMITIVES",
+      "recipe": "独立kernel fixtures：touch/contain/fullcover/parallel/coincident、shadow length 0,w,w±ULP；不伪造完整sim满遮条件"
+    },
+    {
+      "id": "BATCH_17_8760",
+      "recipe": "17为固定seed有界合法向量；8760直接采用附带Tucson上游CSV及其testfixture转换；展开后保存完整normalized input"
+    },
+    {
+      "id": "NONFINITE_EMPTY",
+      "recipe": "schema JSON用分类码构造NaN/±Inf并记录原始bytes；T0为明确空输入合同；Core错误策略先CDR"
+    },
+    {
+      "id": "SAPM_FIXED",
+      "recipe": "固定上游conftest组件B0…B5，记录coeff本身及数据库版本；不在验证时动态按名称找最新参数"
+    },
+    {
+      "id": "MIRROR",
+      "recipe": "以阵列中心镜像geometry/sun/normals/rowindex与ground extent；生成base/mirror pairedcases"
+    }
+  ]
+}

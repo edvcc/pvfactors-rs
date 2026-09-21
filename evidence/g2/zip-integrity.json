@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-09-21T12:22:12Z",
+  "input": "/Users/chenchen/Downloads/Solarfactors_Phase0_1_Baseline.zip",
+  "sha256": "2aca31b43080431a026f421e7d28ae86a814430fe27d60c0cf6e1aef2f4f5729",
+  "internal_sha256sums_entries": 121,
+  "internal_sha256sums_result": "PASS",
+  "note": "All 121 entries in the archive SHA256SUMS file were checked before import. The path is execution-host evidence, not a portable repository input."
+}

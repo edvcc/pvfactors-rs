@@ -1,0 +1,1929 @@
+{
+  "cases": [
+    {
+      "description": "1 rows",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 1,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "C01",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C01",
+      "tags": [
+        "row_count"
+      ]
+    },
+    {
+      "description": "2 rows",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 2,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "C02",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C02",
+      "tags": [
+        "row_count"
+      ]
+    },
+    {
+      "description": "3 rows",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "C03",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "row_count"
+      ]
+    },
+    {
+      "description": "11 rows",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 11,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "C04",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C04",
+      "tags": [
+        "row_count"
+      ]
+    },
+    {
+      "description": "positive rotation",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "TILT_LEFT",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          90.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "TILT_LEFT",
+      "tags": [
+        "left",
+        "backlit"
+      ]
+    },
+    {
+      "description": "flat",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "TILT_FLAT",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          0.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "TILT_FLAT",
+      "tags": [
+        "flat"
+      ]
+    },
+    {
+      "description": "tilt boundary",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "TILT_1e-10",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          1e-10
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "TILT_1e-10",
+      "tags": [
+        "tilt_boundary"
+      ]
+    },
+    {
+      "description": "near-flat other sign",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "TILT_NEAR_LEFT",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          90.0
+        ],
+        "surface_tilt": [
+          1e-10
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "TILT_NEAR_LEFT",
+      "tags": [
+        "near_flat"
+      ]
+    },
+    {
+      "description": "tilt boundary",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "TILT_90.0",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          90.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "TILT_90.0",
+      "tags": [
+        "tilt_boundary"
+      ]
+    },
+    {
+      "description": "high sun no direct shade candidate",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "SHADING_NONE_CANDIDATE",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          5.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          10.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "SHADING_NONE_CANDIDATE",
+      "tags": [
+        "shade_regime"
+      ]
+    },
+    {
+      "description": "dense low sun partial/high shade candidate",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.85,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "SHADING_PARTIAL_CANDIDATE",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          80.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          35.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "SHADING_PARTIAL_CANDIDATE",
+      "tags": [
+        "shade_regime"
+      ]
+    },
+    {
+      "description": "very low sun, no presupposed full-shade assertion",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.9,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "SHADING_HIGH_CANDIDATE",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          89.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          60.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "SHADING_HIGH_CANDIDATE",
+      "tags": [
+        "shade_regime"
+      ]
+    },
+    {
+      "description": "zenith=90.0",
+      "domain": "boundary_policy",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "SUN_90.0",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          90.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "SUN_90.0",
+      "tags": [
+        "sun_boundary"
+      ]
+    },
+    {
+      "description": "sun azimuth along axis",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "SUN_ALONG_AXIS",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          180.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "SUN_ALONG_AXIS",
+      "tags": [
+        "axis"
+      ]
+    },
+    {
+      "description": "all sides uniform cut",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {
+          "0": {
+            "back": 2,
+            "front": 2
+          },
+          "1": {
+            "back": 2,
+            "front": 2
+          },
+          "2": {
+            "back": 2,
+            "front": 2
+          }
+        },
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "CUT_2",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "CUT_2",
+      "tags": [
+        "cut"
+      ]
+    },
+    {
+      "description": "all sides uniform cut",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {
+          "0": {
+            "back": 8,
+            "front": 8
+          },
+          "1": {
+            "back": 8,
+            "front": 8
+          },
+          "2": {
+            "back": 8,
+            "front": 8
+          }
+        },
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "CUT_8",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "CUT_8",
+      "tags": [
+        "cut"
+      ]
+    },
+    {
+      "description": "row1 front3/back5",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {
+          "1": {
+            "back": 5,
+            "front": 3
+          }
+        },
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "CUT_ASYMMETRIC",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "CUT_ASYMMETRIC",
+      "tags": [
+        "cut"
+      ]
+    },
+    {
+      "description": "invalid clearance",
+      "domain": "invalid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 3.0
+      },
+      "id": "UNDERGROUND",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          80.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "UNDERGROUND",
+      "tags": [
+        "geometry"
+      ]
+    },
+    {
+      "description": "invalid cut",
+      "domain": "invalid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {
+          "1": {
+            "back": 0
+          }
+        },
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "CUT_ZERO",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "CUT_ZERO",
+      "tags": [
+        "input"
+      ]
+    },
+    {
+      "description": "finite configurable ground extent",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -10.0,
+          10.0
+        ],
+        "n_pvrows": 1,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "GROUND_NORMAL_EXTENT",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C01",
+      "tags": [
+        "ground_extent",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "single row endpoints exactly on extent boundary",
+      "domain": "boundary_policy",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -0.5,
+          0.5
+        ],
+        "n_pvrows": 1,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "GROUND_BOUNDARY_ENDPOINT",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          0.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C01",
+      "tags": [
+        "ground_extent",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "single row one picometre inside extent",
+      "domain": "boundary_policy",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -0.500000000001,
+          0.500000000001
+        ],
+        "n_pvrows": 1,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "GROUND_NEAR_BOUNDARY",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          0.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C01",
+      "tags": [
+        "ground_extent",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "mirror property base",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "MIRROR_BASE",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "mirror",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "full x-mirror of MIRROR_BASE",
+      "domain": "valid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "MIRROR_IMAGE",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          90.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          90.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "mirror",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "nonfinite axis azimuth",
+      "domain": "invalid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": {
+          "nonfinite": "NaN"
+        },
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "INVALID_AXIS_AZIMUTH",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "invalid",
+        "axis_azimuth",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "non-flat surface azimuth is not axis plus or minus 90 degrees",
+      "domain": "invalid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "INVALID_SURFACE_AZIMUTH",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          180.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "invalid",
+        "surface_azimuth",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "NaN solar zenith",
+      "domain": "invalid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "INVALID_NAN",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          {
+            "nonfinite": "NaN"
+          }
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "invalid",
+        "nonfinite",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "positive infinity surface tilt",
+      "domain": "invalid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          -100.0,
+          100.0
+        ],
+        "n_pvrows": 3,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "INVALID_INF",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          {
+            "nonfinite": "+Inf"
+          }
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C03",
+      "tags": [
+        "invalid",
+        "nonfinite",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "ground extent lower bound is not less than upper bound",
+      "domain": "invalid",
+      "expected": {
+        "reference": "capture",
+        "v1": "normalize_and_validate"
+      },
+      "geometry": {
+        "axis_azimuth": 180.0,
+        "cut": {},
+        "gcr": 0.5,
+        "ground_extent": [
+          1.0,
+          -1.0
+        ],
+        "n_pvrows": 1,
+        "pvrow_height": 1.0,
+        "pvrow_width": 1.0
+      },
+      "id": "INVALID_EXTENT_REVERSED",
+      "inputs": {
+        "DHI": [
+          100.0
+        ],
+        "DNI": [
+          600.0
+        ],
+        "albedo": [
+          0.25
+        ],
+        "solar_azimuth": [
+          270.0
+        ],
+        "solar_zenith": [
+          45.0
+        ],
+        "surface_azimuth": [
+          270.0
+        ],
+        "surface_tilt": [
+          45.0
+        ],
+        "timestamps": [
+          "2019-06-01T12:00:00+00:00"
+        ]
+      },
+      "kind": "ordered_pvarray",
+      "source_case_id": "C01",
+      "tags": [
+        "invalid",
+        "ground_extent",
+        "derived_concrete"
+      ]
+    },
+    {
+      "description": "subtracting a complete cover must return empty",
+      "domain": "reference_deviation",
+      "expected": {
+        "corrected_intervals": [],
+        "reference_length_m": 1.0
+      },
+      "id": "PRIM_COMPLETE_COVER_DIFFERENCE",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "u": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0
+            ]
+          ],
+          "v": [
+            [
+              -1.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0
+            ]
+          ]
+        },
+        "operation": "difference"
+      },
+      "tags": [
+        "difference",
+        "complete_cover",
+        "DEV-016"
+      ]
+    },
+    {
+      "description": "segments share exactly one endpoint",
+      "domain": "boundary_policy",
+      "expected": {
+        "classification": "endpoint_touch",
+        "positive_length_overlap": false
+      },
+      "id": "PRIM_ENDPOINT_TOUCH",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "u": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0
+            ]
+          ],
+          "v": [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0
+            ]
+          ]
+        },
+        "operation": "classify_intersection"
+      },
+      "tags": [
+        "touch",
+        "endpoint"
+      ]
+    },
+    {
+      "description": "non-collinear segments intersect at one point",
+      "domain": "boundary_policy",
+      "expected": {
+        "classification": "point_touch",
+        "positive_length_overlap": false
+      },
+      "id": "PRIM_POINT_TOUCH",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "u": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0
+            ]
+          ],
+          "v": [
+            [
+              1.0,
+              -1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        "operation": "classify_intersection"
+      },
+      "tags": [
+        "touch",
+        "point"
+      ]
+    },
+    {
+      "description": "collinear segments overlap with positive length",
+      "domain": "boundary_policy",
+      "expected": {
+        "classification": "positive_length_overlap",
+        "positive_length_overlap": true
+      },
+      "id": "PRIM_POSITIVE_OVERLAP",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "u": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              2.0,
+              0.0
+            ]
+          ],
+          "v": [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              3.0,
+              0.0
+            ]
+          ]
+        },
+        "operation": "classify_intersection"
+      },
+      "tags": [
+        "touch",
+        "overlap"
+      ]
+    },
+    {
+      "description": "zero-length numerical surface retains a logical slot",
+      "domain": "boundary_policy",
+      "expected": {
+        "active": false,
+        "logical_slot_retained": true
+      },
+      "id": "PRIM_ZERO_LENGTH",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "segment": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        "operation": "classify_segment"
+      },
+      "tags": [
+        "zero_length",
+        "topology"
+      ]
+    },
+    {
+      "description": "parallel non-coincident projection",
+      "domain": "boundary_policy",
+      "expected": {
+        "classification": "parallel",
+        "intersection": null
+      },
+      "id": "PRIM_PARALLEL_PROJECTION",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "direction": [
+            1.0,
+            0.0
+          ],
+          "origin": [
+            0.0,
+            0.0
+          ],
+          "segment": [
+            [
+              0.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        "operation": "projection"
+      },
+      "tags": [
+        "projection",
+        "parallel"
+      ]
+    },
+    {
+      "description": "projection line is coincident with segment",
+      "domain": "boundary_policy",
+      "expected": {
+        "classification": "coincident",
+        "intersection": null
+      },
+      "id": "PRIM_COINCIDENT_PROJECTION",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "direction": [
+            1.0,
+            0.0
+          ],
+          "origin": [
+            2.0,
+            0.0
+          ],
+          "segment": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0
+            ]
+          ]
+        },
+        "operation": "projection"
+      },
+      "tags": [
+        "projection",
+        "coincident"
+      ]
+    },
+    {
+      "description": "active-length threshold minus ulp",
+      "domain": "boundary_policy",
+      "expected": {
+        "active": false,
+        "length_m": 9.999999999999999e-09,
+        "logical_slot_retained": true
+      },
+      "id": "PRIM_ACTIVE_TOL_MINUS_ULP",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "segment": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              9.999999999999999e-09,
+              0.0
+            ]
+          ]
+        },
+        "operation": "classify_segment"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "active_length"
+      ]
+    },
+    {
+      "description": "active-length threshold exact",
+      "domain": "boundary_policy",
+      "expected": {
+        "active": false,
+        "length_m": 1e-08,
+        "logical_slot_retained": true
+      },
+      "id": "PRIM_ACTIVE_TOL_EXACT",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "segment": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1e-08,
+              0.0
+            ]
+          ]
+        },
+        "operation": "classify_segment"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "active_length"
+      ]
+    },
+    {
+      "description": "active-length threshold plus ulp",
+      "domain": "boundary_policy",
+      "expected": {
+        "active": true,
+        "length_m": 1.0000000000000002e-08,
+        "logical_slot_retained": true
+      },
+      "id": "PRIM_ACTIVE_TOL_PLUS_ULP",
+      "kind": "primitive",
+      "primitive": {
+        "arguments": {
+          "segment": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              1.0000000000000002e-08,
+              0.0
+            ]
+          ]
+        },
+        "operation": "classify_segment"
+      },
+      "tags": [
+        "tolerance",
+        "ulp",
+        "active_length"
+      ]
+    }
+  ],
+  "reference": {
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c",
+    "name": "pvlib/solarfactors",
+    "version": "v1.6.1"
+  },
+  "schema_version": "0.1",
+  "status": "candidate_recommended_for_approval"
+}
