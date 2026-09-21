@@ -18,6 +18,7 @@
 | Upstream tests | `python -m pytest pvfactors/tests -q --junitxml=evidence/g2/upstream-pytest.xml` | 102 passed / 11 warnings；保留 text/XML log |
 | 最终共享验证器 | R0 容器：`python3.12 scripts/verify_g2.py --candidate /output/geometry-golden-v0.1` | PASS；source integrity、rebuild、schema、43 invariants、audit、docs、branch 与 approved safety |
 | Branch safety | verifier 以 `origin/master` 为 authoritative remote ref | PASS；`origin/master` 保持 `bc0b7ec...` |
+| 最终远端状态 | `git ls-remote origin refs/heads/master refs/heads/develop refs/heads/research/g2-geometry-acceptance` | master `bc0b7ec...`；develop `ddee1f4...` 来自更早的外部 PR #1 merge；本任务只 push research |
 
 Terminal transcript 由上述生成的 text/XML/JSON 证据与准确命令共同表达。R0 与
 cross-runtime PASS 已关闭 runtime 条件，但不代表 Owner 批准。

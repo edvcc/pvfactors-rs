@@ -17,9 +17,11 @@ comparison, and same-environment reproducibility checks. No unknown Geometry
 semantic blocker was found inside the tested scope.
 
 G2 cannot be `PASS`: the Repository Owner has not approved CDR-003, CDR-006,
-or the Golden candidate, and no owner-designated `develop` integration baseline
-exists. The Canonical Runtime blocker is closed: the current candidate was
-generated under R0 and passed comparison against the preserved 3.12.12 run.
+or the Golden candidate. A remote `develop` now exists because GitHub records
+PR #1 as externally merged before this runtime-closure push; this task did not
+modify it, and owner intent for the P3 integration baseline is not inferred.
+The Canonical Runtime blocker is closed: the current candidate was generated
+under R0 and passed comparison against the preserved 3.12.12 run.
 
 ## Verified
 

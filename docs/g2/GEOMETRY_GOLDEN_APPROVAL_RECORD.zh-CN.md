@@ -56,9 +56,11 @@ CPython 3.12.12 macOS arm64 的 manifest、validation summary、verification、
 reproducibility 与 comparison 记录保留在 `evidence/g2/cross-runtime/`；其完整 corpus
 仍可从 Git commit `182dbb54d351db733ff40ba40dd4f119767b1ee4` 取回。
 
-Fetch 后不存在远端 `develop`，仅有 `origin/master`。因此工作分支从未变化的
-`origin/master` commit `bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba` 创建。进入新建或
-Owner 指定的 `develop` 仍是人工治理动作。
+创建工作分支时不存在远端 `develop`，因此分支从未变化的 `origin/master` commit
+`bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba` 创建。GitHub 记录显示 PR #1 后来在本次
+runtime closure 推送前被外部 merge 到 `develop`，其 SHA 为
+`ddee1f43d78dc4060c7f20f0b9d3777b07ddc914`。本任务没有修改 `develop`；Owner 仍需确认
+预期的 P3 integration baseline。
 
 ## 推荐与 Owner 决策
 

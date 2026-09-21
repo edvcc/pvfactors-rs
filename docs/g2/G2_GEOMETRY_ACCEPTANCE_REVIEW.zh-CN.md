@@ -14,9 +14,11 @@ projection、raw/clipped shadow、PV/ground partition、稳定 logical key、`Re
 active map；raw、normalized、corrected artifact 已分离；schema、不变量、差异追溯、compare
 和同环境 reproducibility 均通过。在已测试范围内未发现未知 Geometry semantic blocker。
 
-G2 不能标为 `PASS`：Repository Owner 尚未批准 CDR-003、CDR-006 与 Golden candidate，
-且尚无 Owner 指定的 `develop` integration baseline。Canonical Runtime blocker 已关闭：
-当前 candidate 在 R0 下生成，并通过与保留的 3.12.12 运行结果的对照。
+G2 不能标为 `PASS`：Repository Owner 尚未批准 CDR-003、CDR-006 与 Golden candidate。
+GitHub 记录显示 PR #1 在本次 runtime closure 推送前已被外部 merge，因此远端现在存在
+`develop`；本任务未修改该分支，也不据此推定 Owner 对 P3 integration baseline 的意图。
+Canonical Runtime blocker 已关闭：当前 candidate 在 R0 下生成，并通过与保留的 3.12.12
+运行结果的对照。
 
 ## Verified
 

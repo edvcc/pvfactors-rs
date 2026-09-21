@@ -60,11 +60,13 @@ summary, verification, reproducibility, and comparison records remain under
 `evidence/g2/cross-runtime/`; its complete corpus remains retrievable from Git
 commit `182dbb54d351db733ff40ba40dd4f119767b1ee4`.
 
-No remote `develop` branch existed after fetch; only `origin/master` was
-available. The work branch was therefore created from the unchanged
-`origin/master` commit `bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba`. Integration
-into a newly established or owner-designated `develop` remains a human
-governance action.
+No remote `develop` branch existed when the work branch was created, so it
+started from the unchanged `origin/master` commit
+`bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba`. GitHub records that PR #1 was
+later merged externally into `develop` at
+`ddee1f43d78dc4060c7f20f0b9d3777b07ddc914`, before this runtime-closure push.
+This task did not modify `develop`; owner confirmation of the intended P3
+integration baseline remains a governance action.
 
 ## Recommendation and owner decision
 
