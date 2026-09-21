@@ -19,6 +19,7 @@ serve PR validation only.
 | Upstream tests | `python -m pytest pvfactors/tests -q --junitxml=evidence/g2/upstream-pytest.xml` | 102 passed / 11 warnings; text and XML logs retained |
 | Final shared verifier | R0 container: `python3.12 scripts/verify_g2.py --candidate /output/geometry-golden-v0.1` | PASS; source integrity, rebuild, schema, 43 invariants, audit, docs, branch and approved safety |
 | Branch safety | verifier uses `origin/master` as authoritative remote ref | PASS; `origin/master` remains `bc0b7ec...` |
+| Final remote state | `git ls-remote origin refs/heads/master refs/heads/develop refs/heads/research/g2-geometry-acceptance` | master `bc0b7ec...`; develop `ddee1f4...` from the earlier external PR #1 merge; only research was pushed by this task |
 
 The terminal transcript is represented by the generated text/XML/JSON evidence
 and exact commands above. R0 and cross-runtime PASS close the runtime condition;
