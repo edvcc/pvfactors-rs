@@ -611,7 +611,7 @@ def stable_timestamp() -> str:
     epoch = os.environ.get("SOURCE_DATE_EPOCH")
     if epoch:
         return dt.datetime.fromtimestamp(int(epoch), tz=dt.timezone.utc).isoformat().replace("+00:00", "Z")
-    return git("show", "-s", "--format=%cI", "HEAD")
+    return git("show", "-s", "--format=%cI", generator_identity()["commit"])
 
 
 def build_manifest(output: Path, cases_path: Path = CASES) -> dict:
