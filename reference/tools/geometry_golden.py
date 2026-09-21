@@ -663,7 +663,15 @@ def build_manifest(output: Path, cases_path: Path = CASES) -> dict:
 def schema_validate(output: Path, cases_path: Path = CASES) -> list[str]:
     from jsonschema import Draft202012Validator
     errors: list[str] = []
-    checks = [(cases_path, SCHEMAS / "g2-geometry-case.schema.json")]
+    for schema_path in sorted(SCHEMAS.glob("*.schema.json")):
+        try:
+            Draft202012Validator.check_schema(read_json(schema_path))
+        except Exception as issue:
+            errors.append(f"{schema_path.relative_to(ROOT)}: invalid JSON Schema: {issue}")
+    checks = [
+        (ROOT / "reference/cases/canonical_cases.json", SCHEMAS / "case.schema.json"),
+        (cases_path, SCHEMAS / "g2-geometry-case.schema.json"),
+    ]
     for folder in ("raw", "normalized", "corrected"):
         checks += [(path, SCHEMAS / "geometry-golden.schema.json") for path in sorted((output / folder).glob("*.json"))]
     checks.append((output / "manifest.json", SCHEMAS / "geometry-golden-manifest.schema.json"))
@@ -842,6 +850,7 @@ def validate_docs() -> dict:
         "GEOMETRY_TOLERANCE_PROFILE_V0.1",
         "G2_GEOMETRY_ACCEPTANCE_REVIEW",
         "P3_RUST_GEOMETRY_KERNEL_ENTRY_CONTRACT",
+        "RAW_REFERENCE_VS_CORRECTED_EXPECTATION_REPORT",
     ]
     failures = []
     constants = [REFERENCE_SHA, "geometry-golden-v0.1-candidate", "geometry-tolerance-v0.1"]
