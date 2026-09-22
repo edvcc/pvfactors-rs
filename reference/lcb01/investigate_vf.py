@@ -72,9 +72,9 @@ def row_blockers(pvarray, excluded_rows: set[int]) -> list[tuple[np.ndarray, np.
 
 def ray_blocked(P: np.ndarray, Q: np.ndarray, blockers: list[tuple[np.ndarray, np.ndarray, int]]) -> np.ndarray:
     """Return mask for interior intersection of P->Q rays with opaque row segments."""
-    shape = P.shape[:-1]
-    blocked = np.zeros(shape, dtype=bool)
     R = Q - P
+    shape = R.shape[:-1]
+    blocked = np.zeros(shape, dtype=bool)
 
     def cross2(a: np.ndarray, b: np.ndarray) -> np.ndarray:
         return a[..., 0] * b[..., 1] - a[..., 1] * b[..., 0]
