@@ -235,13 +235,14 @@ def g2():
 
 
 def contract_digest():
-    # Excludes status reports/evidence and progress. These can change without reapproving semantics.
-    files = [ROOT / "AGENTS.md", Path(__file__)]
+    # Pin normative semantics, not implementation bytes. Tool/adapter code can
+    # evolve within that contract; its exact hashes are recorded separately.
+    # A digest is not proof that mutable verification code obeys the contract.
+    files = [ROOT / "AGENTS.md"]
     files += [DOCS / f"{stem}.{lang}.md" for stem in PAIRS
               if stem != "LOOP_ENGINEERING_READINESS_REPORT" for lang in ("en", "zh-CN")]
     files += [DOCS / name for name in ("acceptance-matrix.json", "baseline-lock.json",
                                       "contract-audit.json", "CODEX_FULL_IMPLEMENTATION_TASK.md")]
-    files += sorted((ROOT / "scripts/tests").glob("test_verify_project*.py"))
     h = hashlib.sha256()
     for p in sorted(files):
         h.update(p.relative_to(ROOT).as_posix().encode() + b"\0" + p.read_bytes())
@@ -468,6 +469,11 @@ def main():
               "reference_revision": REFERENCE, "golden_versions": ["geometry-golden-v0.1"],
               "tolerance_versions": ["geometry-tolerance-v0.1"]}
     try:
+        if args.scope == "geometry" and not (
+                args.mode == "preflight" or
+                (args.mode == "milestone" and args.milestone in {"geometry", "M3"})):
+            raise ValueError("geometry-only approval is limited to preflight or milestone M3; "
+                             "later milestones and final require full-project approval")
         matrix = read(DOCS / "acceptance-matrix.json")
         decisions = read(DOCS / "owner-decisions.json")
         clean = args.mode != "assets"
@@ -519,7 +525,10 @@ def main():
         report.update(checks=checks, status=overall(checks), git_commit=git("rev-parse", "HEAD"),
                       cdrs={"approved": ["CDR-003", "CDR-006"],
                             "pending": ["CDR-001", "CDR-002", "CDR-004", "CDR-005", "CDR-007"]},
-                      contract_sha256=contract_digest())
+                      contract_sha256=contract_digest(),
+                      verification_tool_sha256=digest(Path(__file__)),
+                      verification_self_tests_sha256={p.relative_to(ROOT).as_posix(): digest(p)
+                          for p in sorted((ROOT / "scripts/tests").glob("test_verify_project*.py"))})
     except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as error:
         report.update(status="FAIL", error=f"{type(error).__name__}: {error}")
     text = json.dumps(report, indent=2, ensure_ascii=False, allow_nan=False) + "\n"

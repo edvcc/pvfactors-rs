@@ -134,6 +134,17 @@ class AcceptanceHarnessTests(unittest.TestCase):
         text = "running 0 tests\ntest result: ok. 0 passed; 0 failed; 0 ignored;"
         self.assertEqual(verify.parse_tests(text)["status"], "FAIL")
 
+    def test_geometry_approval_cannot_authorize_later_or_final_acceptance(self):
+        for args in (["final"], ["milestone", "viewfactor"]):
+            with self.subTest(args=args):
+                output = self.root / "scope.json"
+                with patch.object(sys, "argv", ["verify_project.py", *args, "--scope", "geometry",
+                                               "--output", str(output)]), patch("builtins.print"):
+                    self.assertEqual(verify.main(), 1)
+                report = verify.read(output)
+                self.assertEqual(report["status"], "FAIL")
+                self.assertIn("require full-project approval", report["error"])
+
     def test_missing_required_test_fails(self):
         text = "test one ... ok\ntest result: ok. 1 passed; 0 failed; 0 ignored;"
         self.assertEqual(verify.parse_tests(text, ["one", "two"])["status"], "FAIL")

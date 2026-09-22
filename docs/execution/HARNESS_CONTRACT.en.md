@@ -18,6 +18,8 @@ Original 491 frozen files are Git-blob checked against c2bc8572a976279abacbcd1d4
 
 ## Geometry executable adapter
 
+`--scope geometry` is limited to scoped preflight or M3 with explicit Owner authorization. M4-M13 and final require full-project approval; the tool rejects attempts to substitute Geometry-only approval for later decisions.
+
 The milestone expects production math/geometry modules and the future test-only target `crates/solarfactors-core/tests/acceptance_geometry.rs`. It executes:
 
 ```sh
@@ -43,6 +45,8 @@ Final currently enumerates all11 milestones, all22 required capabilities and10 e
 ## Trust and independent Owner acceptance
 
 A mutable script cannot prove its own author's trustworthiness. Owner pins the reviewed preparation/approval commit and digest, reviews harness/expected/tolerance diffs separately from implementation, and can run that trusted harness in a separate checkout against candidate output artifacts. Actual CI logs and package digests complement local tests. Protected branches/credential restrictions remain OD-11 controls. Fake pass receipts, expected-output copying, removed tests or modified approval evidence violate the execution contract even if an Agent could edit files to evade a check.
+
+`contract_sha256` pins normative documents, matrix, baseline lock, audit, task and entry point, excluding progress, reports, approval status and verification program bytes. Each run separately records exact `verification_tool_sha256` and `verification_self_tests_sha256` values bound to the Git SHA. Adding adapters or fixing plumbing under approved semantics therefore does not require repeated launch approval; semantic changes still need an Owner decision and updated contract digest. Program hashes provide traceability, not proof of unchanged semantics. Before final acceptance, Owner must review tooling diffs against the reviewed commit and independently rerun a trusted version; a modified program's self-reported PASS is not independent acceptance.
 
 Self-tests use temporary synthetic fixtures and the immutable approved payload roundtrip strictly to verify tooling, never to claim Rust compatibility. Required mutations: omitted case, SurfaceKey/ReferenceIndex/ProjectionClass, tolerance10x, allowed delta, manifest/source byte change, missing/empty artifact, zero/ignored/missing tests, mismatched JSON type, unknown comparator and absent implementation. Run all existing G2 tests too. A self-test FAIL blocks launch. Test counts and logs are archived in evidence/execution after execution.
 

@@ -45,7 +45,7 @@ CDR-001/002/004/005/007, public result/optics contracts, later Golden/tolerance 
 
 ## Verification boundary
 
-Existing G2 was rerun in a disposable local Python environment: source hashes,55-case/165-artifact schemas,65 invariant reports, approved manifest and P3-entry governance passed. All19 existing tests plus29 new harness self-tests (48 total) passed. Mutations reject missing cases, exact-field changes,10x tolerance, baseline mutation, missing artifacts and zero tests; allowed numeric deltas pass. Approved-payload roundtrip validates the comparator only, never Rust output.
+Existing G2 was rerun in a disposable local Python environment: source hashes,55-case/165-artifact schemas,65 invariant reports, approved manifest and P3-entry governance passed. All19 existing tests plus30 new harness self-tests (49 total) passed. Mutations reject missing cases, exact-field changes,10x tolerance, baseline mutation, missing artifacts and zero tests; allowed numeric deltas pass. Approved-payload roundtrip validates the comparator only, never Rust output.
 
 Rust1.98.1 fmt/Clippy/locked bootstrap test passed, but Rust test count is0. No P3 results, production wheels or full cross-platform implementation acceptance exist. New CI checks only real preparation assets; no push occurred, so no remote PASS is claimed. Actual project-mode outcomes/exit codes are recorded in evidence/execution/verification-summary.json and receipts. Preflight must remain unsuccessful for pending approval/environment gaps; preparation cannot lower its gate to turn green.
 
@@ -64,7 +64,7 @@ GG-01: master/develop unprotected, no matching/parent rulesets. GG-02: repositor
 | No blocking ambiguity | BLOCKED BF-01/BF-02 |
 | All milestone acceptance definitions | PRESENT; proposed for approval |
 | Pre-approved oracles or explicit Owner-stop workflow | PENDING OD-08 |
-| Harness self-tests | PASS; 29 new / 48 total |
+| Harness self-tests | PASS; 30 new / 49 total |
 | Preflight | FAIL / NOT_READY until approval/environment closure |
 | Environment path clear | ENVIRONMENT GAP EG-01/02 |
 | Branch/permission risk accepted | PENDING OD-11 |

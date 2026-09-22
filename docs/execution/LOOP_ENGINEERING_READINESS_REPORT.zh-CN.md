@@ -45,7 +45,7 @@ BF-01：finite closed Interval 与未限定的严格差集不相容；OD-01 推�
 
 ## 真实验证边界
 
-既有 G2 在本机临时 Python 环境重新运行通过，包括source hash、55案例/165产物schema、65 invariant report、批准manifest与P3 entry治理。19个既有tests及29个新harness self-tests共48通过；变异测试能拒绝漏case、exact field、10倍阈值、基线变更、缺artifact、零测试等，合法numeric差异通过。approved roundtrip仅验证comparator，不冒充Rust结果。
+既有 G2 在本机临时 Python 环境重新运行通过，包括source hash、55案例/165产物schema、65 invariant report、批准manifest与P3 entry治理。19个既有tests及30个新harness self-tests共49通过；变异测试能拒绝漏case、exact field、10倍阈值、基线变更、缺artifact、零测试等，合法numeric差异通过。approved roundtrip仅验证comparator，不冒充Rust结果。
 
 Rust1.98.1 的fmt/Clippy/locked bootstrap test通过，但Rust测试总数为0。没有P3运行结果，没有生产wheel，没有完整跨平台实现验收。新CI只验证真实准备资产；本次未推送，因此不宣称该workflow远端PASS。Canonical project mode结果及exit code在 evidence/execution/verification-summary.json 和相应receipt中记录。preflight预计并必须对待批准及环境缺口返回非成功，不能为了让准备任务绿而降低gate。
 
@@ -64,7 +64,7 @@ GG-01：master/develop均未保护，无matching/parent ruleset；GG-02：仓库
 | No blocking ambiguity | BLOCKED BF-01/BF-02 |
 | All milestone acceptance definitions | PRESENT; proposed for approval |
 | Pre-approved oracles or explicit Owner-stop workflow | PENDING OD-08 |
-| Harness self-tests | PASS; 29 new / 48 total |
+| Harness self-tests | PASS; 30 new / 49 total |
 | Preflight | FAIL / NOT_READY until approval/environment closure |
 | Environment path clear | ENVIRONMENT GAP EG-01/02 |
 | Branch/permission risk accepted | PENDING OD-11 |

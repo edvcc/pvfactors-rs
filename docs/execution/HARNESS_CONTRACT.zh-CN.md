@@ -18,6 +18,8 @@ exit0=PASS；exit1=FAIL（非法/变更/格式错误/失败证据）；exit2=NOT
 
 ## Geometry 可执行 adapter
 
+`--scope geometry` 仅允许限定 preflight 或 M3，仍须具名 Owner 授权；M4–M13 和 final 必须使用全项目批准。工具拒绝用 Geometry-only 批准绕过后续决策。
+
 里程碑要求存在生产 math/geometry 模块及未来 test-only target `crates/solarfactors-core/tests/acceptance_geometry.rs`，执行：
 
 ```sh
@@ -43,6 +45,8 @@ Final 当前枚举11个 milestone、22个必需 CAP、10个排除项、逐平台
 ## 信任边界与 Owner 独立验收
 
 可修改脚本不能证明作者自身可信。Owner 固定已审阅 preparation/approval commit 与 digest，独立审查 harness/expected/tolerance diff，可在另一 checkout 运行可信 harness 比较候选输出。真实 CI log/package digest 补充本地测试；分支保护/凭据限制属 OD-11。伪造 pass receipt、复制 expected、删测试或伪造批准证据均违反执行合同，即使有权限的 Agent 能编辑文件逃避检查。
+
+`contract_sha256` 固定规范文本、矩阵、baseline lock、审计、任务书及入口，不包含进度、报告、批准状态或验证程序字节。每份运行报告另记准确 `verification_tool_sha256` 与 `verification_self_tests_sha256`，并绑定 Git SHA。这样在已批语义内新增 adapter/修复接线不要求每次重新批准启动；语义变化仍须 Owner 决定并更新合同摘要。程序哈希只提供追溯，不证明语义未变。Owner 在最终验收前须审查相对已审阅 commit 的工具 diff，采用可信版本独立重跑；不得把修改后的程序自报 PASS 当成独立验收。
 
 Self-test 在临时目录使用 synthetic fixture，approved payload roundtrip 仅验证 tooling，不声称 Rust compatibility。变异覆盖漏案例、SurfaceKey/ReferenceIndex/ProjectionClass、10倍阈值、合法差异、manifest/source 字节改变、缺失/空 artifact、零/ignored/缺测试、JSON 类型不符、未知 comparator、缺实现。还须运行全部既有 G2 tests。Self-test FAIL 阻止启动；实际计数和日志执行后归档 evidence/execution。
 
