@@ -6,6 +6,11 @@ on:
     paths:
       - '.github/workflows/lcb01-vf-investigation.yml'
       - 'reference/lcb01/**'
+  pull_request:
+    branches: [research/full-project-launch-closure]
+    paths:
+      - '.github/workflows/lcb01-vf-investigation.yml'
+      - 'reference/lcb01/**'
   workflow_dispatch:
 
 permissions:
