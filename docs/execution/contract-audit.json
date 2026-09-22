@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-22",
+  "algorithms": [
+    {
+      "id": "MATH-01",
+      "name": "Degree trigonometry",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "MATH-02",
+      "name": "Rotation convention",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "MATH-03",
+      "name": "Solar vector",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "MATH-04",
+      "name": "Tolerance predicates",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-01",
+      "name": "Point/Vec/Segment",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-02",
+      "name": "PVSurface",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-03",
+      "name": "PVSegment",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-04",
+      "name": "ShadeCollection",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-05",
+      "name": "PVRow & normals",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-06",
+      "name": "OrderedPVArray",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-07",
+      "name": "Timeseries geometry",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-08",
+      "name": "Surface indexing",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-09",
+      "name": "PV cut/discretization",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-10",
+      "name": "Inter-row direct shading",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-11",
+      "name": "Ground shadow projection",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-12",
+      "name": "Ground cut projection",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-13",
+      "name": "Overlap & complement",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-14",
+      "name": "Ground per-cut slots",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-15",
+      "name": "Containment",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-16",
+      "name": "Collinearity",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-17",
+      "name": "Line difference",
+      "status": "BLOCKING_CONTRACT_CONFLICT",
+      "decisions": [
+        "OD-01"
+      ],
+      "note": "BF-01 closed interval versus strict set difference; Owner clarification required."
+    },
+    {
+      "id": "GEO-18",
+      "name": "Projection/intersection",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-19",
+      "name": "Cast/cut/merge",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "GEO-20",
+      "name": "Ground snapshot/degeneracy",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2/P3 governs geometry; closed means semantics, never implementation PASS."
+    },
+    {
+      "id": "VF-01",
+      "name": "Hottel crossed-string",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-02",
+      "name": "PV→PV",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-03",
+      "name": "Obstructed strings",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-04",
+      "name": "PV→Ground",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-05",
+      "name": "Reciprocity / ground→PV",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-06",
+      "name": "Sky / VF matrix",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-07",
+      "name": "AOI quadrature basis",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-08",
+      "name": "AOI wedge / obstruction",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-09",
+      "name": "AOI sky",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-10",
+      "name": "AOI matrix",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-11",
+      "name": "Effective reflectivity",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "VF-12",
+      "name": "Fast grouped VF",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-01",
+      "name": "Input normalization",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-02",
+      "name": "Extraterrestrial radiation",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-03",
+      "name": "Relative airmass",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-04",
+      "name": "AOI / hemisphere",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-05",
+      "name": "Perez decomposition",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-06",
+      "name": "Luminance/back conversion",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-07",
+      "name": "IsotropicOrdered",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-08",
+      "name": "HybridPerezOrdered",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-09",
+      "name": "Transmission/albedo/rho",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-10",
+      "name": "Horizon band shading",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-11",
+      "name": "Circumsolar disk/Gaussian",
+      "status": "FUTURE / OUT OF SCOPE",
+      "decisions": [],
+      "note": "Dormant disk/Gaussian helper is CAP28, not current main path."
+    },
+    {
+      "id": "IRR-12",
+      "name": "Absorbed source/AOI",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "IRR-13",
+      "name": "SAPM convenience",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-03",
+        "OD-05",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "ENG-01",
+      "name": "Transform to surfaces",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-04",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "ENG-02",
+      "name": "Irradiance/rho matrices",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-04",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "ENG-03",
+      "name": "Full radiosity solve",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-04",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "ENG-04",
+      "name": "Incident decomposition",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-04",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "ENG-05",
+      "name": "qabs/surface update",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-04",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "ENG-06",
+      "name": "Fast/row/segment selection",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-04",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "ENG-07",
+      "name": "Weighted aggregation",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-04",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "ENG-08",
+      "name": "Skip/input status",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02",
+        "OD-04",
+        "OD-06",
+        "OD-07",
+        "OD-08"
+      ],
+      "note": "Reference behavior known; corrected product policy/oracle approval pending."
+    },
+    {
+      "id": "EXEC-01",
+      "name": "Serial execution",
+      "status": "IMPLEMENTATION_CHOICE",
+      "decisions": [
+        "OD-07",
+        "OD-12"
+      ],
+      "note": "One shared kernel; private scheduling/storage choice within approved observable contract."
+    },
+    {
+      "id": "EXEC-02",
+      "name": "Multiprocessing split",
+      "status": "IMPLEMENTATION_CHOICE",
+      "decisions": [
+        "OD-07",
+        "OD-12"
+      ],
+      "note": "One shared kernel; private scheduling/storage choice within approved observable contract."
+    },
+    {
+      "id": "EXEC-03",
+      "name": "Report merge",
+      "status": "IMPLEMENTATION_CHOICE",
+      "decisions": [
+        "OD-07",
+        "OD-12"
+      ],
+      "note": "One shared kernel; private scheduling/storage choice within approved observable contract."
+    }
+  ],
+  "deviations": [
+    {
+      "id": "DEV-001",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-03"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-002",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "Follow approved G2/P3 and fixed reference; preserve historical observations."
+    },
+    {
+      "id": "DEV-003",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-004",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "Follow approved G2/P3 and fixed reference; preserve historical observations."
+    },
+    {
+      "id": "DEV-005",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-05"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-006",
+      "status": "IMPLEMENTATION_CHOICE",
+      "decisions": [],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-007",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-008",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-009",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-010",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-011",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04",
+        "OD-08"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-012",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-05"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-013",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "Follow approved G2/P3 and fixed reference; preserve historical observations."
+    },
+    {
+      "id": "DEV-014",
+      "status": "FUTURE / OUT OF SCOPE",
+      "decisions": [],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-015",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-06"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-016",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "G2 complete-cover correction closed; public residual endpoint semantics remain BF-01."
+    },
+    {
+      "id": "DEV-017",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-07"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-018",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-07"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-019",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-05",
+        "OD-08"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-020",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "Follow approved G2/P3 and fixed reference; preserve historical observations."
+    },
+    {
+      "id": "DEV-021",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "Follow approved G2/P3 and fixed reference; preserve historical observations."
+    },
+    {
+      "id": "DEV-022",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-05"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-023",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "Historical R0/G2 reproducibility closure; current host environment is checked separately."
+    },
+    {
+      "id": "DEV-024",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-05"
+      ],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-025",
+      "status": "IMPLEMENTATION_CHOICE",
+      "decisions": [],
+      "note": "Preserve source evidence and close linked policy before implementing corrected behavior."
+    },
+    {
+      "id": "DEV-026",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "Follow approved G2/P3 and fixed reference; preserve historical observations."
+    },
+    {
+      "id": "DEV-027",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "Follow approved G2/P3 and fixed reference; preserve historical observations."
+    }
+  ],
+  "cdrs": [
+    {
+      "id": "CDR-001",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-02"
+      ],
+      "note": "Proposed in doc08, never assumed accepted."
+    },
+    {
+      "id": "CDR-002",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-03"
+      ],
+      "note": "Proposed in doc08, never assumed accepted."
+    },
+    {
+      "id": "CDR-003",
+      "status": "CLOSED",
+      "decisions": [],
+      "note": "Approved G2 policy."
+    },
+    {
+      "id": "CDR-004",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-04"
+      ],
+      "note": "Proposed in doc08, never assumed accepted."
+    },
+    {
+      "id": "CDR-005",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-05"
+      ],
+      "note": "Proposed in doc08, never assumed accepted."
+    },
+    {
+      "id": "CDR-006",
+      "status": "CLOSED",
+      "decisions": [
+        "OD-01"
+      ],
+      "note": "CDR-006 approved semantics remain intact; additive public IntervalDifference clarification required."
+    },
+    {
+      "id": "CDR-007",
+      "status": "OWNER_DECISION_REQUIRED",
+      "decisions": [
+        "OD-06"
+      ],
+      "note": "Proposed in doc08, never assumed accepted."
+    }
+  ],
+  "findings": [
+    {
+      "id": "BF-01",
+      "status": "BLOCKING_CONTRACT_CONFLICT",
+      "scope": "P3 public IntervalDifference",
+      "decision": "OD-01"
+    },
+    {
+      "id": "BF-02",
+      "status": "BLOCKING_CONTRACT_CONFLICT",
+      "scope": "P5/P7 no-direct topology versus nonzero diffuse simulation",
+      "decision": "OD-02"
+    }
+  ]
+}

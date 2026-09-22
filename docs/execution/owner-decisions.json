@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "status": "PROPOSED",
+  "decisions": [
+    {
+      "id": "OD-01",
+      "title_en": "IntervalDifference residual semantics",
+      "title_zh": "IntervalDifference 剩余跨度语义",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-02",
+      "title_en": "CDR-001 input / zero / horizon / night",
+      "title_zh": "CDR-001 输入、零光照、地平线与夜间",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-03",
+      "title_en": "CDR-002 hemisphere without recursion",
+      "title_zh": "CDR-002 无递归半球判定",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-04",
+      "title_en": "CDR-004 incident solve and absorption",
+      "title_zh": "CDR-004 入射求解与吸收",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-05",
+      "title_en": "CDR-005 named Perez corrections",
+      "title_zh": "CDR-005 Perez 分项修正",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-06",
+      "title_en": "CDR-007 Fast transmission",
+      "title_zh": "CDR-007 Fast 透射",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-07",
+      "title_en": "Native/Python result and optics contract",
+      "title_zh": "Native/Python 结果与光学合同",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-08",
+      "title_en": "Later oracles, tolerance and approval stops",
+      "title_zh": "后续 oracle、阈值及批准停点",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-09",
+      "title_en": "Supported platforms and wheels",
+      "title_zh": "支持平台与 wheel",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-10",
+      "title_en": "V1 endpoint and autonomous authority",
+      "title_zh": "V1 终点与自主执行授权",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-11",
+      "title_en": "Branch protection and Agent permissions",
+      "title_zh": "分支保护与 Agent 权限",
+      "status": "PENDING",
+      "owner_evidence": null
+    },
+    {
+      "id": "OD-12",
+      "title_en": "Resources, Auto and performance acceptance",
+      "title_zh": "资源、Auto 与性能验收",
+      "status": "PENDING",
+      "owner_evidence": null
+    }
+  ],
+  "blocking_findings": [
+    "BF-01",
+    "BF-02"
+  ],
+  "approval": {
+    "status": "PENDING",
+    "reviewer": null,
+    "evidence": null,
+    "contract_sha256": null,
+    "implementation_branch": null,
+    "readiness_commit": null
+  },
+  "environment": {
+    "status": "PENDING",
+    "receipt": null
+  },
+  "governance": {
+    "status": "PENDING",
+    "receipt": null
+  }
+}

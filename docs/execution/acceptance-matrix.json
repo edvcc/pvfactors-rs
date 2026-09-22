@@ -1,0 +1,1115 @@
+{
+  "schema_version": 1,
+  "status": "PROPOSED_FOR_OWNER_REVIEW",
+  "base_commit": "c2bc8572a976279abacbcd1d4f9c460233785bdb",
+  "reference_revision": "ecbfc863657e239817603a43898ae173c7ccad9c",
+  "capabilities": [
+    {
+      "id": "CAP01",
+      "name_zh": "OrderedPVArray",
+      "name_en": "OrderedPVArray",
+      "scope": "Must Have V1",
+      "source_constraint": "水平地面、共轴向、等高/等宽/等距直线排，有限排数、无限轴向近似",
+      "milestones": [
+        "M3",
+        "M7"
+      ],
+      "behavior_en": "Equal height/width/pitch, common axis, horizontal finite ground; reject unsupported geometries.",
+      "behavior_zh": "等高、等宽、等距、共轴、水平有限地面；拒绝超范围几何。"
+    },
+    {
+      "id": "CAP02",
+      "name_zh": "专用几何与逐时几何",
+      "name_en": "Dedicated and per-frame geometry",
+      "scope": "Must Have V1",
+      "source_constraint": "点、向量、线段、区间、遮挡分区、确定索引、退化处理",
+      "milestones": [
+        "M3",
+        "M7"
+      ],
+      "behavior_en": "Finite primitives, exact identity/topology and frame-specific active maps, including no-direct states.",
+      "behavior_zh": "有限值原语、精确身份与拓扑、逐帧 active map，覆盖 no-direct 状态。"
+    },
+    {
+      "id": "CAP03",
+      "name_zh": "surface cut/discretization",
+      "name_en": "Surface discretization",
+      "scope": "Must Have V1",
+      "source_constraint": "每排正/背面分别配置正整数 cut；加权聚合",
+      "milestones": [
+        "M3",
+        "M7"
+      ],
+      "behavior_en": "Independent positive front/back cuts per row; preserve keys and length-weighted sums.",
+      "behavior_zh": "每排正背面独立正整数 cut；保留 key 与长度加权和。"
+    },
+    {
+      "id": "CAP04",
+      "name_zh": "ground/direct shading",
+      "name_en": "Ground and direct shading",
+      "scope": "Must Have V1",
+      "source_constraint": "投影、重叠消除、cut 点、边排行为、零倾角",
+      "milestones": [
+        "M3",
+        "M5"
+      ],
+      "behavior_en": "Ordered shadow projection, clipping, overlap removal and complete finite-ground partition.",
+      "behavior_zh": "有序阴影投影、裁剪、消除重叠及有限地面完整分区。"
+    },
+    {
+      "id": "CAP05",
+      "name_zh": "geometric VF",
+      "name_en": "Geometric view factors",
+      "scope": "Must Have V1",
+      "source_constraint": "Hottel、邻排、地面、sky、互易性、遮挡",
+      "milestones": [
+        "M4"
+      ],
+      "behavior_en": "Hottel/obstruction/neighbor/ground/sky; receiver-source axes and reciprocity.",
+      "behavior_zh": "Hottel、遮挡、邻排、地面与 sky；明确接收行/源列及互易性。"
+    },
+    {
+      "id": "CAP06",
+      "name_zh": "AOI/F_AOI",
+      "name_en": "AOI and absorbed view factors",
+      "scope": "Must Have V1",
+      "source_constraint": "常数吸收、Rust 原生函数/参数化曲线、NumPy 输入曲线的纯 Rust求值；积分策略命名",
+      "milestones": [
+        "M4",
+        "M5",
+        "M8"
+      ],
+      "behavior_en": "Separate F/G; named ReferenceMidpoint300; paired constant/function/SAPM/table curves evaluated in Rust.",
+      "behavior_zh": "分离 F/G；具名 ReferenceMidpoint300；成对常数/函数/SAPM/表格曲线均在 Rust 求值。"
+    },
+    {
+      "id": "CAP07",
+      "name_zh": "IsotropicOrdered",
+      "name_en": "IsotropicOrdered",
+      "scope": "Must Have V1",
+      "source_constraint": "Full/Fast 内各自参考语义；总量与分量",
+      "milestones": [
+        "M5",
+        "M7"
+      ],
+      "behavior_en": "Isotropic source components in both Full and explicitly selected Fast.",
+      "behavior_zh": "Full 与显式选择的 Fast 各自具有 Isotropic 源分量语义。"
+    },
+    {
+      "id": "CAP08",
+      "name_zh": "HybridPerezOrdered",
+      "name_en": "HybridPerezOrdered",
+      "scope": "Must Have V1",
+      "source_constraint": "1990 系数集、direct/isotropic/circumsolar/horizon、正背面",
+      "milestones": [
+        "M5",
+        "M7"
+      ],
+      "behavior_en": "Frozen 1990 coefficients and exact bins; component traces and approved corrections.",
+      "behavior_zh": "冻结 1990 系数及精确分箱；分量 trace 与批准修正。"
+    },
+    {
+      "id": "CAP09",
+      "name_zh": "circumsolar shadow",
+      "name_en": "Circumsolar shadow",
+      "scope": "Must Have V1",
+      "source_constraint": "当前主路径的直射分区式遮挡和透光/间隙因子；不伪称已用光盘面积模型",
+      "milestones": [
+        "M5"
+      ],
+      "behavior_en": "Direct-partition shading with tau; no dormant disk/Gaussian parameter.",
+      "behavior_zh": "直射分区加 tau；不暴露未生效的光盘/Gaussian 参数。"
+    },
+    {
+      "id": "CAP10",
+      "name_zh": "horizon shadow",
+      "name_en": "Horizon shadow",
+      "scope": "Must Have V1",
+      "source_constraint": "背面参考行为；正面确认 bug 按 CDR-005 修正并单独验收",
+      "milestones": [
+        "M5"
+      ],
+      "behavior_en": "Back behavior plus separately approved front correction and low-sun policy.",
+      "behavior_zh": "背面行为加单独批准的正面修正与低日高政策。"
+    },
+    {
+      "id": "CAP11",
+      "name_zh": "albedo / rho / absorption",
+      "name_en": "Albedo, reflectivity and absorption",
+      "scope": "Must Have V1",
+      "source_constraint": "albedo 逐时或标量，rho 正背面；允许零反射率；间隙/透光参数",
+      "milestones": [
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "behavior_en": "Scalar/timeseries albedo; zero rho; explicit absorption and transmission configuration.",
+      "behavior_zh": "标量/逐时 albedo；零 rho；明确吸收与透射配置。"
+    },
+    {
+      "id": "CAP12",
+      "name_zh": "radiosity",
+      "name_en": "Radiosity",
+      "scope": "Must Have V1",
+      "source_constraint": "无显式逆、可报告残差、奇异/资源错误；sky 边界",
+      "milestones": [
+        "M6"
+      ],
+      "behavior_en": "Incident-form direct solve, residual/condition diagnostics, typed singular/resource failures.",
+      "behavior_zh": "入射形式直接求解、残差/条件诊断、具名奇异/资源错误。"
+    },
+    {
+      "id": "CAP13",
+      "name_zh": "q0/qinc/qabs/分量",
+      "name_en": "q0, qinc, qabs and components",
+      "scope": "Must Have V1",
+      "source_constraint": "Full 全部；Fast 只保证已定义的 qinc/反射分量，q0/qabs 标记 unavailable",
+      "milestones": [
+        "M6",
+        "M7"
+      ],
+      "behavior_en": "Full q0/qinc/qabs/components; Fast q0/qabs unavailable, never fabricated zero.",
+      "behavior_zh": "Full q0/qinc/qabs/分量；Fast q0/qabs 明确 unavailable，不伪造零。"
+    },
+    {
+      "id": "CAP14",
+      "name_zh": "Full",
+      "name_en": "Full mode",
+      "scope": "Must Have V1",
+      "source_constraint": "所有物理表面反射平衡，row/side/segment 聚合",
+      "milestones": [
+        "M7"
+      ],
+      "behavior_en": "Equilibrium of all physical surfaces; segment/side/row aggregation and keys.",
+      "behavior_zh": "所有物理面反射平衡；按 key 聚合 segment/side/row。"
+    },
+    {
+      "id": "CAP15",
+      "name_zh": "Fast",
+      "name_en": "Fast mode",
+      "scope": "Must Have V1",
+      "source_constraint": "显式选择某排背面、可选 segment；不是自动降精度档",
+      "milestones": [
+        "M7"
+      ],
+      "behavior_en": "Explicit target row back and optional segment; preserve named one-bounce approximation.",
+      "behavior_zh": "显式目标排背面及可选 segment；保留具名一次反射近似。"
+    },
+    {
+      "id": "CAP16",
+      "name_zh": "timeseries",
+      "name_en": "Timeseries",
+      "scope": "Must Have V1",
+      "source_constraint": "批输入、逐点状态、顺序恢复、可控中间量输出",
+      "milestones": [
+        "M7",
+        "M10"
+      ],
+      "behavior_en": "Broadcast/shape validation, original order, per-frame statuses, bounded optional trace.",
+      "behavior_zh": "广播/形状验证、原序、逐帧状态、受限可选 trace。"
+    },
+    {
+      "id": "CAP17",
+      "name_zh": "Rust Native API",
+      "name_en": "Rust Native API",
+      "scope": "Must Have V1",
+      "source_constraint": "纯 Rust；无 Python/pvlib/GEOS runtime",
+      "milestones": [
+        "M7",
+        "M13"
+      ],
+      "behavior_en": "Pure Rust consumer builds/runs without Python, pvlib, GEOS or binding dependency.",
+      "behavior_zh": "纯 Rust 使用者可独立构建运行，不依赖 Python、pvlib、GEOS 或 binding。"
+    },
+    {
+      "id": "CAP18",
+      "name_zh": "Python Binding / wheels",
+      "name_en": "Python binding and wheels",
+      "scope": "Must Have V1",
+      "source_constraint": "PyO3+maturin 候选，thin binding，macOS 双架构/Linux/Windows",
+      "milestones": [
+        "M8",
+        "M13"
+      ],
+      "behavior_en": "Thin ownership-safe binding; clean wheel install and Native parity on approved platform matrix.",
+      "behavior_zh": "薄绑定、所有权安全；批准平台矩阵上干净安装 wheel 并与 Native 一致。"
+    },
+    {
+      "id": "CAP19",
+      "name_zh": "Serial / Explicit Parallel",
+      "name_en": "Serial and explicit parallel",
+      "scope": "Must Have V1",
+      "source_constraint": "同一物理计算；外层 timestep/chunk 并行；可控制资源",
+      "milestones": [
+        "M7",
+        "M10"
+      ],
+      "behavior_en": "One physical kernel, deterministic ordering, bounded outer workers and cancellation/errors.",
+      "behavior_zh": "同一物理核心、确定顺序、受限外层 worker、取消与错误传播。"
+    },
+    {
+      "id": "CAP20",
+      "name_zh": "Adaptive Auto",
+      "name_en": "Adaptive Auto",
+      "scope": "Must Have V1",
+      "source_constraint": "确定性 cost model、诊断、benchmark 校准，不切换 Full/Fast",
+      "milestones": [
+        "M11",
+        "M12"
+      ],
+      "behavior_en": "Deterministic measured cost model, explainable plan, calibrated crossover, serial fallback.",
+      "behavior_zh": "确定性实测成本模型、可解释计划、经校准切换点、串行回退。"
+    },
+    {
+      "id": "CAP21",
+      "name_zh": "finite ground 配置与验证",
+      "name_en": "Finite ground",
+      "scope": "Must Have V1",
+      "source_constraint": "Reference 范围 [-100,100] 明示；大型阵列显式扩大，禁止静默越界",
+      "milestones": [
+        "M3",
+        "M4",
+        "M7"
+      ],
+      "behavior_en": "Explicit default [-100,100] and configurable extent shared by geometry/VF/AOI; reject out-of-domain rows.",
+      "behavior_zh": "显式默认 [-100,100] 与 Geometry/VF/AOI 共用可配置范围；拒绝越界排。"
+    },
+    {
+      "id": "CAP22",
+      "name_zh": "compatibility/CDR/Golden 管理",
+      "name_en": "Compatibility, CDR and Golden governance",
+      "scope": "Must Have V1",
+      "source_constraint": "原始 oracle 不修改；修正与 reference 数值分离",
+      "milestones": [
+        "M3",
+        "M9",
+        "M13"
+      ],
+      "behavior_en": "Immutable raw/approved data, field-level CDR deviations, independent oracles and versioned tolerance.",
+      "behavior_zh": "不可变 raw/approved 数据、字段级 CDR 偏差、独立 oracle 与版本化阈值。"
+    },
+    {
+      "id": "CAP23",
+      "name_zh": "Python classes/callback/report API 完整复刻",
+      "name_en": "Full Python class/callback/report API clone",
+      "scope": "Out of Scope V1",
+      "source_constraint": "只提供语义 API；Pandas 用户适配可在外围完成",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "Semantic API only; external Pandas adapters allowed."
+    },
+    {
+      "id": "CAP24",
+      "name_zh": "plotting/GIS/任意二维拓扑",
+      "name_en": "Plotting/GIS/arbitrary 2D topology",
+      "scope": "Out of Scope V1",
+      "source_constraint": "不复制 Matplotlib/Shapely API",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "No Matplotlib/Shapely API clone."
+    },
+    {
+      "id": "CAP25",
+      "name_zh": "SAM 数据库、太阳位置/追踪器/天气/电气模型",
+      "name_en": "SAM database/solar position/tracking/weather/electrical models",
+      "scope": "Out of Scope V1",
+      "source_constraint": "输入上游 Python 系统提供；支持显式 SAPM B0…B5 即可",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "Inputs come from upstream systems; explicit SAPM B0-B5 supported."
+    },
+    {
+      "id": "CAP26",
+      "name_zh": "非等高/非等距/坡地/dual tilt/3D 端部效应",
+      "name_en": "Unequal rows/sloped terrain/dual tilt/3D end effects",
+      "scope": "Out of Scope V1",
+      "source_constraint": "必须新模型，不作为普通参数放行",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "Requires a new model, not an ordinary V1 parameter."
+    },
+    {
+      "id": "CAP27",
+      "name_zh": "Python 运行时 fAOI callback",
+      "name_en": "Runtime Python AOI callbacks",
+      "scope": "Out of Scope V1",
+      "source_constraint": "不在 Rust 并行热路径回调 Python；曲线/系数输入替代",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "No Python callbacks in Rust parallel hot paths; use curves/coefficients."
+    },
+    {
+      "id": "CAP28",
+      "name_zh": "完整光盘 circumsolar 遮挡",
+      "name_en": "Full disk circumsolar obstruction",
+      "scope": "Candidate V1.x",
+      "source_constraint": "原辅助函数不是现行主流程；需独立物理规格与 CDR",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "Dormant helper; requires independent physics specification and CDR."
+    },
+    {
+      "id": "CAP29",
+      "name_zh": "inner solver parallel",
+      "name_en": "Inner solver parallelism",
+      "scope": "Candidate V1.x",
+      "source_constraint": "V1 留边界，测得 crossover 后启用",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "Defer until measured crossover supports adoption."
+    },
+    {
+      "id": "CAP30",
+      "name_zh": "abi3 wheel、free-threaded CPython、PyPy",
+      "name_en": "abi3/free-threaded/PyPy wheels",
+      "scope": "Candidate V1.x",
+      "source_constraint": "逐一核实 NumPy 与 ABI，不预先承诺",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "Verify NumPy/ABI separately; no advance promise."
+    },
+    {
+      "id": "CAP31",
+      "name_zh": "更精确 AOI 积分 / 地面消元",
+      "name_en": "Improved AOI integration/ground elimination",
+      "scope": "Candidate V1.x",
+      "source_constraint": "用模型 revision/误差对照验证，不静默替换",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "Separate model revision and error evidence; no silent replacement."
+    },
+    {
+      "id": "CAP32",
+      "name_zh": "SIMD/GPU/WASM/稀疏求解/跨机器校准",
+      "name_en": "SIMD/GPU/WASM/sparse solve/cross-machine calibration",
+      "scope": "Future",
+      "source_constraint": "WASM 先保持核心依赖可移植，V1 不发包承诺",
+      "milestones": [],
+      "behavior_en": "Excluded from V1 acceptance blockers.",
+      "behavior_zh": "不作为 V1 验收阻塞项。",
+      "constraint_en": "Portable boundaries only; no V1 distribution promise."
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M3",
+      "phase": "P3",
+      "slug": "geometry",
+      "name_en": "Geometry",
+      "name_zh": "Geometry",
+      "module_scope": "math, geometry",
+      "entry_en": "G2 approved; OD-01 closed",
+      "entry_zh": "G2 已批准；OD-01 关闭",
+      "required_tests": [
+        "interval_residual",
+        "validation_order",
+        "row_partition",
+        "ground_coverage",
+        "identity_active_map",
+        "projection_states",
+        "predicate_boundaries",
+        "mirror",
+        "requested_frame"
+      ],
+      "decision_dependencies": [
+        "CDR-003",
+        "CDR-006",
+        "OD-01"
+      ],
+      "tolerance": "geometry-tolerance-v0.1",
+      "oracle_id": "approved-geometry",
+      "layers": [
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "forbidden": "View Factor, irradiance, solver, binding",
+      "ci": "PR correctness",
+      "implementation_files": [
+        "crates/solarfactors-core/src/geometry/mod.rs",
+        "crates/solarfactors-core/src/math/mod.rs"
+      ],
+      "runner_file": "crates/solarfactors-core/tests/acceptance_geometry.rs",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "-p",
+        "solarfactors-core",
+        "--test",
+        "acceptance_geometry",
+        "--",
+        "--nocapture",
+        "--test-threads=1"
+      ],
+      "checker": "geometry-v1",
+      "oracle_status": "APPROVED",
+      "required_artifacts": [
+        "run.json",
+        "results/",
+        "test.log"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M4",
+      "phase": "P4",
+      "slug": "viewfactor",
+      "name_en": "View Factor / AOI",
+      "name_zh": "View Factor / AOI",
+      "module_scope": "viewfactor",
+      "entry_en": "M3; OD-02/04/07/08 closed; VF oracle approved",
+      "entry_zh": "M3；OD-02/04/07/08 关闭；VF oracle 已批准",
+      "required_tests": [
+        "hottel_analytic",
+        "reciprocity",
+        "sky_closure",
+        "obstruction",
+        "aoi_constant",
+        "aoi_bin_edges",
+        "f_g_no_alias",
+        "ground_absorption",
+        "fast_groups"
+      ],
+      "decision_dependencies": [
+        "CDR-004",
+        "OD-07",
+        "OD-08"
+      ],
+      "tolerance": "view-factor + aoi-quadrature (pending)",
+      "oracle_id": "vf-aoi",
+      "layers": [
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "forbidden": "Unapproved AOI integration, clipping G to F",
+      "ci": "PR correctness",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M5",
+      "phase": "P5",
+      "slug": "irradiance",
+      "name_en": "Irradiance / Perez",
+      "name_zh": "Irradiance / Perez",
+      "module_scope": "irradiance",
+      "entry_en": "M3; OD-02/03/05/06/07/08 closed; source oracles approved",
+      "entry_zh": "M3；OD-02/03/05/06/07/08 关闭；源项 oracle 已批准",
+      "required_tests": [
+        "spencer_calendar",
+        "airmass",
+        "perez_coefficients_bins",
+        "zero_dhi_limit",
+        "hemisphere_no_recursion",
+        "front_back_horizon",
+        "low_sun",
+        "transmission",
+        "absorbed_sources",
+        "fast_tau"
+      ],
+      "decision_dependencies": [
+        "CDR-001",
+        "CDR-002",
+        "CDR-005",
+        "CDR-007",
+        "OD-07",
+        "OD-08"
+      ],
+      "tolerance": "perez-primitives + perez-components (pending)",
+      "oracle_id": "irradiance",
+      "layers": [
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "forbidden": "New physical model, full pvlib clone",
+      "ci": "PR correctness",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M6",
+      "phase": "P6",
+      "slug": "radiosity",
+      "name_en": "Radiosity / Solver",
+      "name_zh": "Radiosity / Solver",
+      "module_scope": "radiosity",
+      "entry_en": "M4/M5; OD-04/08 closed; solver oracle approved",
+      "entry_zh": "M4/M5；OD-04/08 关闭；solver oracle 已批准",
+      "required_tests": [
+        "analytic_systems",
+        "zero_rho",
+        "near_singular",
+        "scaled_residual",
+        "incident_identity",
+        "absorption_identity",
+        "sky_boundary",
+        "resource_failure"
+      ],
+      "decision_dependencies": [
+        "CDR-004",
+        "OD-08"
+      ],
+      "tolerance": "solver-residual + surface-output (pending)",
+      "oracle_id": "radiosity",
+      "layers": [
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "forbidden": "Explicit inverse, unapproved regularization, inner parallel",
+      "ci": "PR correctness",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M7",
+      "phase": "P7",
+      "slug": "serial",
+      "name_en": "Serial Simulation",
+      "name_zh": "串行 Simulation",
+      "module_scope": "simulation, execution/serial",
+      "entry_en": "M3-M6; OD-02/07/08 closed",
+      "entry_zh": "M3-M6；OD-02/07/08 关闭",
+      "required_tests": [
+        "full_hybrid",
+        "full_isotropic",
+        "fast_targets",
+        "fast_availability",
+        "broadcast_empty_invalid",
+        "zero_night_status",
+        "timeseries_order",
+        "weighted_fixed_field",
+        "ragged_trace",
+        "native_consumer"
+      ],
+      "decision_dependencies": [
+        "CDR-001",
+        "CDR-007",
+        "OD-07",
+        "OD-08"
+      ],
+      "tolerance": "surface-output + aggregate (pending)",
+      "oracle_id": "native-e2e",
+      "layers": [
+        "A3",
+        "A4",
+        "A5",
+        "A6"
+      ],
+      "forbidden": "Parallel/Auto before serial freeze; hidden Fast fallback",
+      "ci": "PR correctness",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M8",
+      "phase": "P8",
+      "slug": "python",
+      "name_en": "Python Binding",
+      "name_zh": "Python 绑定",
+      "module_scope": "solarfactors-python",
+      "entry_en": "M7; OD-07/09 closed; binding matrix available",
+      "entry_zh": "M7；OD-07/09 关闭；binding 矩阵可用",
+      "required_tests": [
+        "native_python_parity",
+        "dtype_shape_strides",
+        "owned_copy_alias",
+        "gil_detach",
+        "exceptions",
+        "cancel",
+        "wheel_clean_install",
+        "core_dependency_isolation"
+      ],
+      "decision_dependencies": [
+        "OD-07",
+        "OD-09"
+      ],
+      "tolerance": "native-python output (pending)",
+      "oracle_id": "python-e2e",
+      "layers": [
+        "A6",
+        "A7",
+        "A10"
+      ],
+      "forbidden": "Python physics, callbacks, unverified zero-copy/abi3",
+      "ci": "PR correctness",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M9",
+      "phase": "P9",
+      "slug": "hardening",
+      "name_en": "Correctness Hardening",
+      "name_zh": "正确性强化",
+      "module_scope": "tests, reference candidates",
+      "entry_en": "M7/M8; OD-08 approvals and platform samples",
+      "entry_zh": "M7/M8；OD-08 批准与平台采样",
+      "required_tests": [
+        "all_approved_cases",
+        "boundary_properties",
+        "metamorphic_preconditions",
+        "cross_platform_tolerance",
+        "regression_seeds",
+        "error_contract"
+      ],
+      "decision_dependencies": [
+        "OD-08",
+        "OD-09"
+      ],
+      "tolerance": "all subsystem profiles (pending)",
+      "oracle_id": "correctness",
+      "layers": [
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A10"
+      ],
+      "forbidden": "Optimization hiding numerical debt",
+      "ci": "PR correctness",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M10",
+      "phase": "P10",
+      "slug": "parallel",
+      "name_en": "Explicit Parallel",
+      "name_zh": "显式并行",
+      "module_scope": "execution/outer",
+      "entry_en": "M9 serial correctness freeze",
+      "entry_zh": "M9 串行正确性冻结",
+      "required_tests": [
+        "workers_1_2_max",
+        "chunks_1_prime_uneven",
+        "mixed_status_order",
+        "thread_budget",
+        "memory_budget",
+        "cancel_error_cleanup",
+        "concurrent_python_calls"
+      ],
+      "decision_dependencies": [
+        "OD-07",
+        "OD-12"
+      ],
+      "tolerance": "execution-equivalence (pending)",
+      "oracle_id": "parallel",
+      "layers": [
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9"
+      ],
+      "forbidden": "Second kernel, nested heavy pools, global BLAS mutation",
+      "ci": "nightly/deep",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M11",
+      "phase": "P11",
+      "slug": "auto",
+      "name_en": "Adaptive Auto",
+      "name_zh": "自适应 Auto",
+      "module_scope": "execution/planner",
+      "entry_en": "M10; OD-12 protocol/targets; calibration",
+      "entry_zh": "M10；OD-12 协议/目标；校准数据",
+      "required_tests": [
+        "plan_determinism",
+        "cost_profile",
+        "calibration_holdout",
+        "crossover",
+        "uncalibrated_fallback",
+        "out_of_domain_fallback",
+        "resource_caps",
+        "auto_equivalence"
+      ],
+      "decision_dependencies": [
+        "OD-12"
+      ],
+      "tolerance": "execution-equivalence; approved perf budget",
+      "oracle_id": "auto",
+      "layers": [
+        "A8",
+        "A9"
+      ],
+      "forbidden": "LLM planner, Full/Fast switch, unmeasured default inner",
+      "ci": "nightly/deep",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M12",
+      "phase": "P12",
+      "slug": "performance",
+      "name_en": "Performance",
+      "name_zh": "性能",
+      "module_scope": "measured implementation hotspots",
+      "entry_en": "M9-M11; isolated benchmark protocol",
+      "entry_zh": "M9-M11；隔离基准协议",
+      "required_tests": [
+        "same_model_regression",
+        "allocation_memory_curve",
+        "benchmark_repetitions",
+        "auto_vs_best_feasible",
+        "calibration_version"
+      ],
+      "decision_dependencies": [
+        "OD-12"
+      ],
+      "tolerance": "unchanged correctness profiles; OD-12 budget",
+      "oracle_id": "performance",
+      "layers": [
+        "A3",
+        "A8",
+        "A9"
+      ],
+      "forbidden": "SIMD/GPU/WASM blocker; speedup by lower cut",
+      "ci": "nightly/deep",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    },
+    {
+      "id": "M13",
+      "phase": "P13",
+      "slug": "release-candidate",
+      "name_en": "Release Candidate",
+      "name_zh": "发布候选",
+      "module_scope": "packages, docs, licensing",
+      "entry_en": "M3-M12; every CAP01-CAP22; matrix complete",
+      "entry_zh": "M3-M12；全部 CAP01-CAP22；平台矩阵完整",
+      "required_tests": [
+        "rust_package_consumer",
+        "all_wheels_clean_install",
+        "native_python_execution_matrix",
+        "license_provenance",
+        "version_consistency",
+        "full_capability_inventory",
+        "owner_review_bundle"
+      ],
+      "decision_dependencies": [
+        "OD-09",
+        "OD-10",
+        "OD-11"
+      ],
+      "tolerance": "all approved profiles",
+      "oracle_id": "release",
+      "layers": [
+        "A0",
+        "A1",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11"
+      ],
+      "forbidden": "master merge, official tag, publishing",
+      "ci": "release-candidate/full-matrix",
+      "implementation_files": [],
+      "runner_file": null,
+      "command": [],
+      "checker": null,
+      "oracle_status": "PENDING_OWNER_APPROVAL",
+      "required_artifacts": [
+        "test-results",
+        "case-inventory",
+        "oracle-digests",
+        "comparison",
+        "invariants",
+        "environment",
+        "command-logs"
+      ],
+      "current_status": "NOT_READY"
+    }
+  ],
+  "completion": "V1 IMPLEMENTATION COMPLETE + RELEASE CANDIDATE READY FOR OWNER ACCEPTANCE",
+  "required_platforms": [
+    "linux-x86_64",
+    "macos-arm64",
+    "macos-x86_64",
+    "windows-x86_64"
+  ],
+  "layers": [
+    {
+      "id": "A0",
+      "name_en": "Baseline Integrity",
+      "name_zh": "基线完整性",
+      "input": "source/G2/P3/locks",
+      "authoritative_oracle": "Owner base commit + approved manifest",
+      "comparator": "Git blob / SHA256 / exact inventory",
+      "tolerance": "exact",
+      "applicability": "all modes",
+      "artifacts": "integrity.json",
+      "failure_interpretation": "Mutation or missing baseline: stop"
+    },
+    {
+      "id": "A1",
+      "name_en": "Environment / Toolchain",
+      "name_zh": "环境与工具链",
+      "input": "toolchain/Python/R0/runner",
+      "authoritative_oracle": "rust-toolchain + R0 lock + approved platform policy",
+      "comparator": "live versions/metadata/probes",
+      "tolerance": "exact version/identity",
+      "applicability": "launch and platform gates",
+      "artifacts": "environment.json; command logs",
+      "failure_interpretation": "Missing environment: ENVIRONMENT GAP"
+    },
+    {
+      "id": "A2",
+      "name_en": "Mathematical Unit / Analytic",
+      "name_zh": "数学单元与解析",
+      "input": "small independently constructed inputs",
+      "authoritative_oracle": "interval lengths; Hottel analytic; Perez coefficients; rational linear system",
+      "comparator": "fieldwise analytic assertions",
+      "tolerance": "exact categories; subsystem profile",
+      "applicability": "each mathematical module",
+      "artifacts": "named test results + derivation",
+      "failure_interpretation": "Implementation bug or conflicting definition"
+    },
+    {
+      "id": "A3",
+      "name_en": "Reference Differential",
+      "name_zh": "Reference 差分",
+      "input": "expanded cases + full intermediate trace",
+      "authoritative_oracle": "frozen R0 raw; approved CDR corrected expectation",
+      "comparator": "case/field/axis comparison, first divergence",
+      "tolerance": "geometry v0.1; later independently approved profiles",
+      "applicability": "supported reference domain and CDR scope",
+      "artifacts": "case inventory, hashes, diff, nonfinite classification",
+      "failure_interpretation": "Ordinary mismatch: debug; oracle conflict: stop"
+    },
+    {
+      "id": "A4",
+      "name_en": "Physical / Algebraic Invariants",
+      "name_zh": "物理/代数不变量",
+      "input": "geometry/F/G/B/q",
+      "authoritative_oracle": "conservation, reciprocity, matrix identities",
+      "comparator": "domain-aware assertions",
+      "tolerance": "exact structure + approved residual/quantity budget",
+      "applicability": "positive active surfaces; sky/G exceptions",
+      "artifacts": "invariant reports with prerequisites",
+      "failure_interpretation": "Do not assume positivity outside model domain"
+    },
+    {
+      "id": "A5",
+      "name_en": "Property / Metamorphic",
+      "name_zh": "性质/蜕变",
+      "input": "seeded valid/invalid/boundary families",
+      "authoritative_oracle": "mirror, fixed-field aggregation, exact input/order laws",
+      "comparator": "shrink, persist seed, relation tests",
+      "tolerance": "profile per quantity; exact keys/status",
+      "applicability": "declared valid domains and each relation precondition",
+      "artifacts": "seed/run counts, regressions",
+      "failure_interpretation": "Failure is feedback; do not assume away hard cases"
+    },
+    {
+      "id": "A6",
+      "name_en": "Native E2E",
+      "name_zh": "Native 端到端",
+      "input": "public Rust consumer inputs",
+      "authoritative_oracle": "approved serial outputs + API contract",
+      "comparator": "external consumer tests and layered diff",
+      "tolerance": "output/aggregate profile",
+      "applicability": "Full/Fast/targets/batches/errors",
+      "artifacts": "consumer build/test logs, traces",
+      "failure_interpretation": "API/behavior failure; no Python runtime workaround"
+    },
+    {
+      "id": "A7",
+      "name_en": "Python E2E",
+      "name_zh": "Python 端到端",
+      "input": "installed wheel, NumPy inputs",
+      "authoritative_oracle": "same-case Native results + ownership contract",
+      "comparator": "field/availability/error parity; alias/GIL probes",
+      "tolerance": "tight approved Native parity",
+      "applicability": "all supported Python/NumPy combinations",
+      "artifacts": "wheel hash, clean-install log, parity results",
+      "failure_interpretation": "maturin develop alone is insufficient"
+    },
+    {
+      "id": "A8",
+      "name_en": "Execution Equivalence",
+      "name_zh": "执行等价",
+      "input": "serial/parallel/auto/chunk variants",
+      "authoritative_oracle": "same kernel Serial baseline",
+      "comparator": "original-index fieldwise comparison",
+      "tolerance": "execution-equivalence profile; exact model/status",
+      "applicability": "workers 1/2/max, uneven chunks, mixed statuses",
+      "artifacts": "plan metadata, traces, cancellation/thread counts",
+      "failure_interpretation": "Feedback; never lower mode/cut to pass"
+    },
+    {
+      "id": "A9",
+      "name_en": "Performance / Resource",
+      "name_zh": "性能与资源",
+      "input": "held-out workload, limits, calibration",
+      "authoritative_oracle": "Owner-approved OD-12 protocol/budgets",
+      "comparator": "isolated repeated release timing, RSS, disk",
+      "tolerance": "OD-12 candidate targets; no accuracy relaxation",
+      "applicability": "correctness-frozen workload domain",
+      "artifacts": "raw samples, CPU/compiler/backend, fit/holdout error",
+      "failure_interpretation": "Slow code is feedback; infeasible contract escalates"
+    },
+    {
+      "id": "A10",
+      "name_en": "Packaging / Platform",
+      "name_zh": "打包与平台",
+      "input": "crates/wheels, OS/interpreter grid",
+      "authoritative_oracle": "approved platform floor, clean Native/Python consumers",
+      "comparator": "artifact install/link/dependency audits",
+      "tolerance": "exact matrix + platform numeric profiles",
+      "applicability": "Linux/macOS dual arch/Windows",
+      "artifacts": "package hashes, OS floor smoke, SBOM/notices",
+      "failure_interpretation": "Missing platform cannot be waived by another arch"
+    },
+    {
+      "id": "A11",
+      "name_en": "Governance / RC",
+      "name_zh": "治理与发布候选",
+      "input": "all capability/milestone evidence",
+      "authoritative_oracle": "Owner-approved completion/execution/CDRs",
+      "comparator": "complete inventory, no unresolved required failures",
+      "tolerance": "no implicit waiver",
+      "applicability": "final candidate only",
+      "artifacts": "final JSON, review bundle, changelog/provenance",
+      "failure_interpretation": "Not master merge or release authority"
+    }
+  ]
+}
