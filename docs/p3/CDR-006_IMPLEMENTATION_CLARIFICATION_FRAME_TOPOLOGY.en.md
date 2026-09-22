@@ -1,6 +1,6 @@
 # CDR-006 Implementation Clarification — Frame Topology Lifetime
 
-- Status: **IMPLEMENTATION CLARIFICATION — AWAITING REPOSITORY OWNER REVIEW**
+- Status: **IMPLEMENTATION CLARIFICATION — APPROVED**
 - Date: 2026-09-22
 - Governing decision: CDR-006 (**APPROVED**)
 - Related decision: CDR-003 (**APPROVED**)
@@ -232,7 +232,8 @@ change requires a new decision and Golden version.
 
 ## 11. Review effect
 
-Until Repository Owner review, this file is a draft implementation
-clarification. Approval would make it the normative interpretation used by the
-next type-skeleton and implementation tasks. It would not alter approved G2
-artifacts, declare the API implemented, or constitute G3 PASS.
+Repository Owner approval is complete. This clarification is the normative P3
+implementation interpretation of CDR-006 stable identity and `FrameTopology`
+lifetime. It does not alter approved G2 artifacts, reopen CDR-006, change
+CDR-003 or the Approved Golden, declare the API implemented, or constitute G3
+PASS.

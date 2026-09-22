@@ -1,6 +1,6 @@
 # P3 Geometry Kernel API and Data Model Design Baseline
 
-- Status: **DRAFT — AWAITING REPOSITORY OWNER REVIEW**
+- Status: **APPROVED**
 - Date: 2026-09-22
 - Scope: P3 `solarfactors-core` math and Geometry API/data model design
 - Approved Golden: `geometry-golden-v0.1`
@@ -160,7 +160,7 @@ zero or nonfinite vector must not manufacture NaN/Inf as a sentinel.
 
 ### 5.3 `Segment2`
 
-`Segment2` is a finite segment formed by two **ordered** endpoints. It preserves
+`Segment2` is a bounded line segment defined by two ordered endpoints. It preserves
 caller order and never automatically reorders left/right, high/low, or
 orientation. `a == b` is a valid zero-length mathematical segment. It is not,
 by that fact alone, an active Geometry surface.
@@ -593,7 +593,7 @@ future measured consumer and an explicit consistency strategy.
 |---|---|---|
 | `Point2` | public | Stable two-dimensional math value |
 | `Vec2` | public | Stable vector algebra value |
-| `Segment2` | public | Ordered finite-segment value |
+| `Segment2` | public | Ordered bounded-segment value |
 | `Interval` | public | Reusable finite closed interval |
 | `IntervalError` | public | Constructor failure contract |
 | `IntervalDifference` | public | Typed set-operation result |
@@ -748,10 +748,10 @@ work must stop at that conflict; it must not silently select new semantics.
 
 ## 22. Review and change control
 
-This document is a draft until the Repository Owner approves it. Approval of
-this document would authorize it as input to a separate Math + Geometry Module
-Skeleton and Public Type Declaration Bootstrap task; it would not by itself
-approve algorithm correctness or G3.
+Repository Owner approval is complete. This document is now the authoritative
+input to the separate Math + Geometry Module Skeleton and Public Type
+Declaration Bootstrap task; this approval does not by itself approve algorithm
+correctness or G3.
 
 Any change to projection classification, no-direct topology, stable identity,
 predicate values/operators, validation order, or approved error compatibility

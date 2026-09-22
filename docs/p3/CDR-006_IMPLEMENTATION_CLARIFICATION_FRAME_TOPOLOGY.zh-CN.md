@@ -1,6 +1,6 @@
 # CDR-006 Implementation Clarification — Frame Topology 生命周期
 
-- 状态：**IMPLEMENTATION CLARIFICATION — AWAITING REPOSITORY OWNER REVIEW**
+- 状态：**IMPLEMENTATION CLARIFICATION — APPROVED**
 - 日期：2026-09-22
 - 治理决策：CDR-006（**APPROVED**）
 - 相关决策：CDR-003（**APPROVED**）
@@ -209,6 +209,6 @@ transition 可以改变成员与长度。
 
 ## 11. 审查效力
 
-Repository Owner review 前，本文档是 draft implementation clarification。批准后，它将成为
-下一阶段 type-skeleton 与实现任务使用的规范性解释；它不会改变已批准 G2 artifact，不会
-宣称 API 已实现，也不构成 G3 PASS。
+Repository Owner 已完成批准。本 clarification 是 P3 中解释 CDR-006 stable identity 与
+`FrameTopology` lifetime 的规范性实现解释。它不改变已批准 G2 artifact，不重新打开 CDR-006，
+不改变 CDR-003 或 Approved Golden，不宣称 API 已实现，也不构成 G3 PASS。

@@ -1,6 +1,6 @@
 # P3 Geometry Kernel API 与数据模型设计基线
 
-- 状态：**DRAFT — AWAITING REPOSITORY OWNER REVIEW**
+- 状态：**APPROVED**
 - 日期：2026-09-22
 - 范围：P3 `solarfactors-core` math 与 Geometry API / 数据模型设计
 - Approved Golden：`geometry-golden-v0.1`
@@ -144,7 +144,7 @@ normalization 不得用 NaN/Inf sentinel 表示结果。
 
 ### 5.3 `Segment2`
 
-`Segment2` 是由两个**有序端点**形成的有限线段。它保留 caller 顺序，不自动执行
+`Segment2` 是由两个有序端点定义的有界线段。它保留 caller 顺序，不自动执行
 left/right、high/low 或 orientation reorder。`a == b` 是合法的 zero-length 数学线段；
 这本身并不使其成为 active Geometry surface。
 
@@ -539,7 +539,7 @@ Row 与 shading collection 也必须按 row order 各有 `ArrayLayout.n_pvrows` 
 |---|---|---|
 | `Point2` | public | 稳定二维数学值 |
 | `Vec2` | public | 稳定 vector algebra 值 |
-| `Segment2` | public | 有序有限线段值 |
+| `Segment2` | public | 有序有界线段值 |
 | `Interval` | public | 可复用 finite closed interval |
 | `IntervalError` | public | Constructor failure contract |
 | `IntervalDifference` | public | Typed set-operation result |
@@ -681,9 +681,8 @@ global mutable configuration、solver/execution state 均不得进入 Geometry m
 
 ## 22. 审查与变更控制
 
-本文档在 Repository Owner 批准前保持 draft。Owner 批准后，它可以成为单独的 Math +
-Geometry Module Skeleton and Public Type Declaration Bootstrap 任务输入；该批准本身不代表
-算法正确性或 G3 通过。
+Repository Owner 已完成批准。本文档现为后续 Math + Geometry Module Skeleton and Public
+Type Declaration Bootstrap 独立任务的权威输入；该批准本身不代表算法正确性或 G3 通过。
 
 Projection classification、no-direct topology、stable identity、predicate 数值/operator、
 validation order 或 approved error compatibility 的任何变化都需要明确审查；如改变已批准
