@@ -274,7 +274,7 @@ def numeric_compare_case(n: int, tilt: float, surface_azimuth: float, order: int
         "pair_count": len(rows),
         "max_abs_error_reference": max_ref,
         "max_abs_error_abs_reference": max_abs,
-        "abs_counterexample_count": len(fixed_grid_abs_residuals),
+        "fixed_grid_abs_residual_gt_5e7_count": len(fixed_grid_abs_residuals),
         "fixed_grid_abs_residual_examples": fixed_grid_abs_residuals[:50],
         "pairs": rows,
     }
@@ -495,7 +495,7 @@ def main() -> None:
         ],
         "max_abs_reference_numeric_error": max(x["max_abs_error_reference"] for x in numeric),
         "max_abs_absreference_numeric_error": max(x["max_abs_error_abs_reference"] for x in numeric),
-        "fixed_grid_abs_residuals": sum(x["abs_counterexample_count"] for x in numeric),
+        "fixed_grid_abs_residual_gt_5e7_count_total": sum(x["fixed_grid_abs_residual_gt_5e7_count"] for x in numeric),
         "mutation_self_tests": report["invariant_mutation_self_tests"],
     }
     print(json.dumps(summary, indent=2))
