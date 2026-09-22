@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "BLOCKED",
+  "phase": "MANDATORY_STOP_SECTION_40",
+  "ready_for_full_launch_review": false,
+  "new_launch_blockers": [
+    {
+      "id": "LCB-01",
+      "status": "OPEN",
+      "evidence": "evidence/execution/launch-closure/NEW_LAUNCH_BLOCKER_LCB-01.json",
+      "sha256": "b342eaace2c2f6d0edf928cfb20aeb42b98ab366d76d95ecefba40e70165b86e"
+    }
+  ],
+  "owner_decisions_approved": 0,
+  "oracles_promoted": 0,
+  "production_started": false,
+  "next_action": "Owner authorizes new named VF deviation/CDR candidate investigation without changing approved Geometry, then resume LC-1..LC-6."
+}

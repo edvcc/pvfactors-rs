@@ -1,0 +1,3 @@
+maturin==1.15.0
+numpy==2.4.6
+pvfactors-packaging-probe @ file:///D:/a/pvfactors-rs/pvfactors-rs/reference/work/launch-ci/wheels/pvfactors_packaging_probe-0.0.0-cp311-cp311-win_amd64.whl#sha256=6d72cc4e73a4f048ccff2dfd2ec6f1ba6356d63d0e28a833eb44520fc263b354

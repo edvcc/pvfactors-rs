@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "GOVERNANCE_ACTION_REQUIRED",
+  "observed_at": "2026-09-22T03:47:58.109803+00:00",
+  "master_protected": false,
+  "develop_protected": false,
+  "rulesets": [],
+  "current_identity_permissions": {
+    "admin": true,
+    "maintain": true,
+    "push": true,
+    "triage": true,
+    "pull": true
+  },
+  "risk_candidate": "GRA-LC-01: unprotected formal/integration refs and administrative identity; requires Owner, expiry, restricted automation identity or explicit residual-risk acceptance. NOT ACCEPTED.",
+  "configuration_applied": false,
+  "evidence": {
+    "path": "evidence/execution/launch-closure/github-snapshot.json",
+    "sha256": "1752386561d15a901eb39597cf4e4af66bc639a3e5241867eeee97c682acbc17"
+  }
+}

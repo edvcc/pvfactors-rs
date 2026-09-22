@@ -1,0 +1,325 @@
+{
+  "total_count": 16,
+  "artifacts": [
+    {
+      "id": 10676610034,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjYxMDAzNA==",
+      "name": "launch-macos-15-intel-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 447785,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676610034",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676610034/zip",
+      "expired": false,
+      "digest": "sha256:d838f9773cdddfac7fffbdfaa135ded7c7461701de84fd0768326924bfcdc6ce",
+      "created_at": "2026-09-22T03:53:57Z",
+      "updated_at": "2026-09-22T03:53:57Z",
+      "expires_at": "2026-10-06T03:53:56Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676580236,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjU4MDIzNg==",
+      "name": "launch-macos-14-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 488314,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676580236",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676580236/zip",
+      "expired": false,
+      "digest": "sha256:a245989b887f14d5a5013afd80f57aff962eb81ab32586556c334295f59cedab",
+      "created_at": "2026-09-22T03:54:15Z",
+      "updated_at": "2026-09-22T03:54:15Z",
+      "expires_at": "2026-10-06T03:54:14Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676546528,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjU0NjUyOA==",
+      "name": "launch-ubuntu-24.04-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 3047896,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676546528",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676546528/zip",
+      "expired": false,
+      "digest": "sha256:1b828f4413d27e501941c1d01f2e746236b2bc2277617d847cb20e54294c4c88",
+      "created_at": "2026-09-22T03:53:00Z",
+      "updated_at": "2026-09-22T03:53:00Z",
+      "expires_at": "2026-10-06T03:52:59Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676476852,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjQ3Njg1Mg==",
+      "name": "launch-windows-2022-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 281979,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676476852",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676476852/zip",
+      "expired": false,
+      "digest": "sha256:8a12b55a096f35f4d4164022fc371683812a318d01be2c1ce39d5adada4cff3c",
+      "created_at": "2026-09-22T03:53:27Z",
+      "updated_at": "2026-09-22T03:53:27Z",
+      "expires_at": "2026-10-06T03:53:27Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676416950,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjQxNjk1MA==",
+      "name": "launch-ubuntu-24.04-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 3034372,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676416950",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676416950/zip",
+      "expired": false,
+      "digest": "sha256:675b27d853bc88c9b9d4eac7a757bf8c53085d07a987c3ac3b630b7638f095e9",
+      "created_at": "2026-09-22T03:53:03Z",
+      "updated_at": "2026-09-22T03:53:03Z",
+      "expires_at": "2026-10-06T03:53:01Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676396872,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjM5Njg3Mg==",
+      "name": "launch-macos-14-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 480801,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676396872",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676396872/zip",
+      "expired": false,
+      "digest": "sha256:c045977d4465d6794531c70fdd7e592a1be209958a8bf279047fcb37262c66cc",
+      "created_at": "2026-09-22T03:53:17Z",
+      "updated_at": "2026-09-22T03:53:17Z",
+      "expires_at": "2026-10-06T03:53:16Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676371981,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjM3MTk4MQ==",
+      "name": "launch-macos-15-intel-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 448156,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676371981",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676371981/zip",
+      "expired": false,
+      "digest": "sha256:61eac9e5c7788118da8458e342459287fa14eb668366745b600e558517ebc608",
+      "created_at": "2026-09-22T03:53:50Z",
+      "updated_at": "2026-09-22T03:53:50Z",
+      "expires_at": "2026-10-06T03:53:49Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676297028,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjI5NzAyOA==",
+      "name": "launch-windows-2022-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 283376,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676297028",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676297028/zip",
+      "expired": false,
+      "digest": "sha256:19bbc0ef40305c8f33ca59acd1f3e622974b49fc78cc5ef2df36b3b353bd3f51",
+      "created_at": "2026-09-22T03:53:34Z",
+      "updated_at": "2026-09-22T03:53:34Z",
+      "expires_at": "2026-10-06T03:53:32Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676167242,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjE2NzI0Mg==",
+      "name": "launch-windows-2022-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 282797,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676167242",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676167242/zip",
+      "expired": false,
+      "digest": "sha256:492702a6f8abb36009e5b4cf394f3c9440b72c8732576318934711f268c9435b",
+      "created_at": "2026-09-22T03:53:36Z",
+      "updated_at": "2026-09-22T03:53:36Z",
+      "expires_at": "2026-10-06T03:53:35Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676122269,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjEyMjI2OQ==",
+      "name": "launch-macos-14-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 480871,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676122269",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676122269/zip",
+      "expired": false,
+      "digest": "sha256:3240f7a34451619dde552af631c747a2497b78277cbe27ba6ffc105a7caf5365",
+      "created_at": "2026-09-22T03:54:42Z",
+      "updated_at": "2026-09-22T03:54:42Z",
+      "expires_at": "2026-10-06T03:54:41Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10676062516,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NjA2MjUxNg==",
+      "name": "launch-macos-14-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 482848,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676062516",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10676062516/zip",
+      "expired": false,
+      "digest": "sha256:b5868f673da511418a975494f56159b7d2ee2a0413daadc469323f42bec20fc4",
+      "created_at": "2026-09-22T03:54:32Z",
+      "updated_at": "2026-09-22T03:54:32Z",
+      "expires_at": "2026-10-06T03:54:30Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10675924411,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NTkyNDQxMQ==",
+      "name": "launch-windows-2022-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 286257,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675924411",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675924411/zip",
+      "expired": false,
+      "digest": "sha256:57422c5e19701f49394e6144f7647649391315e78e94aad80d42c974a84274d9",
+      "created_at": "2026-09-22T03:53:38Z",
+      "updated_at": "2026-09-22T03:53:38Z",
+      "expires_at": "2026-10-06T03:53:37Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10675884233,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NTg4NDIzMw==",
+      "name": "launch-macos-15-intel-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 450772,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675884233",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675884233/zip",
+      "expired": false,
+      "digest": "sha256:efdfaee2f0e79ef20b1a0e546c29bac4bc2e7a4ea4bf4d0f18783dfbf27c6feb",
+      "created_at": "2026-09-22T03:53:36Z",
+      "updated_at": "2026-09-22T03:53:36Z",
+      "expires_at": "2026-10-06T03:53:34Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10675784243,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NTc4NDI0Mw==",
+      "name": "launch-ubuntu-24.04-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 3025471,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675784243",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675784243/zip",
+      "expired": false,
+      "digest": "sha256:917ed9857878f65c15388b4bea2c524937e62012c91de14948edc5bc9aaa8123",
+      "created_at": "2026-09-22T03:52:58Z",
+      "updated_at": "2026-09-22T03:52:58Z",
+      "expires_at": "2026-10-06T03:52:57Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10675744341,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NTc0NDM0MQ==",
+      "name": "launch-macos-15-intel-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 448490,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675744341",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675744341/zip",
+      "expired": false,
+      "digest": "sha256:4596e5c512d4e46c31447a7b9ae5df48102f1f439486f77897a9c4c3a175ca00",
+      "created_at": "2026-09-22T03:53:52Z",
+      "updated_at": "2026-09-22T03:53:52Z",
+      "expires_at": "2026-10-06T03:53:51Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    },
+    {
+      "id": 10675399904,
+      "node_id": "MDg6QXJ0aWZhY3QxMDY3NTM5OTkwNA==",
+      "name": "launch-ubuntu-24.04-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "size_in_bytes": 3016464,
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675399904",
+      "archive_download_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/artifacts/10675399904/zip",
+      "expired": false,
+      "digest": "sha256:bc4a7460b8aa9f0fdb9dadc1cc7907931a4dbbfdfe2b269b000b5cae2f1d50ab",
+      "created_at": "2026-09-22T03:53:01Z",
+      "updated_at": "2026-09-22T03:53:01Z",
+      "expires_at": "2026-10-06T03:53:00Z",
+      "workflow_run": {
+        "id": 35684741799,
+        "repository_id": 1379529337,
+        "head_repository_id": 1379529337,
+        "head_branch": "research/full-project-launch-closure",
+        "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401"
+      }
+    }
+  ]
+}

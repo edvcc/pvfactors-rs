@@ -280,6 +280,14 @@ def owner_gate(scope="full"):
                 errors.append(f"{key} evidence hash mismatch")
     if pending:
         errors.append("Owner decisions pending: " + ", ".join(pending))
+    # A new mandatory-stop finding cannot disappear merely because the original
+    # twelve decisions were approved. Closure needs explicit Owner evidence.
+    for blocker in data.get("new_launch_blockers", []):
+        evidence = ROOT / blocker["evidence"]
+        if not evidence.is_file() or digest(evidence) != blocker["sha256"]:
+            errors.append(f"launch blocker evidence missing/changed: {blocker['id']}")
+        if blocker.get("status") != "CLOSED_BY_OWNER" or not blocker.get("owner_evidence"):
+            errors.append(f"new launch blocker requires Owner closure: {blocker['id']}")
     return result("NOT_READY" if errors else "PASS", pending=pending, errors=errors,
                   contract_sha256=contract_digest())
 

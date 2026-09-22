@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "r0": "R0 EXECUTABLE",
+  "environment_id": "031158a1d1be8cdb9093",
+  "r0_evidence": {
+    "path": "evidence/execution/launch-closure/r0-environment.json",
+    "sha256": "cc450ce83c5b4abb1e839d5b28663392d3fa9950279ba71f5f1527284946232a"
+  },
+  "packaging_stack": {
+    "pyo3": "0.29.2",
+    "rust_numpy": "0.29.0",
+    "maturin": "1.15.0",
+    "cargo_lock_sha256": "319202ccb04cd38ed8007a99cbdd6f9d141ae68858dba6c334f49b00807b9f27"
+  },
+  "ci_run_id": 35684741799,
+  "ci_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799",
+  "tested_commit": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+  "ci_jobs": 16,
+  "ci_success": 16,
+  "packaging_tests": 544,
+  "receipts": [
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-14-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "f5f993ccabe13a3cde0646d184c277ff52a8eb1ed913a874d6ce4aeecbf20f1b",
+      "platform": "macOS-14.8.9-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.11.9",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-14-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "f3f7c6c82f0865bcc7b7eb27455083de6fd66ed9e1d1498c0ef21d0e89692612",
+      "platform": "macOS-14.8.9-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.11.9",
+      "numpy": "2.4.6",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-14-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "51ccb2c81e0f97db7f51ee73149047420d748ce954f43010cd7929c9744ddb7b",
+      "platform": "macOS-14.8.9-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.12.10",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-14-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "74df98d982b9871505c5940aa520b9a9e67a48994d51a9d381055724bbf154a3",
+      "platform": "macOS-14.8.9-arm64-arm-64bit",
+      "machine": "arm64",
+      "python": "3.12.10",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-14-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "867d5ba334f2f447790849510489689a474effa653a9cc1986d77195f4f0d392",
+      "platform": "macOS-14.8.9-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "python": "3.13.15",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-14-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "0b4c4f6e0b4434a0483208ed5ba4cb5d0dc8fe95147c38588def6d3759ac2316",
+      "platform": "macOS-14.8.9-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "python": "3.13.15",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-14-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "55a4772bdfe5fc91005e8e89fb657176738c2f15960e13e3f0738042be6df1f3",
+      "platform": "macOS-14.8.9-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "python": "3.14.7",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-14-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "530eeaeb9dbf7fedbca7a59b87f327c6f8e56d813cac07f3ad4fb750d6af23ee",
+      "platform": "macOS-14.8.9-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "python": "3.14.7",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-15-intel-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "5f749ceee9b0ed7ccf6ffbc84f0e91653dc553e01905398b4202dd361f6462b9",
+      "platform": "macOS-15.7.9-x86_64-i386-64bit",
+      "machine": "x86_64",
+      "python": "3.11.9",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-15-intel-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "31a8bd36ede0cd7733ecff6287387a7f29a08ab2bd8c9610a40bd33f0bc956fa",
+      "platform": "macOS-15.7.9-x86_64-i386-64bit",
+      "machine": "x86_64",
+      "python": "3.11.9",
+      "numpy": "2.4.6",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-15-intel-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "10b329f2349bcf311ba9ca436ca91e6b786db76efdd10b0b6c3de1589140f65a",
+      "platform": "macOS-15.7.9-x86_64-i386-64bit",
+      "machine": "x86_64",
+      "python": "3.12.10",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-15-intel-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "a6337f2dbfb78bb849eb4fd44179d4590195d2b87894c8159e523f9ac38b595c",
+      "platform": "macOS-15.7.9-x86_64-i386-64bit",
+      "machine": "x86_64",
+      "python": "3.12.10",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-15-intel-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "ec6287a9fc51e785ee35c3ef48be04eecb42bd188d5c042b5ad906f3efe7356a",
+      "platform": "macOS-15.7.9-x86_64-i386-64bit-Mach-O",
+      "machine": "x86_64",
+      "python": "3.13.15",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-15-intel-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "da5e738b0abca1454dbe6a5485f02d9acad13bc261323ef3f974e529f6c82479",
+      "platform": "macOS-15.7.9-x86_64-i386-64bit-Mach-O",
+      "machine": "x86_64",
+      "python": "3.13.15",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-15-intel-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "110e82c2d959cd72e2d95b56d3a16e45c49701bf8123004a7d78d4c5a247698e",
+      "platform": "macOS-15.7.9-x86_64-i386-64bit-Mach-O",
+      "machine": "x86_64",
+      "python": "3.14.7",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-macos-15-intel-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "6f7f5d552a50282fc4a2b2cfd1a09c4488fc0ada417116f7b66a5ece460f5562",
+      "platform": "macOS-15.7.9-x86_64-i386-64bit-Mach-O",
+      "machine": "x86_64",
+      "python": "3.14.7",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-ubuntu-24.04-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "6ac43944b7d8d5bda696627ae5cf8c2671e979dff1db33f1b278a7a5e905e760",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "python": "3.11.16",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-ubuntu-24.04-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "f1172be751ec1612e9b94fc20d194c7f971194f81d841e082bfd2fd767499f11",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "python": "3.11.16",
+      "numpy": "2.4.6",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-ubuntu-24.04-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "d2ebb866fb35b5940391b96743384f7e0ea34c0a1fafa04651bff289d4488daa",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "python": "3.12.14",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-ubuntu-24.04-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "1640892a99b081a158dc48df9962ddd7c5dbb950a04d284febb92861287e949e",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "python": "3.12.14",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-ubuntu-24.04-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "6b944dd6880c0f77c39a5f6747eb905ca490c0ba9cae7c484be69e3577a71477",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "python": "3.13.15",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-ubuntu-24.04-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "e72b5567c293997e1612ce6354119eda2dab2c242a41ceaf4e2cc4bd7b17c24b",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "python": "3.13.15",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-ubuntu-24.04-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "924bf51df2f24127cb7f17fcf18fac762e66457481696de25beba52e057a6df8",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "python": "3.14.7",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-ubuntu-24.04-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "02afdb794d520b9fad7238a749b2a23ba602ab79fcc4378ddac3573856010876",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "python": "3.14.7",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-windows-2022-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "18c7b4bd59ef869f3ee2d245c314e26f7b157990a7c4690ae91be0de86e4f136",
+      "platform": "Windows-10-10.0.20348-SP0",
+      "machine": "AMD64",
+      "python": "3.11.9",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-windows-2022-py3.11-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "435e22a24d6d21f73ddeb4775a6a2fbda648cbaf3d4ea7ef7e5d510f78eebf17",
+      "platform": "Windows-10-10.0.20348-SP0",
+      "machine": "AMD64",
+      "python": "3.11.9",
+      "numpy": "2.4.6",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-windows-2022-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "084d1e798d87ada50394fbfe4a2d76ba32e59392a7748543cf9f95c1b98f9fd9",
+      "platform": "Windows-2022Server-10.0.20348-SP0",
+      "machine": "AMD64",
+      "python": "3.12.10",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-windows-2022-py3.12-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "af77410a203a6c7f39681a9a786b279b0eb73d2d458f89f20750651fa58fd0f6",
+      "platform": "Windows-2022Server-10.0.20348-SP0",
+      "machine": "AMD64",
+      "python": "3.12.10",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-windows-2022-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "422cde293a2deaed294dbd2d3d4652fdf122c9a72e486506f8536ba95ab26eec",
+      "platform": "Windows-2022Server-10.0.20348-SP0",
+      "machine": "AMD64",
+      "python": "3.13.15",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-windows-2022-py3.13-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "09f62ebfdb0cfd8a5429c82245271f9174761af447ed77205652537f0b2877ab",
+      "platform": "Windows-2022Server-10.0.20348-SP0",
+      "machine": "AMD64",
+      "python": "3.13.15",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-windows-2022-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-minimum.json",
+      "sha256": "cf6b753838105843458a3cbd4d06702f1b8cb4adb576a62e5276a731601fb29e",
+      "platform": "Windows-2022Server-10.0.20348-SP0",
+      "machine": "AMD64",
+      "python": "3.14.7",
+      "numpy": "2.3.4",
+      "status": "PASS",
+      "tests_run": 17
+    },
+    {
+      "path": "evidence/execution/launch-closure/ci/launch-windows-2022-py3.14-20817ce6c9990d2ec58ed795e9858927b0dfa401/numpy-upper-sample.json",
+      "sha256": "2467d2a03c31db0af16332834465228b8a123df10ee2ea94a7a8bf0e6c5b1163",
+      "platform": "Windows-2022Server-10.0.20348-SP0",
+      "machine": "AMD64",
+      "python": "3.14.7",
+      "numpy": "2.5.3",
+      "status": "PASS",
+      "tests_run": 17
+    }
+  ],
+  "minimum_os": {
+    "Linux manylinux_2_28": "TARGET / NOT YET VERIFIED",
+    "macOS arm64 11.0": "TARGET / NOT YET VERIFIED",
+    "macOS x86_64 10.15": "TARGET / NOT YET VERIFIED",
+    "Windows10 1809+": "TARGET / NOT YET VERIFIED"
+  },
+  "owner_action": "Accept minimum OS as Release Gate or explicitly narrow scope; no production binding has been validated."
+}

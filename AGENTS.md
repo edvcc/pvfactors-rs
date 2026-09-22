@@ -1,5 +1,8 @@
 # pvfactors-rs operating entry
 
+当前停点：Launch Closure 的 LCB-01；先读 `docs/execution/launch/FULL_PROJECT_LAUNCH_REVIEW.zh-CN.md`。未经 Owner 恢复授权，不继续修正/冻结 P4–P7 Oracle，更不启动生产实现。
+Current stop: Launch Closure LCB-01; read `docs/execution/launch/FULL_PROJECT_LAUNCH_REVIEW.en.md`. Await Owner resumption authority before corrected P4-P7 oracles or production implementation.
+
 中文入口：本仓库独立重建 solarfactors Rust 核心。本次仅准备执行就绪资产，实际实现须 Owner 另行批准启动。
 `master` 为正式发布基线；禁止 Agent 直接修改/推送/合并、正式 tag 或发布。权威材料依次查阅
 `docs/01_CAPABILITY_MATRIX.md`、已批准 `docs/g2/`/`docs/p3/`、不可变 approved Golden，以及

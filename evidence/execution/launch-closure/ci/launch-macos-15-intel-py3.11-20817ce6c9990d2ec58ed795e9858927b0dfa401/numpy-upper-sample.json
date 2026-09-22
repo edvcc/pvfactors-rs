@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "tests_run": 17,
+  "python": "3.11.9 (v3.11.9:de54cf5be3, Apr  2 2024, 07:12:50) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-15.7.9-x86_64-i386-64bit",
+  "machine": "x86_64",
+  "numpy": "2.4.6",
+  "package": "0.0.0",
+  "boundary": "Isolated installed-wheel smoke only; no product physics or minimum OS proof"
+}

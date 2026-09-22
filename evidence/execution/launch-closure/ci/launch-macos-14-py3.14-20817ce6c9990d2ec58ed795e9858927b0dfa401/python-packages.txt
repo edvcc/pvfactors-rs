@@ -1,0 +1,4 @@
+certifi==2026.7.22
+maturin==1.15.0
+numpy==2.5.3
+pvfactors-packaging-probe @ file:///Users/runner/work/pvfactors-rs/pvfactors-rs/reference/work/launch-ci/wheels/pvfactors_packaging_probe-0.0.0-cp314-cp314-macosx_11_0_arm64.whl#sha256=b61ea3780e12c7ef19c9603828200c93efb773c633f6030d28a2abb2c1e6485e

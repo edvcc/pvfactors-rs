@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "status": "PROPOSED_FOR_OWNER_APPROVAL",
+  "package_status": "BLOCKED_PARTIAL_CHECKPOINT",
+  "new_launch_blockers": [
+    "LCB-01"
+  ],
+  "decisions": [
+    {
+      "id": "OD-01",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "READY_FOR_OWNER_APPROVAL",
+      "recommended_policy_en": "Positive-length interval remainder: ordered closures of positive-length connected remnants after removing positive-length overlap; point minuend empty; point subtrahend/touch does not remove length; not strict set difference.",
+      "recommended_policy_zh_CN": "正长度区间残余：扣除正长度重叠，返回有序的正长度残余连通分量闭包；点被减项为空，减点或端点相接不移除长度；不是严格集合差。",
+      "affected_cdr": [
+        "CDR-006"
+      ],
+      "affected_golden": [
+        "geometry-golden-v0.1"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/execution/launch-closure/numerical-macos/interval.json",
+          "sha256": "77bf537c3b675a067fc42d80811117454a1b3ba6b54f44c49f9ad0248c072327"
+        }
+      ],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-02",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "READY_FOR_OWNER_APPROVAL",
+      "recommended_policy_en": "After geometry/shape/finite/nonnegative validation: at z>=90, all-zero sources yield HorizonZero at 90 and NightZero above 90. Any nonzero source defaults to UnsupportedNoDirectDiffuse. Explicit ZeroAtOrBelowHorizon opt-in may discard those sources. For z<90 all-zero yields ZeroIrradiance; DNI=DHI=0 with GHI>0 yields ContradictoryIrradiance. No diffuse-only topology; future model revision only.",
+      "recommended_policy_zh_CN": "先做几何/shape/有限性/非负校验：z>=90且全部源为零，z=90返回HorizonZero，z>90返回NightZero；任何非零源默认UnsupportedNoDirectDiffuse。只有显式ZeroAtOrBelowHorizon才丢弃源并返回具名零状态。z<90全零返回ZeroIrradiance；DNI=DHI=0且GHI>0返回ContradictoryIrradiance。DiffuseOnlyNoDirect留给未来model revision。",
+      "affected_cdr": [
+        "CDR-001"
+      ],
+      "affected_golden": [
+        "irradiance-candidate",
+        "serial-candidate"
+      ],
+      "evidence": [],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-03",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "READY_FOR_OWNER_APPROVAL",
+      "recommended_policy_en": "Single signed clamped mu; front above +delta, back below -delta, inclusive grazing band otherwise. delta=64*f64::EPSILON=1.4210854715202004e-14; reversal uses -mu, never recomputes recursively. Bound is conditional on normalized degree domain, ordinary FP and <=2 ulp trig; 16 CI configurations tested. Grazing suppresses direct/circumsolar projections, not isotropic/horizon.",
+      "recommended_policy_zh_CN": "单次计算并裁剪mu，mu>delta为front，mu<-delta为back，其余为grazing；delta=64*f64::EPSILON=1.4210854715202004e-14。法向反转使用-mu，不递归重算。误差界依赖归一角域、普通浮点运算及trig<=2ulp假设；16个CI配置已实测。grazing仅使direct/circumsolar投影归零，保留isotropic/horizon。",
+      "affected_cdr": [
+        "CDR-002"
+      ],
+      "affected_golden": [
+        "irradiance-candidate"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/execution/launch-closure/numerical-macos/grazing.json",
+          "sha256": "ab21fbe9ab3dcc72c12913c888b39c5a0e44fff6812d6a56c403bc68251d015e"
+        },
+        {
+          "path": "evidence/execution/launch-closure/numerical-r0/grazing.json",
+          "sha256": "5467960c9ce405dcdc18f6252a2d2385a3a0411c2301755be8e26480bceb30fd"
+        },
+        {
+          "path": "evidence/execution/launch-closure/ci/download-receipts.json",
+          "sha256": "e8f00fcd5674f540c1f3899540b24f00653e6f870d61e191cde9f34cb0b875ae"
+        }
+      ],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-04",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "READY_FOR_OWNER_APPROVAL",
+      "recommended_policy_en": "Incident form qinc=E+FRqinc, B=I-FR, q0=Rqinc; move known sky into b. No explicit inverse. Finite rho/albedo in [0,1], zero legal. Separate F/G; Gground=(1-albedo)Fground. Residual uses original B,b; high condition needs independent forward evidence or NumericalFailure. Backend/version/layout deferred. New LCB-01 geometric F defect is NOT silently covered by these absorption/solver decisions.",
+      "recommended_policy_zh_CN": "采用incident形式qinc=E+FRqinc、B=I-FR、q0=Rqinc；已知sky移到b。不显式inverse；有限rho/albedo∈[0,1]且0合法。F/G分离，Gground=(1-albedo)Fground。原B,b算residual，高条件数需独立前向证据或NumericalFailure。backend/version/layout后定。LCB-01的几何F缺陷不能静默归入现有吸收/solver修正。",
+      "affected_cdr": [
+        "CDR-004"
+      ],
+      "affected_golden": [
+        "aoi-candidate",
+        "radiosity-candidate",
+        "serial-candidate"
+      ],
+      "evidence": [],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-05",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "EVIDENCE_REQUIRED_BEFORE_APPROVAL",
+      "recommended_policy_en": "Tentative HybridPerezTwoSidedExplicitBand-v1: receiver-side horizontal normal selects adjacent row; highest endpoint and receiving-surface centroid define max(0,atan2(dy,abs(dx))); h=min(1,theta/band), H=abs(P_horizon)*(1-h). Require explicit finite band in (0,90]; no asserted 6.5-degree physical default. Geometry/mirror probes passed, but raw Reference/front correction comparison and complete source oracles remain unfinished at the LCB-01 stop.",
+      "recommended_policy_zh_CN": "暂拟HybridPerezTwoSidedExplicitBand-v1：按接收面水平法向选邻排，最高端点与接收面质心定义max(0,atan2(dy,abs(dx)))；h=min(1,theta/band)，H=abs(P_horizon)*(1-h)。band须显式给定且有限、在(0,90]；不宣称6.5度默认值有物理标定依据。几何/mirror探针通过，Reference对照与完整源项oracle因LCB-01停点尚未完成。",
+      "affected_cdr": [
+        "CDR-005"
+      ],
+      "affected_golden": [
+        "irradiance-candidate",
+        "serial-candidate"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/execution/launch-closure/numerical-macos/horizon.json",
+          "sha256": "0c896ab74d7d044fcf94ad7a8ee6ec1d6d0a3f67338225db3790284c07eb5770"
+        },
+        {
+          "path": "evidence/execution/launch-closure/numerical-r0/horizon.json",
+          "sha256": "80bb790265190ef37ebdbd5706dfc90d154290dda70f54fc90df361ba317de6b"
+        }
+      ],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-06",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "READY_FOR_OWNER_APPROVAL",
+      "recommended_policy_en": "Fast Isotropic Pps=Piso-(1-tau)*Dfront; tau=0 gives Piso-Dfront, .5 gives Piso-.5Dfront, 1 gives Piso. Target correction rho_front*F_target,front_shaded*tau*Dfront vanishes for rho=0/no neighbor/no shaded view. Full/Fast remain distinct; full edge/segment reference fixtures are not yet built.",
+      "recommended_policy_zh_CN": "Fast Isotropic采用Pps=Piso-(1-tau)*Dfront；tau=0/.5/1分别为Piso-Dfront、Piso-.5Dfront、Piso。目标修正rho_front*F_target,front_shaded*tau*Dfront在rho=0、无邻排、无可见阴影时为0。Full/Fast保持不同；完整edge/segment Reference fixtures尚未生成。",
+      "affected_cdr": [
+        "CDR-007"
+      ],
+      "affected_golden": [
+        "serial-candidate"
+      ],
+      "evidence": [],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-07",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "READY_FOR_OWNER_APPROVAL",
+      "recommended_policy_en": "Keep Full q0/qinc/qabs; Fast q0/qabs unavailable; keyed ragged trace, scalar broadcast/T=0/nonmonotonic order/dayofyear1..366. Paired AOI; table covers0/180, strictly increasing knots and linear interpolation; SAPM B0..B5. No Python runtime callbacks; copy owned input before detach, independently owned output. Public cancellation token is NOT a V1 frozen requirement; optional internal cancellation must not affect physics.",
+      "recommended_policy_zh_CN": "保留Full q0/qinc/qabs、Fast q0/qabs unavailable、keyed ragged trace、标量广播/T=0/原始非单调顺序/dayofyear1..366。AOI成对配置、table覆盖0/180、knot严格递增、线性插值；SAPM B0..B5。不提供Python运行时callback；detach前复制owned输入，输出独立拥有内存。公共cancellation token不属于V1冻结要求，内部可选取消不改变物理模型。",
+      "affected_cdr": [],
+      "affected_golden": [
+        "serial-candidate"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/execution/launch-closure/packaging-macos-arm64-minimum.json",
+          "sha256": "dbb5cfa86192896fafa71c202be4800790e018d42c728a6d0590affdfcd56e71"
+        },
+        {
+          "path": "evidence/execution/launch-closure/ci/download-receipts.json",
+          "sha256": "e8f00fcd5674f540c1f3899540b24f00653e6f870d61e191cde9f34cb0b875ae"
+        }
+      ],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-08",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "EVIDENCE_REQUIRED_BEFORE_APPROVAL",
+      "recommended_policy_en": "Pre-approve P4-P7 oracle manifests/profiles in one review before full implementation. BLOCKED by LCB-01: no complete candidates were built or promoted. No candidate-capture approval loop silently replaces this route.",
+      "recommended_policy_zh_CN": "在完整实现前一次预批准P4-P7的准确oracle manifests/profiles。因LCB-01阻塞，目前没有完整候选包，更没有晋升。不得静默换回长任务内逐包批准路线。",
+      "affected_cdr": [],
+      "affected_golden": [
+        "viewfactor-candidate",
+        "aoi-candidate",
+        "irradiance-candidate",
+        "radiosity-candidate",
+        "serial-candidate"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/execution/launch-closure/NEW_LAUNCH_BLOCKER_LCB-01.json",
+          "sha256": "b342eaace2c2f6d0edf928cfb20aeb42b98ab366d76d95ecefba40e70165b86e"
+        }
+      ],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-09",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "READY_FOR_OWNER_APPROVAL",
+      "recommended_policy_en": "Four Rust targets; ordinary-GIL CPython3.11-3.14 per-interpreter wheels; proposed NumPy>=2.3.4,<3. Isolated stack PyO3 .29.2, rust-numpy .29.0, maturin1.15.0 locked. CI tested NumPy2.3.4 plus2.4.6 on3.11 /2.5.3 on3.12-3.14. Minimum OS targets remain release gates, NOT verified by modern hosted runners. Exclude PyPy/free-threaded/abi3/universal2/musllinux/Linux-ARM/Windows-ARM/WASM distribution.",
+      "recommended_policy_zh_CN": "Rust四目标；普通GIL CPython3.11-3.14按解释器wheel；候选NumPy>=2.3.4,<3。隔离栈锁定PyO3 .29.2、rust-numpy .29.0、maturin1.15.0；CI实测NumPy2.3.4，以及3.11上的2.4.6 /3.12-3.14上的2.5.3。最低OS仍作为release gate，现代runner通过不等于已验证下限。排除PyPy/free-threaded/abi3/universal2/musllinux/Linux或WindowsARM/WASM分发。",
+      "affected_cdr": [],
+      "affected_golden": [],
+      "evidence": [
+        {
+          "path": "evidence/execution/launch-closure/ci/download-receipts.json",
+          "sha256": "e8f00fcd5674f540c1f3899540b24f00653e6f870d61e191cde9f34cb0b875ae"
+        }
+      ],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-10",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "READY_FOR_OWNER_APPROVAL",
+      "recommended_policy_en": "V1 IMPLEMENTATION COMPLETE + RELEASE CANDIDATE READY FOR OWNER ACCEPTANCE. Future named branch edits/commits/push/CI/dependency evaluation/ordinary fixes and milestone auto-advance allowed only after separate launch. No master merge/tag/release/publish/SemVer1.0.0 authorization. Current task remains stopped and implementation task inactive.",
+      "recommended_policy_zh_CN": "终点为V1 IMPLEMENTATION COMPLETE + RELEASE CANDIDATE READY FOR OWNER ACCEPTANCE。另行启动后才授权具名实现分支修改/commit/push/CI/依赖评估/普通修复/自动推进；不授权master merge/tag/release/publish/SemVer1.0.0。当前closure停点，实施任务未激活。",
+      "affected_cdr": [],
+      "affected_golden": [],
+      "evidence": [],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-11",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "GOVERNANCE_ACTION_REQUIRED",
+      "recommended_policy_en": "PR-only/no force-push/no delete/required real CI on master and develop; master human review, conversation resolution, dismiss stale approvals and latest commit approval. Agent must not have admin/bypass/release rights. Use separate nonadmin identity, protected refs and explicit credential capability limits; ordinary contents-write alone cannot deny merge/tag. Otherwise sign time-bounded named governance risk acceptance. No rules applied here.",
+      "recommended_policy_zh_CN": "master/develop需PR-only、禁止force-push/删除、要求真实CI；master另需人类review、解决conversation、过期review失效与最新commit批准。Agent不得admin/bypass/release。使用独立非admin身份、受保护refs和明确凭据能力限制；普通contents-write本身不能排除merge/tag。否则签署具名且有期限的治理风险接受。本次未改规则。",
+      "affected_cdr": [],
+      "affected_golden": [],
+      "evidence": [
+        {
+          "path": "evidence/execution/launch-closure/github-snapshot.json",
+          "sha256": "1752386561d15a901eb39597cf4e4af66bc639a3e5241867eeee97c682acbc17"
+        }
+      ],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    },
+    {
+      "id": "OD-12",
+      "status": "PROPOSED_FOR_OWNER_APPROVAL",
+      "closure_category": "MILESTONE_DEFERRED_IMPLEMENTATION_CHOICE",
+      "recommended_policy_en": "Keep bounded resources and isolated benchmark protocol. Wide workload corpus is mandatory. If real crossover exists, learn/select it on holdout; if broad evidence shows no crossover, justified Serial fallback is valid. A missing cost estimator returning Serial always is invalid. Regret median<=1.10*best+2ms,p95<=1.25*best+5ms are candidate budgets to freeze with evidence before M11/M12, not immutable physics.",
+      "recommended_policy_zh_CN": "保留有界资源和隔离benchmark协议。必须覆盖足够宽workload；实测存在crossover时需学习并在holdout正确选择，足够宽证据证明不存在时Serial fallback合法。未实现cost estimator而总选Serial不合法。median<=1.10*best+2ms、p95<=1.25*best+5ms为M11/M12前凭证据冻结的候选预算，不是不可修订物理语义。",
+      "affected_cdr": [],
+      "affected_golden": [],
+      "evidence": [],
+      "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
+    }
+  ]
+}

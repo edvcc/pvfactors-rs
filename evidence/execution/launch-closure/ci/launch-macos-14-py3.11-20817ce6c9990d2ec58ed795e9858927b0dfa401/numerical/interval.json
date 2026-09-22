@@ -1,0 +1,6144 @@
+{
+  "status": "PASS",
+  "tests_run": 441,
+  "oracle": "exact Fraction length conservation and ordered positive residual spans",
+  "endpoint_rule": "Closed representations; no strict-set difference or shading-area inference from shared endpoints",
+  "cases": [
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        -1.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        0.5
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        1.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ],
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        2.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          -1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ],
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ],
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ],
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        -1.0,
+        3.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          -1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        0.5
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        1.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        2.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.0,
+        3.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        0.5
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        1.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        2.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ],
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.5,
+          1.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.5,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        0.5,
+        3.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          0.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        1.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        2.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": [
+        [
+          1.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        1.0,
+        3.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          1.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        2.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        2.0,
+        3.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": [
+        [
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        -1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        -1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        0.5
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        0.5,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        1.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        1.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        2.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        2.0,
+        3.0
+      ],
+      "expected": []
+    },
+    {
+      "minuend": [
+        3.0,
+        3.0
+      ],
+      "subtrahend": [
+        3.0,
+        3.0
+      ],
+      "expected": []
+    }
+  ]
+}

@@ -1,26 +1,25 @@
 {
   "schema_version": 1,
-  "mode": "PREPARATION_ONLY",
+  "mode": "LAUNCH_CLOSURE_MANDATORY_STOP",
   "current_milestone": null,
-  "last_completed_checkpoint": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+  "last_completed_checkpoint": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
   "verification_status": "ASSETS_PASS_SELF_TESTS_PASS_PREFLIGHT_NOT_READY",
   "known_failures": [
-    "Owner decisions OD-01..OD-12 pending",
-    "BF-01 IntervalDifference public semantics",
-    "BF-02 no-direct topology versus diffuse simulation",
-    "EG-01 R0 unavailable on current host",
-    "EG-02 packaging/platform path unverified",
-    "GG-01/GG-02 protection and credential gaps",
-    "Production implementation absent"
+    "LCB-01: active geometric VF violates bounds at approved TILT_180",
+    "P4-P7 oracle candidates not built; mandatory stop",
+    "Full policy/contract synchronization unfinished",
+    "Owner approvals pending",
+    "GG-01/GG-02 unprotected branches and admin identity"
   ],
   "approved_blockers": [],
   "unresolved_findings": [
     "BF-01",
-    "BF-02"
+    "BF-02",
+    "LCB-01"
   ],
-  "next_executable_action": "Owner centralized launch review and decision/evidence closure; CODEX_FULL_IMPLEMENTATION_TASK.md remains inactive",
+  "next_executable_action": "Wait for Owner authorization of new named VF deviation/CDR candidate investigation; no production implementation",
   "implementation_started": false,
-  "preparation_status": "COMPLETE",
-  "launch_status": "LOOP ENGINEERING READINESS — BLOCKED",
-  "verification_evidence": "evidence/execution/verification-summary.json"
+  "preparation_status": "INCOMPLETE_NEW_BLOCKER",
+  "launch_status": "FULL-PROJECT LAUNCH CLOSURE — BLOCKED",
+  "verification_evidence": "docs/execution/launch/LAUNCH_CLOSURE_CHECKPOINT.json"
 }

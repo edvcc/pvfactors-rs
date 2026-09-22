@@ -1,0 +1,5725 @@
+{
+  "status": "PASS",
+  "tests_run": 190,
+  "model_revision": "HybridPerezTwoSidedExplicitBand-v1-candidate",
+  "band_default": null,
+  "band_contract": "explicit finite elevation band in (0,90] degrees; no scientifically claimed 6.5-degree default",
+  "formula": "h=min(1,max(0,atan2(y_top-y_centroid,abs(dx)) in degrees)/band); H=abs(P_horizon)*(1-h)",
+  "limitation": "Uniform angular-band software approximation; geometry tests do not calibrate sky radiance or prove empirical accuracy.",
+  "cases": [
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 0.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.0990168429779317,
+        "fraction": 0.4198033685955863,
+        "centroid": [
+          -0.28284271247461906,
+          1.282842712474619
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.0990168429779317,
+        "fraction": 0.4198033685955863,
+        "centroid": [
+          4.282842712474619,
+          1.282842712474619
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.0990168429779317,
+        "fraction": 0.1399344561985288,
+        "centroid": [
+          -0.28284271247461906,
+          1.282842712474619
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.0990168429779317,
+        "fraction": 0.1399344561985288,
+        "centroid": [
+          4.282842712474619,
+          1.282842712474619
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 12.11948918988963,
+        "fraction": 1.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 12.11948918988963,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 12.11948918988963,
+        "fraction": 0.807965945992642,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 12.11948918988963,
+        "fraction": 0.807965945992642,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 25.01853645012587,
+        "fraction": 1.0,
+        "centroid": [
+          0.28284271247461906,
+          0.717157287525381
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 25.01853645012587,
+        "fraction": 1.0,
+        "centroid": [
+          3.717157287525381,
+          0.717157287525381
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 25.01853645012587,
+        "fraction": 1.0,
+        "centroid": [
+          0.28284271247461906,
+          0.717157287525381
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 25.01853645012587,
+        "fraction": 1.0,
+        "centroid": [
+          3.717157287525381,
+          0.717157287525381
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.28284271247461906,
+          1.282842712474619
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.282842712474619,
+          1.282842712474619
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.28284271247461906,
+          1.282842712474619
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.282842712474619,
+          1.282842712474619
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.28284271247461906,
+          0.717157287525381
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.717157287525381,
+          0.717157287525381
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.28284271247461906,
+          0.717157287525381
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.717157287525381,
+          0.717157287525381
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 2.099016842977932,
+        "fraction": 0.4198033685955864,
+        "centroid": [
+          1.7171572875253809,
+          1.282842712474619
+        ],
+        "top": [
+          3.646446609406726,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 2.099016842977932,
+        "fraction": 0.4198033685955864,
+        "centroid": [
+          2.282842712474619,
+          1.282842712474619
+        ],
+        "top": [
+          0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 2.099016842977932,
+        "fraction": 0.13993445619852882,
+        "centroid": [
+          1.7171572875253809,
+          1.282842712474619
+        ],
+        "top": [
+          3.646446609406726,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 2.099016842977932,
+        "fraction": 0.13993445619852882,
+        "centroid": [
+          2.282842712474619,
+          1.282842712474619
+        ],
+        "top": [
+          0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 12.11948918988963,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          3.646446609406726,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 12.11948918988963,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 12.11948918988963,
+        "fraction": 0.807965945992642,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          3.646446609406726,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 12.11948918988963,
+        "fraction": 0.807965945992642,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 25.01853645012587,
+        "fraction": 1.0,
+        "centroid": [
+          2.282842712474619,
+          0.717157287525381
+        ],
+        "top": [
+          3.646446609406726,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 25.01853645012587,
+        "fraction": 1.0,
+        "centroid": [
+          1.7171572875253809,
+          0.717157287525381
+        ],
+        "top": [
+          0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 25.01853645012587,
+        "fraction": 1.0,
+        "centroid": [
+          2.282842712474619,
+          0.717157287525381
+        ],
+        "top": [
+          3.646446609406726,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 25.01853645012587,
+        "fraction": 1.0,
+        "centroid": [
+          1.7171572875253809,
+          0.717157287525381
+        ],
+        "top": [
+          0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 1.9557776926096253,
+        "fraction": 0.3911555385219251,
+        "centroid": [
+          1.7171572875253809,
+          1.282842712474619
+        ],
+        "top": [
+          -0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 1.9557776926096249,
+        "fraction": 0.391155538521925,
+        "centroid": [
+          2.282842712474619,
+          1.282842712474619
+        ],
+        "top": [
+          4.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 1.9557776926096253,
+        "fraction": 0.13038517950730835,
+        "centroid": [
+          1.7171572875253809,
+          1.282842712474619
+        ],
+        "top": [
+          -0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 1.9557776926096249,
+        "fraction": 0.13038517950730832,
+        "centroid": [
+          2.282842712474619,
+          1.282842712474619
+        ],
+        "top": [
+          4.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 8.543154814892278,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          -0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 8.543154814892278,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          4.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 8.543154814892278,
+        "fraction": 0.5695436543261518,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          -0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 8.543154814892278,
+        "fraction": 0.5695436543261518,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          4.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 13.570940186440264,
+        "fraction": 1.0,
+        "centroid": [
+          2.282842712474619,
+          0.717157287525381
+        ],
+        "top": [
+          -0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 13.57094018644026,
+        "fraction": 1.0,
+        "centroid": [
+          1.7171572875253809,
+          0.717157287525381
+        ],
+        "top": [
+          4.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 13.570940186440264,
+        "fraction": 0.9047293457626843,
+        "centroid": [
+          2.282842712474619,
+          0.717157287525381
+        ],
+        "top": [
+          -0.3535533905932738,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 13.57094018644026,
+        "fraction": 0.904729345762684,
+        "centroid": [
+          1.7171572875253809,
+          0.717157287525381
+        ],
+        "top": [
+          4.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.717157287525381,
+          1.282842712474619
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.28284271247461906,
+          1.282842712474619
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.717157287525381,
+          1.282842712474619
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.28284271247461906,
+          1.282842712474619
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.282842712474619,
+          0.717157287525381
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.28284271247461906,
+          0.717157287525381
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.282842712474619,
+          0.717157287525381
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.28284271247461906,
+          0.717157287525381
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 1.9557776926096253,
+        "fraction": 0.3911555385219251,
+        "centroid": [
+          3.717157287525381,
+          1.282842712474619
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 1.9557776926096249,
+        "fraction": 0.391155538521925,
+        "centroid": [
+          0.28284271247461906,
+          1.282842712474619
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 1.9557776926096253,
+        "fraction": 0.13038517950730835,
+        "centroid": [
+          3.717157287525381,
+          1.282842712474619
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 1.9557776926096249,
+        "fraction": 0.13038517950730832,
+        "centroid": [
+          0.28284271247461906,
+          1.282842712474619
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 8.543154814892278,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 8.543154814892278,
+        "fraction": 1.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 8.543154814892278,
+        "fraction": 0.5695436543261518,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 8.543154814892278,
+        "fraction": 0.5695436543261518,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 13.57094018644026,
+        "fraction": 1.0,
+        "centroid": [
+          4.282842712474619,
+          0.717157287525381
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 13.570940186440264,
+        "fraction": 1.0,
+        "centroid": [
+          -0.28284271247461906,
+          0.717157287525381
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 45.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 13.57094018644026,
+        "fraction": 0.904729345762684,
+        "centroid": [
+          4.282842712474619,
+          0.717157287525381
+        ],
+        "top": [
+          1.6464466094067263,
+          1.3535533905932737
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 13.570940186440264,
+        "fraction": 0.9047293457626843,
+        "centroid": [
+          -0.28284271247461906,
+          0.717157287525381
+        ],
+        "top": [
+          2.353553390593274,
+          1.3535533905932737
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.57248104522235,
+        "centroid": [
+          -2.4492935982947065e-17,
+          1.4
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.57248104522235,
+        "centroid": [
+          4.0,
+          1.4
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.19082701507411667,
+        "centroid": [
+          -2.4492935982947065e-17,
+          1.4
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.19082701507411667,
+        "centroid": [
+          4.0,
+          1.4
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 14.036243467926479,
+        "fraction": 1.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 14.036243467926479,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 14.036243467926479,
+        "fraction": 0.9357495645284319,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 14.036243467926479,
+        "fraction": 0.9357495645284319,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.4492935982947065e-17,
+          0.6
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          0.6
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.4492935982947065e-17,
+          0.6
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          0.6
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -2.4492935982947065e-17,
+          1.4
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.4
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -2.4492935982947065e-17,
+          1.4
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.4
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4492935982947065e-17,
+          0.6
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          0.6
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4492935982947065e-17,
+          0.6
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          0.6
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.57248104522235,
+        "centroid": [
+          2.0,
+          1.4
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.57248104522235,
+        "centroid": [
+          2.0,
+          1.4
+        ],
+        "top": [
+          3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.19082701507411667,
+        "centroid": [
+          2.0,
+          1.4
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.19082701507411667,
+        "centroid": [
+          2.0,
+          1.4
+        ],
+        "top": [
+          3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 14.036243467926479,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 14.036243467926479,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 14.036243467926479,
+        "fraction": 0.9357495645284319,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 14.036243467926479,
+        "fraction": 0.9357495645284319,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          0.6
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          0.6
+        ],
+        "top": [
+          3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          0.6
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          0.6
+        ],
+        "top": [
+          3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.57248104522235,
+        "centroid": [
+          2.0,
+          1.4
+        ],
+        "top": [
+          -3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.57248104522235,
+        "centroid": [
+          2.0,
+          1.4
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.19082701507411667,
+        "centroid": [
+          2.0,
+          1.4
+        ],
+        "top": [
+          -3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.19082701507411667,
+        "centroid": [
+          2.0,
+          1.4
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 14.036243467926479,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          -3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 14.036243467926479,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 14.036243467926479,
+        "fraction": 0.9357495645284319,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          -3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 14.036243467926479,
+        "fraction": 0.9357495645284319,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          0.6
+        ],
+        "top": [
+          -3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          0.6
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          0.6
+        ],
+        "top": [
+          -3.061616997868383e-17,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          0.6
+        ],
+        "top": [
+          4.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.4
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4492935982947065e-17,
+          1.4
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.4
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4492935982947065e-17,
+          1.4
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          0.6
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -2.4492935982947065e-17,
+          0.6
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          0.6
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -2.4492935982947065e-17,
+          0.6
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.57248104522235,
+        "centroid": [
+          4.0,
+          1.4
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.57248104522235,
+        "centroid": [
+          2.4492935982947065e-17,
+          1.4
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.19082701507411667,
+        "centroid": [
+          4.0,
+          1.4
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.86240522611175,
+        "fraction": 0.19082701507411667,
+        "centroid": [
+          2.4492935982947065e-17,
+          1.4
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 14.036243467926479,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 14.036243467926479,
+        "fraction": 1.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 14.036243467926479,
+        "fraction": 0.9357495645284319,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 14.036243467926479,
+        "fraction": 0.9357495645284319,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          0.6
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          -2.4492935982947065e-17,
+          0.6
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 90.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          0.6
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 24.22774531795417,
+        "fraction": 1.0,
+        "centroid": [
+          -2.4492935982947065e-17,
+          0.6
+        ],
+        "top": [
+          2.0,
+          1.5
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.419029963360075,
+        "fraction": 0.48380599267201496,
+        "centroid": [
+          0.19999999999999993,
+          1.3464101615137756
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.419029963360075,
+        "fraction": 0.48380599267201496,
+        "centroid": [
+          3.8000000000000003,
+          1.3464101615137756
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.419029963360075,
+        "fraction": 0.161268664224005,
+        "centroid": [
+          0.19999999999999993,
+          1.3464101615137756
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.419029963360075,
+        "fraction": 0.161268664224005,
+        "centroid": [
+          3.8000000000000003,
+          1.3464101615137756
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 10.893394649130908,
+        "fraction": 1.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 10.893394649130908,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 10.893394649130908,
+        "fraction": 0.7262263099420605,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 10.893394649130908,
+        "fraction": 0.7262263099420605,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 17.647520824963426,
+        "fraction": 1.0,
+        "centroid": [
+          -0.19999999999999993,
+          0.6535898384862244
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 17.647520824963422,
+        "fraction": 1.0,
+        "centroid": [
+          4.2,
+          0.6535898384862244
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 17.647520824963426,
+        "fraction": 1.0,
+        "centroid": [
+          -0.19999999999999993,
+          0.6535898384862244
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 17.647520824963422,
+        "fraction": 1.0,
+        "centroid": [
+          4.2,
+          0.6535898384862244
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.19999999999999993,
+          1.3464101615137756
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.8000000000000003,
+          1.3464101615137756
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.19999999999999993,
+          1.3464101615137756
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.8000000000000003,
+          1.3464101615137756
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.19999999999999993,
+          0.6535898384862244
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.2,
+          0.6535898384862244
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.19999999999999993,
+          0.6535898384862244
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.2,
+          0.6535898384862244
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 2.419029963360075,
+        "fraction": 0.48380599267201496,
+        "centroid": [
+          2.1999999999999997,
+          1.3464101615137756
+        ],
+        "top": [
+          4.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 2.4190299633600754,
+        "fraction": 0.4838059926720151,
+        "centroid": [
+          1.8,
+          1.3464101615137756
+        ],
+        "top": [
+          -0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 2.419029963360075,
+        "fraction": 0.161268664224005,
+        "centroid": [
+          2.1999999999999997,
+          1.3464101615137756
+        ],
+        "top": [
+          4.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 2.4190299633600754,
+        "fraction": 0.16126866422400501,
+        "centroid": [
+          1.8,
+          1.3464101615137756
+        ],
+        "top": [
+          -0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 10.893394649130908,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          4.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 10.893394649130908,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          -0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 10.893394649130908,
+        "fraction": 0.7262263099420605,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          4.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 10.893394649130908,
+        "fraction": 0.7262263099420605,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          -0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 17.647520824963422,
+        "fraction": 1.0,
+        "centroid": [
+          1.8,
+          0.6535898384862244
+        ],
+        "top": [
+          4.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 17.647520824963426,
+        "fraction": 1.0,
+        "centroid": [
+          2.1999999999999997,
+          0.6535898384862244
+        ],
+        "top": [
+          -0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 2,
+        "angle_degree": 17.647520824963422,
+        "fraction": 1.0,
+        "centroid": [
+          1.8,
+          0.6535898384862244
+        ],
+        "top": [
+          4.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 0,
+        "angle_degree": 17.647520824963426,
+        "fraction": 1.0,
+        "centroid": [
+          2.1999999999999997,
+          0.6535898384862244
+        ],
+        "top": [
+          -0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 2.542923904061739,
+        "fraction": 0.5085847808123478,
+        "centroid": [
+          2.1999999999999997,
+          1.3464101615137756
+        ],
+        "top": [
+          0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 2.5429239040617384,
+        "fraction": 0.5085847808123477,
+        "centroid": [
+          1.8,
+          1.3464101615137756
+        ],
+        "top": [
+          3.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 2.542923904061739,
+        "fraction": 0.16952826027078258,
+        "centroid": [
+          2.1999999999999997,
+          1.3464101615137756
+        ],
+        "top": [
+          0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 2.5429239040617384,
+        "fraction": 0.16952826027078255,
+        "centroid": [
+          1.8,
+          1.3464101615137756
+        ],
+        "top": [
+          3.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 13.897886248013988,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 13.897886248013988,
+        "fraction": 1.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          3.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 13.897886248013988,
+        "fraction": 0.9265257498675992,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 13.897886248013988,
+        "fraction": 0.9265257498675992,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": [
+          3.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 26.695694819844043,
+        "fraction": 1.0,
+        "centroid": [
+          1.8,
+          0.6535898384862244
+        ],
+        "top": [
+          0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 26.695694819844043,
+        "fraction": 1.0,
+        "centroid": [
+          2.1999999999999997,
+          0.6535898384862244
+        ],
+        "top": [
+          3.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 0,
+        "angle_degree": 26.695694819844043,
+        "fraction": 1.0,
+        "centroid": [
+          1.8,
+          0.6535898384862244
+        ],
+        "top": [
+          0.2499999999999999,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 2,
+        "angle_degree": 26.695694819844043,
+        "fraction": 1.0,
+        "centroid": [
+          2.1999999999999997,
+          0.6535898384862244
+        ],
+        "top": [
+          3.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.2,
+          1.3464101615137756
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.19999999999999993,
+          1.3464101615137756
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.2,
+          1.3464101615137756
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.19999999999999993,
+          1.3464101615137756
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.8000000000000003,
+          0.6535898384862244
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.19999999999999993,
+          0.6535898384862244
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.8000000000000003,
+          0.6535898384862244
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.19999999999999993,
+          0.6535898384862244
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.542923904061738,
+        "fraction": 0.5085847808123476,
+        "centroid": [
+          4.2,
+          1.3464101615137756
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.5429239040617384,
+        "fraction": 0.5085847808123477,
+        "centroid": [
+          -0.19999999999999993,
+          1.3464101615137756
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 2.542923904061738,
+        "fraction": 0.16952826027078252,
+        "centroid": [
+          4.2,
+          1.3464101615137756
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 2.5429239040617384,
+        "fraction": 0.16952826027078255,
+        "centroid": [
+          -0.19999999999999993,
+          1.3464101615137756
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 13.897886248013988,
+        "fraction": 1.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 13.897886248013988,
+        "fraction": 1.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 13.897886248013988,
+        "fraction": 0.9265257498675992,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 13.897886248013988,
+        "fraction": 0.9265257498675992,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 26.695694819844043,
+        "fraction": 1.0,
+        "centroid": [
+          3.8000000000000003,
+          0.6535898384862244
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 26.695694819844043,
+        "fraction": 1.0,
+        "centroid": [
+          0.19999999999999993,
+          0.6535898384862244
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 120.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": 1,
+        "angle_degree": 26.695694819844043,
+        "fraction": 1.0,
+        "centroid": [
+          3.8000000000000003,
+          0.6535898384862244
+        ],
+        "top": [
+          2.25,
+          1.4330127018922194
+        ]
+      },
+      "mirror": {
+        "neighbor": 1,
+        "angle_degree": 26.695694819844043,
+        "fraction": 1.0,
+        "centroid": [
+          0.19999999999999993,
+          0.6535898384862244
+        ],
+        "top": [
+          1.75,
+          1.4330127018922194
+        ]
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 0,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 1,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          1.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          2.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "front",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.1,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.4,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          -0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.5,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          4.0,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.0,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 5.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    },
+    {
+      "tilt": 180.0,
+      "row": 2,
+      "side": "back",
+      "position": 0.9,
+      "band_degree": 15.0,
+      "corrected": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          3.6,
+          1.0
+        ],
+        "top": null
+      },
+      "mirror": {
+        "neighbor": null,
+        "angle_degree": 0.0,
+        "fraction": 0.0,
+        "centroid": [
+          0.4,
+          1.0
+        ],
+        "top": null
+      },
+      "front_omission_multiplier": 1.0,
+      "low_high_sun": "Shading multiplier independent of sun zenith; horizon amplitude depends on Perez inputs"
+    }
+  ],
+  "limits": [
+    {
+      "band_degree": 5.0,
+      "constructed_angle": 0.0,
+      "expected_fraction": 0.0,
+      "actual": 0.0
+    },
+    {
+      "band_degree": 5.0,
+      "constructed_angle": 1.25,
+      "expected_fraction": 0.25,
+      "actual": 0.24999999999999994
+    },
+    {
+      "band_degree": 5.0,
+      "constructed_angle": 2.5,
+      "expected_fraction": 0.5,
+      "actual": 0.5
+    },
+    {
+      "band_degree": 5.0,
+      "constructed_angle": 5.0,
+      "expected_fraction": 1.0,
+      "actual": 0.9999999999999998
+    },
+    {
+      "band_degree": 5.0,
+      "constructed_angle": 10.0,
+      "expected_fraction": 1.0,
+      "actual": 1.0
+    },
+    {
+      "band_degree": 15.0,
+      "constructed_angle": 0.0,
+      "expected_fraction": 0.0,
+      "actual": 0.0
+    },
+    {
+      "band_degree": 15.0,
+      "constructed_angle": 3.75,
+      "expected_fraction": 0.25,
+      "actual": 0.24999999999999997
+    },
+    {
+      "band_degree": 15.0,
+      "constructed_angle": 7.5,
+      "expected_fraction": 0.5,
+      "actual": 0.49999999999999994
+    },
+    {
+      "band_degree": 15.0,
+      "constructed_angle": 15.0,
+      "expected_fraction": 1.0,
+      "actual": 0.9999999999999999
+    },
+    {
+      "band_degree": 15.0,
+      "constructed_angle": 30.0,
+      "expected_fraction": 1.0,
+      "actual": 1.0
+    }
+  ]
+}

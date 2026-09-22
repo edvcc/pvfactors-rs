@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "status": "BLOCKED",
+  "oracles": [
+    {
+      "subsystem": "geometry",
+      "status": "APPROVED_EXISTING_UNCHANGED",
+      "manifest_sha256": "efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b",
+      "case_count": 55,
+      "artifact_count": 165
+    },
+    {
+      "subsystem": "viewfactor",
+      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
+      "manifest_sha256": null,
+      "case_count": 0,
+      "artifact_count": 0,
+      "generator_sha256": null,
+      "schema_sha256": null,
+      "comparator_sha256": null,
+      "tolerance_profile_sha256": null,
+      "reproducibility": "NOT_RUN",
+      "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
+      "known_deviations": [
+        "LCB-01"
+      ],
+      "blocker_effect": "direct blocker"
+    },
+    {
+      "subsystem": "aoi",
+      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
+      "manifest_sha256": null,
+      "case_count": 0,
+      "artifact_count": 0,
+      "generator_sha256": null,
+      "schema_sha256": null,
+      "comparator_sha256": null,
+      "tolerance_profile_sha256": null,
+      "reproducibility": "NOT_RUN",
+      "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
+      "known_deviations": [
+        "LCB-01"
+      ],
+      "blocker_effect": "direct blocker"
+    },
+    {
+      "subsystem": "irradiance",
+      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
+      "manifest_sha256": null,
+      "case_count": 0,
+      "artifact_count": 0,
+      "generator_sha256": null,
+      "schema_sha256": null,
+      "comparator_sha256": null,
+      "tolerance_profile_sha256": null,
+      "reproducibility": "NOT_RUN",
+      "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
+      "known_deviations": [
+        "LCB-01"
+      ],
+      "blocker_effect": "work not started before global mandatory stop"
+    },
+    {
+      "subsystem": "radiosity",
+      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
+      "manifest_sha256": null,
+      "case_count": 0,
+      "artifact_count": 0,
+      "generator_sha256": null,
+      "schema_sha256": null,
+      "comparator_sha256": null,
+      "tolerance_profile_sha256": null,
+      "reproducibility": "NOT_RUN",
+      "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
+      "known_deviations": [
+        "LCB-01"
+      ],
+      "blocker_effect": "work not started before global mandatory stop"
+    },
+    {
+      "subsystem": "serial",
+      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
+      "manifest_sha256": null,
+      "case_count": 0,
+      "artifact_count": 0,
+      "generator_sha256": null,
+      "schema_sha256": null,
+      "comparator_sha256": null,
+      "tolerance_profile_sha256": null,
+      "reproducibility": "NOT_RUN",
+      "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
+      "known_deviations": [
+        "LCB-01"
+      ],
+      "blocker_effect": "direct blocker"
+    }
+  ]
+}

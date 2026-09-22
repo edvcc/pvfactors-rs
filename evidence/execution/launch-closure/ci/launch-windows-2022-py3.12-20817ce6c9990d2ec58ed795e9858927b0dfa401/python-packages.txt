@@ -1,0 +1,11 @@
+argcomplete==3.7.2
+click==8.5.0
+colorama==0.4.6
+filelock==3.32.6
+maturin==1.15.0
+numpy==2.5.3
+packaging==26.3
+pipx==1.17.2
+platformdirs==4.11.8
+pvfactors-packaging-probe @ file:///D:/a/pvfactors-rs/pvfactors-rs/reference/work/launch-ci/wheels/pvfactors_packaging_probe-0.0.0-cp312-cp312-win_amd64.whl#sha256=f1416f5eb48e470cc77f08d602d06efe7b5cfe4dfb99b1d65cb969e97fa53a5f
+userpath==1.9.2

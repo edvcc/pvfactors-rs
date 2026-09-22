@@ -1,0 +1,3013 @@
+{
+  "total_count": 16,
+  "jobs": [
+    {
+      "id": 106609051475,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUHUw",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051475",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051475",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:26Z",
+      "completed_at": "2026-09-22T03:53:09Z",
+      "name": "packaging-probe (ubuntu-24.04, 3.14)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:27Z",
+          "completed_at": "2026-09-22T03:52:28Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:28Z",
+          "completed_at": "2026-09-22T03:52:29Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:29Z",
+          "completed_at": "2026-09-22T03:52:29Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:29Z",
+          "completed_at": "2026-09-22T03:52:37Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:37Z",
+          "completed_at": "2026-09-22T03:52:38Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:38Z",
+          "completed_at": "2026-09-22T03:52:38Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:38Z",
+          "completed_at": "2026-09-22T03:52:38Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:38Z",
+          "completed_at": "2026-09-22T03:52:45Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:52:45Z",
+          "completed_at": "2026-09-22T03:52:55Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:52:55Z",
+          "completed_at": "2026-09-22T03:52:56Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:52:56Z",
+          "completed_at": "2026-09-22T03:52:56Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:52:56Z",
+          "completed_at": "2026-09-22T03:53:00Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:00Z",
+          "completed_at": "2026-09-22T03:53:00Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:00Z",
+          "completed_at": "2026-09-22T03:53:01Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:01Z",
+          "completed_at": "2026-09-22T03:53:01Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:01Z",
+          "completed_at": "2026-09-22T03:53:03Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:03Z",
+          "completed_at": "2026-09-22T03:53:05Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:05Z",
+          "completed_at": "2026-09-22T03:53:06Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:06Z",
+          "completed_at": "2026-09-22T03:53:06Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:06Z",
+          "completed_at": "2026-09-22T03:53:06Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051475",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000013,
+      "runner_name": "GitHub Actions 1000000013",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051607,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUH1w",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051607",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051607",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:26Z",
+      "completed_at": "2026-09-22T03:53:41Z",
+      "name": "packaging-probe (windows-2022, 3.13)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:26Z",
+          "completed_at": "2026-09-22T03:52:27Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:27Z",
+          "completed_at": "2026-09-22T03:52:34Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:34Z",
+          "completed_at": "2026-09-22T03:52:34Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:34Z",
+          "completed_at": "2026-09-22T03:52:45Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:45Z",
+          "completed_at": "2026-09-22T03:52:49Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:49Z",
+          "completed_at": "2026-09-22T03:52:51Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:51Z",
+          "completed_at": "2026-09-22T03:52:52Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:52Z",
+          "completed_at": "2026-09-22T03:53:03Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:53:03Z",
+          "completed_at": "2026-09-22T03:53:24Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:53:24Z",
+          "completed_at": "2026-09-22T03:53:25Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:53:25Z",
+          "completed_at": "2026-09-22T03:53:26Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:53:26Z",
+          "completed_at": "2026-09-22T03:53:33Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:33Z",
+          "completed_at": "2026-09-22T03:53:33Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:33Z",
+          "completed_at": "2026-09-22T03:53:34Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:34Z",
+          "completed_at": "2026-09-22T03:53:35Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:35Z",
+          "completed_at": "2026-09-22T03:53:36Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:36Z",
+          "completed_at": "2026-09-22T03:53:38Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:38Z",
+          "completed_at": "2026-09-22T03:53:38Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:38Z",
+          "completed_at": "2026-09-22T03:53:40Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:40Z",
+          "completed_at": "2026-09-22T03:53:40Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051607",
+      "labels": [
+        "windows-2022"
+      ],
+      "runner_id": 1000000017,
+      "runner_name": "GitHub Actions 1000000017",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051629,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUH7Q",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051629",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051629",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:33Z",
+      "completed_at": "2026-09-22T03:53:24Z",
+      "name": "packaging-probe (macos-14, 3.13)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:34Z",
+          "completed_at": "2026-09-22T03:52:36Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:36Z",
+          "completed_at": "2026-09-22T03:52:38Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:38Z",
+          "completed_at": "2026-09-22T03:52:38Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:38Z",
+          "completed_at": "2026-09-22T03:52:46Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:46Z",
+          "completed_at": "2026-09-22T03:52:47Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:47Z",
+          "completed_at": "2026-09-22T03:52:50Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:50Z",
+          "completed_at": "2026-09-22T03:52:51Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:51Z",
+          "completed_at": "2026-09-22T03:52:55Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:52:55Z",
+          "completed_at": "2026-09-22T03:53:10Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:53:10Z",
+          "completed_at": "2026-09-22T03:53:11Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:53:11Z",
+          "completed_at": "2026-09-22T03:53:11Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:53:11Z",
+          "completed_at": "2026-09-22T03:53:14Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:14Z",
+          "completed_at": "2026-09-22T03:53:14Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:14Z",
+          "completed_at": "2026-09-22T03:53:15Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:15Z",
+          "completed_at": "2026-09-22T03:53:15Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:15Z",
+          "completed_at": "2026-09-22T03:53:17Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:17Z",
+          "completed_at": "2026-09-22T03:53:20Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:20Z",
+          "completed_at": "2026-09-22T03:53:20Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:20Z",
+          "completed_at": "2026-09-22T03:53:20Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:20Z",
+          "completed_at": "2026-09-22T03:53:21Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051629",
+      "labels": [
+        "macos-14"
+      ],
+      "runner_id": 1000000025,
+      "runner_name": "GitHub Actions 1000000025",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051636,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUH9A",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051636",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051636",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:26Z",
+      "completed_at": "2026-09-22T03:53:06Z",
+      "name": "packaging-probe (ubuntu-24.04, 3.11)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:28Z",
+          "completed_at": "2026-09-22T03:52:29Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:29Z",
+          "completed_at": "2026-09-22T03:52:30Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:30Z",
+          "completed_at": "2026-09-22T03:52:30Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:30Z",
+          "completed_at": "2026-09-22T03:52:38Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:38Z",
+          "completed_at": "2026-09-22T03:52:39Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:39Z",
+          "completed_at": "2026-09-22T03:52:39Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:39Z",
+          "completed_at": "2026-09-22T03:52:40Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:40Z",
+          "completed_at": "2026-09-22T03:52:44Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:52:44Z",
+          "completed_at": "2026-09-22T03:52:54Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:52:54Z",
+          "completed_at": "2026-09-22T03:52:55Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:52:55Z",
+          "completed_at": "2026-09-22T03:52:55Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:52:55Z",
+          "completed_at": "2026-09-22T03:52:58Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:52:58Z",
+          "completed_at": "2026-09-22T03:52:58Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:52:58Z",
+          "completed_at": "2026-09-22T03:52:58Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:52:58Z",
+          "completed_at": "2026-09-22T03:52:59Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:52:59Z",
+          "completed_at": "2026-09-22T03:53:01Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:01Z",
+          "completed_at": "2026-09-22T03:53:03Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:03Z",
+          "completed_at": "2026-09-22T03:53:03Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:03Z",
+          "completed_at": "2026-09-22T03:53:04Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:04Z",
+          "completed_at": "2026-09-22T03:53:04Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051636",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000015,
+      "runner_name": "GitHub Actions 1000000015",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051657,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUICQ",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051657",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051657",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:27Z",
+      "completed_at": "2026-09-22T03:53:58Z",
+      "name": "packaging-probe (macos-15-intel, 3.14)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:28Z",
+          "completed_at": "2026-09-22T03:52:31Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:31Z",
+          "completed_at": "2026-09-22T03:52:34Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:34Z",
+          "completed_at": "2026-09-22T03:52:34Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:34Z",
+          "completed_at": "2026-09-22T03:52:52Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:52Z",
+          "completed_at": "2026-09-22T03:52:54Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:54Z",
+          "completed_at": "2026-09-22T03:53:01Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:53:01Z",
+          "completed_at": "2026-09-22T03:53:03Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:53:03Z",
+          "completed_at": "2026-09-22T03:53:12Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:53:12Z",
+          "completed_at": "2026-09-22T03:53:43Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:53:43Z",
+          "completed_at": "2026-09-22T03:53:44Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:53:44Z",
+          "completed_at": "2026-09-22T03:53:45Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:53:45Z",
+          "completed_at": "2026-09-22T03:53:49Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:49Z",
+          "completed_at": "2026-09-22T03:53:49Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:49Z",
+          "completed_at": "2026-09-22T03:53:50Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:50Z",
+          "completed_at": "2026-09-22T03:53:51Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:51Z",
+          "completed_at": "2026-09-22T03:53:52Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:52Z",
+          "completed_at": "2026-09-22T03:53:54Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:54Z",
+          "completed_at": "2026-09-22T03:53:54Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:54Z",
+          "completed_at": "2026-09-22T03:53:55Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:55Z",
+          "completed_at": "2026-09-22T03:53:55Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051657",
+      "labels": [
+        "macos-15-intel"
+      ],
+      "runner_id": 1000000021,
+      "runner_name": "GitHub Actions 1000000021",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051667,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIEw",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051667",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051667",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:53:33Z",
+      "completed_at": "2026-09-22T03:54:22Z",
+      "name": "packaging-probe (macos-14, 3.11)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:53:34Z",
+          "completed_at": "2026-09-22T03:53:35Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:53:35Z",
+          "completed_at": "2026-09-22T03:53:37Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:53:37Z",
+          "completed_at": "2026-09-22T03:53:37Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:53:37Z",
+          "completed_at": "2026-09-22T03:53:44Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:53:44Z",
+          "completed_at": "2026-09-22T03:53:45Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:53:45Z",
+          "completed_at": "2026-09-22T03:53:49Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:53:49Z",
+          "completed_at": "2026-09-22T03:53:49Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:53:49Z",
+          "completed_at": "2026-09-22T03:53:54Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:53:54Z",
+          "completed_at": "2026-09-22T03:54:09Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:54:09Z",
+          "completed_at": "2026-09-22T03:54:09Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:54:09Z",
+          "completed_at": "2026-09-22T03:54:10Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:54:10Z",
+          "completed_at": "2026-09-22T03:54:12Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:54:12Z",
+          "completed_at": "2026-09-22T03:54:13Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:54:13Z",
+          "completed_at": "2026-09-22T03:54:13Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:54:13Z",
+          "completed_at": "2026-09-22T03:54:14Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:54:14Z",
+          "completed_at": "2026-09-22T03:54:15Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:54:15Z",
+          "completed_at": "2026-09-22T03:54:18Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:54:18Z",
+          "completed_at": "2026-09-22T03:54:18Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:54:18Z",
+          "completed_at": "2026-09-22T03:54:19Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:54:19Z",
+          "completed_at": "2026-09-22T03:54:19Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051667",
+      "labels": [
+        "macos-14"
+      ],
+      "runner_id": 1000000026,
+      "runner_name": "GitHub Actions 1000000026",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051671,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIFw",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051671",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051671",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:25Z",
+      "completed_at": "2026-09-22T03:53:33Z",
+      "name": "packaging-probe (windows-2022, 3.14)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:26Z",
+          "completed_at": "2026-09-22T03:52:27Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:27Z",
+          "completed_at": "2026-09-22T03:52:32Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:32Z",
+          "completed_at": "2026-09-22T03:52:32Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:32Z",
+          "completed_at": "2026-09-22T03:52:45Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:45Z",
+          "completed_at": "2026-09-22T03:52:48Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:48Z",
+          "completed_at": "2026-09-22T03:52:51Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:51Z",
+          "completed_at": "2026-09-22T03:52:51Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:51Z",
+          "completed_at": "2026-09-22T03:53:01Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:53:01Z",
+          "completed_at": "2026-09-22T03:53:18Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:53:18Z",
+          "completed_at": "2026-09-22T03:53:19Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:53:19Z",
+          "completed_at": "2026-09-22T03:53:19Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:53:19Z",
+          "completed_at": "2026-09-22T03:53:24Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:24Z",
+          "completed_at": "2026-09-22T03:53:25Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:25Z",
+          "completed_at": "2026-09-22T03:53:26Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:26Z",
+          "completed_at": "2026-09-22T03:53:26Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:26Z",
+          "completed_at": "2026-09-22T03:53:27Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:27Z",
+          "completed_at": "2026-09-22T03:53:30Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:30Z",
+          "completed_at": "2026-09-22T03:53:30Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:30Z",
+          "completed_at": "2026-09-22T03:53:31Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:31Z",
+          "completed_at": "2026-09-22T03:53:31Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051671",
+      "labels": [
+        "windows-2022"
+      ],
+      "runner_id": 1000000019,
+      "runner_name": "GitHub Actions 1000000019",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051681,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIIQ",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051681",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051681",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:26Z",
+      "completed_at": "2026-09-22T03:53:46Z",
+      "name": "packaging-probe (windows-2022, 3.11)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:27Z",
+          "completed_at": "2026-09-22T03:52:28Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:28Z",
+          "completed_at": "2026-09-22T03:52:36Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:36Z",
+          "completed_at": "2026-09-22T03:52:36Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:36Z",
+          "completed_at": "2026-09-22T03:52:47Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:47Z",
+          "completed_at": "2026-09-22T03:52:50Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:50Z",
+          "completed_at": "2026-09-22T03:52:52Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:52Z",
+          "completed_at": "2026-09-22T03:52:53Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:53Z",
+          "completed_at": "2026-09-22T03:53:05Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:53:05Z",
+          "completed_at": "2026-09-22T03:53:26Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:53:26Z",
+          "completed_at": "2026-09-22T03:53:27Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:53:27Z",
+          "completed_at": "2026-09-22T03:53:28Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:53:28Z",
+          "completed_at": "2026-09-22T03:53:35Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:35Z",
+          "completed_at": "2026-09-22T03:53:35Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:35Z",
+          "completed_at": "2026-09-22T03:53:36Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:36Z",
+          "completed_at": "2026-09-22T03:53:37Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:37Z",
+          "completed_at": "2026-09-22T03:53:38Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:38Z",
+          "completed_at": "2026-09-22T03:53:42Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:42Z",
+          "completed_at": "2026-09-22T03:53:42Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:42Z",
+          "completed_at": "2026-09-22T03:53:44Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:44Z",
+          "completed_at": "2026-09-22T03:53:44Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051681",
+      "labels": [
+        "windows-2022"
+      ],
+      "runner_id": 1000000018,
+      "runner_name": "GitHub Actions 1000000018",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051682,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIIg",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051682",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051682",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:28Z",
+      "completed_at": "2026-09-22T03:53:41Z",
+      "name": "packaging-probe (macos-15-intel, 3.11)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:28Z",
+          "completed_at": "2026-09-22T03:52:29Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:29Z",
+          "completed_at": "2026-09-22T03:52:33Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:33Z",
+          "completed_at": "2026-09-22T03:52:33Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:33Z",
+          "completed_at": "2026-09-22T03:52:44Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:44Z",
+          "completed_at": "2026-09-22T03:52:45Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:45Z",
+          "completed_at": "2026-09-22T03:52:49Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:49Z",
+          "completed_at": "2026-09-22T03:52:50Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:50Z",
+          "completed_at": "2026-09-22T03:52:56Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:52:56Z",
+          "completed_at": "2026-09-22T03:53:26Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:53:26Z",
+          "completed_at": "2026-09-22T03:53:27Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:53:27Z",
+          "completed_at": "2026-09-22T03:53:27Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:53:27Z",
+          "completed_at": "2026-09-22T03:53:32Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:32Z",
+          "completed_at": "2026-09-22T03:53:33Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:33Z",
+          "completed_at": "2026-09-22T03:53:33Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:33Z",
+          "completed_at": "2026-09-22T03:53:34Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:34Z",
+          "completed_at": "2026-09-22T03:53:35Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:35Z",
+          "completed_at": "2026-09-22T03:53:37Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:37Z",
+          "completed_at": "2026-09-22T03:53:38Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:38Z",
+          "completed_at": "2026-09-22T03:53:38Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:38Z",
+          "completed_at": "2026-09-22T03:53:39Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051682",
+      "labels": [
+        "macos-15-intel"
+      ],
+      "runner_id": 1000000022,
+      "runner_name": "GitHub Actions 1000000022",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051685,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIJQ",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051685",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051685",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:28Z",
+      "completed_at": "2026-09-22T03:53:08Z",
+      "name": "packaging-probe (ubuntu-24.04, 3.13)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:28Z",
+          "completed_at": "2026-09-22T03:52:29Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:29Z",
+          "completed_at": "2026-09-22T03:52:31Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:31Z",
+          "completed_at": "2026-09-22T03:52:31Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:31Z",
+          "completed_at": "2026-09-22T03:52:38Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:38Z",
+          "completed_at": "2026-09-22T03:52:39Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:39Z",
+          "completed_at": "2026-09-22T03:52:39Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:39Z",
+          "completed_at": "2026-09-22T03:52:40Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:40Z",
+          "completed_at": "2026-09-22T03:52:44Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:52:44Z",
+          "completed_at": "2026-09-22T03:52:55Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:52:55Z",
+          "completed_at": "2026-09-22T03:52:55Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:52:55Z",
+          "completed_at": "2026-09-22T03:52:56Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:52:56Z",
+          "completed_at": "2026-09-22T03:52:59Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:52:59Z",
+          "completed_at": "2026-09-22T03:52:59Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:52:59Z",
+          "completed_at": "2026-09-22T03:52:59Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:52:59Z",
+          "completed_at": "2026-09-22T03:53:00Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:00Z",
+          "completed_at": "2026-09-22T03:53:01Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:01Z",
+          "completed_at": "2026-09-22T03:53:04Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:04Z",
+          "completed_at": "2026-09-22T03:53:04Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:04Z",
+          "completed_at": "2026-09-22T03:53:05Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:05Z",
+          "completed_at": "2026-09-22T03:53:05Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051685",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000014,
+      "runner_name": "GitHub Actions 1000000014",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051730,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIUg",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051730",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051730",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:26Z",
+      "completed_at": "2026-09-22T03:53:02Z",
+      "name": "packaging-probe (ubuntu-24.04, 3.12)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:27Z",
+          "completed_at": "2026-09-22T03:52:28Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:28Z",
+          "completed_at": "2026-09-22T03:52:29Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:29Z",
+          "completed_at": "2026-09-22T03:52:29Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:29Z",
+          "completed_at": "2026-09-22T03:52:36Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:36Z",
+          "completed_at": "2026-09-22T03:52:37Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:37Z",
+          "completed_at": "2026-09-22T03:52:37Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:37Z",
+          "completed_at": "2026-09-22T03:52:38Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:38Z",
+          "completed_at": "2026-09-22T03:52:42Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:52:42Z",
+          "completed_at": "2026-09-22T03:52:53Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:52:53Z",
+          "completed_at": "2026-09-22T03:52:53Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:52:53Z",
+          "completed_at": "2026-09-22T03:52:53Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:52:53Z",
+          "completed_at": "2026-09-22T03:52:56Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:52:56Z",
+          "completed_at": "2026-09-22T03:52:57Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:52:57Z",
+          "completed_at": "2026-09-22T03:52:57Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:52:57Z",
+          "completed_at": "2026-09-22T03:52:57Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:52:57Z",
+          "completed_at": "2026-09-22T03:52:58Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:52:58Z",
+          "completed_at": "2026-09-22T03:53:00Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:00Z",
+          "completed_at": "2026-09-22T03:53:00Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:00Z",
+          "completed_at": "2026-09-22T03:53:00Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:00Z",
+          "completed_at": "2026-09-22T03:53:00Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051730",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000016,
+      "runner_name": "GitHub Actions 1000000016",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051744,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIYA",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051744",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051744",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:54:04Z",
+      "completed_at": "2026-09-22T03:54:47Z",
+      "name": "packaging-probe (macos-14, 3.12)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:54:04Z",
+          "completed_at": "2026-09-22T03:54:05Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:54:05Z",
+          "completed_at": "2026-09-22T03:54:08Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:54:08Z",
+          "completed_at": "2026-09-22T03:54:08Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:54:08Z",
+          "completed_at": "2026-09-22T03:54:15Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:54:15Z",
+          "completed_at": "2026-09-22T03:54:16Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:54:16Z",
+          "completed_at": "2026-09-22T03:54:19Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:54:19Z",
+          "completed_at": "2026-09-22T03:54:20Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:54:20Z",
+          "completed_at": "2026-09-22T03:54:23Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:54:23Z",
+          "completed_at": "2026-09-22T03:54:36Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:54:36Z",
+          "completed_at": "2026-09-22T03:54:36Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:54:36Z",
+          "completed_at": "2026-09-22T03:54:37Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:54:37Z",
+          "completed_at": "2026-09-22T03:54:39Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:54:39Z",
+          "completed_at": "2026-09-22T03:54:40Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:54:40Z",
+          "completed_at": "2026-09-22T03:54:40Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:54:40Z",
+          "completed_at": "2026-09-22T03:54:40Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:54:40Z",
+          "completed_at": "2026-09-22T03:54:42Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:54:42Z",
+          "completed_at": "2026-09-22T03:54:44Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:54:44Z",
+          "completed_at": "2026-09-22T03:54:44Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:54:44Z",
+          "completed_at": "2026-09-22T03:54:44Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:54:44Z",
+          "completed_at": "2026-09-22T03:54:45Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051744",
+      "labels": [
+        "macos-14"
+      ],
+      "runner_id": 1000000028,
+      "runner_name": "GitHub Actions 1000000028",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051757,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIbQ",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051757",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051757",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:28Z",
+      "completed_at": "2026-09-22T03:54:04Z",
+      "name": "packaging-probe (macos-15-intel, 3.13)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:29Z",
+          "completed_at": "2026-09-22T03:52:31Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:31Z",
+          "completed_at": "2026-09-22T03:52:35Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:35Z",
+          "completed_at": "2026-09-22T03:52:36Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:36Z",
+          "completed_at": "2026-09-22T03:52:48Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:48Z",
+          "completed_at": "2026-09-22T03:52:50Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:50Z",
+          "completed_at": "2026-09-22T03:52:56Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:56Z",
+          "completed_at": "2026-09-22T03:52:56Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:56Z",
+          "completed_at": "2026-09-22T03:53:03Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:53:03Z",
+          "completed_at": "2026-09-22T03:53:44Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:53:44Z",
+          "completed_at": "2026-09-22T03:53:46Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:53:46Z",
+          "completed_at": "2026-09-22T03:53:46Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:53:46Z",
+          "completed_at": "2026-09-22T03:53:53Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:53Z",
+          "completed_at": "2026-09-22T03:53:53Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:53Z",
+          "completed_at": "2026-09-22T03:53:54Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:54Z",
+          "completed_at": "2026-09-22T03:53:55Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:55Z",
+          "completed_at": "2026-09-22T03:53:57Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:57Z",
+          "completed_at": "2026-09-22T03:54:00Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:54:00Z",
+          "completed_at": "2026-09-22T03:54:01Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:54:01Z",
+          "completed_at": "2026-09-22T03:54:02Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:54:02Z",
+          "completed_at": "2026-09-22T03:54:02Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051757",
+      "labels": [
+        "macos-15-intel"
+      ],
+      "runner_id": 1000000023,
+      "runner_name": "GitHub Actions 1000000023",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051759,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIbw",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051759",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051759",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:28Z",
+      "completed_at": "2026-09-22T03:53:56Z",
+      "name": "packaging-probe (macos-15-intel, 3.12)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:30Z",
+          "completed_at": "2026-09-22T03:52:32Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:32Z",
+          "completed_at": "2026-09-22T03:52:37Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:37Z",
+          "completed_at": "2026-09-22T03:52:37Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:37Z",
+          "completed_at": "2026-09-22T03:52:50Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:50Z",
+          "completed_at": "2026-09-22T03:52:51Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:51Z",
+          "completed_at": "2026-09-22T03:52:58Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:58Z",
+          "completed_at": "2026-09-22T03:52:59Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:59Z",
+          "completed_at": "2026-09-22T03:53:06Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:53:06Z",
+          "completed_at": "2026-09-22T03:53:41Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:53:41Z",
+          "completed_at": "2026-09-22T03:53:42Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:53:42Z",
+          "completed_at": "2026-09-22T03:53:42Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:53:42Z",
+          "completed_at": "2026-09-22T03:53:47Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:47Z",
+          "completed_at": "2026-09-22T03:53:47Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:47Z",
+          "completed_at": "2026-09-22T03:53:48Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:48Z",
+          "completed_at": "2026-09-22T03:53:49Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:49Z",
+          "completed_at": "2026-09-22T03:53:50Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:50Z",
+          "completed_at": "2026-09-22T03:53:52Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:52Z",
+          "completed_at": "2026-09-22T03:53:52Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:52Z",
+          "completed_at": "2026-09-22T03:53:53Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:53Z",
+          "completed_at": "2026-09-22T03:53:54Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051759",
+      "labels": [
+        "macos-15-intel"
+      ],
+      "runner_id": 1000000024,
+      "runner_name": "GitHub Actions 1000000024",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051802,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUImg",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051802",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051802",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:53:51Z",
+      "completed_at": "2026-09-22T03:54:38Z",
+      "name": "packaging-probe (macos-14, 3.14)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:53:51Z",
+          "completed_at": "2026-09-22T03:53:53Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:53:53Z",
+          "completed_at": "2026-09-22T03:53:55Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:53:55Z",
+          "completed_at": "2026-09-22T03:53:55Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:53:55Z",
+          "completed_at": "2026-09-22T03:54:02Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:54:02Z",
+          "completed_at": "2026-09-22T03:54:03Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:54:03Z",
+          "completed_at": "2026-09-22T03:54:06Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:54:06Z",
+          "completed_at": "2026-09-22T03:54:07Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:54:07Z",
+          "completed_at": "2026-09-22T03:54:11Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:54:11Z",
+          "completed_at": "2026-09-22T03:54:25Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:54:25Z",
+          "completed_at": "2026-09-22T03:54:26Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:54:26Z",
+          "completed_at": "2026-09-22T03:54:26Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:54:26Z",
+          "completed_at": "2026-09-22T03:54:29Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:54:29Z",
+          "completed_at": "2026-09-22T03:54:29Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:54:29Z",
+          "completed_at": "2026-09-22T03:54:29Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:54:29Z",
+          "completed_at": "2026-09-22T03:54:30Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:54:30Z",
+          "completed_at": "2026-09-22T03:54:31Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:54:31Z",
+          "completed_at": "2026-09-22T03:54:34Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:54:34Z",
+          "completed_at": "2026-09-22T03:54:34Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:54:34Z",
+          "completed_at": "2026-09-22T03:54:35Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:54:35Z",
+          "completed_at": "2026-09-22T03:54:35Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051802",
+      "labels": [
+        "macos-14"
+      ],
+      "runner_id": 1000000027,
+      "runner_name": "GitHub Actions 1000000027",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 106609051824,
+      "run_id": 35684741799,
+      "workflow_name": "Launch Closure Platform Evidence",
+      "head_branch": "research/full-project-launch-closure",
+      "run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/runs/35684741799",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUjnyec8AAAAY0mUIsA",
+      "head_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+      "url": "https://api.github.com/repos/edvcc/pvfactors-rs/actions/jobs/106609051824",
+      "html_url": "https://github.com/edvcc/pvfactors-rs/actions/runs/35684741799/job/106609051824",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-22T03:52:21Z",
+      "started_at": "2026-09-22T03:52:26Z",
+      "completed_at": "2026-09-22T03:53:41Z",
+      "name": "packaging-probe (windows-2022, 3.12)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-09-22T03:52:27Z",
+          "completed_at": "2026-09-22T03:52:28Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-09-22T03:52:28Z",
+          "completed_at": "2026-09-22T03:52:34Z"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-09-22T03:52:34Z",
+          "completed_at": "2026-09-22T03:52:34Z"
+        },
+        {
+          "name": "Run rustup toolchain install 1.98.1 --profile minimal",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-09-22T03:52:34Z",
+          "completed_at": "2026-09-22T03:52:44Z"
+        },
+        {
+          "name": "Run cargo build --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-09-22T03:52:44Z",
+          "completed_at": "2026-09-22T03:52:47Z"
+        },
+        {
+          "name": "Run cargo test --locked",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-09-22T03:52:47Z",
+          "completed_at": "2026-09-22T03:52:49Z"
+        },
+        {
+          "name": "Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-09-22T03:52:49Z",
+          "completed_at": "2026-09-22T03:52:50Z"
+        },
+        {
+          "name": "Run python -m pip install maturin==1.15.0 numpy==2.3.4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-09-22T03:52:50Z",
+          "completed_at": "2026-09-22T03:53:01Z"
+        },
+        {
+          "name": "Run maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-09-22T03:53:01Z",
+          "completed_at": "2026-09-22T03:53:22Z"
+        },
+        {
+          "name": "Install isolated wheel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-09-22T03:53:22Z",
+          "completed_at": "2026-09-22T03:53:23Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-09-22T03:53:23Z",
+          "completed_at": "2026-09-22T03:53:24Z"
+        },
+        {
+          "name": "Test upper sampled NumPy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-09-22T03:53:24Z",
+          "completed_at": "2026-09-22T03:53:30Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-09-22T03:53:30Z",
+          "completed_at": "2026-09-22T03:53:31Z"
+        },
+        {
+          "name": "Run python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-09-22T03:53:31Z",
+          "completed_at": "2026-09-22T03:53:31Z"
+        },
+        {
+          "name": "Record compiler, interpreter, dependency and cache evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-09-22T03:53:31Z",
+          "completed_at": "2026-09-22T03:53:32Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-09-22T03:53:32Z",
+          "completed_at": "2026-09-22T03:53:34Z"
+        },
+        {
+          "name": "Post Run actions/cache@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-09-22T03:53:34Z",
+          "completed_at": "2026-09-22T03:53:37Z"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-09-22T03:53:37Z",
+          "completed_at": "2026-09-22T03:53:37Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-09-22T03:53:37Z",
+          "completed_at": "2026-09-22T03:53:39Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-09-22T03:53:39Z",
+          "completed_at": "2026-09-22T03:53:39Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/edvcc/pvfactors-rs/check-runs/106609051824",
+      "labels": [
+        "windows-2022"
+      ],
+      "runner_id": 1000000020,
+      "runner_name": "GitHub Actions 1000000020",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

@@ -145,6 +145,25 @@ class AcceptanceHarnessTests(unittest.TestCase):
                 self.assertEqual(report["status"], "FAIL")
                 self.assertIn("require full-project approval", report["error"])
 
+    def test_new_launch_blocker_survives_original_decision_approval(self):
+        evidence = self.root / "blocker.json"
+        evidence.write_text('{"status":"NEW LAUNCH BLOCKER"}')
+        data = {"decisions": [{"id": f"OD-{i:02}", "status": "APPROVED", "owner_evidence": "review"}
+                              for i in range(1, 13)],
+                "approval": {"status": "APPROVED", "reviewer": "Owner", "evidence": "review",
+                             "implementation_branch": "feature/authorized", "readiness_commit": "a" * 40,
+                             "contract_sha256": "contract"},
+                "environment": {"status": "APPROVED", "receipt": {"path": str(evidence), "sha256": verify.digest(evidence)}},
+                "governance": {"status": "APPROVED", "receipt": {"path": str(evidence), "sha256": verify.digest(evidence)}},
+                "new_launch_blockers": [{"id": "LCB-01", "status": "OPEN", "evidence": str(evidence),
+                                         "sha256": verify.digest(evidence)}]}
+        with patch.object(verify, "read", return_value=data), patch.object(verify, "contract_digest", return_value="contract"), \
+                patch.object(verify, "command", return_value={"exit_code": 0}):
+            outcome = verify.owner_gate()
+        self.assertEqual(outcome["status"], "NOT_READY")
+        self.assertEqual(outcome["pending"], [])
+        self.assertEqual(outcome["errors"], ["new launch blocker requires Owner closure: LCB-01"])
+
     def test_missing_required_test_fails(self):
         text = "test one ... ok\ntest result: ok. 1 passed; 0 failed; 0 ignored;"
         self.assertEqual(verify.parse_tests(text, ["one", "two"])["status"], "FAIL")

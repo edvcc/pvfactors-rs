@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "tests_run": 17,
+  "python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "numpy": "2.5.3",
+  "package": "0.0.0",
+  "boundary": "Isolated installed-wheel smoke only; no product physics or minimum OS proof"
+}
