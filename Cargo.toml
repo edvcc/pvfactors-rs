@@ -1,0 +1,14 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/solarfactors-core",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.98.1"
+license = "BSD-3-Clause"
+repository = "https://github.com/edvcc/pvfactors-rs"
+
+[workspace.dependencies]
