@@ -1,0 +1,15 @@
+{
+  "id": "LCB-01",
+  "decision_status": "APPROVED",
+  "verification_gate": "DERIVED_FROM_VERIFICATION_RECEIPT",
+  "verification_receipt": "evidence/execution/launch-closure/lcb-01/verification-summary.json",
+  "deviations": {
+    "DEV-028": "APPROVED_FULL_ONLY",
+    "DEV-029": "APPROVED_FAST_GEOMETRY_ONLY"
+  },
+  "cdr": "CDR-008 APPROVED",
+  "geometry_changes_required": false,
+  "production_started": false,
+  "full_project_implementation": "INACTIVE",
+  "next_action": "Read validated closure receipt. If CLOSED, hand off resume authority only; do not execute further P4-P7 work in this task."
+}

@@ -1,18 +1,21 @@
 {
   "schema_version": 1,
-  "status": "BLOCKED",
-  "phase": "MANDATORY_STOP_SECTION_40",
+  "status": "FULL_PROJECT_LAUNCH_NOT_READY",
+  "phase": "LCB01_CLOSURE_RECEIPT_HANDOFF",
   "ready_for_full_launch_review": false,
   "new_launch_blockers": [
     {
       "id": "LCB-01",
-      "status": "OPEN",
-      "evidence": "evidence/execution/launch-closure/NEW_LAUNCH_BLOCKER_LCB-01.json",
-      "sha256": "b342eaace2c2f6d0edf928cfb20aeb42b98ab366d76d95ecefba40e70165b86e"
+      "owner_decision": "APPROVED",
+      "status_source": "evidence/execution/launch-closure/lcb-01/verification-summary.json",
+      "effective_status": "DERIVED_FROM_VERIFICATION_RECEIPT"
     }
   ],
   "owner_decisions_approved": 0,
   "oracles_promoted": 0,
   "production_started": false,
-  "next_action": "Owner authorizes new named VF deviation/CDR candidate investigation without changing approved Geometry, then resume LC-1..LC-6."
+  "next_action": "Upon verified LCB-01 CLOSED, resume Full-Project Launch Closure in a later task; current task stops.",
+  "lcb01_investigation": "evidence/execution/launch-closure/lcb-01/investigation-status.json",
+  "lcb01_owner_decisions_approved": 6,
+  "approved_targeted_oracle_seeds": 1
 }

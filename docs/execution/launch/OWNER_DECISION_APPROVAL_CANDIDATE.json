@@ -2,9 +2,7 @@
   "schema_version": 1,
   "status": "PROPOSED_FOR_OWNER_APPROVAL",
   "package_status": "BLOCKED_PARTIAL_CHECKPOINT",
-  "new_launch_blockers": [
-    "LCB-01"
-  ],
+  "new_launch_blockers": [],
   "decisions": [
     {
       "id": "OD-01",
@@ -153,8 +151,8 @@
       "id": "OD-08",
       "status": "PROPOSED_FOR_OWNER_APPROVAL",
       "closure_category": "EVIDENCE_REQUIRED_BEFORE_APPROVAL",
-      "recommended_policy_en": "Pre-approve P4-P7 oracle manifests/profiles in one review before full implementation. BLOCKED by LCB-01: no complete candidates were built or promoted. No candidate-capture approval loop silently replaces this route.",
-      "recommended_policy_zh_CN": "在完整实现前一次预批准P4-P7的准确oracle manifests/profiles。因LCB-01阻塞，目前没有完整候选包，更没有晋升。不得静默换回长任务内逐包批准路线。",
+      "recommended_policy_en": "Pre-approve P4-P7 oracle manifests/profiles in one review before full implementation. LCB-01 targeted seed approved; complete P4-P7 candidates still require preparation. No candidate-capture approval loop silently replaces this route.",
+      "recommended_policy_zh_CN": "在完整实现前一次预批准P4-P7的准确oracle manifests/profiles。LCB-01定向seed已批准，但完整P4-P7候选包仍需准备。不得静默换回长任务内逐包批准路线。",
       "affected_cdr": [],
       "affected_golden": [
         "viewfactor-candidate",
@@ -225,5 +223,7 @@
       "evidence": [],
       "boundary": "Policy checkpoint only; not the complete requested launch-approval package and not Owner approval."
     }
-  ]
+  ],
+  "lcb01_owner_record": "docs/execution/launch/LCB-01_OWNER_DECISIONS.json",
+  "lcb01_status_source": "evidence/execution/launch-closure/lcb-01/verification-summary.json"
 }

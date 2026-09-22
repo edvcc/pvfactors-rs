@@ -1,25 +1,28 @@
 {
   "schema_version": 1,
-  "mode": "LAUNCH_CLOSURE_MANDATORY_STOP",
+  "mode": "LCB01_CLOSURE_RECEIPT_HANDOFF",
   "current_milestone": null,
-  "last_completed_checkpoint": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
-  "verification_status": "ASSETS_PASS_SELF_TESTS_PASS_PREFLIGHT_NOT_READY",
+  "last_completed_checkpoint": "3d854a564afd44b6f50f860454c37582f1ad5302",
+  "verification_status": "DERIVED_FROM_VERIFICATION_RECEIPT",
   "known_failures": [
-    "LCB-01: active geometric VF violates bounds at approved TILT_180",
-    "P4-P7 oracle candidates not built; mandatory stop",
-    "Full policy/contract synchronization unfinished",
-    "Owner approvals pending",
-    "GG-01/GG-02 unprotected branches and admin identity"
+    "Complete P4-P7 oracle package unfinished",
+    "Broader Owner decisions remain pending",
+    "Governance risks require resolution/acceptance"
   ],
-  "approved_blockers": [],
+  "approved_blockers": [
+    "LCB-01 semantic decisions: DEV-028, DEV-029, CDR-008 APPROVED; closure requires receipt"
+  ],
   "unresolved_findings": [
     "BF-01",
-    "BF-02",
-    "LCB-01"
+    "BF-02"
   ],
-  "next_executable_action": "Wait for Owner authorization of new named VF deviation/CDR candidate investigation; no production implementation",
+  "next_executable_action": "Validate LCB-01 closure receipt. If CLOSED, next separately executed task resumes research/full-project-launch-closure from d5bc38ebd6ba853c4cec530e4787d1ab6168203d plus closure package. Stop here; no P4-P7 work or implementation.",
   "implementation_started": false,
-  "preparation_status": "INCOMPLETE_NEW_BLOCKER",
-  "launch_status": "FULL-PROJECT LAUNCH CLOSURE — BLOCKED",
-  "verification_evidence": "docs/execution/launch/LAUNCH_CLOSURE_CHECKPOINT.json"
+  "preparation_status": "OWNER_DECISIONS_PROPAGATED",
+  "launch_status": "FULL IMPLEMENTATION — INACTIVE",
+  "verification_evidence": "evidence/execution/launch-closure/lcb-01/verification-summary.json",
+  "current_research_checkpoint": "Resolve tested_content_commit and receipt_commit from verification_evidence",
+  "conditional_blockers": {
+    "LCB-01": "evidence/execution/launch-closure/lcb-01/verification-summary.json"
+  }
 }

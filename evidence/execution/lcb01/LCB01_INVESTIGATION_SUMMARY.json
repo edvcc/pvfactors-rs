@@ -1,0 +1,126 @@
+{
+  "status": "HISTORICAL_SUPERSEDED",
+  "date": "2026-09-22",
+  "repository": "edvcc/pvfactors-rs",
+  "branch": "research/vf-lcb01-compatibility",
+  "base_sha": "d5bc38ebd6ba853c4cec530e4787d1ab6168203d",
+  "frozen_reference": {
+    "project": "pvlib/solarfactors",
+    "version": "1.6.1",
+    "commit": "ecbfc863657e239817603a43898ae173c7ccad9c"
+  },
+  "exact_r0_blocker_evidence": {
+    "environment_id": "031158a1d1be8cdb9093",
+    "path": "evidence/execution/launch-closure/NEW_LAUNCH_BLOCKER_LCB-01.json",
+    "note": "Existing launch-closure capture remains the authoritative exact-R0 Reference reproduction."
+  },
+  "supplemental_canonical_linux_evidence": {
+    "workflow_run_id": 35691666346,
+    "workflow_head_sha": "a75a09decbeaab1871103432bdb72f02aef19e9b",
+    "conclusion": "success",
+    "artifact_id": 10677764953,
+    "artifact_digest": "sha256:216dbcdefce7b9549c8cde4cd367e5a1abf7c3949024a3f37e21ae5b865b563a",
+    "canonical_environment_match": true,
+    "runtime_environment_id": "be519ad8ac6dff2c9cc4",
+    "note": "Exact canonical dependency/runtime contract fields match. Runtime fingerprint differs from original R0 because the hosted Linux kernel/platform string differs; this does not redefine R0."
+  },
+  "domain_scan": {
+    "designed_cases": 33,
+    "bound_failure_cases": [
+      {
+        "n_pvrows": 2,
+        "tilt": 180,
+        "surface_azimuth": 270,
+        "violations": 14
+      },
+      {
+        "n_pvrows": 3,
+        "tilt": 180,
+        "surface_azimuth": 270,
+        "violations": 36
+      },
+      {
+        "n_pvrows": 11,
+        "tilt": 180,
+        "surface_azimuth": 270,
+        "violations": 492
+      }
+    ],
+    "conclusion": "Observed bound failure is isolated to the exact negative-horizontal Reference endpoint in the designed scan; no general tilt>90 defect was found."
+  },
+  "root_cause": {
+    "first_wrong_result": "Signed _vf_hottel_gnd_surf crossed/uncrossed result after exact-horizontal high/low endpoint tie reversal.",
+    "endpoint_limit": "At nextafter(180,0), b2 is higher and the target VF is positive; at exact -180 rotation, equal y triggers b1 as highest and the signed numerator flips.",
+    "raw_negative_hottel_calls": 28,
+    "negative_all_strings_direct": 28,
+    "negative_with_any_obstruction": 0,
+    "geometry_change_required": false
+  },
+  "blocker_pair": {
+    "receiver_reference_index": 3,
+    "source_reference_index": 28,
+    "frozen_reference": -0.2038204263767998,
+    "corrected_ground_to_pv_mp100": "0.2038204263767998815712607034283142448398871848600639686444912994513033510331848965536530463636382979",
+    "corrected_pv_to_ground_mp100": "0.2038204263767998363140346529403541283845537638530083543871196631595168203537032258281470128079206528",
+    "independent_numeric_ground_to_pv_order128": 0.20382042637680012
+  },
+  "candidate_magnitude_primitive": {
+    "n2_raw_to_candidate_violations": [
+      14,
+      0
+    ],
+    "n3_raw_to_candidate_violations": [
+      36,
+      0
+    ],
+    "n11_raw_to_candidate_violations": [
+      492,
+      0
+    ],
+    "exact_to_nextafter_max_abs_difference": 3.774758283725532e-15,
+    "n3_candidate_min": 0,
+    "n3_candidate_max": 1,
+    "n3_candidate_closure_error": 0,
+    "n3_candidate_reciprocity_error": 0
+  },
+  "full_matrix_abs_counterexample": {
+    "row0_front_sum": 2.99990000499995,
+    "row0_front_sky": 1.999950002499975,
+    "closure_error": 1.99990000499995,
+    "conclusion": "abs(final_matrix) is rejected; candidate magnitude treatment is at the finite Hottel primitive before sky closure."
+  },
+  "invariant_mutation_self_tests": {
+    "negative_but_reciprocal_caught": true,
+    "closure_pass_but_invalid_entry_caught": true,
+    "greater_than_one_caught": true,
+    "all_pass": true
+  },
+  "deliverables": {
+    "investigation_en": "docs/lcb01/LCB-01_VIEW_FACTOR_COMPATIBILITY_INVESTIGATION.en.md",
+    "investigation_zh": "docs/lcb01/LCB-01_VIEW_FACTOR_COMPATIBILITY_INVESTIGATION.zh-CN.md",
+    "proposed_dev_en": "docs/lcb01/DEV-028_VIEW_FACTOR_ENDPOINT_ORIENTATION_DEFECT.en.md",
+    "proposed_dev_zh": "docs/lcb01/DEV-028_VIEW_FACTOR_ENDPOINT_ORIENTATION_DEFECT.zh-CN.md",
+    "proposed_cdr_en": "docs/lcb01/CDR-008_VIEW_FACTOR_MAGNITUDE_VISIBILITY_POLICY.en.md",
+    "proposed_cdr_zh": "docs/lcb01/CDR-008_VIEW_FACTOR_MAGNITUDE_VISIBILITY_POLICY.zh-CN.md",
+    "candidate_oracle": "reference/candidates/view-factor-lcb01-oracle-v0.1.json",
+    "primary_harness": "reference/lcb01/investigate_vf.py",
+    "refined_harness": "reference/lcb01/refine_vf.py",
+    "workflow": ".github/workflows/lcb01-vf-investigation.yml"
+  },
+  "owner_decisions_required": [
+    "DEV-028 approval/rejection",
+    "CDR-008 approval/rejection",
+    "candidate corrected oracle approval/rejection for P4 seed",
+    "authorization to resume Full-Project Launch Closure if the preceding items are accepted"
+  ],
+  "prohibited_status_claims": [
+    "DEV APPROVED",
+    "CDR APPROVED",
+    "P4 READY",
+    "FULL PROJECT READY",
+    "FULL IMPLEMENTATION ACTIVE"
+  ],
+  "historical_status": "LCB-01 — READY FOR OWNER DECISION",
+  "current_authority": "docs/execution/launch/LCB-01_OWNER_DECISIONS.json",
+  "current_verification": "evidence/execution/launch-closure/lcb-01/verification-summary.json"
+}

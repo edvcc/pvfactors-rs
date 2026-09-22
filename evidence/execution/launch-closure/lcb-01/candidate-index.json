@@ -1,0 +1,11 @@
+{
+  "manifest": "reference/candidate/vf-lcb01-v0.1/manifest.json",
+  "sha256": "efaa3a7d4789a5b7f53a4e8629aebc729ae70498933ecc798072260d684b7c48",
+  "comparator_policy_sha256": "6259bbd58d09ffef7e9249d040deb28291694bb3b61bc39f259fd5fb2e81ced2",
+  "cases": 66,
+  "artifacts": 198,
+  "approval": "APPROVED_TARGETED_ORACLE_SEED",
+  "scope": "LCB-01 Targeted Corrected VF Oracle Subset / P4 Oracle Seed",
+  "owner_record": "docs/execution/launch/LCB-01_OWNER_DECISIONS.json",
+  "verification_receipt": "evidence/execution/launch-closure/lcb-01/verification-summary.json"
+}

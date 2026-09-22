@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "cases_run": 66,
+  "errors": [],
+  "scope": "LCB01_TARGETED_ORACLE_SEED",
+  "approval": "APPROVED_TARGETED_ORACLE_SEED",
+  "p4_acceptance": "NOT_READY",
+  "expected_comparison": "PASS",
+  "fast_group_policy": "PASS"
+}

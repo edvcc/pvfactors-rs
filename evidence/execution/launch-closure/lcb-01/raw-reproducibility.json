@@ -1,0 +1,337 @@
+{
+  "status": "PASS",
+  "artifacts": 66,
+  "receipts": [
+    {
+      "path": "raw/VF000.json",
+      "first": "dc65eb3960230b82a75af29a952abe67b22094e2f4bacff6d3361370fbf0f815",
+      "second": "dc65eb3960230b82a75af29a952abe67b22094e2f4bacff6d3361370fbf0f815"
+    },
+    {
+      "path": "raw/VF001.json",
+      "first": "a0294d1be7e91876389e983fa50857daa94c488e03736400380e4a08d0f3951e",
+      "second": "a0294d1be7e91876389e983fa50857daa94c488e03736400380e4a08d0f3951e"
+    },
+    {
+      "path": "raw/VF002.json",
+      "first": "84a4fc6cdb6ccf0f53ffe82c46cdf4eeaffe9b0a0fb7fcf73bfbe2374e1b64a9",
+      "second": "84a4fc6cdb6ccf0f53ffe82c46cdf4eeaffe9b0a0fb7fcf73bfbe2374e1b64a9"
+    },
+    {
+      "path": "raw/VF003.json",
+      "first": "578c4003f94d85e87ed8088047f23b8b2d65ec2784137e96f6d74f4dfcc755f3",
+      "second": "578c4003f94d85e87ed8088047f23b8b2d65ec2784137e96f6d74f4dfcc755f3"
+    },
+    {
+      "path": "raw/VF004.json",
+      "first": "682cbe4a62ba6e5ae4591b0039114f05368c4423a4b387e8185dd79dcd94086e",
+      "second": "682cbe4a62ba6e5ae4591b0039114f05368c4423a4b387e8185dd79dcd94086e"
+    },
+    {
+      "path": "raw/VF005.json",
+      "first": "2d92a8a1764dff315209b57b4538437ae7ef6eef5e218a5dce7a13b0b8630593",
+      "second": "2d92a8a1764dff315209b57b4538437ae7ef6eef5e218a5dce7a13b0b8630593"
+    },
+    {
+      "path": "raw/VF006.json",
+      "first": "7492a5ff56ebe8a331d50268561041247c0b79901e120a49d4777b1296b71171",
+      "second": "7492a5ff56ebe8a331d50268561041247c0b79901e120a49d4777b1296b71171"
+    },
+    {
+      "path": "raw/VF007.json",
+      "first": "eeacbb45001639c33c60d7b56e482ed8c0a4d0b0f69c6836ac6a0651b3f24932",
+      "second": "eeacbb45001639c33c60d7b56e482ed8c0a4d0b0f69c6836ac6a0651b3f24932"
+    },
+    {
+      "path": "raw/VF008.json",
+      "first": "8f2f59e217c496b3f839d96867f346194991abda67bded23cc73e76075fb0aaa",
+      "second": "8f2f59e217c496b3f839d96867f346194991abda67bded23cc73e76075fb0aaa"
+    },
+    {
+      "path": "raw/VF009.json",
+      "first": "593a0db3e9844985d5d5b80803d921dd29973a2e06c0980a931dcb2260bd80ba",
+      "second": "593a0db3e9844985d5d5b80803d921dd29973a2e06c0980a931dcb2260bd80ba"
+    },
+    {
+      "path": "raw/VF010.json",
+      "first": "7e96121cd08e25caea68a8b194d4b29122687514cd5726a2f5b97e0444d2f1fb",
+      "second": "7e96121cd08e25caea68a8b194d4b29122687514cd5726a2f5b97e0444d2f1fb"
+    },
+    {
+      "path": "raw/VF011.json",
+      "first": "9758943fa0459f85dac7eb6218d3ee75d3d71b819d1017376ab1842155a86a47",
+      "second": "9758943fa0459f85dac7eb6218d3ee75d3d71b819d1017376ab1842155a86a47"
+    },
+    {
+      "path": "raw/VF012.json",
+      "first": "4f4b8d7ebfb26fd62d8c97baf92a6d2da9c4af7966a8d9f603b3aa365d80c270",
+      "second": "4f4b8d7ebfb26fd62d8c97baf92a6d2da9c4af7966a8d9f603b3aa365d80c270"
+    },
+    {
+      "path": "raw/VF013.json",
+      "first": "3c74623c15ec69e4fc85cd8a2161fcf8bfe845118b616832bb421e419216736e",
+      "second": "3c74623c15ec69e4fc85cd8a2161fcf8bfe845118b616832bb421e419216736e"
+    },
+    {
+      "path": "raw/VF014.json",
+      "first": "56009070a2447370a7deb95079751cc3c40641e3a00c851ef08bb0a4beedd050",
+      "second": "56009070a2447370a7deb95079751cc3c40641e3a00c851ef08bb0a4beedd050"
+    },
+    {
+      "path": "raw/VF015.json",
+      "first": "c491b154a4c1196cbe567d1245038c3eec0d1fa7298c498f21e227dd1acddff8",
+      "second": "c491b154a4c1196cbe567d1245038c3eec0d1fa7298c498f21e227dd1acddff8"
+    },
+    {
+      "path": "raw/VF016.json",
+      "first": "ab9ce5a46a65759a9a86efc5a6cba5f57a14e36df7c40d73ed951728c727b1fa",
+      "second": "ab9ce5a46a65759a9a86efc5a6cba5f57a14e36df7c40d73ed951728c727b1fa"
+    },
+    {
+      "path": "raw/VF017.json",
+      "first": "4b04494ff84a08ae620c43563c6dfd2c456bd3021a39ff58b5809622da251661",
+      "second": "4b04494ff84a08ae620c43563c6dfd2c456bd3021a39ff58b5809622da251661"
+    },
+    {
+      "path": "raw/VF018.json",
+      "first": "c2a239d80b142096b49694132b0c65d12a42d2c04a0405c8c54765810e099569",
+      "second": "c2a239d80b142096b49694132b0c65d12a42d2c04a0405c8c54765810e099569"
+    },
+    {
+      "path": "raw/VF019.json",
+      "first": "c79b8d6ab4e1768d9c751e0feef8166df94a1c9b9aab5f23d0004ed80d092b7f",
+      "second": "c79b8d6ab4e1768d9c751e0feef8166df94a1c9b9aab5f23d0004ed80d092b7f"
+    },
+    {
+      "path": "raw/VF020.json",
+      "first": "983492829acb8e6278339bbb9d865e42de529bf65ea495918948bf5236d5dce2",
+      "second": "983492829acb8e6278339bbb9d865e42de529bf65ea495918948bf5236d5dce2"
+    },
+    {
+      "path": "raw/VF021.json",
+      "first": "1df33f3773c9b387236f4c57f6b24244f579c57ce28106eed9d9b949a833c0ba",
+      "second": "1df33f3773c9b387236f4c57f6b24244f579c57ce28106eed9d9b949a833c0ba"
+    },
+    {
+      "path": "raw/VF022.json",
+      "first": "6a536decd3463971507fca28b62c04d09fc534f572da13504177848da2b37417",
+      "second": "6a536decd3463971507fca28b62c04d09fc534f572da13504177848da2b37417"
+    },
+    {
+      "path": "raw/VF023.json",
+      "first": "1b8c909e47f9451a93fd5026a08d7b4f37e52be6d84909315f6590da4e6e1db0",
+      "second": "1b8c909e47f9451a93fd5026a08d7b4f37e52be6d84909315f6590da4e6e1db0"
+    },
+    {
+      "path": "raw/VF024.json",
+      "first": "05ea8b89cb91ee10f05770aae12c5f57b12575f6669f56a078d91c29bdb373eb",
+      "second": "05ea8b89cb91ee10f05770aae12c5f57b12575f6669f56a078d91c29bdb373eb"
+    },
+    {
+      "path": "raw/VF025.json",
+      "first": "5a7c04e8629b0cb248625b7b14786342547571f075db31cabd66366f86a688d3",
+      "second": "5a7c04e8629b0cb248625b7b14786342547571f075db31cabd66366f86a688d3"
+    },
+    {
+      "path": "raw/VF026.json",
+      "first": "c85cc6c2284ee3c8cd13782266dd3e2b9b194addab9310d7c9065a39c586b177",
+      "second": "c85cc6c2284ee3c8cd13782266dd3e2b9b194addab9310d7c9065a39c586b177"
+    },
+    {
+      "path": "raw/VF027.json",
+      "first": "1db0f7b80ce078fd673c34f69345107b8c359e56bd3577f1e182e16cd9a5e334",
+      "second": "1db0f7b80ce078fd673c34f69345107b8c359e56bd3577f1e182e16cd9a5e334"
+    },
+    {
+      "path": "raw/VF028.json",
+      "first": "9b88e522c8eb6da371ac301a6ad4b8caf41f291402ef66783fb01fd40a739c7f",
+      "second": "9b88e522c8eb6da371ac301a6ad4b8caf41f291402ef66783fb01fd40a739c7f"
+    },
+    {
+      "path": "raw/VF029.json",
+      "first": "b61ef942eee2c70f84630cf1b6a8656de2bd67d7a018e7b08c33bc698f8ec7ae",
+      "second": "b61ef942eee2c70f84630cf1b6a8656de2bd67d7a018e7b08c33bc698f8ec7ae"
+    },
+    {
+      "path": "raw/VF030.json",
+      "first": "49bbc0d30aaa6222c3a12ab3fe2ac2584c0bc4158fb0d4c68e83d23a05bc650f",
+      "second": "49bbc0d30aaa6222c3a12ab3fe2ac2584c0bc4158fb0d4c68e83d23a05bc650f"
+    },
+    {
+      "path": "raw/VF031.json",
+      "first": "5fb8fbe54a2c83953b525838bc22f3e88dff047df1e8f34e87b7822cc896bfa2",
+      "second": "5fb8fbe54a2c83953b525838bc22f3e88dff047df1e8f34e87b7822cc896bfa2"
+    },
+    {
+      "path": "raw/VF032.json",
+      "first": "0efe14751655e56f6315d4b6cc071ddca1f1e76b525ba212461f8c0c0ab6bc5e",
+      "second": "0efe14751655e56f6315d4b6cc071ddca1f1e76b525ba212461f8c0c0ab6bc5e"
+    },
+    {
+      "path": "raw/VF033.json",
+      "first": "f53332571fd2b298a2898569c82fe26993e5181afef41aeb5cf205d2d8fbeb51",
+      "second": "f53332571fd2b298a2898569c82fe26993e5181afef41aeb5cf205d2d8fbeb51"
+    },
+    {
+      "path": "raw/VF034.json",
+      "first": "7d4159cdac11efb26f29bbe923832d946a8782c0f2ef7c8676694a98f76c09a5",
+      "second": "7d4159cdac11efb26f29bbe923832d946a8782c0f2ef7c8676694a98f76c09a5"
+    },
+    {
+      "path": "raw/VF035.json",
+      "first": "26e2441124f2a0fff5fbab45391089a7f3ed3f0af4307fe37f3314a77c72f7de",
+      "second": "26e2441124f2a0fff5fbab45391089a7f3ed3f0af4307fe37f3314a77c72f7de"
+    },
+    {
+      "path": "raw/VF036.json",
+      "first": "e605d1d0f04fdaadb5ce008b9fff70540d76a39a869f9e9a33d08d64f0299916",
+      "second": "e605d1d0f04fdaadb5ce008b9fff70540d76a39a869f9e9a33d08d64f0299916"
+    },
+    {
+      "path": "raw/VF037.json",
+      "first": "f2b5ea00dc0727917d2847fb883f36c4fd8b3a67b7fa01dcc4809cea918e28be",
+      "second": "f2b5ea00dc0727917d2847fb883f36c4fd8b3a67b7fa01dcc4809cea918e28be"
+    },
+    {
+      "path": "raw/VF038.json",
+      "first": "5407d110fb50027c8fad12165683f9fabc55a95dc5b1be887bb0ecff9eef45db",
+      "second": "5407d110fb50027c8fad12165683f9fabc55a95dc5b1be887bb0ecff9eef45db"
+    },
+    {
+      "path": "raw/VF039.json",
+      "first": "554cfbb8bc00dec3b8f25099661d531324a4e50afcc59fb46ac4b062017a5216",
+      "second": "554cfbb8bc00dec3b8f25099661d531324a4e50afcc59fb46ac4b062017a5216"
+    },
+    {
+      "path": "raw/VF040.json",
+      "first": "6d49102d9a498e42bd51317e60804c61b75e2defeb74ec934b77750371a632d7",
+      "second": "6d49102d9a498e42bd51317e60804c61b75e2defeb74ec934b77750371a632d7"
+    },
+    {
+      "path": "raw/VF041.json",
+      "first": "21a9ea3d977ecf3e8d8b706707e64455a79e94d821d83c1546e7a7c98988e3dc",
+      "second": "21a9ea3d977ecf3e8d8b706707e64455a79e94d821d83c1546e7a7c98988e3dc"
+    },
+    {
+      "path": "raw/VF042.json",
+      "first": "9c008e6249ad4dc4f907e2026f17a7bcb565e1e486fdd977ccd0c48e9d35c99d",
+      "second": "9c008e6249ad4dc4f907e2026f17a7bcb565e1e486fdd977ccd0c48e9d35c99d"
+    },
+    {
+      "path": "raw/VF043.json",
+      "first": "123a45c7a63adb479ddd293cb0f3542008fc20c10d5af90f3053366784781f91",
+      "second": "123a45c7a63adb479ddd293cb0f3542008fc20c10d5af90f3053366784781f91"
+    },
+    {
+      "path": "raw/VF044.json",
+      "first": "f8b57b182df477390383022ff6dd9c9ae1b64c769c8c1d0cfaf13fea01b84089",
+      "second": "f8b57b182df477390383022ff6dd9c9ae1b64c769c8c1d0cfaf13fea01b84089"
+    },
+    {
+      "path": "raw/VF045.json",
+      "first": "552a6e1e687b5634d38c94eb496fcf4776a72f61eccf19efc3957e2a3d6ac4a8",
+      "second": "552a6e1e687b5634d38c94eb496fcf4776a72f61eccf19efc3957e2a3d6ac4a8"
+    },
+    {
+      "path": "raw/VF046.json",
+      "first": "15af2b70e336280dc66cbc0c06beb9eceaaf2d0733033144e0cbfd66d90fd00b",
+      "second": "15af2b70e336280dc66cbc0c06beb9eceaaf2d0733033144e0cbfd66d90fd00b"
+    },
+    {
+      "path": "raw/VF047.json",
+      "first": "bd41aa76a65bbcab9b9bbc758543d6a9b8fbdc5e1e427c762c3ff0c674f916e9",
+      "second": "bd41aa76a65bbcab9b9bbc758543d6a9b8fbdc5e1e427c762c3ff0c674f916e9"
+    },
+    {
+      "path": "raw/VF048.json",
+      "first": "05fff0fa353d91b82affe86a1928ece98c29ce457af992f73e61f36a08ec7b58",
+      "second": "05fff0fa353d91b82affe86a1928ece98c29ce457af992f73e61f36a08ec7b58"
+    },
+    {
+      "path": "raw/VF049.json",
+      "first": "0514c289134a3ecf0e832e2ddbb1df4330802d230fb4ba5ed1479522c39e86ea",
+      "second": "0514c289134a3ecf0e832e2ddbb1df4330802d230fb4ba5ed1479522c39e86ea"
+    },
+    {
+      "path": "raw/VF050.json",
+      "first": "13b2e4ec7ff3ae20b8af32ad8e8eca43ccbb70e9fb61ad28c5be58656bbead81",
+      "second": "13b2e4ec7ff3ae20b8af32ad8e8eca43ccbb70e9fb61ad28c5be58656bbead81"
+    },
+    {
+      "path": "raw/VF051.json",
+      "first": "64ad68e4ce6aae15a594f8c9ca8dd39eb5ba11fc2be4b0d8cf90443899779574",
+      "second": "64ad68e4ce6aae15a594f8c9ca8dd39eb5ba11fc2be4b0d8cf90443899779574"
+    },
+    {
+      "path": "raw/VF052.json",
+      "first": "91fa1738e29df3705645dce2e38af8cf3a7455a0debeaff0cfb77388d4375201",
+      "second": "91fa1738e29df3705645dce2e38af8cf3a7455a0debeaff0cfb77388d4375201"
+    },
+    {
+      "path": "raw/VF053.json",
+      "first": "a79827dcd090ca3fed1a75bbb43362ec979aed66a2c88f5be5c349c4e4ba0148",
+      "second": "a79827dcd090ca3fed1a75bbb43362ec979aed66a2c88f5be5c349c4e4ba0148"
+    },
+    {
+      "path": "raw/VF054.json",
+      "first": "10c1b08dcb8f18c8b8159b4932b9636bbe906ba01fd63e19c2d19649ba837a8f",
+      "second": "10c1b08dcb8f18c8b8159b4932b9636bbe906ba01fd63e19c2d19649ba837a8f"
+    },
+    {
+      "path": "raw/VF055.json",
+      "first": "9440d1af8b7706b4530e84c649595e2891656f86f9eef6b851e9f953a21f563b",
+      "second": "9440d1af8b7706b4530e84c649595e2891656f86f9eef6b851e9f953a21f563b"
+    },
+    {
+      "path": "raw/VF056.json",
+      "first": "a38eb1a17638a36f741de14e49ed14ac266cdbf33237cf0c6cf44f67d471bb94",
+      "second": "a38eb1a17638a36f741de14e49ed14ac266cdbf33237cf0c6cf44f67d471bb94"
+    },
+    {
+      "path": "raw/VF057.json",
+      "first": "ef5d32e691ec8858c8520c425315abb00072629487be79ed70fcfb2cbb734e63",
+      "second": "ef5d32e691ec8858c8520c425315abb00072629487be79ed70fcfb2cbb734e63"
+    },
+    {
+      "path": "raw/VF058.json",
+      "first": "22bf68606b8358ff508c8b5b65cebf5c7a1f71481451f83697906e936dc27e6c",
+      "second": "22bf68606b8358ff508c8b5b65cebf5c7a1f71481451f83697906e936dc27e6c"
+    },
+    {
+      "path": "raw/VF059.json",
+      "first": "3f1057c6ae583f0a8ff4216c4d32b4d3983c5443da78c5f7faf52cdcc3d56c1c",
+      "second": "3f1057c6ae583f0a8ff4216c4d32b4d3983c5443da78c5f7faf52cdcc3d56c1c"
+    },
+    {
+      "path": "raw/VF060.json",
+      "first": "04f2662a14876a43a948257c98e15ab070362ca42a788cc3a509007ef202b792",
+      "second": "04f2662a14876a43a948257c98e15ab070362ca42a788cc3a509007ef202b792"
+    },
+    {
+      "path": "raw/VF061.json",
+      "first": "6369c6151567d7b5b599b4d70c6626e6bf149a8c2d25f6c4a27e43843949a1f2",
+      "second": "6369c6151567d7b5b599b4d70c6626e6bf149a8c2d25f6c4a27e43843949a1f2"
+    },
+    {
+      "path": "raw/VF062.json",
+      "first": "439e9b63a48e8c44b1364b5c5698dea08e8ffca838c54f99db5c9bb54c210596",
+      "second": "439e9b63a48e8c44b1364b5c5698dea08e8ffca838c54f99db5c9bb54c210596"
+    },
+    {
+      "path": "raw/VF063.json",
+      "first": "36847fea3d2a24224eb19d39779e2da6828129bafe04cf3b2679da903313d915",
+      "second": "36847fea3d2a24224eb19d39779e2da6828129bafe04cf3b2679da903313d915"
+    },
+    {
+      "path": "raw/VF064.json",
+      "first": "8c614fc678c461d73a798e33db69336fee5c9fe30ec73d28ba015c9a844a5fcd",
+      "second": "8c614fc678c461d73a798e33db69336fee5c9fe30ec73d28ba015c9a844a5fcd"
+    },
+    {
+      "path": "raw/VF065.json",
+      "first": "de941f935557df05156e0b375e716c706397806cc5e63dc951ea9c3b48d19371",
+      "second": "de941f935557df05156e0b375e716c706397806cc5e63dc951ea9c3b48d19371"
+    }
+  ],
+  "metadata_boundary": "Incremental capture warning inventory excludes earlier cases; canonical capture.json is the complete rerun receipt. Raw case bytes are independently identical."
+}

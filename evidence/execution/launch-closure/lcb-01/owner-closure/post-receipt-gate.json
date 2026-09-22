@@ -1,0 +1,38 @@
+{
+  "observed_at": "2026-09-22T06:52:07.702455+00:00",
+  "checked_content_commit": "cb5a39d5b02742f5afde4f281406ba46790c7685",
+  "receipt_commit": "bb55f1ecd39cd835e9acb5fd9f3d55869966f9ef",
+  "closure": {
+    "status": "PASS",
+    "errors": []
+  },
+  "owner_launch": {
+    "status": "NOT_READY",
+    "pending": [
+      "OD-01",
+      "OD-02",
+      "OD-03",
+      "OD-04",
+      "OD-05",
+      "OD-06",
+      "OD-07",
+      "OD-08",
+      "OD-09",
+      "OD-10",
+      "OD-11",
+      "OD-12"
+    ],
+    "errors": [
+      "launch approval missing reviewer",
+      "launch approval missing evidence",
+      "launch approval missing implementation_branch",
+      "launch approval missing readiness_commit",
+      "Owner launch approval does not bind the current contract digest",
+      "environment launch evidence pending",
+      "governance launch evidence pending",
+      "Owner decisions pending: OD-01, OD-02, OD-03, OD-04, OD-05, OD-06, OD-07, OD-08, OD-09, OD-10, OD-11, OD-12"
+    ],
+    "contract_sha256": "ddbab7a5935c10859f40346a6e44058dc216586259b7ba19c0bcaf7c7eb59612"
+  },
+  "notes": "Receipt-aware gate read after evidence-index creation; no production or candidate contents changed. Overall launch remains NOT_READY."
+}

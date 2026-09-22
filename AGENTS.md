@@ -1,7 +1,7 @@
 # pvfactors-rs operating entry
 
-当前停点：Launch Closure 的 LCB-01；先读 `docs/execution/launch/FULL_PROJECT_LAUNCH_REVIEW.zh-CN.md`。未经 Owner 恢复授权，不继续修正/冻结 P4–P7 Oracle，更不启动生产实现。
-Current stop: Launch Closure LCB-01; read `docs/execution/launch/FULL_PROJECT_LAUNCH_REVIEW.en.md`. Await Owner resumption authority before corrected P4-P7 oracles or production implementation.
+LCB-01 Owner已批准DEV-028（Full）、DEV-029（Fast几何）、CDR-008及66-case定向oracle seed。先读 `docs/execution/launch/LCB-01_OWNER_DECISIONS.zh-CN.md`、`LCB-01_CLOSURE_HANDOFF.zh-CN.md`；实际CLOSED以验证后的verification-summary.json为准，缺少匹配凭证仍阻塞。只交接后续Full-Project Launch Closure研究；本任务不执行P4-P7，完整实现INACTIVE。
+Owner approved DEV-028/DEV-029/CDR-008 and the targeted66-case seed. Read the English counterparts. Effective closure/resume authority requires the matched remote-resolvable receipt; full implementation remains INACTIVE.
 
 中文入口：本仓库独立重建 solarfactors Rust 核心。本次仅准备执行就绪资产，实际实现须 Owner 另行批准启动。
 `master` 为正式发布基线；禁止 Agent 直接修改/推送/合并、正式 tag 或发布。权威材料依次查阅
@@ -24,3 +24,5 @@ Independent Rust solarfactors reconstruction. Current work is **readiness prepar
 - After an authorized launch, ordinary compile/test/CI failures are feedback: diagnose, fix, regress, continue; successful milestones advance automatically.
 - Stop for contract conflicts, new model/input/output decisions, acceptance-policy changes, oracle approval, license/provenance issues, or irreplaceable environment/permission blockers. Preserve a checkpoint and report the exact required Owner action.
 - `docs/execution/CODEX_FULL_IMPLEMENTATION_TASK.md` is a prepared future task, **not an instruction to execute now**. Formal documentation changes stay EN/ZH-CN synchronized.
+
+LCB-01 targeted seed verification: `python scripts/verify_vf_candidate.py reference/candidate/vf-lcb01-v0.1 --actual <fresh-work-corpus>`; never complete P4 acceptance. Approved seed metadata/code changes require explicit governance and re-verification; no automatic refresh.

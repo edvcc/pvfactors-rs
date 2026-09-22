@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "tested_content_commit": "cb5a39d5b02742f5afde4f281406ba46790c7685",
+  "clean_at_verification": true,
+  "protected_remote_refs": {
+    "develop": "fb63a96ef06cc0375fca9dbceb4f59e89e7157a7",
+    "feature/p3-rust-geometry-kernel": "c2bc8572a976279abacbcd1d4f9c460233785bdb",
+    "master": "bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba",
+    "research/full-project-launch-closure": "d5bc38ebd6ba853c4cec530e4787d1ab6168203d"
+  },
+  "protected_content": [
+    {
+      "baseline": "3d854a564afd44b6f50f860454c37582f1ad5302",
+      "paths": [
+        "upstream",
+        "reference/approved/geometry-golden-v0.1",
+        "reference/tolerance",
+        "docs/g2",
+        "docs/p3",
+        "crates/solarfactors-core",
+        "Cargo.toml",
+        "Cargo.lock",
+        "rust-toolchain.toml"
+      ],
+      "changed_files": [],
+      "status": "PASS"
+    },
+    {
+      "baseline": "c2bc8572a976279abacbcd1d4f9c460233785bdb",
+      "paths": [
+        "upstream",
+        "reference/approved/geometry-golden-v0.1",
+        "reference/tolerance",
+        "docs/g2",
+        "docs/p3",
+        "crates/solarfactors-core",
+        "Cargo.toml",
+        "Cargo.lock",
+        "rust-toolchain.toml"
+      ],
+      "changed_files": [],
+      "status": "PASS"
+    }
+  ],
+  "baseline_manifest_files": 491,
+  "g2": "PASS",
+  "production_implementation_started": false,
+  "comparator_values_unchanged": {
+    "bounds_epsilon": 1e-10,
+    "expected_abs": 2e-09,
+    "reciprocity_absolute_length": 1e-10,
+    "closure_abs": 1e-10
+  },
+  "approved_geometry_manifest_sha256": "efd2adf3037740b9788792c9f5be6122fb2e842d72f2ddbe2bb5552abc27141b"
+}
