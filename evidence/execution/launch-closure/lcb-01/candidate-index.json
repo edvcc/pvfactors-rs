@@ -1,0 +1,7 @@
+{
+  "manifest": "reference/candidate/vf-lcb01-v0.1/manifest.json",
+  "sha256": "10c14a0ce47a25cb49bbbf23b8a59ab8bea6113b0b0cf346e6e3922189d831d4",
+  "cases": 66,
+  "artifacts": 198,
+  "approval": "UNAPPROVED"
+}

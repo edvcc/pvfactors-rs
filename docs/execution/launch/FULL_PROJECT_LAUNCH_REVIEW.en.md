@@ -1,5 +1,7 @@
 # Full-Project Launch Closure: Mandatory-stop Report
 
+**2026-09-22 update:** The separately authorized LCB-01 investigation is complete and ready for Owner decision; see [current investigation](LCB-01_VF_INVESTIGATION_REPORT.en.md). DEV-028/CDR-008 and 66-case corrected candidate remain unapproved. Whole-project closure remains BLOCKED. The original stop report below is retained as historical checkpoint evidence; its requests for investigation authorization and zero VF candidates are superseded by this update.
+
 **FULL-PROJECT LAUNCH CLOSURE — BLOCKED**. This is a recoverable checkpoint after task section40, not completion of the full Launch Review package. No decisions/oracles have been approved or promoted; no production implementation started.
 
 ## LCB-01 requires action first

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "BLOCKED",
-  "phase": "MANDATORY_STOP_SECTION_40",
+  "phase": "LCB01_INVESTIGATION_READY_FOR_OWNER_DECISION",
   "ready_for_full_launch_review": false,
   "new_launch_blockers": [
     {
@@ -14,5 +14,6 @@
   "owner_decisions_approved": 0,
   "oracles_promoted": 0,
   "production_started": false,
-  "next_action": "Owner authorizes new named VF deviation/CDR candidate investigation without changing approved Geometry, then resume LC-1..LC-6."
+  "next_action": "Owner reviews policy, Fast finite aggregation, exact candidate manifest and comparator; do not launch production or treat this as completed P4-P7 closure.",
+  "lcb01_investigation": "evidence/execution/launch-closure/lcb-01/investigation-status.json"
 }

@@ -1,7 +1,7 @@
 # pvfactors-rs operating entry
 
-当前停点：Launch Closure 的 LCB-01；先读 `docs/execution/launch/FULL_PROJECT_LAUNCH_REVIEW.zh-CN.md`。未经 Owner 恢复授权，不继续修正/冻结 P4–P7 Oracle，更不启动生产实现。
-Current stop: Launch Closure LCB-01; read `docs/execution/launch/FULL_PROJECT_LAUNCH_REVIEW.en.md`. Await Owner resumption authority before corrected P4-P7 oracles or production implementation.
+当前停点：LCB-01 调查已完成，等待 Owner 审阅 DEV-028/CDR-008、Fast 有限域聚合及准确 candidate manifest。先读 `docs/execution/launch/LCB-01_VF_INVESTIGATION_REPORT.zh-CN.md`。本次研究授权已完成；不得继续生产实现或自动批准候选。
+Current stop: LCB-01 investigation READY FOR OWNER DECISION; read `docs/execution/launch/LCB-01_VF_INVESTIGATION_REPORT.en.md`. DEV-028/CDR-008 and candidate remain unapproved; whole-project closure remains BLOCKED.
 
 中文入口：本仓库独立重建 solarfactors Rust 核心。本次仅准备执行就绪资产，实际实现须 Owner 另行批准启动。
 `master` 为正式发布基线；禁止 Agent 直接修改/推送/合并、正式 tag 或发布。权威材料依次查阅
@@ -24,3 +24,5 @@ Independent Rust solarfactors reconstruction. Current work is **readiness prepar
 - After an authorized launch, ordinary compile/test/CI failures are feedback: diagnose, fix, regress, continue; successful milestones advance automatically.
 - Stop for contract conflicts, new model/input/output decisions, acceptance-policy changes, oracle approval, license/provenance issues, or irreplaceable environment/permission blockers. Preserve a checkpoint and report the exact required Owner action.
 - `docs/execution/CODEX_FULL_IMPLEMENTATION_TASK.md` is a prepared future task, **not an instruction to execute now**. Formal documentation changes stay EN/ZH-CN synchronized.
+
+LCB-01 research verification: `python scripts/verify_vf_candidate.py reference/candidate/vf-lcb01-v0.1` (candidate-only PASS; never P4 acceptance).

@@ -6,7 +6,8 @@ Currently BLOCKED; not a complete signable launch package.
 - [x] Original R0 restored with matching identity.
 - [x] Four-platform isolated packaging/numerical probes executed.
 - [x] LCB-01 minimal case, independent Hottel, two identical runs and identical approved Geometry.
-- [ ] Owner authorizes new VF deviation investigation and closes LCB-01.
+- [x] Owner authorized LCB-01 research; investigation, DEV-028/CDR-008 and 66-case candidate prepared.
+- [ ] Owner approves policy/candidate and closes LCB-01 for launch.
 - [ ] Complete12 exact bilingual policy/CDR supplements, corrected fixtures and approval objects.
 - [ ] Build complete P4/P5/P6/P7 manifest/schema/comparator/tolerance candidates and mutation tests.
 - [ ] Resolve governance or sign named risk; decide minimum-OS release gates.

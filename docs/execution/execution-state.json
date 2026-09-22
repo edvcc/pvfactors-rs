@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "mode": "LAUNCH_CLOSURE_MANDATORY_STOP",
+  "mode": "LCB01_OWNER_DECISION_PENDING",
   "current_milestone": null,
-  "last_completed_checkpoint": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
-  "verification_status": "ASSETS_PASS_SELF_TESTS_PASS_PREFLIGHT_NOT_READY",
+  "last_completed_checkpoint": "4d6ccb92c4536dba7dd37d68ed0429c7a040a9ab",
+  "verification_status": "LCB01_CANDIDATE_PASS_62_SELF_TESTS_PASS_FULL_RECONSTRUCTION_PASS_OWNER_PENDING",
   "known_failures": [
-    "LCB-01: active geometric VF violates bounds at approved TILT_180",
-    "P4-P7 oracle candidates not built; mandatory stop",
+    "LCB-01: Reference defect characterized; DEV-028/CDR-008 and corrected candidate await Owner approval",
+    "Complete P4-P7 oracle package still unfinished",
     "Full policy/contract synchronization unfinished",
     "Owner approvals pending",
     "GG-01/GG-02 unprotected branches and admin identity"
@@ -17,9 +17,10 @@
     "BF-02",
     "LCB-01"
   ],
-  "next_executable_action": "Wait for Owner authorization of new named VF deviation/CDR candidate investigation; no production implementation",
+  "next_executable_action": "Owner reviews policy, Fast finite aggregation, exact candidate manifest and comparator; do not launch production or treat this as completed P4-P7 closure.",
   "implementation_started": false,
-  "preparation_status": "INCOMPLETE_NEW_BLOCKER",
-  "launch_status": "FULL-PROJECT LAUNCH CLOSURE — BLOCKED",
-  "verification_evidence": "docs/execution/launch/LAUNCH_CLOSURE_CHECKPOINT.json"
+  "preparation_status": "LCB01_READY_FOR_OWNER_DECISION",
+  "launch_status": "FULL-PROJECT LAUNCH CLOSURE \u2014 BLOCKED",
+  "verification_evidence": "evidence/execution/launch-closure/lcb-01/investigation-status.json",
+  "current_research_checkpoint": "research/vf-lcb01-compatibility HEAD"
 }

@@ -6,7 +6,8 @@
 - [x] 原R0恢复且身份匹配。
 - [x] 四平台隔离打包/数值探针实测。
 - [x] LCB-01最小反例、独立Hottel、双次一致、Geometry相同证据。
-- [ ] Owner授权新VF偏差候选调查并关闭LCB-01。
+- [x] Owner已授权LCB-01研究；调查、DEV-028/CDR-008及66-case候选已准备。
+- [ ] Owner批准政策/候选并关闭LCB-01启动阻塞。
 - [ ] 完成12项精确双语policy/CDR补充、corrected fixtures与批准对象。
 - [ ] 构建完整P4/P5/P6/P7候选manifest/schema/comparator/tolerance及自测。
 - [ ] 关闭治理动作或签署具名风险，确认最低OS release gate。

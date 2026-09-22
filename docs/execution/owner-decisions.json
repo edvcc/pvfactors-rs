@@ -112,7 +112,9 @@
       "id": "LCB-01",
       "status": "OPEN",
       "evidence": "evidence/execution/launch-closure/NEW_LAUNCH_BLOCKER_LCB-01.json",
-      "sha256": "b342eaace2c2f6d0edf928cfb20aeb42b98ab366d76d95ecefba40e70165b86e"
+      "sha256": "b342eaace2c2f6d0edf928cfb20aeb42b98ab366d76d95ecefba40e70165b86e",
+      "investigation_status": "READY_FOR_OWNER_DECISION",
+      "investigation_evidence": "evidence/execution/launch-closure/lcb-01/investigation-status.json"
     }
   ]
 }

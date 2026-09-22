@@ -1,0 +1,997 @@
+{
+  "status": "PASS",
+  "artifacts": 198,
+  "raw_byte_identical": true,
+  "receipts": [
+    {
+      "path": "raw/VF000.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF001.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF002.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF003.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF004.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF005.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF006.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF007.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF008.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF009.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF010.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF011.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF012.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF013.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF014.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF015.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF016.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF017.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF018.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF019.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF020.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF021.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF022.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF023.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF024.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF025.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF026.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF027.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF028.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF029.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF030.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF031.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF032.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF033.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF034.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF035.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF036.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF037.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF038.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF039.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF040.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF041.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF042.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF043.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF044.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF045.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF046.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF047.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF048.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF049.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF050.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF051.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF052.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF053.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF054.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF055.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF056.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF057.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF058.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF059.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF060.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF061.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF062.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF063.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF064.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "raw/VF065.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF000.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF001.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF002.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF003.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF004.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF005.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF006.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF007.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF008.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF009.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF010.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF011.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF012.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF013.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF014.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF015.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF016.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF017.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF018.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF019.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF020.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF021.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF022.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF023.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF024.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF025.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF026.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF027.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF028.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF029.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF030.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF031.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF032.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF033.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF034.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF035.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF036.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF037.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF038.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF039.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF040.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF041.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF042.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF043.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF044.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF045.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF046.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF047.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF048.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF049.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF050.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF051.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF052.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF053.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF054.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF055.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF056.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF057.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF058.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF059.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF060.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF061.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF062.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF063.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF064.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "normalized/VF065.json",
+      "object_equal": true,
+      "byte_equal": true
+    },
+    {
+      "path": "corrected/VF000.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF001.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF002.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF003.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF004.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF005.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF006.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF007.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF008.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF009.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF010.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF011.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF012.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF013.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF014.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF015.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF016.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF017.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF018.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF019.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF020.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF021.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF022.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF023.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF024.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF025.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF026.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF027.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF028.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF029.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF030.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF031.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF032.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF033.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF034.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF035.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF036.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF037.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF038.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF039.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF040.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF041.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF042.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF043.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF044.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF045.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF046.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF047.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF048.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF049.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF050.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF051.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF052.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF053.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF054.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF055.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF056.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF057.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF058.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF059.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF060.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF061.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF062.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF063.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF064.json",
+      "object_equal": true,
+      "byte_equal": false
+    },
+    {
+      "path": "corrected/VF065.json",
+      "object_equal": true,
+      "byte_equal": false
+    }
+  ]
+}

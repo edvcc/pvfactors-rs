@@ -1,5 +1,7 @@
 # Full-Project Launch Closure：停点报告
 
+**2026-09-22 更新：** 已按后续授权完成 LCB-01 调查，可供 Owner 决策，见[当前调查报告](LCB-01_VF_INVESTIGATION_REPORT.zh-CN.md)。DEV-028/CDR-008 及66-case corrected candidate仍未批准，全项目closure仍BLOCKED。以下原停点报告保留为历史checkpoint；其中“等待调查授权”和“VF候选为零”的状态由本更新替代。
+
 **FULL-PROJECT LAUNCH CLOSURE — BLOCKED**。本次不是完整 Launch Review 的交付成功；这是任务第40条触发后的可恢复 checkpoint。没有批准任何决定或Oracle，也没有开始生产实现。
 
 ## 必须先处理的 LCB-01

@@ -11,20 +11,25 @@
     },
     {
       "subsystem": "viewfactor",
-      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
-      "manifest_sha256": null,
-      "case_count": 0,
-      "artifact_count": 0,
+      "status": "LCB01_TARGETED_CANDIDATE_UNAPPROVED_P4_INCOMPLETE",
+      "manifest_sha256": "10c14a0ce47a25cb49bbbf23b8a59ab8bea6113b0b0cf346e6e3922189d831d4",
+      "case_count": 66,
+      "artifact_count": 198,
       "generator_sha256": null,
       "schema_sha256": null,
-      "comparator_sha256": null,
-      "tolerance_profile_sha256": null,
-      "reproducibility": "NOT_RUN",
-      "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
+      "comparator_sha256": "133208015f4188993d47adb2bd217e99c40ccbd99c4f48bb427d986d3fdeeffa",
+      "tolerance_profile_sha256": "1c61ceffa73f6a52e828739780c7353ff9c2bba0e02ea9cff8c5674d228981ab",
+      "reproducibility": "66_RAW_ARTIFACTS_BYTE_IDENTICAL_R0",
+      "independent_evidence": "Decimal90/110, independent line/angular integration, direct tensor convergence, visible divider analytic, 138 metamorphic pairs; see lcb-01 evidence",
       "known_deviations": [
-        "LCB-01"
+        "LCB-01",
+        "DEV-028 PROPOSED",
+        "CDR-008 PROPOSED"
       ],
-      "blocker_effect": "direct blocker"
+      "blocker_effect": "direct blocker",
+      "manifest": "reference/candidate/vf-lcb01-v0.1/manifest.json",
+      "generator_hashes": "reference/candidate/vf-lcb01-v0.1/manifest.json#generator_files",
+      "schema_status": "Repository-native structural validation, no standalone schema"
     },
     {
       "subsystem": "aoi",

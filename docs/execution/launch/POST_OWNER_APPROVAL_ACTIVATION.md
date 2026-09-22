@@ -1,6 +1,6 @@
 # Post-Owner-Approval Activation — INACTIVE
 
-当前LCB-01未关闭，P4–P7候选不存在。不能现在执行，也不能仅把状态字符串改成APPROVED。先恢复并完成closure及独立Review。
+当前LCB-01调查已完成、待Owner决策；存在66-case定向VF候选，但完整P4–P7候选包仍未完成。LCB-01尚未关闭。不能现在执行，也不能仅把状态字符串改成APPROVED。先恢复并完成closure及独立Review。
 
 Owner批准完整准确对象并另行授权mechanical activation后，才可：
 1. 绑定审阅人、decision objects、readiness commit、语义hash、具名implementation branch及独立批准证据。
