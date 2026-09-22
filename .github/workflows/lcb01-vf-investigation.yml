@@ -47,6 +47,9 @@ jobs:
           python reference/lcb01/investigate_vf.py \
             --output reference/work/lcb01/lcb01-results.json \
             | tee reference/work/lcb01/summary.log
+          python reference/lcb01/refine_vf.py \
+            --output reference/work/lcb01/lcb01-refined.json \
+            | tee reference/work/lcb01/refined-summary.log
       - name: Record environment
         if: always()
         run: |
