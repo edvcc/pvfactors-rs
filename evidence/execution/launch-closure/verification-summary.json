@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "status": "FULL-PROJECT LAUNCH CLOSURE — BLOCKED",
+  "completion": "PARTIAL_MANDATORY_STOP_NOT_FULL_TASK_COMPLETE",
+  "branch": "research/full-project-launch-closure",
+  "base_sha": "2347b1d16c9c18b795182714a3925db7e1dda53c",
+  "tested_checkpoint_sha": "905792533459170104946a43e803a75e5967cd92",
+  "ci_tested_sha": "20817ce6c9990d2ec58ed795e9858927b0dfa401",
+  "new_launch_blockers": [
+    "LCB-01"
+  ],
+  "new_launch_blocker_count": 1,
+  "owner_policy_categories": {
+    "READY_FOR_OWNER_APPROVAL": 8,
+    "EVIDENCE_REQUIRED_BEFORE_APPROVAL": 2,
+    "GOVERNANCE_ACTION_REQUIRED": 1,
+    "MILESTONE_DEFERRED_IMPLEMENTATION_CHOICE": 1
+  },
+  "complete_owner_approval_objects": false,
+  "bf01": "BLOCKED — proposed semantics and441 analytic cases; formal supplemental approval object unfinished",
+  "bf02": "BLOCKED — task-corrected policy proposal; full corrected fixtures unfinished",
+  "od03": {
+    "recommendation": "single mu with inclusive64eps grazing band, reverse via -mu",
+    "evidence": "conditional bound +80-digit Decimal +16 CI configurations; not Owner approval"
+  },
+  "od05": {
+    "recommendation": "tentative two-sided centroid/top-point atan2 explicit angular band; no scientific6.5-degree default",
+    "evidence": "190 geometry checks; full frozen-reference/Perez correction comparison incomplete"
+  },
+  "p4_oracle": "NOT_BUILT — LCB-01",
+  "p5_oracle": "NOT_BUILT — mandatory stop",
+  "p6_oracle": "NOT_BUILT — mandatory stop",
+  "p7_oracle": "NOT_BUILT — LCB-01",
+  "r0": "R0 EXECUTABLE",
+  "r0_environment_id": "031158a1d1be8cdb9093",
+  "packaging_stack": {
+    "pyo3": "0.29.2",
+    "rust_numpy": "0.29.0",
+    "maturin": "1.15.0"
+  },
+  "platform_jobs_passed": 16,
+  "packaging_assertions_passed": 544,
+  "downloaded_reports_git_index_hashes_verified": 160,
+  "minimum_os": "TARGET / NOT YET VERIFIED",
+  "master_protected": false,
+  "develop_protected": false,
+  "credential_risk": "current identity admin/push; no governance changes applied",
+  "existing_harness": "PASS",
+  "harness_tests": {
+    "total": 50,
+    "pass": 50,
+    "fail": 0
+  },
+  "launch_closure_comparator_inventory_extension": "NOT_IMPLEMENTED due mandatory stop; only new-blocker launch guard added",
+  "preflight": {
+    "status": "NOT_READY",
+    "exit_code": 2,
+    "r0": "PASS",
+    "owner_launch": "NOT_READY"
+  },
+  "launch_review_package": "BLOCKED / PARTIAL",
+  "full_implementation_task": "PREPARED / INACTIVE; full policy sync still required after resumption",
+  "production_algorithms_changed": false,
+  "approved_baseline_changed": false,
+  "next_action": "Owner authorizes named VF deviation/CDR candidate investigation preserving approved Geometry before closure resumes",
+  "verification_commands": [
+    [
+      "python",
+      "scripts/verify_project.py",
+      "assets",
+      "--output",
+      "/tmp/pvfactors-launch-stop-verify/assets.json"
+    ],
+    [
+      "python",
+      "scripts/verify_project.py",
+      "preflight",
+      "--output",
+      "/tmp/pvfactors-launch-stop-verify/preflight.json"
+    ],
+    [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "scripts/tests",
+      "-v"
+    ]
+  ],
+  "receipt_hashes": {
+    "checkpoint-assets.json": "c2cb89eb3549a608ed7ad12256844ef0c5e327584137df51888f945a5c9bbaf4",
+    "checkpoint-preflight.json": "3ac7611fd981011e8ccf702d6a0e2f88e50662a0b4c219cb2a5fe83d4a5e5ff1",
+    "harness-self-tests.log": "ff75815140dfa1053d837488e4e36bc44c59d69482e5d9ac3504270c4ee36b81",
+    "NEW_LAUNCH_BLOCKER_LCB-01.json": "b342eaace2c2f6d0edf928cfb20aeb42b98ab366d76d95ecefba40e70165b86e"
+  }
+}

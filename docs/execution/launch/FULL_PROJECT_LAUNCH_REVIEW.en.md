@@ -42,3 +42,7 @@ Eight policy candidates, two requiring evidence (OD-08 directly blocked by LCB-0
 No P4-P7 candidate manifests were generated (0 cases/0 artifacts); existing Geometry approval is unchanged. Comparator extension, full policy synchronization and activation implementation were not performed. The old task remains PREPARED / INACTIVE; after resumption update it for OD-02/07/12 before full review. The mandatory stop takes precedence over mechanically filling missing deliverables.
 
 Branch research/full-project-launch-closure; base2347b1d16c9c18b795182714a3925db7e1dda53c. Read final SHA from Git HEAD; receipts bind their individual tested SHAs. The next decision is only whether to authorize the new VF deviation investigation. Full Launch Approval is not currently available.
+
+## Checkpoint verification
+
+Clean tested checkpoint `905792533459170104946a43e803a75e5967cd92`: assets PASS; existing/new gate tests50/50 PASS; preflight NOT_READY/exit2, with R0 PASS and Owner approval/LCB-01 unresolved. See `../../../evidence/execution/launch-closure/verification-summary.json`. Only the new-blocker guard was added; the unimplemented full closure inventory/comparators are not claimed to pass.

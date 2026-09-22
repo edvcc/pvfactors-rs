@@ -1,0 +1,2 @@
+# Preserve downloaded CI evidence bytes, including Windows CRLF, for SHA-256.
+ci/** -text

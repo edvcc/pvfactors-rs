@@ -42,3 +42,7 @@ CI：[实际成功run](https://github.com/edvcc/pvfactors-rs/actions/runs/356847
 P4–P7候选manifest均未生成（0 case/0 artifact）；Geometry既有批准不变。Comparator扩展、全量policy同步、统一activation实现均未进行。旧任务书保持PREPARED / INACTIVE，恢复后必须按本次OD-02/07/12方向同步修订，再供完整Review。本次STOP优先于机械补齐缺失文件。
 
 分支research/full-project-launch-closure；base2347b1d16c9c18b795182714a3925db7e1dda53c。Final SHA以Git HEAD为准；证据记录各自测试SHA。下一步只需要决定是否授权上述新VF偏差调查；当前不能做完整Launch Approval。
+
+## Checkpoint verification
+
+干净被测checkpoint `905792533459170104946a43e803a75e5967cd92`：assets PASS；既有加新增门禁测试50/50 PASS；preflight NOT_READY/exit2，其中R0 PASS，Owner批准与LCB-01未关闭。详见 `../../../evidence/execution/launch-closure/verification-summary.json`。验证工具只增加LCB门禁，没有把未实现的完整closure inventory/comparator当成PASS。
