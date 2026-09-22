@@ -2,8 +2,8 @@
   "schema_version": 1,
   "mode": "LCB01_OWNER_DECISION_PENDING",
   "current_milestone": null,
-  "last_completed_checkpoint": "4d6ccb92c4536dba7dd37d68ed0429c7a040a9ab",
-  "verification_status": "LCB01_CANDIDATE_PASS_62_SELF_TESTS_PASS_FULL_RECONSTRUCTION_PASS_OWNER_PENDING",
+  "last_completed_checkpoint": "8b0208b4ae471bf81d70e4358e8cdc22a38e0384",
+  "verification_status": "LCB01_CANDIDATE_PASS_62_SELF_TESTS_PASS_PREFLIGHT_NOT_READY",
   "known_failures": [
     "LCB-01: Reference defect characterized; DEV-028/CDR-008 and corrected candidate await Owner approval",
     "Complete P4-P7 oracle package still unfinished",
@@ -21,6 +21,6 @@
   "implementation_started": false,
   "preparation_status": "LCB01_READY_FOR_OWNER_DECISION",
   "launch_status": "FULL-PROJECT LAUNCH CLOSURE \u2014 BLOCKED",
-  "verification_evidence": "evidence/execution/launch-closure/lcb-01/investigation-status.json",
+  "verification_evidence": "evidence/execution/launch-closure/lcb-01/verification-summary.json",
   "current_research_checkpoint": "research/vf-lcb01-compatibility HEAD"
 }
