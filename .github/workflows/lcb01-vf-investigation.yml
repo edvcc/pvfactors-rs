@@ -21,7 +21,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  investigate-r0:
+  investigate-canonical-linux:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     env:
