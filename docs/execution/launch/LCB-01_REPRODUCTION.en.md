@@ -1,3 +1,5 @@
+**Historical research document.** Pre-approval status statements and old verification receipts below are superseded by [Owner decisions](LCB-01_OWNER_DECISIONS.en.md) and [current closure handoff](LCB-01_CLOSURE_HANDOFF.en.md). The66-case scientific results remain evidence. Current verification requires `--actual` fresh reconstruction; a candidate path alone returns NOT_READY.
+
 # LCB-01 reproduction and verification
 
 Research-only. Candidate verification never closes Owner decisions or accepts P4. Read the investigation, DEV-028 and CDR-008 before interpreting results. No Rust/runtime dependency was added; research uses stdlib plus existing R0 NumPy/SciPy. Preserve upstream attribution and licenses. Capture code calls frozen Reference; `independent.py` is derived from the cosine measure and segment geometry, not a translation of Reference VF helpers.

@@ -1,39 +1,6 @@
 {
-  "status": "LCB-01 — READY FOR OWNER DECISION",
-  "tested_checkpoint": "8b0208b4ae471bf81d70e4358e8cdc22a38e0384",
-  "clean_at_verification": true,
-  "candidate_harness": "PASS",
-  "harness_self_tests": "PASS",
-  "self_test_count": 62,
-  "independent_oracles": "PASS",
-  "full_reconstruction_artifacts": 198,
-  "raw_byte_identical_cases": 66,
-  "baseline_integrity": "PASS",
-  "original_frozen_files": 491,
-  "protected_paths_changed": [],
-  "protected_refs": {
-    "master": "bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba",
-    "develop": "fb63a96ef06cc0375fca9dbceb4f59e89e7157a7",
-    "feature/p3-rust-geometry-kernel": "c2bc8572a976279abacbcd1d4f9c460233785bdb",
-    "origin/master": "bc0b7ec1cb17938be9f4d53c83e1fb80a1abd9ba",
-    "origin/develop": "fb63a96ef06cc0375fca9dbceb4f59e89e7157a7",
-    "origin/feature/p3-rust-geometry-kernel": "c2bc8572a976279abacbcd1d4f9c460233785bdb"
-  },
-  "preflight": "NOT_READY",
-  "preflight_exit_code": 2,
-  "preflight_checks": {
-    "baseline_integrity": "PASS",
-    "inventory": "PASS",
-    "branch": "PASS",
-    "environment": "PASS",
-    "g2": "PASS",
-    "owner_launch": "NOT_READY",
-    "r0": "PASS",
-    "harness_self_tests": "PASS"
-  },
-  "production_implementation_started": false,
-  "remote_push_performed": false,
-  "release_actions_performed": false,
-  "owner_approval": "PENDING",
-  "candidate_manifest_sha256": "10c14a0ce47a25cb49bbbf23b8a59ab8bea6113b0b0cf346e6e3922189d831d4"
+  "status": "LCB-01 — CLOSURE BLOCKED",
+  "reason": "Owner decisions approved; clean content verification and remote-resolvable receipt are required.",
+  "historical_receipt": "evidence/execution/launch-closure/lcb-01/historical/verification-summary.before-owner-review.json",
+  "production_implementation_started": false
 }

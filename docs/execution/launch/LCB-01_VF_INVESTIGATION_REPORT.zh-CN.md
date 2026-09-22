@@ -1,3 +1,5 @@
+**历史研究文档。** 下文批准前状态及旧验证凭证由[Owner决策](LCB-01_OWNER_DECISIONS.zh-CN.md)和[当前关闭交接](LCB-01_CLOSURE_HANDOFF.zh-CN.md)替代；66-case科学结果保留为证据。当前verifier必须传入`--actual`全新重建结果，仅给candidate路径返回NOT_READY。
+
 # LCB-01 View Factor 调查报告
 
 日期：2026-09-22。**LCB-01 — READY FOR OWNER DECISION**。本次只有研究授权，没有生产实现、决策批准、P4 验收或全项目启动。

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "LCB01-OWNER-2026-09-22",
+  "status": "APPROVED",
+  "date": "2026-09-22",
+  "authority": "Repository Owner explicit task: Owner Decision Propagation + Evidence Provenance Repair v1.0",
+  "source_request": "evidence/execution/launch-closure/lcb-01/owner-decision/source-request.txt",
+  "source_request_sha256": "4f64552f297aed1c2d8a07b441a184fe3c27bf8cd75d2096deaae50c7e5b4dd4",
+  "initial_remote_sha": "3d854a564afd44b6f50f860454c37582f1ad5302",
+  "base_sha": "d5bc38ebd6ba853c4cec530e4787d1ab6168203d",
+  "decisions": [
+    {
+      "id": "OD-LCB01-01",
+      "status": "APPROVED",
+      "decision": "Full signed-Hottel/endpoint orientation behavior is a confirmed compatibility defect; Rust V1 must not reproduce it."
+    },
+    {
+      "id": "OD-LCB01-02",
+      "status": "APPROVED",
+      "decision": "P3 Geometry, identities, coordinates, finite extent, approved Golden and Geometry tolerance remain unchanged."
+    },
+    {
+      "id": "OD-LCB01-03",
+      "status": "APPROVED",
+      "decision": "Semantic side/outward normal, physical line-of-sight and nonnegative finite exchange are authoritative; Hottel realizes this measure."
+    },
+    {
+      "id": "OD-LCB01-04",
+      "status": "APPROVED",
+      "decision": "Applicable active physical/residual F must be in [0,1]; reciprocity and closure are required but insufficient."
+    },
+    {
+      "id": "OD-LCB01-05",
+      "status": "APPROVED",
+      "decision": "No global abs, clamp, folding, identity swap, Geometry adaptation to Reference or tolerance relaxation."
+    },
+    {
+      "id": "OD-LCB01-06",
+      "status": "APPROVED",
+      "decision": "Fast groups aggregate the same finite exchange by receiver length or proved equivalent computation; Fast simulation remains distinct and CDR-007 remains open."
+    }
+  ],
+  "deviations": {
+    "DEV-028": "APPROVED",
+    "DEV-029": "APPROVED"
+  },
+  "cdrs": {
+    "CDR-008": "APPROVED"
+  },
+  "seed_approval": "LCB-01 Targeted Corrected VF Oracle Subset / P4 Oracle Seed",
+  "comparator_approval": "APPROVED FOR LCB-01 TARGETED ORACLE SEED",
+  "production_tolerance_status": "NOT YET FINAL P4 CROSS-PLATFORM TOLERANCE",
+  "production_implementation_started": false,
+  "p4_complete": false,
+  "closure_effect": "CLOSED only after matching remotely resolvable content verification and receipt pass; otherwise CLOSURE BLOCKED",
+  "approved_objects": {
+    "manifest_path": "reference/candidate/vf-lcb01-v0.1/manifest.json",
+    "manifest_sha256": "efaa3a7d4789a5b7f53a4e8629aebc729ae70498933ecc798072260d684b7c48",
+    "comparator_policy_path": "reference/candidate/vf-lcb01-v0.1/comparator-policy.json",
+    "comparator_policy_sha256": "6259bbd58d09ffef7e9249d040deb28291694bb3b61bc39f259fd5fb2e81ced2",
+    "comparator_tool_sha256": "ec39c83d851c3fca944c3963a90c93b736c5d14dc000b0128a9fb143097ece4a",
+    "case_count": 66,
+    "artifact_count": 198,
+    "scope": "LCB-01 Targeted Corrected VF Oracle Subset / P4 Oracle Seed"
+  }
+}

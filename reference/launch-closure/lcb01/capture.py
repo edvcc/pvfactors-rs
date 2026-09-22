@@ -82,6 +82,9 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--only-new',action='store_true')
     args=parser.parse_args(); cases=[]
+    existing_manifest=args.output/'manifest.json'
+    if existing_manifest.exists() and json.loads(existing_manifest.read_text())['status']=='APPROVED_TARGETED_ORACLE_SEED':
+        raise ValueError('Use a fresh work directory; never overwrite an approved targeted seed')
     environment=environment_report()
     if not environment['canonical_environment_match'] or environment['runtime']['environment_id']!='031158a1d1be8cdb9093':
         raise RuntimeError('LCB-01 raw capture requires the frozen R0 environment')

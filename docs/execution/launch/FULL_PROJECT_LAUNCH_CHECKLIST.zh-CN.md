@@ -7,7 +7,8 @@
 - [x] 四平台隔离打包/数值探针实测。
 - [x] LCB-01最小反例、独立Hottel、双次一致、Geometry相同证据。
 - [x] Owner已授权LCB-01研究；调查、DEV-028/CDR-008及66-case候选已准备。
-- [ ] Owner批准政策/候选并关闭LCB-01启动阻塞。
+- [x] Owner已批准DEV-028/DEV-029/CDR-008及targeted seed/comparator。
+- LCB-01关闭：读取并验证verification-summary.json；凭证缺失/失败仍为CLOSURE BLOCKED。
 - [ ] 完成12项精确双语policy/CDR补充、corrected fixtures与批准对象。
 - [ ] 构建完整P4/P5/P6/P7候选manifest/schema/comparator/tolerance及自测。
 - [ ] 关闭治理动作或签署具名风险，确认最低OS release gate。

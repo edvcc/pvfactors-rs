@@ -58,6 +58,8 @@ def main():
     parser.add_argument('--evidence',type=Path,required=True);parser.add_argument('--cases',nargs='*')
     parser.add_argument('--resume',action='store_true')
     args=parser.parse_args(); rows=[]; all_anomalies=[]
+    if (args.candidate/'manifest.json').exists() and read(args.candidate/'manifest.json')['status']=='APPROVED_TARGETED_ORACLE_SEED':
+        raise ValueError('Use a fresh work directory; never overwrite an approved targeted seed')
     if args.resume:
         rows=read(args.evidence/'domain-scan.json')['cases']
         all_anomalies=read(args.evidence/'anomaly-taxonomy.json')
@@ -83,7 +85,7 @@ def main():
                         reference=v,candidate=float(f[i,j]),delta=delta,**taxonomy(data,i,j))
                     anomalies.append(record)
                     changes.append(dict(path=f'/matrix/{i}/{j}',reference=v,corrected=float(f[i,j]),
-                        provenance=['DEV-028 PROPOSED','CDR-008 PROPOSED','independent visible-angle line integration']))
+                        provenance=['DEV-028 APPROVED','CDR-008 APPROVED','independent visible-angle line integration']))
         rawinv=invariants(ref.tolist(),s,1e-10)
         newinv=invariants(f.tolist(),s,1e-10)
         fast=[]
@@ -97,7 +99,7 @@ def main():
             for field,kind in (('back_ground','ground'),('back_pv','pvrow')):
                 if abs(item[field]-values[kind])>2e-9:
                     changes.append(dict(path=f"/fast_helpers/{item['row']}/{field}",reference=item[field],
-                        corrected=values[kind],provenance=['DEV-028 PROPOSED','CDR-008 PROPOSED','finite physical matrix aggregation']))
+                        corrected=values[kind],provenance=['DEV-029 APPROVED','CDR-008 APPROVED','finite physical matrix aggregation']))
         write(args.candidate/'corrected'/path.name,dict(case_id=cid,status='PROPOSED_UNAPPROVED',
             surfaces=s,matrix=sparse(f),numeric_method='visible-angle/receiver quadrature eps=1e-11',
             field_provenance=dict(all_matrix_fields='independent angular integral; reverse by length reciprocity; sky residual',

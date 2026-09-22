@@ -1,5 +1,5 @@
 {
-  "status": "LCB-01 — READY FOR OWNER DECISION",
+  "status": "HISTORICAL_SUPERSEDED",
   "date": "2026-09-22",
   "repository": "edvcc/pvfactors-rs",
   "branch": "research/vf-lcb01-compatibility",
@@ -119,5 +119,8 @@
     "P4 READY",
     "FULL PROJECT READY",
     "FULL IMPLEMENTATION ACTIVE"
-  ]
+  ],
+  "historical_status": "LCB-01 — READY FOR OWNER DECISION",
+  "current_authority": "docs/execution/launch/LCB-01_OWNER_DECISIONS.json",
+  "current_verification": "evidence/execution/launch-closure/lcb-01/verification-summary.json"
 }

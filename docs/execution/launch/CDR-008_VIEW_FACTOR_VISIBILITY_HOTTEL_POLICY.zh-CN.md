@@ -1,12 +1,8 @@
 # CDR-008 — View Factor 非负性、可见性及 Hottel 方向政策
 
-状态：**PROPOSED — AWAITING OWNER REVIEW**。日期：2026-09-22。关联 DEV-028、LCB-01；保持 CDR-003/006 Geometry 合同。本提案不直接重写 M06/M09 或批准的 P3；批准后应先形成可追溯的规格补充，再进入生产实现。
+状态：**APPROVED**。Owner决策2026-09-22，OD-LCB01-01..06，见[Owner记录](LCB-01_OWNER_DECISIONS.zh-CN.md)。DEV-028覆盖Full缺陷，DEV-029独立覆盖Fast有限聚合。本批准补充规定VF/Fast几何语义，不修改冻结P3/Geometry文档。生产数值算法尚未冻结。
 
-## 请求决策
-
-对完整批准 tilt [0°,180°] 域，在原有有限 Geometry 上，以实际法向和可见射线定义几何 F。采用不依赖端点命名方向的统一交换定义，不做角度特判。要求 corrected Fast 几何组聚合同一有限交换；保留 raw Reference，仅按准确 manifest 批准 corrected expectation，并保留 Reference differential 之外的独立验证。
-
-默认推荐：**采用本政策，包含 Fast 有限聚合**。可选路径：(a) 仅将 raw Reference 保留为具名诊断兼容结果，不能冒充物理 F；(b) 延迟批准，保持 launch blocked，继续补充同一数学政策。拒绝收窄批准输入域、front/back交换、负值置零、global abs 或放宽容差容纳非物理值。小范围 helper abs 补丁不是普遍证明，也不能修复 Fast 的正值错误。
+Semantic side/outward normal、line-of-sight为权威，Hottel只是解析实现；在批准tilt域采用非负有限物理交换。禁止global matrix abs、clamp、folding、side swap、为适配Reference修改Geometry或放宽容差。
 
 ## 数学定义
 
@@ -56,24 +52,20 @@ dFi(p) = 1/2 * abs((R ni) · (uB-uA))
 - inactive/zero-length 的行列为零，不做除零；不得为了构造 VF 重新激活 slot。
 - 共线的 self/同排/地面对贡献零。孤立切触和仅端点接触的角测度为零；共线 grazing 为零；接触配置按有效测度极限处理，不产生奇异0/0。批准的正离地间隙避免穿地；任意相交拓扑不在合同内。
 - Topology、SurfaceKey、ReferenceIndex、可见性分类不能借 acceptance epsilon 变成“近似相等”。可用稳健/自适应 predicate 消除算术不确定性，但不能扩大可见域。若批准 Geometry 本身无法定义合法物理域，必须另报冲突，不得修改。
-- physical row 保留 `F_i,sky=1−sum(physical F_i,*)`；sky row 为零，不参与长度互易。有限 ground 下，它是开放边界残差，即使接收面朝下，也包含逃逸到地面范围外的份额。本提案不把它静默改成仅天文上半球。检查非负与闭合，不能 clamp 非法残差。
+- physical row 保留 `F_i,sky=1−sum(physical F_i,*)`；sky row 为零，不参与长度互易。有限 ground 下，它是开放边界残差，即使接收面朝下，也包含逃逸到地面范围外的份额。本决策不把它静默改成仅天文上半球。检查非负与闭合，不能 clamp 非法残差。
 
 ## Full/Fast 兼容性与 API
 
-Full F 使用上述定义。建议 Fast ground/PV/shaded/illuminated 几何组聚合同一有限交换；多个接收子段按长度加权。若能证明等价，也可直接计算组值。这会替代不符合有限域的最低端点代理和越域边段，不会把 Fast 的单次反射近似变为 Full solve，也不会自动关闭 CDR-007。
+Full F 使用上述定义。批准 Fast ground/PV/shaded/illuminated 几何组聚合同一有限交换；多个接收子段按长度加权。若能证明等价，也可直接计算组值。这会替代不符合有限域的最低端点代理和越域边段，不会把 Fast 的单次反射近似变为 Full solve，也不会自动关闭 CDR-007。
 
-公共 Geometry API、身份不变；F维度、receiver/source轴、inactive slot、边界残差不变。DEV-028 case 和有限 Fast 组数值会有意改变，必须保留字段级偏差。AOI G 是独立算子，本 CDR 不对其套用几何 F 的[0,1]规则。不得声称全部 P4/P5/P6/P7 fixtures 或公共结果 availability 决策因此获批。
+公共 Geometry API、身份不变；F维度、receiver/source轴、inactive slot、边界残差不变。DEV-028 Full case 和 DEV-029 有限 Fast 组数值会有意改变，必须保留字段级偏差。AOI G 是独立算子，本 CDR 不对其套用几何 F 的[0,1]规则。不得声称全部 P4/P5/P6/P7 fixtures 或公共结果 availability 决策因此获批。
 
-## Expected、容差与验收
+## 批准 seed 与验证边界
 
-raw/normalized Reference 为不可变证据。Owner 批准本决策、DEV-028、准确manifest和comparator后，corrected 才能进入 approved oracle。Rust输出不能生成自身expected。candidate不自动晋升。
+既有66case/198artifact仅批准为 **APPROVED_TARGETED_ORACLE_SEED**：LCB-01 corrected几何F及finite Fast组，不是完整P4/VF Golden或AOI覆盖。批准不改变物理数值payload。raw/normalized Reference保留；matrix provenance引用DEV-028/CDR-008，Fast引用DEV-029/CDR-008。准确对象哈希见LCB-01_OWNER_DECISIONS.json。
 
-LCB-01候选含66case/198artifacts。bounds、closure/长度互易暂拟1e−10，expected绝对比较2e−9。这是按请求求积精度建立的研究数值余量，不是算法阈值，也不改变 `geometry-tolerance-v0.1`。已观测独立误差更小，但不构成所有平台的证明。以后以生产验收预算替换研究预算，需要证据和明确批准，不能在实现失败时静默修改。
+Comparator状态为 **APPROVED FOR LCB-01 TARGETED ORACLE SEED**；**NOT YET FINAL P4 CROSS-PLATFORM TOLERANCE**。bounds epsilon1e-10、expected_abs2e-9、长度互易1e-10、closure1e-10保持原targeted验收预算，Geometry tolerance不变。P4正式容差须独立证据与明确批准，不能为通过实现测试静默放宽。
 
-必须验证：所有active physical及residual项边界、精确support规则、仅对active接收面检查closure、physical长度互易、独立Hottel/线积分/双重积分、遮挡/完整域镜像/端点反转、Geometry不变、准确case inventory和generator/manifest完整性。Reciprocity/closure不足以证明正确，尤其不能把由构造生成的性质当成独立证据。Mutation必须抓住负值、>1、互易但为负、闭合但含非法项。缺少artifact/case或生产测试不能让milestone通过。
+保留bounds、support、reciprocity、closure、高精度解析、独立角度/线积分、tensor收敛、遮挡、wrong-side/fully-blocked zero、mirror、端点反转及独立反向验证。Candidate verifier须比较全新重建结果并重算Fast有限聚合；negative-but-reciprocal、closure-pass-invalid及>1 mutation继续必需。
 
-## Owner 关闭记录
-
-集中审阅[调查报告](LCB-01_VF_INVESTIGATION_REPORT.zh-CN.md)、[DEV-028](DEV-028_VIEW_FACTOR_ORIENTATION_CANDIDATE.zh-CN.md)、`reference/candidate/vf-lcb01-v0.1/manifest.json`、proposed profile及 `evidence/execution/launch-closure/lcb-01/candidate-index.json`。需要答复：批准/修改/拒绝统一物理政策；明确接受/拒绝Fast有限聚合；指定批准manifest/profile哈希或要求替换证据。由Owner记录批准，不从本推荐或测试PASS推定。
-
-此前状态保持 **PROPOSED — AWAITING OWNER REVIEW**；LCB-01可供决策，但launch仍开放，全项目closure仍BLOCKED。Owner关闭后，依据有效授权恢复剩余P4–P7研究/oracle准备。生产启动是另一个决定。本调查结束，不执行未来实现任务。
+本批准不关闭CDR-007，不使Fast==Full，不冻结生产数值算法，不完成P4–P7或启动实现。[关闭交接说明](LCB-01_CLOSURE_HANDOFF.zh-CN.md)及对应verification receipt决定LCB-01是否CLOSED，否则仍为closure blocked。

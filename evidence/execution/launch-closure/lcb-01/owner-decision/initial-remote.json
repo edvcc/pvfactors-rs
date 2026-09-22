@@ -1,0 +1,23 @@
+{
+  "status": "FAIL",
+  "observed_at": "2026-09-22T06:27:10.544690+00:00",
+  "repository": "edvcc/pvfactors-rs",
+  "branch": "research/vf-lcb01-compatibility",
+  "remote_head": "3d854a564afd44b6f50f860454c37582f1ad5302",
+  "commits": [
+    {
+      "requested_sha": "3d854a564afd44b6f50f860454c37582f1ad5302",
+      "http_status": 200,
+      "resolved_sha": "3d854a564afd44b6f50f860454c37582f1ad5302",
+      "remote_resolvable": true,
+      "url": "https://github.com/edvcc/pvfactors-rs/commit/3d854a564afd44b6f50f860454c37582f1ad5302"
+    },
+    {
+      "requested_sha": "8b0208b4ae471bf81d70e4358e8cdc22a38e0384",
+      "http_status": 422,
+      "resolved_sha": null,
+      "remote_resolvable": false,
+      "url": "https://github.com/edvcc/pvfactors-rs/commit/8b0208b4ae471bf81d70e4358e8cdc22a38e0384"
+    }
+  ]
+}

@@ -110,11 +110,16 @@
   "new_launch_blockers": [
     {
       "id": "LCB-01",
-      "status": "OPEN",
+      "status": "CLOSED_BY_OWNER",
       "evidence": "evidence/execution/launch-closure/NEW_LAUNCH_BLOCKER_LCB-01.json",
       "sha256": "b342eaace2c2f6d0edf928cfb20aeb42b98ab366d76d95ecefba40e70165b86e",
-      "investigation_status": "READY_FOR_OWNER_DECISION",
-      "investigation_evidence": "evidence/execution/launch-closure/lcb-01/investigation-status.json"
+      "investigation_status": "COMPLETE_OWNER_DECISIONS_APPROVED",
+      "investigation_evidence": "evidence/execution/launch-closure/lcb-01/investigation-status.json",
+      "owner_evidence": "docs/execution/launch/LCB-01_OWNER_DECISIONS.json",
+      "owner_evidence_sha256": "e0fd46af4fd59e0ac93eeb37675ea0a24b785ba94f890956bb90b72b23df715d",
+      "closure_effect": "Only effective after scripts/lcb01_closure.py verifies the matching remote-resolvable receipt",
+      "verification_receipt": "evidence/execution/launch-closure/lcb-01/verification-summary.json"
     }
-  ]
+  ],
+  "lcb01_owner_decision_record": "docs/execution/launch/LCB-01_OWNER_DECISIONS.json"
 }

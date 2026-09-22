@@ -1,0 +1,1105 @@
+# `pvfactors-rs`
+
+# LCB-01｜Owner Decision Propagation + Evidence Provenance Repair Task v1.0
+
+日期：2026-09-22
+
+Repository：
+
+`edvcc/pvfactors-rs`
+
+Repository URL：
+
+`https://github.com/edvcc/pvfactors-rs.git`
+
+---
+
+# 0. 任务性质
+
+这是 `LCB-01 View Factor Compatibility Deviation Investigation` 完成算法调查并经过 Owner Review 后的一次：
+
+> **Owner Decision Propagation + Deviation Record Separation + Evidence Provenance Repair + Candidate Re-verification + LCB-01 Closure Preparation**
+
+任务。
+
+这不是新的 View Factor 算法研究任务。
+
+这不是生产 Rust View Factor 实现任务。
+
+这不是 P4 全量 Oracle Construction。
+
+这不是 Full-Project Launch Closure 最终任务。
+
+当前唯一目标是：
+
+> 将已经形成的 Owner Review 结论准确传播到 Repository，并修复当前 LCB-01 candidate verification 中不可远端解析的 checkpoint provenance，使 LCB-01 达到可以正式关闭并恢复 Full-Project Launch Closure 的状态。
+
+---
+
+# 1. 当前真实 Repository 基线
+
+执行前必须自行重新核验 GitHub / local Repository，不能只相信以下快照。
+
+当前已知：
+
+```text
+Repository:
+edvcc/pvfactors-rs
+
+Research branch:
+research/vf-lcb01-compatibility
+
+Current remote HEAD:
+3d854a564afd44b6f50f860454c37582f1ad5302
+
+LCB-01 base:
+research/full-project-launch-closure
+d5bc38ebd6ba853c4cec530e4787d1ab6168203d
+```
+
+当前：
+
+```text
+research/full-project-launch-closure
+```
+
+仍停留在：
+
+```text
+d5bc38ebd6ba853c4cec530e4787d1ab6168203d
+```
+
+不得直接修改：
+
+```text
+master
+develop
+feature/p3-rust-geometry-kernel
+```
+
+不得 merge、tag、release 或 publish。
+
+---
+
+# 2. 已确认长期不变量
+
+必须继续遵守：
+
+```text
+master = Formal Release Baseline
+```
+
+Agent 不得：
+
+- 直接修改 master；
+- 自动 merge 至 master；
+- 自动 tag；
+- 自动 release。
+
+项目性质：
+
+> Algorithm Reconstruction + Independent Rust Reimplementation
+
+优先级：
+
+```text
+Algorithm correctness
+>
+Reference verifiability
+>
+Numerical stability
+>
+API clarity
+>
+Maintainability
+>
+Performance
+```
+
+Rust Core 独立于 Python。
+
+Serial / Parallel / Adaptive 必须共享同一物理算法语义。
+
+Approved Geometry baseline 不得因为 VF 问题被静默修改。
+
+---
+
+# 3. 当前 LCB-01 已确认事实
+
+以下内容已具有充分调查证据，除非执行时发现直接相反的新证据，否则不得重新从零研究。
+
+## 3.1 Full View Factor Reference defect
+
+Frozen Reference：
+
+```text
+pvlib/solarfactors v1.6.1
+commit ecbfc863657e239817603a43898ae173c7ccad9c
+```
+
+Full VF 已确认存在真实 implementation defect。
+
+核心问题：
+
+> `_vf_hottel_gnd_surf()` 的带符号 crossed / uncrossed Hottel 表达式隐含依赖 endpoint high/low ordering；水平或近水平子段经过 binary64 rounding / cutting 后发生 equal-height tie 或 ordering reversal 时，Reference 可产生错误负 View Factor。
+
+已确认：
+
+- Geometry 坐标正确；
+- Surface identity 正确；
+- front/back identity 正确；
+- Approved Geometry Golden 正确；
+- 不需要修改 P3 Geometry。
+
+不得通过以下方式修复：
+
+```text
+abs(final_matrix)
+clamp(F, 0, 1)
+tilt > 90° folding
+front/back swap
+Geometry endpoint reordering to fit Reference
+```
+
+---
+
+## 3.2 Canonical blocker
+
+Approved `TILT_180` 示例：
+
+```text
+receiver ReferenceIndex = 3
+source ReferenceIndex   = 28
+```
+
+Frozen Reference：
+
+```text
+F = -0.2038204263767998
+```
+
+独立高精度结果：
+
+```text
++0.2038204263767998815712607034...
+```
+
+独立数值积分：
+
+```text
+≈ +0.20382042637679987
+```
+
+物理量为正。
+
+---
+
+## 3.3 Domain evidence
+
+当前 LCB-01 candidate：
+
+```text
+66 cases
+198 artifacts
+```
+
+Full 差异：
+
+```text
+8 / 66 cases
+922 fields
+```
+
+涉及：
+
+- exact 180°；
+- 180° − 1 ULP；
+- 不同 surface azimuth；
+- cut=1 / 2 / 4；
+- N=2 / 3 / 11 等。
+
+因此：
+
+> 不得把问题定义成“只在 exact 180°”。
+
+同样：
+
+> 不得把问题泛化为“所有 tilt > 90°”。
+
+更准确的根因域是：
+
+> endpoint orientation / high-low assumption becomes invalid after cutting / floating-point degeneracy while Geometry remains valid.
+
+---
+
+# 4. Fast 发现必须与 Full defect 分离
+
+最新版调查还确认了另一类独立发现：
+
+```text
+Fast finite-ground proxy / aggregation deviation
+```
+
+当前 evidence 中：
+
+```text
+53 cases
+139 fields
+```
+
+存在 Fast ground-group 与独立有限地面物理交换不一致。
+
+例：
+
+```text
+tilt = 180°
+back_ground Reference = 0.5
+finite physical candidate = 0
+```
+
+并且在：
+
+```text
+0°
+45°
+90°
+100°
+120°
+150°
+179°
+179.9°
+near-180°
+```
+
+等多个域可出现有限地面 proxy 差异。
+
+这不是 Full signed-Hottel defect。
+
+两者：
+
+- root cause 不同；
+- affected domain 不同；
+- compatibility impact 不同；
+- acceptance contract 不同。
+
+因此不得继续将两者作为一个 deviation record 混合管理。
+
+---
+
+# 5. Owner Decision Baseline
+
+本次任务按以下 Owner Review 结论传播。
+
+## OD-LCB01-01 — Full defect
+
+接受：
+
+> Frozen Reference Full VF endpoint-orientation / signed-Hottel behavior 是 confirmed compatibility defect。
+
+Rust V1 不复制该非物理行为。
+
+---
+
+## OD-LCB01-02 — Geometry
+
+批准：
+
+```text
+P3 Geometry baseline unchanged
+```
+
+不得修改：
+
+- Geometry coordinates；
+- finite extent；
+- `SurfaceKey`；
+- `ReferenceIndex`；
+- `ActiveIndex`；
+- front/back identity；
+- approved Geometry Golden；
+- `geometry-tolerance-v0.1`。
+
+---
+
+## OD-LCB01-03 — VF physical contract
+
+批准统一物理原则：
+
+View Factor 必须以：
+
+```text
+semantic surface identity / outward normal
++
+physical line-of-sight visibility
++
+non-negative geometric exchange
+```
+
+定义。
+
+Hottel：
+
+> 是 analytic realization，不是 physical semantics。
+
+Endpoint ordering：
+
+> 只允许作为局部计算构造，不得定义 surface identity、visibility 或物理符号。
+
+---
+
+## OD-LCB01-04 — Primary invariant
+
+批准一级 invariant：
+
+```text
+0 <= F_ij <= 1
+```
+
+对适用 active physical / residual entries执行。
+
+Reciprocity 和 closure：
+
+> 仍然必须验证，但不是合法性的充分条件。
+
+必须保留 mutation tests：
+
+- negative but reciprocal；
+- closure-pass but invalid-entry；
+- `F > 1`；
+- 其他现有非法 matrix mutation。
+
+---
+
+## OD-LCB01-05 — prohibited repairs
+
+正式禁止：
+
+```text
+global matrix abs
+clamp invalid F
+fold tilt > 90°
+swap front/back
+change Geometry to reproduce Reference
+relax tolerance to absorb nonphysical Reference values
+```
+
+---
+
+## OD-LCB01-06 — Fast geometric policy
+
+批准以下物理政策：
+
+> Fast ground / PV geometric groups 应基于同一 finite physical exchange 进行聚合，而不是依赖越出 finite domain、endpoint reversal 或 catastrophic cancellation 的 Reference proxy。
+
+多个 receiver segment：
+
+> 应按长度聚合同一物理交换，或使用可证明等价的直接 group computation。
+
+但必须保留：
+
+```text
+Fast irradiance / Fast simulation
+```
+
+仍是独立近似模型。
+
+本决定：
+
+- 不自动关闭 CDR-007；
+- 不声明 Fast == Full；
+- 不批准全部 Fast simulation semantics；
+- 不允许 Adaptive Planner 改变 underlying physical geometry。
+
+---
+
+# 6. DEV record 重构要求
+
+当前：
+
+```text
+DEV-028_VIEW_FACTOR_ORIENTATION_CANDIDATE.*
+```
+
+混合记录了 Full defect 与 Fast finite-ground deviation。
+
+必须拆分。
+
+## 6.1 DEV-028
+
+DEV-028 应只记录：
+
+> Full View Factor endpoint-orientation / signed-Hottel compatibility defect
+
+建议正式标题语义：
+
+```text
+DEV-028 — View Factor Endpoint-Orientation / Signed-Hottel Reference Defect
+```
+
+其范围至少包括：
+
+- Full finite physical F；
+- endpoint orientation；
+- high/low tie / reversal；
+- signed crossed/uncrossed Reference artifact；
+- exact / near-horizontal affected domain；
+- corrected physical expectation；
+- Geometry unchanged；
+- raw Reference retained for provenance；
+- global abs/clamp/fold/swap prohibited。
+
+状态：
+
+```text
+APPROVED
+```
+
+必须提供：
+
+```text
+.en.md
+.zh-CN.md
+```
+
+并保持同步。
+
+---
+
+## 6.2 新建 DEV-029
+
+建立独立：
+
+```text
+DEV-029
+```
+
+记录：
+
+> Fast finite-ground proxy / finite-domain aggregation compatibility deviation
+
+范围至少包括：
+
+- `calculate_vf_to_gnd`；
+- finite ground `[−100,100]`；
+- Reference proxy 可越域；
+- endpoint reversal；
+- numerical cancellation；
+- Reference positive value 仍可能物理错误；
+- finite physical exchange aggregation；
+- affected cases / fields；
+- raw Reference provenance；
+- compatibility impact。
+
+状态：
+
+```text
+APPROVED
+```
+
+注意：
+
+DEV-029 只批准已确认 geometric deviation。
+
+不得扩展成：
+
+- Fast irradiance 已全部批准；
+- CDR-007 已关闭；
+- Fast simulation 与 Full 等价；
+- P4/P5/P6/P7 已完成。
+
+同样必须双语。
+
+---
+
+# 7. CDR-008
+
+现有：
+
+```text
+CDR-008_VIEW_FACTOR_VISIBILITY_HOTTEL_POLICY.*
+```
+
+数学方向可以保留。
+
+必须传播为：
+
+```text
+APPROVED
+```
+
+CDR-008 至少明确：
+
+1. semantic side / normal authoritative；
+2. visibility authoritative；
+3. non-negative finite exchange；
+4. Hottel orientation-independent magnitude only after valid physical support established；
+5. partial obstruction 必须先确定 visible domain；
+6.不能用 bare Hottel magnitude 决定 visibility；
+7. Fast group 使用 finite physical F 聚合；
+8. residual sky 保持 open-boundary remainder semantics；
+9. Geometry 不变；
+10. AOI G 是独立 operator；
+11. CDR-007 不因此自动关闭；
+12. production numerical algorithm 尚未冻结。
+
+---
+
+# 8. Candidate corpus
+
+当前 candidate：
+
+```text
+reference/candidate/vf-lcb01-v0.1/
+```
+
+已知：
+
+```text
+66 cases
+198 artifacts
+```
+
+Manifest 当前 SHA-256：
+
+```text
+10c14a0ce47a25cb49bbbf23b8a59ab8bea6113b0b0cf346e6e3922189d831d4
+```
+
+注意：
+
+> 如果任何 manifest / comparator / corpus 文件被修改，该 hash 必须重新计算并以实际结果为准。
+
+不得为了保留旧 hash 而避免必要修正。
+
+---
+
+# 9. Candidate 的批准边界
+
+本次只允许把它批准为：
+
+> **LCB-01 Targeted Corrected VF Oracle Subset / P4 Oracle Seed**
+
+不得将其升级为：
+
+```text
+complete P4 Golden
+complete VF oracle
+AOI oracle
+P4 READY
+```
+
+Candidate scope 必须继续明确：
+
+```text
+LCB-01 geometric F
++
+finite Fast geometric group
+```
+
+不是完整 P4 / AOI coverage。
+
+---
+
+# 10. Comparator policy
+
+当前研究 comparator 大致为：
+
+```text
+bounds_epsilon           = 1e-10
+expected_abs             = 2e-9
+reciprocity length error = 1e-10
+closure_abs              = 1e-10
+```
+
+本任务不得未经验证直接将这些阈值冻结成所有平台最终 Production tolerance。
+
+应采用以下状态：
+
+```text
+APPROVED FOR LCB-01 TARGETED ORACLE SEED
+NOT YET FINAL P4 CROSS-PLATFORM TOLERANCE
+```
+
+必须明确：
+
+- 它是 targeted research / oracle-seed acceptance budget；
+- 后续 P4 正式 tolerance 需独立证据；
+- 实现失败时不得静默放宽；
+- Geometry tolerance 完全不变。
+
+---
+
+# 11. 当前 provenance blocker
+
+现有：
+
+```text
+evidence/execution/launch-closure/lcb-01/verification-summary.json
+```
+
+记录：
+
+```text
+tested_checkpoint =
+8b0208b4ae471bf81d70e4358e8cdc22a38e0384
+```
+
+但该 SHA 当前无法通过远端 GitHub Repository 解析。
+
+因此现有：
+
+```text
+62/62 PASS
+candidate harness PASS
+66 raw cases byte-identical
+198 artifacts
+baseline integrity PASS
+```
+
+只能作为历史研究 evidence。
+
+不得把不可解析 SHA 当作最终 Owner-approved verification checkpoint。
+
+---
+
+# 12. 必须重新验证
+
+在完成 DEV/CDR/status 修订后：
+
+1. commit 所有治理与文档变更；
+2. 确认该 commit 已存在于本地 branch；
+3. 在 clean working tree 上运行完整相关验证；
+4. 测试对象必须是一个真实 commit；
+5. 该 commit 最终必须 push 到：
+
+```text
+origin/research/vf-lcb01-compatibility
+```
+
+6. verification summary 中的：
+
+```text
+tested_checkpoint
+```
+
+必须等于一个：
+
+> GitHub Remote 可以直接 resolve 的真实 SHA。
+
+不得记录：
+
+- detached / unreachable local-only commit；
+- temporary worktree SHA；
+- 已被 amend / rebase 丢弃的 SHA；
+- tree hash；
+- artifact hash；
+- placeholder。
+
+---
+
+# 13. 至少重新执行的验证
+
+至少重新执行：
+
+## 13.1 Candidate verifier
+
+```text
+scripts/verify_vf_candidate.py
+```
+
+验证：
+
+- inventory；
+- manifest；
+- hash；
+- Geometry exact preservation；
+- physical bounds；
+- support；
+- reciprocity；
+- closure；
+- Fast group policy；
+- expected comparison。
+
+---
+
+## 13.2 Harness self-tests
+
+必须全部 PASS。
+
+当前基线：
+
+```text
+62 tests
+```
+
+如果因 DEV split / governance 修改导致数量变化，可以变化，但必须解释原因。
+
+不得删除关键 mutation test 来保持 PASS。
+
+---
+
+## 13.3 Independent oracle verification
+
+至少保持：
+
+- high precision analytic；
+- independent line/angular integration；
+- direct tensor convergence；
+- obstructed analytic/numeric example；
+- wrong-side zero；
+- fully blocked zero；
+- mirror；
+- endpoint order invariance；
+- reverse-direction reciprocity crosscheck。
+
+---
+
+## 13.4 Baseline integrity
+
+必须验证：
+
+```text
+frozen Reference unchanged
+Approved Geometry unchanged
+P3 Design unchanged
+geometry tolerance unchanged
+master unchanged
+develop unchanged
+```
+
+---
+
+## 13.5 Preflight
+
+可以仍然：
+
+```text
+NOT_READY
+```
+
+因为：
+
+- P4–P7 尚未完成；
+- Full Launch Closure 尚未完成；
+-其他 Owner decisions 尚未全部批准；
+- governance risks 仍可能存在。
+
+本任务不得为了让 preflight PASS 而降低 Gate。
+
+---
+
+# 14. Evidence receipt
+
+重新生成或更新正式 evidence receipt。
+
+至少记录：
+
+```text
+branch
+base_sha
+tested_checkpoint
+remote_resolvable = true
+clean_at_verification
+candidate_manifest_sha256
+comparator_sha256
+DEV-028 status
+DEV-029 status
+CDR-008 status
+candidate verifier result
+self-test result
+independent oracle result
+baseline integrity result
+preflight result
+production_implementation_started = false
+```
+
+如果验证完成后又修改任何影响 evidence / candidate / policy 的文件：
+
+> 必须重新验证。
+
+不得产生“验证的是前一个 tree，HEAD 又改过内容”的循环 provenance 问题。
+
+可以采用：
+
+```text
+content commit
+→ clean verification
+→ evidence-only receipt commit
+```
+
+但如果 receipt commit 只增加验证凭证且不改变被测内容，必须在 receipt 中明确：
+
+```text
+tested_content_commit
+receipt_commit
+```
+
+并确保两者均可由远端解析。
+
+---
+
+# 15. Status propagation
+
+以下状态必须同步更新，避免文档互相冲突。
+
+至少检查：
+
+```text
+docs/execution/execution-state.json
+docs/execution/owner-decisions.json
+docs/execution/launch/ORACLE_APPROVAL_INDEX.json
+docs/execution/launch/LAUNCH_CLOSURE_CHECKPOINT.json
+docs/execution/launch/FULL_PROJECT_LAUNCH_CHECKLIST.*
+docs/execution/launch/FULL_PROJECT_LAUNCH_REVIEW.*
+AGENTS.md
+```
+
+以及任何引用：
+
+```text
+LCB-01
+DEV-028
+CDR-008
+candidate manifest
+```
+
+的状态文件。
+
+---
+
+# 16. LCB-01 关闭条件
+
+只有同时满足以下条件才能记录：
+
+```text
+LCB-01 — CLOSED
+```
+
+1. DEV-028 已正式拆分并 Approved；
+2. DEV-029 已建立并 Approved；
+3. CDR-008 已 Approved；
+4. Candidate manifest / comparator 的准确 hash 已记录；
+5. Candidate 被明确批准为 targeted oracle seed，而非完整 P4 Golden；
+6. latest relevant verification 在远端可解析 commit 上 PASS；
+7. baseline integrity PASS；
+8. Geometry baseline unchanged；
+9. production implementation 未启动。
+
+否则：
+
+```text
+LCB-01 — CLOSURE BLOCKED
+```
+
+并说明具体原因。
+
+---
+
+# 17. Full-Project Launch Closure 恢复
+
+如果 LCB-01 成功 CLOSED：
+
+允许记录：
+
+```text
+FULL-PROJECT LAUNCH CLOSURE
+— RESUME AUTHORIZED
+```
+
+但本任务：
+
+> 不继续执行后续 P4–P7 closure。
+
+只需给出准确 handoff：
+
+```text
+Next:
+resume research/full-project-launch-closure
+from its approved base + LCB-01 closure package
+```
+
+后续再处理：
+
+```text
+P4 View Factor / AOI oracle
+P5 Irradiance / Perez oracle
+P6 Radiosity / Solver oracle
+P7 Serial E2E oracle
+```
+
+---
+
+# 18. 明确禁止
+
+本任务不得：
+
+- 修改 master；
+- merge；
+- tag；
+- release；
+- publish；
+-修改 frozen Reference；
+-修改 Approved Geometry Golden；
+-修改 geometry tolerance；
+-修改 P3 Geometry model；
+-启动 production Rust VF；
+-启动 AOI/Perez/Radiosity/Simulation production implementation；
+-启动 `CODEX_FULL_IMPLEMENTATION_TASK.md`；
+-声称 P4 READY；
+-声称 Full Project READY；
+-把 LCB-01 corpus 宣称为完整 P4 Golden；
+-为了 PASS 静默降低 tolerance；
+-用 Reference 输出替代独立 corrected oracle；
+-删除失败 test 以获得 PASS。
+
+---
+
+# 19. Git 要求
+
+工作分支：
+
+```text
+research/vf-lcb01-compatibility
+```
+
+开始时：
+
+```text
+git fetch
+```
+
+核验远端 HEAD。
+
+不得 force push，除非发现无法避免的仓库级异常并停止报告。
+
+提交必须清晰、可审查。
+
+完成后 push：
+
+```text
+origin/research/vf-lcb01-compatibility
+```
+
+不得自动 merge 到：
+
+```text
+research/full-project-launch-closure
+develop
+master
+```
+
+---
+
+# 20. 最终交付
+
+最终报告必须包含：
+
+## A. Repository state
+
+```text
+Branch
+Initial remote SHA
+Final remote SHA
+Base SHA
+Working tree clean?
+```
+
+## B. Decision propagation
+
+逐项说明：
+
+```text
+DEV-028
+DEV-029
+CDR-008
+Fast geometric policy
+Candidate oracle status
+Comparator status
+LCB-01
+```
+
+## C. Provenance repair
+
+必须列出：
+
+```text
+tested content commit
+receipt commit
+both remote-resolvable?
+```
+
+以及：
+
+```text
+candidate manifest SHA-256
+comparator SHA-256
+```
+
+## D. Verification
+
+至少：
+
+```text
+Candidate verifier
+Harness self-tests
+Independent oracle
+Baseline integrity
+Preflight
+```
+
+## E. Protected baseline
+
+明确报告：
+
+```text
+master unchanged
+develop unchanged
+P3 unchanged
+Frozen Reference unchanged
+Approved Geometry unchanged
+Geometry tolerance unchanged
+```
+
+## F. Final Gate
+
+仅允许以下两种结果之一：
+
+### 成功
+
+```text
+LCB-01 — CLOSED
+FULL-PROJECT LAUNCH CLOSURE — RESUME AUTHORIZED
+FULL IMPLEMENTATION — INACTIVE
+```
+
+### 未成功
+
+```text
+LCB-01 — CLOSURE BLOCKED
+```
+
+并列出精确 blocker。
+
+不得自行进入下一阶段。
+
+---
+
+# 21. 验收标准
+
+任务只有在以下全部成立时才算完成：
+
+- Full / Fast deviation 已拆分；
+- DEV-028 / DEV-029 / CDR-008 双语同步；
+- Owner decision 状态传播完整；
+- Candidate scope 没有被夸大；
+- 66 cases / 198 artifacts inventory 可验证；
+- manifest / comparator hash 准确；
+- verification SHA 可由 GitHub 远端解析；
+- relevant verification PASS；
+- baseline integrity PASS；
+- LCB-01 状态与证据一致；
+- Full Launch Closure 只恢复授权，不被误报为完成；
+- Full Implementation 未启动；
+- Repository working tree clean；
+- branch 已 push；
+- 未修改任何 protected baseline。

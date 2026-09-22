@@ -1,31 +1,15 @@
 {
   "id": "LCB-01",
-  "status": "READY_FOR_OWNER_DECISION",
-  "launch_blocker_status": "OPEN_AWAITING_OWNER",
-  "research_authorization": "LCB-01 investigation only, user task dated 2026-09-22",
-  "root_cause": "Mixed: Full signed endpoint-order implementation bug; Fast finite-support proxy/numerical limitations",
+  "decision_status": "APPROVED",
+  "verification_gate": "DERIVED_FROM_VERIFICATION_RECEIPT",
+  "verification_receipt": "evidence/execution/launch-closure/lcb-01/verification-summary.json",
+  "deviations": {
+    "DEV-028": "APPROVED_FULL_ONLY",
+    "DEV-029": "APPROVED_FAST_GEOMETRY_ONLY"
+  },
+  "cdr": "CDR-008 APPROVED",
   "geometry_changes_required": false,
   "production_started": false,
-  "decisions": [
-    {
-      "id": "DEV-028",
-      "status": "PROPOSED_UNAPPROVED"
-    },
-    {
-      "id": "CDR-008",
-      "status": "PROPOSED_AWAITING_OWNER_REVIEW"
-    }
-  ],
-  "candidate": {
-    "manifest": "reference/candidate/vf-lcb01-v0.1/manifest.json",
-    "sha256": "10c14a0ce47a25cb49bbbf23b8a59ab8bea6113b0b0cf346e6e3922189d831d4",
-    "cases": 66,
-    "artifacts": 198,
-    "approval": "UNAPPROVED"
-  },
-  "full_matrix_cases": 66,
-  "full_matrix_failing_reference_cases": 8,
-  "full_matrix_differing_entries": 922,
-  "fast_ground_differing_fields": 139,
-  "next_action": "Owner reviews policy, Fast finite aggregation, exact candidate manifest and comparator; do not launch production or treat this as completed P4-P7 closure."
+  "full_project_implementation": "INACTIVE",
+  "next_action": "Read validated closure receipt. If CLOSED, hand off resume authority only; do not execute further P4-P7 work in this task."
 }

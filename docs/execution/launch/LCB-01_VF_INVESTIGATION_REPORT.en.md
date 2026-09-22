@@ -1,3 +1,5 @@
+**Historical research document.** Pre-approval status statements and old verification receipts below are superseded by [Owner decisions](LCB-01_OWNER_DECISIONS.en.md) and [current closure handoff](LCB-01_CLOSURE_HANDOFF.en.md). The66-case scientific results remain evidence. Current verification requires `--actual` fresh reconstruction; a candidate path alone returns NOT_READY.
+
 # LCB-01 View Factor investigation
 
 Date: 2026-09-22. **LCB-01 — READY FOR OWNER DECISION**. Research authorization only; no production implementation, approval, P4 acceptance or full-project launch.

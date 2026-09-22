@@ -1,6 +1,6 @@
 {
   "id": "vf-lcb01-research-comparator-v0.1",
-  "status": "PROPOSED_UNAPPROVED",
+  "status": "APPROVED FOR LCB-01 TARGETED ORACLE SEED",
   "bounds_epsilon": 1e-10,
   "expected_abs": 2e-09,
   "reciprocity_absolute_length": 1e-10,
@@ -15,5 +15,7 @@
     "matrix shape",
     "case inventory"
   ],
-  "forbidden": "No clamp, no topology tolerance, no geometry-tolerance-v0.1 modification; Owner must approve any future acceptance policy."
+  "forbidden": "No clamp/topology tolerance/Geometry tolerance changes; no silent relaxation on implementation failure. Final P4 cross-platform budget needs independent evidence and approval.",
+  "production_tolerance_status": "NOT YET FINAL P4 CROSS-PLATFORM TOLERANCE",
+  "authority": "docs/execution/launch/LCB-01_OWNER_DECISIONS.json"
 }

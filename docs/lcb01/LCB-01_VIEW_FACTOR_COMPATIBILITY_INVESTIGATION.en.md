@@ -1,3 +1,5 @@
+**HISTORICAL / SUPERSEDED.** This earlier33-case research is not the current approved contract. Active authority: [Owner decisions](../execution/launch/LCB-01_OWNER_DECISIONS.en.md), [DEV-028](../execution/launch/DEV-028_VIEW_FACTOR_ENDPOINT_ORIENTATION_DEFECT.en.md), DEV-029 and CDR-008 under docs/execution/launch. The narrower exact180-only domain statement below is superseded by cut-sensitive near180 evidence. The alternative one-case candidate remains unapproved.
+
 # LCB-01 — View Factor Compatibility Deviation Investigation
 
 - Status: **LCB-01 — READY FOR OWNER DECISION**

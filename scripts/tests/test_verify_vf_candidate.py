@@ -6,7 +6,7 @@ import sys
 import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from verify_vf_candidate import invariants, matrix
+from verify_vf_candidate import invariants, matrix, fast_group_errors, compare_payload
 
 
 class VFInvariantTests(unittest.TestCase):
@@ -69,6 +69,49 @@ class VFInvariantTests(unittest.TestCase):
 
     def test_oversized_epsilon_rejected(self):
         with self.assertRaises(ValueError): invariants(self.f,self.s,.3)
+
+
+class VFSeedComparisonTests(unittest.TestCase):
+    def setUp(self):
+        self.s=[dict(active=[True],length_m=[1.],logical_key=dict(kind='pvrow',row=0,side='back')),
+                dict(active=[True],length_m=[1.],logical_key=dict(kind='ground',row=None,side=None))]
+        group=dict(row=0,back_ground=.5,back_pv=0.,back_shaded_pv=0.,independent_back_ground=.2,independent_back_pv=0.)
+        self.data=dict(surfaces=self.s,matrix=dict(shape=[3,3],omitted_value=0.,entries=[[0,1,.2],[1,0,.2],[0,2,.8],[1,2,.8]]),
+            fast_group_candidate=[group])
+        self.raw=dict(fast_helpers=[dict(row=0,back_ground=.5,back_pv=0.,back_shaded_pv=0.)])
+
+    def test_fast_valid_finite_aggregation(self):
+        self.assertEqual(fast_group_errors(self.data,self.raw,2e-9),[])
+
+    def test_fast_positive_reference_is_not_expected(self):
+        self.data['fast_group_candidate'][0]['independent_back_ground']=.5
+        self.assertTrue(fast_group_errors(self.data,self.raw,2e-9))
+
+    def test_missing_fast_row_fails(self):
+        self.data['fast_group_candidate']=[]
+        self.assertTrue(fast_group_errors(self.data,self.raw,2e-9))
+
+    def test_fast_raw_provenance_mutation_fails(self):
+        self.data['fast_group_candidate'][0]['back_ground']=.2
+        self.assertTrue(fast_group_errors(self.data,self.raw,2e-9))
+
+    def test_expected_mismatch_despite_valid_invariants(self):
+        actual=copy.deepcopy(self.data)
+        actual['matrix']['entries']=[[0,1,.3],[1,0,.3],[0,2,.7],[1,2,.7]]
+        self.assertEqual(invariants(matrix(actual),self.s,1e-10)['status'],'PASS')
+        self.assertTrue(compare_payload(self.data,actual,2e-9))
+
+    def test_expected_numeric_budget(self):
+        actual=copy.deepcopy(self.data);actual['matrix']['entries'][0][2]+=1e-10
+        self.assertEqual(compare_payload(self.data,actual,2e-9),[])
+
+    def test_expected_exact_identity_mutation(self):
+        actual=copy.deepcopy(self.data);actual['surfaces'][0]['logical_key']['side']='front'
+        self.assertTrue(compare_payload(self.data,actual,2e-9))
+
+    def test_expected_fast_value_mismatch(self):
+        actual=copy.deepcopy(self.data);actual['fast_group_candidate'][0]['independent_back_ground']=.3
+        self.assertTrue(compare_payload(self.data,actual,2e-9))
 
 
 if __name__=='__main__': unittest.main()

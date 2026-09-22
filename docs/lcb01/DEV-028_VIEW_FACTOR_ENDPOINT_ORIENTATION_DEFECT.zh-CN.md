@@ -1,3 +1,5 @@
+**历史 / 已替代。** 这是较早的33-case研究，不是当前批准合同。有效权威为[Owner决定](../execution/launch/LCB-01_OWNER_DECISIONS.zh-CN.md)、[DEV-028](../execution/launch/DEV-028_VIEW_FACTOR_ENDPOINT_ORIENTATION_DEFECT.zh-CN.md)及docs/execution/launch中的DEV-029/CDR-008。下文较窄的“仅exact180”结论由切分敏感的near180证据替代。另一单case候选仍未批准。
+
 # DEV-028 — 精确负向水平 PV–Ground View Factor 端点方向缺陷
 
 - 状态：**PROPOSED / UNAPPROVED**

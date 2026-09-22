@@ -42,6 +42,8 @@ def crosses_pair_interior(receiver,source,blockers):
 
 
 def main():
+    if (C/'manifest.json').exists() and read(C/'manifest.json')['status']=='APPROVED_TARGETED_ORACLE_SEED':
+        raise ValueError('Historical research packager cannot refresh the Owner-approved targeted seed')
     scan=read(E/'domain-scan.json');cases=[x['case_id'] for x in scan['cases']]
     fast=[];signs=[];abs_remaining=[]
     for summary in scan['cases']:

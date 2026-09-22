@@ -11,29 +11,32 @@
     },
     {
       "subsystem": "viewfactor",
-      "status": "LCB01_TARGETED_CANDIDATE_UNAPPROVED_P4_INCOMPLETE",
-      "manifest_sha256": "10c14a0ce47a25cb49bbbf23b8a59ab8bea6113b0b0cf346e6e3922189d831d4",
+      "status": "APPROVED_TARGETED_ORACLE_SEED_P4_INCOMPLETE",
+      "manifest_sha256": "efaa3a7d4789a5b7f53a4e8629aebc729ae70498933ecc798072260d684b7c48",
       "case_count": 66,
       "artifact_count": 198,
       "generator_sha256": null,
       "schema_sha256": null,
-      "comparator_sha256": "133208015f4188993d47adb2bd217e99c40ccbd99c4f48bb427d986d3fdeeffa",
-      "tolerance_profile_sha256": "1c61ceffa73f6a52e828739780c7353ff9c2bba0e02ea9cff8c5674d228981ab",
+      "comparator_sha256": "ec39c83d851c3fca944c3963a90c93b736c5d14dc000b0128a9fb143097ece4a",
+      "tolerance_profile_sha256": "6259bbd58d09ffef7e9249d040deb28291694bb3b61bc39f259fd5fb2e81ced2",
       "reproducibility": "66_RAW_ARTIFACTS_BYTE_IDENTICAL_R0",
       "independent_evidence": "Decimal90/110, independent line/angular integration, direct tensor convergence, visible divider analytic, 138 metamorphic pairs; see lcb-01 evidence",
       "known_deviations": [
-        "LCB-01",
-        "DEV-028 PROPOSED",
-        "CDR-008 PROPOSED"
+        "DEV-028 APPROVED",
+        "DEV-029 APPROVED",
+        "CDR-008 APPROVED"
       ],
-      "blocker_effect": "direct blocker",
+      "blocker_effect": "LCB-01 closure derived from matching verification receipt; complete P4/AOI remains absent",
       "manifest": "reference/candidate/vf-lcb01-v0.1/manifest.json",
       "generator_hashes": "reference/candidate/vf-lcb01-v0.1/manifest.json#generator_files",
-      "schema_status": "Repository-native structural validation, no standalone schema"
+      "schema_status": "Repository-native structural validation, no standalone schema",
+      "comparator_status": "APPROVED FOR LCB-01 TARGETED ORACLE SEED",
+      "production_tolerance_status": "NOT YET FINAL P4 CROSS-PLATFORM TOLERANCE",
+      "verification_receipt": "evidence/execution/launch-closure/lcb-01/verification-summary.json"
     },
     {
       "subsystem": "aoi",
-      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
+      "status": "NOT_BUILT_PENDING_RESUMED_CLOSURE",
       "manifest_sha256": null,
       "case_count": 0,
       "artifact_count": 0,
@@ -43,14 +46,12 @@
       "tolerance_profile_sha256": null,
       "reproducibility": "NOT_RUN",
       "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
-      "known_deviations": [
-        "LCB-01"
-      ],
-      "blocker_effect": "direct blocker"
+      "known_deviations": [],
+      "blocker_effect": "Future P4-P7 preparation required; no work performed in this task"
     },
     {
       "subsystem": "irradiance",
-      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
+      "status": "NOT_BUILT_PENDING_RESUMED_CLOSURE",
       "manifest_sha256": null,
       "case_count": 0,
       "artifact_count": 0,
@@ -60,14 +61,12 @@
       "tolerance_profile_sha256": null,
       "reproducibility": "NOT_RUN",
       "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
-      "known_deviations": [
-        "LCB-01"
-      ],
-      "blocker_effect": "work not started before global mandatory stop"
+      "known_deviations": [],
+      "blocker_effect": "Future P4-P7 preparation required; no work performed in this task"
     },
     {
       "subsystem": "radiosity",
-      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
+      "status": "NOT_BUILT_PENDING_RESUMED_CLOSURE",
       "manifest_sha256": null,
       "case_count": 0,
       "artifact_count": 0,
@@ -77,14 +76,12 @@
       "tolerance_profile_sha256": null,
       "reproducibility": "NOT_RUN",
       "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
-      "known_deviations": [
-        "LCB-01"
-      ],
-      "blocker_effect": "work not started before global mandatory stop"
+      "known_deviations": [],
+      "blocker_effect": "Future P4-P7 preparation required; no work performed in this task"
     },
     {
       "subsystem": "serial",
-      "status": "NOT_BUILT_DUE_MANDATORY_STOP",
+      "status": "NOT_BUILT_PENDING_RESUMED_CLOSURE",
       "manifest_sha256": null,
       "case_count": 0,
       "artifact_count": 0,
@@ -94,10 +91,8 @@
       "tolerance_profile_sha256": null,
       "reproducibility": "NOT_RUN",
       "independent_evidence": "Partial numerical probes only; not a subsystem oracle",
-      "known_deviations": [
-        "LCB-01"
-      ],
-      "blocker_effect": "direct blocker"
+      "known_deviations": [],
+      "blocker_effect": "Future P4-P7 preparation required; no work performed in this task"
     }
   ]
 }

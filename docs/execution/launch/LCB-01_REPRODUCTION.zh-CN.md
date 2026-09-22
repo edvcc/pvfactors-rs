@@ -1,3 +1,5 @@
+**历史研究文档。** 下文批准前状态及旧验证凭证由[Owner决策](LCB-01_OWNER_DECISIONS.zh-CN.md)和[当前关闭交接](LCB-01_CLOSURE_HANDOFF.zh-CN.md)替代；66-case科学结果保留为证据。当前verifier必须传入`--actual`全新重建结果，仅给candidate路径返回NOT_READY。
+
 # LCB-01 复现与验证
 
 仅供研究。候选验证不关闭 Owner 决策，也不验收 P4。解释结果前先读调查报告、DEV-028、CDR-008。没有新增 Rust/runtime 依赖；研究使用 stdlib 和 R0 既有 NumPy/SciPy。保留原 attribution/license；capture 调用冻结 Reference，`independent.py` 从余弦测度和线段几何独立推导，不逐行翻译 Reference VF helper。

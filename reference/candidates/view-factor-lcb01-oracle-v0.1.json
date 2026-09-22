@@ -1,5 +1,5 @@
 {
-  "status": "CANDIDATE / UNAPPROVED",
+  "status": "HISTORICAL_UNAPPROVED_SUPERSEDED",
   "schema": "view-factor-lcb01-oracle-v0.1",
   "case_id": "LCB01_TILT_180_CORRECTED_CANDIDATE",
   "geometry_case_id": "TILT_180",
@@ -114,7 +114,7 @@
       0,
       0.00019859887523481572,
       0,
-      0.00008228810975067275,
+      8.228810975067275e-05,
       0,
       0.9988150745004294
     ],
@@ -180,7 +180,7 @@
       0,
       0,
       0,
-      0.00004999750002487868
+      4.999750002487868e-05
     ],
     [
       0,
@@ -212,7 +212,7 @@
       0,
       0,
       0,
-      0.0000500575300313999
+      5.00575300313999e-05
     ],
     [
       0,
@@ -244,7 +244,7 @@
       0,
       0,
       0,
-      0.00005023810125126538
+      5.023810125126538e-05
     ],
     [
       0,
@@ -281,5 +281,6 @@
   "continuity": {
     "near_tilt": "179.99999999999997",
     "max_abs_candidate_exact_vs_reference_nextafter": 3.774758283725532e-15
-  }
+  },
+  "current_seed": "reference/candidate/vf-lcb01-v0.1/manifest.json"
 }

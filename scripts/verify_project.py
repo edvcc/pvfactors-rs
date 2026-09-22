@@ -288,6 +288,10 @@ def owner_gate(scope="full"):
             errors.append(f"launch blocker evidence missing/changed: {blocker['id']}")
         if blocker.get("status") != "CLOSED_BY_OWNER" or not blocker.get("owner_evidence"):
             errors.append(f"new launch blocker requires Owner closure: {blocker['id']}")
+        elif blocker['id']=="LCB-01":
+            from lcb01_closure import check
+            closure=check(ROOT)
+            if closure['status']!='PASS': errors.append('LCB-01 verification provenance: '+', '.join(closure['errors']))
     return result("NOT_READY" if errors else "PASS", pending=pending, errors=errors,
                   contract_sha256=contract_digest())
 

@@ -1,26 +1,28 @@
 {
   "schema_version": 1,
-  "mode": "LCB01_OWNER_DECISION_PENDING",
+  "mode": "LCB01_CLOSURE_RECEIPT_HANDOFF",
   "current_milestone": null,
-  "last_completed_checkpoint": "8b0208b4ae471bf81d70e4358e8cdc22a38e0384",
-  "verification_status": "LCB01_CANDIDATE_PASS_62_SELF_TESTS_PASS_PREFLIGHT_NOT_READY",
+  "last_completed_checkpoint": "3d854a564afd44b6f50f860454c37582f1ad5302",
+  "verification_status": "DERIVED_FROM_VERIFICATION_RECEIPT",
   "known_failures": [
-    "LCB-01: Reference defect characterized; DEV-028/CDR-008 and corrected candidate await Owner approval",
-    "Complete P4-P7 oracle package still unfinished",
-    "Full policy/contract synchronization unfinished",
-    "Owner approvals pending",
-    "GG-01/GG-02 unprotected branches and admin identity"
+    "Complete P4-P7 oracle package unfinished",
+    "Broader Owner decisions remain pending",
+    "Governance risks require resolution/acceptance"
   ],
-  "approved_blockers": [],
+  "approved_blockers": [
+    "LCB-01 semantic decisions: DEV-028, DEV-029, CDR-008 APPROVED; closure requires receipt"
+  ],
   "unresolved_findings": [
     "BF-01",
-    "BF-02",
-    "LCB-01"
+    "BF-02"
   ],
-  "next_executable_action": "Owner reviews policy, Fast finite aggregation, exact candidate manifest and comparator; do not launch production or treat this as completed P4-P7 closure.",
+  "next_executable_action": "Validate LCB-01 closure receipt. If CLOSED, next separately executed task resumes research/full-project-launch-closure from d5bc38ebd6ba853c4cec530e4787d1ab6168203d plus closure package. Stop here; no P4-P7 work or implementation.",
   "implementation_started": false,
-  "preparation_status": "LCB01_READY_FOR_OWNER_DECISION",
-  "launch_status": "FULL-PROJECT LAUNCH CLOSURE \u2014 BLOCKED",
+  "preparation_status": "OWNER_DECISIONS_PROPAGATED",
+  "launch_status": "FULL IMPLEMENTATION — INACTIVE",
   "verification_evidence": "evidence/execution/launch-closure/lcb-01/verification-summary.json",
-  "current_research_checkpoint": "research/vf-lcb01-compatibility HEAD"
+  "current_research_checkpoint": "Resolve tested_content_commit and receipt_commit from verification_evidence",
+  "conditional_blockers": {
+    "LCB-01": "evidence/execution/launch-closure/lcb-01/verification-summary.json"
+  }
 }
