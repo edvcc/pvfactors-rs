@@ -174,10 +174,20 @@ def environment():
 def inventory():
     errors = []
     for stem in PAIRS:
+        texts = []
         for lang in ("en", "zh-CN"):
             path = DOCS / f"{stem}.{lang}.md"
             if not path.is_file() or len(path.read_text()) < 200:
                 errors.append(f"missing/incomplete formal document {path.name}")
+            else:
+                texts.append(path.read_text())
+        if len(texts) == 2:
+            # Chinese text can directly follow a Latin identifier; Unicode \b
+            # would incorrectly omit M9 in "M9和".
+            pattern = (r"(?<![A-Za-z0-9])(?:CAP\d{2}|CDR-\d{3}|OD-\d{2}|BF-\d{2}|"
+                       r"M\d+|[0-9a-f]{40,64})(?![A-Za-z0-9])")
+            if set(re.findall(pattern, texts[0])) != set(re.findall(pattern, texts[1])):
+                errors.append(f"bilingual evidence/decision identifiers differ: {stem}")
     for name in ("CODEX_FULL_IMPLEMENTATION_TASK.md", "acceptance-matrix.json",
                  "owner-decisions.json", "execution-state.json", "contract-audit.json"):
         if not (DOCS / name).is_file():
@@ -192,9 +202,18 @@ def inventory():
     for c in caps[:22]:
         if c["scope"] != "Must Have V1" or not c["milestones"]:
             errors.append(f"Must Have V1 mapping incomplete: {c['id']}")
+        if not set(c["milestones"]) <= {m["id"] for m in milestones}:
+            errors.append(f"unknown milestone mapped by {c['id']}")
+    for c in caps[22:]:
+        if c["scope"] == "Must Have V1" or c["milestones"]:
+            errors.append(f"excluded/future capability became a V1 blocker: {c['id']}")
+    if [layer["id"] for layer in matrix["layers"]] != [f"A{i}" for i in range(12)]:
+        errors.append("acceptance architecture must cover A0-A11")
     for m in milestones:
         if not m["required_tests"] or not m["required_artifacts"] or not m["layers"]:
             errors.append(f"empty acceptance definition: {m['id']}")
+        if len(m["required_tests"]) != len(set(m["required_tests"])):
+            errors.append(f"duplicate required tests: {m['id']}")
     audit = read(DOCS / "contract-audit.json")
     expected_algorithms = re.findall(r"^## ((?:MATH|GEO|VF|IRR|ENG|EXEC)-\d+)",
                                     (ROOT / "docs/02_ALGORITHM_INVENTORY.md").read_text(), re.M)

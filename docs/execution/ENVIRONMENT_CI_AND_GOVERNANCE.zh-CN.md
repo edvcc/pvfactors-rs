@@ -10,7 +10,7 @@ R0 由 `reference/runtime/r0/Dockerfile` 定义，锁定 Ubuntu OCI digest、CPy
 
 Canonical lock 包含 package hash；requirements-g2.txt 固定 jsonschema，但该文件没有 hash-lock 验证工具的全部传递依赖；Dockerfile 对验证依赖做版本 pin。因此普通 PR 安装可复现性仍有限，不影响已批准 Golden payload 完整性。如有需要，后续单独审阅 tooling lock；不能为了本机安装改 canonical lock。
 
-GitHub API：public 仓库，默认 master，Actions 启用，self-hosted runner 为0（不等于 hosted runner 不可用）。现有 G2 workflow active，最近查询的 develop run35654063756 在 fb63a96ef06cc0375fca9dbceb4f59e89e7157a7 成功。本准备分支未 push，所以没有本次新 readiness 远端执行。master/develop protected=false；两个 protection API 均404 Branch not protected；父级/仓库 ruleset=[]、匹配分支 rules=[]。这是实证不存在，不是权限推断。
+GitHub API：public 仓库，默认 master，Actions 启用，self-hosted runner 为0（不等于 hosted runner 不可用）。现有 G2 workflow active，最近查询的 develop run35654063756 在 fb63a96ef06cc0375fca9dbceb4f59e89e7157a7 成功。本准备分支未 push，所以没有本次新 readiness 远端执行。master/develop protected=false；两个 protection API 均404 Branch not protected；父级/仓库 ruleset=[]、匹配分支 rules=[]。这是实证不存在，不是权限推断。仓库 API 返回当前身份 admin=true、push=true，不能据此声称 Agent 已被技术限制 merge/release。Actions 当前允许全部 action、未强制 SHA pin，action 供应链强化留作 Owner 配置选择。
 
 ## 建议平台合同（OD-09，尚未支持）
 
@@ -28,6 +28,8 @@ GitHub API：public 仓库，默认 master，Actions 启用，self-hosted runner
 ## 仓库规则准确建议（OD-11）
 
 建立两个 active branch ruleset，分别匹配 `refs/heads/master`、`refs/heads/develop`。禁止删除/force push；必须 PR；Agent 无 bypass；所有 review conversation 解决；当前 PR head 的 required checks 通过。新 workflow 真实运行后选择 context：G2 Geometry Candidate 的 `verify` 和 Execution Readiness 的 `assets`。从 checks API 确认准确 context/app identity，不能猜 workflow 名称前缀。要求分支 up-to-date，workflow/job 名保持稳定。不要把 preflight 设为 PR required check：它在 Owner 启动批准前有意失败，不是准备资产检查。
+
+这些现有 context 当前只覆盖指向 develop 的 PR，不能原样设为 master 必需检查：否则 master PR 会永久等待未触发的 job。develop 可在实际运行后启用 `verify`/`assets`。master 应在 Owner 审阅的 RC workflow 已支持 `pull_request: master`、使用只读验收并允许 Owner 管理的候选分支、且实际产出检查后，要求其准确 context。当前 harness 的工作分支限制也不能直接套到 develop→master 的只读 RC 检查；届时必须显式审阅验证入口的适用范围。上线顺序是验证触发/分支适用性、确认真实 context，再启用 required check，不能用绕过或恒成功 job 填空。本次不修改冻结 G2 workflow，也不虚建 RC job。
 
 master 另要求至少1个人类批准、旧批准失效、最新 push 后 review，Owner 决定最终 merge。Owner 自己提交的 PR 应有第二个人类 reviewer，或明确 Owner-only 紧急 bypass，不能给 Agent。develop 必须 PR+CI，baseline/contract 由 Owner review。若 token 属 admin/bypass identity，ruleset 本身不能保证 Agent 不 merge；使用非 admin 自动化身份，可行时限制可 push 分支，排除 release/package publication/organization management 权限，发布凭据只由 Owner 持有。无法技术限制 no-merge 时明确记录残余风险。
 

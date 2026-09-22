@@ -53,7 +53,7 @@ Rust1.98.1 fmt/Clippy/locked bootstrap test passed, but Rust test count is0. No 
 
 EG-01: Docker daemon unavailable; R0 has historical approved evidence but no current rebuild/execution. EG-02: maturin/PyO3/NumPy combination, Linux/macOS dual-architecture/Windows wheels and minimum-OS tests have not run. Hosted routes were checked, but project execution is unproven. Rust runtime does not depend on R0.
 
-GG-01: master/develop unprotected, no matching/parent rulesets. GG-02: available Git identity does not prove technical denial of Agent merge/release rights. Actions enabled, historical Linux G2 success, zero self-hosted runners; see github-snapshot.json. Owner must implement protections or accept a time-bounded residual risk; no unapproved organization governance changes.
+GG-01: master/develop unprotected, no matching/parent rulesets. GG-02: repository API reports current identity admin=true/push=true; no evidence of a separate Agent identity technically denied merge/release. Actions enabled, historical Linux G2 success, zero self-hosted runners; see github-snapshot.json. Owner must implement protections or accept a time-bounded residual risk; no unapproved organization governance changes.
 
 ## Whole-project launch criteria
 

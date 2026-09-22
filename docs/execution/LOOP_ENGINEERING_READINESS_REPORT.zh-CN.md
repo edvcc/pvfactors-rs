@@ -53,7 +53,7 @@ Rust1.98.1 的fmt/Clippy/locked bootstrap test通过，但Rust测试总数为0�
 
 EG-01：本机Docker daemon不可用，R0仅历史批准证据，本次未复建/运行。EG-02：maturin/PyO3/NumPy组合、Linux/macOS双架构/Windows wheel及最低OS验证未执行，hosted runner路径已核查但项目执行未证实。不是让Rust runtime依赖R0。
 
-GG-01：master/develop均未保护，无matching/parent ruleset；GG-02：现有可用Git身份不能证明技术上Agent无merge/release权限。Actions启用、历史Linux G2成功、自托管runner0；准确快照见github-snapshot.json。Owner须落实或有期限接受残余治理风险；不能未经允许修改组织规则。
+GG-01：master/develop均未保护，无matching/parent ruleset；GG-02：仓库API返回当前身份admin=true/push=true，没有独立Agent身份被技术限制merge/release的证据。Actions启用、历史Linux G2成功、自托管runner0；准确快照见github-snapshot.json。Owner须落实或有期限接受残余治理风险；不能未经允许修改组织规则。
 
 ## 全项目启动条件
 
