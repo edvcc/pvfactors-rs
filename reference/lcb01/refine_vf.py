@@ -273,6 +273,52 @@ def candidate_domain():
     return [candidate_case(*s) for s in specs]
 
 
+def candidate_oracle_case():
+    p = base.make_pvarray(3, 180.0, 270.0)
+    F = build_matrix(p, MagnitudeVFTsMethods())
+    L = np.array([s.length[0] for s in p.all_ts_surfaces], dtype=float)
+    active = np.flatnonzero(L > base.ACTIVE_TOL)
+    recs = ordered_surface_records(p)
+    cols = np.r_[active, len(L)]
+    surfaces = []
+    for i in active:
+        rec = recs[int(i)]
+        surfaces.append({
+            "reference_index": int(i),
+            "logical_key": rec["logical_key"],
+            "length_m": float(L[i]),
+            "coordinates_m": rec["coordinates_m"][0],
+            "normal": rec["normal"],
+        })
+    return {
+        "status": "CANDIDATE / UNAPPROVED",
+        "case_id": "LCB01_TILT_180_CORRECTED_CANDIDATE",
+        "input": {
+            "n_pvrows": 3,
+            "pvrow_height": base.HEIGHT,
+            "pvrow_width": base.WIDTH,
+            "gcr": base.GCR,
+            "axis_azimuth": base.AXIS_AZIMUTH,
+            "surface_tilt": 180.0,
+            "surface_azimuth": 270.0,
+            "solar_zenith": base.SOLAR_ZENITH,
+            "solar_azimuth": base.SOLAR_AZIMUTH,
+        },
+        "matrix_axes": ["receiver", "source"],
+        "active_reference_indices": active.tolist(),
+        "source_reference_indices_plus_sky": cols.tolist(),
+        "sky_reference_index": int(len(L)),
+        "surfaces": surfaces,
+        "F_active_plus_sky": F[np.ix_(active, cols)].tolist(),
+        "invariants": active_metrics(p, F),
+        "construction": (
+            "Reference geometry/topology + research-only orientation-invariant magnitude "
+            "at _vf_hottel_gnd_surf, followed by normal sky closure. This is a candidate "
+            "corrected oracle, not an approved Reference replacement."
+        ),
+    }
+
+
 def main():
     import argparse
     ap = argparse.ArgumentParser()
@@ -287,6 +333,7 @@ def main():
         "endpoint_scan": endpoint_scan(),
         "continuity": continuity_check(),
         "candidate_magnitude_primitive_domain": candidate_domain(),
+        "candidate_corrected_oracle_v0_1": candidate_oracle_case(),
         "whole_matrix_abs_counterexample": full_matrix_abs_counterexample(),
         "exact_minus_180_raw_hottel_audit": audit_exact_minus_180(),
         "root_cause_guardrail": {
