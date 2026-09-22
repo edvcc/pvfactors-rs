@@ -29,6 +29,7 @@ test_extra_case_fails (test_verify_project.AcceptanceHarnessTests.test_extra_cas
 test_failed_gate_cannot_execute_adapter (test_verify_project.AcceptanceHarnessTests.test_failed_gate_cannot_execute_adapter) ... ok
 test_false_summary_fails (test_verify_project.AcceptanceHarnessTests.test_false_summary_fails) ... ok
 test_frozen_source_mutation_detected (test_verify_project.AcceptanceHarnessTests.test_frozen_source_mutation_detected) ... ok
+test_geometry_approval_cannot_authorize_later_or_final_acceptance (test_verify_project.AcceptanceHarnessTests.test_geometry_approval_cannot_authorize_later_or_final_acceptance) ... ok
 test_golden_projection_retains_every_identity (test_verify_project.AcceptanceHarnessTests.test_golden_projection_retains_every_identity) ... ok
 test_ignored_case_fails (test_verify_project.AcceptanceHarnessTests.test_ignored_case_fails) ... ok
 test_missing_artifact_fails (test_verify_project.AcceptanceHarnessTests.test_missing_artifact_fails) ... ok
@@ -48,6 +49,6 @@ test_unknown_comparator_cannot_pass (test_verify_project.AcceptanceHarnessTests.
 test_zero_test_success_fails (test_verify_project.AcceptanceHarnessTests.test_zero_test_success_fails) ... ok
 
 ----------------------------------------------------------------------
-Ran 48 tests in 0.337s
+Ran 49 tests in 0.350s
 
 OK

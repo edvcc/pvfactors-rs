@@ -2,18 +2,25 @@
   "schema_version": 1,
   "mode": "PREPARATION_ONLY",
   "current_milestone": null,
-  "last_completed_checkpoint": "c2bc8572a976279abacbcd1d4f9c460233785bdb",
-  "verification_status": "PENDING_FINAL_PREPARATION_CHECKS",
+  "last_completed_checkpoint": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+  "verification_status": "ASSETS_PASS_SELF_TESTS_PASS_PREFLIGHT_NOT_READY",
   "known_failures": [
-    "Production implementation absent",
-    "Owner decisions pending",
-    "R0 unavailable on current host"
+    "Owner decisions OD-01..OD-12 pending",
+    "BF-01 IntervalDifference public semantics",
+    "BF-02 no-direct topology versus diffuse simulation",
+    "EG-01 R0 unavailable on current host",
+    "EG-02 packaging/platform path unverified",
+    "GG-01/GG-02 protection and credential gaps",
+    "Production implementation absent"
   ],
   "approved_blockers": [],
   "unresolved_findings": [
     "BF-01",
     "BF-02"
   ],
-  "next_executable_action": "Owner centralized launch review; do not implement P3",
-  "implementation_started": false
+  "next_executable_action": "Owner centralized launch review and decision/evidence closure; CODEX_FULL_IMPLEMENTATION_TASK.md remains inactive",
+  "implementation_started": false,
+  "preparation_status": "COMPLETE",
+  "launch_status": "LOOP ENGINEERING READINESS — BLOCKED",
+  "verification_evidence": "evidence/execution/verification-summary.json"
 }

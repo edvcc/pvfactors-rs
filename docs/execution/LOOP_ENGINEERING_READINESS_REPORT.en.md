@@ -47,7 +47,7 @@ CDR-001/002/004/005/007, public result/optics contracts, later Golden/tolerance 
 
 Existing G2 was rerun in a disposable local Python environment: source hashes,55-case/165-artifact schemas,65 invariant reports, approved manifest and P3-entry governance passed. All19 existing tests plus30 new harness self-tests (49 total) passed. Mutations reject missing cases, exact-field changes,10x tolerance, baseline mutation, missing artifacts and zero tests; allowed numeric deltas pass. Approved-payload roundtrip validates the comparator only, never Rust output.
 
-Rust1.98.1 fmt/Clippy/locked bootstrap test passed, but Rust test count is0. No P3 results, production wheels or full cross-platform implementation acceptance exist. New CI checks only real preparation assets; no push occurred, so no remote PASS is claimed. Actual project-mode outcomes/exit codes are recorded in evidence/execution/verification-summary.json and receipts. Preflight must remain unsuccessful for pending approval/environment gaps; preparation cannot lower its gate to turn green.
+Rust1.98.1 fmt/Clippy/locked bootstrap test passed, but Rust test count is0. No P3 results, production wheels or full cross-platform implementation acceptance exist. New CI checks only real preparation assets; no push occurred, so no remote PASS is claimed. On clean checkpoint `a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4`, `assets` returned PASS/0; `preflight`, `milestone geometry` and `final` each returned NOT_READY/2. Preflight actually detected pending approvals and unavailable R0. Final lists all22 required capabilities and11 milestones as unmet, with0 production tests. The30 new harness self-tests and19 existing tests all passed. Exact commands, reports, program hashes and the tested SHA are archived in evidence/execution/verification-summary.json and receipts; later report/evidence commits do not change those receipts' tested SHA. Acceptance Harness: PASS as preparation tooling; Full Implementation Task: READY / INACTIVE.
 
 ## Environment and governance gaps
 
@@ -65,7 +65,7 @@ GG-01: master/develop unprotected, no matching/parent rulesets. GG-02: repositor
 | All milestone acceptance definitions | PRESENT; proposed for approval |
 | Pre-approved oracles or explicit Owner-stop workflow | PENDING OD-08 |
 | Harness self-tests | PASS; 30 new / 49 total |
-| Preflight | FAIL / NOT_READY until approval/environment closure |
+| Preflight | NOT_READY / exit 2; launch gate FAIL |
 | Environment path clear | ENVIRONMENT GAP EG-01/02 |
 | Branch/permission risk accepted | PENDING OD-11 |
 | Full task file complete | READY as a prepared artifact; INACTIVE / not executable authorization |

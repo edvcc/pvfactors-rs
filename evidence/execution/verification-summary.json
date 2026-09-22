@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-22T03:04:54.307029+00:00",
+  "preparation_status": "COMPLETE",
+  "launch_status": "LOOP ENGINEERING READINESS — BLOCKED",
+  "branch": "research/loop-engineering-readiness",
+  "base_commit": "c2bc8572a976279abacbcd1d4f9c460233785bdb",
+  "tested_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+  "tested_worktree_clean_before": true,
+  "tested_worktree_clean_after": true,
+  "receipt_commit_note": "Receipts bind the tested ancestor. Later evidence/report commits do not claim to be that tested commit. Final HEAD is read from Git.",
+  "p3_readiness": "BLOCKED",
+  "whole_project_readiness": "BLOCKED",
+  "owner_decisions_pending": 12,
+  "blocking_findings": [
+    "BF-01",
+    "BF-02"
+  ],
+  "environment_gaps": {
+    "EG-01": "R0 cannot execute because Docker daemon is unavailable",
+    "EG-02": "Binding/wheel/platform/minimum-OS path has no project execution evidence"
+  },
+  "governance_gaps": {
+    "GG-01": "master/develop are unprotected; rulesets absent",
+    "GG-02": "current GitHub identity has admin/push permissions; no separate Agent no-merge enforcement"
+  },
+  "acceptance_harness": "PASS",
+  "harness_self_tests": {
+    "status": "PASS",
+    "new_tests": 30,
+    "existing_tests": 19,
+    "total": 49,
+    "failed": 0,
+    "skipped": 0
+  },
+  "preflight": {
+    "status": "NOT_READY",
+    "exit_code": 2,
+    "launch_pass": false,
+    "reasons": [
+      "Pending Owner decisions and launch/environment/governance approvals",
+      "R0 not currently executable"
+    ]
+  },
+  "milestone_geometry": {
+    "status": "NOT_READY",
+    "exit_code": 2,
+    "implementation_present": false
+  },
+  "final": {
+    "status": "NOT_READY",
+    "exit_code": 2,
+    "capabilities_implemented": [],
+    "capabilities_unmet": [
+      "CAP01",
+      "CAP02",
+      "CAP03",
+      "CAP04",
+      "CAP05",
+      "CAP06",
+      "CAP07",
+      "CAP08",
+      "CAP09",
+      "CAP10",
+      "CAP11",
+      "CAP12",
+      "CAP13",
+      "CAP14",
+      "CAP15",
+      "CAP16",
+      "CAP17",
+      "CAP18",
+      "CAP19",
+      "CAP20",
+      "CAP21",
+      "CAP22"
+    ],
+    "milestones_not_ready": 11,
+    "production_tests_run": 0
+  },
+  "rust_checks": {
+    "fmt": "PASS",
+    "clippy": "PASS",
+    "locked_bootstrap_cargo_test": "PASS",
+    "rust_test_count": 0,
+    "counts_as_milestone_acceptance": false
+  },
+  "g2": "PASS",
+  "baseline_files_unchanged": 491,
+  "full_implementation_task": {
+    "status": "READY",
+    "activation": "INACTIVE",
+    "executed": false
+  },
+  "remote_readiness_ci": "NOT_RUN — preparation branch not pushed",
+  "production_algorithm_changes": false,
+  "push_pr_merge_tag_release_performed": false,
+  "contract_sha256": "f3411eb6e9f20abfbc4c4264b45408518478a7fec994d84f24bee2e4d7912780",
+  "verification_tool_sha256": "8df82a954dbcc14a0857bf3235fc660a867b51346c1072ee5c41b96429e583e1",
+  "verification_self_tests_sha256": {
+    "scripts/tests/test_verify_project.py": "81f05b17bfb027fe66364dac7fc0f457e8c983c932ee5b2fc998081d77a152bf"
+  },
+  "commands": [
+    {
+      "name": "assets",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "scripts/verify_project.py",
+        "assets",
+        "--output",
+        "/tmp/pvfactors-readiness-final-checks/assets.json"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+      "checks": {
+        "baseline_integrity": "PASS",
+        "inventory": "PASS",
+        "branch": "PASS",
+        "environment": "PASS",
+        "g2": "PASS"
+      }
+    },
+    {
+      "name": "preflight",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "scripts/verify_project.py",
+        "preflight",
+        "--output",
+        "/tmp/pvfactors-readiness-final-checks/preflight.json"
+      ],
+      "exit_code": 2,
+      "status": "NOT_READY",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+      "checks": {
+        "baseline_integrity": "PASS",
+        "inventory": "PASS",
+        "branch": "PASS",
+        "environment": "PASS",
+        "g2": "PASS",
+        "owner_launch": "NOT_READY",
+        "r0": "NOT_READY",
+        "harness_self_tests": "PASS"
+      }
+    },
+    {
+      "name": "milestone-geometry",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "scripts/verify_project.py",
+        "milestone",
+        "geometry",
+        "--output",
+        "/tmp/pvfactors-readiness-final-checks/milestone-geometry.json"
+      ],
+      "exit_code": 2,
+      "status": "NOT_READY",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+      "checks": {
+        "baseline_integrity": "PASS",
+        "inventory": "PASS",
+        "branch": "PASS",
+        "environment": "PASS",
+        "g2": "PASS",
+        "owner_launch": "NOT_READY",
+        "milestones": "NOT_READY"
+      }
+    },
+    {
+      "name": "final",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "scripts/verify_project.py",
+        "final",
+        "--output",
+        "/tmp/pvfactors-readiness-final-checks/final.json"
+      ],
+      "exit_code": 2,
+      "status": "NOT_READY",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+      "checks": {
+        "baseline_integrity": "PASS",
+        "inventory": "PASS",
+        "branch": "PASS",
+        "environment": "PASS",
+        "g2": "PASS",
+        "owner_launch": "NOT_READY",
+        "milestones": "NOT_READY",
+        "release_evidence": "NOT_READY"
+      }
+    },
+    {
+      "name": "tooling-tests",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4"
+    },
+    {
+      "name": "rustfmt",
+      "argv": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--check"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4"
+    },
+    {
+      "name": "clippy",
+      "argv": [
+        "cargo",
+        "clippy",
+        "--workspace",
+        "--all-targets",
+        "--locked",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4"
+    },
+    {
+      "name": "cargo-test",
+      "argv": [
+        "cargo",
+        "test",
+        "--workspace",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4"
+    }
+  ],
+  "artifacts": {
+    "assets.json": "297a926bc5b62aa63458d89333ceab3d64b48e5e8a2a5e779f7b070d0fbd8ad9",
+    "cargo-test.log": "fa85045a679a5e2304716b5b06d07f1508d7222ed62e05c6d5e087170e31bd79",
+    "clippy.log": "99f71393b9903dca098310bb446022a4bdee195ea9996f351a787195555210a6",
+    "commands.json": "a9ea47251aa54a8c74eb0a736aad24e80dc68b9c62c159fcbf6dc068907a11de",
+    "final.json": "9a52e808f43948a0179f7e9a7b1ea419010ec06a2f43fab15097377f33841b1d",
+    "g2-verification.json": "27780e157451431c3758f2f10ca585c0831914338ee25330e8cf07dcc7fe3fd6",
+    "github-snapshot.json": "33f91e198e115305d8949285bfad25ee255436c27c65a11c7e041260e47493df",
+    "milestone-geometry.json": "91f94687d3c613e189ec7ad5bf534b34b4ebd46e81307301d0019e7e6dc6457e",
+    "preflight.json": "fa3bf6fe678b23705ad649bd5c1a6b8220a99633fdfb902dd1be4d97b9815f5a",
+    "rustfmt.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tooling-tests.log": "0983631948506e6171fa6c8dda1c14054c28eb6089b0b5bc056e249e65fb3d7e"
+  },
+  "next_action": "Owner centralized Launch Review and decision/evidence closure; do not start implementation."
+}

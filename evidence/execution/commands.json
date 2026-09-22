@@ -1,0 +1,152 @@
+{
+  "observed_at": "2026-09-22T03:04:54.307029+00:00",
+  "tested_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+  "clean_before": true,
+  "clean_after": true,
+  "results": [
+    {
+      "name": "assets",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "scripts/verify_project.py",
+        "assets",
+        "--output",
+        "/tmp/pvfactors-readiness-final-checks/assets.json"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+      "checks": {
+        "baseline_integrity": "PASS",
+        "inventory": "PASS",
+        "branch": "PASS",
+        "environment": "PASS",
+        "g2": "PASS"
+      }
+    },
+    {
+      "name": "preflight",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "scripts/verify_project.py",
+        "preflight",
+        "--output",
+        "/tmp/pvfactors-readiness-final-checks/preflight.json"
+      ],
+      "exit_code": 2,
+      "status": "NOT_READY",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+      "checks": {
+        "baseline_integrity": "PASS",
+        "inventory": "PASS",
+        "branch": "PASS",
+        "environment": "PASS",
+        "g2": "PASS",
+        "owner_launch": "NOT_READY",
+        "r0": "NOT_READY",
+        "harness_self_tests": "PASS"
+      }
+    },
+    {
+      "name": "milestone-geometry",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "scripts/verify_project.py",
+        "milestone",
+        "geometry",
+        "--output",
+        "/tmp/pvfactors-readiness-final-checks/milestone-geometry.json"
+      ],
+      "exit_code": 2,
+      "status": "NOT_READY",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+      "checks": {
+        "baseline_integrity": "PASS",
+        "inventory": "PASS",
+        "branch": "PASS",
+        "environment": "PASS",
+        "g2": "PASS",
+        "owner_launch": "NOT_READY",
+        "milestones": "NOT_READY"
+      }
+    },
+    {
+      "name": "final",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "scripts/verify_project.py",
+        "final",
+        "--output",
+        "/tmp/pvfactors-readiness-final-checks/final.json"
+      ],
+      "exit_code": 2,
+      "status": "NOT_READY",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4",
+      "checks": {
+        "baseline_integrity": "PASS",
+        "inventory": "PASS",
+        "branch": "PASS",
+        "environment": "PASS",
+        "g2": "PASS",
+        "owner_launch": "NOT_READY",
+        "milestones": "NOT_READY",
+        "release_evidence": "NOT_READY"
+      }
+    },
+    {
+      "name": "tooling-tests",
+      "argv": [
+        "/tmp/pvfactors-readiness-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4"
+    },
+    {
+      "name": "rustfmt",
+      "argv": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--check"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4"
+    },
+    {
+      "name": "clippy",
+      "argv": [
+        "cargo",
+        "clippy",
+        "--workspace",
+        "--all-targets",
+        "--locked",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4"
+    },
+    {
+      "name": "cargo-test",
+      "argv": [
+        "cargo",
+        "test",
+        "--workspace",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "git_commit": "a9f727fbac4365a5cb208e4fafcab17c4a3ec5d4"
+    }
+  ]
+}
