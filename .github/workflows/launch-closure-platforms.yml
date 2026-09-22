@@ -1,0 +1,70 @@
+name: Launch Closure Platform Evidence
+on:
+  push:
+    branches: [research/full-project-launch-closure]
+    paths:
+      - '.github/workflows/launch-closure-platforms.yml'
+      - 'reference/launch-closure/packaging-poc/**'
+      - 'reference/launch-closure/numerical_probes.py'
+      - 'reference/launch-closure/probes/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: launch-platforms-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  packaging-probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, macos-14, macos-15-intel, windows-2022]
+        python: ['3.11', '3.12', '3.13', '3.14']
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    env:
+      CARGO_BUILD_JOBS: '2'
+      CARGO_TARGET_DIR: ${{ github.workspace }}/target/launch-packaging
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: rustup toolchain install 1.98.1 --profile minimal
+      - run: cargo build --locked
+      - run: cargo test --locked
+      - uses: actions/cache@v4
+        id: build-cache
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target/launch-packaging
+          key: launch-poc-${{ runner.os }}-${{ runner.arch }}-py${{ matrix.python }}-${{ hashFiles('reference/launch-closure/packaging-poc/Cargo.lock') }}
+      - run: python -m pip install maturin==1.15.0 numpy==2.3.4
+      - run: maturin build --locked --manifest-path reference/launch-closure/packaging-poc/Cargo.toml --interpreter python --out reference/work/launch-ci/wheels
+      - name: Install isolated wheel
+        shell: bash
+        run: python -m pip install --no-deps reference/work/launch-ci/wheels/*.whl
+      - run: python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-minimum.json
+      - name: Test upper sampled NumPy
+        run: python -m pip install numpy==${{ matrix.python == '3.11' && '2.4.6' || '2.5.3' }}
+      - run: python reference/launch-closure/packaging-poc/smoke.py --output reference/work/launch-ci/numpy-upper-sample.json
+      - run: python reference/launch-closure/numerical_probes.py --output reference/work/launch-ci/numerical
+      - name: Record compiler, interpreter, dependency and cache evidence
+        shell: bash
+        run: |
+          rustc --version --verbose > reference/work/launch-ci/rustc.txt
+          cargo --version > reference/work/launch-ci/cargo.txt
+          python -m pip freeze > reference/work/launch-ci/python-packages.txt
+          echo '${{ steps.build-cache.outputs.cache-hit }}' > reference/work/launch-ci/cache-hit.txt
+          echo '${{ github.sha }}' > reference/work/launch-ci/tested-commit.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: launch-${{ matrix.os }}-py${{ matrix.python }}-${{ github.sha }}
+          path: reference/work/launch-ci/
+          if-no-files-found: error
+          retention-days: 14

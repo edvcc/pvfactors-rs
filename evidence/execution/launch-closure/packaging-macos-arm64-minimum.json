@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "tests_run": 17,
+  "python": "3.12.12 (main, Oct  9 2025, 11:07:00) [Clang 17.0.0 (clang-1700.3.19.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "numpy": "2.3.4",
+  "package": "0.0.0",
+  "boundary": "Isolated installed-wheel smoke only; no product physics or minimum OS proof"
+}

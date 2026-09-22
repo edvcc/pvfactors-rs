@@ -1,0 +1,18 @@
+[package]
+name = "pvfactors-packaging-probe"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.98.1"
+publish = false
+license = "BSD-3-Clause"
+
+# Isolated experiment, deliberately outside the product workspace.
+[workspace]
+
+[lib]
+name = "pvfactors_packaging_probe"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "=0.29.2"
+numpy = "=0.29.0"
