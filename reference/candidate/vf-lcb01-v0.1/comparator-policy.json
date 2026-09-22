@@ -1,0 +1,19 @@
+{
+  "id": "vf-lcb01-research-comparator-v0.1",
+  "status": "PROPOSED_UNAPPROVED",
+  "bounds_epsilon": 1e-10,
+  "expected_abs": 2e-09,
+  "reciprocity_absolute_length": 1e-10,
+  "closure_abs": 1e-10,
+  "rationale": "Quadrature requested 1e-11; allow 10x for scalar bounds/closure and 200x for candidate comparison. Observed estimates <1e-14 and independent checks <3e-15. Research budget, not a certified cross-platform bound.",
+  "exact": [
+    "SurfaceKey",
+    "ReferenceIndex",
+    "active",
+    "coordinates",
+    "normal",
+    "matrix shape",
+    "case inventory"
+  ],
+  "forbidden": "No clamp, no topology tolerance, no geometry-tolerance-v0.1 modification; Owner must approve any future acceptance policy."
+}
