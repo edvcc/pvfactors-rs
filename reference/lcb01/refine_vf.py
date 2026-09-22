@@ -345,7 +345,11 @@ def main():
         },
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(report, indent=2, allow_nan=False) + "\n")\n    if not report["environment"]["canonical_environment_match"]:\n        raise SystemExit("LCB-01 canonical environment contract mismatch")\n\n    exact = [
+    args.output.write_text(json.dumps(report, indent=2, allow_nan=False) + "\n")
+    if not report["environment"]["canonical_environment_match"]:
+        raise SystemExit("LCB-01 canonical environment contract mismatch")
+
+    exact = [
         x for x in report["candidate_magnitude_primitive_domain"]
         if x["tilt"] == 180.0
     ]
